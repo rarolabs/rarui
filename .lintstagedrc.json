@@ -1,0 +1,4 @@
+{
+  "*.+(js|jsx|tsx|ts)": ["prettier --write", "yarn test:staged"],
+  "*.+(json|css|scss|md)": ["prettier --write"]
+}
