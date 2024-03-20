@@ -2712,6 +2712,7 @@ __metadata:
     react-dom: "npm:^18.2.0"
     storybook: "npm:^8.0.0"
     ts-jest: "npm:^29.1.2"
+    ts-node: "npm:^10.9.2"
     turbo: "npm:^1.12.5"
     typescript: "npm:^5.4.2"
   languageName: unknown
@@ -2723,12 +2724,12 @@ __metadata:
   dependencies:
     "@rarui/tokens": "workspace:^"
     "@rarui/webpack": "workspace:^"
-    "@vanilla-extract/css": "npm:^1.14.0"
+    "@vanilla-extract/css": "npm:^1.14.1"
     "@vanilla-extract/dynamic": "npm:^2.1.0"
-    "@vanilla-extract/recipes": "npm:^0.5.1"
+    "@vanilla-extract/recipes": "npm:^0.5.2"
     "@vanilla-extract/sprinkles": "npm:^1.6.1"
-    rainbow-sprinkles: "npm:^0.17.0"
-    webpack: "npm:^5.89.0"
+    rainbow-sprinkles: "npm:^0.17.1"
+    webpack: "npm:^5.90.3"
     webpack-merge: "npm:^5.10.0"
     webpack-shell-plugin-next: "npm:^2.3.1"
   languageName: unknown
@@ -2763,6 +2764,7 @@ __metadata:
     dts-bundle-generator: "npm:^9.3.1"
     mini-css-extract-plugin: "npm:^2.8.1"
     terser-webpack-plugin: "npm:^5.3.10"
+    ts-loader: "npm:^9.5.1"
     webpack: "npm:^5.90.3"
     webpack-cli: "npm:^5.1.4"
     webpack-merge: "npm:^5.10.0"
@@ -4667,7 +4669,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:^1.14.0, @vanilla-extract/css@npm:^1.7.2":
+"@vanilla-extract/css@npm:^1.14.0, @vanilla-extract/css@npm:^1.14.1, @vanilla-extract/css@npm:^1.7.2":
   version: 1.14.1
   resolution: "@vanilla-extract/css@npm:1.14.1"
   dependencies:
@@ -4738,7 +4740,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/recipes@npm:^0.5.1":
+"@vanilla-extract/recipes@npm:^0.5.2":
   version: 0.5.2
   resolution: "@vanilla-extract/recipes@npm:0.5.2"
   peerDependencies:
@@ -7622,7 +7624,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.15.0":
+"enhanced-resolve@npm:^5.0.0, enhanced-resolve@npm:^5.15.0":
   version: 5.16.0
   resolution: "enhanced-resolve@npm:5.16.0"
   dependencies:
@@ -12197,7 +12199,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"micromatch@npm:4.0.5, micromatch@npm:^4.0.2, micromatch@npm:^4.0.4":
+"micromatch@npm:4.0.5, micromatch@npm:^4.0.0, micromatch@npm:^4.0.2, micromatch@npm:^4.0.4":
   version: 4.0.5
   resolution: "micromatch@npm:4.0.5"
   dependencies:
@@ -13881,7 +13883,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rainbow-sprinkles@npm:^0.17.0":
+"rainbow-sprinkles@npm:^0.17.1":
   version: 0.17.1
   resolution: "rainbow-sprinkles@npm:0.17.1"
   peerDependencies:
@@ -14652,7 +14654,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0":
+"semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0":
   version: 7.6.0
   resolution: "semver@npm:7.6.0"
   dependencies:
@@ -14917,6 +14919,13 @@ __metadata:
   version: 0.6.1
   resolution: "source-map@npm:0.6.1"
   checksum: ab55398007c5e5532957cb0beee2368529618ac0ab372d789806f5718123cc4367d57de3904b4e6a4170eb5a0b0f41373066d02ca0735a0c4d75c7d328d3e011
+  languageName: node
+  linkType: hard
+
+"source-map@npm:^0.7.4":
+  version: 0.7.4
+  resolution: "source-map@npm:0.7.4"
+  checksum: dc0cf3768fe23c345ea8760487f8c97ef6fca8a73c83cd7c9bf2fde8bc2c34adb9c0824d6feb14bc4f9e37fb522e18af621543f1289038a66ac7586da29aa7dc
   languageName: node
   linkType: hard
 
@@ -15681,7 +15690,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^10.9.1":
+"ts-loader@npm:^9.5.1":
+  version: 9.5.1
+  resolution: "ts-loader@npm:9.5.1"
+  dependencies:
+    chalk: "npm:^4.1.0"
+    enhanced-resolve: "npm:^5.0.0"
+    micromatch: "npm:^4.0.0"
+    semver: "npm:^7.3.4"
+    source-map: "npm:^0.7.4"
+  peerDependencies:
+    typescript: "*"
+    webpack: ^5.0.0
+  checksum: 7dc1e3e5d3d032b6ef27836032f02c57077dfbcdf5817cbbc16b7b8609e7ed1d0ec157a03eaac07960161d8ad4a9e030c4d6722fe33540cf6ee75156c7f9c33d
+  languageName: node
+  linkType: hard
+
+"ts-node@npm:^10.9.1, ts-node@npm:^10.9.2":
   version: 10.9.2
   resolution: "ts-node@npm:10.9.2"
   dependencies:
@@ -16731,7 +16756,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:5, webpack@npm:^5, webpack@npm:^5.89.0, webpack@npm:^5.90.3":
+"webpack@npm:5, webpack@npm:^5, webpack@npm:^5.90.3":
   version: 5.90.3
   resolution: "webpack@npm:5.90.3"
   dependencies:

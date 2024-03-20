@@ -6,22 +6,17 @@ const config: Config.InitialOptions = {
   verbose: true,
   moduleNameMapper: {
     // core
-    "@bmg-ds/typings": "<rootDir>/packages/core/typings/src",
+    "@rarui/typings": "<rootDir>/packages/core/typings/src",
     // commons
-    "@bmg-ds/styles": "<rootDir>/packages/styles/src",
+    "@rarui/styles": "<rootDir>/packages/styles/src",
     // atomics
-    "@bmg-ds/button": "<rootDir>/packages/react/src/atomics/Button/src",
-    "@bmg-ds/skeleton": "<rootDir>/packages/react/src/atomics/Skeleton/src",
+    "@rarui/button": "<rootDir>/packages/react/src/atomics/Button/src",
     // composites
   },
   transform: {
     "^.+\\.css\\.ts$": "babel-jest",
     ".+\\.(ts|tsx)$": "ts-jest",
   },
-  coveragePathIgnorePatterns: [
-    "dist",
-    ".scripts",
-    "packages/core/typings",
-  ],
+  coveragePathIgnorePatterns: ["dist", ".scripts", "packages/core/typings"],
 };
 export default config;

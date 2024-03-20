@@ -1,0 +1,257 @@
+import { createGlobalTheme } from "@vanilla-extract/css";
+import tokens from "@rarui/tokens/dist/js/tokens";
+
+import { vars } from "./contract.css";
+
+const colors = tokens.color.light;
+const elevation = tokens.elevation.light;
+const fontFamily = tokens.font.family;
+const fontSize = tokens.font.size;
+const fontWeight = tokens.font.weight;
+const lineWeight = tokens.line.height;
+const { spacing, breakpoint, zIndex, shape } = tokens;
+
+export const globalTheme = {
+  colors: {
+    surface: {
+      background: colors.surface.background.value,
+      brand: colors.surface.brand.value,
+      "brand-hover": colors.surface["brand-hover"].value,
+      "brand-press": colors.surface["brand-press"].value,
+      "brand-secondary": colors.surface["brand-secondary"].value,
+      "brand-secondary-hover": colors.surface["brand-secondary-hover"].value,
+      "brand-secondary-press": colors.surface["brand-secondary-press"].value,
+      "brand-secondary-subdued":
+        colors.surface["brand-secondary-subdued"].value,
+      "brand-subdued": colors.surface["brand-subdued"].value,
+      disabled: colors.surface.disabled.value,
+      error: colors.surface.error.value,
+      "error-hover": colors.surface["error-hover"].value,
+      "error-press": colors.surface["error-press"].value,
+      "error-subdued": colors.surface["error-subdued"].value,
+      hover: colors.surface.hover.value,
+      info: colors.surface.info.value,
+      "info-hover": colors.surface["info-hover"].value,
+      "info-press": colors.surface["info-press"].value,
+      "info-subdued": colors.surface["info-subdued"].value,
+      invert: colors.surface.invert.value,
+      "invert-disabled": colors.surface["invert-disabled"].value,
+      "invert-hover": colors.surface["invert-hover"].value,
+      "invert-press": colors.surface["invert-press"].value,
+      "invert-secondary": colors.surface["invert-secondary"].value,
+      "on-brand-hover": colors.surface["on-brand-hover"].value,
+      "on-brand-press": colors.surface["on-brand-press"].value,
+      "on-brand-secondary-hover":
+        colors.surface["on-brand-secondary-hover"].value,
+      "on-brand-secondary-press":
+        colors.surface["on-brand-secondary-press"].value,
+      "on-error-hover": colors.surface["on-error-hover"].value,
+      "on-error-press": colors.surface["on-error-press"].value,
+      "on-info-hover": colors.surface["on-info-hover"].value,
+      "on-info-press": colors.surface["on-info-press"].value,
+      "on-success-hover": colors.surface["on-success-hover"].value,
+      "on-success-press": colors.surface["on-success-press"].value,
+      "on-warning-hover": colors.surface["on-warning-hover"].value,
+      "on-warning-press": colors.surface["on-warning-press"].value,
+      overlay: colors.surface.overlay.value,
+      press: colors.surface.press.value,
+      primary: colors.surface.primary.value,
+      secondary: colors.surface.secondary.value,
+      success: colors.surface.success.value,
+      "success-hover": colors.surface["success-hover"].value,
+      "success-press": colors.surface["success-press"].value,
+      "success-subdued": colors.surface["success-subdued"].value,
+      warning: colors.surface.warning.value,
+      "warning-hover": colors.surface["warning-hover"].value,
+      "warning-press": colors.surface["warning-press"].value,
+      "warning-subdued": colors.surface["warning-subdued"].value,
+    },
+    content: {
+      brand: colors.content.brand.value,
+      "brand-alt": colors.content["brand-alt"].value,
+      "brand-secondary": colors.content["brand-secondary"].value,
+      disabled: colors.content.disabled.value,
+      error: colors.content.error.value,
+      info: colors.content.info.value,
+      invert: colors.content.invert.value,
+      "invert-disabled": colors.content["invert-disabled"].value,
+      "invert-secondary": colors.content["invert-secondary"].value,
+      "on-brand": colors.content["on-brand"].value,
+      "on-brand-secondary": colors.content["on-brand-secondary"].value,
+      "on-error": colors.content["on-error"].value,
+      "on-info": colors.content["on-info"].value,
+      "on-success": colors.content["on-success"].value,
+      "on-warning": colors.content["on-warning"].value,
+      primary: colors.content.primary.value,
+      secondary: colors.content.secondary.value,
+      success: colors.content.success.value,
+      warning: colors.content.warning.value,
+      "warning-alt": colors.content["warning-alt"].value,
+    },
+    border: {
+      brand: colors.border.brand.value,
+      "brand-alt": colors.border["brand-alt"].value,
+      "brand-secondary": colors.border["brand-secondary"].value,
+      disabled: colors.border.disabled.value,
+      divider: colors.border.divider.value,
+      error: colors.border.error.value,
+      info: colors.border.info.value,
+      invert: colors.border.invert.value,
+      "invert-disabled": colors.border["invert-disabled"].value,
+      primary: colors.border.primary.value,
+      secondary: colors.border.secondary.value,
+      subdued: colors.border.subdued.value,
+      success: colors.border.success.value,
+      warning: colors.border.warning.value,
+    },
+  },
+  fontFamily: {
+    sans: fontFamily.sans.value,
+    mono: fontFamily.mono.value,
+  },
+  fontSize: {
+    hero: {
+      caption: fontSize.hero.value,
+    },
+    body: {
+      xxs: fontSize.body.xxs.value,
+      xs: fontSize.body.xs.value,
+      s: fontSize.body.s.value,
+      m: fontSize.body.m.value,
+      l: fontSize.body.l.value,
+      xl: fontSize.body.xl.value,
+    },
+    heading: {
+      xs: fontSize.heading.xs.value,
+      s: fontSize.heading.s.value,
+      m: fontSize.heading.m.value,
+      l: fontSize.heading.l.value,
+      xl: fontSize.heading.xl.value,
+    },
+    button: {
+      s: fontSize.button.s.value,
+      m: fontSize.button.m.value,
+      l: fontSize.button.l.value,
+    },
+    label: {
+      s: fontSize.label.s.value,
+      m: fontSize.label.m.value,
+      l: fontSize.label.l.value,
+    },
+  },
+  fontWeight: {
+    regular: fontWeight.regular.value,
+    medium: fontWeight.medium.value,
+    semiBold: fontWeight["semi-bold"].value,
+    bold: fontWeight.bold.value,
+  },
+  lineWeight: {
+    hero: {
+      caption: lineWeight.hero.value,
+    },
+    body: {
+      xxs: lineWeight.body.xxs.value,
+      xs: lineWeight.body.xs.value,
+      s: lineWeight.body.s.value,
+      m: lineWeight.body.m.value,
+      l: lineWeight.body.l.value,
+      xl: lineWeight.body.xl.value,
+    },
+    heading: {
+      xs: lineWeight.heading.xs.value,
+      s: lineWeight.heading.s.value,
+      m: lineWeight.heading.m.value,
+      l: lineWeight.heading.l.value,
+      xl: lineWeight.heading.xl.value,
+    },
+    button: {
+      s: lineWeight.button.s.value,
+      m: lineWeight.button.m.value,
+      l: lineWeight.button.l.value,
+    },
+    label: {
+      s: lineWeight.label.s.value,
+      m: lineWeight.label.m.value,
+      l: lineWeight.label.l.value,
+    },
+  },
+  elevation: {
+    none: elevation.none.value,
+    top: {
+      "1": elevation.top[1].value,
+      "2": elevation.top[2].value,
+      "3": elevation.top[3].value,
+      "4": elevation.top[4].value,
+      "5": elevation.top[5].value,
+    },
+    bottom: {
+      "1": elevation.bottom[1].value,
+      "2": elevation.bottom[2].value,
+      "3": elevation.bottom[3].value,
+      "4": elevation.bottom[4].value,
+      "5": elevation.bottom[5].value,
+    },
+  },
+  shape: {
+    border: {
+      radius: {
+        none: shape.border.radius.none.value,
+        "2xx": shape.border.radius["2xx"].value,
+        xs: shape.border.radius.xs.value,
+        sm: shape.border.radius.sm.value,
+        md: shape.border.radius.md.value,
+        lg: shape.border.radius.lg.value,
+        xl: shape.border.radius.xl.value,
+        "2xl": shape.border.radius["2xl"].value,
+        pill: shape.border.radius.pill.value,
+        button: shape.border.radius.button.value,
+        input: shape.border.radius.input.value,
+      },
+      width: {
+        "1": shape.border.width[1].value,
+        "2": shape.border.width[2].value,
+        "3": shape.border.width[3].value,
+        "4": shape.border.width[4].value,
+        "5": shape.border.width[5].value,
+      },
+    },
+  },
+  spacing: {
+    "4xs": spacing["4xs"].value,
+    "3xs": spacing["3xs"].value,
+    "2xs": spacing["2xs"].value,
+    xs: spacing.xs.value,
+    s: spacing.s.value,
+    md: spacing.md.value,
+    lg: spacing.lg.value,
+    xl: spacing.xl.value,
+    "2xl": spacing["2xl"].value,
+    "3xl": spacing["3xl"].value,
+    "4xl": spacing["4xl"].value,
+    "5xl": spacing["5xl"].value,
+    "6xl": spacing["6xl"].value,
+    "7xl": spacing["7xl"].value,
+    "8xl": spacing["8xl"].value,
+  },
+  zIndex: {
+    100: zIndex[100].value,
+    200: zIndex[200].value,
+    300: zIndex[300].value,
+    400: zIndex[400].value,
+    500: zIndex[500].value,
+    600: zIndex[600].value,
+    700: zIndex[700].value,
+    800: zIndex[800].value,
+    900: zIndex[900].value,
+  },
+  breakpoint: {
+    xs: breakpoint.xs.value,
+    md: breakpoint.md.value,
+    lg: breakpoint.lg.value,
+    xl: breakpoint.xl.value,
+  },
+};
+
+createGlobalTheme(":root", vars, globalTheme);
+
+export const varsThemeBase = vars;
