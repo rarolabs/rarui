@@ -1,0 +1,158 @@
+{
+  "font": {
+    "family": {
+      "sans": {
+        "value": "Geist, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', arial, sans-serif",
+        "comment": "Font family value by default, to use in css and set components font."
+      },
+      "mono": {
+        "value": "Geist Mono, 'Roboto Mono', monospace",
+        "comment": "Monospace font family value for usage within code blocks and code elements."
+      }
+    },
+    "size": {
+      "hero": {
+        "value": "4.25rem"
+      },
+      "heading": {
+        "xs": {
+          "value": "1.25rem"
+        },
+        "s": {
+          "value": "1.25rem"
+        },
+        "m": {
+          "value": "1.75rem"
+        },
+        "l": {
+          "value": "2.375rem"
+        },
+        "xl": {
+          "value": "2.875rem"
+        }
+      },
+      "body": {
+        "xxs": {
+          "value": "0.6875rem"
+        },
+        "xs": {
+          "value": "0.75rem"
+        },
+        "s": {
+          "value": "0.875rem"
+        },
+        "m": {
+          "value": "1rem"
+        },
+        "l": {
+          "value": "1.125rem"
+        },
+        "xl": {
+          "value": "1.5rem"
+        }
+      },
+      "button": {
+        "s": {
+          "value": "0.875rem"
+        },
+        "m": {
+          "value": "0.9375rem"
+        },
+        "l": {
+          "value": "1rem"
+        }
+      },
+      "label": {
+        "s": {
+          "value": "0.75rem"
+        },
+        "m": {
+          "value": "0.875rem"
+        },
+        "l": {
+          "value": "1rem"
+        }
+      }
+    },
+    "weight": {
+      "regular": {
+        "value": "400"
+      },
+      "medium": {
+        "value": "500"
+      },
+      "semi-bold": {
+        "value": "600"
+      },
+      "bold": {
+        "value": "700"
+      }
+    }
+  },
+  "line": {
+    "height": {
+      "hero": {
+        "value": "4.375rem"
+      },
+      "heading": {
+        "xs": {
+          "value": "1.5rem"
+        },
+        "s": {
+          "value": "1.75rem"
+        },
+        "m": {
+          "value": "2rem"
+        },
+        "l": {
+          "value": "2.75rem"
+        },
+        "xl": {
+          "value": "3.5rem"
+        }
+      },
+      "body": {
+        "xxs": {
+          "value": "0.875rem"
+        },
+        "xs": {
+          "value": "1rem"
+        },
+        "s": {
+          "value": "1.25rem"
+        },
+        "m": {
+          "value": "1.375rem"
+        },
+        "l": {
+          "value": "1.5rem"
+        },
+        "xl": {
+          "value": "2rem"
+        }
+      },
+      "button": {
+        "s": {
+          "value": "normal"
+        },
+        "m": {
+          "value": "normal"
+        },
+        "l": {
+          "value": "normal"
+        }
+      },
+      "label": {
+        "s": {
+          "value": "normal"
+        },
+        "m": {
+          "value": "normal"
+        },
+        "l": {
+          "value": "normal"
+        }
+      }
+    }
+  }
+}

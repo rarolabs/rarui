@@ -1,0 +1,82 @@
+{
+  "elevation": {
+    "light": {
+      "none": {
+        "value": "none"
+      },
+      "top": {
+        "1": {
+          "value": "0px -1px 2px 0px rgba(78, 81, 83, 0.10)"
+        },
+        "2": {
+          "value": "0px -4px 8px 0px rgba(78, 81, 83, 0.10)"
+        },
+        "3": {
+          "value": "0px -8px 16px 0px rgba(78, 81, 83, 0.08)"
+        },
+        "4": {
+          "value": "0px -16px 32px 0px rgba(78, 81, 83, 0.08)"
+        },
+        "5": {
+          "value": "0px -24px 64px 0px rgba(78, 81, 83, 0.08)"
+        }
+      },
+      "bottom": {
+        "1": {
+          "value": "0px 1px 2px 0px rgba(78, 81, 83, 0.10)"
+        },
+        "2": {
+          "value": "0px 4px 8px 0px rgba(78, 81, 83, 0.10)"
+        },
+        "3": {
+          "value": "0px 8px 16px 0px rgba(78, 81, 83, 0.08)"
+        },
+        "4": {
+          "value": "0px 16px 32px 0px rgba(78, 81, 83, 0.08)"
+        },
+        "5": {
+          "value": "0px 24px 48px 0px rgba(78, 81, 83, 0.08)"
+        }
+      }
+    },
+    "dark": {
+      "none": {
+        "value": "none"
+      },
+      "top": {
+        "1": {
+          "value": "0px -1px 2px 0px rgba(60, 81, 93, 0.40)"
+        },
+        "2": {
+          "value": "0px -4px 8px 0px rgba(60, 81, 93, 0.40)"
+        },
+        "3": {
+          "value": "0px -8px 16px 0px rgba(60, 81, 93, 0.40)"
+        },
+        "4": {
+          "value": "0px -16px 32px 0px rgba(60, 81, 93, 0.40)"
+        },
+        "5": {
+          "value": "0px -24px 64px 0px rgba(60, 81, 93, 0.40)"
+        }
+      },
+      "bottom": {
+        "1": {
+          "value": "0px 1px 2px 0px rgba(60, 81, 93, 0.40)"
+        },
+        "2": {
+          "value": "0px 4px 8px 0px rgba(60, 81, 93, 0.40)"
+        },
+        "3": {
+          "value": "0px 8px 16px 0px rgba(60, 81, 93, 0.40)"
+        },
+        "4": {
+          "value": "0px 16px 32px 0px rgba(60, 81, 93, 0.40)"
+        },
+        "5": {
+          "value": "0px 24px 64px 0px rgba(60, 81, 93, 0.40)"
+        }
+      }
+    }
+  }
+}
