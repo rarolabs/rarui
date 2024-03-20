@@ -3,7 +3,7 @@
 This is the log of notable changes to the Design System that are developer-facing.
 Package-specific changes not released in any package will be added here just before the release. Until then, you can find them in changelogs of the individual packages (see [packages](./packages) directory).
 
-## 2023-12-13
+## 2024-03-20
 
 #### 🎉 New features
 
@@ -60,6 +60,7 @@ Package-specific changes not released in any package will be added here just bef
 - Added `prettier@3.2.5`. ([#1](https://git.rarolabs.com.br/frontend/rarui/pull/#1) by [@junior](https://git.rarolabs.com.br/junior))
 - Added `storybook@8.0.0`. ([#1](https://git.rarolabs.com.br/frontend/rarui/pull/#1) by [@junior](https://git.rarolabs.com.br/junior))
 - Added `ts-jest@29.1.2`. ([#1](https://git.rarolabs.com.br/frontend/rarui/pull/#1) by [@junior](https://git.rarolabs.com.br/junior))
+- Added `ts-node@10.9.2`. ([#1](https://git.rarolabs.com.br/frontend/rarui/pull/#1) by [@junior](https://git.rarolabs.com.br/junior))
 - Added `turbo@1.12.5`. ([#1](https://git.rarolabs.com.br/frontend/rarui/pull/#1) by [@junior](https://git.rarolabs.com.br/junior))
 - Added `typescript@5.4.2`. ([#1](https://git.rarolabs.com.br/frontend/rarui/pull/#1) by [@junior](https://git.rarolabs.com.br/junior))
 

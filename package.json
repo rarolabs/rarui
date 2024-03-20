@@ -34,12 +34,13 @@
     "publish:npm:stable": "",
     "pre:commit": "lint-staged",
     "pre:push": "yarn test:coverage && yarn types:check && yarn bump:check",
-    "prepare:husky": "husky install",
+    "prepare:husky": "husky init",
     "lint": "eslint packages --ext .jsx,.js,.ts,.tsx --quiet",
     "lint:fix": "yarn lint --fix",
     "types:check": "tsc --skipLibCheck --noEmit",
     "reset": "yarn clean && rm -rf node_modules .yarn/cache",
-    "g:tsc": "cd $INIT_CWD && tsc"
+    "g:tsc": "cd $INIT_CWD && tsc",
+    "prepare": "husky"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -88,6 +89,7 @@
     "prettier": "^3.2.5",
     "storybook": "^8.0.0",
     "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
     "turbo": "^1.12.5",
     "typescript": "^5.4.2"
   },
