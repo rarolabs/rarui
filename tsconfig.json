@@ -35,15 +35,15 @@
     "types": ["node", "jest"],
     "typeRoots": ["./node_modules/@types", "./types"],
     "paths": {
-      "@bmg-ds/scripts": ["./packages/core/scripts"],
-      "@bmg-ds/webpack": ["./packages/core/webpack"],
-      "@bmg-ds/tokens": ["./packages/tokens"],
-      "@bmg-ds/icons": ["./packages/icons"],
-      "@bmg-ds/typings": ["./packages/core/typings/src"],
-      "@bmg-ds/styles": ["./packages/styles/src"],
-      "@bmg-ds/button": ["./packages/react/src/atomics/Button/src"],
-      "@bmg-ds/icon": ["./packages/react/src/atomics/Icon/src"],
-      "@bmg-ds/skeleton": ["./packages/react/src/atomics/Skeleton/src"]
+      "@rarui/scripts": ["./packages/core/scripts"],
+      "@rarui/webpack": ["./packages/core/webpack"],
+      "@rarui/tokens": ["./packages/tokens"],
+      "@rarui/icons": ["./packages/icons"],
+      "@rarui/typings": ["./packages/core/typings/src"],
+      "@rarui/styles": ["./packages/styles/src"],
+      "@rarui/button": ["./packages/react/src/atomics/Button/src"],
+      "@rarui/icon": ["./packages/react/src/atomics/Icon/src"],
+      "@rarui/skeleton": ["./packages/react/src/atomics/Skeleton/src"]
     }
   },
   "include": ["packages", "jest.setup.ts"]
