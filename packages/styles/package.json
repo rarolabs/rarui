@@ -1,13 +1,13 @@
 {
-  "name": "@rarui/webpack",
+  "name": "@rarui/styles",
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "sideEffects": false,
   "scripts": {
-    "build": "yarn g:tsc --outDir dist --declaration true",
+    "build": "webpack",
     "clean": "rm -rf dist",
-    "g:webpack": "cd $INIT_CWD && webpack"
+    "version": "yarn version"
   },
   "homepage": "https://github.com/juniorconquista/boilerplate-design-system",
   "repository": {
@@ -18,18 +18,14 @@
     "url": "https://github.com/juniorconquista/boilerplate-design-system/issues"
   },
   "devDependencies": {
-    "@types/dashify": "^1.0.3",
-    "@types/glob": "^8.1.0",
-    "@types/webpack": "^5.28.5",
-    "@vanilla-extract/webpack-plugin": "^2.3.7",
-    "css-minimizer-webpack-plugin": "6.0.0",
-    "dashify": "^2.0.0",
-    "dts-bundle-generator": "^9.3.1",
-    "mini-css-extract-plugin": "^2.8.1",
-    "terser-webpack-plugin": "^5.3.10",
-    "ts-loader": "^9.5.1",
+    "@rarui/tokens": "workspace:^",
+    "@rarui/webpack": "workspace:^",
+    "@vanilla-extract/css": "^1.14.1",
+    "@vanilla-extract/dynamic": "^2.1.0",
+    "@vanilla-extract/recipes": "^0.5.2",
+    "@vanilla-extract/sprinkles": "^1.6.1",
+    "rainbow-sprinkles": "^0.17.1",
     "webpack": "^5.90.3",
-    "webpack-cli": "^5.1.4",
     "webpack-merge": "^5.10.0",
     "webpack-shell-plugin-next": "^2.3.1"
   }

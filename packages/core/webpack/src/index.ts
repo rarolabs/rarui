@@ -59,8 +59,4 @@ const webpack = {
   utils,
 };
 
-// module.exports = {
-//     utils: "bogaaa"
-// }
-
 export default webpack;

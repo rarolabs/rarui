@@ -2,23 +2,17 @@
   "shape": {
     "border": {
       "radius": {
+        "none": { "value": "0" },
         "2xx": { "value": "0.25rem" },
-        "xs": {
-          "value": "0.5rem"
-        },
-        "sm": {
-          "value": "1rem"
-        },
+        "xs": { "value": "0.5rem" },
+        "sm": { "value": "1rem" },
         "md": { "value": "1.5rem" },
         "lg": { "value": "2rem" },
         "xl": { "value": "3rem" },
         "2xl": { "value": "4rem" },
-        "pill": {
-          "value": "31.25rem"
-        },
+        "pill": { "value": "31.25rem" },
         "button": { "value": ".5rem" },
-        "input": { "value": ".5rem" },
-        "none": { "value": "0" }
+        "input": { "value": ".5rem" }
       },
       "width": {
         "1": { "value": "0.0625rem" },

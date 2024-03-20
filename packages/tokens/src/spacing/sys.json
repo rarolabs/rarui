@@ -1,49 +1,19 @@
 {
   "spacing": {
-    "3xs": {
-      "value": "{spacing.8}"
-    },
-    "2xs": {
-      "value": "{spacing.12}"
-    },
-    "xs": {
-      "value": "{spacing.16}"
-    },
-    "s": {
-      "value": "{spacing.24}"
-    },
-    "md": {
-      "value": "{spacing.32}"
-    },
-    "lg": {
-      "value": "{spacing.40}"
-    },
-    "xl": {
-      "value": "{spacing.48}"
-    },
-    "2xl": {
-      "value": "{spacing.56}"
-    },
-    "3xl": {
-      "value": "{spacing.64}"
-    },
-    "4xl": {
-      "value": "{spacing.80}"
-    },
-    "5xl": {
-      "value": "{spacing.96}"
-    },
-    "6xl": {
-      "value": "{spacing.112}"
-    },
-    "7xl": {
-      "value": "{spacing.124}"
-    },
-    "8xl": {
-      "value": "{spacing.144}"
-    },
-    "4xs": {
-      "value": "{spacing.4}"
-    }
+    "4xs": { "value": "{spacing.4}" },
+    "3xs": { "value": "{spacing.8}" },
+    "2xs": { "value": "{spacing.12}" },
+    "xs": { "value": "{spacing.16}" },
+    "s": { "value": "{spacing.24}" },
+    "md": { "value": "{spacing.32}" },
+    "lg": { "value": "{spacing.40}" },
+    "xl": { "value": "{spacing.48}" },
+    "2xl": { "value": "{spacing.56}" },
+    "3xl": { "value": "{spacing.64}" },
+    "4xl": { "value": "{spacing.80}" },
+    "5xl": { "value": "{spacing.96}" },
+    "6xl": { "value": "{spacing.112}" },
+    "7xl": { "value": "{spacing.124}" },
+    "8xl": { "value": "{spacing.144}" }
   }
 }

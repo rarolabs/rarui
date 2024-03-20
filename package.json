@@ -22,6 +22,7 @@
     "build:packages": "yarn build:tokens && yarn build:icons && babel-node -x .ts ./.scripts/build-packages",
     "build:icons": "turbo run build --filter=@rarui/icons",
     "build:tokens": "turbo run build --filter=@rarui/tokens",
+    "build:styles": "turbo run build --filter=@rarui/styles",
     "bump:check": "yarn version check",
     "bump:next": "yarn version apply --all --prerelease",
     "bump:stable": "yarn version apply --all",
