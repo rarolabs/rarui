@@ -1,13 +1,9 @@
 {
   "font": {
     "family": {
-      "sans": {
-        "value": "Geist, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', arial, sans-serif",
+      "inter": {
+        "value": "Inter, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', arial, sans-serif",
         "comment": "Font family value by default, to use in css and set components font."
-      },
-      "mono": {
-        "value": "Geist Mono, 'Roboto Mono', monospace",
-        "comment": "Monospace font family value for usage within code blocks and code elements."
       }
     },
     "size": {

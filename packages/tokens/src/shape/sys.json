@@ -3,7 +3,7 @@
     "border": {
       "radius": {
         "none": { "value": "0" },
-        "2xx": { "value": "0.25rem" },
+        "2xs": { "value": "0.25rem" },
         "xs": { "value": "0.5rem" },
         "sm": { "value": "1rem" },
         "md": { "value": "1.5rem" },
@@ -11,8 +11,8 @@
         "xl": { "value": "3rem" },
         "2xl": { "value": "4rem" },
         "pill": { "value": "31.25rem" },
-        "button": { "value": ".5rem" },
-        "input": { "value": ".5rem" }
+        "button": { "value": "0.5rem" },
+        "input": { "value": "0.5rem" }
       },
       "width": {
         "1": { "value": "0.0625rem" },
