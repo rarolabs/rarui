@@ -7,10 +7,10 @@ import glob from "glob";
 import { join } from "path";
 import { rootDir } from "../utils/constants";
 
-const paths = glob.sync(`${join(rootDir, "./packages/react/src/*/*/src")}`);
+const paths = glob.sync(`${join(rootDir, "./packages/*/react/src/*/*/src")}`);
 
 const packages = paths.reduce((prev: { [key: string]: string }, curr) => {
-  const key = `@rarui/${dashify(curr.split("/")[10])}`;
+  const key = `@rarui-react/${dashify(curr.split("/")[11])}`;
   prev[key] = curr;
   return prev;
 }, {});
@@ -18,6 +18,7 @@ const packages = paths.reduce((prev: { [key: string]: string }, curr) => {
 export const aliasItems = {
   "@rarui/tokens": join(rootDir, "./packages/tokens"),
   "@rarui/styles": join(rootDir, "./packages/styles/src"),
+  "@rarui/typings": join(rootDir, "./packages/core/typings/src"),
   "@rarui/webpack": join(rootDir, "./packages/core/webpack/src"),
   ...packages,
 };

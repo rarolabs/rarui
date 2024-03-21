@@ -8,9 +8,9 @@ export const externalLibs = {
 };
 
 export const externalPackages = {
-  "@bmg-ds/styles": "@bmg-ds/styles",
-  "@bmg-ds/icons": "@bmg-ds/icons",
-  "@bmg-ds/tokens": "@bmg-ds/tokens",
+  "@rarui/styles": "@rarui/styles",
+  "@rarui/icons": "@rarui/icons",
+  "@rarui/tokens": "@rarui/tokens",
 };
 
 export const externalItems = { ...externalLibs, ...externalPackages };

@@ -106,8 +106,7 @@ export const globalTheme = {
     },
   },
   fontFamily: {
-    sans: fontFamily.sans.value,
-    mono: fontFamily.mono.value,
+    inter: fontFamily.inter.value,
   },
   fontSize: {
     hero: {
@@ -196,7 +195,7 @@ export const globalTheme = {
     border: {
       radius: {
         none: shape.border.radius.none.value,
-        "2xx": shape.border.radius["2xx"].value,
+        "2xs": shape.border.radius["2xs"].value,
         xs: shape.border.radius.xs.value,
         sm: shape.border.radius.sm.value,
         md: shape.border.radius.md.value,

@@ -1,125 +1,331 @@
-import { style, styleVariants } from "@vanilla-extract/css";
+import { globalStyle, style } from "@vanilla-extract/css";
+import { recipe } from "@vanilla-extract/recipes";
 import { varsThemeBase } from "../../../themes";
+import { buttonVariants } from "./rarui-button.commons";
 
-const base = style({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  height: "2.125rem",
-  width: "fit-content",
-  textDecoration: "none",
-  cursor: "pointer",
-  boxSizing: "border-box",
-  // padding: `${varsThemeBase.spacing[2]} ${varsThemeBase.spacing[4]}`,
-  // gap: varsThemeBase.spacing[1],
-  // fontWeight: varsThemeBase.fontWeight.medium,
-  // lineHeight: varsThemeBase.lineWeight.body.base,
-  // fontSize: varsThemeBase.fontSize.body.base,
-  // fontFamily: varsThemeBase.fontFamily.sans,
-  // color: varsThemeBase.colors.neutral.textLow,
-  // borderRadius: varsThemeBase.shape.border.radius[2],
-  borderWidth: varsThemeBase.shape.border.width[1],
-  borderStyle: "solid",
-  // borderColor: varsThemeBase.colors.neutral.interactive,
-  // transition: `all ${varsThemeBase.motion.speed.fast} ease`,
-  ":disabled": {
-    // color: varsThemeBase.colors.neutral.textDisabled,
-    cursor: "not-allowed",
+export const button = recipe({
+  base: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "fit-content",
+    textDecoration: "none",
+    cursor: "pointer",
+    boxSizing: "border-box",
+    position: "relative",
+    overflow: "hidden",
+    gap: varsThemeBase.spacing["4xs"],
+    fontWeight: varsThemeBase.fontWeight.semiBold,
+    lineHeight: varsThemeBase.lineWeight.button.l,
+    fontSize: varsThemeBase.fontSize.button.l,
+    fontFamily: varsThemeBase.fontFamily.inter,
+    borderRadius: varsThemeBase.shape.border.radius["2xs"],
+    borderWidth: varsThemeBase.shape.border.width[1],
+    borderStyle: "solid",
+    borderColor: varsThemeBase.colors.surface.brand,
+    ":disabled": {
+      background: varsThemeBase.colors.surface.disabled,
+      borderColor: varsThemeBase.colors.surface.disabled,
+      color: varsThemeBase.colors.content.disabled,
+      cursor: "not-allowed",
+    },
   },
-  ":focus": {
-    // boxShadow: varsThemeBase.utils.focus,
+  variants: {
+    appearance: {
+      brand: {
+        backgroundColor: varsThemeBase.colors.surface.brand,
+        borderColor: varsThemeBase.colors.surface.brand,
+        color: varsThemeBase.colors.content["on-brand"],
+      },
+      "brand-secondary": {
+        backgroundColor: varsThemeBase.colors.surface["brand-secondary"],
+        borderColor: varsThemeBase.colors.surface["brand-secondary"],
+        color: varsThemeBase.colors.content["on-brand-secondary"],
+      },
+      danger: {
+        backgroundColor: varsThemeBase.colors.surface.error,
+        borderColor: varsThemeBase.colors.surface.error,
+        color: varsThemeBase.colors.content["on-error"],
+      },
+      success: {
+        backgroundColor: varsThemeBase.colors.surface.success,
+        borderColor: varsThemeBase.colors.surface.success,
+        color: varsThemeBase.colors.content["on-success"],
+      },
+      warning: {
+        backgroundColor: varsThemeBase.colors.surface.warning,
+        borderColor: varsThemeBase.colors.surface.warning,
+        color: varsThemeBase.colors.content["on-warning"],
+      },
+      neutral: {
+        backgroundColor: varsThemeBase.colors.surface.invert,
+        borderColor: varsThemeBase.colors.surface.invert,
+        color: varsThemeBase.colors.content.invert,
+      },
+      inverted: {
+        backgroundColor: varsThemeBase.colors.surface.primary,
+        borderColor: varsThemeBase.colors.surface.primary,
+        color: varsThemeBase.colors.content.primary,
+      },
+    },
+    size: {
+      large: {
+        padding: varsThemeBase.spacing.xs,
+        height: "3rem",
+        fontSize: varsThemeBase.fontSize.button.l,
+      },
+      medium: {
+        padding: varsThemeBase.spacing.xs,
+        height: "2.75rem",
+        fontSize: varsThemeBase.fontSize.button.m,
+      },
+      small: {
+        padding: varsThemeBase.spacing["3xs"],
+        height: "2rem",
+        fontSize: varsThemeBase.fontSize.button.s,
+      },
+    },
+    variant: {
+      solid: {},
+      outlined: {
+        backgroundColor: "transparent",
+      },
+      text: {
+        backgroundColor: "transparent",
+        textDecoration: "underline",
+        border: "none",
+        borderRadius: varsThemeBase.shape.border.radius.button,
+        ":hover": {
+          borderRadius: varsThemeBase.shape.border.radius.button,
+        },
+        ":active": {
+          borderRadius: varsThemeBase.shape.border.radius.button,
+        },
+      },
+      tonal: {
+        border: "none",
+        borderRadius: varsThemeBase.shape.border.radius.button,
+      },
+    },
   },
+  compoundVariants: [
+    // variant outlined
+    {
+      variants: {
+        appearance: "brand",
+        variant: "outlined",
+      },
+      style: {
+        ...buttonVariants.outlined.brand,
+        borderColor: varsThemeBase.colors.border.brand,
+      },
+    },
+    {
+      variants: {
+        appearance: "brand-secondary",
+        variant: "outlined",
+      },
+      style: {
+        ...buttonVariants.outlined["brand-secondary"],
+        borderColor: varsThemeBase.colors.border["brand-secondary"],
+      },
+    },
+    {
+      variants: {
+        appearance: "danger",
+        variant: "outlined",
+      },
+      style: {
+        ...buttonVariants.outlined.danger,
+        borderColor: varsThemeBase.colors.border.error,
+      },
+    },
+    {
+      variants: {
+        appearance: "success",
+        variant: "outlined",
+      },
+      style: {
+        ...buttonVariants.outlined.success,
+        borderColor: varsThemeBase.colors.border.success,
+      },
+    },
+    {
+      variants: {
+        appearance: "warning",
+        variant: "outlined",
+      },
+      style: {
+        ...buttonVariants.outlined.warning,
+        borderColor: varsThemeBase.colors.border.warning,
+      },
+    },
+    {
+      variants: {
+        appearance: "neutral",
+        variant: "outlined",
+      },
+      style: {
+        ...buttonVariants.outlined.neutral,
+        borderColor: varsThemeBase.colors.border.secondary,
+      },
+    },
+    {
+      variants: {
+        appearance: "inverted",
+        variant: "outlined",
+      },
+      style: {
+        ...buttonVariants.outlined.inverted,
+        borderColor: varsThemeBase.colors.border.invert,
+      },
+    },
+    // variant text
+    {
+      variants: {
+        appearance: "brand",
+        variant: "text",
+      },
+      style: buttonVariants.text.brand,
+    },
+    {
+      variants: {
+        appearance: "brand-secondary",
+        variant: "text",
+      },
+      style: buttonVariants.text["brand-secondary"],
+    },
+    {
+      variants: {
+        appearance: "danger",
+        variant: "text",
+      },
+      style: buttonVariants.text.danger,
+    },
+    {
+      variants: {
+        appearance: "success",
+        variant: "text",
+      },
+      style: buttonVariants.text.success,
+    },
+    {
+      variants: {
+        appearance: "warning",
+        variant: "text",
+      },
+      style: buttonVariants.text.warning,
+    },
+    {
+      variants: {
+        appearance: "neutral",
+        variant: "text",
+      },
+      style: {
+        ...buttonVariants.text.neutral,
+      },
+    },
+    {
+      variants: {
+        appearance: "inverted",
+        variant: "text",
+      },
+      style: buttonVariants.text.inverted,
+    },
+    // variant tonal
+    {
+      variants: {
+        appearance: "brand",
+        variant: "tonal",
+      },
+      style: {
+        ...buttonVariants.text.brand,
+        backgroundColor: varsThemeBase.colors.surface["brand-subdued"],
+      },
+    },
+    {
+      variants: {
+        appearance: "brand-secondary",
+        variant: "tonal",
+      },
+      style: {
+        ...buttonVariants.text["brand-secondary"],
+        backgroundColor:
+          varsThemeBase.colors.surface["brand-secondary-subdued"],
+      },
+    },
+    {
+      variants: {
+        appearance: "danger",
+        variant: "tonal",
+      },
+      style: {
+        ...buttonVariants.text.danger,
+        backgroundColor: varsThemeBase.colors.surface["error-subdued"],
+      },
+    },
+    {
+      variants: {
+        appearance: "success",
+        variant: "tonal",
+      },
+      style: {
+        ...buttonVariants.text.success,
+        backgroundColor: varsThemeBase.colors.surface["success-subdued"],
+      },
+    },
+    {
+      variants: {
+        appearance: "warning",
+        variant: "tonal",
+      },
+      style: {
+        ...buttonVariants.text.warning,
+        backgroundColor: varsThemeBase.colors.surface["warning-subdued"],
+      },
+    },
+    {
+      variants: {
+        appearance: "neutral",
+        variant: "tonal",
+      },
+      style: {
+        ...buttonVariants.text.neutral,
+        backgroundColor: varsThemeBase.colors.surface.secondary,
+      },
+    },
+    {
+      variants: {
+        appearance: "brand",
+        variant: "tonal",
+      },
+      style: {
+        ...buttonVariants.text.brand,
+        backgroundColor: varsThemeBase.colors.surface["invert-secondary"],
+      },
+    },
+  ],
 });
 
-export const appearance = styleVariants({
-  primary: [
-    base,
-    {
-      // background: varsThemeBase.colors.primary.interactive,
-      // borderColor: varsThemeBase.colors.primary.interactive,
-      // color: varsThemeBase.colors.neutral.background,
-      // ":hover": {
-      //   background: varsThemeBase.colors.primary.interactiveHover,
-      //   borderColor: varsThemeBase.colors.primary.interactiveHover,
-      // },
-      // ":active": {
-      //   background: varsThemeBase.colors.primary.interactivePressed,
-      //   borderColor: varsThemeBase.colors.primary.interactivePressed,
-      // },
-      // ":disabled": {
-      //   background: varsThemeBase.colors.neutral.surfaceDisabled,
-      //   borderColor: varsThemeBase.colors.primary.surfaceHighlight,
-      // },
-      // ":focus": {
-      //   borderColor: varsThemeBase.colors.primary.interactiveHover,
-      // },
-    },
-  ],
-  danger: [
-    base,
-    {
-      // background: varsThemeBase.colors.danger.surface,
-      // borderColor: varsThemeBase.colors.danger.interactive,
-      // color: varsThemeBase.colors.neutral.textLow,
-      // ":hover": {
-      //   background: varsThemeBase.colors.danger.surfaceHighlight,
-      //   borderColor: varsThemeBase.colors.danger.interactiveHover,
-      // },
-      // ":active": {
-      //   background: varsThemeBase.colors.danger.interactive,
-      //   borderColor: varsThemeBase.colors.danger.interactivePressed,
-      // },
-      // ":disabled": {
-      //   background: varsThemeBase.colors.neutral.surfaceDisabled,
-      //   borderColor: varsThemeBase.colors.danger.surfaceHighlight,
-      // },
-      // ":focus": {
-      //   borderColor: varsThemeBase.colors.danger.interactive,
-      // },
-    },
-  ],
-  neutral: [
-    base,
-    {
-      // background: varsThemeBase.colors.neutral.surface,
-      // borderColor: varsThemeBase.colors.neutral.interactive,
-      // color: varsThemeBase.colors.neutral.textLow,
-      // ":hover": {
-      //   backgroundColor: varsThemeBase.colors.neutral.surfaceHighlight,
-      //   borderColor: varsThemeBase.colors.neutral.interactiveHover,
-      // },
-      // ":active": {
-      //   backgroundColor: varsThemeBase.colors.neutral.interactive,
-      //   borderColor: varsThemeBase.colors.neutral.interactivePressed,
-      // },
-      // ":disabled": {
-      //   background: varsThemeBase.colors.neutral.surfaceDisabled,
-      //   borderColor: varsThemeBase.colors.neutral.surfaceHighlight,
-      // },
-      // ":focus": {
-      //   borderColor: varsThemeBase.colors.primary.interactive,
-      // },
-    },
-  ],
-  transparent: [
-    base,
-    {
-      // background: "transparent",
-      // borderColor: "transparent",
-      // color: varsThemeBase.colors.neutral.textLow,
-      // ":hover": {
-      //   backgroundColor: varsThemeBase.colors.neutral.surface,
-      //   borderColor: varsThemeBase.colors.neutral.interactiveHover,
-      // },
-      // ":active": {
-      //   backgroundColor: varsThemeBase.colors.neutral.surfaceHighlight,
-      //   borderColor: varsThemeBase.colors.neutral.interactivePressed,
-      // },
-      // ":disabled": {
-      //   color: varsThemeBase.colors.neutral.textDisabled,
-      //   background: "transparent",
-      //   borderColor: "transparent",
-      // },
-    },
-  ],
+export const overlay = style({
+  position: "absolute",
+  top: -1,
+  left: -1,
+  bottom: -1,
+  right: -1,
+  pointerEvents: "none",
+  opacity: 0,
+  borderRadius: varsThemeBase.shape.border.radius["2xs"],
+});
+
+globalStyle(`${button()}:hover ${overlay}`, {
+  opacity: 1,
+  backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
+  borderColor: varsThemeBase.colors.surface["on-brand-hover"],
+});
+
+globalStyle(`${button()}:active ${overlay}`, {
+  opacity: 1,
+  backgroundColor: varsThemeBase.colors.surface["on-brand-press"],
+  borderColor: varsThemeBase.colors.surface["on-brand-press"],
 });
