@@ -6,7 +6,8 @@ RarUI Styles deprive all styles needed to build components.
 
 #### 🎉 New features
 
-- Added new style pack for button component. ([#3](https://git.rarolabs.com.br/frontend/rarui/pull/3) by [@junior](https://git.rarolabs.com.br/junior))
+- Created new `ThemeProvider` component. ([#5](https://git.rarolabs.com.br/frontend/rarui/pull/5) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new style pack for `button` component. ([#3](https://git.rarolabs.com.br/frontend/rarui/pull/3) by [@junior](https://git.rarolabs.com.br/junior))
 - Added new theme dark. ([#3](https://git.rarolabs.com.br/frontend/rarui/pull/3) by [@junior](https://git.rarolabs.com.br/junior))
 
 #### 📚 3rd party library updates

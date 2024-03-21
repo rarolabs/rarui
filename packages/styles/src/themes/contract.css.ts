@@ -93,8 +93,7 @@ export const vars = createGlobalThemeContract(
       },
     },
     fontFamily: {
-      sans: "",
-      mono: "",
+      inter: "",
     },
     fontSize: {
       hero: {
@@ -183,7 +182,7 @@ export const vars = createGlobalThemeContract(
       border: {
         radius: {
           none: "",
-          "2xx": "",
+          "2xs": "",
           xs: "",
           sm: "",
           md: "",
