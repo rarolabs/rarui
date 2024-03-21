@@ -13,11 +13,7 @@
     "clean": "rm -rf dist",
     "version": "yarn version"
   },
-  "dependencies": {
-    "@rarui/skeleton": "workspace:^"
-  },
   "peerDependencies": {
-    "@rarui/styles": "workspace:^",
     "react": "^16.8 || ^17.0 || ^18.0",
     "react-dom": "^16.8 || ^17.0 || ^18.0"
   },
@@ -30,9 +26,6 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui//issues"
   },
   "devDependencies": {
-    "@rarui/icon": "workspace:^",
-    "@rarui/icons": "workspace:^",
-    "@rarui/skeleton": "workspace:^",
     "@rarui/webpack": "workspace:^"
   }
 }
