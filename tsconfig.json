@@ -37,13 +37,13 @@
     "paths": {
       "@rarui/scripts": ["./packages/core/scripts"],
       "@rarui/webpack": ["./packages/core/webpack"],
+      "@rarui/typings": ["./packages/core/typings/src"],
       "@rarui/tokens": ["./packages/tokens"],
       "@rarui/icons": ["./packages/icons"],
-      "@rarui/typings": ["./packages/core/typings/src"],
       "@rarui/styles": ["./packages/styles/src"],
-      "@rarui/button": ["./packages/react/src/atomics/Button/src"],
-      "@rarui/icon": ["./packages/react/src/atomics/Icon/src"],
-      "@rarui/skeleton": ["./packages/react/src/atomics/Skeleton/src"]
+      "@rarui-react/button": [
+        "./packages/implementations/react/src/atomic/Button/src"
+      ]
     }
   },
   "include": ["packages", "jest.setup.ts"]

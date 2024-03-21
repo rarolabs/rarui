@@ -7,7 +7,8 @@
     "packages": [
       "packages/*",
       "packages/core/*",
-      "packages/*/*/atomics/*"
+      "packages/implementations/*",
+      "packages/implementations/*/*/atomic/*"
     ]
   },
   "scripts": {
@@ -55,13 +56,13 @@
     "@babel/register": "^7.23.7",
     "@commitlint/cli": "^19.1.0",
     "@commitlint/config-conventional": "^19.1.0",
-    "@storybook/addon-essentials": "^8.0.0",
-    "@storybook/addon-interactions": "^8.0.0",
-    "@storybook/addon-links": "^8.0.0",
-    "@storybook/blocks": "^8.0.0",
-    "@storybook/react": "^8.0.0",
-    "@storybook/react-webpack5": "^8.0.0",
-    "@storybook/test": "^8.0.0",
+    "@storybook/addon-essentials": "^7.6.4",
+    "@storybook/addon-interactions": "^7.6.4",
+    "@storybook/addon-links": "^7.6.4",
+    "@storybook/blocks": "^7.6.4",
+    "@storybook/react": "^7.6.4",
+    "@storybook/react-webpack5": "^7.6.4",
+    "@storybook/test": "^7.6.4",
     "@testing-library/react": "^14.2.1",
     "@types/babel__core": "^7",
     "@types/babel__register": "^7",
@@ -87,7 +88,8 @@
     "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
-    "storybook": "^8.0.0",
+    "storybook": "^7.6.4",
+    "storybook-dark-mode": "^4.0.1",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "turbo": "^1.12.5",
