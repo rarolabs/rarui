@@ -18,7 +18,7 @@
     "browser": true
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "testing-library", "spellcheck", "jest"],
+  "plugins": ["react-hooks", "@typescript-eslint", "testing-library", "spellcheck", "jest"],
   "extends": [
     "plugin:react/recommended",
     "plugin:mdx/recommended",
@@ -52,7 +52,7 @@
       }
     },
     {
-      "files": ["bmg-*.css.ts"],
+      "files": ["rarui-*.css.ts"],
       "rules": {
         "camelcase": "off",
         "babel/camelcase": "off"
