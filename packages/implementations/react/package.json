@@ -26,6 +26,6 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui//issues"
   },
   "devDependencies": {
-    "@bmg-ds/webpack": "workspace:^"
+    "@rarui/webpack": "workspace:^"
   }
 }
