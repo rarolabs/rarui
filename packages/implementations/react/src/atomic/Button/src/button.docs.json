@@ -1,0 +1,32 @@
+{
+  "id": "button",
+  "name": "Button",
+  "totalProps": 1,
+  "packageName": "@bmg-ds/button",
+  "version": "1.0.0",
+  "docLink": "https://bmg.com.br/documentation/atomics-components/button",
+  "props": [
+    {
+      "default": "button",
+      "description": "The underlying element to render — either a HTML element name or a React component.",
+      "anyOf": [
+        {
+          "enum": ["button", "a"],
+          "type": "string"
+        },
+        {
+          "type": "React.ElementType"
+        }
+      ],
+      "title": "as",
+      "required": false
+    }
+  ],
+  "subComponents": [
+    {
+      "name": "Button.Skeleton",
+      "totalProps": 0,
+      "props": []
+    }
+  ]
+}
