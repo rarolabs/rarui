@@ -1,0 +1,11 @@
+releases:
+  "@rarui-react/button": patch
+  "@rarui-react/components": patch
+  "@rarui/scripts": patch
+  "@rarui/styles": patch
+  "@rarui/tokens": patch
+  "@rarui/typings": patch
+  "@rarui/webpack": patch
+
+declined:
+  - "@rarui/design-system"
