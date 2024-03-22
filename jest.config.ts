@@ -7,10 +7,11 @@ const config: Config.InitialOptions = {
   moduleNameMapper: {
     // core
     "@rarui/typings": "<rootDir>/packages/core/typings/src",
+    "@rarui/webpack": "<rootDir>/packages/core/webpack/src",
     // commons
     "@rarui/styles": "<rootDir>/packages/styles/src",
     // atomics
-    "@rarui/button": "<rootDir>/packages/react/src/atomics/Button/src",
+    "@rarui-react/button": "<rootDir>/packages/react/src/atomics/Button/src",
     // composites
   },
   transform: {
