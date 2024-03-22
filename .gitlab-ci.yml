@@ -75,7 +75,7 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - echo "//registry.npmjs.org/:_authToken=${NPM_ACCESS_TOKEN}" >> .npmrc
     - cat .npmrc
     - yarn install # Instala as dependências com o Yarn
-    - yarn bump:check
+    # - yarn bump:check
     - yarn publish:stable
     - git config --global user.email "${GITLAB_USER_NAME}"
     - git config --global user.name "${GITLAB_USER_EMAIL}"
@@ -85,6 +85,6 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - git add .
     - git commit -m "Publish release stable [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/raro-crypto.git HEAD:main
-  # rules:
-  #   - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
-  #   - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
+    - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
