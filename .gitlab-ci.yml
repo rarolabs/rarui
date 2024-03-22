@@ -75,6 +75,7 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - echo "//registry.npmjs.org/:_authToken=${NPM_ACCESS_TOKEN}" >> .npmrc
     - cat .npmrc
     - yarn install # Instala as dependências com o Yarn
+    - yarn build:webpack
     # - yarn bump:check
     - yarn publish:stable
     - git config --global user.email "${GITLAB_USER_NAME}"
