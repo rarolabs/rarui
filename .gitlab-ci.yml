@@ -21,7 +21,6 @@ image: node:lts
 stages: # List of stages for jobs, and their order of execution
   - setup
   - check-version
-  - build
   - quality
   - deploy
 
@@ -44,16 +43,6 @@ check-version-job:
     - yarn bump:check
   needs:
     - job: setup-job
-  only:
-    - merge_requests
-
-build-job: # This job runs in the build stage, which runs first.
-  stage: build
-  script:
-    - yarn build
-  needs:
-    - job: setup-job
-    - job: check-version-job
   only:
     - merge_requests
 
