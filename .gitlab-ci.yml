@@ -64,7 +64,6 @@ unit-test-job: # This job runs in the test stage.
   needs:
     - job: setup-job
     - job: check-version-job
-    - job: build-job
   only:
     - merge_requests
 
@@ -75,7 +74,6 @@ lint-job: # This job also runs in the test stage.
   needs:
     - job: setup-job
     - job: check-version-job
-    - job: build-job
   only:
     - merge_requests
 
