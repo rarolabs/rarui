@@ -115,4 +115,4 @@ We encourage all ideas, suggestions and feedback. If you want to collaborate wit
 
 Licensed under the MIT License, Copyright © 2024-present.
 
-See [LICENSE](./LICENSE) for more information...
+See [LICENSE](./LICENSE) for more information.

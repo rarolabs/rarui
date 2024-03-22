@@ -72,4 +72,4 @@ Once you finish making changes to our source tokens, you must generate a build t
 
 ## 🤝 Contributing
 
-We encourage all ideas, suggestions and feedback. If you want to collaborate with us, start by reading our [contribution guidelines](https://git.rarolabs.com.br/frontend/rarui/blob/master/CONTRIBUTING.md)...
+We encourage all ideas, suggestions and feedback. If you want to collaborate with us, start by reading our [contribution guidelines](https://git.rarolabs.com.br/frontend/rarui/blob/master/CONTRIBUTING.md).
