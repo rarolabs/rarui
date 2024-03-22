@@ -1,5 +1,5 @@
 import path from "path";
-import { plugins, rules, configuration, utils } from "@rarui/webpack";
+import { plugins, rules, configuration, utils } from "@rarui/webpack/src";
 
 const baseConfig = {
   entry: {
