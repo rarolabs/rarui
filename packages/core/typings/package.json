@@ -1,6 +1,6 @@
 {
   "name": "@rarui/typings",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.1",
   "license": "MIT",
   "main": "dist/index.js",
   "sideEffects": false,
@@ -19,5 +19,6 @@
   },
   "devDependencies": {
     "@rarui/webpack": "workspace:^"
-  }
+  },
+  "stableVersion": "0.0.0"
 }

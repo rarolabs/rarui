@@ -21,7 +21,6 @@ image: node:lts
 stages: # List of stages for jobs, and their order of execution
   - setup
   - check-version
-  - build
   - quality
   - deploy
 
@@ -47,19 +46,10 @@ check-version-job:
   only:
     - merge_requests
 
-build-job: # This job runs in the build stage, which runs first.
-  stage: build
-  script:
-    - yarn build
-  needs:
-    - job: setup-job
-    - job: check-version-job
-  only:
-    - merge_requests
-
 unit-test-job: # This job runs in the test stage.
   stage: quality # It only starts when the job in the build stage completes successfully.
   script:
+    - yarn build:tokens
     - yarn test:ci
   needs:
     - job: setup-job
@@ -83,6 +73,8 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
   script:
     - printenv
     - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
+    - echo "//registry.npmjs.org/:_authToken=${NPM_ACCESS_TOKEN}" >> .npmrc
+    - npm publish
     - cat .npmrc
     - yarn install # Instala as dependências com o Yarn
     - yarn bump:check

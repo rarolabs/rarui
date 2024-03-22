@@ -1,6 +1,6 @@
 {
   "name": "@rarui/webpack",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.1",
   "license": "MIT",
   "main": "dist/index.js",
   "sideEffects": false,
@@ -32,5 +32,6 @@
     "webpack-cli": "^5.1.4",
     "webpack-merge": "^5.10.0",
     "webpack-shell-plugin-next": "^2.3.1"
-  }
+  },
+  "stableVersion": "0.0.0"
 }

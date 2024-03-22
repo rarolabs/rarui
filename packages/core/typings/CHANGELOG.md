@@ -2,7 +2,7 @@
 
 This package is intended for internal use in creating components with polymorphic typing.
 
-## 2023-12-13 `1.0.0`
+## 2024-03-22 `1.0.0`
 
 #### 🎉 New features
 
