@@ -7,10 +7,11 @@ import glob from "glob";
 import { join } from "path";
 import { rootDir } from "../utils/constants";
 
-const paths = glob.sync(`${join(rootDir, "./packages/*/react/src/*/*/src")}`);
+const paths = glob.sync(`${join(rootDir, "./packages/*/**/src/*/*/src")}`);
 
 const packages = paths.reduce((prev: { [key: string]: string }, curr) => {
-  const key = `@rarui-react/${dashify(curr.split("/")[11])}`;
+  const parts = curr.split("/");
+  const key = `@rarui-react/${dashify(parts[parts.length - 2])}`;
   prev[key] = curr;
   return prev;
 }, {});
