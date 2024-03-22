@@ -72,7 +72,9 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
   environment: production
   script:
     - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
-    - echo "//registry.npmjs.org/:_authToken=${NPM_ACCESS_TOKEN}" >> .npmrc
+    # - echo "//registry.npmjs.org/:_authToken=${NPM_ACCESS_TOKEN}" >> .npmrc
+    - echo "//${CI_SERVER_HOST}/api/v4/packages/npm/:_authToken=${NPM_ACCESS_TOKEN}">>.npmrc
+    - echo "//${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${NPM_ACCESS_TOKEN}">>.npmrc
     - cat .npmrc
     - yarn install # Instala as dependências com o Yarn
     # - yarn bump:check
