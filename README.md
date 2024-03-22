@@ -100,12 +100,12 @@ To standardize our commits we use [Conventional Commits](https://www.conventiona
 ## 🖥️ Release process
 
 While our release schedule is flexible, our general strategy is to release several larger improvements inside each stable release. In order to provide faster access to fixes and enhancements between main releases we provide release candidates which are published on every merge into `master`.
-The step by step to perform a release release can be found at the [link](https://github.com/TiendaNube/nimbus-design-system/blob/master/RELEASE_PROCESS.md).
+The step by step to perform a release release can be found at the [link](https://git.rarolabs.com.br/frontend/rarui/-/blob/main/RELEASE_PROCESS.md).
 
 ## 🔗 Useful links
 
-- [Design Tokens](https://github.com/TiendaNube/nimbus-design-system/tree/master/packages/tokens). We use tokens to store all our primitives (colors, spacing values, grid system, etc.).
-- [Nimbus Icons](https://github.com/TiendaNube/nimbus-icons). Our very own open-source icon library.
+- [Design Tokens](https://git.rarolabs.com.br/frontend/rarui/-/tree/main/packages/tokens). We use tokens to store all our primitives (colors, spacing values, grid system, etc.).
+- [Icons](https://git.rarolabs.com.br/frontend/rarui/-/tree/main/packages/icons). Our very own open-source icon library.
 
 ## 🤝 Contributing
 

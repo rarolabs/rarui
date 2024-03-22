@@ -5,7 +5,7 @@ import {
   Docgen,
   DocgenOptions,
   defaultCompilerOptionsDocgen,
-} from "@nimbus-ds/scripts/src";
+} from "@rarui/scripts/src";
 import tsconfig from "../tsconfig.json";
 
 try {
