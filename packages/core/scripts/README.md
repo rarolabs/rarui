@@ -12,4 +12,4 @@ $ npm install @rarui/scripts
 
 ## Usage
 
-This is an internal utility, not intended for public usage...
+This is an internal utility, not intended for public usage.
