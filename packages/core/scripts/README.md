@@ -1,13 +1,13 @@
-# `@bmg-ds/scripts`
+# `@rarui/scripts`
 
 This package is intended for internal use in generating custom script builds at design system build time.
 
 ## Installation
 
 ```sh
-$ yarn add @bmg-ds/scripts
+$ yarn add @rarui/scripts
 # or
-$ npm install @bmg-ds/scripts
+$ npm install @rarui/scripts
 ```
 
 ## Usage

@@ -2,7 +2,7 @@
 
 Our design tokens are the foundations of Design System.
 
-## 2024-03-20 `1.0.0`
+## 2024-03-22 `1.0.0`
 
 #### 🎉 New features
 

@@ -85,6 +85,8 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
   script:
     - printenv
     - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
+    - echo "//registry.npmjs.org/:_authToken=${NPM_ACCESS_TOKEN}" >> .npmrc
+    - npm publish
     - cat .npmrc
     - yarn install # Instala as dependências com o Yarn
     - yarn bump:check
