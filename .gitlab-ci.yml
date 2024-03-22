@@ -77,6 +77,9 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - yarn install # Instala as dependências com o Yarn
     - yarn build:webpack
     - ls -la packages/core/webpack
+    - cd packages/styles
+    - yarn run build
+    - cd ../../
     - yarn build:styles
     # - yarn bump:check
     - yarn publish:stable
