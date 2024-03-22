@@ -71,10 +71,8 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
   stage: deploy # It only runs when *both* jobs in the test stage complete successfully.
   environment: production
   script:
-    - printenv
     - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
     - echo "//registry.npmjs.org/:_authToken=${NPM_ACCESS_TOKEN}" >> .npmrc
-    - npm publish
     - cat .npmrc
     - yarn install # Instala as dependências com o Yarn
     - yarn bump:check
@@ -87,6 +85,6 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - git add .
     - git commit -m "Publish release stable [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/raro-crypto.git HEAD:main
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
-    - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
+  # rules:
+  #   - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
+  #   - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
