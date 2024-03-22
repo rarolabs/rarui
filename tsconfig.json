@@ -35,8 +35,8 @@
     "types": ["node", "jest"],
     "typeRoots": ["./node_modules/@types", "./types"],
     "paths": {
-      "@rarui/scripts": ["./packages/core/scripts"],
-      "@rarui/webpack": ["./packages/core/webpack"],
+      "@rarui/scripts": ["./packages/core/scripts/src"],
+      "@rarui/webpack": ["./packages/core/webpack/src"],
       "@rarui/typings": ["./packages/core/typings/src"],
       "@rarui/tokens": ["./packages/tokens"],
       "@rarui/icons": ["./packages/icons"],
