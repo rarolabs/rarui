@@ -3,6 +3,11 @@
   "version": "1.0.0-rc.1",
   "license": "MIT",
   "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "yarn g:tsc --outDir dist --declaration true",
