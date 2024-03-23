@@ -2,6 +2,16 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-03-23 `1.1.0`
+
+#### 🎉 New features
+
+- Added new style pack for `link` component. ([#8](https://git.rarolabs.com.br/frontend/rarui/pull/8) by [@junior](https://git.rarolabs.com.br/junior))
+
+#### 🐛 Bug fixes
+
+- Correct the name of the theme variable from `lineWeight` to `lineHeight`. ([#8](https://git.rarolabs.com.br/frontend/rarui/pull/8) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-03-22 `1.0.0`
 
 #### 🎉 New features

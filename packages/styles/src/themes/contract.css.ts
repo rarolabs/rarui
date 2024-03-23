@@ -131,7 +131,7 @@ export const vars = createGlobalThemeContract(
       semiBold: "",
       bold: "",
     },
-    lineWeight: {
+    lineHeight: {
       hero: {
         caption: "",
       },

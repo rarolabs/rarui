@@ -16,7 +16,7 @@ export const button = recipe({
     overflow: "hidden",
     gap: varsThemeBase.spacing["4xs"],
     fontWeight: varsThemeBase.fontWeight.semiBold,
-    lineHeight: varsThemeBase.lineWeight.button.l,
+    lineHeight: varsThemeBase.lineHeight.button.l,
     fontSize: varsThemeBase.fontSize.button.l,
     fontFamily: varsThemeBase.fontFamily.inter,
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
