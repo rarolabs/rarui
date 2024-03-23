@@ -1,12 +1,11 @@
 {
-  "name": "@rarui-react/button",
-  "version": "1.0.1",
+  "name": "@rarui-react/link",
+  "version": "0.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
     "dist",
-    "README.md",
-    "CHANGELOG.md"
+    "README.md"
   ],
   "sideEffects": false,
   "scripts": {
@@ -27,6 +26,6 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
   },
   "devDependencies": {
-    "@rarui/webpack": "workspace:^"
+    "@nimbus-ds/webpack": "workspace:^"
   }
 }

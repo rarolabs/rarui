@@ -13,7 +13,6 @@ const mockedConsoleLog = jest.fn();
 
 describe("GIVEN <Button />", () => {
   beforeAll(() => {
-    // eslint-disable-next-line
     jest.spyOn(console, "error").mockImplementation(mockedConsoleLog);
   });
 
