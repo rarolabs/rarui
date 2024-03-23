@@ -45,7 +45,7 @@ describe("GIVEN <Button />", () => {
       ).toContain("appearance_brand");
     });
 
-    it("AND should correctly render the appearance brand", () => {
+    it("AND should correctly render the appearance brand-secondary", () => {
       makeSut({ appearance: "brand-secondary", children: "button" });
       expect(
         screen.getByRole("button", { name: "button" }).getAttribute("class"),
@@ -155,10 +155,11 @@ describe("GIVEN <Button />", () => {
     });
   });
 
-  describe("THEN should correctly render the submitted variant", () => {
-    it("THEN should correctly render the variant tonal", () => {
+  describe("THEN should validate that the button works", () => {
+    it("THEN should display a console log if the element sent in the as property is not a button or link", () => {
       makeSut({
         children: "button",
+        // eslint-disable-next-line
         // @ts-ignore
         as: "p",
       });
