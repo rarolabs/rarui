@@ -8,7 +8,7 @@ const elevation = tokens.elevation.light;
 const fontFamily = tokens.font.family;
 const fontSize = tokens.font.size;
 const fontWeight = tokens.font.weight;
-const lineWeight = tokens.line.height;
+const lineHeight = tokens.line.height;
 const { spacing, breakpoint, zIndex, shape } = tokens;
 
 export const globalTheme = {
@@ -144,34 +144,34 @@ export const globalTheme = {
     semiBold: fontWeight["semi-bold"].value,
     bold: fontWeight.bold.value,
   },
-  lineWeight: {
+  lineHeight: {
     hero: {
-      caption: lineWeight.hero.value,
+      caption: lineHeight.hero.value,
     },
     body: {
-      xxs: lineWeight.body.xxs.value,
-      xs: lineWeight.body.xs.value,
-      s: lineWeight.body.s.value,
-      m: lineWeight.body.m.value,
-      l: lineWeight.body.l.value,
-      xl: lineWeight.body.xl.value,
+      xxs: lineHeight.body.xxs.value,
+      xs: lineHeight.body.xs.value,
+      s: lineHeight.body.s.value,
+      m: lineHeight.body.m.value,
+      l: lineHeight.body.l.value,
+      xl: lineHeight.body.xl.value,
     },
     heading: {
-      xs: lineWeight.heading.xs.value,
-      s: lineWeight.heading.s.value,
-      m: lineWeight.heading.m.value,
-      l: lineWeight.heading.l.value,
-      xl: lineWeight.heading.xl.value,
+      xs: lineHeight.heading.xs.value,
+      s: lineHeight.heading.s.value,
+      m: lineHeight.heading.m.value,
+      l: lineHeight.heading.l.value,
+      xl: lineHeight.heading.xl.value,
     },
     button: {
-      s: lineWeight.button.s.value,
-      m: lineWeight.button.m.value,
-      l: lineWeight.button.l.value,
+      s: lineHeight.button.s.value,
+      m: lineHeight.button.m.value,
+      l: lineHeight.button.l.value,
     },
     label: {
-      s: lineWeight.label.s.value,
-      m: lineWeight.label.m.value,
-      l: lineWeight.label.l.value,
+      s: lineHeight.label.s.value,
+      m: lineHeight.label.m.value,
+      l: lineHeight.label.l.value,
     },
   },
   elevation: {

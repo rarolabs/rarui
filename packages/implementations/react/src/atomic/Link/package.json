@@ -1,12 +1,11 @@
 {
-  "name": "@rarui-react/button",
-  "version": "1.0.1",
+  "name": "@rarui-react/link",
+  "version": "1.0.0-rc.1",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
     "dist",
-    "README.md",
-    "CHANGELOG.md"
+    "README.md"
   ],
   "sideEffects": false,
   "scripts": {
@@ -28,5 +27,6 @@
   },
   "devDependencies": {
     "@rarui/webpack": "workspace:^"
-  }
+  },
+  "stableVersion": "0.0.0"
 }
