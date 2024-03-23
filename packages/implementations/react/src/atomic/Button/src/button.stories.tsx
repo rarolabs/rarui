@@ -37,6 +37,30 @@ export const basic: Story = {
   },
 };
 
+export const large: Story = {
+  args: {
+    children: "Label",
+    size: "large",
+    appearance: "brand-secondary",
+  },
+};
+
+export const medium: Story = {
+  args: {
+    children: "Label",
+    size: "medium",
+    appearance: "brand-secondary",
+  },
+};
+
+export const small: Story = {
+  args: {
+    children: "Label",
+    size: "small",
+    appearance: "brand-secondary",
+  },
+};
+
 export const disabled: Story = {
   args: {
     disabled: true,
@@ -53,23 +77,34 @@ export const asLink = {
   },
 };
 
-export const primary: Story = {
+export const outlined: Story = {
   args: {
     children: "Label",
-    appearance: "brand",
+    variant: "outlined",
+    appearance: "success",
   },
 };
 
-export const brandSecondary: Story = {
+export const solid: Story = {
   args: {
     children: "Label",
-    appearance: "brand-secondary",
+    variant: "solid",
+    appearance: "success",
   },
 };
 
-export const danger: Story = {
+export const text: Story = {
   args: {
     children: "Label",
-    appearance: "danger",
+    variant: "text",
+    appearance: "success",
+  },
+};
+
+export const tonal: Story = {
+  args: {
+    children: "Label",
+    variant: "tonal",
+    appearance: "success",
   },
 };
