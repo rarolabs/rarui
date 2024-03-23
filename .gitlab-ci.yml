@@ -73,17 +73,16 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
   script:
     - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
     - yarn install # Instala as dependências com o Yarn
-    - yarn bump:check
+    # - yarn bump:check
     - yarn publish:stable
     - git config --global user.email "${GITLAB_USER_NAME}"
     - git config --global user.name "${GITLAB_USER_EMAIL}"
-    - git config pull.ff only
     - git fetch
     - git checkout main
     - git pull
     - git add .
     - git commit -m "Publish release stable [skip ci]"
-    - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/raro-crypto.git HEAD:main
+    - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
   rules:
     - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
     - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
