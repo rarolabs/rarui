@@ -11,8 +11,11 @@
   "sideEffects": false,
   "scripts": {
     "build": "yarn g:webpack",
-    "clean": "rm -rf dist",
-    "version": "yarn version"
+    "clean": "rm -rf dist && rm -rf storybook-static",
+    "version": "yarn version",
+    "storybook:dev": "yarn g:storybook dev -p 6007 --config-dir ./.storybook",
+    "storybook:build": "yarn g:storybook build --config-dir ../../../.storybook",
+    "storybook:move": "mv storybook-static ../../../storybook-static/react"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17.0 || ^18.0",

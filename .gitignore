@@ -5,11 +5,11 @@
 node_modules
 dist
 tmp
+storybook-static
 test-output.*
 .turbo
 .cache
 .parcel-cache
-.build-storybook
 .env
 .eslintcache
 *.vsix

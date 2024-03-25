@@ -5,22 +5,25 @@ import { VanillaExtractPlugin } from "@vanilla-extract/webpack-plugin";
 import { convertTsConfigPathsToWebpackAliases } from "./utils";
 
 const config: StorybookConfig = {
-  stories: [
-    "../packages/implementations/react/*/**/*.stories.@(js|jsx|ts|tsx)",
-  ],
+  stories: ["./introduction.mdx"],
+  refs: {
+    react: {
+      title: "@rarui-react",
+      url: "http://localhost:6007",
+    },
+  },
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
     "storybook-dark-mode",
+    "@storybook/addon-webpack5-compiler-swc",
   ],
   framework: {
     name: "@storybook/react-webpack5",
     options: {
-      builder: {
-        useSWC: true,
-      },
+      builder: {},
     },
   },
   docs: {

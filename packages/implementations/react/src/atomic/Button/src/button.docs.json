@@ -3,7 +3,7 @@
   "name": "Button",
   "totalProps": 0,
   "packageName": "@rarui-react/button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "docLink": "https://bmg.com.br/documentation/src-components/button",
   "props": [],
   "subComponents": []

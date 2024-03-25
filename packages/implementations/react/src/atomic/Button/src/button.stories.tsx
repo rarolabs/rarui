@@ -10,8 +10,8 @@ export const Basic: React.FC<ButtonProps> = forwardRef(
 ) as React.FC<ButtonProps>;
 Basic.displayName = "Button";
 
-const meta: Meta<typeof Basic> = {
-  title: "Atomics/Button",
+const meta = {
+  title: "Atomic/Button",
   component: Basic,
   argTypes: {
     as: {
@@ -25,7 +25,7 @@ const meta: Meta<typeof Basic> = {
     children: { control: { type: "text" } },
   },
   tags: ["autodocs"],
-};
+} satisfies Meta<typeof Basic>;
 
 export default meta;
 type Story = StoryObj<typeof Basic>;
