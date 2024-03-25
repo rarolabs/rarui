@@ -11,6 +11,10 @@ const config: StorybookConfig = {
       title: "@rarui-react",
       url: "http://localhost:6007",
     },
+    vuejs: {
+      title: "@rarui-vuejs",
+      url: "http://localhost:6008",
+    },
   },
   addons: [
     "@storybook/addon-links",
