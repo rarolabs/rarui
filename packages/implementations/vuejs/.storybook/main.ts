@@ -1,14 +1,24 @@
 import type { StorybookConfig } from "@storybook/vue3-vite";
+import path from "path";
 
-import { join, dirname } from "path";
+export const convertTsConfigPathsToWebpackAliases = () => {
+  const rootDir = path.resolve(__dirname, "../");
+  const paths = [];
 
-/**
- * This function is used to resolve the absolute path of a package.
- * It is needed in projects that use Yarn PnP or are set up within a monorepo.
- */
-function getAbsolutePath(value: string): any {
-  return dirname(require.resolve(join(value, "package.json")));
-}
+  paths["@rarui/tokens"] = path.join(rootDir, "../../../packages/tokens");
+  paths["@rarui/styles"] = path.join(
+    rootDir,
+    "../../../packages/styles/src/index.ts",
+  );
+  paths["@rarui/webpack"] = path.join(
+    rootDir,
+    "../../../packages/core/webpack/src/index.ts",
+  );
+
+  console.log("paths", paths);
+  return paths;
+};
+
 const config: StorybookConfig = {
   stories: [
     "../src/**/*.mdx",
@@ -16,17 +26,26 @@ const config: StorybookConfig = {
     "../src/*/**/*.stories.@(js|jsx|ts|tsx)",
   ],
   addons: [
-    getAbsolutePath("@storybook/addon-links"),
-    getAbsolutePath("@storybook/addon-essentials"),
-    // getAbsolutePath("@chromatic-com/storybook"),
-    getAbsolutePath("@storybook/addon-interactions"),
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
   ],
   framework: {
-    name: getAbsolutePath("@storybook/vue3-vite"),
+    name: "@storybook/vue3-vite",
     options: {},
   },
   docs: {
     autodocs: "tag",
+  },
+  async viteFinal(config, options) {
+    config.resolve = {
+      ...config.resolve,
+      alias: {
+        ...config.resolve?.alias,
+        ...convertTsConfigPathsToWebpackAliases(),
+      },
+    };
+    return config;
   },
 };
 export default config;
