@@ -10,7 +10,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "@rarui-vuejs/link",
+      name: "@rarui-vuejs/components",
       fileName: "index",
     },
     rollupOptions: {

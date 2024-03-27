@@ -1,6 +1,7 @@
 releases:
   "@rarui-vuejs/button": major
   "@rarui-vuejs/components": major
+  "@rarui-vuejs/link": major
   "@rarui/webpack": minor
 
 declined:
