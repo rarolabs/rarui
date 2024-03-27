@@ -10,3 +10,18 @@ export const typescriptRule = {
   loader: "ts-loader",
   exclude: /node_modules/,
 };
+
+export const typescriptVueRule = {
+  test: /\.tsx?$/,
+  loader: "ts-loader",
+  exclude: /node_modules/,
+  options: {
+    appendTsSuffixTo: [/\.vue$/],
+  },
+};
+
+export const VueRule = {
+  test: /\.vue$/,
+  loader: "vue-loader",
+  exclude: /node_modules/,
+};

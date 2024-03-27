@@ -2,6 +2,16 @@
 
 This package is intended for internal use in generating builds of each design system package. It contains all the necessary settings and dependencies to optimize the creation of our builds.
 
+## 2024-03-27 `1.1.0`
+
+#### 🎉 New features
+
+- Added new configurations for building VueJS components. ([#8](https://git.rarolabs.com.br/frontend/rarui/pull/8) by [@junior](https://git.rarolabs.com.br/junior))
+
+#### 📚 3rd party library updates
+
+- Added `vue-loader@17.4.2`. ([#8](https://git.rarolabs.com.br/frontend/rarui/pull/8) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-03-22 `1.0.0`
 
 #### 📚 3rd party library updates
