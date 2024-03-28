@@ -1,13 +1,10 @@
 releases:
+  "@rarui-vuejs/badge": major
   "@rarui-vuejs/button": major
   "@rarui-vuejs/components": major
   "@rarui-vuejs/link": major
+  "@rarui/styles": minor
   "@rarui/webpack": minor
 
 declined:
   - "@rarui/design-system"
-  - "@rarui/typings"
-  - "@rarui-react/components"
-  - "@rarui-react/button"
-  - "@rarui-react/link"
-  - "@rarui/styles"
