@@ -38,6 +38,7 @@ setup-job:
 check-version-job:
   stage: check-version
   script:
+    - if [ $CI_MERGE_REQUEST_TARGET_BRANCH_NAME !== "devel" ]; then echo ""; exit 1; fi
     - git fetch
     - yarn install # Instala as dependências com o Yarn
     - yarn bump:check
@@ -73,7 +74,7 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
   script:
     - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
     - yarn install # Instala as dependências com o Yarn
-    # - yarn bump:check
+    - yarn bump:check
     - yarn publish:stable
     - git config --global user.email "${GITLAB_USER_NAME}"
     - git config --global user.name "${GITLAB_USER_EMAIL}"
