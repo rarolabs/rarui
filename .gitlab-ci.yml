@@ -38,7 +38,6 @@ setup-job:
 check-version-job:
   stage: check-version
   script:
-    - if [ $CI_MERGE_REQUEST_TARGET_BRANCH_NAME !== "devel" ]; then echo ""; exit 1; fi
     - git fetch
     - yarn install # Instala as dependências com o Yarn
     - yarn bump:check
@@ -46,6 +45,8 @@ check-version-job:
     - job: setup-job
   only:
     - merge_requests
+  except:
+    - devel
 
 unit-test-job: # This job runs in the test stage.
   stage: quality # It only starts when the job in the build stage completes successfully.
