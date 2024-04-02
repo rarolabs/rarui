@@ -5,6 +5,7 @@
 export const externalLibs = {
   react: "react",
   "react-dom": "react-dom",
+  vue: "vue",
 };
 
 export const externalPackages = {

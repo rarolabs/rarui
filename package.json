@@ -46,11 +46,13 @@
     "clean": "yarn workspaces foreach -A -p --exclude @rarui/design-system run clean",
     "g:tsc": "cd $INIT_CWD && tsc",
     "g:storybook": "cd $INIT_CWD && storybook",
+    "g:vite": "cd $INIT_CWD && vite",
     "prepare": "husky"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vue": "^3.4.21"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.9",
@@ -70,6 +72,9 @@
     "@storybook/react": "^8.0.4",
     "@storybook/react-webpack5": "^8.0.4",
     "@storybook/test": "^8.0.4",
+    "@storybook/vue-webpack5": "^7.6.17",
+    "@storybook/vue3": "^8.0.4",
+    "@storybook/vue3-vite": "^8.0.4",
     "@testing-library/react": "^14.2.1",
     "@types/babel__core": "^7",
     "@types/babel__register": "^7",
@@ -78,6 +83,8 @@
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vanilla-extract/babel-plugin": "^1.2.0",
+    "@vanilla-extract/vite-plugin": "^4.0.6",
+    "@vitejs/plugin-vue": "^5.0.4",
     "babel-plugin-module-resolver": "^5.0.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -104,7 +111,9 @@
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "turbo": "^1.12.5",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "vite": "^5.2.6",
+    "vue-tsc": "^2.0.7"
   },
   "author": "",
   "license": "ISC",

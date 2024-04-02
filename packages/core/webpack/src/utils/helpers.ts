@@ -8,5 +8,6 @@ export const arrayFilterEmpty = (
     loader?: string;
     use?: any;
     exclude?: RegExp;
-  }[]
+    options?: any;
+  }[],
 ) => array.filter((x) => !!x);
