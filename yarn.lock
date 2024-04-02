@@ -3145,6 +3145,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-vuejs/badge@workspace:packages/implementations/vuejs/src/atomic/Badge":
+  version: 0.0.0-use.local
+  resolution: "@rarui-vuejs/badge@workspace:packages/implementations/vuejs/src/atomic/Badge"
+  dependencies:
+    "@rarui/webpack": "workspace:^"
+    vite-plugin-dts: "npm:^3.7.3"
+  peerDependencies:
+    vue: ^3
+  languageName: unknown
+  linkType: soft
+
 "@rarui-vuejs/button@workspace:packages/implementations/vuejs/src/atomic/Button":
   version: 0.0.0-use.local
   resolution: "@rarui-vuejs/button@workspace:packages/implementations/vuejs/src/atomic/Button"
