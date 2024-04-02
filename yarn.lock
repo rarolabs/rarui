@@ -3167,6 +3167,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-vuejs/link@workspace:packages/implementations/vuejs/src/atomic/Link":
+  version: 0.0.0-use.local
+  resolution: "@rarui-vuejs/link@workspace:packages/implementations/vuejs/src/atomic/Link"
+  dependencies:
+    "@rarui/webpack": "workspace:^"
+    vite-plugin-dts: "npm:^3.7.3"
+  peerDependencies:
+    vue: ^3
+  languageName: unknown
+  linkType: soft
+
 "@rarui/design-system@workspace:.":
   version: 0.0.0-use.local
   resolution: "@rarui/design-system@workspace:."
