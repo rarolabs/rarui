@@ -1,7 +1,7 @@
 <template>
   <button
     :class="button.classnames.button({ size, appearance, variant })"
-    :bind="$props"
+    :disabled="disabled"
   >
     <slot />
     <span :class="button.classnames.overlay" />

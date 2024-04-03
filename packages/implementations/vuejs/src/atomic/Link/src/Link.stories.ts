@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/vue3";
 import Link from "./Link.vue";
 
 const meta = {
+  title: "Atomic/Link",
   component: Link,
   tags: ["autodocs"],
   render: (args) => ({
