@@ -4,7 +4,6 @@
   "license": "MIT",
   "source": "src/index.ts",
   "main": "dist/index.js",
-  "type": "module",
   "files": [
     "dist",
     "README.md",
@@ -13,6 +12,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "yarn g:vite build",
+    "build:webpack": "yarn g:webpack",
     "clean": "rm -rf dist",
     "version": "yarn version"
   },
@@ -29,6 +29,8 @@
   },
   "devDependencies": {
     "@rarui/webpack": "workspace:^",
+    "@types/dts-bundle": "^0",
+    "dts-bundle": "^0.7.3",
     "vite-plugin-dts": "^3.7.3"
   },
   "stableVersion": "0.0.0"
