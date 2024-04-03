@@ -3167,6 +3167,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-vuejs/chip@workspace:packages/implementations/vuejs/src/atomic/Chip":
+  version: 0.0.0-use.local
+  resolution: "@rarui-vuejs/chip@workspace:packages/implementations/vuejs/src/atomic/Chip"
+  dependencies:
+    "@rarui/webpack": "workspace:^"
+    vite-plugin-dts: "npm:^3.7.3"
+  peerDependencies:
+    vue: ^3
+  languageName: unknown
+  linkType: soft
+
 "@rarui-vuejs/components@workspace:packages/implementations/vuejs":
   version: 0.0.0-use.local
   resolution: "@rarui-vuejs/components@workspace:packages/implementations/vuejs"
