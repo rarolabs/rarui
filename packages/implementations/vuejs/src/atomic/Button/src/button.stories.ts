@@ -23,7 +23,7 @@ export const basic: Story = {
 export const large: Story = {
   args: {
     default: "Label",
-    appearance: "brand-secondary",
+    appearance: "brand",
   },
 };
 
@@ -31,7 +31,7 @@ export const medium: Story = {
   args: {
     default: "Label",
     size: "medium",
-    appearance: "brand-secondary",
+    appearance: "brand",
   },
 };
 
@@ -39,7 +39,7 @@ export const small: Story = {
   args: {
     default: "Label",
     size: "small",
-    appearance: "brand-secondary",
+    appearance: "brand",
   },
 };
 

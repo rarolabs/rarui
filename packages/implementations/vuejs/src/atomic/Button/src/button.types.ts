@@ -7,7 +7,6 @@ export interface ButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
    */
   appearance?:
     | "brand"
-    | "brand-secondary"
     | "danger"
     | "success"
     | "warning"

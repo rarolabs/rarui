@@ -18,11 +18,6 @@ export const globalTheme = {
       brand: colors.surface.brand.value,
       "brand-hover": colors.surface["brand-hover"].value,
       "brand-press": colors.surface["brand-press"].value,
-      "brand-secondary": colors.surface["brand-secondary"].value,
-      "brand-secondary-hover": colors.surface["brand-secondary-hover"].value,
-      "brand-secondary-press": colors.surface["brand-secondary-press"].value,
-      "brand-secondary-subdued":
-        colors.surface["brand-secondary-subdued"].value,
       "brand-subdued": colors.surface["brand-subdued"].value,
       disabled: colors.surface.disabled.value,
       error: colors.surface.error.value,
@@ -41,10 +36,6 @@ export const globalTheme = {
       "invert-secondary": colors.surface["invert-secondary"].value,
       "on-brand-hover": colors.surface["on-brand-hover"].value,
       "on-brand-press": colors.surface["on-brand-press"].value,
-      "on-brand-secondary-hover":
-        colors.surface["on-brand-secondary-hover"].value,
-      "on-brand-secondary-press":
-        colors.surface["on-brand-secondary-press"].value,
       "on-error-hover": colors.surface["on-error-hover"].value,
       "on-error-press": colors.surface["on-error-press"].value,
       "on-info-hover": colors.surface["on-info-hover"].value,
@@ -69,7 +60,6 @@ export const globalTheme = {
     content: {
       brand: colors.content.brand.value,
       "brand-alt": colors.content["brand-alt"].value,
-      "brand-secondary": colors.content["brand-secondary"].value,
       disabled: colors.content.disabled.value,
       error: colors.content.error.value,
       info: colors.content.info.value,
@@ -77,7 +67,6 @@ export const globalTheme = {
       "invert-disabled": colors.content["invert-disabled"].value,
       "invert-secondary": colors.content["invert-secondary"].value,
       "on-brand": colors.content["on-brand"].value,
-      "on-brand-secondary": colors.content["on-brand-secondary"].value,
       "on-error": colors.content["on-error"].value,
       "on-info": colors.content["on-info"].value,
       "on-success": colors.content["on-success"].value,
@@ -91,7 +80,6 @@ export const globalTheme = {
     border: {
       brand: colors.border.brand.value,
       "brand-alt": colors.border["brand-alt"].value,
-      "brand-secondary": colors.border["brand-secondary"].value,
       disabled: colors.border.disabled.value,
       divider: colors.border.divider.value,
       error: colors.border.error.value,

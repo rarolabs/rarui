@@ -7,7 +7,6 @@ export interface BadgeProps extends /* @vue-ignore */ HTMLAttributes {
    */
   appearance?:
     | "brand"
-    | "brand-secondary"
     | "danger"
     | "success"
     | "warning"

@@ -20,6 +20,7 @@ export const Default: Story = {
     appearance: "brand",
     size: "medium",
     default: "Badge",
+    variant: "outlined",
   },
 };
 export const Danger: Story = {

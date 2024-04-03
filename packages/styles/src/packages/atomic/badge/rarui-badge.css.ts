@@ -24,11 +24,6 @@ export const badge = recipe({
         borderColor: varsThemeBase.colors.surface.brand,
         color: varsThemeBase.colors.content["on-brand"],
       },
-      "brand-secondary": {
-        backgroundColor: varsThemeBase.colors.surface["brand-secondary"],
-        borderColor: varsThemeBase.colors.surface["brand-secondary"],
-        color: varsThemeBase.colors.content["on-brand-secondary"],
-      },
       danger: {
         backgroundColor: varsThemeBase.colors.surface.error,
         borderColor: varsThemeBase.colors.surface.error,
@@ -103,17 +98,7 @@ export const badge = recipe({
         backgroundColor: varsThemeBase.colors.surface["brand-subdued"],
       },
     },
-    {
-      variants: {
-        appearance: "brand-secondary",
-        variant: "outlined",
-      },
-      style: {
-        color: varsThemeBase.colors.content["brand-secondary"],
-        borderColor: varsThemeBase.colors.border["brand-secondary"],
-        backgroundColor: varsThemeBase.colors.surface["brand-subdued"],
-      },
-    },
+
     {
       variants: {
         appearance: "danger",

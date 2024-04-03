@@ -22,3 +22,6 @@ export interface ChipProps extends /* @vue-ignore */ ButtonHTMLAttributes {
    */
   avatar?: string;
 }
+
+// selected
+// pill -> boolean

@@ -10,15 +10,6 @@ export const buttonOutlined = {
     },
     color: varsThemeBase.colors.content.brand,
   },
-  "brand-secondary": {
-    ":hover": {
-      backgroundColor: varsThemeBase.colors.surface["brand-secondary-hover"],
-    },
-    ":active": {
-      backgroundColor: varsThemeBase.colors.surface["brand-secondary-press"],
-    },
-    color: varsThemeBase.colors.content["brand-secondary"],
-  },
   danger: {
     ":hover": {
       backgroundColor: varsThemeBase.colors.surface["error-hover"],
@@ -68,7 +59,6 @@ export const buttonOutlined = {
 
 export const buttonText = {
   brand: buttonOutlined.brand,
-  "brand-secondary": buttonOutlined["brand-secondary"],
   danger: buttonOutlined.danger,
   success: buttonOutlined.success,
   warning: buttonOutlined.warning,
