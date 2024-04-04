@@ -1,4 +1,4 @@
-import * as styles from "./rarui-chip.css";
+import { styles } from "./rarui-chip.css";
 
 export const chip = {
   classnames: { ...styles },

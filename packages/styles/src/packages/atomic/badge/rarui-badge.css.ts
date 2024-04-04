@@ -60,16 +60,19 @@ const badge = recipe({
         padding: `0 ${varsThemeBase.spacing.xs}`,
         height: "3rem",
         fontSize: varsThemeBase.fontSize.button.l,
+        fontWeight: varsThemeBase.fontWeight.semiBold,
       },
       medium: {
         padding: `0 ${varsThemeBase.spacing["2xs"]}`,
         height: "2em",
         fontSize: varsThemeBase.fontSize.button.m,
+        fontWeight: varsThemeBase.fontWeight.medium,
       },
       small: {
         padding: `0 ${varsThemeBase.spacing["3xs"]}`,
         height: "1.5rem",
         fontSize: varsThemeBase.fontSize.button.s,
+        fontWeight: varsThemeBase.fontWeight.medium,
       },
       dot: {
         height: "0.5rem",

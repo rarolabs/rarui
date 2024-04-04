@@ -13,7 +13,6 @@ const button = recipe({
     cursor: "pointer",
     boxSizing: "border-box",
     position: "relative",
-    overflow: "hidden",
     gap: varsThemeBase.spacing["4xs"],
     fontWeight: varsThemeBase.fontWeight.semiBold,
     lineHeight: varsThemeBase.lineHeight.button.l,
@@ -282,7 +281,7 @@ const overlay = style({
   right: -1,
   pointerEvents: "none",
   opacity: 0,
-  borderRadius: varsThemeBase.shape.border.radius["2xs"],
+  borderRadius: "inherit",
 });
 
 globalStyle(`${button()}:hover ${overlay}`, {

@@ -1,5 +1,6 @@
 import { recipe } from "@vanilla-extract/recipes";
 import { varsThemeBase } from "../../../themes";
+import { globalStyle, style } from "@vanilla-extract/css";
 
 const chip = recipe({
   base: {
@@ -9,7 +10,6 @@ const chip = recipe({
     width: "fit-content",
     boxSizing: "border-box",
     position: "relative",
-    overflow: "hidden",
     gap: varsThemeBase.spacing["3xs"],
     padding: `0 ${varsThemeBase.spacing.xs}`,
     height: "2rem",
@@ -18,6 +18,7 @@ const chip = recipe({
     fontSize: varsThemeBase.fontSize.button.m,
     fontFamily: varsThemeBase.fontFamily.inter,
     borderWidth: varsThemeBase.shape.border.width[1],
+    borderRadius: varsThemeBase.shape.border.radius["2xs"],
     borderStyle: "solid",
     borderColor: varsThemeBase.colors.border.subdued,
     backgroundColor: varsThemeBase.colors.surface.primary,
@@ -37,30 +38,45 @@ const chip = recipe({
     },
   },
   variants: {
-    shape: {
-      pill: {
+    pill: {
+      true: {
         borderRadius: varsThemeBase.shape.border.radius.pill,
       },
-      rounded: {
-        borderRadius: varsThemeBase.shape.border.radius["2xs"],
-      },
     },
-    variantdsa: {
-      selected: {
+    selected: {
+      true: {
         border: "none",
         backgroundColor: varsThemeBase.colors.surface.brand,
         color: varsThemeBase.colors.content["on-brand"],
-        ":hover": {
-          backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
-        },
-        ":active": {
-          backgroundColor: varsThemeBase.colors.surface["on-brand-press"],
-        },
       },
     },
   },
 });
 
+export const overlay = style({
+  position: "absolute",
+  top: -1,
+  left: -1,
+  bottom: -1,
+  right: -1,
+  pointerEvents: "none",
+  opacity: 0,
+  borderRadius: "inherit",
+});
+
+globalStyle(`${chip()}:hover ${overlay}`, {
+  opacity: 1,
+  backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
+  borderColor: varsThemeBase.colors.surface["on-brand-hover"],
+});
+
+globalStyle(`${chip()}:active ${overlay}`, {
+  opacity: 1,
+  backgroundColor: varsThemeBase.colors.surface["on-brand-press"],
+  borderColor: varsThemeBase.colors.surface["on-brand-press"],
+});
+
 export const styles = {
   chip,
+  overlay,
 };
