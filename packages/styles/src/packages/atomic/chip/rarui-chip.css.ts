@@ -11,7 +11,7 @@ export const chip = recipe({
     position: "relative",
     overflow: "hidden",
     gap: varsThemeBase.spacing["3xs"],
-    padding: `0 ${varsThemeBase.spacing["xs"]}`,
+    padding: `0 ${varsThemeBase.spacing.xs}`,
     height: "2rem",
     fontWeight: varsThemeBase.fontWeight.medium,
     lineHeight: varsThemeBase.lineHeight.button.m,
