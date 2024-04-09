@@ -45,6 +45,8 @@ check-version-job:
     - job: setup-job
   only:
     - merge_requests
+  except:
+    - devel
 
 unit-test-job: # This job runs in the test stage.
   stage: quality # It only starts when the job in the build stage completes successfully.
@@ -73,7 +75,7 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
   script:
     - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
     - yarn install # Instala as dependências com o Yarn
-    # - yarn bump:check
+    - yarn bump:check
     - yarn publish:stable
     - git config --global user.email "${GITLAB_USER_NAME}"
     - git config --global user.name "${GITLAB_USER_EMAIL}"

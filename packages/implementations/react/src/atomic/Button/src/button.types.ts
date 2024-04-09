@@ -12,7 +12,6 @@ export interface ButtonProperties {
    */
   appearance?:
     | "brand"
-    | "brand-secondary"
     | "danger"
     | "success"
     | "warning"

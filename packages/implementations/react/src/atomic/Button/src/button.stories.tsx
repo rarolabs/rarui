@@ -41,7 +41,7 @@ export const large: Story = {
   args: {
     children: "Label",
     size: "large",
-    appearance: "brand-secondary",
+    appearance: "brand",
   },
 };
 
@@ -49,7 +49,7 @@ export const medium: Story = {
   args: {
     children: "Label",
     size: "medium",
-    appearance: "brand-secondary",
+    appearance: "brand",
   },
 };
 
@@ -57,7 +57,7 @@ export const small: Story = {
   args: {
     children: "Label",
     size: "small",
-    appearance: "brand-secondary",
+    appearance: "brand",
   },
 };
 

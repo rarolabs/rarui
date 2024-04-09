@@ -45,13 +45,6 @@ describe("GIVEN <Button />", () => {
       ).toContain("appearance_brand");
     });
 
-    it("AND should correctly render the appearance brand-secondary", () => {
-      makeSut({ appearance: "brand-secondary", children: "button" });
-      expect(
-        screen.getByRole("button", { name: "button" }).getAttribute("class"),
-      ).toContain("appearance_brand-secondary");
-    });
-
     it("AND should correctly render the appearance danger", () => {
       makeSut({ appearance: "danger", children: "button" });
       expect(

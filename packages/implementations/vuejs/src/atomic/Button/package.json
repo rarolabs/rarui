@@ -1,0 +1,37 @@
+{
+  "name": "@rarui-vuejs/button",
+  "version": "1.0.0-rc.4",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn g:vite build",
+    "build:webpack": "yarn g:webpack",
+    "clean": "rm -rf dist",
+    "version": "yarn version"
+  },
+  "peerDependencies": {
+    "vue": "^3"
+  },
+  "homepage": "https://git.rarolabs.com.br/frontend/rarui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.rarolabs.com.br/frontend/rarui.git"
+  },
+  "bugs": {
+    "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
+  },
+  "devDependencies": {
+    "@rarui/webpack": "workspace:^",
+    "@types/dts-bundle": "^0",
+    "dts-bundle": "^0.7.3",
+    "vite-plugin-dts": "^3.7.3"
+  },
+  "stableVersion": "0.0.0"
+}

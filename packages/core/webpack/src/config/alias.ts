@@ -7,7 +7,7 @@ import glob from "glob";
 import { join } from "path";
 import { rootDir } from "../utils/constants";
 
-const paths = glob.sync(`${join(rootDir, "./packages/*/**/src/*/*/src")}`);
+const paths = glob.sync(`${join(rootDir, "./packages/*/react/src/*/*/src")}`);
 
 const packages = paths.reduce((prev: { [key: string]: string }, curr) => {
   const parts = curr.split("/");

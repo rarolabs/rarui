@@ -1,5 +1,5 @@
 import path from "path";
-import { configuration } from "@rarui/webpack";
+import { configuration } from "@rarui/webpack/src";
 
 const baseConfig = {
   output: {

@@ -37,11 +37,6 @@ export const button = recipe({
         borderColor: varsThemeBase.colors.surface.brand,
         color: varsThemeBase.colors.content["on-brand"],
       },
-      "brand-secondary": {
-        backgroundColor: varsThemeBase.colors.surface["brand-secondary"],
-        borderColor: varsThemeBase.colors.surface["brand-secondary"],
-        color: varsThemeBase.colors.content["on-brand-secondary"],
-      },
       danger: {
         backgroundColor: varsThemeBase.colors.surface.error,
         borderColor: varsThemeBase.colors.surface.error,
@@ -122,16 +117,6 @@ export const button = recipe({
     },
     {
       variants: {
-        appearance: "brand-secondary",
-        variant: "outlined",
-      },
-      style: {
-        ...buttonVariants.outlined["brand-secondary"],
-        borderColor: varsThemeBase.colors.border["brand-secondary"],
-      },
-    },
-    {
-      variants: {
         appearance: "danger",
         variant: "outlined",
       },
@@ -190,13 +175,6 @@ export const button = recipe({
     },
     {
       variants: {
-        appearance: "brand-secondary",
-        variant: "text",
-      },
-      style: buttonVariants.text["brand-secondary"],
-    },
-    {
-      variants: {
         appearance: "danger",
         variant: "text",
       },
@@ -241,17 +219,6 @@ export const button = recipe({
       style: {
         ...buttonVariants.text.brand,
         backgroundColor: varsThemeBase.colors.surface["brand-subdued"],
-      },
-    },
-    {
-      variants: {
-        appearance: "brand-secondary",
-        variant: "tonal",
-      },
-      style: {
-        ...buttonVariants.text["brand-secondary"],
-        backgroundColor:
-          varsThemeBase.colors.surface["brand-secondary-subdued"],
       },
     },
     {
