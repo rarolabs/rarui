@@ -1,6 +1,6 @@
 {
   "name": "@rarui-vuejs/button",
-  "version": "1.0.0-rc.4",
+  "version": "1.0.0",
   "license": "MIT",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -32,6 +32,5 @@
     "@types/dts-bundle": "^0",
     "dts-bundle": "^0.7.3",
     "vite-plugin-dts": "^3.7.3"
-  },
-  "stableVersion": "0.0.0"
+  }
 }
