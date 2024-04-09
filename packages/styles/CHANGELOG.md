@@ -2,6 +2,13 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-04-09 `1.1.1`
+
+#### 💡 Others
+
+- Removed `brand-secondary` color scale from themes. ([#12](https://git.rarolabs.com.br/frontend/rarui/pull/12) by [@juniorconquista](https://github.com/juniorconquista))
+- Removed `brand-secondary` color varian from `badge`, `button` and `chip` components. ([#12](https://git.rarolabs.com.br/frontend/rarui/pull/12) by [@juniorconquista](https://github.com/juniorconquista))
+
 ## 2024-03-23 `1.1.0`
 
 #### 🎉 New features

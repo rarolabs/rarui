@@ -2,6 +2,12 @@
 
 Our design tokens are the foundations of Design System.
 
+## 2024-04-09 `1.0.2`
+
+#### 💡 Others
+
+- Removed `brand-secondary` color scale. ([#12](https://git.rarolabs.com.br/frontend/rarui/pull/12) by [@juniorconquista](https://github.com/juniorconquista))
+
 ## 2024-03-22 `1.0.0`
 
 #### 🎉 New features

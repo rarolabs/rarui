@@ -1,0 +1,16 @@
+releases:
+  "@rarui-react/button": patch
+  "@rarui-react/components": patch
+  "@rarui-vuejs/badge": major
+  "@rarui-vuejs/button": major
+  "@rarui-vuejs/chip": major
+  "@rarui-vuejs/link": major
+  "@rarui/styles": minor
+  "@rarui/tokens": patch
+  "@rarui/webpack": minor
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui/typings"
+  - "@rarui-react/link"
+  - "@rarui-vuejs/components"

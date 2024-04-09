@@ -1,6 +1,6 @@
 {
   "name": "@rarui-vuejs/link",
-  "version": "0.0.0",
+  "version": "1.0.0-rc.1",
   "license": "MIT",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -30,5 +30,6 @@
   "devDependencies": {
     "@rarui/webpack": "workspace:^",
     "vite-plugin-dts": "^3.7.3"
-  }
+  },
+  "stableVersion": "0.0.0"
 }
