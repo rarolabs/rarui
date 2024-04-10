@@ -87,9 +87,7 @@ export const vars = createGlobalThemeContract(
       inter: "",
     },
     fontSize: {
-      hero: {
-        caption: "",
-      },
+      hero: "",
       body: {
         xxs: "",
         xs: "",
@@ -123,9 +121,7 @@ export const vars = createGlobalThemeContract(
       bold: "",
     },
     lineHeight: {
-      hero: {
-        caption: "",
-      },
+      hero: "",
       body: {
         xxs: "",
         xs: "",
