@@ -42,7 +42,6 @@
       "@rarui/styles": ["./packages/styles/src"],
       "@rarui/tokens": ["./packages/tokens"],
       "@rarui/icons": ["./packages/icons"],
-      // react
       "@rarui-react/box": [
         "./packages/implementations/react/src/atomic/Box/src"
       ],
@@ -52,7 +51,9 @@
       "@rarui-react/link": [
         "./packages/implementations/react/src/atomic/Link/src"
       ],
-      // vuejs
+      "@rarui-react/title": [
+        "./packages/implementations/react/src/atomic/Title/src"
+      ],
       "@rarui-vuejs/button": [
         "./packages/implementations/vuejs/src/atomic/Button/src"
       ]
