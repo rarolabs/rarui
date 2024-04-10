@@ -1,0 +1,10 @@
+{
+  "id": "badge",
+  "name": "Badge",
+  "totalProps": 0,
+  "packageName": "@rarui-react/badge",
+  "version": "1.0.0-rc.1",
+  "docLink": "https://bmg.com.br/documentation/src-components/badge",
+  "props": [],
+  "subComponents": []
+}
