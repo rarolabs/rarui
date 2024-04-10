@@ -1,34 +1,20 @@
-import React, { forwardRef } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
+import { argTypesConvert } from ".storybook/utils";
+import docs from "./button.docs.json";
+import { Button } from "./Button";
 
-import { Button as ButtonComponent, ButtonProps } from "./Button";
-
-export const Basic: React.FC<ButtonProps> = forwardRef(
-  ({ children = "Button", ...props }: ButtonProps) => (
-    <ButtonComponent {...props}>{children}</ButtonComponent>
-  ),
-) as React.FC<ButtonProps>;
-Basic.displayName = "Button";
-
-const meta = {
+const meta: Meta<typeof Button> = {
   title: "Atomic/Button",
-  component: Basic,
+  component: Button,
   argTypes: {
-    as: {
-      description:
-        "The underlying element to render — an HTML element name of type a or button or a React component of type HTMLAnchorElement or HTMLButtonElement.",
-    },
-    ref: {
-      description:
-        "A ref to the element rendered by this component. Because this component is polymorphic, the type will vary based on the value of the as prop.",
-    },
+    ...argTypesConvert(docs),
     children: { control: { type: "text" } },
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof Basic>;
+} satisfies Meta<typeof Button>;
 
 export default meta;
-type Story = StoryObj<typeof Basic>;
+type Story = StoryObj<typeof Button>;
 
 export const basic: Story = {
   args: {

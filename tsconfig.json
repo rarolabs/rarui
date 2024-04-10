@@ -39,14 +39,22 @@
       "@rarui/scripts": ["./packages/core/scripts/src"],
       "@rarui/webpack": ["./packages/core/webpack/src"],
       "@rarui/typings": ["./packages/core/typings/src"],
+      "@rarui/styles": ["./packages/styles/src"],
       "@rarui/tokens": ["./packages/tokens"],
       "@rarui/icons": ["./packages/icons"],
-      "@rarui/styles": ["./packages/styles/src"],
+      // react
+      "@rarui-react/box": [
+        "./packages/implementations/react/src/atomic/Box/src"
+      ],
       "@rarui-react/button": [
         "./packages/implementations/react/src/atomic/Button/src"
       ],
       "@rarui-react/link": [
         "./packages/implementations/react/src/atomic/Link/src"
+      ],
+      // vuejs
+      "@rarui-vuejs/button": [
+        "./packages/implementations/vuejs/src/atomic/Button/src"
       ]
     }
   },

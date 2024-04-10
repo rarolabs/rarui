@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating custom script builds at design system build time.
 
+## 2024-04-10 `1.0.1`
+
+#### 🐛 Bug fixes
+
+- Fixed docgen script so that component documentation is generated correctly. ([#15](https://git.rarolabs.com.br/frontend/rarui/pull/15) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-03-22 `1.0.0`
 
 #### 🎉 New features

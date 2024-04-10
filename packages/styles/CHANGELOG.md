@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-04-10 `1.2.0`
+
+#### 🎉 New features
+
+- Added new style pack for `box` component. ([#15](https://git.rarolabs.com.br/frontend/rarui/pull/15) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-09 `1.1.1`
 
 #### 💡 Others
