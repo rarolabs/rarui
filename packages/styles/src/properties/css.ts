@@ -138,7 +138,7 @@ export const fontWeightProperties = {
 };
 
 export const fontSizeProperties = {
-  "hero-caption": varsThemeBase.fontSize.hero.caption,
+  hero: varsThemeBase.fontSize.hero,
   "body-xxs": varsThemeBase.fontSize.body.xxs,
   "body-xs": varsThemeBase.fontSize.body.xs,
   "body-s": varsThemeBase.fontSize.body.s,
@@ -159,7 +159,7 @@ export const fontSizeProperties = {
 };
 
 export const lineHeightProperties = {
-  "hero-caption": varsThemeBase.lineHeight.hero.caption,
+  hero: varsThemeBase.lineHeight.hero,
   "body-xxs": varsThemeBase.lineHeight.body.xxs,
   "body-xs": varsThemeBase.lineHeight.body.xs,
   "body-s": varsThemeBase.lineHeight.body.s,
@@ -189,7 +189,7 @@ export const titleFontSizeProperties = {
 };
 
 export const titleLineHeightProperties = {
-  hero: varsThemeBase.lineHeight.hero.caption,
+  hero: varsThemeBase.lineHeight.hero,
   xs: varsThemeBase.lineHeight.heading.xs,
   s: varsThemeBase.lineHeight.heading.s,
   m: varsThemeBase.lineHeight.heading.m,

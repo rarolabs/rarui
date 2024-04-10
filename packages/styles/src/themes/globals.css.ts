@@ -97,9 +97,7 @@ export const globalTheme = {
     inter: fontFamily.inter.value,
   },
   fontSize: {
-    hero: {
-      caption: fontSize.hero.value,
-    },
+    hero: fontSize.hero.value,
     body: {
       xxs: fontSize.body.xxs.value,
       xs: fontSize.body.xs.value,
@@ -133,9 +131,7 @@ export const globalTheme = {
     bold: fontWeight.bold.value,
   },
   lineHeight: {
-    hero: {
-      caption: lineHeight.hero.value,
-    },
+    hero: lineHeight.hero.value,
     body: {
       xxs: lineHeight.body.xxs.value,
       xs: lineHeight.body.xs.value,

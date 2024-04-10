@@ -151,12 +151,6 @@ const sprinkle = createRainbowSprinkles(defineProperties);
 
 export type BoxSprinkle = Parameters<typeof sprinkle>[0];
 
-const properties = {
-  backgroundColor: backgroundColorProperties,
-  borderColor: borderColorProperties,
-};
-
 export const boxSprinkle = {
   sprinkle,
-  properties,
 };
