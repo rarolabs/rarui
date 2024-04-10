@@ -1,5 +1,20 @@
 {
   "extends": "../../../tsconfig.json",
   "include": ["./src/index.ts", "./atomics/*"],
-  "exclude": ["./src/**/*.spec.tsx"]
+  "exclude": ["./src/**/*.spec.tsx"],
+  "compilerOptions": {
+    "paths": {
+      "@rarui/typings": ["./packages/core/typings/src"],
+      "@rarui/styles": ["./packages/styles/src"],
+      "@rarui-react/box": [
+        "./packages/implementations/react/src/atomic/Button/src"
+      ],
+      "@rarui-react/button": [
+        "./packages/implementations/react/src/atomic/Button/src"
+      ],
+      "@rarui-react/link": [
+        "./packages/implementations/react/src/atomic/Link/src"
+      ]
+    }
+  }
 }

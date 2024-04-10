@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-04-10 `1.2.0`
+
+#### 🎉 New features
+
+- Added new atomic `Box` component. ([#15](https://git.rarolabs.com.br/frontend/rarui/pull/15) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-03-23 `1.1.0`
 
 #### 🎉 New features
