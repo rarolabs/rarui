@@ -22,8 +22,6 @@ try {
     ),
   };
 
-  console.log("paths", paths);
-
   const options: DocgenOptions = {
     compilerOptions: {
       ...defaultCompilerOptionsDocgen,

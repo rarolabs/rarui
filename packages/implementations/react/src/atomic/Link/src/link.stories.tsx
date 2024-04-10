@@ -1,34 +1,20 @@
-import React, { forwardRef } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
+import { argTypesConvert } from ".storybook/utils";
+import docs from "./link.docs.json";
+import { Link } from "./Link";
 
-import { Link as LinkComponent, LinkProps } from "./Link";
-
-export const Basic: React.FC<LinkProps> = forwardRef(
-  ({ children = "Link", ...props }: LinkProps) => (
-    <LinkComponent {...props}>{children}</LinkComponent>
-  ),
-) as React.FC<LinkProps>;
-Basic.displayName = "Link";
-
-const meta: Meta<typeof Basic> = {
+const meta: Meta<typeof Link> = {
   title: "Atomic/Link",
-  component: Basic,
+  component: Link,
   argTypes: {
-    as: {
-      description:
-        "The underlying element to render — an HTML element name of type a or button or a React component of type HTMLAnchorElement or HTMLButtonElement.",
-    },
-    ref: {
-      description:
-        "A ref to the element rendered by this component. Because this component is polymorphic, the type will vary based on the value of the as prop.",
-    },
+    ...argTypesConvert(docs),
     children: { control: { type: "text" } },
   },
   tags: ["autodocs"],
 };
 
 export default meta;
-type Story = StoryObj<typeof Basic>;
+type Story = StoryObj<typeof Link>;
 
 export const basic = {
   args: {

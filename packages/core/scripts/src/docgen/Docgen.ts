@@ -132,6 +132,13 @@ export class Docgen {
         title: "as",
         required: false,
       });
+      props.unshift({
+        description:
+          "A ref to the element rendered by this component. Because this component is polymorphic, the type will vary based on the value of the as prop.",
+        type: "React.Ref",
+        title: "ref",
+        required: false,
+      });
     }
     return props;
   }
@@ -170,13 +177,13 @@ export class Docgen {
 
   private generateDocLink(): string {
     const context = this.component.path.split("/")?.[3] || "";
-    return `https://bmg.com.br/documentation/${context}-components/${paramCase(
+    return `https://rarui.com.br/documentation/${context}-components/${paramCase(
       this.component.id,
     )}`;
   }
 
   private getPolymorphicProps(): string[] {
-    const regex = RegExp("PolymorphicForwardRefComponent<(.+),.+> &$", "m");
+    const regex = RegExp("PolymorphicForwardRefComponent<(.+),.+>;$", "m");
     const match = regex.exec(this.component.source)?.[1] ?? "";
     return match ? match.replace(/[" ]/gm, "").split("|") : [];
   }

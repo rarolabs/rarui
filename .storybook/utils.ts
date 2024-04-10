@@ -1,18 +1,33 @@
 import path from "path";
 
-export const argTypesConvert = (properties: any) =>
-  Object.keys(properties).reduce(
+export const argTypesConvert = (properties: any = {}) => {
+  const argTypes = properties.props.reduce(
     (
-      prev: { [key: string]: { control: string; options: string[] } },
-      curr: string,
+      prev: {
+        [key: string]: {
+          control: string;
+          options: string[];
+          description: string;
+          defaultValue?: string;
+        };
+      },
+      curr: any,
     ) => {
       let options: string[] = [];
-      if (Array.isArray(properties[curr])) {
-        options = properties[curr];
-      } else if (typeof properties[curr] === "object") {
-        options = Object.keys(properties[curr]);
-      }
-      prev[curr] = {
+
+      const enums =
+        curr?.enum ??
+        curr?.anyOf?.[4]?.enum ??
+        curr?.anyOf?.[3]?.enum ??
+        curr?.anyOf?.[2]?.enum ??
+        curr?.anyOf?.[1]?.enum ??
+        [];
+
+      options = enums;
+
+      prev[curr.title] = {
+        defaultValue: curr.default,
+        description: curr.description ?? "",
         control: options?.length > 6 ? "select" : "radio",
         options,
       };
@@ -20,6 +35,10 @@ export const argTypesConvert = (properties: any) =>
     },
     {},
   );
+
+  console.log(argTypes);
+  return argTypes;
+};
 
 export const convertTsConfigPathsToWebpackAliases = () => {
   const rootDir = path.resolve(__dirname, "../");

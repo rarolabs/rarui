@@ -11,7 +11,8 @@ export const defaultSettings: PartialArgs = {
 export const defaultCompilerOptions: Omit<CompilerOptions, "jsx"> & {
   jsx: string;
 } = {
-  strictNullChecks: true,
+  strictNullChecks: false,
   esModuleInterop: true,
+  skipLibCheck: true,
   jsx: "react",
 };

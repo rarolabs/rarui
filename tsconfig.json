@@ -39,15 +39,9 @@
       "@rarui/scripts": ["./packages/core/scripts/src"],
       "@rarui/webpack": ["./packages/core/webpack/src"],
       "@rarui/typings": ["./packages/core/typings/src"],
-      "@rarui/tokens": ["./packages/tokens"],
-      "@rarui/icons": ["./packages/icons"],
       "@rarui/styles": ["./packages/styles/src"],
-      "@rarui-react/button": [
-        "./packages/implementations/react/src/atomic/Button/src"
-      ],
-      "@rarui-react/link": [
-        "./packages/implementations/react/src/atomic/Link/src"
-      ]
+      "@rarui/tokens": ["./packages/tokens"],
+      "@rarui/icons": ["./packages/icons"]
     }
   },
   "include": ["packages", "jest.setup.ts"]

@@ -3112,6 +3112,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rarui-react/box@workspace:packages/implementations/react/src/atomic/Box":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/box@workspace:packages/implementations/react/src/atomic/Box"
+  dependencies:
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@rarui-react/button@workspace:packages/implementations/react/src/atomic/Button":
   version: 0.0.0-use.local
   resolution: "@rarui-react/button@workspace:packages/implementations/react/src/atomic/Button"
