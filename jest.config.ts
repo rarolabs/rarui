@@ -11,7 +11,9 @@ const config: Config.InitialOptions = {
     // commons
     "@rarui/styles": "<rootDir>/packages/styles/src",
     // atomics
+    "@rarui-react/box": "<rootDir>/packages/react/src/atomics/Box/src",
     "@rarui-react/button": "<rootDir>/packages/react/src/atomics/Button/src",
+    "@rarui-react/link": "<rootDir>/packages/react/src/atomics/Link/src",
     // composites
   },
   transform: {
