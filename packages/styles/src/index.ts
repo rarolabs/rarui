@@ -14,5 +14,6 @@ export { title } from "./packages/atomic/title";
 // types
 export type { BoxSprinkle } from "./packages/atomic/box";
 export type { TextSprinkle } from "./packages/atomic/text";
+export type { SkeletonSprinkle } from "./packages/atomic/skeleton";
 export type { TitleSprinkle } from "./packages/atomic/title";
 export type { ButtonVariants } from "./packages/atomic/button";
