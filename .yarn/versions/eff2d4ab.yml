@@ -1,0 +1,8 @@
+releases:
+  "@rarui-react/components": minor
+  "@rarui-react/title": major
+  "@rarui/styles": minor
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui-react/box"
