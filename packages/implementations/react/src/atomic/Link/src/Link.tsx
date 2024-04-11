@@ -51,10 +51,7 @@ const Link = forwardRef(
     return (
       <As
         {...(props as any)}
-        className={[
-          link.classnames.link({ appearance, size }),
-          // link.sprinkle({ textDecoration, fontSize, lineHeight }),
-        ].join(" ")}
+        className={[link.classnames.link({ appearance, size })].join(" ")}
         ref={innerRef}
       >
         {children}
