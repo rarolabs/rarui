@@ -3203,6 +3203,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-react/chip@workspace:packages/implementations/react/src/atomic/Chip":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/chip@workspace:packages/implementations/react/src/atomic/Chip"
+  dependencies:
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@rarui-react/components@workspace:packages/implementations/react":
   version: 0.0.0-use.local
   resolution: "@rarui-react/components@workspace:packages/implementations/react"

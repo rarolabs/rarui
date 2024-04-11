@@ -51,6 +51,9 @@
       "@rarui-react/checkbox": [
         "./packages/implementations/react/src/atomic/Checkbox/src"
       ],
+      "@rarui-react/chip": [
+        "./packages/implementations/react/src/atomic/Chip/src"
+      ],
       "@rarui-react/icon": [
         "./packages/implementations/react/src/atomic/Icon/src"
       ],
