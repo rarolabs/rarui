@@ -3,7 +3,7 @@
   "name": "Box",
   "totalProps": 95,
   "packageName": "@rarui-react/box",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/box",
   "props": [
     {
@@ -4930,7 +4930,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -4954,7 +4954,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -4978,7 +4978,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5002,7 +5002,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5026,7 +5026,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5050,7 +5050,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5074,7 +5074,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5098,7 +5098,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5122,7 +5122,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5160,7 +5160,7 @@
             "$heading-s",
             "$heading-xl",
             "$heading-xs",
-            "$hero-caption",
+            "$hero",
             "$label-l",
             "$label-m",
             "$label-s"
@@ -5264,7 +5264,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5288,7 +5288,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5312,7 +5312,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5336,7 +5336,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5360,7 +5360,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5384,7 +5384,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5408,7 +5408,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5432,7 +5432,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5456,7 +5456,7 @@
                 "$heading-s",
                 "$heading-xl",
                 "$heading-xs",
-                "$hero-caption",
+                "$hero",
                 "$label-l",
                 "$label-m",
                 "$label-s"
@@ -5494,7 +5494,7 @@
             "$heading-s",
             "$heading-xl",
             "$heading-xs",
-            "$hero-caption",
+            "$hero",
             "$label-l",
             "$label-m",
             "$label-s"
