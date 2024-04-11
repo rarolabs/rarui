@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-04-11 `1.4.0`
+
+#### 🎉 New features
+
+- Added new style pack for `text` component. ([#20](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/20) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-10 `1.3.0`
 
 #### 🎉 New features
