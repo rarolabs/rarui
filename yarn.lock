@@ -3156,6 +3156,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-react/title@workspace:packages/implementations/react/src/atomic/Title":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/title@workspace:packages/implementations/react/src/atomic/Title"
+  dependencies:
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@rarui-vuejs/badge@workspace:packages/implementations/vuejs/src/atomic/Badge":
   version: 0.0.0-use.local
   resolution: "@rarui-vuejs/badge@workspace:packages/implementations/vuejs/src/atomic/Badge"
