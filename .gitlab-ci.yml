@@ -52,6 +52,7 @@ unit-test-job: # This job runs in the test stage.
   stage: quality # It only starts when the job in the build stage completes successfully.
   script:
     - yarn build:tokens
+    - yarn build:icons
     - yarn test:ci
   needs:
     - job: setup-job
