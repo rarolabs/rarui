@@ -14,13 +14,13 @@
     "clean": "rm -rf dist",
     "version": "yarn version"
   },
-  "homepage": "https://github.com/juniorconquista/boilerplate-design-system",
+  "homepage": "https://git.rarolabs.com.br/frontend/rarui",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juniorconquista/boilerplate-design-system.git"
+    "url": "git+https://git.rarolabs.com.br/frontend/rarui.git"
   },
   "bugs": {
-    "url": "https://github.com/juniorconquista/boilerplate-design-system/issues"
+    "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
   },
   "devDependencies": {
     "@rarui/tokens": "workspace:^",
