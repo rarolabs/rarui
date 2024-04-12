@@ -1,9 +1,9 @@
 import React from "react";
+import { Preview } from "@storybook/react";
 import { ThemeDocsProvider, ThemeRaruiProvider, dark, light } from "./theme";
 import "./static/style.css";
 
-/** @type { import('@storybook/react').Preview } */
-const preview = {
+const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
@@ -25,10 +25,13 @@ const preview = {
       autodocs: true,
     },
   },
+  decorators: [
+    (Story) => (
+      <ThemeRaruiProvider>
+        <Story />
+      </ThemeRaruiProvider>
+    ),
+  ],
 };
 
 export default preview;
-
-export const decorators = [
-  (renderStory) => <ThemeRaruiProvider>{renderStory()}</ThemeRaruiProvider>,
-];

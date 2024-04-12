@@ -14,7 +14,7 @@ const meta: Meta<typeof Button> = {
     children: { control: { type: "text" } },
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof Button>;
+};
 
 export default meta;
 type Story = StoryObj<typeof Button>;
