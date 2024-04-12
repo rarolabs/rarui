@@ -6,7 +6,7 @@
 
 #### 🎉 New features
 
-- Created rarui icon pack for react. ([#22](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/22) by [@juniorconquista](https://github.com/juniorconquista))
+- Created `@rarui/icons` pack for react. ([#22](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/22) by [@juniorconquista](https://github.com/juniorconquista))
 
 #### 📚 3rd party library updates
 

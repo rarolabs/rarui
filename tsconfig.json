@@ -48,6 +48,9 @@
       "@rarui-react/button": [
         "./packages/implementations/react/src/atomic/Button/src"
       ],
+      "@rarui-react/icon": [
+        "./packages/implementations/react/src/atomic/Icon/src"
+      ],
       "@rarui-react/link": [
         "./packages/implementations/react/src/atomic/Link/src"
       ],

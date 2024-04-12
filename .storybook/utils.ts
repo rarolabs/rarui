@@ -36,7 +36,6 @@ export const argTypesConvert = (properties: any = {}) => {
     {},
   );
 
-  console.log(argTypes);
   return argTypes;
 };
 
@@ -47,7 +46,8 @@ export const convertTsConfigPathsToWebpackAliases = () => {
 
   const paths = tsconfigPaths.reduce(
     (aliases: any, [realPath, mappedPath]: any) => {
-      const packageName = mappedPath[0].split("/")[5];
+      const packageName = mappedPath[0].split("/")[6];
+
       const alias = `${mappedPath[0]}/${packageName}.tsx`;
       aliases[realPath] = path.join(rootDir, alias);
       return aliases;
@@ -58,6 +58,10 @@ export const convertTsConfigPathsToWebpackAliases = () => {
   paths["@rarui/tokens"] = path.join(rootDir, "packages/tokens");
   paths["@rarui/icons"] = path.join(rootDir, "packages/icons");
   paths["@rarui/styles"] = path.join(rootDir, "packages/styles/src/index.ts");
+  paths["@rarui/scripts"] = path.join(
+    rootDir,
+    "packages/core/scripts/src/index.ts",
+  );
   paths["@rarui/webpack"] = path.join(
     rootDir,
     "packages/core/webpack/src/index.ts",
