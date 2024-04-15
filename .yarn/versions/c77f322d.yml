@@ -2,5 +2,5 @@ releases:
   "@rarui-react/checkbox": major
   "@rarui/styles": minor
 
-undecided:
+declined:
   - "@rarui/design-system"
