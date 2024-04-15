@@ -28,7 +28,12 @@ export const argTypesConvert = (properties: any = {}) => {
       prev[curr.title] = {
         defaultValue: curr.default,
         description: curr.description ?? "",
-        control: options?.length > 6 ? "select" : "radio",
+        control:
+          curr.type === "boolean"
+            ? "boolean"
+            : options?.length > 6
+              ? "select"
+              : "radio",
         options,
       };
       return prev;
