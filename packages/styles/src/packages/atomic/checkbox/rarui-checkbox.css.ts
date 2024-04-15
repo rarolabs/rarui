@@ -127,7 +127,6 @@ globalStyle(
   `${container}:hover:not(:has(${checkbox()}:disabled))  ${overlay}`,
   {
     backgroundColor: "var(--hover-color)",
-    // backgroundColor: varsThemeBase.colors.surface["brand-hover"],
     borderRadius: "50%",
   },
 );
