@@ -1,0 +1,6 @@
+releases:
+  "@rarui-react/checkbox": major
+  "@rarui/styles": minor
+
+undecided:
+  - "@rarui/design-system"
