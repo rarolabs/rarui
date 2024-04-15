@@ -18,7 +18,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
     ref,
   ) => {
     return (
-      <label htmlFor={id} className={checkbox.classnames.label({})}>
+      <label htmlFor={id} className={checkbox.classnames.label({ danger })}>
         <span className={checkbox.classnames.container}>
           <input
             {...props}

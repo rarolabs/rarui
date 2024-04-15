@@ -55,6 +55,9 @@ export const checkbox = recipe({
         ":checked": {
           backgroundColor: varsThemeBase.colors.surface.error,
         },
+        vars: {
+          "--abc": "blue",
+        },
       },
     },
     size: {
@@ -91,6 +94,18 @@ export const label = recipe({
     position: "relative",
     gap: varsThemeBase.spacing["3xs"],
     color: varsThemeBase.colors.content.primary,
+    vars: {
+      "--hover-color": varsThemeBase.colors.surface["brand-hover"],
+    },
+  },
+  variants: {
+    danger: {
+      true: {
+        vars: {
+          "--hover-color": varsThemeBase.colors.surface["error-hover"],
+        },
+      },
+    },
   },
 });
 
@@ -111,7 +126,8 @@ export const overlay = style({
 globalStyle(
   `${container}:hover:not(:has(${checkbox()}:disabled))  ${overlay}`,
   {
-    backgroundColor: varsThemeBase.colors.surface["brand-hover"],
+    backgroundColor: "var(--hover-color)",
+    // backgroundColor: varsThemeBase.colors.surface["brand-hover"],
     borderRadius: "50%",
   },
 );
