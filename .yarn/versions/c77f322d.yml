@@ -1,5 +1,6 @@
 releases:
   "@rarui-react/checkbox": major
+  "@rarui-react/components": minor
   "@rarui/styles": minor
 
 declined:
