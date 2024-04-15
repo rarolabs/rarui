@@ -1,0 +1,465 @@
+{
+  "id": "text",
+  "name": "Text",
+  "totalProps": 9,
+  "packageName": "@rarui-react/text",
+  "version": "0.0.0",
+  "docLink": "https://rarui.com.br/documentation/src-components/text",
+  "props": [
+    {
+      "description": "The content of the link.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": true
+    },
+    {
+      "description": "Type of html tag to create for the Text component.",
+      "default": "p",
+      "enum": ["p", "span"],
+      "type": "string",
+      "title": "as",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$currentColor",
+                "$disabled",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$invert-secondary",
+                "$on-brand",
+                "$on-error",
+                "$on-info",
+                "$on-success",
+                "$on-warning",
+                "$primary",
+                "$secondary",
+                "$success",
+                "$warning",
+                "$warning-alt"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "xl": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$currentColor",
+                "$disabled",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$invert-secondary",
+                "$on-brand",
+                "$on-error",
+                "$on-info",
+                "$on-success",
+                "$on-warning",
+                "$primary",
+                "$secondary",
+                "$success",
+                "$warning",
+                "$warning-alt"
+              ],
+              "type": "string",
+              "title": "xl"
+            },
+            "md": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$currentColor",
+                "$disabled",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$invert-secondary",
+                "$on-brand",
+                "$on-error",
+                "$on-info",
+                "$on-success",
+                "$on-warning",
+                "$primary",
+                "$secondary",
+                "$success",
+                "$warning",
+                "$warning-alt"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$currentColor",
+                "$disabled",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$invert-secondary",
+                "$on-brand",
+                "$on-error",
+                "$on-info",
+                "$on-success",
+                "$on-warning",
+                "$primary",
+                "$secondary",
+                "$success",
+                "$warning",
+                "$warning-alt"
+              ],
+              "type": "string",
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "xl", "md", "lg"]
+        },
+        {
+          "enum": [
+            "$brand",
+            "$brand-alt",
+            "$currentColor",
+            "$disabled",
+            "$error",
+            "$info",
+            "$invert",
+            "$invert-disabled",
+            "$invert-secondary",
+            "$on-brand",
+            "$on-error",
+            "$on-info",
+            "$on-success",
+            "$on-warning",
+            "$primary",
+            "$secondary",
+            "$success",
+            "$warning",
+            "$warning-alt"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "color",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$bold", "$medium", "$regular", "$semiBold"],
+              "type": "string",
+              "title": "xs"
+            },
+            "xl": {
+              "enum": ["$bold", "$medium", "$regular", "$semiBold"],
+              "type": "string",
+              "title": "xl"
+            },
+            "md": {
+              "enum": ["$bold", "$medium", "$regular", "$semiBold"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$bold", "$medium", "$regular", "$semiBold"],
+              "type": "string",
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "xl", "md", "lg"]
+        },
+        {
+          "enum": ["$bold", "$medium", "$regular", "$semiBold"],
+          "type": "string"
+        }
+      ],
+      "title": "fontWeight",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "xs"
+            },
+            "xl": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "xl"
+            },
+            "md": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "xl", "md", "lg"]
+        },
+        {
+          "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+          "type": "string"
+        }
+      ],
+      "title": "lineHeight",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "xs"
+            },
+            "xl": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "xl"
+            },
+            "md": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "xl", "md", "lg"]
+        },
+        {
+          "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+          "type": "string"
+        }
+      ],
+      "title": "fontSize",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "center",
+                "end",
+                "justify",
+                "left",
+                "match-parent",
+                "right",
+                "start"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "xl": {
+              "enum": [
+                "center",
+                "end",
+                "justify",
+                "left",
+                "match-parent",
+                "right",
+                "start"
+              ],
+              "type": "string",
+              "title": "xl"
+            },
+            "md": {
+              "enum": [
+                "center",
+                "end",
+                "justify",
+                "left",
+                "match-parent",
+                "right",
+                "start"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "center",
+                "end",
+                "justify",
+                "left",
+                "match-parent",
+                "right",
+                "start"
+              ],
+              "type": "string",
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "xl", "md", "lg"]
+        },
+        {
+          "enum": [
+            "center",
+            "end",
+            "justify",
+            "left",
+            "match-parent",
+            "right",
+            "start"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "textAlign",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["break-all", "break-word", "keep-all", "normal"],
+              "type": "string",
+              "title": "xs"
+            },
+            "xl": {
+              "enum": ["break-all", "break-word", "keep-all", "normal"],
+              "type": "string",
+              "title": "xl"
+            },
+            "md": {
+              "enum": ["break-all", "break-word", "keep-all", "normal"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["break-all", "break-word", "keep-all", "normal"],
+              "type": "string",
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "xl", "md", "lg"]
+        },
+        {
+          "enum": ["break-all", "break-word", "keep-all", "normal"],
+          "type": "string"
+        }
+      ],
+      "title": "wordBreak",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": ["none"],
+                  "type": "string"
+                }
+              ],
+              "title": "xs"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": ["none"],
+                  "type": "string"
+                }
+              ],
+              "title": "xl"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": ["none"],
+                  "type": "string"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": ["none"],
+                  "type": "string"
+                }
+              ],
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "xl", "md", "lg"]
+        },
+        {
+          "enum": ["none"],
+          "type": "string"
+        }
+      ],
+      "title": "lineClamp",
+      "required": false
+    }
+  ],
+  "subComponents": []
+}

@@ -2,6 +2,24 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-04-12 `1.5.0`
+
+#### 🎉 New features
+
+- Added new atomic `Icon` component. ([#21](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/21) by [@junior](https://git.rarolabs.com.br/junior))
+
+## 2024-04-11 `1.4.0`
+
+#### 🎉 New features
+
+- Added new atomic `Skeleton` component. ([#21](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/21) by [@junior](https://git.rarolabs.com.br/junior))
+
+## 2024-04-11 `1.4.0`
+
+#### 🎉 New features
+
+- Added new atomic `Text` component. ([#20](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/20) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-10 `1.3.0`
 
 #### 🎉 New features

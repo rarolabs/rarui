@@ -2,6 +2,24 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-04-12 `1.6.0`
+
+#### 🎉 New features
+
+- Added new style pack for `icon` component. ([#22](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/22) by [@junior](https://git.rarolabs.com.br/junior))
+
+## 2024-04-11 `1.5.0`
+
+#### 🎉 New features
+
+- Added new style pack for `skeleton` component. ([#21](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/21) by [@junior](https://git.rarolabs.com.br/junior))
+
+## 2024-04-11 `1.4.0`
+
+#### 🎉 New features
+
+- Added new style pack for `text` component. ([#20](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/20) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-10 `1.3.0`
 
 #### 🎉 New features
