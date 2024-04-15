@@ -1,8 +1,9 @@
-import React, { forwardRef } from "react";
+import React, { ComponentPropsWithRef, forwardRef, useRef } from "react";
 import { checkbox } from "@rarui/styles";
-import { CheckboxProps } from "./checkbox.types";
+import { useRefObjectAsForwardedRef } from "@rarui/typings";
+import { CheckboxBaseProps } from "./checkbox.types";
 
-const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
+const Checkbox = forwardRef<HTMLInputElement, CheckboxBaseProps>(
   (
     {
       className: _className,
@@ -17,23 +18,25 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
     },
     ref,
   ) => {
+    const innerRef = useRef<HTMLInputElement>(null);
+    useRefObjectAsForwardedRef(ref, innerRef);
+
     return (
       <label htmlFor={id} className={checkbox.classnames.label({ danger })}>
         <span className={checkbox.classnames.container}>
           <input
             {...props}
             type="checkbox"
-            ref={ref}
+            ref={innerRef}
             id={id}
             className={checkbox.classnames.checkbox({
               danger,
-              //@ts-ignore
               size,
               indeterminate,
             })}
             disabled={disabled}
           />
-          <span className={checkbox.classnames.overlay}></span>
+          <span className={checkbox.classnames.overlay} />
         </span>
         {label && <span>{label}</span>}
       </label>
@@ -41,4 +44,5 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
   },
 );
 
+export type CheckboxProps = ComponentPropsWithRef<typeof Checkbox>;
 export { Checkbox };

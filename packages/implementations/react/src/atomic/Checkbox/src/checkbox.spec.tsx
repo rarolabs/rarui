@@ -2,9 +2,9 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 
 import { Checkbox } from "./Checkbox";
-import { CheckboxProps } from "./checkbox.types";
+import { CheckboxBaseProps } from "./checkbox.types";
 
-const makeSut = (props: CheckboxProps) => {
+const makeSut = (props: CheckboxBaseProps) => {
   render(<Checkbox {...props} data-testid="checkbox-input" />);
 };
 

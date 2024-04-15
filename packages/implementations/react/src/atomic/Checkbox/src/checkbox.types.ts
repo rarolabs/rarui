@@ -33,5 +33,5 @@ export interface CheckboxProperties {
   size?: "medium" | "large";
 }
 
-export type CheckboxProps = CheckboxProperties &
-  InputHTMLAttributes<HTMLInputElement>;
+export type CheckboxBaseProps = CheckboxProperties &
+  Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

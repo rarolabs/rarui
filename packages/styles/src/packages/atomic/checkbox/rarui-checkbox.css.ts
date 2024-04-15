@@ -1,6 +1,6 @@
 import { recipe } from "@vanilla-extract/recipes";
-import { varsThemeBase } from "../../../themes";
 import { globalStyle, style } from "@vanilla-extract/css";
+import { varsThemeBase } from "../../../themes";
 
 export const checkbox = recipe({
   base: {
@@ -54,9 +54,6 @@ export const checkbox = recipe({
 
         ":checked": {
           backgroundColor: varsThemeBase.colors.surface.error,
-        },
-        vars: {
-          "--abc": "blue",
         },
       },
     },
