@@ -821,7 +821,7 @@
       "70": {
         "rgb": "255, 176, 66",
         "alpha": "1",
-        "value": "rgba({color.yellow.98.rgb}, {color.yellow.98.alpha})"
+        "value": "rgba({color.yellow.70.rgb}, {color.yellow.70.alpha})"
       },
       "80": {
         "rgb": "255, 187, 92",

@@ -1,7 +1,7 @@
 import { recipe } from "@vanilla-extract/recipes";
 import { varsThemeBase } from "../../../themes";
 
-export const badge = recipe({
+const badge = recipe({
   base: {
     display: "flex",
     alignItems: "center",
@@ -167,3 +167,7 @@ export const badge = recipe({
     },
   ],
 });
+
+export const styles = {
+  badge,
+};

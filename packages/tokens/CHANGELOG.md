@@ -2,6 +2,12 @@
 
 Our design tokens are the foundations of Design System.
 
+## 2024-04-16 `1.0.3`
+
+#### 💡 Others
+
+- Adjusted color of the dark theme `color-dark-content-warning` token. ([#23](https://git.rarolabs.com.br/frontend/rarui/pull/23) by [@juniorconquista](https://github.com/juniorconquista))
+
 ## 2024-04-09 `1.0.2`
 
 #### 💡 Others
@@ -34,4 +40,4 @@ Our design tokens are the foundations of Design System.
 
 <!-- #### 💡 Others -->
 
-<!-- #### ⚠️ Notices -->
+<!-- #### ⚠️ Notices  -->

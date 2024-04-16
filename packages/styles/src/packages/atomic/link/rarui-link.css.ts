@@ -1,7 +1,7 @@
 import { recipe } from "@vanilla-extract/recipes";
 import { varsThemeBase } from "../../../themes";
 
-export const link = recipe({
+const link = recipe({
   base: {
     display: "flex",
     alignItems: "center",
@@ -54,3 +54,7 @@ export const link = recipe({
     },
   },
 });
+
+export const styles = {
+  link,
+};

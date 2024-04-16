@@ -1,6 +1,6 @@
 {
-  "name": "@rarui/styles",
-  "version": "1.8.0-rc.1",
+  "name": "@rarui-react/status",
+  "version": "1.0.0-rc.1",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -10,9 +10,13 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "webpack",
+    "build": "yarn g:webpack",
     "clean": "rm -rf dist",
     "version": "yarn version"
+  },
+  "peerDependencies": {
+    "react": "^16.8 || ^17.0 || ^18.0",
+    "react-dom": "^16.8 || ^17.0 || ^18.0"
   },
   "homepage": "https://git.rarolabs.com.br/frontend/rarui",
   "repository": {
@@ -23,16 +27,9 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
   },
   "devDependencies": {
-    "@rarui/tokens": "workspace:^",
-    "@rarui/webpack": "workspace:^",
-    "@vanilla-extract/css": "^1.14.1",
-    "@vanilla-extract/dynamic": "^2.1.0",
-    "@vanilla-extract/recipes": "^0.5.2",
-    "@vanilla-extract/sprinkles": "^1.6.1",
-    "rainbow-sprinkles": "^0.17.1",
-    "webpack": "^5.90.3",
-    "webpack-merge": "^5.10.0",
-    "webpack-shell-plugin-next": "^2.3.1"
+    "@rarui-react/icon": "workspace:^",
+    "@rarui/icons": "workspace:^",
+    "@rarui/webpack": "workspace:^"
   },
-  "stableVersion": "1.7.0"
+  "stableVersion": "0.0.0"
 }

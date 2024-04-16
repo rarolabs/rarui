@@ -1,4 +1,4 @@
 import { RecipeVariants } from "@vanilla-extract/recipes";
-import { chip } from "./rarui-chip.css";
+import { styles } from "./rarui-chip.css";
 
-export type ChipVariants = RecipeVariants<typeof chip>;
+export type ChipVariants = RecipeVariants<typeof styles.chip>;
