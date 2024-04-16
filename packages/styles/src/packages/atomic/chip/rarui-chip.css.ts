@@ -14,7 +14,7 @@ const chip = recipe({
     padding: `0 ${varsThemeBase.spacing.xs}`,
     height: "2rem",
     fontWeight: varsThemeBase.fontWeight.medium,
-    lineHeight: varsThemeBase.lineHeight.button.m,
+    lineHeight: varsThemeBase.lineHeight.body.s,
     fontSize: varsThemeBase.fontSize.button.m,
     fontFamily: varsThemeBase.fontFamily.inter,
     borderWidth: varsThemeBase.shape.border.width[1],
@@ -50,22 +50,22 @@ const chip = recipe({
         color: varsThemeBase.colors.content["on-brand"],
       },
     },
+    shortPadding: {
+      true: {
+        padding: `0 ${varsThemeBase.spacing["4xs"]}`,
+      },
+    },
   },
 });
 
 export const overlay = style({
   position: "absolute",
-  top: -1,
-  left: -1,
-  bottom: -1,
-  right: -1,
+  inset: 0,
   pointerEvents: "none",
-  opacity: 0,
   borderRadius: "inherit",
 });
 
 globalStyle(`${chip()}:hover ${overlay}`, {
-  opacity: 1,
   backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
   borderColor: varsThemeBase.colors.surface["on-brand-hover"],
 });
