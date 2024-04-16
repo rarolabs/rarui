@@ -6,7 +6,7 @@
 
 #### 🎉 New features
 
-- Added new atomic `Status` component. ([#23](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/23) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new atomic `Status` component. ([#24](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/24) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-04-12 `1.5.0`
 

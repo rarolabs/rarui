@@ -40,4 +40,4 @@ Our design tokens are the foundations of Design System.
 
 <!-- #### 💡 Others -->
 
-<!-- #### ⚠️ Notices -->
+<!-- #### ⚠️ Notices  -->
