@@ -11,25 +11,23 @@ const Status: React.FC<StatusProps> = ({
   subdued = false,
   children,
   ...props
-}) => {
-  return (
-    <div
-      className={status.classnames.status({
-        size,
-        variant,
-        appearance,
-        subdued,
-      })}
-      {...props}
-    >
-      <span
-        data-testid="status-dot"
-        className={status.classnames.dot({ size })}
-      />
-      {children}
-    </div>
-  );
-};
+}) => (
+  <div
+    className={status.classnames.status({
+      size,
+      variant,
+      appearance,
+      subdued,
+    })}
+    {...props}
+  >
+    <span
+      data-testid="status-dot"
+      className={status.classnames.dot({ size })}
+    />
+    {children}
+  </div>
+);
 
 Status.displayName = "Button";
 
