@@ -1,6 +1,6 @@
 import React from "react";
-import { BadgeProps } from "./badge.types";
 import { badge } from "@rarui/styles";
+import { BadgeProps } from "./badge.types";
 
 const Badge: React.FC<BadgeProps> = ({
   className: _className,
@@ -10,8 +10,7 @@ const Badge: React.FC<BadgeProps> = ({
   variant = "solid",
   children,
   ...props
-}) => {
-  return (
+}) => (
     <div
       {...props}
       className={badge.classnames.badge({ appearance, variant, size })}
@@ -19,7 +18,6 @@ const Badge: React.FC<BadgeProps> = ({
       {size !== "dot" && children}
     </div>
   );
-};
 Badge.displayName = "Badge";
 
 export { Badge };

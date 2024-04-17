@@ -1,10 +1,10 @@
 # `@rarui-react/badge`
 
-Description
+Badge components are used to convey dynamic information, such as a count or status.
 
 ## Installation
 
-``` sh
+```sh
 $ yarn add @rarui-react/badge
 # or
 $ npm install @rarui-react/badge

@@ -1,8 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 
-import { Badge } from ".";
-import { BadgeProps } from ".";
+import { Badge , BadgeProps } from ".";
 
 const makeSut = (rest: BadgeProps) => {
   render(<Badge {...rest} data-testid="badge-element" />);
