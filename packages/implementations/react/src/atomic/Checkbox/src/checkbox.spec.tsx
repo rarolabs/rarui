@@ -2,9 +2,9 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 
 import { Checkbox } from "./Checkbox";
-import { CheckboxBaseProps } from "./checkbox.types";
+import { CheckboxProps } from "./checkbox.types";
 
-const makeSut = (props: CheckboxBaseProps) => {
+const makeSut = (props: CheckboxProps) => {
   render(<Checkbox {...props} data-testid="checkbox-input" />);
 };
 
@@ -51,11 +51,11 @@ describe("GIVEN <Checkbox />", () => {
       expect(screen.getByText("Checkbox")).toBeDefined();
     });
 
-    it("THEN should correctly render the appearance danger", () => {
-      makeSut({ id: "checkbox", label: "Checkbox", danger: true });
+    it("THEN should correctly render the appearance error", () => {
+      makeSut({ id: "checkbox", label: "Checkbox", error: true });
       expect(
         screen.getByTestId("checkbox-input").getAttribute("class"),
-      ).toContain("danger");
+      ).toContain("error");
       expect(screen.getByText("Checkbox")).toBeDefined();
     });
   });

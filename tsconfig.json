@@ -60,6 +60,9 @@
       "@rarui-react/skeleton": [
         "./packages/implementations/react/src/atomic/Skeleton/src"
       ],
+      "@rarui-react/status": [
+        "./packages/implementations/react/src/atomic/Status/src"
+      ],
       "@rarui-react/text": [
         "./packages/implementations/react/src/atomic/Text/src"
       ],

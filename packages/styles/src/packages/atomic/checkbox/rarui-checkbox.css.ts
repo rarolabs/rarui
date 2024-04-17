@@ -48,7 +48,7 @@ export const checkbox = recipe({
     },
   },
   variants: {
-    danger: {
+    error: {
       true: {
         borderColor: varsThemeBase.colors.border.error,
 
@@ -96,7 +96,7 @@ export const label = recipe({
     },
   },
   variants: {
-    danger: {
+    error: {
       true: {
         vars: {
           "--hover-color": varsThemeBase.colors.surface["error-hover"],
