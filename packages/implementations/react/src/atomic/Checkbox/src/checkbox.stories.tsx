@@ -21,9 +21,9 @@ export const basic: Story = {
     label: "Label",
   },
 };
-export const danger: Story = {
+export const error: Story = {
   args: {
-    danger: true,
+    error: true,
     label: "Label",
   },
 };
