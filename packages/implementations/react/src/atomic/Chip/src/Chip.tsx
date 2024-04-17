@@ -1,8 +1,8 @@
 import React from "react";
 import { chip } from "@rarui/styles";
-import { ChipProps } from "./chip.types";
 import { CancelCircleFilledIcon } from "@rarui/icons";
 import { Icon } from "@rarui-react/icon";
+import { ChipProps } from "./chip.types";
 
 const Chip: React.FC<ChipProps> = ({
   className: _className,

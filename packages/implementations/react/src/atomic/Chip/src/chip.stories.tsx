@@ -1,9 +1,9 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { argTypesConvert } from ".storybook/utils";
+import { CheckIcon } from "@rarui/icons";
 import docs from "./chip.docs.json";
 import { Chip } from "./Chip";
-import { CheckIcon } from "@rarui/icons";
 
 const meta: Meta<typeof Chip> = {
   title: "Atomic/Chip",

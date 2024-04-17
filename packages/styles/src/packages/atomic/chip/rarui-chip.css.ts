@@ -1,6 +1,6 @@
 import { recipe } from "@vanilla-extract/recipes";
-import { varsThemeBase } from "../../../themes";
 import { globalStyle, style } from "@vanilla-extract/css";
+import { varsThemeBase } from "../../../themes";
 
 const chip = recipe({
   base: {
