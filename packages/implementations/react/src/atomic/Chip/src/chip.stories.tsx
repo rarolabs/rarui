@@ -1,7 +1,9 @@
+import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { argTypesConvert } from ".storybook/utils";
 import docs from "./chip.docs.json";
 import { Chip } from "./Chip";
+import { CheckIcon } from "@rarui/icons";
 
 const meta: Meta<typeof Chip> = {
   title: "Atomic/Chip",
@@ -26,7 +28,8 @@ export const Default: Story = {
 export const Avatar: Story = {
   args: {
     children: "Label",
-    avatar: "M",
+    avatar: <CheckIcon size={20} />,
+    icon: <CheckIcon size={20} />,
   },
 };
 
@@ -41,5 +44,12 @@ export const Selected: Story = {
   args: {
     children: "Label",
     selected: true,
+  },
+};
+export const SelectedIcon: Story = {
+  args: {
+    children: "Label",
+    selected: true,
+    icon: <CheckIcon size={20} />,
   },
 };

@@ -1,4 +1,4 @@
-import { HtmlHTMLAttributes, ReactNode } from "react";
+import { HtmlHTMLAttributes, ReactElement, ReactNode } from "react";
 
 export interface ChipProperties {
   /**
@@ -22,14 +22,20 @@ export interface ChipProperties {
    */
   closeable?: boolean;
   /**
-   * The property is used to display an avatar on the beggining of the component.
+   * SVG icon to be displayed on the chip component.
+   * @TJS-type React.ReactElement
    */
-  avatar?: string;
+  avatar?: ReactElement;
   /**
    * The property is used to change the appearence of the component.
    * @default false
    */
   selected?: boolean;
+  /**
+   * SVG icon to be displayed on the chip component.
+   * @TJS-type React.ReactElement
+   */
+  icon?: ReactElement;
 }
 
 export type ChipProps = ChipProperties & HtmlHTMLAttributes<HTMLDivElement>;

@@ -1,7 +1,7 @@
 {
   "id": "chip",
   "name": "Chip",
-  "totalProps": 6,
+  "totalProps": 7,
   "packageName": "@rarui-react/chip",
   "version": "1.0.0-rc.1",
   "docLink": "https://rarui.com.br/documentation/src-components/chip",
@@ -34,8 +34,8 @@
       "required": false
     },
     {
-      "description": "The property is used to display an avatar on the beggining of the component.",
-      "type": "string",
+      "description": "SVG icon to be displayed on the chip component.",
+      "type": "React.ReactElement",
       "title": "avatar",
       "required": false
     },
@@ -44,6 +44,12 @@
       "default": false,
       "type": "boolean",
       "title": "selected",
+      "required": false
+    },
+    {
+      "description": "SVG icon to be displayed on the chip component.",
+      "type": "React.ReactElement",
+      "title": "icon",
       "required": false
     }
   ],

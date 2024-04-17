@@ -10,8 +10,13 @@ const makeSut = (rest: ChipProps) => {
 
 describe("GIVEN <Chip />", () => {
   it("THEN it should correctly display the sent avatar", () => {
-    makeSut({ children: "chip", avatar: "M" });
-    expect(screen.getByText("M")).toBeDefined();
+    makeSut({ children: "chip", avatar: <svg /> });
+    expect(screen.getByTestId("avatar-icon")).toBeDefined();
+  });
+
+  it("THEN it should correctly display the sent icon", () => {
+    makeSut({ children: "chip", icon: <svg /> });
+    expect(screen.getByTestId("icon")).toBeDefined();
   });
 
   it("THEN it should correctly display the sent text", () => {
@@ -24,6 +29,6 @@ describe("GIVEN <Chip />", () => {
       children: "text_chip",
       closeable: true,
     });
-    expect(screen.getByText("x")).toBeDefined();
+    expect(screen.getByLabelText("close")).toBeDefined();
   });
 });
