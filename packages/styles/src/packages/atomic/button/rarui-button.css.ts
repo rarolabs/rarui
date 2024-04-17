@@ -3,7 +3,7 @@ import { recipe } from "@vanilla-extract/recipes";
 import { varsThemeBase } from "../../../themes";
 import { buttonVariants } from "./rarui-button.commons";
 
-export const button = recipe({
+const button = recipe({
   base: {
     display: "flex",
     alignItems: "center",
@@ -274,7 +274,7 @@ export const button = recipe({
   ],
 });
 
-export const overlay = style({
+const overlay = style({
   position: "absolute",
   top: -1,
   left: -1,
@@ -296,3 +296,8 @@ globalStyle(`${button()}:active ${overlay}`, {
   backgroundColor: varsThemeBase.colors.surface["on-brand-press"],
   borderColor: varsThemeBase.colors.surface["on-brand-press"],
 });
+
+export const styles = {
+  button,
+  overlay,
+};

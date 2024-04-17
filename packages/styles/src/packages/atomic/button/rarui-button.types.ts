@@ -1,4 +1,4 @@
 import { RecipeVariants } from "@vanilla-extract/recipes";
-import { button } from "./rarui-button.css";
+import { styles } from "./rarui-button.css";
 
-export type ButtonVariants = RecipeVariants<typeof button>;
+export type ButtonVariants = RecipeVariants<typeof styles.button>;

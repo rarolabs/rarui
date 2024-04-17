@@ -1,7 +1,7 @@
 import { recipe } from "@vanilla-extract/recipes";
 import { varsThemeBase } from "../../../themes";
 
-export const chip = recipe({
+const chip = recipe({
   base: {
     display: "flex",
     alignItems: "center",
@@ -45,28 +45,6 @@ export const chip = recipe({
         borderRadius: varsThemeBase.shape.border.radius["2xs"],
       },
     },
-    // appearance: {
-    //   brand: {
-    //     backgroundColor: varsThemeBase.colors.surface.brand,
-    //     color: varsThemeBase.colors.content["on-brand"],
-    //     ":hover": {
-    //         backgroundColor: varsThemeBase.colors.surface["on-brand-hover"]
-    //     },
-    //     ":active": {
-    //         backgroundColor: varsThemeBase.colors.surface["on-brand-press"]
-    //     },
-    //   },
-    //   primary: {
-    //     backgroundColor: varsThemeBase.colors.surface.primary,
-    //     color: varsThemeBase.colors.content.primary,
-    //     ":hover": {
-    //         backgroundColor: varsThemeBase.colors.surface.primary
-    //     },
-    //     ":active": {
-    //         backgroundColor: varsThemeBase.colors.surface.primary
-    //     },
-    //   },
-    // },
     variantdsa: {
       selected: {
         border: "none",
@@ -81,7 +59,8 @@ export const chip = recipe({
       },
     },
   },
-  compoundVariants: [
-    // variant outlined
-  ],
 });
+
+export const styles = {
+  chip,
+};

@@ -25,15 +25,23 @@ export const argTypesConvert = (properties: any = {}) => {
 
       options = enums;
 
+      let control = "";
+      switch (true) {
+        case curr.type === "boolean":
+          control = "boolean";
+          break;
+        case options?.length > 6:
+          control = "select";
+          break;
+        default:
+          control = "radio";
+          break;
+      }
+
       prev[curr.title] = {
         defaultValue: curr.default,
         description: curr.description ?? "",
-        control:
-          curr.type === "boolean"
-            ? "boolean"
-            : options?.length > 6
-              ? "select"
-              : "radio",
+        control: control,
         options,
       };
       return prev;
