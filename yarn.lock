@@ -3195,6 +3195,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@rarui-react/checkbox@workspace:packages/implementations/react/src/atomic/Checkbox"
   dependencies:
+    "@rarui-react/text": "workspace:^"
     "@rarui/webpack": "workspace:^"
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
@@ -3260,7 +3261,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui-react/text@workspace:packages/implementations/react/src/atomic/Text":
+"@rarui-react/text@workspace:^, @rarui-react/text@workspace:packages/implementations/react/src/atomic/Text":
   version: 0.0.0-use.local
   resolution: "@rarui-react/text@workspace:packages/implementations/react/src/atomic/Text"
   dependencies:
