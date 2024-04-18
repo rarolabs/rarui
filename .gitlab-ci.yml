@@ -84,9 +84,9 @@ docs-job:
     - git add .
     - git commit -m "Publish release stable [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "trigger"
-
+  only:
+    variables:
+      - $TRIGGER_JOB == "docs-job"
 
 deploy-stable-job: # This job runs in the deploy-stable stage.
   stage: deploy # It only runs when *both* jobs in the test stage complete successfully.
@@ -104,6 +104,13 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - git add .
     - git commit -m "Publish release stable [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
+    - "curl 
+      --request POST
+      --form token=$CI_JOB_TOKEN
+      --form ref=master
+      --form variables[TRIGGER_JOB]=job2
+      https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/trigger/pipeline"
+
   rules:
     - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
     - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
