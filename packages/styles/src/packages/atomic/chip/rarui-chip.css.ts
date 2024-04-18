@@ -1,9 +1,18 @@
 import { recipe } from "@vanilla-extract/recipes";
 import { globalStyle, style } from "@vanilla-extract/css";
-import { varsThemeBase } from "../../../themes";
+import {
+  createRainbowSprinkles,
+  defineProperties as defineRainbowProperties,
+} from "rainbow-sprinkles";
+import { mediaQueries, varsThemeBase } from "../../../themes";
+
+/* -------------------------------------------------------------------------------------------------
+ * Style
+ * -----------------------------------------------------------------------------------------------*/
 
 const chip = recipe({
   base: {
+    cursor: "pointer",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -11,11 +20,7 @@ const chip = recipe({
     boxSizing: "border-box",
     position: "relative",
     gap: varsThemeBase.spacing["3xs"],
-    padding: `0 ${varsThemeBase.spacing.xs}`,
-    height: "2rem",
     fontWeight: varsThemeBase.fontWeight.medium,
-    lineHeight: varsThemeBase.lineHeight.body.s,
-    fontSize: varsThemeBase.fontSize.button.m,
     fontFamily: varsThemeBase.fontFamily.inter,
     borderWidth: varsThemeBase.shape.border.width[1],
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
@@ -45,14 +50,24 @@ const chip = recipe({
     },
     selected: {
       true: {
-        border: "none",
+        borderColor: varsThemeBase.colors.surface.brand,
         backgroundColor: varsThemeBase.colors.surface.brand,
         color: varsThemeBase.colors.content["on-brand"],
+        ":hover": {
+          backgroundColor: varsThemeBase.colors.surface.brand,
+        },
       },
     },
-    shortPadding: {
-      true: {
-        padding: `0 ${varsThemeBase.spacing["4xs"]}`,
+    size: {
+      medium: {
+        lineHeight: varsThemeBase.lineHeight.button.m,
+        fontSize: varsThemeBase.fontSize.button.m,
+        height: "2rem",
+      },
+      small: {
+        lineHeight: varsThemeBase.lineHeight.button.s,
+        fontSize: varsThemeBase.fontSize.button.s,
+        height: "1.5rem",
       },
     },
   },
@@ -80,3 +95,35 @@ export const styles = {
   chip,
   overlay,
 };
+
+/* -------------------------------------------------------------------------------------------------
+ * Sprinkle
+ * -----------------------------------------------------------------------------------------------*/
+
+const paddingProperties = {
+  medium: `0 ${varsThemeBase.spacing.xs}`,
+  small: `0 ${varsThemeBase.spacing["4xs"]}`,
+};
+
+const defineProperties = defineRainbowProperties({
+  conditions: {
+    xs: {
+      "@media": mediaQueries.xs(),
+    },
+    md: {
+      "@media": mediaQueries.md(),
+    },
+    lg: {
+      "@media": mediaQueries.lg(),
+    },
+    xl: {
+      "@media": mediaQueries.xl(),
+    },
+  },
+  defaultCondition: "xs",
+  staticProperties: {
+    padding: paddingProperties,
+  },
+});
+
+export const sprinkle = createRainbowSprinkles(defineProperties);

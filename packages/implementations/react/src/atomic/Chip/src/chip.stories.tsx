@@ -1,7 +1,9 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { argTypesConvert } from ".storybook/utils";
-import { CheckIcon } from "@rarui/icons";
+import { Icon } from "@rarui-react/icon";
+import { Text } from "@rarui-react/text";
+import { CloudOutlinedIcon } from "@rarui/icons";
 import docs from "./chip.docs.json";
 import { Chip } from "./Chip";
 
@@ -21,15 +23,13 @@ type Story = StoryObj<typeof Chip>;
 export const Default: Story = {
   args: {
     children: "Label",
-    pill: true,
   },
 };
 
-export const Avatar: Story = {
+export const Pill: Story = {
   args: {
     children: "Label",
-    avatar: <CheckIcon size={20} />,
-    icon: <CheckIcon size={20} />,
+    pill: true,
   },
 };
 
@@ -37,19 +37,19 @@ export const Closeable: Story = {
   args: {
     children: "Label",
     closeable: true,
+    size: "small",
+    padding: "$small",
   },
 };
 
-export const Selected: Story = {
+export const WithIcon: Story = {
   args: {
-    children: "Label",
-    selected: true,
-  },
-};
-export const SelectedIcon: Story = {
-  args: {
-    children: "Label",
-    selected: true,
-    icon: <CheckIcon size={20} />,
+    padding: "$medium",
+    children: (
+      <>
+        <Icon source={<CloudOutlinedIcon size="small" />} />
+        <Text color="$primary">Chip</Text>
+      </>
+    ),
   },
 };

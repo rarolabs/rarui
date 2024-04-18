@@ -3207,6 +3207,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@rarui-react/chip@workspace:packages/implementations/react/src/atomic/Chip"
   dependencies:
+    "@rarui-react/icon": "workspace:^"
+    "@rarui-react/text": "workspace:^"
+    "@rarui/icons": "workspace:^"
     "@rarui/webpack": "workspace:^"
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0

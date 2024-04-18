@@ -9,35 +9,39 @@ const Chip: React.FC<ChipProps> = ({
   style: _style,
   pill = false,
   closeable = false,
+  size = "medium",
+  padding = "$medium",
   selected,
-  avatar,
   children,
-  icon,
-  ...props
+  ...rest
 }) => {
-  const shortPadding =
-    React.isValidElement(icon) || React.isValidElement(avatar) || closeable;
+  const { className, style, otherProps } = chip.sprinkle({
+    ...(rest as Parameters<typeof chip.sprinkle>[0]),
+    padding,
+  });
 
   return (
-    <div
-      {...props}
-      className={chip.classnames.chip({
-        pill,
-        selected,
-        shortPadding,
-      })}
+    <button
+      {...otherProps}
+      {...style}
+      type="button"
+      className={[
+        chip.classnames.chip({
+          pill,
+          selected,
+          size,
+        }),
+        className,
+      ].join(" ")}
     >
-      {(avatar && <Icon source={avatar} data-testid="avatar-icon" />) ||
-        (icon && <Icon source={icon} data-testid="icon" />)}
       {children}
       {closeable && (
         <Icon
           source={<CancelCircleFilledIcon size={16} aria-label="close" />}
         />
       )}
-
       <span className={chip.classnames.overlay} />
-    </div>
+    </button>
   );
 };
 Chip.displayName = "Chip";

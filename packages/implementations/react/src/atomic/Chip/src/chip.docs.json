@@ -1,7 +1,7 @@
 {
   "id": "chip",
   "name": "Chip",
-  "totalProps": 7,
+  "totalProps": 6,
   "packageName": "@rarui-react/chip",
   "version": "1.0.0-rc.1",
   "docLink": "https://rarui.com.br/documentation/src-components/chip",
@@ -13,20 +13,6 @@
       "required": true
     },
     {
-      "description": "Change the shape of the chip.",
-      "default": false,
-      "type": "boolean",
-      "title": "pill",
-      "required": false
-    },
-    {
-      "description": "Disables the chip, disallowing user interaction.",
-      "default": false,
-      "type": "boolean",
-      "title": "disabled",
-      "required": false
-    },
-    {
       "description": "Displays a delete icon and adds user interaction.",
       "default": false,
       "type": "boolean",
@@ -34,22 +20,56 @@
       "required": false
     },
     {
-      "description": "SVG icon to be displayed on the chip component.",
-      "type": "React.ReactElement",
-      "title": "avatar",
+      "type": "boolean",
+      "title": "pill",
       "required": false
     },
     {
-      "description": "The property is used to change the appearence of the component.",
-      "default": false,
       "type": "boolean",
       "title": "selected",
       "required": false
     },
     {
-      "description": "SVG icon to be displayed on the chip component.",
-      "type": "React.ReactElement",
-      "title": "icon",
+      "enum": ["medium", "small"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$medium", "$small"],
+              "type": "string",
+              "title": "xs"
+            },
+            "xl": {
+              "enum": ["$medium", "$small"],
+              "type": "string",
+              "title": "xl"
+            },
+            "md": {
+              "enum": ["$medium", "$small"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$medium", "$small"],
+              "type": "string",
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "xl", "md", "lg"]
+        },
+        {
+          "enum": ["$medium", "$small"],
+          "type": "string"
+        }
+      ],
+      "title": "padding",
       "required": false
     }
   ],

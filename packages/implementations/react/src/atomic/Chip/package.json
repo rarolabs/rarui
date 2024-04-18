@@ -5,13 +5,18 @@
   "main": "dist/index.js",
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ],
   "sideEffects": false,
   "scripts": {
     "build": "yarn g:webpack",
     "clean": "rm -rf dist",
     "version": "yarn version"
+  },
+  "dependencies": {
+    "@rarui-react/icon": "workspace:^",
+    "@rarui/icons": "workspace:^"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17.0 || ^18.0",
@@ -26,6 +31,8 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui//issues"
   },
   "devDependencies": {
+    "@rarui-react/text": "workspace:^",
+    "@rarui/icons": "workspace:^",
     "@rarui/webpack": "workspace:^"
   },
   "stableVersion": "0.0.0"

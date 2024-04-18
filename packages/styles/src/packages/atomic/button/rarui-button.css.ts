@@ -3,6 +3,10 @@ import { recipe } from "@vanilla-extract/recipes";
 import { varsThemeBase } from "../../../themes";
 import { buttonVariants } from "./rarui-button.commons";
 
+/* -------------------------------------------------------------------------------------------------
+ * Style
+ * -----------------------------------------------------------------------------------------------*/
+
 const button = recipe({
   base: {
     display: "flex",
@@ -103,7 +107,6 @@ const button = recipe({
     },
   },
   compoundVariants: [
-    // variant outlined
     {
       variants: {
         appearance: "brand",
