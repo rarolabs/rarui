@@ -2,7 +2,7 @@
 
 Badge components are used to convey dynamic information, such as a count or status.
 
-## 2024-04-17 `1.0.0`
+## 2024-04-18 `1.0.0`
 
 #### 🎉 New features
 

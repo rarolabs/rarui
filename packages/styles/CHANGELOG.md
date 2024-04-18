@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-04-18 `1.10.0`
+
+#### 🎉 New features
+
+- Added new style pack for `badge` component. ([#17](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/17) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+
 ## 2024-04-18 `1.9.0`
 
 #### 🎉 New features

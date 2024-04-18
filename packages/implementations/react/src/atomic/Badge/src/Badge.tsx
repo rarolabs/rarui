@@ -11,13 +11,14 @@ const Badge: React.FC<BadgeProps> = ({
   children,
   ...props
 }) => (
-    <div
-      {...props}
-      className={badge.classnames.badge({ appearance, variant, size })}
-    >
-      {size !== "dot" && children}
-    </div>
-  );
+  <div
+    {...props}
+    className={badge.classnames.badge({ appearance, variant, size })}
+  >
+    {size !== "dot" && children}
+  </div>
+);
+
 Badge.displayName = "Badge";
 
 export { Badge };
