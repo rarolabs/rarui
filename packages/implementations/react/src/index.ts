@@ -10,3 +10,4 @@ export * from "@rarui-react/skeleton";
 export * from "@rarui-react/status";
 export * from "@rarui-react/text";
 export * from "@rarui-react/title";
+export * from "@rarui-react/toggle";

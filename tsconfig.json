@@ -75,6 +75,9 @@
       "@rarui-react/title": [
         "./packages/implementations/react/src/atomic/Title/src"
       ],
+      "@rarui-react/toggle": [
+        "./packages/implementations/react/src/atomic/Toggle/src"
+      ],
       "@rarui-vuejs/button": [
         "./packages/implementations/vuejs/src/atomic/Button/src"
       ]
