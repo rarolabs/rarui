@@ -2,6 +2,10 @@ import { recipe } from "@vanilla-extract/recipes";
 import { globalStyle, style } from "@vanilla-extract/css";
 import { varsThemeBase } from "../../../themes";
 
+/* -------------------------------------------------------------------------------------------------
+ * Style
+ * -----------------------------------------------------------------------------------------------*/
+
 export const checkbox = recipe({
   base: {
     appearance: "none",

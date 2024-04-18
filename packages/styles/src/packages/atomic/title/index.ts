@@ -1,8 +1,8 @@
-import { titleSprinkle, styles } from "./rarui-title.css";
+import { sprinkle, styles } from "./rarui-title.css";
 
 export const title = {
   classnames: { ...styles },
-  ...titleSprinkle,
+  sprinkle,
 };
 
-export type { TitleSprinkle } from "./rarui-title.css";
+export type { TitleSprinkle } from "./rarui-title.types";

@@ -7,6 +7,10 @@ import { keyframes } from "@vanilla-extract/css";
 import { mediaQueries, varsThemeBase } from "../../../themes";
 import { borderRadiusProperties } from "../../../properties";
 
+/* -------------------------------------------------------------------------------------------------
+ * Style
+ * -----------------------------------------------------------------------------------------------*/
+
 const skeletonAnimation = keyframes({
   "0%": {
     left: 0,
@@ -62,6 +66,10 @@ export const styles = {
   skeleton,
 };
 
+/* -------------------------------------------------------------------------------------------------
+ * Sprinkle
+ * -----------------------------------------------------------------------------------------------*/
+
 const defineProperties = defineRainbowProperties({
   conditions: {
     xs: {
@@ -87,10 +95,4 @@ const defineProperties = defineRainbowProperties({
   },
 });
 
-const sprinkle = createRainbowSprinkles(defineProperties);
-
-export type SkeletonSprinkle = Parameters<typeof sprinkle>[0];
-
-export const skeletonSprinkle = {
-  sprinkle,
-};
+export const sprinkle = createRainbowSprinkles(defineProperties);
