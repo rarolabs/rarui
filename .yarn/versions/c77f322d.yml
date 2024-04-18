@@ -5,3 +5,11 @@ releases:
 
 declined:
   - "@rarui/design-system"
+  - "@rarui-react/box"
+  - "@rarui-react/button"
+  - "@rarui-react/icon"
+  - "@rarui-react/link"
+  - "@rarui-react/skeleton"
+  - "@rarui-react/status"
+  - "@rarui-react/text"
+  - "@rarui-react/title"
