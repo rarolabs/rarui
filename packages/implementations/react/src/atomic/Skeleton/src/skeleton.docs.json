@@ -1,33 +1,715 @@
 {
   "id": "skeleton",
   "name": "Skeleton",
-  "totalProps": 4,
+  "totalProps": 6,
   "packageName": "@rarui-react/skeleton",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/skeleton",
   "props": [
-    {
-      "description": "Width of the skeleton. Useful when the skeleton is inside an inline element with no width of its own.",
-      "type": "string",
-      "title": "width",
-      "required": true
-    },
-    {
-      "description": "Height of the skeleton. Useful when you don't want to adapt the skeleton to a text element but for instance a card.",
-      "type": "string",
-      "title": "height",
-      "required": true
-    },
-    {
-      "description": "The border radius of the skeleton.",
-      "type": "string",
-      "title": "borderRadius",
-      "required": false
-    },
     {
       "description": "This is an attribute used to identify a DOM node for testing purposes.",
       "type": "string",
       "title": "data-testid",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": [
+            "xs",
+            "xl",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "enum": [
+            "auto",
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "min-intrinsic",
+            "stretch"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "width",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "max-content",
+                    "min-content",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "max-content",
+                    "min-content",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "max-content",
+                    "min-content",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "max-content",
+                    "min-content",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": [
+            "xs",
+            "xl",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "enum": [
+            "auto",
+            "fit-content",
+            "max-content",
+            "min-content",
+            "stretch"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "height",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": [
+            "xs",
+            "xl",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "enum": [
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "none",
+            "stretch"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "maxWidth",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": [
+            "xs",
+            "xl",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "enum": [
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "none",
+            "stretch"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "maxHeight",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "$2xl",
+                    "$2xs",
+                    "$button",
+                    "$input",
+                    "$lg",
+                    "$md",
+                    "$none",
+                    "$pill",
+                    "$sm",
+                    "$xl",
+                    "$xs"
+                  ],
+                  "type": "string"
+                }
+              ],
+              "title": "xs"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "$2xl",
+                    "$2xs",
+                    "$button",
+                    "$input",
+                    "$lg",
+                    "$md",
+                    "$none",
+                    "$pill",
+                    "$sm",
+                    "$xl",
+                    "$xs"
+                  ],
+                  "type": "string"
+                }
+              ],
+              "title": "xl"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "$2xl",
+                    "$2xs",
+                    "$button",
+                    "$input",
+                    "$lg",
+                    "$md",
+                    "$none",
+                    "$pill",
+                    "$sm",
+                    "$xl",
+                    "$xs"
+                  ],
+                  "type": "string"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "$2xl",
+                    "$2xs",
+                    "$button",
+                    "$input",
+                    "$lg",
+                    "$md",
+                    "$none",
+                    "$pill",
+                    "$sm",
+                    "$xl",
+                    "$xs"
+                  ],
+                  "type": "string"
+                }
+              ],
+              "title": "lg"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": [
+            "xs",
+            "xl",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "enum": [
+            "$2xl",
+            "$2xs",
+            "$button",
+            "$input",
+            "$lg",
+            "$md",
+            "$none",
+            "$pill",
+            "$sm",
+            "$xl",
+            "$xs"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "borderRadius",
       "required": false
     }
   ],

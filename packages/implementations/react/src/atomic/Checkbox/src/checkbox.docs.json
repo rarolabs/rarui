@@ -1,53 +1,40 @@
 {
   "id": "checkbox",
   "name": "Checkbox",
-  "totalProps": 6,
+  "totalProps": 5,
   "packageName": "@rarui-react/checkbox",
   "version": "1.0.0-rc.1",
   "docLink": "https://rarui.com.br/documentation/src-components/checkbox",
   "props": [
     {
       "description": "The label of the checkbox.",
-      "type": "React.ReactNode",
+      "type": "string",
       "title": "label",
       "required": false
     },
     {
       "description": "The id of the checkbox.",
-      "type": "React.ReactNode",
+      "type": "string",
       "title": "id",
       "required": true
     },
     {
-      "description": "Change the visual style of the checkbox.",
-      "default": "brand",
       "type": "boolean",
-      "title": "danger",
+      "title": "error",
       "required": false
     },
     {
-      "description": "Disables the checkbox, disallowing user interaction.",
-      "default": false,
-      "type": "boolean",
-      "title": "disabled",
-      "required": false
-    },
-    {
-      "description": "Disables the checkbox, disallowing user interaction.",
-      "default": false,
-      "type": "boolean",
-      "title": "indeterminate",
-      "required": false
-    },
-    {
-      "description": "Disables the checkbox, disallowing user interaction.",
-      "default": false,
       "enum": [
         "large",
         "medium"
       ],
       "type": "string",
       "title": "size",
+      "required": false
+    },
+    {
+      "type": "boolean",
+      "title": "indeterminate",
       "required": false
     }
   ],

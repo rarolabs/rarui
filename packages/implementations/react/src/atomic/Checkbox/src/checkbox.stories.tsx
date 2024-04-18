@@ -6,10 +6,7 @@ import { Checkbox } from "./Checkbox";
 const meta: Meta<typeof Checkbox> = {
   title: "Atomic/Checkbox",
   component: Checkbox,
-  argTypes: {
-    ...argTypesConvert(docs),
-    children: { control: { type: "text" } },
-  },
+  argTypes: argTypesConvert(docs),
   tags: ["autodocs"],
 } satisfies Meta<typeof Checkbox>;
 
@@ -19,6 +16,8 @@ type Story = StoryObj<typeof Checkbox>;
 export const basic: Story = {
   args: {
     label: "Label",
+    disabled: true,
+
   },
 };
 export const error: Story = {
