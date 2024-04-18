@@ -45,9 +45,7 @@
     "reset": "yarn clean && rm -rf node_modules .yarn/cache",
     "clean": "yarn workspaces foreach -A -p --exclude @rarui/design-system run clean",
     "g:tsc": "cd $INIT_CWD && tsc",
-    "g:storybook": "cd $INIT_CWD && storybook",
-    "g:vite": "cd $INIT_CWD && vite",
-    "prepare": "husky"
+    "g:storybook": "cd $INIT_CWD && storybook"
   },
   "dependencies": {
     "react": "^18.2.0",

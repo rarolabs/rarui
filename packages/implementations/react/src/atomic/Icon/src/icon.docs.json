@@ -2,8 +2,8 @@
   "id": "icon",
   "name": "Icon",
   "totalProps": 3,
-  "packageName": "@rarui/icon",
-  "version": "0.0.0",
+  "packageName": "@rarui-react/icon",
+  "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/icon",
   "props": [
     {
@@ -119,7 +119,12 @@
             }
           },
           "additionalProperties": false,
-          "propertyOrder": ["xs", "xl", "md", "lg"]
+          "propertyOrder": [
+            "xs",
+            "xl",
+            "md",
+            "lg"
+          ]
         },
         {
           "enum": [
@@ -365,7 +370,12 @@
             }
           },
           "additionalProperties": false,
-          "propertyOrder": ["xs", "xl", "md", "lg"]
+          "propertyOrder": [
+            "xs",
+            "xl",
+            "md",
+            "lg"
+          ]
         },
         {
           "enum": [

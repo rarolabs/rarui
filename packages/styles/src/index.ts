@@ -12,6 +12,7 @@ export { skeleton } from "./packages/atomic/skeleton";
 export { status } from "./packages/atomic/status";
 export { text } from "./packages/atomic/text";
 export { title } from "./packages/atomic/title";
+export { checkbox } from "./packages/atomic/checkbox";
 
 // types
 export type { BoxSprinkle } from "./packages/atomic/box";
@@ -21,4 +22,5 @@ export type { SkeletonSprinkle } from "./packages/atomic/skeleton";
 export type { TitleSprinkle } from "./packages/atomic/title";
 
 export type { ButtonVariants } from "./packages/atomic/button";
+export type { CheckboxVariants } from "./packages/atomic/checkbox";
 export type { StatusVariants } from "./packages/atomic/status";

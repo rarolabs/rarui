@@ -1,5 +1,4 @@
 {
-  "extends": "./tsconfig-paths.json",
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
@@ -34,7 +33,46 @@
     "strictPropertyInitialization": true,
     "stripInternal": true,
     "types": ["node", "jest"],
-    "typeRoots": ["./node_modules/@types", "./types"]
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "paths": {
+      ".storybook": ["./.storybook"],
+      "@rarui/scripts": ["./packages/core/scripts/src"],
+      "@rarui/webpack": ["./packages/core/webpack/src"],
+      "@rarui/typings": ["./packages/core/typings/src"],
+      "@rarui/styles": ["./packages/styles/src"],
+      "@rarui/tokens": ["./packages/tokens"],
+      "@rarui/icons": ["./packages/icons"],
+      "@rarui-react/box": [
+        "./packages/implementations/react/src/atomic/Box/src"
+      ],
+      "@rarui-react/button": [
+        "./packages/implementations/react/src/atomic/Button/src"
+      ],
+      "@rarui-react/checkbox": [
+        "./packages/implementations/react/src/atomic/Checkbox/src"
+      ],
+      "@rarui-react/icon": [
+        "./packages/implementations/react/src/atomic/Icon/src"
+      ],
+      "@rarui-react/link": [
+        "./packages/implementations/react/src/atomic/Link/src"
+      ],
+      "@rarui-react/skeleton": [
+        "./packages/implementations/react/src/atomic/Skeleton/src"
+      ],
+      "@rarui-react/status": [
+        "./packages/implementations/react/src/atomic/Status/src"
+      ],
+      "@rarui-react/text": [
+        "./packages/implementations/react/src/atomic/Text/src"
+      ],
+      "@rarui-react/title": [
+        "./packages/implementations/react/src/atomic/Title/src"
+      ],
+      "@rarui-vuejs/button": [
+        "./packages/implementations/vuejs/src/atomic/Button/src"
+      ]
+    }
   },
   "include": ["packages", "jest.setup.ts"]
 }
