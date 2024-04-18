@@ -16,12 +16,14 @@ type Story = StoryObj<typeof Text>;
 export const basic: Story = {
   args: {
     children: "Lorem ipsum dolor sit amet",
+    color: "$primary",
   },
 };
 
 export const p: Story = {
   args: {
     as: "p",
+    color: "$primary",
     children: "Lorem ipsum dolor sit amet",
   },
 };
@@ -29,6 +31,7 @@ export const p: Story = {
 export const span: Story = {
   args: {
     as: "span",
+    color: "$primary",
     children: "Lorem ipsum dolor sit amet",
   },
 };
@@ -70,6 +73,7 @@ export const secondary: Story = {
 
 export const responsive: Story = {
   args: {
+    color: "$primary",
     children: "Lorem ipsum dolor sit amet",
     textAlign: { xs: "center", md: "center", lg: "left", xl: "right" },
   },
@@ -77,6 +81,7 @@ export const responsive: Story = {
 
 export const lineClamp: Story = {
   args: {
+    color: "$primary",
     children:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et nisi sit amet quam convallis consectetur. Vestibulum hendrerit ac urna eget rhoncus. Aliquam non velit finibus sem gravida pretium. In neque metus, interdum a quam id, pulvinar consequat leo. Proin sapien mauris, efficitur ut mi at, finibus commodo metus. Pellentesque ac pellentesque risus. Nulla facilisi.",
     textAlign: "left",

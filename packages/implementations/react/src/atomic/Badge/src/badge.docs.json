@@ -1,0 +1,49 @@
+{
+  "id": "badge",
+  "name": "Badge",
+  "totalProps": 4,
+  "packageName": "@rarui-react/badge",
+  "version": "1.0.0-rc.1",
+  "docLink": "https://rarui.com.br/documentation/src-components/badge",
+  "props": [
+    {
+      "description": "The content of the button.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": true
+    },
+    {
+      "description": "Change the visual style of the badge.",
+      "default": "brand",
+      "enum": [
+        "brand",
+        "danger",
+        "info",
+        "inverted",
+        "neutral",
+        "success",
+        "warning"
+      ],
+      "type": "string",
+      "title": "appearance",
+      "required": false
+    },
+    {
+      "description": "Change the size of the badge.",
+      "default": "medium",
+      "enum": ["dot", "large", "medium", "small"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    },
+    {
+      "description": "Change the variant of the badge.",
+      "default": "solid",
+      "enum": ["outlined", "solid"],
+      "type": "string",
+      "title": "variant",
+      "required": false
+    }
+  ],
+  "subComponents": []
+}

@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-04-18 `1.10.0`
+
+#### 🎉 New features
+
+- Added new atomic `Badge` component. ([#17](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/17) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+
 ## 2024-04-18 `1.9.0`
 
 #### 🎉 New features
