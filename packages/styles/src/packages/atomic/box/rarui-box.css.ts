@@ -18,6 +18,10 @@ import {
   fontWeightProperties,
 } from "../../../properties";
 
+/* -------------------------------------------------------------------------------------------------
+ * Sprinkle
+ * -----------------------------------------------------------------------------------------------*/
+
 const defineProperties = defineRainbowProperties({
   conditions: {
     xs: {
@@ -147,10 +151,4 @@ const defineProperties = defineRainbowProperties({
   },
 });
 
-const sprinkle = createRainbowSprinkles(defineProperties);
-
-export type BoxSprinkle = Parameters<typeof sprinkle>[0];
-
-export const boxSprinkle = {
-  sprinkle,
-};
+export const sprinkle = createRainbowSprinkles(defineProperties);

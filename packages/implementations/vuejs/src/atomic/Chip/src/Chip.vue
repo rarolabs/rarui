@@ -1,7 +1,7 @@
 <template>
   <component
     :is="closeable || disabled ? 'button' : 'div'"
-    :class="chip.classnames.chip({ shape })"
+    :class="chip.classnames.chip({ pill, selected })"
     :disabled="disabled"
   >
     <slot v-if="avatar" name="avatar">
@@ -11,6 +11,7 @@
     <slot v-if="closeable" name="closeable">
       <!-- fazer icone -->
     </slot>
+    <span :class="chip.classnames.overlay" />
   </component>
 </template>
 
@@ -23,7 +24,7 @@ defineOptions({
 });
 
 withDefaults(defineProps<ChipProps>(), {
-  shape: "pill",
+  pill: false,
   disabled: false,
   closeable: false,
   avatar: "",

@@ -3,16 +3,16 @@ import { ButtonHTMLAttributes } from "vue";
 export interface ChipProps extends /* @vue-ignore */ ButtonHTMLAttributes {
   /**
    * Change the shape of the chip.
-   * @default pill
+   * @default false
    */
-  shape?: "pill" | "rounded";
+  pill?: boolean;
   /**
    * Disables the chip, disallowing user interaction.
    * @default false
    */
   disabled?: boolean;
   /**
-   * Disables the chip, disallowing user interaction.
+   * Displays a delete icon and adds user interaction.
    * @default false
    */
   closeable?: boolean;
@@ -21,6 +21,11 @@ export interface ChipProps extends /* @vue-ignore */ ButtonHTMLAttributes {
    * @default ''
    */
   avatar?: string;
+  /**
+   * The property is used to change the appearence of the component.
+   * @default false
+   */
+  selected?: boolean;
 }
 
 // selected

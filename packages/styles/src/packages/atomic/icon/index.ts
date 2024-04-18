@@ -1,8 +1,8 @@
-import { iconSprinkle, styles } from "./rarui-icon.css";
+import { sprinkle, styles } from "./rarui-icon.css";
 
 export const icon = {
   classnames: { ...styles },
-  ...iconSprinkle,
+  sprinkle,
 };
 
-export type { IconSprinkle } from "./rarui-icon.css";
+export type { IconSprinkle } from "./rarui-icon.types";

@@ -6,6 +6,10 @@ import { recipe } from "@vanilla-extract/recipes";
 import { mediaQueries, varsThemeBase } from "../../../themes";
 import { colorProperties, fontWeightProperties } from "../../../properties";
 
+/* -------------------------------------------------------------------------------------------------
+ * Style
+ * -----------------------------------------------------------------------------------------------*/
+
 export const text = recipe({
   base: {
     fontFamily: varsThemeBase.fontFamily.inter,
@@ -27,6 +31,10 @@ export const text = recipe({
 export const styles = {
   text,
 };
+
+/* -------------------------------------------------------------------------------------------------
+ * Sprinkle
+ * -----------------------------------------------------------------------------------------------*/
 
 const defineProperties = defineRainbowProperties({
   conditions: {
@@ -70,10 +78,4 @@ const defineProperties = defineRainbowProperties({
   },
 });
 
-const sprinkle = createRainbowSprinkles(defineProperties);
-
-export type TextSprinkle = Parameters<typeof sprinkle>[0];
-
-export const textSprinkle = {
-  sprinkle,
-};
+export const sprinkle = createRainbowSprinkles(defineProperties);

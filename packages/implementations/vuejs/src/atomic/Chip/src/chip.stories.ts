@@ -5,6 +5,10 @@ const meta = {
   title: "Atomic/Chip",
   component: Chip,
   tags: ["autodocs"],
+  argTypes: {
+    pill: { control: "boolean" },
+    selected: { control: "boolean" },
+  },
   render: (args) => ({
     components: { Chip },
     setup() {
@@ -24,30 +28,7 @@ type Story = StoryObj<typeof meta>;
  */
 export const Default: Story = {
   args: {
-    shape: "pill",
+    pill: false,
     default: "Chip",
-  },
-  argTypes: {
-    shape: { control: "select", options: ["pill", "rounded"] },
-  },
-};
-export const Rounded: Story = {
-  args: {
-    shape: "rounded",
-    default: "Chip",
-  },
-};
-export const Disabled: Story = {
-  args: {
-    shape: "rounded",
-    default: "Chip",
-    disabled: true,
-  },
-};
-export const Closeable: Story = {
-  args: {
-    shape: "rounded",
-    default: "Chip",
-    closeable: true,
   },
 };

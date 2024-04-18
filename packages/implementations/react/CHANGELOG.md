@@ -2,6 +2,24 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-04-18 `1.9.0`
+
+#### 🎉 New features
+
+- Added new atomic `Chip` component. ([#19](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/19) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+
+## 2024-04-18 `1.8.0`
+
+#### 🎉 New features
+
+- Added new atomic `Checkbox` component. ([#23](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/23) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+
+## 2024-04-16 `1.7.0`
+
+#### 🎉 New features
+
+- Added new atomic `Status` component. ([#24](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/24) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-16 `1.6.0`
 
 #### 🎉 New features

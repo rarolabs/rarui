@@ -1,8 +1,5 @@
 <template>
-  <div
-    :class="badge.classnames.badge({ appearance, size, variant })"
-    v-bind="props"
-  >
+  <div :class="badge.classnames.badge({ appearance, size, variant })">
     <slot v-if="props.size != 'dot'" />
   </div>
 </template>

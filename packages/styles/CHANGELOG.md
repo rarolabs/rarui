@@ -2,6 +2,18 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-04-18 `1.9.0`
+
+#### 🎉 New features
+
+- Added new style pack for `chip` component. ([#19](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/19) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+
+## 2024-04-18 `1.8.0`
+
+#### 🎉 New features
+
+- Added new style pack for `checkbox` component. ([#23](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/23) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+
 ## 2024-04-16 `1.7.0`
 
 #### 🎉 New features

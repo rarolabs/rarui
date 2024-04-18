@@ -1,8 +1,8 @@
-import { skeletonSprinkle, styles } from "./rarui-skeleton.css";
+import { sprinkle, styles } from "./rarui-skeleton.css";
 
 export const skeleton = {
   classnames: { ...styles },
-  ...skeletonSprinkle,
+  sprinkle,
 };
 
-export type { SkeletonSprinkle } from "./rarui-skeleton.css";
+export type { SkeletonSprinkle } from "./rarui-skeleton.types";

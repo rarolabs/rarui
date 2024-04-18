@@ -1,8 +1,7 @@
-import { boxSprinkle } from "./rarui-box.css";
+import { sprinkle } from "./rarui-box.css";
 
 export const box = {
-  ...boxSprinkle,
+  sprinkle,
 };
 
-// export type { BoxSprinkle } from "./rarui-box.types";
-export type { BoxSprinkle } from "./rarui-box.css";
+export type { BoxSprinkle } from "./rarui-box.types";

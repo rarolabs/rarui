@@ -1,8 +1,8 @@
-import { textSprinkle, styles } from "./rarui-text.css";
+import { sprinkle, styles } from "./rarui-text.css";
 
 export const text = {
   classnames: { ...styles },
-  ...textSprinkle,
+  sprinkle,
 };
 
-export type { TextSprinkle } from "./rarui-text.css";
+export type { TextSprinkle } from "./rarui-text.types";

@@ -6,6 +6,10 @@ import { recipe } from "@vanilla-extract/recipes";
 import { mediaQueries } from "../../../themes";
 import { colorProperties } from "../../../properties";
 
+/* -------------------------------------------------------------------------------------------------
+ * Style
+ * -----------------------------------------------------------------------------------------------*/
+
 export const icon = recipe({
   base: {
     display: "flex",
@@ -16,6 +20,10 @@ export const icon = recipe({
 export const styles = {
   icon,
 };
+
+/* -------------------------------------------------------------------------------------------------
+ * Sprinkle
+ * -----------------------------------------------------------------------------------------------*/
 
 const defineProperties = defineRainbowProperties({
   conditions: {
@@ -41,10 +49,4 @@ const defineProperties = defineRainbowProperties({
   },
 });
 
-const sprinkle = createRainbowSprinkles(defineProperties);
-
-export type IconSprinkle = Parameters<typeof sprinkle>[0];
-
-export const iconSprinkle = {
-  sprinkle,
-};
+export const sprinkle = createRainbowSprinkles(defineProperties);

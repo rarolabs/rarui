@@ -19,6 +19,8 @@ const config: Config.InitialOptions = {
       "<rootDir>/packages/implementations/react/src/atomic/Link/src",
     "@rarui-react/text":
       "<rootDir>/packages/implementations/react/src/atomic/Text/src",
+    "@rarui-react/icon":
+      "<rootDir>/packages/implementations/react/src/atomic/Icon/src",
     // composites
   },
   transform: {
