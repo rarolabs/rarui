@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-04-25 `1.12.0`
+
+#### 🎉 New features
+
+- Added new atomic `Toast` component. ([#25](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/25) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+
 ## 2024-04-25 `1.11.0`
 
 #### 🐛 Bug fixes

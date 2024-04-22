@@ -1,0 +1,38 @@
+{
+  "id": "toast",
+  "name": "Toast",
+  "totalProps": 4,
+  "packageName": "@rarui-react/toast",
+  "version": "1.0.0-rc.1",
+  "docLink": "https://rarui.com.br/documentation/src-components/toast",
+  "props": [
+    {
+      "description": "The content of the button.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": true
+    },
+    {
+      "description": "Auto genetated id",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "id",
+      "required": true
+    },
+    {
+      "description": "Change the appearance of the toast",
+      "enum": ["error", "info", "invert", "neutral", "success", "warning"],
+      "type": "string",
+      "title": "variant",
+      "required": true
+    },
+    {
+      "type": "string",
+      "title": "title",
+      "required": false
+    }
+  ],
+  "subComponents": []
+}

@@ -78,6 +78,9 @@
       "@rarui-react/toggle": [
         "./packages/implementations/react/src/atomic/Toggle/src"
       ],
+      "@rarui-react/toast": [
+        "./packages/implementations/react/src/atomic/Toast/src"
+      ],
       "@rarui-vuejs/button": [
         "./packages/implementations/vuejs/src/atomic/Button/src"
       ]
