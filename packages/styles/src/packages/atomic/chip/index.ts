@@ -1,7 +1,7 @@
 import { styles, sprinkle } from "./rarui-chip.css";
 
 export const chip = {
-  ...sprinkle,
+  sprinkle,
   classnames: { ...styles },
 };
 

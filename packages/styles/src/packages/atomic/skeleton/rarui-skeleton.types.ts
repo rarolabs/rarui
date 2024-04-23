@@ -5,12 +5,12 @@ import {
 } from "../../../index.types";
 import { borderRadiusProperties } from "../../../properties";
 
-type DynamicProperties = Pick<
+type SkeletonDynamicProperties = Pick<
   StandardLonghandProperties,
   "width" | "height" | "maxWidth" | "maxHeight" | "minWidth" | "minHeight"
 >;
 
-export interface SkeletonSprinkle extends DynamicProperties {
+export interface SkeletonSprinkle extends SkeletonDynamicProperties {
   /**
    * The borderRadius property sets the skeleton.
    */

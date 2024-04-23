@@ -9,12 +9,12 @@ import {
 } from "../../../index.types";
 import { colorProperties, fontWeightProperties } from "../../../properties";
 
-type DynamicProperties = Pick<
+type TextDynamicProperties = Pick<
   StandardLonghandProperties,
   "textAlign" | "wordBreak"
 >;
 
-export interface TextSprinkle extends DynamicProperties {
+export interface TextSprinkle extends TextDynamicProperties {
   /**
    * The color property is used to set the color of the title.
    */

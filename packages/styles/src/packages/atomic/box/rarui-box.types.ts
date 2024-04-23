@@ -27,7 +27,7 @@ interface BoxConditions<T> extends Conditions<T> {
   disabled?: T;
 }
 
-type DynamicProperties = Pick<
+type BoxDynamicProperties = Pick<
   StandardLonghandProperties,
   | "display"
   | "width"
@@ -80,7 +80,7 @@ type DynamicProperties = Pick<
     | "textDecoration"
   >;
 
-export interface BoxSprinkle extends DynamicProperties {
+export interface BoxSprinkle extends BoxDynamicProperties {
   /**
    * The gap property sets the gaps between rows and columns. It is a shorthand for rowGap and columnGap.
    */

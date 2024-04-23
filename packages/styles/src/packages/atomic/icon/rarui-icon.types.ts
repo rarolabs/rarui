@@ -5,9 +5,9 @@ import {
 } from "../../../index.types";
 import { colorProperties } from "../../../properties";
 
-type DynamicProperties = Pick<StandardLonghandProperties, "cursor">;
+type IconDynamicProperties = Pick<StandardLonghandProperties, "cursor">;
 
-export interface IconSprinkle extends DynamicProperties {
+export interface IconSprinkle extends IconDynamicProperties {
   /**
    * The color property sets the icon.
    */
