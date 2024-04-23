@@ -5,3 +5,5 @@ releases:
 
 declined:
   - "@rarui/design-system"
+  - "@rarui-react/badge"
+  - "@rarui-react/chip"
