@@ -91,6 +91,8 @@ const defineProperties = defineRainbowProperties({
     height: true,
     maxWidth: true,
     maxHeight: true,
+    minWidth: true,
+    minHeight: true,
     borderRadius: borderRadiusProperties,
   },
 });

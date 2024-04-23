@@ -1,33 +1,4 @@
 import { varsThemeBase } from "../themes";
-import {
-  AlignItems,
-  AspectRatio,
-  BorderStyle,
-  BoxSizing,
-  Cursor,
-  Display,
-  FlexDirection,
-  FlexWrap,
-  JustifyContent,
-  TextAlign,
-  TextDecoration,
-  Position,
-  Overflow,
-  PointerEvents,
-  TransitionTiming,
-  AlignSelf,
-  WordBreak,
-} from "../index.types";
-
-export const aspectRatioProperties: AspectRatio[] = [
-  "1/1",
-  "16/9",
-  "9/16",
-  "4/3",
-  "3/4",
-  "2/1",
-  "1/2",
-];
 
 export const shadowProperties = {
   none: varsThemeBase.elevation.none,
@@ -42,93 +13,6 @@ export const shadowProperties = {
   "bottom-4": varsThemeBase.elevation.bottom[4],
   "bottom-5": varsThemeBase.elevation.bottom[5],
 };
-
-export const boxSizingProperties: BoxSizing[] = ["border-box", "content-box"];
-export const cursorProperties: Cursor[] = [
-  "auto",
-  "pointer",
-  "not-allowed",
-  "grab",
-  "inherit",
-];
-
-export const borderStyleProperties: BorderStyle[] = [
-  "solid",
-  "none",
-  "hidden",
-  "dashed",
-  "dotted",
-];
-
-export const displayProperties: Display[] = [
-  "block",
-  "flex",
-  "inline-flex",
-  "grid",
-  "inline-grid",
-  "none",
-];
-export const flexDirectionProperties: FlexDirection[] = [
-  "row",
-  "row-reverse",
-  "column",
-  "column-reverse",
-];
-
-export const flexWrapProperties: FlexWrap[] = [
-  "nowrap",
-  "wrap",
-  "wrap-reverse",
-];
-
-export const alignItemsProperties: AlignItems[] = [
-  "stretch",
-  "flex-start",
-  "flex-end",
-  "center",
-  "baseline",
-];
-
-export const alignSelfProperties: AlignSelf[] = [
-  "auto",
-  "flex-start",
-  "flex-end",
-  "center",
-  "baseline",
-  "stretch",
-];
-
-export const justifyContentProperties: JustifyContent[] = [
-  "flex-start",
-  "flex-end",
-  "center",
-  "space-between",
-  "space-around",
-  "space-evenly",
-];
-
-export const textAlignProperties: TextAlign[] = [
-  "left",
-  "right",
-  "center",
-  "justify",
-];
-
-export const pointerEventsProperties: PointerEvents[] = [
-  "auto",
-  "none",
-  "visiblePainted",
-  "visibleFill",
-  "visibleStroke",
-  "visible",
-  "painted",
-  "fill",
-  "stroke",
-  "all",
-  "inherit",
-];
-
-export const textDecorationProperties: TextDecoration[] = ["none", "underline"];
 
 export const fontWeightProperties = {
   regular: varsThemeBase.fontWeight.regular,
@@ -197,31 +81,6 @@ export const titleLineHeightProperties = {
   xl: varsThemeBase.lineHeight.heading.xl,
 };
 
-export const positionProperties: Position[] = [
-  "absolute",
-  "fixed",
-  "relative",
-  "static",
-  "sticky",
-];
-
-export const overflowProperties: Overflow[] = [
-  "visible",
-  "hidden",
-  "scroll",
-  "auto",
-];
-
-export const transitionTimingProperties: TransitionTiming[] = [
-  "ease",
-  "ease-in",
-  "ease-out",
-  "ease-in-out",
-  "linear",
-  "step-start",
-  "step-end",
-];
-
 export const spacingProperties = {
   none: "0",
   "4xs": varsThemeBase.spacing["4xs"],
@@ -239,7 +98,7 @@ export const spacingProperties = {
   "6xl": varsThemeBase.spacing["6xl"],
   "7xl": varsThemeBase.spacing["7xl"],
   "8xl": varsThemeBase.spacing["8xl"],
-};
+} as const;
 
 export const marginProperties = {
   auto: "auto",
@@ -280,13 +139,6 @@ export const zIndexProperties = {
   "800": varsThemeBase.zIndex[800],
   "900": varsThemeBase.zIndex[900],
 };
-
-export const wordBreakProperties: WordBreak[] = [
-  "normal",
-  "break-all",
-  "keep-all",
-  "break-word",
-];
 
 export const colorProperties = {
   currentColor: "currentColor",

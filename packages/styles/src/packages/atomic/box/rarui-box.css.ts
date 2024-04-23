@@ -2,6 +2,7 @@ import {
   createRainbowSprinkles,
   defineProperties as defineRainbowProperties,
 } from "rainbow-sprinkles";
+
 import { mediaQueries } from "../../../themes";
 import {
   colorProperties,
