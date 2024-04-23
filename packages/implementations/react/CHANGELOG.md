@@ -4,9 +4,13 @@
 
 ## 2024-04-18 `1.11.0`
 
+#### 🐛 Bug fixes
+
+- Fixed typing of `Box`, `Button`, `Chip`, `Link`, `Text` and `Title` atomic components. ([#26](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/26) by [@junior](https://git.rarolabs.com.br/junior))
+
 #### 🎉 New features
 
-- Added new atomic `Toggle` component. ([#25](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/25) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new atomic `Toggle` component. ([#26](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/26) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-04-18 `1.10.0`
 
