@@ -19,6 +19,29 @@
           "type": "object",
           "properties": {
             "xs": {
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
               "enum": [
                 "$2xl",
                 "$2xs",
@@ -91,23 +114,10 @@
           "propertyOrder": ["xs", "md", "lg", "xl"]
         },
         {
-          "enum": [
-            "$2xl",
-            "$2xs",
-            "$button",
-            "$input",
-            "$lg",
-            "$md",
-            "$none",
-            "$pill",
-            "$sm",
-            "$xl",
-            "$xs"
-          ],
           "type": "string"
         }
       ],
-      "title": "borderRadiusProperties",
+      "title": "borderRadius",
       "required": false
     },
     {
