@@ -8,6 +8,7 @@ import { ToastContainerProps } from "./ToastContainer.types";
 const ToastContainer: React.FC<ToastContainerProps> = ({
   position = "bottomRight",
   size = "medium",
+  duration = 0,
 }) => {
   const { toasts } = useContext(ToastContext);
   return (
@@ -19,6 +20,7 @@ const ToastContainer: React.FC<ToastContainerProps> = ({
             appearance={toast.appearance}
             variant={toast.variant}
             size={size}
+            duration={duration}
           >
             {toast.message}
           </Toast>

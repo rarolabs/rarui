@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { toast } from "@rarui/styles";
 import { Icon } from "@rarui-react/icon";
 import { Text } from "@rarui-react/text";
@@ -46,6 +46,7 @@ const Toast: React.FC<ToastProps> = ({
   appearance = "info",
   variant = "solid",
   size = "medium",
+  duration = 0,
   title,
   id,
   ...props
@@ -54,6 +55,22 @@ const Toast: React.FC<ToastProps> = ({
   const Icons = ICON_BY_VARIANT[appearance];
   const IconColor =
     variant === "solid" ? ICON_COLOR_SOLID[appearance] : ICON_COLOR[appearance];
+
+  const handleDismissToastRef = React.useRef<any>();
+  handleDismissToastRef.current = dismissToast;
+
+  useEffect(() => {
+    if (!duration) {
+      return;
+    }
+    const timeoutId = window.setTimeout(
+      () => handleDismissToastRef.current(id),
+      duration,
+    );
+
+    return () => window.clearTimeout(timeoutId);
+  }, [id]);
+
   return (
     <div
       {...props}

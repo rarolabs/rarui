@@ -28,6 +28,11 @@ export interface Toast {
    * @Default medium
    */
   size?: "small" | "medium" | "large";
+  /**
+   * Time in miliseconds to auto dismiss the component. 0 means to not dismiss automatically.
+   * @Default 0
+   */
+  duration?: 0 | 4000 | 8000 | 16000;
 }
 
 export type ToastProperties = Toast;

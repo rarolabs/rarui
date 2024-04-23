@@ -45,7 +45,7 @@ export const Use: Story = {
         >
           Open Toast
         </Button>
-        <ToastContainer size="small" />
+        <ToastContainer size="small" duration={8000} />
       </div>
     );
   },
