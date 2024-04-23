@@ -7,13 +7,18 @@ export interface Toast {
    */
   children: ReactNode;
   /**
-   *  Auto genetated id
+   *  Auto genetated id.
    */
   id: `${string}-${string}-${string}-${string}-${string}`;
   /**
-   * Change the appearance of the toast
+   * Change the appearance of the toast.
    */
-  variant: "info" | "error" | "success" | "warning" | "neutral" | "invert";
+  appearance: "info" | "error" | "success" | "warning" | "neutral" | "invert";
+  /**
+   * Change the variant of the toast.
+   * @Default solid
+   */
+  variant?: "solid" | "tonal" | "border";
   /**
    * The title of the toast
    */
@@ -22,7 +27,7 @@ export interface Toast {
    * The size of the toast
    * @Default medium
    */
-  size?: "small" | "medium";
+  size?: "small" | "medium" | "large";
 }
 
 export type ToastProperties = Toast;

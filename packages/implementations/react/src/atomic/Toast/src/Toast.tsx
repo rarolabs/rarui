@@ -21,23 +21,48 @@ const ICON_BY_VARIANT = {
   invert: BookmarkFilledIcon,
 };
 
+const ICON_COLOR = {
+  info: "$info",
+  success: "$success",
+  warning: "$warning-alt",
+  error: "$error",
+  neutral: "$invert",
+  invert: "$primary",
+} as const;
+
+const ICON_COLOR_SOLID = {
+  info: "$on-info",
+  success: "$on-success",
+  warning: "$on-warning",
+  error: "$on-error",
+  neutral: "$invert",
+  invert: "$primary",
+} as const;
+
 const Toast: React.FC<ToastProps> = ({
   className: _className,
   style: _style,
   children,
-  variant = "info",
+  appearance = "info",
+  variant = "solid",
   size = "medium",
   title,
   id,
   ...props
 }) => {
   const { dismissToast } = useContext(ToastContext);
-  const Icons = ICON_BY_VARIANT[variant];
+  const Icons = ICON_BY_VARIANT[appearance];
+  const IconColor =
+    variant === "solid" ? ICON_COLOR_SOLID[appearance] : ICON_COLOR[appearance];
   return (
-    <div {...props} className={toast.classnames.toast({ variant, size })}>
+    <div
+      {...props}
+      className={toast.classnames.toast({ appearance, variant, size })}
+    >
       <Icon
-        data-testid={`toast-icon-${variant}`}
+        data-testid={`toast-icon-${appearance}`}
         source={<Icons size={size === "medium" ? 32 : 24} />}
+        color={IconColor}
       />
       <div className={toast.classnames.content}>
         {title && (

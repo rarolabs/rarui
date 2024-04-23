@@ -14,7 +14,7 @@ const toast = recipe({
     width: "420px",
   },
   variants: {
-    variant: {
+    appearance: {
       info: {
         backgroundColor: varsThemeBase.colors.surface.info,
         color: varsThemeBase.colors.content["on-info"],
@@ -42,13 +42,140 @@ const toast = recipe({
     },
     size: {
       small: {
-        padding: `${varsThemeBase.spacing["3xs"]} ${varsThemeBase.spacing.xs}`,
+        padding: `0 ${varsThemeBase.spacing["3xs"]}`,
       },
       medium: {
+        padding: `${varsThemeBase.spacing["3xs"]} ${varsThemeBase.spacing.xs}`,
+      },
+      large: {
         padding: varsThemeBase.spacing.s,
       },
     },
+
+    variant: {
+      solid: {},
+      tonal: {
+        color: varsThemeBase.colors.content.primary,
+      },
+      border: {
+        borderLeft: "solid",
+        borderWidth: "4px",
+        backgroundColor: varsThemeBase.colors.surface.primary,
+        color: varsThemeBase.colors.content.primary,
+      },
+    },
   },
+
+  compoundVariants: [
+    {
+      variants: {
+        appearance: "info",
+        variant: "tonal",
+      },
+      style: {
+        backgroundColor: varsThemeBase.colors.surface["info-subdued"],
+      },
+    },
+    {
+      variants: {
+        appearance: "warning",
+        variant: "tonal",
+      },
+      style: {
+        backgroundColor: varsThemeBase.colors.surface["warning-subdued"],
+      },
+    },
+    {
+      variants: {
+        appearance: "success",
+        variant: "tonal",
+      },
+      style: {
+        backgroundColor: varsThemeBase.colors.surface["success-subdued"],
+      },
+    },
+    {
+      variants: {
+        appearance: "error",
+        variant: "tonal",
+      },
+      style: {
+        backgroundColor: varsThemeBase.colors.surface["error-subdued"],
+      },
+    },
+    {
+      variants: {
+        appearance: "neutral",
+        variant: "tonal",
+      },
+      style: {
+        color: varsThemeBase.colors.content["invert-secondary"],
+      },
+    },
+    {
+      variants: {
+        appearance: "invert",
+        variant: "tonal",
+      },
+      style: {
+        color: varsThemeBase.colors.content.secondary,
+      },
+    },
+    {
+      variants: {
+        appearance: "info",
+        variant: "border",
+      },
+      style: {
+        borderColor: varsThemeBase.colors.border.info,
+      },
+    },
+    {
+      variants: {
+        appearance: "warning",
+        variant: "border",
+      },
+      style: {
+        borderColor: varsThemeBase.colors.border.warning,
+      },
+    },
+    {
+      variants: {
+        appearance: "success",
+        variant: "border",
+      },
+      style: {
+        borderColor: varsThemeBase.colors.border.success,
+      },
+    },
+    {
+      variants: {
+        appearance: "error",
+        variant: "border",
+      },
+      style: {
+        borderColor: varsThemeBase.colors.border.error,
+      },
+    },
+    {
+      variants: {
+        appearance: "neutral",
+        variant: "border",
+      },
+      style: {
+        border: "revert",
+      },
+    },
+    {
+      variants: {
+        appearance: "invert",
+        variant: "border",
+      },
+      style: {
+        border: "revert",
+      },
+    },
+  ],
 });
 
 const content = style({

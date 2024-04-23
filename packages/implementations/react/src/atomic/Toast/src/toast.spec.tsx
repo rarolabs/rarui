@@ -31,10 +31,10 @@ describe("GIVEN <Toast />", () => {
     jest.clearAllMocks();
   });
 
-  describe("THEN should correctly render the submitted variant", () => {
-    it("THEN should correctly render the variant neutral", () => {
+  describe("THEN should correctly render the submitted appearance", () => {
+    it("THEN should correctly render the appearance neutral", () => {
       makeSut({
-        variant: "neutral",
+        appearance: "neutral",
         children: "Toast",
         id: "c9e9656c-1209-4a02-96c7-c522ae49fd0f",
       });
@@ -46,9 +46,9 @@ describe("GIVEN <Toast />", () => {
       expect(icon.firstChild?.nodeName).toEqual("svg");
     });
 
-    it("THEN should correctly render the variant invert", () => {
+    it("THEN should correctly render the appearance invert", () => {
       makeSut({
-        variant: "invert",
+        appearance: "invert",
         children: "Toast",
         id: "c9e9656c-1209-4a02-96c7-c522ae49fd0f",
       });
@@ -60,9 +60,9 @@ describe("GIVEN <Toast />", () => {
       expect(icon.firstChild?.nodeName).toEqual("svg");
     });
 
-    it("THEN should correctly render the variant success", () => {
+    it("THEN should correctly render the appearance success", () => {
       makeSut({
-        variant: "success",
+        appearance: "success",
         children: "Toast",
         id: "c9e9656c-1209-4a02-96c7-c522ae49fd0f",
       });
@@ -74,9 +74,9 @@ describe("GIVEN <Toast />", () => {
       expect(icon.firstChild?.nodeName).toEqual("svg");
     });
 
-    it("THEN should correctly render the variant error", () => {
+    it("THEN should correctly render the appearance error", () => {
       makeSut({
-        variant: "error",
+        appearance: "error",
         children: "Toast",
         id: "c9e9656c-1209-4a02-96c7-c522ae49fd0f",
       });
@@ -88,9 +88,9 @@ describe("GIVEN <Toast />", () => {
       expect(icon.firstChild?.nodeName).toEqual("svg");
     });
 
-    it("THEN should correctly render the variant info", () => {
+    it("THEN should correctly render the appearance info", () => {
       makeSut({
-        variant: "info",
+        appearance: "info",
         children: "Toast",
         id: "c9e9656c-1209-4a02-96c7-c522ae49fd0f",
       });
@@ -102,9 +102,9 @@ describe("GIVEN <Toast />", () => {
       expect(icon.firstChild?.nodeName).toEqual("svg");
     });
 
-    it("THEN should correctly render the variant warning", () => {
+    it("THEN should correctly render the appearance warning", () => {
       makeSut({
-        variant: "warning",
+        appearance: "warning",
         children: "Toast",
         id: "c9e9656c-1209-4a02-96c7-c522ae49fd0f",
       });
@@ -120,7 +120,7 @@ describe("GIVEN <Toast />", () => {
   describe("THEN should ensure the correct functioning of the toast", () => {
     it("THEN should run the toast removal animation and call the toast removal function", () => {
       makeSut({
-        variant: "neutral",
+        appearance: "neutral",
         children: "Toast",
         id: "c9e9656c-1209-4a02-96c7-c522ae49fd0f",
       });

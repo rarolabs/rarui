@@ -10,7 +10,7 @@ export interface ToastContainer {
    * The size of the toast
    * @Default medium
    */
-  size?: "small" | "medium";
+  size?: "small" | "medium" | "large";
 }
 
 export type ToastContainerProps = ToastContainer &

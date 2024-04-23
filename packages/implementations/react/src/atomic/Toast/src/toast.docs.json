@@ -1,7 +1,7 @@
 {
   "id": "toast",
   "name": "Toast",
-  "totalProps": 4,
+  "totalProps": 6,
   "packageName": "@rarui-react/toast",
   "version": "1.0.0-rc.1",
   "docLink": "https://rarui.com.br/documentation/src-components/toast",
@@ -13,7 +13,7 @@
       "required": true
     },
     {
-      "description": "Auto genetated id",
+      "description": "Auto genetated id.",
       "type": "array",
       "items": {
         "type": "string"
@@ -22,15 +22,30 @@
       "required": true
     },
     {
-      "description": "Change the appearance of the toast",
+      "description": "Change the appearance of the toast.",
       "enum": ["error", "info", "invert", "neutral", "success", "warning"],
       "type": "string",
-      "title": "variant",
+      "title": "appearance",
       "required": true
     },
     {
+      "description": "Change the variant of the toast.",
+      "enum": ["border", "solid", "tonal"],
+      "type": "string",
+      "title": "variant",
+      "required": false
+    },
+    {
+      "description": "The title of the toast",
       "type": "string",
       "title": "title",
+      "required": false
+    },
+    {
+      "description": "The size of the toast",
+      "enum": ["large", "medium", "small"],
+      "type": "string",
+      "title": "size",
       "required": false
     }
   ],

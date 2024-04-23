@@ -35,7 +35,13 @@ export const Use: Story = {
     return (
       <div>
         <Button
-          onClick={() => createToast({ message: "Hello!", variant: "neutral" })}
+          onClick={() =>
+            createToast({
+              message: "Hello!",
+              appearance: "invert",
+              variant: "border",
+            })
+          }
         >
           Open Toast
         </Button>

@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 export interface ToastContextProps {
   toasts: any;
-  createToast: ({ message, variant }: Omit<ToastStateProps, "id">) => void;
+  createToast: ({ message, appearance }: Omit<ToastStateProps, "id">) => void;
   dismissToast: (
     id: `${string}-${string}-${string}-${string}-${string}`,
   ) => void;
@@ -18,5 +18,6 @@ export interface ToastProviderProps {
 export interface ToastStateProps {
   id: `${string}-${string}-${string}-${string}-${string}`;
   message: string;
-  variant: "info" | "error" | "success" | "warning" | "neutral" | "invert";
+  appearance: "info" | "error" | "success" | "warning" | "neutral" | "invert";
+  variant?: "solid" | "tonal" | "border";
 }

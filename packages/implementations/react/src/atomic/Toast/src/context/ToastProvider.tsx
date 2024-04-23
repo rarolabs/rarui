@@ -11,12 +11,17 @@ const ToastProvider: React.FC<ToastProviderProps> = ({ children }) => {
   const [toasts, setToasts] = useState<ToastStateProps[]>([]);
 
   const createToast = useCallback(
-    ({ message, variant }: Omit<ToastStateProps, "id">) => {
+    ({
+      message,
+      appearance,
+      variant = "solid",
+    }: Omit<ToastStateProps, "id">) => {
       const nextToasts = [
         ...toasts,
         {
           id: crypto.randomUUID(),
           message,
+          appearance,
           variant,
         },
       ];

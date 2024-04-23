@@ -14,7 +14,12 @@ const ToastContainer: React.FC<ToastContainerProps> = ({
     <ol className={toastStyle.classnames.toastContainer({ position })}>
       {toasts.map((toast: ToastStateProps) => (
         <li key={toast.id} className={toastStyle.classnames.toastWrapper}>
-          <Toast id={toast.id} variant={toast.variant} size={size}>
+          <Toast
+            id={toast.id}
+            appearance={toast.appearance}
+            variant={toast.variant}
+            size={size}
+          >
             {toast.message}
           </Toast>
         </li>
