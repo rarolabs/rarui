@@ -38,14 +38,14 @@ export const Use: Story = {
           onClick={() =>
             createToast({
               message: "Hello!",
-              appearance: "invert",
-              variant: "border",
+              appearance: "info",
+              variant: "solid",
             })
           }
         >
           Open Toast
         </Button>
-        <ToastContainer size="small" duration={8000} />
+        <ToastContainer size="small" />
       </div>
     );
   },

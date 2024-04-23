@@ -164,6 +164,8 @@ const toast = recipe({
       },
       style: {
         border: "revert",
+        backgroundColor: varsThemeBase.colors.surface["invert-secondary"],
+        color: varsThemeBase.colors.content["invert-secondary"],
       },
     },
     {
@@ -173,6 +175,8 @@ const toast = recipe({
       },
       style: {
         border: "revert",
+        backgroundColor: varsThemeBase.colors.surface.secondary,
+        color: varsThemeBase.colors.content.secondary,
       },
     },
   ],
@@ -182,13 +186,6 @@ const content = style({
   flex: 1,
   display: "flex",
   flexDirection: "column",
-});
-
-const closeButton = style({
-  flexShrink: 0,
-  border: "none",
-  background: "transparent",
-  cursor: "pointer",
 });
 
 const toastContainer = recipe({
@@ -238,7 +235,6 @@ const toastWrapper = style({
 export const styles = {
   toast,
   content,
-  closeButton,
   toastContainer,
   toastWrapper,
 };

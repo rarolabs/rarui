@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { toast } from "@rarui/styles";
 import { Icon } from "@rarui-react/icon";
 import { Text } from "@rarui-react/text";
+import { Button } from "@rarui-react/button";
 import {
   CloseIcon,
   InfoCircleFilledIcon,
@@ -69,7 +70,7 @@ const Toast: React.FC<ToastProps> = ({
     );
 
     return () => window.clearTimeout(timeoutId);
-  }, [id]);
+  }, [id, duration]);
 
   return (
     <div
@@ -92,13 +93,18 @@ const Toast: React.FC<ToastProps> = ({
         </Text>
       </div>
 
-      <div
-        className={toast.classnames.closeButton}
+      <Button
+        variant="text"
+        appearance={
+          variant === "solid" || appearance === "neutral"
+            ? "inverted"
+            : "neutral"
+        }
         onClick={() => dismissToast(id)}
         data-testid="dismiss-button"
       >
         <Icon source={<CloseIcon />} />
-      </div>
+      </Button>
     </div>
   );
 };
