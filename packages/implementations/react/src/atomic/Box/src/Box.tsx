@@ -2,7 +2,7 @@ import React, { ComponentPropsWithRef, forwardRef } from "react";
 import { PolymorphicForwardRefComponent } from "@rarui/typings";
 import { box } from "@rarui/styles";
 
-import { BoxBaseProps } from "./box.types";
+import { _BoxProps } from "./box.types";
 
 const Box = forwardRef(
   (
@@ -12,19 +12,19 @@ const Box = forwardRef(
       as: As = "div",
       boxSizing = "border-box",
       ...rest
-    }: BoxBaseProps & { as: any },
+    }: _BoxProps & { as: any },
     ref,
   ) => {
     const { className, style, otherProps } = box.sprinkle({
-      ...(rest as Parameters<typeof box.sprinkle>[0]),
+      ...rest,
       boxSizing,
     });
 
     return <As ref={ref} className={className} style={style} {...otherProps} />;
   },
-) as PolymorphicForwardRefComponent<"div", BoxBaseProps>;
+) as PolymorphicForwardRefComponent<"div", _BoxProps>;
 
 Box.displayName = "Box";
 
-export type BoxProps = ComponentPropsWithRef<typeof Box>;
+export type BoxProps = ComponentPropsWithRef<typeof Box> & _BoxProps;
 export { Box };

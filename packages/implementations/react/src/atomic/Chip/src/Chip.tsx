@@ -16,7 +16,7 @@ const Chip: React.FC<ChipProps> = ({
   ...rest
 }) => {
   const { className, style, otherProps } = chip.sprinkle({
-    ...(rest as Parameters<typeof chip.sprinkle>[0]),
+    ...rest,
     padding,
   });
 

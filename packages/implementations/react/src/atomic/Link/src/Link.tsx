@@ -11,7 +11,7 @@ import {
 } from "@rarui/typings";
 import { link } from "@rarui/styles";
 
-import { LinkBaseProps } from "./link.types";
+import { _LinkProps } from "./link.types";
 
 const Link = forwardRef(
   (
@@ -23,7 +23,7 @@ const Link = forwardRef(
       appearance = "default",
       children,
       ...props
-    }: LinkBaseProps & { as: any },
+    }: _LinkProps & { as: any },
     ref,
   ) => {
     const innerRef = useRef<HTMLAnchorElement>(null);
@@ -50,7 +50,7 @@ const Link = forwardRef(
 
     return (
       <As
-        {...(props as any)}
+        {...props}
         className={[link.classnames.link({ appearance, size })].join(" ")}
         ref={innerRef}
       >
@@ -58,7 +58,7 @@ const Link = forwardRef(
       </As>
     );
   },
-) as PolymorphicForwardRefComponent<"a" | "button", LinkBaseProps>;
+) as PolymorphicForwardRefComponent<"a" | "button", _LinkProps>;
 
 Link.displayName = "Link";
 

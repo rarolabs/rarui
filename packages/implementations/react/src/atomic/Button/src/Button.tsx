@@ -11,7 +11,7 @@ import {
 } from "@rarui/typings";
 import { button } from "@rarui/styles";
 
-import { ButtonBaseProps } from "./button.types";
+import { _ButtonProps } from "./button.types";
 
 const Button = forwardRef(
   (
@@ -24,7 +24,7 @@ const Button = forwardRef(
       variant = "solid",
       children,
       ...props
-    }: ButtonBaseProps & { as: any },
+    }: _ButtonProps & { as: any },
     ref,
   ) => {
     const innerRef = useRef<HTMLButtonElement>(null);
@@ -51,7 +51,7 @@ const Button = forwardRef(
 
     return (
       <As
-        {...(props as any)}
+        {...props}
         className={button.classnames.button({ size, variant, appearance })}
         ref={innerRef}
       >
@@ -60,7 +60,7 @@ const Button = forwardRef(
       </As>
     );
   },
-) as PolymorphicForwardRefComponent<"button" | "a", ButtonBaseProps>;
+) as PolymorphicForwardRefComponent<"button" | "a", _ButtonProps>;
 
 Button.displayName = "Button";
 

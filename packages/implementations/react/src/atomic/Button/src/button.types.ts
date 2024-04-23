@@ -34,5 +34,5 @@ export interface ButtonProperties {
   disabled?: boolean;
 }
 
-export type ButtonBaseProps = ButtonProperties &
+export type _ButtonProps = ButtonProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

@@ -14,4 +14,6 @@ export interface TitleProperties extends TitleSprinkle {
   as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 }
 
-export type TitleProps = TitleProperties & HTMLAttributes<HTMLHeadingElement>;
+export type TitleProps = TitleSprinkle &
+  TitleProperties &
+  HTMLAttributes<HTMLHeadingElement>;

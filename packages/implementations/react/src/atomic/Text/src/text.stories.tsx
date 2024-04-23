@@ -6,7 +6,10 @@ import docs from "./text.docs.json";
 const meta: Meta<typeof Text> = {
   title: "Atomic/Text",
   component: Text,
-  argTypes: argTypesConvert(docs),
+  argTypes: {
+    ...argTypesConvert(docs),
+    children: { control: { type: "text" } },
+  },
   tags: ["autodocs"],
 };
 
