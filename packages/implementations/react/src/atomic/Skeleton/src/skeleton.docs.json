@@ -1,7 +1,7 @@
 {
   "id": "skeleton",
   "name": "Skeleton",
-  "totalProps": 6,
+  "totalProps": 8,
   "packageName": "@rarui-react/skeleton",
   "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/skeleton",
@@ -13,6 +13,105 @@
       "required": false
     },
     {
+      "description": "The borderRadius property sets the skeleton.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "$2xl",
+            "$2xs",
+            "$button",
+            "$input",
+            "$lg",
+            "$md",
+            "$none",
+            "$pill",
+            "$sm",
+            "$xl",
+            "$xs"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "borderRadiusProperties",
+      "required": false
+    },
+    {
+      "description": "The **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area.\n\n\n**Initial value**: `auto`",
       "anyOf": [
         {
           "additionalProperties": false,
@@ -46,31 +145,6 @@
                 }
               ],
               "title": "xs"
-            },
-            "xl": {
-              "anyOf": [
-                {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
-                  "enum": [
-                    "auto",
-                    "fit-content",
-                    "intrinsic",
-                    "max-content",
-                    "min-content",
-                    "min-intrinsic",
-                    "stretch"
-                  ],
-                  "type": "string"
-                },
-                {
-                  "type": "number"
-                }
-              ],
-              "title": "xl"
             },
             "md": {
               "anyOf": [
@@ -121,15 +195,35 @@
                 }
               ],
               "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
             }
           },
           "additionalProperties": false,
-          "propertyOrder": [
-            "xs",
-            "xl",
-            "md",
-            "lg"
-          ]
+          "propertyOrder": ["xs", "md", "lg", "xl"]
         },
         {
           "enum": [
@@ -151,6 +245,7 @@
       "required": false
     },
     {
+      "description": "The **`height`** CSS property specifies the height of an element. By default, the property defines the height of the content area. If `box-sizing` is set to `border-box`, however, it instead determines the height of the border area.\n\n\n**Initial value**: `auto`",
       "anyOf": [
         {
           "additionalProperties": false,
@@ -182,29 +277,6 @@
                 }
               ],
               "title": "xs"
-            },
-            "xl": {
-              "anyOf": [
-                {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
-                  "enum": [
-                    "auto",
-                    "fit-content",
-                    "max-content",
-                    "min-content",
-                    "stretch"
-                  ],
-                  "type": "string"
-                },
-                {
-                  "type": "number"
-                }
-              ],
-              "title": "xl"
             },
             "md": {
               "anyOf": [
@@ -251,15 +323,33 @@
                 }
               ],
               "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "max-content",
+                    "min-content",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
             }
           },
           "additionalProperties": false,
-          "propertyOrder": [
-            "xs",
-            "xl",
-            "md",
-            "lg"
-          ]
+          "propertyOrder": ["xs", "md", "lg", "xl"]
         },
         {
           "enum": [
@@ -279,6 +369,7 @@
       "required": false
     },
     {
+      "description": "The **`max-height`** CSS property sets the maximum height of an element. It prevents the used value of the `height` property from becoming larger than the value specified for `max-height`.\n\n\n**Initial value**: `none`",
       "anyOf": [
         {
           "additionalProperties": false,
@@ -311,30 +402,6 @@
                 }
               ],
               "title": "xs"
-            },
-            "xl": {
-              "anyOf": [
-                {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
-                  "enum": [
-                    "fit-content",
-                    "intrinsic",
-                    "max-content",
-                    "min-content",
-                    "none",
-                    "stretch"
-                  ],
-                  "type": "string"
-                },
-                {
-                  "type": "number"
-                }
-              ],
-              "title": "xl"
             },
             "md": {
               "anyOf": [
@@ -383,67 +450,6 @@
                 }
               ],
               "title": "lg"
-            }
-          },
-          "additionalProperties": false,
-          "propertyOrder": [
-            "xs",
-            "xl",
-            "md",
-            "lg"
-          ]
-        },
-        {
-          "enum": [
-            "fit-content",
-            "intrinsic",
-            "max-content",
-            "min-content",
-            "none",
-            "stretch"
-          ],
-          "type": "string"
-        },
-        {
-          "type": "number"
-        }
-      ],
-      "title": "maxWidth",
-      "required": false
-    },
-    {
-      "anyOf": [
-        {
-          "additionalProperties": false,
-          "type": "object",
-          "properties": {}
-        },
-        {
-          "type": "object",
-          "properties": {
-            "xs": {
-              "anyOf": [
-                {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
-                  "enum": [
-                    "fit-content",
-                    "intrinsic",
-                    "max-content",
-                    "min-content",
-                    "none",
-                    "stretch"
-                  ],
-                  "type": "string"
-                },
-                {
-                  "type": "number"
-                }
-              ],
-              "title": "xs"
             },
             "xl": {
               "anyOf": [
@@ -468,63 +474,10 @@
                 }
               ],
               "title": "xl"
-            },
-            "md": {
-              "anyOf": [
-                {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
-                  "enum": [
-                    "fit-content",
-                    "intrinsic",
-                    "max-content",
-                    "min-content",
-                    "none",
-                    "stretch"
-                  ],
-                  "type": "string"
-                },
-                {
-                  "type": "number"
-                }
-              ],
-              "title": "md"
-            },
-            "lg": {
-              "anyOf": [
-                {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
-                  "enum": [
-                    "fit-content",
-                    "intrinsic",
-                    "max-content",
-                    "min-content",
-                    "none",
-                    "stretch"
-                  ],
-                  "type": "string"
-                },
-                {
-                  "type": "number"
-                }
-              ],
-              "title": "lg"
             }
           },
           "additionalProperties": false,
-          "propertyOrder": [
-            "xs",
-            "xl",
-            "md",
-            "lg"
-          ]
+          "propertyOrder": ["xs", "md", "lg", "xl"]
         },
         {
           "enum": [
@@ -545,12 +498,8 @@
       "required": false
     },
     {
+      "description": "The **`max-width`** CSS property sets the maximum width of an element. It prevents the used value of the `width` property from becoming larger than the value specified by `max-width`.\n\n\n**Initial value**: `none`",
       "anyOf": [
-        {
-          "additionalProperties": false,
-          "type": "object",
-          "properties": {}
-        },
         {
           "additionalProperties": false,
           "type": "object",
@@ -567,59 +516,21 @@
                   "properties": {}
                 },
                 {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
                   "enum": [
-                    "$2xl",
-                    "$2xs",
-                    "$button",
-                    "$input",
-                    "$lg",
-                    "$md",
-                    "$none",
-                    "$pill",
-                    "$sm",
-                    "$xl",
-                    "$xs"
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
                   ],
                   "type": "string"
+                },
+                {
+                  "type": "number"
                 }
               ],
               "title": "xs"
-            },
-            "xl": {
-              "anyOf": [
-                {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
-                  "enum": [
-                    "$2xl",
-                    "$2xs",
-                    "$button",
-                    "$input",
-                    "$lg",
-                    "$md",
-                    "$none",
-                    "$pill",
-                    "$sm",
-                    "$xl",
-                    "$xs"
-                  ],
-                  "type": "string"
-                }
-              ],
-              "title": "xl"
             },
             "md": {
               "anyOf": [
@@ -629,25 +540,18 @@
                   "properties": {}
                 },
                 {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
                   "enum": [
-                    "$2xl",
-                    "$2xs",
-                    "$button",
-                    "$input",
-                    "$lg",
-                    "$md",
-                    "$none",
-                    "$pill",
-                    "$sm",
-                    "$xl",
-                    "$xs"
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
                   ],
                   "type": "string"
+                },
+                {
+                  "type": "number"
                 }
               ],
               "title": "md"
@@ -660,56 +564,329 @@
                   "properties": {}
                 },
                 {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
                   "additionalProperties": false,
                   "type": "object",
                   "properties": {}
                 },
                 {
                   "enum": [
-                    "$2xl",
-                    "$2xs",
-                    "$button",
-                    "$input",
-                    "$lg",
-                    "$md",
-                    "$none",
-                    "$pill",
-                    "$sm",
-                    "$xl",
-                    "$xs"
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
                   ],
                   "type": "string"
+                },
+                {
+                  "type": "number"
                 }
               ],
-              "title": "lg"
+              "title": "xl"
             }
           },
           "additionalProperties": false,
-          "propertyOrder": [
-            "xs",
-            "xl",
-            "md",
-            "lg"
-          ]
+          "propertyOrder": ["xs", "md", "lg", "xl"]
         },
         {
           "enum": [
-            "$2xl",
-            "$2xs",
-            "$button",
-            "$input",
-            "$lg",
-            "$md",
-            "$none",
-            "$pill",
-            "$sm",
-            "$xl",
-            "$xs"
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "none",
+            "stretch"
           ],
           "type": "string"
+        },
+        {
+          "type": "number"
         }
       ],
-      "title": "borderRadius",
+      "title": "maxWidth",
+      "required": false
+    },
+    {
+      "description": "The **`min-height`** CSS property sets the minimum height of an element. It prevents the used value of the `height` property from becoming smaller than the value specified for `min-height`.\n\n\n**Initial value**: `auto`",
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "auto",
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "stretch"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "minHeight",
+      "required": false
+    },
+    {
+      "description": "The **`min-width`** CSS property sets the minimum width of an element. It prevents the used value of the `width` property from becoming smaller than the value specified for `min-width`.\n\n\n**Initial value**: `auto`",
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "auto",
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "min-intrinsic",
+            "stretch"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "minWidth",
       "required": false
     }
   ],

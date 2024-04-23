@@ -3,7 +3,7 @@
   "name": "Checkbox",
   "totalProps": 5,
   "packageName": "@rarui-react/checkbox",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/checkbox",
   "props": [
     {
@@ -24,10 +24,7 @@
       "required": false
     },
     {
-      "enum": [
-        "large",
-        "medium"
-      ],
+      "enum": ["large", "medium"],
       "type": "string",
       "title": "size",
       "required": false
