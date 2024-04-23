@@ -13,6 +13,11 @@
     "clean": "rm -rf dist",
     "version": "yarn version"
   },
+  "dependencies": {
+    "@rarui-react/button": "workspace:^",
+    "@rarui-react/icon": "workspace:^",
+    "@rarui-react/text": "workspace:^"
+  },
   "peerDependencies": {
     "react": "^16.8 || ^17.0 || ^18.0",
     "react-dom": "^16.8 || ^17.0 || ^18.0"
