@@ -1,0 +1,33 @@
+{
+  "id": "banner",
+  "name": "Banner",
+  "totalProps": 4,
+  "packageName": "@rarui-react/banner",
+  "version": "1.0.0-rc.1",
+  "docLink": "https://rarui.com.br/documentation/src-components/banner",
+  "props": [
+    {
+      "description": "The content of the button.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": true
+    },
+    {
+      "type": "boolean",
+      "title": "onClose",
+      "required": false
+    },
+    {
+      "enum": ["brand", "error", "info", "inverted", "neutral", "warning"],
+      "type": "string",
+      "title": "appearance",
+      "required": false
+    },
+    {
+      "type": "boolean",
+      "title": "floating",
+      "required": false
+    }
+  ],
+  "subComponents": []
+}

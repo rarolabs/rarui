@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-04-18 `1.11.0`
+
+#### 🎉 New features
+
+- Added new atomic `Banner` component. ([#26](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/26) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+
 ## 2024-04-18 `1.10.0`
 
 #### 🎉 New features

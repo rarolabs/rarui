@@ -13,6 +13,7 @@ export { status } from "./packages/atomic/status";
 export { text } from "./packages/atomic/text";
 export { title } from "./packages/atomic/title";
 export { checkbox } from "./packages/atomic/checkbox";
+export { banner } from "./packages/atomic/banner";
 
 // types
 export type { BoxSprinkle } from "./packages/atomic/box";
@@ -26,3 +27,4 @@ export type { ButtonVariants } from "./packages/atomic/button";
 export type { CheckboxVariants } from "./packages/atomic/checkbox";
 export type { ChipVariants } from "./packages/atomic/chip";
 export type { StatusVariants } from "./packages/atomic/status";
+export type { BannerVariants } from "./packages/atomic/banner";

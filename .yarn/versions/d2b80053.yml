@@ -1,0 +1,7 @@
+releases:
+  "@rarui-react/banner": major
+  "@rarui-react/components": minor
+  "@rarui/styles": minor
+
+declined:
+  - "@rarui/design-system"
