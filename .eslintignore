@@ -5,3 +5,4 @@ alias.ts
 index.d.ts
 packages/core/typings
 packages/icons/templates
+packages/styles/src/types

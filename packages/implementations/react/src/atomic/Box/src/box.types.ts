@@ -9,5 +9,5 @@ export interface BoxProperties extends BoxSprinkle {
   children?: ReactNode;
 }
 
-export type BoxBaseProps = BoxProperties &
+export type _BoxProps = BoxProperties &
   Omit<HTMLAttributes<HTMLElement>, "color">;

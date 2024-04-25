@@ -18,4 +18,4 @@ export interface LinkProperties {
   size?: "large" | "medium" | "small";
 }
 
-export type LinkBaseProps = LinkProperties & HTMLAttributes<HTMLElement>;
+export type _LinkProps = LinkProperties & HTMLAttributes<HTMLElement>;

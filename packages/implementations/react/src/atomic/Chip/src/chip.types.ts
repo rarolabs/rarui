@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import { ChipVariants, ChipSprinkle } from "@rarui/styles";
 
-export interface Chip {
+export interface Chip extends ChipSprinkle {
   /**
    * The content of the button.
    * @TJS-type React.ReactNode
@@ -14,6 +14,6 @@ export interface Chip {
   closeable?: boolean;
 }
 
-export type ChipProperties = Chip & ChipVariants & ChipSprinkle;
+export type ChipProperties = Chip & ChipVariants;
 export type ChipProps = ChipProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

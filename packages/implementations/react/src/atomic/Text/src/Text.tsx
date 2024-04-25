@@ -14,7 +14,7 @@ const Text: React.FC<TextProps> = ({
   ...rest
 }) => {
   const { className, style, otherProps } = text.sprinkle({
-    ...(rest as Parameters<typeof text.sprinkle>[0]),
+    ...rest,
     textAlign,
     fontWeight,
   });

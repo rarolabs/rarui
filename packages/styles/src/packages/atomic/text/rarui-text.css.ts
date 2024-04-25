@@ -10,6 +10,24 @@ import { colorProperties, fontWeightProperties } from "../../../properties";
  * Style
  * -----------------------------------------------------------------------------------------------*/
 
+export const textLineHeightProperties = {
+  xxs: varsThemeBase.lineHeight.body.xxs,
+  xs: varsThemeBase.lineHeight.body.xs,
+  s: varsThemeBase.lineHeight.body.s,
+  m: varsThemeBase.lineHeight.body.m,
+  l: varsThemeBase.lineHeight.body.l,
+  xl: varsThemeBase.lineHeight.body.xl,
+};
+
+export const textFontSizeProperties = {
+  xxs: varsThemeBase.fontSize.body.xxs,
+  xs: varsThemeBase.fontSize.body.xs,
+  s: varsThemeBase.fontSize.body.s,
+  m: varsThemeBase.fontSize.body.m,
+  l: varsThemeBase.fontSize.body.l,
+  xl: varsThemeBase.fontSize.body.xl,
+};
+
 export const text = recipe({
   base: {
     fontFamily: varsThemeBase.fontFamily.inter,
@@ -59,22 +77,8 @@ const defineProperties = defineRainbowProperties({
   staticProperties: {
     color: colorProperties,
     fontWeight: fontWeightProperties,
-    lineHeight: {
-      xxs: varsThemeBase.lineHeight.body.xxs,
-      xs: varsThemeBase.lineHeight.body.xs,
-      s: varsThemeBase.lineHeight.body.s,
-      m: varsThemeBase.lineHeight.body.m,
-      l: varsThemeBase.lineHeight.body.l,
-      xl: varsThemeBase.lineHeight.body.xl,
-    },
-    fontSize: {
-      xxs: varsThemeBase.fontSize.body.xxs,
-      xs: varsThemeBase.fontSize.body.xs,
-      s: varsThemeBase.fontSize.body.s,
-      m: varsThemeBase.fontSize.body.m,
-      l: varsThemeBase.fontSize.body.l,
-      xl: varsThemeBase.fontSize.body.xl,
-    },
+    lineHeight: textLineHeightProperties,
+    fontSize: textFontSizeProperties,
   },
 });
 

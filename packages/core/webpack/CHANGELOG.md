@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating builds of each design system package. It contains all the necessary settings and dependencies to optimize the creation of our builds.
 
+## 2024-04-25 `1.1.1`
+
+#### 🐛 Bug fixes
+
+- Externalizing the package build styles package. ([#27](https://git.rarolabs.com.br/frontend/rarui/pull/27) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-03-27 `1.1.0`
 
 #### 🎉 New features

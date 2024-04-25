@@ -2,6 +2,12 @@
 
 Our design tokens are the foundations of Design System.
 
+## 2024-04-25 `1.0.4`
+
+#### 💡 Others
+
+- Adjusted color of the light theme `color-light-surface-disabled` token. ([#27](https://git.rarolabs.com.br/frontend/rarui/pull/27) by [@juniorconquista](https://github.com/juniorconquista))
+
 ## 2024-04-16 `1.0.3`
 
 #### 💡 Others

@@ -16,8 +16,6 @@ type Story = StoryObj<typeof Checkbox>;
 export const basic: Story = {
   args: {
     label: "Label",
-    disabled: true,
-
   },
 };
 export const error: Story = {

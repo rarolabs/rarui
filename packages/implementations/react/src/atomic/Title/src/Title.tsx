@@ -13,7 +13,7 @@ const Title: React.FC<TitleProps> = ({
   ...rest
 }) => {
   const { className, style, otherProps } = title.sprinkle({
-    ...(rest as Parameters<typeof title.sprinkle>[0]),
+    ...rest,
     textAlign,
     fontWeight,
   });

@@ -100,7 +100,7 @@ export const styles = {
  * Sprinkle
  * -----------------------------------------------------------------------------------------------*/
 
-const paddingProperties = {
+export const paddingProperties = {
   medium: `0 ${varsThemeBase.spacing.xs}`,
   small: `0 ${varsThemeBase.spacing["4xs"]}`,
 };
