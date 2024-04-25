@@ -1,17 +1,27 @@
 releases:
+  "@rarui-react/box": patch
+  "@rarui-react/button": patch
+  "@rarui-react/chip": patch
   "@rarui-react/components": minor
+  "@rarui-react/link": patch
+  "@rarui-react/text": patch
+  "@rarui-react/title": patch
+  "@rarui-react/toggle": major
+  "@rarui/styles": minor
+  "@rarui/tokens": patch
+  "@rarui/webpack": patch
 
 declined:
   - "@rarui/design-system"
-  - "@rarui/webpack"
+  - "@rarui/typings"
+  - "@rarui/icons"
   - "@rarui-react/badge"
-  - "@rarui-react/box"
   - "@rarui-react/checkbox"
-  - "@rarui-react/chip"
   - "@rarui-react/icon"
   - "@rarui-react/skeleton"
-  - "@rarui-react/text"
-  - "@rarui-react/title"
-  - "@rarui-react/toggle"
-  - "@rarui/styles"
-  - "@rarui/tokens"
+  - "@rarui-react/status"
+  - "@rarui-vuejs/components"
+  - "@rarui-vuejs/badge"
+  - "@rarui-vuejs/button"
+  - "@rarui-vuejs/chip"
+  - "@rarui-vuejs/link"

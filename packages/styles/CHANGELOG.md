@@ -6,11 +6,11 @@ RarUI Styles deprive all styles needed to build components.
 
 #### 🐛 Bug fixes
 
-- Adjusting the typing of all components that use rainbow sprinkle. ([#26](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/26) by [@junior](https://git.rarolabs.com.br/junior))
+- Adjusting the typing of all components that use rainbow sprinkle. ([#27](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/27) by [@junior](https://git.rarolabs.com.br/junior))
 
 #### 🎉 New features
 
-- Added new style pack for `toggle` component. ([#26](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/26) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new style pack for `toggle` component. ([#27](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/27) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-04-18 `1.10.0`
 
