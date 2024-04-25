@@ -25,7 +25,7 @@ export const argTypesConvert = (properties: any = {}) => {
 
       options = enums;
 
-      const anyOf = curr?.anyOf?.find((anyOf) => anyOf.type !== "object");
+      const anyOf = curr?.anyOf?.find((anyOf: any) => anyOf.type !== "object");
 
       let control = "";
       switch (true) {
