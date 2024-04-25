@@ -17,9 +17,21 @@ export const basic: Story = {
   args: {},
 };
 
-export const active: Story = {
+export const error: Story = {
   args: {
-    active: true,
+    error: true,
+  },
+};
+
+export const small: Story = {
+  args: {
+    size: "small",
+  },
+};
+
+export const selected: Story = {
+  args: {
+    selected: true,
   },
 };
 
