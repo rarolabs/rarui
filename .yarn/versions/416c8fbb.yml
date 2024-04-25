@@ -1,0 +1,17 @@
+releases:
+  "@rarui-react/components": minor
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui/webpack"
+  - "@rarui-react/badge"
+  - "@rarui-react/box"
+  - "@rarui-react/checkbox"
+  - "@rarui-react/chip"
+  - "@rarui-react/icon"
+  - "@rarui-react/skeleton"
+  - "@rarui-react/text"
+  - "@rarui-react/title"
+  - "@rarui-react/toggle"
+  - "@rarui/styles"
+  - "@rarui/tokens"
