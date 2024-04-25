@@ -13,20 +13,32 @@ const Toggle: React.FC<ToggleProps> = ({
   name,
   selected,
   error,
+  disabled,
   ...rest
 }) => (
-  <label htmlFor={id || name} className={toggle.classnames.container}>
+  <label
+    htmlFor={id || name}
+    className={toggle.classnames.toggle({ size, error })}
+    aria-disabled={disabled}
+  >
     <input
       {...rest}
       id={id || name}
       name={name}
       type="checkbox"
-      className={toggle.classnames.container__input}
+      className={toggle.classnames.input}
       defaultChecked={selected}
+      disabled={disabled}
     />
     <span
       data-testid="slider"
-      className={toggle.classnames.container__slider({ size, error })}
+      className={toggle.classnames.slider({ size, error })}
+      aria-disabled={disabled}
+    />
+    <span
+      data-testid="icon"
+      className={toggle.classnames.icon}
+      aria-disabled={disabled}
     />
     {label && (
       <Text data-testid="text" color="$primary">

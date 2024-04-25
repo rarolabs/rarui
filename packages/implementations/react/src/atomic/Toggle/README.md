@@ -1,6 +1,6 @@
 # `@rarui-react/toggle`
 
-Titles are text components, used to apply visual and semantic hierarchy to the contents of a page.
+Toggle switches enable or disable the state of a single item.
 
 ## Installation
 
