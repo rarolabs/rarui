@@ -20,6 +20,44 @@
       "required": false
     },
     {
+      "description": "The padding properties are used to generate space around an chip's content area.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$medium", "$small"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["$medium", "$small"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$medium", "$small"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["$medium", "$small"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["$medium", "$small"],
+          "type": "string"
+        }
+      ],
+      "title": "padding",
+      "required": false
+    },
+    {
       "type": "boolean",
       "title": "pill",
       "required": false
@@ -33,43 +71,6 @@
       "enum": ["medium", "small"],
       "type": "string",
       "title": "size",
-      "required": false
-    },
-    {
-      "anyOf": [
-        {
-          "type": "object",
-          "properties": {
-            "xs": {
-              "enum": ["$medium", "$small"],
-              "type": "string",
-              "title": "xs"
-            },
-            "xl": {
-              "enum": ["$medium", "$small"],
-              "type": "string",
-              "title": "xl"
-            },
-            "md": {
-              "enum": ["$medium", "$small"],
-              "type": "string",
-              "title": "md"
-            },
-            "lg": {
-              "enum": ["$medium", "$small"],
-              "type": "string",
-              "title": "lg"
-            }
-          },
-          "additionalProperties": false,
-          "propertyOrder": ["xs", "xl", "md", "lg"]
-        },
-        {
-          "enum": ["$medium", "$small"],
-          "type": "string"
-        }
-      ],
-      "title": "padding",
       "required": false
     }
   ],
