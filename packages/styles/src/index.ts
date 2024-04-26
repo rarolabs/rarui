@@ -2,6 +2,7 @@
 export * from "./components";
 
 // atomic
+export { avatar } from "./packages/atomic/avatar";
 export { badge } from "./packages/atomic/badge";
 export { box } from "./packages/atomic/box";
 export { button } from "./packages/atomic/button";
@@ -28,6 +29,7 @@ export type { TextSprinkle } from "./packages/atomic/text";
 export type { SkeletonSprinkle } from "./packages/atomic/skeleton";
 export type { TitleSprinkle } from "./packages/atomic/title";
 
+export type { AvatarVariants } from "./packages/atomic/avatar";
 export type { ButtonVariants } from "./packages/atomic/button";
 export type { CheckboxVariants } from "./packages/atomic/checkbox";
 export type { ChipVariants } from "./packages/atomic/chip";

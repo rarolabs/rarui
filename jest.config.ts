@@ -11,6 +11,10 @@ const config: Config.InitialOptions = {
     // commons
     "@rarui/styles": "<rootDir>/packages/styles/src",
     // atomics
+    "@rarui-react/avatar":
+      "<rootDir>/packages/implementations/react/src/atomic/Avatar/src",
+    "@rarui-react/badge":
+      "<rootDir>/packages/implementations/react/src/atomic/Badge/src",
     "@rarui-react/box":
       "<rootDir>/packages/implementations/react/src/atomic/Box/src",
     "@rarui-react/button":
