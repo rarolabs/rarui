@@ -1,11 +1,15 @@
-import React, { useContext } from "react";
+import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { argTypesConvert } from ".storybook/utils";
+
 import { Button } from "@rarui-react/button";
-import docs from "./toast.docs.json";
+import { Box } from "@rarui-react/box";
+
 import { Toast } from "./Toast";
-import { ToastContext, ToastProvider } from "./context/ToastProvider";
-import ToastContainer from "./components/ToastContainer";
+import { useToast } from "./hooks";
+import docs from "./toast.docs.json";
+
+console.log(" argTypesConvert(docs),", argTypesConvert(docs));
 
 const meta: Meta<typeof Toast> = {
   title: "Atomic/Toast",
@@ -18,26 +22,26 @@ export default meta;
 
 type Story = StoryObj<typeof Toast>;
 
-export const Default: Story = {
-  args: { children: "Texto qualquer" },
+export const basic: Story = {
+  args: { title: "Title Text", autoClose: false },
 };
 
-export const Use: Story = {
+export const usage: Story = {
   decorators: [
-    (Story) => (
-      <ToastProvider>
-        <Story />
-      </ToastProvider>
+    (StoryComponent) => (
+      <Toast.Provider placement="bottomRight">
+        <StoryComponent />
+      </Toast.Provider>
     ),
   ],
   render: () => {
-    const { createToast } = useContext(ToastContext);
+    const { addToast } = useToast();
     return (
-      <div>
+      <Box height="64vh" maxHeight="64vh">
         <Button
           onClick={() =>
-            createToast({
-              message: "Hello!",
+            addToast({
+              title: "Hello!",
               appearance: "info",
               variant: "solid",
             })
@@ -45,8 +49,7 @@ export const Use: Story = {
         >
           Open Toast
         </Button>
-        <ToastContainer size="small" />
-      </div>
+      </Box>
     );
   },
 };

@@ -1,7 +1,7 @@
 {
   "id": "toast",
   "name": "Toast",
-  "totalProps": 6,
+  "totalProps": 10,
   "packageName": "@rarui-react/toast",
   "version": "1.0.0-rc.1",
   "docLink": "https://rarui.com.br/documentation/src-components/toast",
@@ -10,30 +10,13 @@
       "description": "The content of the button.",
       "type": "React.ReactNode",
       "title": "children",
-      "required": true
+      "required": false
     },
     {
-      "description": "Auto genetated id.",
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
+      "description": "Auto generated id.",
+      "type": "string",
       "title": "id",
       "required": true
-    },
-    {
-      "description": "Change the appearance of the toast.",
-      "enum": ["error", "info", "invert", "neutral", "success", "warning"],
-      "type": "string",
-      "title": "appearance",
-      "required": true
-    },
-    {
-      "description": "Change the variant of the toast.",
-      "enum": ["border", "solid", "tonal"],
-      "type": "string",
-      "title": "variant",
-      "required": false
     },
     {
       "description": "The title of the toast",
@@ -42,12 +25,56 @@
       "required": false
     },
     {
-      "description": "The size of the toast",
+      "description": "Time in miliseconds to auto dismiss the component",
+      "enum": [16000, 4000, 8000],
+      "type": "number",
+      "title": "duration",
+      "required": false
+    },
+    {
+      "description": "Tells you whether or not Toast should close automatically.",
+      "default": true,
+      "type": "boolean",
+      "title": "autoClose",
+      "required": false
+    },
+    {
+      "description": "Tells the toast position when we are using multiple toasts.",
+      "default": 0,
+      "type": "number",
+      "title": "position",
+      "required": false
+    },
+    {
+      "type": "string",
+      "enum": ["topRight"],
+      "title": "placement",
+      "required": false
+    },
+    {
+      "enum": ["error", "info", "invert", "neutral", "success", "warning"],
+      "type": "string",
+      "title": "appearance",
+      "required": false
+    },
+    {
       "enum": ["large", "medium", "small"],
       "type": "string",
       "title": "size",
       "required": false
+    },
+    {
+      "enum": ["ghost", "solid", "tonal"],
+      "type": "string",
+      "title": "variant",
+      "required": false
     }
   ],
-  "subComponents": []
+  "subComponents": [
+    {
+      "name": "Toast.Provider",
+      "totalProps": 0,
+      "props": []
+    }
+  ]
 }
