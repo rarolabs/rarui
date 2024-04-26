@@ -5,6 +5,7 @@ export * from "@rarui-react/button";
 export * from "@rarui-react/checkbox";
 export * from "@rarui-react/chip";
 export * from "@rarui-react/icon";
+export * from "@rarui-react/icon-button";
 export * from "@rarui-react/link";
 export * from "@rarui-react/skeleton";
 export * from "@rarui-react/status";

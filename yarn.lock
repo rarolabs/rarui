@@ -3189,7 +3189,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui-react/button@workspace:^, @rarui-react/button@workspace:packages/implementations/react/src/atomic/Button":
+"@rarui-react/button@workspace:packages/implementations/react/src/atomic/Button":
   version: 0.0.0-use.local
   resolution: "@rarui-react/button@workspace:packages/implementations/react/src/atomic/Button"
   dependencies:
@@ -3232,6 +3232,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@rarui-react/components@workspace:packages/implementations/react"
   dependencies:
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@rarui-react/icon-button@workspace:^, @rarui-react/icon-button@workspace:packages/implementations/react/src/atomic/IconButton":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/icon-button@workspace:packages/implementations/react/src/atomic/IconButton"
+  dependencies:
+    "@rarui-react/icon": "workspace:^"
+    "@rarui/icons": "workspace:^"
     "@rarui/webpack": "workspace:^"
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
@@ -3312,9 +3325,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@rarui-react/toast@workspace:packages/implementations/react/src/atomic/Toast"
   dependencies:
-    "@rarui-react/button": "workspace:^"
     "@rarui-react/icon": "workspace:^"
+    "@rarui-react/icon-button": "workspace:^"
     "@rarui-react/text": "workspace:^"
+    "@rarui/icons": "workspace:^"
     "@rarui/webpack": "workspace:^"
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
