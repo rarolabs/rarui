@@ -5,3 +5,5 @@ releases:
 
 declined:
   - "@rarui/design-system"
+  - "@rarui-react/icon-button"
+  - "@rarui-react/toast"
