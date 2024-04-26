@@ -222,9 +222,18 @@ const toastContainer = recipe({
   },
 });
 
-const animartionToastCenter = keyframes({
+const animartionToastBottonCenter = keyframes({
   from: {
     transform: "translateY(calc(100%))",
+  },
+  to: {
+    transform: "translateY(0)",
+  },
+});
+
+const animartionToastTopCenter = keyframes({
+  from: {
+    transform: "translateY(calc(-100%))",
   },
   to: {
     transform: "translateY(0)",
@@ -256,7 +265,7 @@ const wrapper = recipe({
   variants: {
     placement: {
       bottomCenter: {
-        animation: `${animartionToastCenter} 800ms cubic-bezier(0,0.46,0,1.04) both`,
+        animation: `${animartionToastBottonCenter} 800ms cubic-bezier(0,0.46,0,1.04) both`,
       },
       bottomLeft: {
         animation: `${animartionToastLeft} 800ms cubic-bezier(0,0.46,0,1.04) both`,
@@ -265,7 +274,7 @@ const wrapper = recipe({
         animation: `${animartionToastRight} 800ms cubic-bezier(0,0.46,0,1.04) both`,
       },
       topCenter: {
-        animation: `${animartionToastCenter} 800ms cubic-bezier(0,0.46,0,1.04) both`,
+        animation: `${animartionToastTopCenter} 800ms cubic-bezier(0,0.46,0,1.04) both`,
       },
       topLeft: {
         animation: `${animartionToastLeft} 800ms cubic-bezier(0,0.46,0,1.04) both`,
