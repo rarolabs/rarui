@@ -1,0 +1,20 @@
+releases:
+  "@rarui-react/components": minor
+  "@rarui-react/icon-button": major
+  "@rarui-react/toast": major
+  "@rarui/styles": minor
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui/scripts"
+  - "@rarui-react/box"
+  - "@rarui-react/button"
+  - "@rarui-react/checkbox"
+  - "@rarui-react/chip"
+  - "@rarui-react/link"
+  - "@rarui-react/status"
+  - "@rarui-react/text"
+  - "@rarui-react/title"
+  - "@rarui-react/toggle"
+  - "@rarui-vuejs/badge"
+  - "@rarui-vuejs/chip"
