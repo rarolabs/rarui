@@ -13,7 +13,9 @@
       "required": true
     },
     {
-      "type": "boolean",
+      "type": "object",
+      "additionalProperties": false,
+      "propertyOrder": [],
       "title": "onClose",
       "required": false
     },
