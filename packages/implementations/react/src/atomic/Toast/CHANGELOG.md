@@ -6,10 +6,13 @@ The Toast component presents notifications that provide feedback on an operation
 
 #### 🎉 New features
 
-- Added `id`, `title`, `appearance`, `size`, `duration` and `variant` properties to the Component Toast. ([#25](https://git.rarolabs.com.br/frontend/rarui/pull/25) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
-- Added `position`, `duration` and `size` properties to the Component ToastContainer. ([#25](https://git.rarolabs.com.br/frontend/rarui/pull/25) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+- Added `title`, `autoClose`, `children`, `id`, `duration`, `appearance`, `variant` and `size` properties to the Component Toast. ([#25](https://git.rarolabs.com.br/frontend/rarui/pull/25) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
 - Added the functionality to auto close the toast. ([#25](https://git.rarolabs.com.br/frontend/rarui/pull/25) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
 - Added stories on Component. ([#25](https://git.rarolabs.com.br/frontend/rarui/pull/25) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+- Created new `Toast.Provider` subcomponent. ([#25](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/25) by [@junior](https://git.rarolabs.com.br/junior))
+- Added `children` and `placement` properties to the Component `Toast.Provider`. ([#25](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/25) by [@junior](https://git.rarolabs.com.br/junior))`
+- Created new `useToast` hook. ([#25](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/25) by [@junior](https://git.rarolabs.com.br/junior))
+
 <!-- #### 🛠 Breaking changes -->
 
 <!-- #### 📚 3rd party library updates -->

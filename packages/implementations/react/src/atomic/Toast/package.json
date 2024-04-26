@@ -14,9 +14,10 @@
     "version": "yarn version"
   },
   "dependencies": {
-    "@rarui-react/button": "workspace:^",
     "@rarui-react/icon": "workspace:^",
-    "@rarui-react/text": "workspace:^"
+    "@rarui-react/icon-button": "workspace:^",
+    "@rarui-react/text": "workspace:^",
+    "@rarui/icons": "workspace:^"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17.0 || ^18.0",

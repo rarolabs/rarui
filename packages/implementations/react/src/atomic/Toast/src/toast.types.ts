@@ -1,41 +1,39 @@
 import { HtmlHTMLAttributes, ReactNode } from "react";
+import { ToastVariants } from "@rarui/styles";
+
+import { Provider } from "./components";
+
+export interface ToastComponents {
+  Provider: typeof Provider;
+}
 
 export interface Toast {
   /**
    * The content of the button.
    * @TJS-type React.ReactNode
    */
-  children: ReactNode;
+  children?: ReactNode;
   /**
-   *  Auto genetated id.
+   *  Auto generated id.
    */
-  id: `${string}-${string}-${string}-${string}-${string}`;
-  /**
-   * Change the appearance of the toast.
-   */
-  appearance: "info" | "error" | "success" | "warning" | "neutral" | "invert";
-  /**
-   * Change the variant of the toast.
-   * @Default solid
-   */
-  variant?: "solid" | "tonal" | "border";
+  id: string;
   /**
    * The title of the toast
    */
   title?: string;
   /**
-   * The size of the toast
-   * @Default medium
+   * Time in miliseconds to auto dismiss the component
+   * @Default 4000
    */
-  size?: "small" | "medium" | "large";
+  duration?: 4000 | 8000 | 16000;
   /**
-   * Time in miliseconds to auto dismiss the component. 0 means to not dismiss automatically.
-   * @Default 0
+   * Tells you whether or not Toast should close automatically.
+   * @default true
    */
-  duration?: 0 | 4000 | 8000 | 16000;
+  autoClose?: boolean;
 }
 
-export type ToastProperties = Toast;
+export type ToastProperties = Toast & ToastVariants;
 
 export type ToastProps = ToastProperties &
-  Omit<HtmlHTMLAttributes<HTMLDivElement>, "id">;
+  Omit<HtmlHTMLAttributes<HTMLDivElement>, "id" | "size">;

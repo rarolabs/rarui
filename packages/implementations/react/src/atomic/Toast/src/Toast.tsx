@@ -1,86 +1,91 @@
-import React, { useContext, useEffect } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { toast } from "@rarui/styles";
+import { CloseIcon } from "@rarui/icons";
 import { Icon } from "@rarui-react/icon";
 import { Text } from "@rarui-react/text";
-import { Button } from "@rarui-react/button";
+import { IconButton } from "@rarui-react/icon-button";
+
 import {
-  CloseIcon,
-  InfoCircleFilledIcon,
-  CheckCircleFilledIcon,
-  DangerFilledIcon,
-  BookmarkFilledIcon,
-} from "@rarui/icons";
-import { ToastProps } from "./toast.types";
-import { ToastContext } from "./context/ToastProvider";
+  getAppearanceIconButton,
+  getSourceIcon,
+  getColorIcon,
+} from "./toast.definitions";
+import { ToastComponents, ToastProps } from "./toast.types";
+import { Provider } from "./components";
+import { useToast } from "./hooks";
 
-const ICON_BY_VARIANT = {
-  info: InfoCircleFilledIcon,
-  success: CheckCircleFilledIcon,
-  warning: InfoCircleFilledIcon,
-  error: DangerFilledIcon,
-  neutral: BookmarkFilledIcon,
-  invert: BookmarkFilledIcon,
-};
-
-const ICON_COLOR = {
-  info: "$info",
-  success: "$success",
-  warning: "$warning-alt",
-  error: "$error",
-  neutral: "$invert",
-  invert: "$primary",
-} as const;
-
-const ICON_COLOR_SOLID = {
-  info: "$on-info",
-  success: "$on-success",
-  warning: "$on-warning",
-  error: "$on-error",
-  neutral: "$invert",
-  invert: "$primary",
-} as const;
-
-const Toast: React.FC<ToastProps> = ({
+const Toast: React.FC<ToastProps> & ToastComponents = ({
   className: _className,
   style: _style,
   children,
   appearance = "info",
   variant = "solid",
   size = "medium",
-  duration = 0,
+  autoClose = true,
+  duration = 4000,
   title,
   id,
   ...props
-}) => {
-  const { dismissToast } = useContext(ToastContext);
-  const Icons = ICON_BY_VARIANT[appearance];
-  const IconColor =
-    variant === "solid" ? ICON_COLOR_SOLID[appearance] : ICON_COLOR[appearance];
+}: ToastProps) => {
+  const closeIntervalRef = useRef<any>();
+  const animationIntervalRef = useRef<any>();
 
-  const handleDismissToastRef = React.useRef<any>();
-  handleDismissToastRef.current = dismissToast;
+  const [show, setShow] = useState(false);
+  const { closeToast } = useToast();
+
+  const close = useCallback(() => {
+    // start animation
+    setShow(true);
+    closeIntervalRef.current = setInterval(() => {
+      // remove animation
+      setShow(false);
+      animationIntervalRef.current = setTimeout(() => {
+        // remove toast in list
+        closeToast(id);
+      }, 200); // this timeout is to allow render the out transition
+    }, duration);
+  }, [
+    setShow,
+    closeToast,
+    id,
+    duration,
+    closeIntervalRef,
+    animationIntervalRef,
+  ]);
 
   useEffect(() => {
-    if (!duration) {
-      return;
+    if (autoClose) {
+      close();
     }
-    const timeoutId = window.setTimeout(
-      () => handleDismissToastRef.current(id),
-      duration,
-    );
+    return () => {
+      // clear interval animation
+      clearInterval(closeIntervalRef?.current);
+      clearInterval(animationIntervalRef?.current);
+    };
+  }, [close, autoClose]);
 
-    return () => window.clearTimeout(timeoutId);
-  }, [id, duration]);
+  const isVisible = useMemo(() => show || !autoClose, [autoClose, show]);
+  const SourceIcon = getSourceIcon[appearance];
 
   return (
     <div
       {...props}
       className={toast.classnames.toast({ appearance, variant, size })}
+      data-testid="toast-element"
+      style={{
+        display: isVisible ? "flex" : "none",
+      }}
     >
       <Icon
         data-testid={`toast-icon-${appearance}`}
-        source={<Icons size={size === "medium" ? 32 : 24} />}
-        color={IconColor}
+        source={<SourceIcon size={size !== "small" ? size : 20} />}
+        color={getColorIcon[variant][appearance]}
       />
       <div className={toast.classnames.content}>
         {title && (
@@ -88,26 +93,22 @@ const Toast: React.FC<ToastProps> = ({
             {title}
           </Text>
         )}
-        <Text fontSize="$s" lineHeight="$s" style={{ flex: 1 }}>
-          {children}
-        </Text>
       </div>
-
-      <Button
-        variant="text"
-        appearance={
-          variant === "solid" || appearance === "neutral"
-            ? "inverted"
-            : "neutral"
-        }
-        onClick={() => dismissToast(id)}
+      {children}
+      <IconButton
+        onClick={() => closeToast(id)}
         data-testid="dismiss-button"
-      >
-        <Icon source={<CloseIcon />} />
-      </Button>
+        variant="ghost"
+        appearance={getAppearanceIconButton[variant]}
+        source={<CloseIcon size="medium" />}
+        rounded
+      />
     </div>
   );
 };
 
+Toast.Provider = Provider;
 Toast.displayName = "Toast";
+Toast.Provider.displayName = "Toast.Provider";
+
 export { Toast };
