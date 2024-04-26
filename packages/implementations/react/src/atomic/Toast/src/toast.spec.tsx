@@ -2,24 +2,19 @@ import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 
 import { Toast } from "./Toast";
-import { ToastContext } from "./context/ToastProvider";
+import { Context } from "./context";
 import { ToastProps } from "./toast.types";
 
-const mockedCreateToast = jest.fn();
-const mockedDismissToast = jest.fn();
+const mockedAddToast = jest.fn();
+const mockedCloseToast = jest.fn();
 
 const makeSut = (rest: ToastProps) => {
   render(
-    <ToastContext.Provider
-      // eslint-disable-next-line react/jsx-no-constructed-context-values
-      value={{
-        toasts: [],
-        createToast: mockedCreateToast,
-        dismissToast: mockedDismissToast,
-      }}
+    <Context.Provider
+      value={{ addToast: mockedAddToast, closeToast: mockedCloseToast }}
     >
       <Toast {...rest} data-testid="toast-element" />
-    </ToastContext.Provider>,
+    </Context.Provider>,
   );
 };
 
@@ -46,7 +41,7 @@ describe("GIVEN <Toast />", () => {
       expect(icon.firstChild?.nodeName).toEqual("svg");
     });
 
-    it("THEN should correctly render the appearance invert", () => {
+    it("AND should correctly render the appearance invert", () => {
       makeSut({
         appearance: "invert",
         children: "Toast",
@@ -60,7 +55,7 @@ describe("GIVEN <Toast />", () => {
       expect(icon.firstChild?.nodeName).toEqual("svg");
     });
 
-    it("THEN should correctly render the appearance success", () => {
+    it("AND should correctly render the appearance success", () => {
       makeSut({
         appearance: "success",
         children: "Toast",
@@ -74,7 +69,7 @@ describe("GIVEN <Toast />", () => {
       expect(icon.firstChild?.nodeName).toEqual("svg");
     });
 
-    it("THEN should correctly render the appearance error", () => {
+    it("AND should correctly render the appearance error", () => {
       makeSut({
         appearance: "error",
         children: "Toast",
@@ -88,7 +83,7 @@ describe("GIVEN <Toast />", () => {
       expect(icon.firstChild?.nodeName).toEqual("svg");
     });
 
-    it("THEN should correctly render the appearance info", () => {
+    it("AND should correctly render the appearance info", () => {
       makeSut({
         appearance: "info",
         children: "Toast",
@@ -102,7 +97,7 @@ describe("GIVEN <Toast />", () => {
       expect(icon.firstChild?.nodeName).toEqual("svg");
     });
 
-    it("THEN should correctly render the appearance warning", () => {
+    it("AND should correctly render the appearance warning", () => {
       makeSut({
         appearance: "warning",
         children: "Toast",
@@ -126,7 +121,7 @@ describe("GIVEN <Toast />", () => {
       });
       const closeButton = screen.getByTestId("dismiss-button");
       fireEvent.click(closeButton);
-      expect(mockedDismissToast).toHaveBeenCalledTimes(1);
+      expect(mockedCloseToast).toHaveBeenCalledTimes(1);
     });
   });
 });
