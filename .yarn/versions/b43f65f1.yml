@@ -1,0 +1,5 @@
+declined:
+  - "@rarui/design-system"
+  - "@rarui-react/components"
+  - "@rarui-react/divider"
+  - "@rarui/styles"

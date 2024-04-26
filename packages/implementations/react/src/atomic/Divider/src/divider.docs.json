@@ -1,0 +1,66 @@
+{
+  "id": "divider",
+  "name": "Divider",
+  "totalProps": 5,
+  "packageName": "@rarui-react/divider",
+  "version": "1.0.0",
+  "docLink": "https://rarui.com.br/documentation/src-components/divider",
+  "props": [
+    {
+      "description": "The content of the button.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": false
+    },
+    {
+      "description": "Change the direction of the divider.",
+      "default": "large",
+      "enum": [
+        "horizontal",
+        "vertical"
+      ],
+      "type": "string",
+      "title": "direction",
+      "required": false
+    },
+    {
+      "description": "Change the width of the divider.",
+      "default": "medium",
+      "enum": [
+        "medium",
+        "small"
+      ],
+      "type": "string",
+      "title": "width",
+      "required": false
+    },
+    {
+      "description": "Change the size of the divider.",
+      "default": "md",
+      "enum": [
+        "lg",
+        "md",
+        "s",
+        "xl",
+        "xlg",
+        "xs",
+        "xxl",
+        "xxlg"
+      ],
+      "type": "string",
+      "title": "size",
+      "required": false
+    },
+    {
+      "description": "Change the style of the divider.",
+      "enum": [
+        "dashed",
+        "solid"
+      ],
+      "type": "string",
+      "title": "style",
+      "required": false
+    }
+  ],
+  "subComponents": []
+}

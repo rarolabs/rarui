@@ -11,3 +11,4 @@ export * from "@rarui-react/status";
 export * from "@rarui-react/text";
 export * from "@rarui-react/title";
 export * from "@rarui-react/toggle";
+export * from "@rarui-react/divider";

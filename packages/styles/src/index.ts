@@ -14,6 +14,7 @@ export { status } from "./packages/atomic/status";
 export { text } from "./packages/atomic/text";
 export { title } from "./packages/atomic/title";
 export { toggle } from "./packages/atomic/toggle";
+export { divider } from "./packages/atomic/divider";
 
 // types
 export type { BoxSprinkle } from "./packages/atomic/box";
