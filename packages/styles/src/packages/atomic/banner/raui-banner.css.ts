@@ -1,5 +1,4 @@
 import { recipe } from "@vanilla-extract/recipes";
-import { style } from "@vanilla-extract/css";
 import { varsThemeBase } from "../../../themes";
 
 const banner = recipe({
@@ -41,7 +40,6 @@ const banner = recipe({
     },
     floating: {
       true: {
-        boxShadow: varsThemeBase.elevation.bottom[3],
         borderRadius: varsThemeBase.shape.border.radius.xs,
       },
     },
@@ -68,11 +66,6 @@ const banner = recipe({
   ],
 });
 
-const side = style({
-  flex: 1,
-});
-
 export const styles = {
   banner,
-  side,
 };

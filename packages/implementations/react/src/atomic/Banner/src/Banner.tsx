@@ -1,11 +1,9 @@
 import React from "react";
-import { Button } from "@rarui-react/button";
 import { banner } from "@rarui/styles";
-import { Icon } from "@rarui-react/icon";
 import { CloseIcon } from "@rarui/icons";
+import { IconButton } from "@rarui-react/icon-button";
 import { BannerProps } from "./banner.types";
-
-const NEUTRAL_COLORS = ["brand", "info", "neutral"];
+import { getColorButtonClose } from "./banner.definitions";
 
 const Banner: React.FC<BannerProps> = ({
   className: _className,
@@ -22,17 +20,14 @@ const Banner: React.FC<BannerProps> = ({
   >
     {children}
     {onClose && (
-      <Button
-        variant="text"
-        size="medium"
-        appearance={
-          NEUTRAL_COLORS.includes(appearance) ? "neutral" : "inverted"
-        }
-        onClick={onClose}
+      <IconButton
         data-testid="close-button"
-      >
-        <Icon source={<CloseIcon size={24} />} />
-      </Button>
+        variant="ghost"
+        source={<CloseIcon size="medium" />}
+        appearance={getColorButtonClose[appearance] ?? "inverted"}
+        onClick={onClose}
+        rounded
+      />
     )}
   </div>
 );
