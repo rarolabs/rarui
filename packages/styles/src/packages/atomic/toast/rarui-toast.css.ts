@@ -12,8 +12,12 @@ const toast = recipe({
     gap: varsThemeBase.spacing["3xs"],
     maxWidth: "100%",
     width: "420px",
+    zIndex: varsThemeBase.zIndex[100],
   },
   variants: {
+    placement: {
+      topRight: {},
+    },
     appearance: {
       info: {
         backgroundColor: varsThemeBase.colors.surface.info,
@@ -42,22 +46,21 @@ const toast = recipe({
     },
     size: {
       small: {
-        padding: `0 ${varsThemeBase.spacing["3xs"]}`,
+        padding: `${varsThemeBase.spacing["4xs"]} ${varsThemeBase.spacing["3xs"]}`,
       },
       medium: {
-        padding: `${varsThemeBase.spacing["3xs"]} ${varsThemeBase.spacing.xs}`,
+        padding: varsThemeBase.spacing["3xs"],
       },
       large: {
         padding: varsThemeBase.spacing.s,
       },
     },
-
     variant: {
       solid: {},
       tonal: {
         color: varsThemeBase.colors.content.primary,
       },
-      border: {
+      ghost: {
         borderLeft: "solid",
         borderWidth: "4px",
         backgroundColor: varsThemeBase.colors.surface.primary,
@@ -65,7 +68,6 @@ const toast = recipe({
       },
     },
   },
-
   compoundVariants: [
     {
       variants: {
@@ -124,7 +126,7 @@ const toast = recipe({
     {
       variants: {
         appearance: "info",
-        variant: "border",
+        variant: "ghost",
       },
       style: {
         borderColor: varsThemeBase.colors.border.info,
@@ -133,7 +135,7 @@ const toast = recipe({
     {
       variants: {
         appearance: "warning",
-        variant: "border",
+        variant: "ghost",
       },
       style: {
         borderColor: varsThemeBase.colors.border.warning,
@@ -142,7 +144,7 @@ const toast = recipe({
     {
       variants: {
         appearance: "success",
-        variant: "border",
+        variant: "ghost",
       },
       style: {
         borderColor: varsThemeBase.colors.border.success,
@@ -151,7 +153,7 @@ const toast = recipe({
     {
       variants: {
         appearance: "error",
-        variant: "border",
+        variant: "ghost",
       },
       style: {
         borderColor: varsThemeBase.colors.border.error,
@@ -160,7 +162,7 @@ const toast = recipe({
     {
       variants: {
         appearance: "neutral",
-        variant: "border",
+        variant: "ghost",
       },
       style: {
         border: "revert",
@@ -171,7 +173,7 @@ const toast = recipe({
     {
       variants: {
         appearance: "invert",
-        variant: "border",
+        variant: "ghost",
       },
       style: {
         border: "revert",
@@ -191,7 +193,6 @@ const content = style({
 const toastContainer = recipe({
   base: {
     position: "fixed",
-
     display: "flex",
     flexDirection: "column",
     gap: "16px",
@@ -221,20 +222,105 @@ const toastContainer = recipe({
   },
 });
 
-const toastAn = keyframes({
+const animartionToastCenter = keyframes({
   from: {
-    transform: "translateX(calc(100% + 64px))",
+    transform: "translateY(calc(100%))",
+  },
+  to: {
+    transform: "translateY(0)",
   },
 });
 
-const toastWrapper = style({
-  animation: `${toastAn} 800ms cubic-bezier(0,0.46,0,1.04) both`,
-  willChange: "transform",
+const animartionToastLeft = keyframes({
+  from: {
+    transform: "translateX(calc(-100%))",
+  },
+  to: {
+    transform: "translateY(0)",
+  },
+});
+
+const animartionToastRight = keyframes({
+  from: {
+    transform: "translateX(calc(100%))",
+  },
+  to: {
+    transform: "translateY(0)",
+  },
+});
+
+const wrapper = recipe({
+  base: {
+    willChange: "transform",
+  },
+  variants: {
+    placement: {
+      bottomCenter: {
+        animation: `${animartionToastCenter} 800ms cubic-bezier(0,0.46,0,1.04) both`,
+      },
+      bottomLeft: {
+        animation: `${animartionToastLeft} 800ms cubic-bezier(0,0.46,0,1.04) both`,
+      },
+      bottomRight: {
+        animation: `${animartionToastRight} 800ms cubic-bezier(0,0.46,0,1.04) both`,
+      },
+      topCenter: {
+        animation: `${animartionToastCenter} 800ms cubic-bezier(0,0.46,0,1.04) both`,
+      },
+      topLeft: {
+        animation: `${animartionToastLeft} 800ms cubic-bezier(0,0.46,0,1.04) both`,
+      },
+      topRight: {
+        animation: `${animartionToastRight} 800ms cubic-bezier(0,0.46,0,1.04) both`,
+      },
+    },
+  },
+});
+
+export const container = recipe({
+  base: {
+    display: "flex",
+    position: "fixed",
+    flexDirection: "column-reverse",
+    width: "fit-content",
+    gap: "1rem",
+  },
+  variants: {
+    placement: {
+      bottomCenter: {
+        left: "50%",
+        transform: "translate(-50%)",
+        bottom: "2rem",
+      },
+      bottomLeft: {
+        left: 0,
+        bottom: "2rem",
+      },
+      bottomRight: {
+        right: 0,
+        bottom: "2rem",
+      },
+      topCenter: {
+        left: "50%",
+        transform: "translate(-50%)",
+        top: "2rem",
+      },
+      topLeft: {
+        left: 0,
+        top: "2rem",
+      },
+      topRight: {
+        right: 0,
+        top: "2rem",
+      },
+    },
+  },
 });
 
 export const styles = {
   toast,
+  container,
   content,
   toastContainer,
-  toastWrapper,
+  wrapper,
 };

@@ -7,6 +7,7 @@ RarUI Styles deprive all styles needed to build components.
 #### 🎉 New features
 
 - Added new style pack for `toast` component. ([#25](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/25) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+- Added new style pack for `iconButton` component. ([#25](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/25) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-04-25 `1.11.0`
 
