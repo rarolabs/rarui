@@ -45,6 +45,9 @@
       "@rarui-react/badge": [
         "./packages/implementations/react/src/atomic/Badge/src"
       ],
+      "@rarui-react/banner": [
+        "./packages/implementations/react/src/atomic/Banner/src"
+      ],
       "@rarui-react/box": [
         "./packages/implementations/react/src/atomic/Box/src"
       ],

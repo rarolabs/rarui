@@ -1,5 +1,5 @@
 import { RecipeVariants } from "@vanilla-extract/recipes";
-import { styles , paddingProperties } from "./rarui-chip.css";
+import { styles, paddingProperties } from "./rarui-chip.css";
 
 import { Conditions, AddDollar } from "../../../index.types";
 

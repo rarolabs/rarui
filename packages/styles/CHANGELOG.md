@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-04-26 `1.13.0`
+
+#### 🎉 New features
+
+- Added new style pack for `banner` component. ([#26](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/26) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+
 ## 2024-04-25 `1.12.0`
 
 #### 🎉 New features

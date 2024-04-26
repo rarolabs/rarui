@@ -1,21 +1,21 @@
 {
-  "name": "@rarui-react/components",
-  "version": "1.13.0",
+  "name": "@rarui-react/banner",
+  "version": "1.0.0-rc.1",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
     "dist",
-    "README.md",
-    "CHANGELOG.md"
+    "README.md"
   ],
   "sideEffects": false,
   "scripts": {
     "build": "yarn g:webpack",
-    "clean": "rm -rf dist && rm -rf storybook-static",
-    "version": "yarn version",
-    "storybook:dev": "yarn g:storybook dev -p 6007 --config-dir ./.storybook",
-    "storybook:build": "yarn g:storybook build --config-dir ../../../.storybook",
-    "storybook:move": "mv storybook-static ../../../storybook-static/react"
+    "clean": "rm -rf dist",
+    "version": "yarn version"
+  },
+  "dependencies": {
+    "@rarui-react/button": "workspace:^",
+    "@rarui-react/icon": "workspace:^"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17.0 || ^18.0",
@@ -31,5 +31,6 @@
   },
   "devDependencies": {
     "@rarui/webpack": "workspace:^"
-  }
+  },
+  "stableVersion": "0.0.0"
 }
