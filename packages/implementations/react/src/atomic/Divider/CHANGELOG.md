@@ -1,13 +1,13 @@
 # Changelog
 
-A low-level utility component that accepts styled system props to enable custom theme-aware styling
+A Divider is a thin line used to separate or group content into lists and layouts.
 
-## 2024-04-10 `1.0.0`
+## 2024-04-26 `1.0.0`
 
 #### 🎉 New features
 
-- Added all css properties to enable the creation of any custom components. ([#15](https://git.rarolabs.com.br/frontend/rarui/pull/15) by [@junior](https://git.rarolabs.com.br/junior))
-- Added stories on Component. ([#15](https://git.rarolabs.com.br/frontend/rarui/pull/15) by [@junior](https://git.rarolabs.com.br/junior))
+- Added `children`, `direction`, `width`, `size` and `style` properties to the component.([#28](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/28) by [@luiza.rodrigues](https://git.rarolabs.com.br/luiza.rodrigues))
+- Added stories on Component. ([#28](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/28) by [@luiza.rodrigues](https://git.rarolabs.com.br/luiza.rodrigues))
 
 <!-- #### 🛠 Breaking changes -->
 

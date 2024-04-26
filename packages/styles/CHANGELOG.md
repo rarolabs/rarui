@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-04-26 `1.12.0`
+
+#### 🎉 New features
+
+- Added new style pack for `divider` component. ([#28](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/28) by [@mauricio.barbosa](https://git.rarolabs.com.br/luiza.rodrigues))
+
 ## 2024-04-25 `1.11.0`
 
 #### 🐛 Bug fixes
