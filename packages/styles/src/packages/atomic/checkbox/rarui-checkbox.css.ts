@@ -1,10 +1,12 @@
 import { recipe } from "@vanilla-extract/recipes";
-import { globalStyle, style } from "@vanilla-extract/css";
+import { createVar, globalStyle, style } from "@vanilla-extract/css";
 import { varsThemeBase } from "../../../themes";
 
 /* -------------------------------------------------------------------------------------------------
  * Style
  * -----------------------------------------------------------------------------------------------*/
+
+export const overlayBackgroundColor = createVar();
 
 export const checkbox = recipe({
   base: {
@@ -18,18 +20,15 @@ export const checkbox = recipe({
     borderColor: varsThemeBase.colors.border.primary,
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
     backgroundColor: varsThemeBase.colors.surface.primary,
-
     ":checked": {
       border: "none",
       backgroundColor: varsThemeBase.colors.surface.brand,
     },
-
     ":disabled": {
       backgroundColor: varsThemeBase.colors.surface.disabled,
       borderColor: varsThemeBase.colors.border.subdued,
       pointerEvents: "none",
     },
-
     ":after": {
       content: "",
       display: "block",
@@ -44,7 +43,7 @@ export const checkbox = recipe({
       "&:checked:after": {
         width: "0.625rem",
         height: "0.25rem",
-        bottom: "3px",
+        bottom: ".1875rem",
         borderLeft: `${varsThemeBase.shape.border.width[2]} solid ${varsThemeBase.colors.content["on-brand"]}`,
         borderBottom: `${varsThemeBase.shape.border.width[2]} solid ${varsThemeBase.colors.content["on-brand"]}`,
         transform: "rotate(-45deg)",
@@ -55,7 +54,6 @@ export const checkbox = recipe({
     error: {
       true: {
         borderColor: varsThemeBase.colors.border.error,
-
         ":checked": {
           backgroundColor: varsThemeBase.colors.surface.error,
         },
@@ -96,14 +94,14 @@ export const label = recipe({
     gap: varsThemeBase.spacing["3xs"],
     color: varsThemeBase.colors.content.primary,
     vars: {
-      "--hover-color": varsThemeBase.colors.surface["brand-hover"],
+      [overlayBackgroundColor]: varsThemeBase.colors.surface["brand-hover"],
     },
   },
   variants: {
     error: {
       true: {
         vars: {
-          "--hover-color": varsThemeBase.colors.surface["error-hover"],
+          [overlayBackgroundColor]: varsThemeBase.colors.surface["error-hover"],
         },
       },
     },
@@ -124,10 +122,7 @@ export const overlay = style({
   borderRadius: "inherit",
 });
 
-globalStyle(
-  `${container}:hover:not(:has(${checkbox()}:disabled))  ${overlay}`,
-  {
-    backgroundColor: "var(--hover-color)",
-    borderRadius: "50%",
-  },
-);
+globalStyle(`${container}:hover:not(:has(${checkbox()}:disabled)) ${overlay}`, {
+  backgroundColor: overlayBackgroundColor,
+  borderRadius: "50%",
+});

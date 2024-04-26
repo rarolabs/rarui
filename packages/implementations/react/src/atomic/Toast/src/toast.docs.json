@@ -1,0 +1,73 @@
+{
+  "id": "toast",
+  "name": "Toast",
+  "totalProps": 9,
+  "packageName": "@rarui-react/toast",
+  "version": "1.0.0-rc.1",
+  "docLink": "https://rarui.com.br/documentation/src-components/toast",
+  "props": [
+    {
+      "description": "The content of the button.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": false
+    },
+    {
+      "description": "Auto generated id.",
+      "type": "string",
+      "title": "id",
+      "required": true
+    },
+    {
+      "description": "The title of the toast",
+      "type": "string",
+      "title": "title",
+      "required": false
+    },
+    {
+      "description": "Time in miliseconds to auto dismiss the component",
+      "enum": [16000, 4000, 8000],
+      "type": "number",
+      "title": "duration",
+      "required": false
+    },
+    {
+      "description": "Tells you whether or not Toast should close automatically.",
+      "default": true,
+      "type": "boolean",
+      "title": "autoClose",
+      "required": false
+    },
+    {
+      "type": "string",
+      "enum": ["topRight"],
+      "title": "placement",
+      "required": false
+    },
+    {
+      "enum": ["error", "info", "invert", "neutral", "success", "warning"],
+      "type": "string",
+      "title": "appearance",
+      "required": false
+    },
+    {
+      "enum": ["large", "medium", "small"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    },
+    {
+      "enum": ["ghost", "solid", "tonal"],
+      "type": "string",
+      "title": "variant",
+      "required": false
+    }
+  ],
+  "subComponents": [
+    {
+      "name": "Toast.Provider",
+      "totalProps": 0,
+      "props": []
+    }
+  ]
+}

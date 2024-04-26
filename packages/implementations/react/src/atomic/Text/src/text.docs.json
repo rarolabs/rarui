@@ -3,7 +3,7 @@
   "name": "Text",
   "totalProps": 9,
   "packageName": "@rarui-react/text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/text",
   "props": [
     {
@@ -15,10 +15,7 @@
     {
       "description": "Type of html tag to create for the Text component.",
       "default": "p",
-      "enum": [
-        "p",
-        "span"
-      ],
+      "enum": ["p", "span"],
       "type": "string",
       "title": "as",
       "required": false
@@ -30,6 +27,7 @@
       "required": false
     },
     {
+      "description": "The color property is used to set the color of the title.",
       "anyOf": [
         {
           "type": "object",
@@ -58,31 +56,6 @@
               ],
               "type": "string",
               "title": "xs"
-            },
-            "xl": {
-              "enum": [
-                "$brand",
-                "$brand-alt",
-                "$currentColor",
-                "$disabled",
-                "$error",
-                "$info",
-                "$invert",
-                "$invert-disabled",
-                "$invert-secondary",
-                "$on-brand",
-                "$on-error",
-                "$on-info",
-                "$on-success",
-                "$on-warning",
-                "$primary",
-                "$secondary",
-                "$success",
-                "$warning",
-                "$warning-alt"
-              ],
-              "type": "string",
-              "title": "xl"
             },
             "md": {
               "enum": [
@@ -133,15 +106,35 @@
               ],
               "type": "string",
               "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$currentColor",
+                "$disabled",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$invert-secondary",
+                "$on-brand",
+                "$on-error",
+                "$on-info",
+                "$on-success",
+                "$on-warning",
+                "$primary",
+                "$secondary",
+                "$success",
+                "$warning",
+                "$warning-alt"
+              ],
+              "type": "string",
+              "title": "xl"
             }
           },
           "additionalProperties": false,
-          "propertyOrder": [
-            "xs",
-            "xl",
-            "md",
-            "lg"
-          ]
+          "propertyOrder": ["xs", "md", "lg", "xl"]
         },
         {
           "enum": [
@@ -172,66 +165,38 @@
       "required": false
     },
     {
+      "description": "The color property is used to set the color of the title.",
+      "default": "$regular",
       "anyOf": [
         {
           "type": "object",
           "properties": {
             "xs": {
-              "enum": [
-                "$bold",
-                "$medium",
-                "$regular",
-                "$semiBold"
-              ],
+              "enum": ["$bold", "$medium", "$regular", "$semiBold"],
               "type": "string",
               "title": "xs"
             },
-            "xl": {
-              "enum": [
-                "$bold",
-                "$medium",
-                "$regular",
-                "$semiBold"
-              ],
-              "type": "string",
-              "title": "xl"
-            },
             "md": {
-              "enum": [
-                "$bold",
-                "$medium",
-                "$regular",
-                "$semiBold"
-              ],
+              "enum": ["$bold", "$medium", "$regular", "$semiBold"],
               "type": "string",
               "title": "md"
             },
             "lg": {
-              "enum": [
-                "$bold",
-                "$medium",
-                "$regular",
-                "$semiBold"
-              ],
+              "enum": ["$bold", "$medium", "$regular", "$semiBold"],
               "type": "string",
               "title": "lg"
+            },
+            "xl": {
+              "enum": ["$bold", "$medium", "$regular", "$semiBold"],
+              "type": "string",
+              "title": "xl"
             }
           },
           "additionalProperties": false,
-          "propertyOrder": [
-            "xs",
-            "xl",
-            "md",
-            "lg"
-          ]
+          "propertyOrder": ["xs", "md", "lg", "xl"]
         },
         {
-          "enum": [
-            "$bold",
-            "$medium",
-            "$regular",
-            "$semiBold"
-          ],
+          "enum": ["$bold", "$medium", "$regular", "$semiBold"],
           "type": "string"
         }
       ],
@@ -239,153 +204,37 @@
       "required": false
     },
     {
+      "description": "The fontSize property sets the size of the text.",
       "anyOf": [
         {
           "type": "object",
           "properties": {
             "xs": {
-              "enum": [
-                "$l",
-                "$m",
-                "$s",
-                "$xl",
-                "$xs",
-                "$xxs"
-              ],
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
               "type": "string",
               "title": "xs"
             },
-            "xl": {
-              "enum": [
-                "$l",
-                "$m",
-                "$s",
-                "$xl",
-                "$xs",
-                "$xxs"
-              ],
-              "type": "string",
-              "title": "xl"
-            },
             "md": {
-              "enum": [
-                "$l",
-                "$m",
-                "$s",
-                "$xl",
-                "$xs",
-                "$xxs"
-              ],
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
               "type": "string",
               "title": "md"
             },
             "lg": {
-              "enum": [
-                "$l",
-                "$m",
-                "$s",
-                "$xl",
-                "$xs",
-                "$xxs"
-              ],
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
               "type": "string",
               "title": "lg"
-            }
-          },
-          "additionalProperties": false,
-          "propertyOrder": [
-            "xs",
-            "xl",
-            "md",
-            "lg"
-          ]
-        },
-        {
-          "enum": [
-            "$l",
-            "$m",
-            "$s",
-            "$xl",
-            "$xs",
-            "$xxs"
-          ],
-          "type": "string"
-        }
-      ],
-      "title": "lineHeight",
-      "required": false
-    },
-    {
-      "anyOf": [
-        {
-          "type": "object",
-          "properties": {
-            "xs": {
-              "enum": [
-                "$l",
-                "$m",
-                "$s",
-                "$xl",
-                "$xs",
-                "$xxs"
-              ],
-              "type": "string",
-              "title": "xs"
             },
             "xl": {
-              "enum": [
-                "$l",
-                "$m",
-                "$s",
-                "$xl",
-                "$xs",
-                "$xxs"
-              ],
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
               "type": "string",
               "title": "xl"
-            },
-            "md": {
-              "enum": [
-                "$l",
-                "$m",
-                "$s",
-                "$xl",
-                "$xs",
-                "$xxs"
-              ],
-              "type": "string",
-              "title": "md"
-            },
-            "lg": {
-              "enum": [
-                "$l",
-                "$m",
-                "$s",
-                "$xl",
-                "$xs",
-                "$xxs"
-              ],
-              "type": "string",
-              "title": "lg"
             }
           },
           "additionalProperties": false,
-          "propertyOrder": [
-            "xs",
-            "xl",
-            "md",
-            "lg"
-          ]
+          "propertyOrder": ["xs", "md", "lg", "xl"]
         },
         {
-          "enum": [
-            "$l",
-            "$m",
-            "$s",
-            "$xl",
-            "$xs",
-            "$xxs"
-          ],
+          "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
           "type": "string"
         }
       ],
@@ -393,6 +242,45 @@
       "required": false
     },
     {
+      "description": "The lineHeight property specifies the line height of the title.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+          "type": "string"
+        }
+      ],
+      "title": "lineHeight",
+      "required": false
+    },
+    {
+      "description": "The **`text-align`** CSS property sets the horizontal alignment of a block element or table-cell box. This means it works like `vertical-align` but in the horizontal direction.\n\n\n**Initial value**: `start`, or a nameless value that acts as `left` if _direction_ is `ltr`, `right` if _direction_ is `rtl` if `start` is not supported by the browser.",
       "anyOf": [
         {
           "type": "object",
@@ -409,19 +297,6 @@
               ],
               "type": "string",
               "title": "xs"
-            },
-            "xl": {
-              "enum": [
-                "center",
-                "end",
-                "justify",
-                "left",
-                "match-parent",
-                "right",
-                "start"
-              ],
-              "type": "string",
-              "title": "xl"
             },
             "md": {
               "enum": [
@@ -448,15 +323,23 @@
               ],
               "type": "string",
               "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "center",
+                "end",
+                "justify",
+                "left",
+                "match-parent",
+                "right",
+                "start"
+              ],
+              "type": "string",
+              "title": "xl"
             }
           },
           "additionalProperties": false,
-          "propertyOrder": [
-            "xs",
-            "xl",
-            "md",
-            "lg"
-          ]
+          "propertyOrder": ["xs", "md", "lg", "xl"]
         },
         {
           "enum": [
@@ -475,66 +358,37 @@
       "required": false
     },
     {
+      "description": "The **`word-break`** CSS property sets whether line breaks appear wherever the text would otherwise overflow its content box.\n\n\n**Initial value**: `normal`",
       "anyOf": [
         {
           "type": "object",
           "properties": {
             "xs": {
-              "enum": [
-                "break-all",
-                "break-word",
-                "keep-all",
-                "normal"
-              ],
+              "enum": ["break-all", "break-word", "keep-all", "normal"],
               "type": "string",
               "title": "xs"
             },
-            "xl": {
-              "enum": [
-                "break-all",
-                "break-word",
-                "keep-all",
-                "normal"
-              ],
-              "type": "string",
-              "title": "xl"
-            },
             "md": {
-              "enum": [
-                "break-all",
-                "break-word",
-                "keep-all",
-                "normal"
-              ],
+              "enum": ["break-all", "break-word", "keep-all", "normal"],
               "type": "string",
               "title": "md"
             },
             "lg": {
-              "enum": [
-                "break-all",
-                "break-word",
-                "keep-all",
-                "normal"
-              ],
+              "enum": ["break-all", "break-word", "keep-all", "normal"],
               "type": "string",
               "title": "lg"
+            },
+            "xl": {
+              "enum": ["break-all", "break-word", "keep-all", "normal"],
+              "type": "string",
+              "title": "xl"
             }
           },
           "additionalProperties": false,
-          "propertyOrder": [
-            "xs",
-            "xl",
-            "md",
-            "lg"
-          ]
+          "propertyOrder": ["xs", "md", "lg", "xl"]
         },
         {
-          "enum": [
-            "break-all",
-            "break-word",
-            "keep-all",
-            "normal"
-          ],
+          "enum": ["break-all", "break-word", "keep-all", "normal"],
           "type": "string"
         }
       ],

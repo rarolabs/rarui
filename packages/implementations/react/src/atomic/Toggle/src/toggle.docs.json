@@ -1,0 +1,40 @@
+{
+  "id": "toggle",
+  "name": "Toggle",
+  "totalProps": 5,
+  "packageName": "@rarui-react/toggle",
+  "version": "1.0.0",
+  "docLink": "https://rarui.com.br/documentation/src-components/toggle",
+  "props": [
+    {
+      "description": "The name of the input element.",
+      "type": "string",
+      "title": "name",
+      "required": true
+    },
+    {
+      "description": "Sets toggle state to activated or deactivated.",
+      "type": "boolean",
+      "title": "selected",
+      "required": false
+    },
+    {
+      "description": "Text to be rendered inside the component",
+      "type": "string",
+      "title": "label",
+      "required": false
+    },
+    {
+      "enum": ["large", "small"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    },
+    {
+      "type": "boolean",
+      "title": "error",
+      "required": false
+    }
+  ],
+  "subComponents": []
+}

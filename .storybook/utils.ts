@@ -25,8 +25,19 @@ export const argTypesConvert = (properties: any = {}) => {
 
       options = enums;
 
+      const anyOf = curr?.anyOf?.find((anyOf: any) => anyOf.type !== "object");
+
       let control = "";
       switch (true) {
+        case !!anyOf?.type && options?.length === 0:
+          control = anyOf.type === "string" ? "text" : anyOf.type;
+          break;
+        case curr.type === "string" && options?.length === 0:
+          control = "text";
+          break;
+        case curr.type === "number" && options?.length === 0:
+          control = "number";
+          break;
         case curr.type === "boolean":
           control = "boolean";
           break;

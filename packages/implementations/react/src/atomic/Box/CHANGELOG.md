@@ -2,6 +2,14 @@
 
 A low-level utility component that accepts styled system props to enable custom theme-aware styling
 
+## 2024-04-25 `1.0.1`
+
+#### 🐛 Bug fixes
+
+- Fixed component typing. ([#27](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/27) by [@junior](https://git.rarolabs.com.br/junior))
+
+#### 🎉 New features
+
 ## 2024-04-10 `1.0.0`
 
 #### 🎉 New features

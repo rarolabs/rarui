@@ -2,6 +2,12 @@
 
 The Button component allows us to initiate actions, make state or page changes.
 
+## 2024-04-25 `1.0.1`
+
+#### 🐛 Bug fixes
+
+- Fixed component typing. ([#27](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/27) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-03-22 `1.0.0`
 
 #### 🎉 New features

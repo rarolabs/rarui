@@ -3,7 +3,7 @@
   "name": "Button",
   "totalProps": 7,
   "packageName": "@rarui-react/button",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "docLink": "https://rarui.com.br/documentation/src-components/button",
   "props": [
     {
@@ -17,10 +17,7 @@
       "description": "The underlying element to render — either a HTML element name or a React component.",
       "anyOf": [
         {
-          "enum": [
-            "button",
-            "a"
-          ],
+          "enum": ["button", "a"],
           "type": "string"
         },
         {
@@ -37,50 +34,28 @@
       "required": true
     },
     {
-      "description": "Change the visual style of the button.",
-      "default": "brand",
-      "enum": [
-        "brand",
-        "danger",
-        "inverted",
-        "neutral",
-        "success",
-        "warning"
-      ],
+      "description": "Disables the button, disallowing user interaction.",
+      "default": false,
+      "type": "boolean",
+      "title": "disabled",
+      "required": false
+    },
+    {
+      "enum": ["brand", "danger", "inverted", "neutral", "success", "warning"],
       "type": "string",
       "title": "appearance",
       "required": false
     },
     {
-      "description": "Change the size of the button.",
-      "default": "large",
-      "enum": [
-        "large",
-        "medium",
-        "small"
-      ],
+      "enum": ["large", "medium", "small"],
       "type": "string",
       "title": "size",
       "required": false
     },
     {
-      "description": "Change the variant of the button.",
-      "default": "solid",
-      "enum": [
-        "outlined",
-        "solid",
-        "text",
-        "tonal"
-      ],
+      "enum": ["outlined", "solid", "text", "tonal"],
       "type": "string",
       "title": "variant",
-      "required": false
-    },
-    {
-      "description": "Disables the button, disallowing user interaction.",
-      "default": false,
-      "type": "boolean",
-      "title": "disabled",
       "required": false
     }
   ],

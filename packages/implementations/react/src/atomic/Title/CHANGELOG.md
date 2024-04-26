@@ -2,6 +2,12 @@
 
 Tilte is a basic component that allows you to give titles and more hierarchy to blocks of text for sections or header components.
 
+## 2024-04-25 `1.0.1`
+
+#### 🐛 Bug fixes
+
+- Fixed component typing. ([#27](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/27) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-10 `1.0.0`
 
 #### 🎉 New features

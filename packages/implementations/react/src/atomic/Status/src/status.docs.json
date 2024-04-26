@@ -13,21 +13,13 @@
       "required": true
     },
     {
-      "enum": [
-        "negative",
-        "neutral",
-        "success",
-        "warning"
-      ],
+      "enum": ["negative", "neutral", "success", "warning"],
       "type": "string",
       "title": "appearance",
       "required": false
     },
     {
-      "enum": [
-        "normal",
-        "small"
-      ],
+      "enum": ["normal", "small"],
       "type": "string",
       "title": "size",
       "required": false
@@ -38,10 +30,7 @@
       "required": false
     },
     {
-      "enum": [
-        "solid",
-        "text"
-      ],
+      "enum": ["solid", "text"],
       "type": "string",
       "title": "variant",
       "required": false

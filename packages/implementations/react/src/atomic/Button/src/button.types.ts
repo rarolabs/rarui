@@ -1,32 +1,12 @@
 import { ReactNode, ButtonHTMLAttributes } from "react";
+import { ButtonVariants } from "@rarui/styles";
 
-export interface ButtonProperties {
+export interface Button {
   /**
    * The content of the button.
    * @TJS-type React.ReactNode
    */
   children: ReactNode;
-  /**
-   * Change the visual style of the button.
-   * @default brand
-   */
-  appearance?:
-    | "brand"
-    | "danger"
-    | "success"
-    | "warning"
-    | "neutral"
-    | "inverted";
-  /**
-   * Change the size of the button.
-   * @default large
-   */
-  size?: "large" | "medium" | "small";
-  /**
-   * Change the variant of the button.
-   * @default solid
-   */
-  variant?: "solid" | "outlined" | "text" | "tonal";
   /**
    * Disables the button, disallowing user interaction.
    * @default false
@@ -34,5 +14,7 @@ export interface ButtonProperties {
   disabled?: boolean;
 }
 
-export type ButtonBaseProps = ButtonProperties &
+export type ButtonProperties = Button & ButtonVariants;
+
+export type _ButtonProps = ButtonProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

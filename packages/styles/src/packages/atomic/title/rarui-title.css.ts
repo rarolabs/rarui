@@ -59,6 +59,24 @@ export const styles = {
  * Sprinkle
  * -----------------------------------------------------------------------------------------------*/
 
+export const titleLineHeightProperties = {
+  hero: varsThemeBase.lineHeight.hero,
+  xs: varsThemeBase.lineHeight.heading.xs,
+  s: varsThemeBase.lineHeight.heading.s,
+  m: varsThemeBase.lineHeight.heading.m,
+  l: varsThemeBase.lineHeight.heading.l,
+  xl: varsThemeBase.lineHeight.heading.xl,
+};
+
+export const titleFontSizeProperties = {
+  hero: varsThemeBase.fontSize.hero,
+  xs: varsThemeBase.fontSize.heading.xs,
+  s: varsThemeBase.fontSize.heading.s,
+  m: varsThemeBase.fontSize.heading.m,
+  l: varsThemeBase.fontSize.heading.l,
+  xl: varsThemeBase.fontSize.heading.xl,
+};
+
 const defineProperties = defineRainbowProperties({
   conditions: {
     xs: {
@@ -81,22 +99,8 @@ const defineProperties = defineRainbowProperties({
   staticProperties: {
     color: colorProperties,
     fontWeight: fontWeightProperties,
-    lineHeight: {
-      hero: varsThemeBase.lineHeight.hero,
-      xs: varsThemeBase.lineHeight.heading.xs,
-      s: varsThemeBase.lineHeight.heading.s,
-      m: varsThemeBase.lineHeight.heading.m,
-      l: varsThemeBase.lineHeight.heading.l,
-      xl: varsThemeBase.lineHeight.heading.xl,
-    },
-    fontSize: {
-      hero: varsThemeBase.fontSize.hero,
-      xs: varsThemeBase.fontSize.heading.xs,
-      s: varsThemeBase.fontSize.heading.s,
-      m: varsThemeBase.fontSize.heading.m,
-      l: varsThemeBase.fontSize.heading.l,
-      xl: varsThemeBase.fontSize.heading.xl,
-    },
+    lineHeight: titleLineHeightProperties,
+    fontSize: titleFontSizeProperties,
   },
 });
 

@@ -63,6 +63,9 @@
       "@rarui-react/icon": [
         "./packages/implementations/react/src/atomic/Icon/src"
       ],
+      "@rarui-react/icon-button": [
+        "./packages/implementations/react/src/atomic/IconButton/src"
+      ],
       "@rarui-react/link": [
         "./packages/implementations/react/src/atomic/Link/src"
       ],
@@ -77,6 +80,12 @@
       ],
       "@rarui-react/title": [
         "./packages/implementations/react/src/atomic/Title/src"
+      ],
+      "@rarui-react/toggle": [
+        "./packages/implementations/react/src/atomic/Toggle/src"
+      ],
+      "@rarui-react/toast": [
+        "./packages/implementations/react/src/atomic/Toast/src"
       ],
       "@rarui-vuejs/button": [
         "./packages/implementations/vuejs/src/atomic/Button/src"
