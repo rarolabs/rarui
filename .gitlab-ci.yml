@@ -79,7 +79,9 @@ docs-job:
     - git config --global user.email "${GITLAB_USER_NAME}"
     - git config --global user.name "${GITLAB_USER_EMAIL}"
     - git fetch
+    - git stash
     - git checkout main
+    - git stash apply
     - git pull
     - git add .
     - git commit -m "Publish release stable [skip ci]"

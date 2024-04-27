@@ -206,13 +206,13 @@ export class Docgen {
   private getSubComponents(): Doc[] {
     const subComponentsNames = this.getSubComponentsNames();
     const subComponents = subComponentsNames.reduce((prev: Doc[], curr) => {
-      const subComponent = curr.replace(".", "");
-      const schema = this.getSchema(`${subComponent}Properties`);
-      const props = this.formatProps(schema);
+      // const subComponent = curr.replace(".", "");
+      // const schema = this.getSchema(`${subComponent}Properties`);
+      // const props = this.formatProps(schema);
       prev.push({
         name: curr,
-        totalProps: props.length,
-        props,
+        totalProps: 0,
+        props: [],
       });
       return prev;
     }, []);
