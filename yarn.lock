@@ -3172,6 +3172,9 @@ __metadata:
   resolution: "@rarui-react/avatar@workspace:packages/implementations/react/src/atomic/Avatar"
   dependencies:
     "@rarui-react/badge": "workspace:^"
+    "@rarui-react/icon": "workspace:^"
+    "@rarui-react/text": "workspace:^"
+    "@rarui/icons": "workspace:^"
     "@rarui/webpack": "workspace:^"
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0

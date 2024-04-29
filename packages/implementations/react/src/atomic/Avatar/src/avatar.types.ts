@@ -11,9 +11,11 @@ export interface Avatar {
   /**
    * Renders a badge component along withe the avatar.
    */
-  badge?: BadgeProps;
+  badge?: Pick<BadgeProps, "appearance" | "children" | "size" | "variant">;
 }
 
 export type AvatarProperties = Avatar & AvatarVariants;
 
-export type AvatarProps = AvatarProperties & HTMLAttributes<HTMLDivElement>;
+export type AvatarProps = Omit<AvatarProperties, "badge"> & {
+  badge?: BadgeProps;
+} & HTMLAttributes<HTMLDivElement>;

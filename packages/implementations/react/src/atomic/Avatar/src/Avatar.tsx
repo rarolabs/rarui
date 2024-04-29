@@ -16,7 +16,7 @@ const Avatar: React.FC<AvatarProps> = ({
       {children}
     </div>
     {badge && (
-      <div className={avatar.classnames.badgeContainer({ size })}>
+      <div className={avatar.classnames.badge({ size })}>
         <Badge
           {...badge}
           size={size === "small" || size === "medium" ? "dot" : "small"}
