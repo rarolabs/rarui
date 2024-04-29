@@ -26,7 +26,6 @@ export const styles = {
 
 export const dividerBorderStyleProperties = ["solid", "dashed"];
 export const dividerBorderWidthProperties = {
-  "0": "0",
   "1": "1px",
   "2": "2px",
 };

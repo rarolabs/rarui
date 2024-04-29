@@ -10,11 +10,11 @@ const Divider: React.FC<DividerProperties> = ({
   ...rest
 }) => {
   const { className, style, otherProps } = divider.sprinkle({
-    borderStyle: type,
-    borderTopWidth: direction === "horizontal" ? thickness : "$0",
-    borderLeftWidth: direction === "vertical" ? thickness : "$0",
+    borderTopWidth: direction === "horizontal" ? thickness : null,
+    borderLeftWidth: direction === "vertical" ? thickness : null,
     width: direction === "horizontal" ? size : 0,
     height: direction === "vertical" ? size : 0,
+    borderStyle: type,
     ...rest,
   });
 
