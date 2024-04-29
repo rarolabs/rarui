@@ -10,31 +10,50 @@ const makeSut = (props: DividerProps) => {
 
 describe("GIVEN <Divider />", () => {
   describe("WHEN rendered", () => {
-    it("THEN should render given direction style", () => {
-      screen.logTestingPlaygroundURL();
-
-      makeSut({ direction: "vertical" });
-      expect(
-        screen.getByTestId("divider-element").getAttribute("class"),
-      ).toContain("direction_vertical");
+    it("THEN should render given direction vertical", () => {
+      makeSut({ direction: "vertical", size: "200px" });
+      const divider = screen.getByTestId("divider-element");
+      expect(divider.getAttribute("style")).toMatch(/--width-xs__\w{0,9}: 0;/);
+      expect(divider.getAttribute("style")).toMatch(
+        /--height-xs__\w{0,9}: 200px;/,
+      );
     });
 
-    it("THEN should render given width style", () => {
-      screen.logTestingPlaygroundURL();
-
-      makeSut({ width: "medium" });
-      expect(
-        screen.getByTestId("divider-element").getAttribute("class"),
-      ).toContain("width_medium");
+    it("AND should render given direction horizontal", () => {
+      makeSut({ direction: "horizontal", size: "200px" });
+      const divider = screen.getByTestId("divider-element");
+      expect(divider.getAttribute("style")).toMatch(
+        /--width-xs__\w{0,9}: 200px;/,
+      );
+      expect(divider.getAttribute("style")).toMatch(/--height-xs__\w{0,9}: 0;/);
     });
 
-    it("THEN should render given divider style", () => {
-      screen.logTestingPlaygroundURL();
-
-      makeSut({ style: "dashed" });
+    it("AND should render given divider type $solid", () => {
+      makeSut({ type: "$solid" });
       expect(
         screen.getByTestId("divider-element").getAttribute("class"),
-      ).toContain("style_dashed");
+      ).toContain("borderStyle-solid");
+    });
+
+    it("AND should render given divider type $dashed", () => {
+      makeSut({ type: "$dashed" });
+      expect(
+        screen.getByTestId("divider-element").getAttribute("class"),
+      ).toContain("borderStyle-dashed");
+    });
+
+    it("AND should render given divider thickness $1", () => {
+      makeSut({ thickness: "$1" });
+      expect(
+        screen.getByTestId("divider-element").getAttribute("class"),
+      ).toContain("borderTopWidth-1");
+    });
+
+    it("AND should render given divider thickness $2", () => {
+      makeSut({ thickness: "$2" });
+      expect(
+        screen.getByTestId("divider-element").getAttribute("class"),
+      ).toContain("borderTopWidth-2");
     });
   });
 });

@@ -1,6 +1,7 @@
-import { styles } from "./rarui-divider.css";
+import { styles, sprinkle } from "./rarui-divider.css";
 
 export const divider = {
   classnames: { ...styles },
+  sprinkle,
 };
-export type { DividerVariants } from "./rarui-divider.types";
+export type { DividerSprinkle } from "./rarui-divider.types";

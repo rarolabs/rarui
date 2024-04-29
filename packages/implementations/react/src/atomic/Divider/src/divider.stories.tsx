@@ -15,17 +15,29 @@ type Story = StoryObj<typeof Divider>;
 
 export const Solid: Story = {
   args: {
-    direction: "vertical",
-    width: "medium",
-    size: "md",
-    style: "solid",
+    size: "100%",
+    type: "$solid",
   },
 };
+
 export const Dashed: Story = {
   args: {
+    size: "100%",
+    type: "$dashed",
+  },
+};
+
+export const vertical: Story = {
+  args: {
+    size: "200px",
     direction: "vertical",
-    width: "medium",
-    size: "md",
-    style: "dashed",
+    type: "$solid",
+  },
+};
+
+export const horizontal: Story = {
+  args: {
+    size: "100%",
+    type: "$solid",
   },
 };

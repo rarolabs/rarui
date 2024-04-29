@@ -22,6 +22,7 @@ export { divider } from "./packages/atomic/divider";
 // types
 export type { BoxSprinkle } from "./packages/atomic/box";
 export type { ChipSprinkle } from "./packages/atomic/chip";
+export type { DividerSprinkle } from "./packages/atomic/divider";
 export type { IconSprinkle } from "./packages/atomic/icon";
 export type { TextSprinkle } from "./packages/atomic/text";
 export type { SkeletonSprinkle } from "./packages/atomic/skeleton";

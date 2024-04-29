@@ -1,64 +1,126 @@
 {
   "id": "divider",
   "name": "Divider",
-  "totalProps": 5,
+  "totalProps": 4,
   "packageName": "@rarui-react/divider",
   "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/divider",
   "props": [
     {
-      "description": "The content of the button.",
-      "type": "React.ReactNode",
-      "title": "children",
-      "required": false
-    },
-    {
-      "description": "Change the direction of the divider.",
-      "default": "large",
-      "enum": [
-        "horizontal",
-        "vertical"
-      ],
+      "description": "The direction of the Divider.",
+      "enum": ["horizontal", "vertical"],
       "type": "string",
       "title": "direction",
-      "required": false
+      "required": true
     },
     {
-      "description": "Change the width of the divider.",
-      "default": "medium",
-      "enum": [
-        "medium",
-        "small"
+      "description": "The **`size`** CSS property sets an element's area.",
+      "default": "100%",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "type": "string"
+        }
       ],
-      "type": "string",
-      "title": "width",
-      "required": false
-    },
-    {
-      "description": "Change the size of the divider.",
-      "default": "md",
-      "enum": [
-        "lg",
-        "md",
-        "s",
-        "xl",
-        "xlg",
-        "xs",
-        "xxl",
-        "xxlg"
-      ],
-      "type": "string",
       "title": "size",
       "required": false
     },
     {
-      "description": "Change the style of the divider.",
-      "enum": [
-        "dashed",
-        "solid"
+      "description": "The **`type`** shorthand CSS property sets the line style for all four sides of an element's.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$dashed", "$solid"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["$dashed", "$solid"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$dashed", "$solid"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["$dashed", "$solid"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["$dashed", "$solid"],
+          "type": "string"
+        }
       ],
-      "type": "string",
-      "title": "style",
+      "title": "type",
+      "required": false
+    },
+    {
+      "description": "The **`thickness`** shorthand CSS property sets the width of an element's.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$0", "$1", "$2"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["$0", "$1", "$2"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$0", "$1", "$2"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["$0", "$1", "$2"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["$0", "$1", "$2"],
+          "type": "string"
+        }
+      ],
+      "title": "thickness",
       "required": false
     }
   ],
