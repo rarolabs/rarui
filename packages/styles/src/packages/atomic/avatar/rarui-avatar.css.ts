@@ -2,52 +2,54 @@ import { globalStyle, style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
 import { varsThemeBase } from "../../../themes";
 
+const container = style({
+  position: "relative",
+  display: "inline-flex",
+});
+
 const avatar = recipe({
   base: {
     display: "flex",
     position: "relative",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "white",
-    borderRadius: "50%",
+    borderRadius: "100%",
     overflow: "hidden",
+    borderStyle: "solid",
     borderWidth: varsThemeBase.shape.border.width[1],
+    backgroundColor: varsThemeBase.colors.surface.secondary,
     borderColor: varsThemeBase.colors.border.subdued,
-    fontSize: varsThemeBase.fontSize.body.xs,
+    color: varsThemeBase.colors.content.primary,
   },
   variants: {
     size: {
       small: {
-        width: "24px",
-        height: "24px",
+        width: "20px",
+        height: "20px",
         fontSize: varsThemeBase.fontSize.body.xxs,
       },
       medium: {
-        width: "32px",
-        height: "32px",
+        width: "30px",
+        height: "30px",
+        fontSize: varsThemeBase.fontSize.body.xs,
       },
       large: {
-        width: "44px",
-        height: "44px",
-        borderWidth: varsThemeBase.shape.border.width[2],
+        width: "40px",
+        height: "40px",
         fontSize: varsThemeBase.fontSize.body.s,
+        borderWidth: varsThemeBase.shape.border.width[2],
       },
       xLarge: {
-        width: "64px",
-        height: "64px",
-        borderWidth: varsThemeBase.shape.border.width[2],
+        width: "60px",
+        height: "60px",
         fontSize: varsThemeBase.fontSize.body.m,
+        borderWidth: varsThemeBase.shape.border.width[2],
       },
     },
   },
 });
 
-const container = style({
-  position: "relative",
-  display: "inline-flex",
-});
-
-const badgeContainer = recipe({
+const badge = recipe({
   base: { position: "absolute", top: "0" },
   variants: {
     size: {
@@ -68,14 +70,14 @@ const badgeContainer = recipe({
   },
 });
 
-globalStyle(`${avatar()} > img`, {
+globalStyle(`${avatar()} img`, {
   width: "100%",
   height: "100%",
   objectFit: "cover",
 });
 
 export const styles = {
-  avatar,
   container,
-  badgeContainer,
+  avatar,
+  badge,
 };

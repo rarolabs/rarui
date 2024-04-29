@@ -30,6 +30,7 @@ export type { SkeletonSprinkle } from "./packages/atomic/skeleton";
 export type { TitleSprinkle } from "./packages/atomic/title";
 
 export type { AvatarVariants } from "./packages/atomic/avatar";
+export type { BadgeVariants } from "./packages/atomic/badge";
 export type { ButtonVariants } from "./packages/atomic/button";
 export type { CheckboxVariants } from "./packages/atomic/checkbox";
 export type { ChipVariants } from "./packages/atomic/chip";
