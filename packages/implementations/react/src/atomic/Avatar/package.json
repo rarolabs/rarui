@@ -29,10 +29,10 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui//issues"
   },
   "devDependencies": {
-    "@rarui/icons": "workspace:^",
-    "@rarui/webpack": "workspace:^",
     "@rarui-react/icon": "workspace:^",
-    "@rarui-react/text": "workspace:^"
+    "@rarui-react/text": "workspace:^",
+    "@rarui/icons": "workspace:^",
+    "@rarui/webpack": "workspace:^"
   },
   "stableVersion": "0.0.0"
 }
