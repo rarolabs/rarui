@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-04-29 `1.15.0`
+
+#### 🎉 New features
+
+- Added new atomic `Avatar` component. ([#29](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/29) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+
 ## 2024-04-26 `1.14.0`
 
 #### 🎉 New features

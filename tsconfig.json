@@ -42,6 +42,9 @@
       "@rarui/styles": ["./packages/styles/src"],
       "@rarui/tokens": ["./packages/tokens"],
       "@rarui/icons": ["./packages/icons"],
+      "@rarui-react/avatar": [
+        "./packages/implementations/react/src/atomic/Avatar/src"
+      ],
       "@rarui-react/badge": [
         "./packages/implementations/react/src/atomic/Badge/src"
       ],

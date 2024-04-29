@@ -2,6 +2,12 @@
 
 Badge components are used to convey dynamic information, such as a count or status.
 
+## 2024-04-29 `1.0.1`
+
+#### 🐛 Bug fixes
+
+- Fixed component typing. ([#29](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/29) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-18 `1.0.0`
 
 #### 🎉 New features

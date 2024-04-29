@@ -1,0 +1,61 @@
+{
+  "id": "avatar",
+  "name": "Avatar",
+  "totalProps": 3,
+  "packageName": "@rarui-react/avatar",
+  "version": "1.0.0-rc.1",
+  "docLink": "https://rarui.com.br/documentation/src-components/avatar",
+  "props": [
+    {
+      "description": "The content of the button.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": true
+    },
+    {
+      "description": "Renders a badge component along withe the avatar.",
+      "type": "object",
+      "properties": {
+        "children": {
+          "$ref": "#/definitions/React.ReactNode",
+          "description": "Represents all of the things React can render.\n\nWhere {@link ReactElement} only represents JSX, `ReactNode` represents everything that can be rendered.",
+          "title": "children"
+        },
+        "size": {
+          "enum": ["dot", "large", "medium", "small"],
+          "type": "string",
+          "title": "size"
+        },
+        "appearance": {
+          "enum": [
+            "brand",
+            "danger",
+            "info",
+            "inverted",
+            "neutral",
+            "success",
+            "warning"
+          ],
+          "type": "string",
+          "title": "appearance"
+        },
+        "variant": {
+          "enum": ["outlined", "solid"],
+          "type": "string",
+          "title": "variant"
+        }
+      },
+      "additionalProperties": false,
+      "propertyOrder": ["children", "size", "appearance", "variant"],
+      "title": "badge",
+      "required": false
+    },
+    {
+      "enum": ["large", "medium", "small", "xLarge"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    }
+  ],
+  "subComponents": []
+}
