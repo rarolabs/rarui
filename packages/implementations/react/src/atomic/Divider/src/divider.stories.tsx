@@ -3,6 +3,8 @@ import { argTypesConvert } from ".storybook/utils";
 import { Divider } from "./Divider";
 import docs from "./divider.docs.json";
 
+console.log("argTypesConvert(docs)", argTypesConvert(docs));
+
 const meta: Meta<typeof Divider> = {
   title: "Atomic/Divider",
   component: Divider,
