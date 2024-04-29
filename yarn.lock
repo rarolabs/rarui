@@ -3252,6 +3252,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-react/divider@workspace:packages/implementations/react/src/atomic/Divider":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/divider@workspace:packages/implementations/react/src/atomic/Divider"
+  dependencies:
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@rarui-react/icon-button@workspace:^, @rarui-react/icon-button@workspace:packages/implementations/react/src/atomic/IconButton":
   version: 0.0.0-use.local
   resolution: "@rarui-react/icon-button@workspace:packages/implementations/react/src/atomic/IconButton"

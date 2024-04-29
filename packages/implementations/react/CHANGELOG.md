@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-04-26 `1.14.0`
+
+#### 🎉 New features
+
+- Added new atomic `Divider` component. ([#28](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/28) by [@luiza.rodrigues](https://git.rarolabs.com.br/luiza.rodrigues))
+
 ## 2024-04-18 `1.13.0`
 
 #### 🎉 New features
