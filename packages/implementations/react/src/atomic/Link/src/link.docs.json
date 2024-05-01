@@ -34,16 +34,12 @@
       "required": true
     },
     {
-      "description": "Change the visual style of the link.",
-      "default": "default",
-      "enum": ["default", "inverted", "neutral"],
+      "enum": ["brand", "inverted", "neutral"],
       "type": "string",
       "title": "appearance",
       "required": false
     },
     {
-      "description": "Change the size of the link.",
-      "default": "large",
       "enum": ["large", "medium", "small"],
       "type": "string",
       "title": "size",

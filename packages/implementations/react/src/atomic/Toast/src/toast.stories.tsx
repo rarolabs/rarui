@@ -4,12 +4,12 @@ import { argTypesConvert } from ".storybook/utils";
 
 import { Button } from "@rarui-react/button";
 import { Box } from "@rarui-react/box";
+import { Text } from "@rarui-react/text";
+import { Link } from "@rarui-react/link";
 
 import { Toast } from "./Toast";
 import { useToast } from "./hooks";
 import docs from "./toast.docs.json";
-
-console.log(" argTypesConvert(docs),", argTypesConvert(docs));
 
 const meta: Meta<typeof Toast> = {
   title: "Atomic/Toast",
@@ -23,7 +23,25 @@ export default meta;
 type Story = StoryObj<typeof Toast>;
 
 export const basic: Story = {
-  args: { title: "Title Text", autoClose: false },
+  args: {
+    title: "Title Text",
+    children: (
+      <Box display="flex" flexDirection="column">
+        <Text fontSize="$s" lineHeight="$s" fontWeight="$regular">
+          Lorem ipsum dolor sit amet.
+        </Text>
+        <Link
+          as="a"
+          size="small"
+          appearance="inverted"
+          href="https://www.google.com.br"
+        >
+          Action
+        </Link>
+      </Box>
+    ),
+    autoClose: false,
+  },
 };
 
 export const usage: Story = {

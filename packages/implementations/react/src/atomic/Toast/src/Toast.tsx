@@ -93,8 +93,8 @@ const Toast: React.FC<ToastProps> & ToastComponents = ({
             {title}
           </Text>
         )}
+        {children}
       </div>
-      {children}
       <IconButton
         onClick={() => closeToast(id)}
         data-testid="dismiss-button"
