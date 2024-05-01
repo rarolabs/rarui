@@ -27,6 +27,5 @@
   },
   "devDependencies": {
     "@rarui/webpack": "workspace:^"
-  },
-  "stableVersion": "0.0.0"
+  }
 }
