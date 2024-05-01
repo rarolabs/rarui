@@ -7,6 +7,7 @@ RarUI Styles deprive all styles needed to build components.
 #### 🎉 New features
 
 - Added new style pack for `input` component. ([#30](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/30) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new style pack for `label` component. ([#30](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/30) by [@junior](https://git.rarolabs.com.br/junior))
 
 #### 🛠 Breaking changes
 
