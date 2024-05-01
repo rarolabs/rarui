@@ -7,6 +7,7 @@
 #### 🎉 New features
 
 - Added new atomic `Input` component. ([#30](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/30) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new atomic `Label` component. ([#30](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/30) by [@junior](https://git.rarolabs.com.br/junior))
 
 #### 🐛 Bug fixes
 
