@@ -1,21 +1,14 @@
 import { ReactNode, HTMLAttributes } from "react";
+import { LinkVariants } from "@rarui/styles";
 
-export interface LinkProperties {
+interface Link {
   /**
    * The content of the link.
    * @TJS-type React.ReactNode
    */
   children: ReactNode;
-  /**
-   * Change the visual style of the link.
-   * @default default
-   */
-  appearance?: "default" | "neutral" | "inverted";
-  /**
-   * Change the size of the link.
-   * @default large
-   */
-  size?: "large" | "medium" | "small";
 }
+
+export type LinkProperties = Link & LinkVariants;
 
 export type _LinkProps = LinkProperties & HTMLAttributes<HTMLElement>;

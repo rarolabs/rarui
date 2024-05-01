@@ -20,7 +20,7 @@ const Link = forwardRef(
       style: _style,
       as: As = "a",
       size = "large",
-      appearance = "default",
+      appearance = "brand",
       children,
       ...props
     }: _LinkProps & { as: any },
