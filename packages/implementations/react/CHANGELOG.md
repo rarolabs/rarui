@@ -8,6 +8,10 @@
 
 - Added new atomic `Input` component. ([#30](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/30) by [@junior](https://git.rarolabs.com.br/junior))
 
+#### 🐛 Bug fixes
+
+- Configured default placement in `Toast.provider` component. ([#30](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/30) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-29 `1.15.0`
 
 #### 🎉 New features
