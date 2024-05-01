@@ -11,7 +11,7 @@
       "enum": ["horizontal", "vertical"],
       "type": "string",
       "title": "direction",
-      "required": true
+      "required": false
     },
     {
       "description": "The **`size`** CSS property sets an element's area.",
@@ -92,22 +92,22 @@
           "type": "object",
           "properties": {
             "xs": {
-              "enum": ["$0", "$1", "$2"],
+              "enum": ["$1", "$2"],
               "type": "string",
               "title": "xs"
             },
             "md": {
-              "enum": ["$0", "$1", "$2"],
+              "enum": ["$1", "$2"],
               "type": "string",
               "title": "md"
             },
             "lg": {
-              "enum": ["$0", "$1", "$2"],
+              "enum": ["$1", "$2"],
               "type": "string",
               "title": "lg"
             },
             "xl": {
-              "enum": ["$0", "$1", "$2"],
+              "enum": ["$1", "$2"],
               "type": "string",
               "title": "xl"
             }
@@ -116,7 +116,7 @@
           "propertyOrder": ["xs", "md", "lg", "xl"]
         },
         {
-          "enum": ["$0", "$1", "$2"],
+          "enum": ["$1", "$2"],
           "type": "string"
         }
       ],

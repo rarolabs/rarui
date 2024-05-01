@@ -10344,190 +10344,29 @@
       "required": false
     },
     {
-      "description": "The **`display`** CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.\n\n\n**Initial value**: `inline`",
+      "description": "The **`position`** CSS property sets how an element is positioned in a document. The `top`, `right`, `bottom`, and `left` properties determine the final location of positioned elements.\n\n\n**Initial value**: `static`",
       "anyOf": [
-        {
-          "additionalProperties": false,
-          "type": "object",
-          "properties": {}
-        },
         {
           "type": "object",
           "properties": {
             "xs": {
-              "anyOf": [
-                {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
-                  "enum": [
-                    "block",
-                    "contents",
-                    "flex",
-                    "flow",
-                    "flow-root",
-                    "grid",
-                    "inline",
-                    "inline-block",
-                    "inline-flex",
-                    "inline-grid",
-                    "inline-list-item",
-                    "inline-table",
-                    "list-item",
-                    "none",
-                    "ruby",
-                    "ruby-base",
-                    "ruby-base-container",
-                    "ruby-text",
-                    "ruby-text-container",
-                    "run-in",
-                    "table",
-                    "table-caption",
-                    "table-cell",
-                    "table-column",
-                    "table-column-group",
-                    "table-footer-group",
-                    "table-header-group",
-                    "table-row",
-                    "table-row-group"
-                  ],
-                  "type": "string"
-                }
-              ],
+              "enum": ["absolute", "fixed", "relative", "static", "sticky"],
+              "type": "string",
               "title": "xs"
             },
             "md": {
-              "anyOf": [
-                {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
-                  "enum": [
-                    "block",
-                    "contents",
-                    "flex",
-                    "flow",
-                    "flow-root",
-                    "grid",
-                    "inline",
-                    "inline-block",
-                    "inline-flex",
-                    "inline-grid",
-                    "inline-list-item",
-                    "inline-table",
-                    "list-item",
-                    "none",
-                    "ruby",
-                    "ruby-base",
-                    "ruby-base-container",
-                    "ruby-text",
-                    "ruby-text-container",
-                    "run-in",
-                    "table",
-                    "table-caption",
-                    "table-cell",
-                    "table-column",
-                    "table-column-group",
-                    "table-footer-group",
-                    "table-header-group",
-                    "table-row",
-                    "table-row-group"
-                  ],
-                  "type": "string"
-                }
-              ],
+              "enum": ["absolute", "fixed", "relative", "static", "sticky"],
+              "type": "string",
               "title": "md"
             },
             "lg": {
-              "anyOf": [
-                {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
-                  "enum": [
-                    "block",
-                    "contents",
-                    "flex",
-                    "flow",
-                    "flow-root",
-                    "grid",
-                    "inline",
-                    "inline-block",
-                    "inline-flex",
-                    "inline-grid",
-                    "inline-list-item",
-                    "inline-table",
-                    "list-item",
-                    "none",
-                    "ruby",
-                    "ruby-base",
-                    "ruby-base-container",
-                    "ruby-text",
-                    "ruby-text-container",
-                    "run-in",
-                    "table",
-                    "table-caption",
-                    "table-cell",
-                    "table-column",
-                    "table-column-group",
-                    "table-footer-group",
-                    "table-header-group",
-                    "table-row",
-                    "table-row-group"
-                  ],
-                  "type": "string"
-                }
-              ],
+              "enum": ["absolute", "fixed", "relative", "static", "sticky"],
+              "type": "string",
               "title": "lg"
             },
             "xl": {
-              "anyOf": [
-                {
-                  "additionalProperties": false,
-                  "type": "object",
-                  "properties": {}
-                },
-                {
-                  "enum": [
-                    "block",
-                    "contents",
-                    "flex",
-                    "flow",
-                    "flow-root",
-                    "grid",
-                    "inline",
-                    "inline-block",
-                    "inline-flex",
-                    "inline-grid",
-                    "inline-list-item",
-                    "inline-table",
-                    "list-item",
-                    "none",
-                    "ruby",
-                    "ruby-base",
-                    "ruby-base-container",
-                    "ruby-text",
-                    "ruby-text-container",
-                    "run-in",
-                    "table",
-                    "table-caption",
-                    "table-cell",
-                    "table-column",
-                    "table-column-group",
-                    "table-footer-group",
-                    "table-header-group",
-                    "table-row",
-                    "table-row-group"
-                  ],
-                  "type": "string"
-                }
-              ],
+              "enum": ["absolute", "fixed", "relative", "static", "sticky"],
+              "type": "string",
               "title": "xl"
             }
           },
@@ -10535,41 +10374,11 @@
           "propertyOrder": ["xs", "md", "lg", "xl"]
         },
         {
-          "enum": [
-            "block",
-            "contents",
-            "flex",
-            "flow",
-            "flow-root",
-            "grid",
-            "inline",
-            "inline-block",
-            "inline-flex",
-            "inline-grid",
-            "inline-list-item",
-            "inline-table",
-            "list-item",
-            "none",
-            "ruby",
-            "ruby-base",
-            "ruby-base-container",
-            "ruby-text",
-            "ruby-text-container",
-            "run-in",
-            "table",
-            "table-caption",
-            "table-cell",
-            "table-column",
-            "table-column-group",
-            "table-footer-group",
-            "table-header-group",
-            "table-row",
-            "table-row-group"
-          ],
+          "enum": ["absolute", "fixed", "relative", "static", "sticky"],
           "type": "string"
         }
       ],
-      "title": "display",
+      "title": "position",
       "required": false
     },
     {
@@ -11724,6 +11533,235 @@
         }
       ],
       "title": "cursor",
+      "required": false
+    },
+    {
+      "description": "The **`display`** CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.\n\n\n**Initial value**: `inline`",
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "block",
+                    "contents",
+                    "flex",
+                    "flow",
+                    "flow-root",
+                    "grid",
+                    "inline",
+                    "inline-block",
+                    "inline-flex",
+                    "inline-grid",
+                    "inline-list-item",
+                    "inline-table",
+                    "list-item",
+                    "none",
+                    "ruby",
+                    "ruby-base",
+                    "ruby-base-container",
+                    "ruby-text",
+                    "ruby-text-container",
+                    "run-in",
+                    "table",
+                    "table-caption",
+                    "table-cell",
+                    "table-column",
+                    "table-column-group",
+                    "table-footer-group",
+                    "table-header-group",
+                    "table-row",
+                    "table-row-group"
+                  ],
+                  "type": "string"
+                }
+              ],
+              "title": "xs"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "block",
+                    "contents",
+                    "flex",
+                    "flow",
+                    "flow-root",
+                    "grid",
+                    "inline",
+                    "inline-block",
+                    "inline-flex",
+                    "inline-grid",
+                    "inline-list-item",
+                    "inline-table",
+                    "list-item",
+                    "none",
+                    "ruby",
+                    "ruby-base",
+                    "ruby-base-container",
+                    "ruby-text",
+                    "ruby-text-container",
+                    "run-in",
+                    "table",
+                    "table-caption",
+                    "table-cell",
+                    "table-column",
+                    "table-column-group",
+                    "table-footer-group",
+                    "table-header-group",
+                    "table-row",
+                    "table-row-group"
+                  ],
+                  "type": "string"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "block",
+                    "contents",
+                    "flex",
+                    "flow",
+                    "flow-root",
+                    "grid",
+                    "inline",
+                    "inline-block",
+                    "inline-flex",
+                    "inline-grid",
+                    "inline-list-item",
+                    "inline-table",
+                    "list-item",
+                    "none",
+                    "ruby",
+                    "ruby-base",
+                    "ruby-base-container",
+                    "ruby-text",
+                    "ruby-text-container",
+                    "run-in",
+                    "table",
+                    "table-caption",
+                    "table-cell",
+                    "table-column",
+                    "table-column-group",
+                    "table-footer-group",
+                    "table-header-group",
+                    "table-row",
+                    "table-row-group"
+                  ],
+                  "type": "string"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "block",
+                    "contents",
+                    "flex",
+                    "flow",
+                    "flow-root",
+                    "grid",
+                    "inline",
+                    "inline-block",
+                    "inline-flex",
+                    "inline-grid",
+                    "inline-list-item",
+                    "inline-table",
+                    "list-item",
+                    "none",
+                    "ruby",
+                    "ruby-base",
+                    "ruby-base-container",
+                    "ruby-text",
+                    "ruby-text-container",
+                    "run-in",
+                    "table",
+                    "table-caption",
+                    "table-cell",
+                    "table-column",
+                    "table-column-group",
+                    "table-footer-group",
+                    "table-header-group",
+                    "table-row",
+                    "table-row-group"
+                  ],
+                  "type": "string"
+                }
+              ],
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "block",
+            "contents",
+            "flex",
+            "flow",
+            "flow-root",
+            "grid",
+            "inline",
+            "inline-block",
+            "inline-flex",
+            "inline-grid",
+            "inline-list-item",
+            "inline-table",
+            "list-item",
+            "none",
+            "ruby",
+            "ruby-base",
+            "ruby-base-container",
+            "ruby-text",
+            "ruby-text-container",
+            "run-in",
+            "table",
+            "table-caption",
+            "table-cell",
+            "table-column",
+            "table-column-group",
+            "table-footer-group",
+            "table-header-group",
+            "table-row",
+            "table-row-group"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "display",
       "required": false
     },
     {
@@ -13512,44 +13550,6 @@
         }
       ],
       "title": "pointerEvents",
-      "required": false
-    },
-    {
-      "description": "The **`position`** CSS property sets how an element is positioned in a document. The `top`, `right`, `bottom`, and `left` properties determine the final location of positioned elements.\n\n\n**Initial value**: `static`",
-      "anyOf": [
-        {
-          "type": "object",
-          "properties": {
-            "xs": {
-              "enum": ["absolute", "fixed", "relative", "static", "sticky"],
-              "type": "string",
-              "title": "xs"
-            },
-            "md": {
-              "enum": ["absolute", "fixed", "relative", "static", "sticky"],
-              "type": "string",
-              "title": "md"
-            },
-            "lg": {
-              "enum": ["absolute", "fixed", "relative", "static", "sticky"],
-              "type": "string",
-              "title": "lg"
-            },
-            "xl": {
-              "enum": ["absolute", "fixed", "relative", "static", "sticky"],
-              "type": "string",
-              "title": "xl"
-            }
-          },
-          "additionalProperties": false,
-          "propertyOrder": ["xs", "md", "lg", "xl"]
-        },
-        {
-          "enum": ["absolute", "fixed", "relative", "static", "sticky"],
-          "type": "string"
-        }
-      ],
-      "title": "position",
       "required": false
     },
     {
