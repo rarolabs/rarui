@@ -1,6 +1,7 @@
 releases:
   "@rarui-react/components": minor
   "@rarui-react/input": major
+  "@rarui-react/label": major
   "@rarui-react/link": major
   "@rarui-react/toast": patch
   "@rarui/scripts": patch
