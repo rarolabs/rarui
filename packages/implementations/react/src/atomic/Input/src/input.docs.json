@@ -1,0 +1,123 @@
+{
+  "id": "input",
+  "name": "Input",
+  "totalProps": 5,
+  "packageName": "@rarui-react/input",
+  "version": "0.0.0",
+  "docLink": "https://rarui.com.br/documentation/src-components/input",
+  "props": [
+    {
+      "description": "Componet to be displayed on start input.",
+      "type": "React.ReactNode",
+      "title": "leadingStart",
+      "required": false
+    },
+    {
+      "description": "Componet to be displayed on end input.",
+      "type": "React.ReactNode",
+      "title": "leadingEnd",
+      "required": false
+    },
+    {
+      "enum": ["error", "success"],
+      "type": "string",
+      "title": "appearance",
+      "required": false
+    },
+    {
+      "type": "boolean",
+      "title": "divider",
+      "required": false
+    },
+    {
+      "enum": ["large", "medium", "small"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    }
+  ],
+  "subComponents": [
+    {
+      "name": "Input.Leading",
+      "totalProps": 5,
+      "props": [
+        {
+          "description": "The content of the Leading.",
+          "type": "React.ReactNode",
+          "title": "children",
+          "required": true
+        },
+        {
+          "description": "Sent Leading display position.",
+          "enum": ["end", "start"],
+          "type": "string",
+          "title": "position",
+          "required": true
+        },
+        {
+          "type": "boolean",
+          "title": "divider",
+          "required": false
+        },
+        {
+          "enum": ["large", "medium", "small"],
+          "type": "string",
+          "title": "size",
+          "required": false
+        },
+        {
+          "enum": ["error", "success"],
+          "type": "string",
+          "title": "appearance",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "Input.Password",
+      "totalProps": 3,
+      "props": [
+        {
+          "type": "boolean",
+          "title": "divider",
+          "required": false
+        },
+        {
+          "enum": ["large", "medium", "small"],
+          "type": "string",
+          "title": "size",
+          "required": false
+        },
+        {
+          "enum": ["error", "success"],
+          "type": "string",
+          "title": "appearance",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "Input.Search",
+      "totalProps": 3,
+      "props": [
+        {
+          "type": "boolean",
+          "title": "divider",
+          "required": false
+        },
+        {
+          "enum": ["large", "medium", "small"],
+          "type": "string",
+          "title": "size",
+          "required": false
+        },
+        {
+          "enum": ["error", "success"],
+          "type": "string",
+          "title": "appearance",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
