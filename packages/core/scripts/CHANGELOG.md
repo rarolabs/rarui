@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating custom script builds at design system build time.
 
+## 2024-05-01 `1.0.3`
+
+#### 🐛 Bug fixes
+
+- Fixed generation of documentation for subcomponents. ([#30](https://git.rarolabs.com.br/frontend/rarui/pull/30) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-10 `1.0.1`
 
 #### 🐛 Bug fixes
