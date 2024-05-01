@@ -72,6 +72,9 @@
       "@rarui-react/input": [
         "./packages/implementations/react/src/atomic/Input/src"
       ],
+      "@rarui-react/label": [
+        "./packages/implementations/react/src/atomic/Label/src"
+      ],
       "@rarui-react/link": [
         "./packages/implementations/react/src/atomic/Link/src"
       ],
