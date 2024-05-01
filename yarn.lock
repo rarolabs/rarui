@@ -3206,7 +3206,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui-react/box@workspace:packages/implementations/react/src/atomic/Box":
+"@rarui-react/box@workspace:^, @rarui-react/box@workspace:packages/implementations/react/src/atomic/Box":
   version: 0.0.0-use.local
   resolution: "@rarui-react/box@workspace:packages/implementations/react/src/atomic/Box"
   dependencies:
@@ -3303,7 +3303,31 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui-react/link@workspace:packages/implementations/react/src/atomic/Link":
+"@rarui-react/input@workspace:packages/implementations/react/src/atomic/Input":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/input@workspace:packages/implementations/react/src/atomic/Input"
+  dependencies:
+    "@rarui-react/icon": "workspace:^"
+    "@rarui/icons": "workspace:^"
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@rarui-react/label@workspace:packages/implementations/react/src/atomic/Label":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/label@workspace:packages/implementations/react/src/atomic/Label"
+  dependencies:
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@rarui-react/link@workspace:^, @rarui-react/link@workspace:packages/implementations/react/src/atomic/Link":
   version: 0.0.0-use.local
   resolution: "@rarui-react/link@workspace:packages/implementations/react/src/atomic/Link"
   dependencies:
@@ -3364,8 +3388,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@rarui-react/toast@workspace:packages/implementations/react/src/atomic/Toast"
   dependencies:
+    "@rarui-react/box": "workspace:^"
+    "@rarui-react/button": "workspace:^"
     "@rarui-react/icon": "workspace:^"
     "@rarui-react/icon-button": "workspace:^"
+    "@rarui-react/link": "workspace:^"
     "@rarui-react/text": "workspace:^"
     "@rarui/icons": "workspace:^"
     "@rarui/webpack": "workspace:^"

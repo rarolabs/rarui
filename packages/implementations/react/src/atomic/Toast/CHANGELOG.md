@@ -2,6 +2,12 @@
 
 The Toast component presents notifications that provide feedback on an operation through a message.
 
+## 2024-05-01 `1.0.1`
+
+#### 🐛 Bug fixes
+
+- Configured default placement in `Toast.provider` component. ([#30](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/30) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-22 `1.0.0`
 
 #### 🎉 New features

@@ -29,7 +29,7 @@ const link = recipe({
   },
   variants: {
     appearance: {
-      default: {
+      brand: {
         color: varsThemeBase.colors.content.brand,
       },
       neutral: {

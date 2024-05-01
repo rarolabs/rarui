@@ -19,7 +19,6 @@ const config: Config.InitialOptions = {
       "<rootDir>/packages/implementations/react/src/atomic/Box/src",
     "@rarui-react/button":
       "<rootDir>/packages/implementations/react/src/atomic/Button/src",
-
     "@rarui-react/link":
       "<rootDir>/packages/implementations/react/src/atomic/Link/src",
     "@rarui-react/text":

@@ -263,16 +263,6 @@ const button = recipe({
         backgroundColor: varsThemeBase.colors.surface.secondary,
       },
     },
-    {
-      variants: {
-        appearance: "brand",
-        variant: "tonal",
-      },
-      style: {
-        ...buttonVariants.text.brand,
-        backgroundColor: varsThemeBase.colors.surface["invert-secondary"],
-      },
-    },
   ],
 });
 

@@ -15,12 +15,11 @@ try {
         "packages/implementations/react/src/*/*/src/!(*.spec|*.stories).types.ts",
       ),
     ),
-    // subComponents: glob.sync(
-    //   path.join(
-    //     "packages/implementations/react/src/*/*/src/components/*/!(*.spec|*.stories).types.ts",
-    //   ),
-    // ),
-    subComponents: [],
+    subComponents: glob.sync(
+      path.join(
+        "packages/implementations/react/src/*/*/src/components/*/!(*.spec|*.stories).types.ts",
+      ),
+    ),
   };
 
   const options: DocgenOptions = {

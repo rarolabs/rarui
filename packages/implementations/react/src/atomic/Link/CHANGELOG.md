@@ -2,6 +2,12 @@
 
 The Link component allows us to navigate to external addresses.
 
+## 2024-04-25 `2.0.0`
+
+#### 🛠 Breaking changes
+
+- Renamed the `default` appearance name to `brand`. ([#30](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/30) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-25 `1.0.1`
 
 #### 🐛 Bug fixes

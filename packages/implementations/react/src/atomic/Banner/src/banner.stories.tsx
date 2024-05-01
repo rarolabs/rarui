@@ -57,7 +57,7 @@ export const info: Story = {
       >
         <Icon source={<SentimentSatisfiedFilledIcon size={20} />} />
         <Text>Banner description with</Text>
-        <Link as="a" appearance="neutral" href="https://www.google.com.br">
+        <Link as="a" appearance="brand" href="https://www.google.com.br">
           link
         </Link>
       </Box>
@@ -78,7 +78,7 @@ export const neutral: Story = {
       >
         <Icon source={<SentimentSatisfiedFilledIcon size={20} />} />
         <Text>Banner description with</Text>
-        <Link as="a" appearance="neutral" href="https://www.google.com.br">
+        <Link as="a" appearance="brand" href="https://www.google.com.br">
           link
         </Link>
       </Box>
@@ -99,7 +99,7 @@ export const inverted: Story = {
       >
         <Icon source={<SentimentSatisfiedFilledIcon size={20} />} />
         <Text>Banner description with</Text>
-        <Link as="a" appearance="neutral" href="https://www.google.com.br">
+        <Link as="a" appearance="inverted" href="https://www.google.com.br">
           link
         </Link>
       </Box>
@@ -120,7 +120,7 @@ export const warning: Story = {
       >
         <Icon source={<SentimentSatisfiedFilledIcon size={20} />} />
         <Text>Banner description with</Text>
-        <Link as="a" appearance="neutral" href="https://www.google.com.br">
+        <Link as="a" appearance="inverted" href="https://www.google.com.br">
           link
         </Link>
       </Box>
@@ -141,7 +141,7 @@ export const error: Story = {
       >
         <Icon source={<SentimentSatisfiedFilledIcon size={20} />} />
         <Text>Banner description with</Text>
-        <Link as="a" appearance="neutral" href="https://www.google.com.br">
+        <Link as="a" appearance="inverted" href="https://www.google.com.br">
           link
         </Link>
       </Box>

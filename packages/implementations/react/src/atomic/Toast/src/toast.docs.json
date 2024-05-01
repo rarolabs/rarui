@@ -66,8 +66,29 @@
   "subComponents": [
     {
       "name": "Toast.Provider",
-      "totalProps": 0,
-      "props": []
+      "totalProps": 2,
+      "props": [
+        {
+          "type": "React.ReactNode",
+          "title": "children",
+          "required": true
+        },
+        {
+          "description": "Position of the toast.",
+          "default": "bottom",
+          "enum": [
+            "bottomCenter",
+            "bottomLeft",
+            "bottomRight",
+            "topCenter",
+            "topLeft",
+            "topRight"
+          ],
+          "type": "string",
+          "title": "placement",
+          "required": false
+        }
+      ]
     }
   ]
 }

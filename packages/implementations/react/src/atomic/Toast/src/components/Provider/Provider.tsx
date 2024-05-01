@@ -7,7 +7,10 @@ import { Toast } from "../../Toast";
 
 import { ProviderProps } from "./provider.types";
 
-const Provider: React.FC<ProviderProps> = ({ children, placement }) => {
+const Provider: React.FC<ProviderProps> = ({
+  children,
+  placement = "bottomRight",
+}) => {
   const [toasts, setToasts] = React.useState<ToastProps[]>([]);
 
   const addToast = useCallback(
