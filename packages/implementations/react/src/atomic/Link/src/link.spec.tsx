@@ -23,15 +23,15 @@ describe("GIVEN <Link />", () => {
     it("AND should correctly render the appearance", () => {
       makeSut({ href: "#", children: "link" });
       expect(screen.getByRole("link").getAttribute("class")).toContain(
-        "appearance_default",
+        "appearance_brand",
       );
     });
 
-    it("AND should correctly render the appearance default", () => {
-      makeSut({ appearance: "default", href: "#", children: "link" });
+    it("AND should correctly render the appearance brand", () => {
+      makeSut({ appearance: "brand", href: "#", children: "link" });
       expect(
         screen.getByRole("link", { name: "link" }).getAttribute("class"),
-      ).toContain("appearance_default");
+      ).toContain("appearance_brand");
     });
 
     it("AND should correctly render the appearance neutral", () => {
