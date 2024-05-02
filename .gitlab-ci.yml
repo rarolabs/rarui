@@ -23,7 +23,6 @@ stages: # List of stages for jobs, and their order of execution
   - check-version
   - quality
   - deploy
-  - docs
 
 setup-job:
   stage: setup
@@ -71,10 +70,14 @@ lint-job: # This job also runs in the test stage.
   only:
     - merge_requests
 
-docs-job:
-  stage: docs
+deploy-stable-job: # This job runs in the deploy-stable stage.
+  stage: deploy # It only runs when *both* jobs in the test stage complete successfully.
+  environment: production
   script:
+    - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
     - yarn install # Instala as dependências com o Yarn
+    - yarn bump:check
+    - yarn publish:stable
     - yarn build:docs
     - git config --global user.email "${GITLAB_USER_NAME}"
     - git config --global user.name "${GITLAB_USER_EMAIL}"
@@ -86,32 +89,6 @@ docs-job:
     - git add .
     - git commit -m "Publish release stable [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
-  only:
-    variables:
-      - $TRIGGER_JOB == "docs-job"
-
-deploy-stable-job: # This job runs in the deploy-stable stage.
-  stage: deploy # It only runs when *both* jobs in the test stage complete successfully.
-  environment: production
-  script:
-    - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
-    - yarn install # Instala as dependências com o Yarn
-    - yarn bump:check
-    - yarn publish:stable
-    - git config --global user.email "${GITLAB_USER_NAME}"
-    - git config --global user.name "${GITLAB_USER_EMAIL}"
-    - git fetch
-    - git checkout main
-    - git pull
-    - git add .
-    - git commit -m "Publish release stable [skip ci]"
-    - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
-    - "curl 
-      --request POST
-      --form token=$CI_JOB_TOKEN
-      --form ref=master
-      --form variables[TRIGGER_JOB]=job2
-      https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/trigger/pipeline"
 
   rules:
     - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request

@@ -1,0 +1,10 @@
+releases:
+  "@rarui-react/components": minor
+  "@rarui-react/radio-button": major
+  "@rarui/styles": minor
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui-react/input"
+  - "@rarui-react/link"
+  - "@rarui-react/toast"
