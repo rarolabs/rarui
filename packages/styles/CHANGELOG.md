@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-05-07 `1.16.0`
+
+#### 🎉 New features
+
+- Added new style pack for `tooltip` component. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-05-02 `1.15.0`
 
 #### 🎉 New features
