@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-05-07 `1.18.0`
+
+#### 🎉 New features
+
+- Added new atomic `Tooltip` component. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-05-02 `1.17.0`
 
 #### 🎉 New features
