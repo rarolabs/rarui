@@ -1,0 +1,205 @@
+{
+  "id": "tooltip",
+  "name": "Tooltip",
+  "totalProps": 13,
+  "packageName": "@rarui-react/tooltip",
+  "version": "0.0.0",
+  "docLink": "https://rarui.com.br/documentation/src-components/tooltip",
+  "props": [
+    {
+      "description": "An HTML element, or a function that returns one. It's used to set the position of the popover.",
+      "type": "React.ReactNode | ((data: { open: boolean, setVisibility: (visibility: boolean) => void }) => React.ReactNode);",
+      "title": "children",
+      "required": true
+    },
+    {
+      "description": "The content of the popover.",
+      "type": "React.ReactNode",
+      "title": "content",
+      "required": true
+    },
+    {
+      "description": "If true, the component is shown.",
+      "type": "boolean",
+      "title": "visible",
+      "required": false
+    },
+    {
+      "description": "Function to control popover opening and closing.",
+      "type": "(visible: boolean) => void;",
+      "title": "onVisibility",
+      "required": false
+    },
+    {
+      "description": "Conditional for displaying the popover arrow.",
+      "default": true,
+      "type": "boolean",
+      "title": "arrow",
+      "required": false
+    },
+    {
+      "description": "A common feature of select dropdowns is that the dropdown matches the width of the reference regardless of its contents.",
+      "default": false,
+      "type": "boolean",
+      "title": "matchReferenceWidth",
+      "required": false
+    },
+    {
+      "description": "Position of the popover.",
+      "default": "bottom",
+      "enum": [
+        "bottom",
+        "bottom-end",
+        "bottom-start",
+        "left",
+        "left-end",
+        "left-start",
+        "right",
+        "right-end",
+        "right-start",
+        "top",
+        "top-end",
+        "top-start"
+      ],
+      "type": "string",
+      "title": "position",
+      "required": false
+    },
+    {
+      "description": "Adds hover event listeners that change the open state, like CSS :hover.",
+      "default": false,
+      "type": "boolean",
+      "title": "enabledHover",
+      "required": false
+    },
+    {
+      "description": "Adds click event listeners that change the open state.",
+      "default": true,
+      "type": "boolean",
+      "title": "enabledClick",
+      "required": false
+    },
+    {
+      "description": "Adds listeners that dismiss (close) the floating element.",
+      "default": true,
+      "type": "boolean",
+      "title": "enabledDismiss",
+      "required": false
+    },
+    {
+      "description": "Offest displaces the floating element from its core placement along the specified axes.",
+      "default": 10,
+      "type": "number",
+      "title": "offset",
+      "required": false
+    },
+    {
+      "type": "boolean",
+      "title": "inverted",
+      "required": false
+    },
+    {
+      "enum": ["base", "none"],
+      "type": "string",
+      "title": "padding",
+      "required": false
+    }
+  ],
+  "subComponents": [
+    {
+      "name": "Tooltip.Footer",
+      "totalProps": 3,
+      "props": [
+        {
+          "description": "The content of the modal header.",
+          "type": "React.ReactNode",
+          "title": "children",
+          "required": false
+        },
+        {
+          "type": "boolean",
+          "title": "inverted",
+          "required": false
+        },
+        {
+          "enum": ["base", "none"],
+          "type": "string",
+          "title": "padding",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "Tooltip.Body",
+      "totalProps": 3,
+      "props": [
+        {
+          "description": "The content of the modal header.",
+          "type": "React.ReactNode",
+          "title": "children",
+          "required": false
+        },
+        {
+          "type": "boolean",
+          "title": "inverted",
+          "required": false
+        },
+        {
+          "enum": ["base", "none"],
+          "type": "string",
+          "title": "padding",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "Tooltip.Header",
+      "totalProps": 7,
+      "props": [
+        {
+          "description": "The content of the modal header.",
+          "type": "React.ReactNode",
+          "title": "children",
+          "required": false
+        },
+        {
+          "description": "Displays a delete icon and adds user interaction.",
+          "default": false,
+          "type": "boolean",
+          "title": "closeable",
+          "required": false
+        },
+        {
+          "description": "Header title",
+          "type": "string",
+          "title": "title",
+          "required": false
+        },
+        {
+          "description": "Header subtitle",
+          "type": "string",
+          "title": "subtitle",
+          "required": false
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "propertyOrder": [],
+          "title": "onClose",
+          "required": false
+        },
+        {
+          "type": "boolean",
+          "title": "inverted",
+          "required": false
+        },
+        {
+          "enum": ["base", "none"],
+          "type": "string",
+          "title": "padding",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
