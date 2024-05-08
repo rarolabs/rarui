@@ -7,6 +7,8 @@
 #### 🎉 New features
 
 - Added new atomic `Tooltip` component. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `color` property to the component `Divider`. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `opacity` property to the component `Box`. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
 
 #### 🐛 Bug fixes
 

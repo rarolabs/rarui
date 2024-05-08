@@ -1,0 +1,13 @@
+releases:
+  "@rarui-react/box": minor
+  "@rarui-react/checkbox": patch
+  "@rarui-react/components": minor
+  "@rarui-react/divider": minor
+  "@rarui-react/title": patch
+  "@rarui-react/tooltip": major
+  "@rarui/styles": minor
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui-react/banner"
+  - "@rarui-react/toast"
