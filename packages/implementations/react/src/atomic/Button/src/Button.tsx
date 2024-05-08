@@ -22,6 +22,7 @@ const Button = forwardRef(
       appearance = "brand",
       size = "large",
       variant = "solid",
+      full,
       children,
       ...props
     }: _ButtonProps & { as: any },
@@ -52,7 +53,12 @@ const Button = forwardRef(
     return (
       <As
         {...props}
-        className={button.classnames.button({ size, variant, appearance })}
+        className={button.classnames.button({
+          size,
+          variant,
+          appearance,
+          full,
+        })}
         ref={innerRef}
       >
         {children}

@@ -1,5 +1,6 @@
 releases:
   "@rarui-react/box": minor
+  "@rarui-react/button": minor
   "@rarui-react/checkbox": patch
   "@rarui-react/components": minor
   "@rarui-react/divider": minor

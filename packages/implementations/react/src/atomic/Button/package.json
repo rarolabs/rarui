@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/button",
-  "version": "1.0.3",
+  "version": "1.1.0-rc.1",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -30,5 +30,6 @@
     "@rarui-react/icon": "workspace:^",
     "@rarui/icons": "workspace:^",
     "@rarui/webpack": "workspace:^"
-  }
+  },
+  "stableVersion": "1.0.3"
 }
