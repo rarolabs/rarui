@@ -3,7 +3,8 @@ import {
   createRainbowSprinkles,
   defineProperties as defineRainbowProperties,
 } from "rainbow-sprinkles";
-import { mediaQueries, varsThemeBase } from "../../../themes";
+import { mediaQueries } from "../../../themes";
+import { borderColorProperties } from "../../../properties";
 
 /* -------------------------------------------------------------------------------------------------
  * Style
@@ -11,7 +12,6 @@ import { mediaQueries, varsThemeBase } from "../../../themes";
 
 const divider = recipe({
   base: {
-    borderColor: varsThemeBase.colors.border.divider,
     borderWidth: 0,
   },
 });
@@ -51,6 +51,7 @@ const defineProperties = defineRainbowProperties({
     height: true,
   },
   staticProperties: {
+    borderColor: borderColorProperties,
     borderStyle: dividerBorderStyleProperties,
     borderTopWidth: dividerBorderWidthProperties,
     borderLeftWidth: dividerBorderWidthProperties,
