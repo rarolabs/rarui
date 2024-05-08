@@ -1,11 +1,11 @@
 import React from "react";
 import { CloseIcon } from "@rarui/icons";
+import { tooltip } from "@rarui/styles";
 import { Title } from "@rarui-react/title";
 import { Text } from "@rarui-react/text";
 import { IconButton } from "@rarui-react/icon-button";
-import { tooltip } from "@rarui/styles";
+import { Box } from "@rarui-react/box";
 
-import { Box } from "@rarui-react/box/src";
 import { HeaderProps } from "./header.types";
 
 const Header: React.FC<HeaderProps> = ({
