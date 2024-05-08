@@ -8801,7 +8801,7 @@ export namespace Property {
 
   export type OffsetAnchor = DataType.Position | "auto";
 
-  export type Opacity = OnlyStringNumeric;
+  export type Opacity = string;
 
   export type Order = number;
 

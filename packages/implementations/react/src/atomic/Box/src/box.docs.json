@@ -1,7 +1,7 @@
 {
   "id": "box",
   "name": "Box",
-  "totalProps": 95,
+  "totalProps": 96,
   "packageName": "@rarui-react/box",
   "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/box",
@@ -13343,6 +13343,39 @@
         }
       ],
       "title": "minWidth",
+      "required": false
+    },
+    {
+      "description": "The **`opacity`** CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.\n\n\n**Initial value**: `1.0`",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "title": "opacity",
       "required": false
     },
     {

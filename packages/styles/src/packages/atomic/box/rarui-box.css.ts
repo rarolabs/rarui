@@ -91,6 +91,7 @@ const defineProperties = defineRainbowProperties({
     transitionTimingFunction: true,
     textDecoration: true,
     textAlign: true,
+    opacity: true,
   },
   staticProperties: {
     backgroundColor: backgroundColorProperties,
