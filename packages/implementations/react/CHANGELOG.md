@@ -13,6 +13,8 @@
 #### 🐛 Bug fixes
 
 - Adjusted the font size of the checkbox component label. ([#32](https://git.rarolabs.com.br/frontend/rarui/pull/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Adjusted the size of the `Input.Password` icon. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Adjusted the size of the `Input.search` icon. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-05-02 `1.17.0`
 

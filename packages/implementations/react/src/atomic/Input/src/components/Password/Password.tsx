@@ -58,8 +58,8 @@ const Password = forwardRef<HTMLInputElement, _PasswordProps>(
             color="$currentColor"
             source={
               <>
-                {show && <EyeOutlinedIcon size="small" />}
-                {!show && <EyeOffOutlinedIcon size="small" />}
+                {show && <EyeOutlinedIcon size={size} />}
+                {!show && <EyeOffOutlinedIcon size={size} />}
               </>
             }
           />
