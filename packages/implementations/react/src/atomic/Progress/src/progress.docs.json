@@ -1,0 +1,30 @@
+{
+  "id": "progress",
+  "name": "Progress",
+  "totalProps": 1,
+  "packageName": "@rarui-react/progress",
+  "version": "1.0.0",
+  "docLink": "https://rarui.com.br/documentation/src-components/progress",
+  "props": [
+    {
+      "description": "The percentage of progress to be displayed",
+      "type": "number",
+      "title": "percentage",
+      "required": true
+    }
+  ],
+  "subComponents": [
+    {
+      "name": "Progress.Circle",
+      "totalProps": 1,
+      "props": [
+        {
+          "description": "The percentage of progress to be displayed",
+          "type": "number",
+          "title": "percentage",
+          "required": true
+        }
+      ]
+    }
+  ]
+}
