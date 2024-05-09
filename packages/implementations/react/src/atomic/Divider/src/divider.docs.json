@@ -3,7 +3,7 @@
   "name": "Divider",
   "totalProps": 5,
   "packageName": "@rarui-react/divider",
-  "version": "1.1.0-rc.2",
+  "version": "1.1.0-rc.7",
   "docLink": "https://rarui.com.br/documentation/src-components/divider",
   "props": [
     {

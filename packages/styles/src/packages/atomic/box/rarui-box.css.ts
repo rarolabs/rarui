@@ -153,4 +153,4 @@ const defineProperties = defineRainbowProperties({
   },
 });
 
-export const sprinkle = createRainbowSprinkles(defineProperties);
+export const boxSprinkle = createRainbowSprinkles(defineProperties);

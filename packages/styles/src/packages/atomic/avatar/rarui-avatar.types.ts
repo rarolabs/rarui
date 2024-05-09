@@ -1,4 +1,4 @@
 import { RecipeVariants } from "@vanilla-extract/recipes";
-import { styles } from "./rarui-avatar.css";
+import { avatarStyles } from "./rarui-avatar.css";
 
-export type AvatarVariants = RecipeVariants<typeof styles.avatar>;
+export type AvatarVariants = RecipeVariants<typeof avatarStyles.avatar>;

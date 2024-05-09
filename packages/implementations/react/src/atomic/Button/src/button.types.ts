@@ -1,7 +1,7 @@
 import { ReactNode, ButtonHTMLAttributes } from "react";
 import { ButtonVariants } from "@rarui/styles";
 
-export interface Button {
+export interface ButtonTyping {
   /**
    * The content of the button.
    * @TJS-type React.ReactNode
@@ -14,7 +14,6 @@ export interface Button {
   disabled?: boolean;
 }
 
-export type ButtonProperties = Button & ButtonVariants;
-
+export type ButtonProperties = ButtonTyping & ButtonVariants;
 export type _ButtonProps = ButtonProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

@@ -22,6 +22,10 @@ const avatar = recipe({
     color: varsThemeBase.colors.content.primary,
   },
   variants: {
+    /**
+     * Specifies the size of the Avatar component.
+     * @default medium
+     */
     size: {
       small: {
         width: "20px",
@@ -76,7 +80,7 @@ globalStyle(`${avatar()} img`, {
   objectFit: "cover",
 });
 
-export const styles = {
+export const avatarStyles = {
   container,
   avatar,
   badge,

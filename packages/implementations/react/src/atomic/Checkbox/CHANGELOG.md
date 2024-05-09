@@ -7,6 +7,7 @@ Checkboxes allow the user to select multiple options from a set, or to turn an o
 #### 🐛 Bug fixes
 
 - Adjusted the font size of the checkbox component label. ([#32](https://git.rarolabs.com.br/frontend/rarui/pull/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Fixed component typing. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-04-15 `1.0.0`
 

@@ -1,7 +1,7 @@
 import { InputHTMLAttributes } from "react";
 import { ToggleVariants } from "@rarui/styles";
 
-export interface ToggleBase {
+export interface ToggleTyping {
   /**
    * The name of the input element.
    */
@@ -16,7 +16,7 @@ export interface ToggleBase {
   label?: string;
 }
 
-type ToggleProperties = ToggleBase & ToggleVariants;
+type ToggleProperties = ToggleTyping & ToggleVariants;
 
 export type ToggleProps = ToggleProperties &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

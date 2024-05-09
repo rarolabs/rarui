@@ -3,7 +3,7 @@
   "name": "Tooltip",
   "totalProps": 13,
   "packageName": "@rarui-react/tooltip",
-  "version": "1.0.0-rc.2",
+  "version": "1.0.0-rc.7",
   "docLink": "https://rarui.com.br/documentation/src-components/tooltip",
   "props": [
     {

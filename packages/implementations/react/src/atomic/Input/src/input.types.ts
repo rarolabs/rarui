@@ -8,7 +8,7 @@ export interface InputComponents {
   Search: typeof Search;
 }
 
-export interface Input {
+export interface InputTyping {
   /**
    * Componet to be displayed on start input.
    * @TJS-type React.ReactNode
@@ -21,7 +21,6 @@ export interface Input {
   leadingEnd?: ReactNode;
 }
 
-export type InputProperties = Input & InputVariants;
-
+export type InputProperties = InputTyping & InputVariants;
 export type _InputProps = InputProperties &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

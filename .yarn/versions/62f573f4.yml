@@ -1,11 +1,16 @@
 releases:
+  "@rarui-react/avatar": patch
+  "@rarui-react/badge": patch
   "@rarui-react/box": minor
   "@rarui-react/button": minor
   "@rarui-react/checkbox": patch
+  "@rarui-react/chip": patch
   "@rarui-react/components": minor
   "@rarui-react/divider": minor
+  "@rarui-react/icon-button": patch
   "@rarui-react/input": patch
   "@rarui-react/title": patch
+  "@rarui-react/toggle": patch
   "@rarui-react/tooltip": major
   "@rarui/styles": minor
 

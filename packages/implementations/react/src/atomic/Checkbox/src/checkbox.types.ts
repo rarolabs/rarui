@@ -1,7 +1,7 @@
 import { InputHTMLAttributes } from "react";
 import { CheckboxVariants } from "@rarui/styles";
 
-export interface Checkbox {
+export interface CheckboxTyping {
   /**
    * The label of the checkbox.
    */
@@ -12,8 +12,7 @@ export interface Checkbox {
   id: string;
 }
 
-export type CheckboxProperties = Checkbox & CheckboxVariants;
-
+export type CheckboxProperties = CheckboxTyping & CheckboxVariants;
 export type CheckboxProps = CheckboxProperties &
   CheckboxVariants &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

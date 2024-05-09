@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/input",
-  "version": "1.0.1-rc.2",
+  "version": "1.0.1-rc.6",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [

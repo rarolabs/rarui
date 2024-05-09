@@ -12,6 +12,10 @@ const banner = recipe({
     padding: `${varsThemeBase.spacing["4xs"]} ${varsThemeBase.spacing["3xs"]}`,
   },
   variants: {
+    /**
+     * Specifies the visual appearance of the banner message, influencing its color and style.
+     * @default brand
+     */
     appearance: {
       brand: {
         backgroundColor: varsThemeBase.colors.surface.brand,
@@ -38,6 +42,10 @@ const banner = recipe({
         color: varsThemeBase.colors.content["on-error"],
       },
     },
+    /**
+     * Determines whether the banner message should float above the content. This can be useful for ensuring the message remains visible even as the user scrolls.
+     * @default false
+     */
     floating: {
       true: {
         borderRadius: varsThemeBase.shape.border.radius.xs,
@@ -66,6 +74,6 @@ const banner = recipe({
   ],
 });
 
-export const styles = {
+export const bannerStyles = {
   banner,
 };

@@ -22,6 +22,10 @@ const badge = recipe({
     borderRadius: varsThemeBase.shape.border.radius.pill,
   },
   variants: {
+    /**
+     * Determines the visual style of the badge, influencing its color scheme and appearance.
+     * @defaiult brand
+     */
     appearance: {
       brand: {
         backgroundColor: varsThemeBase.colors.surface.brand,
@@ -59,6 +63,11 @@ const badge = recipe({
         color: varsThemeBase.colors.content.primary,
       },
     },
+    /**
+     * Specifies the size of the badge, controlling its dimensions.
+     * @defaiult medium
+     */
+
     size: {
       large: {
         padding: `0 ${varsThemeBase.spacing.xs}`,
@@ -83,6 +92,10 @@ const badge = recipe({
         width: "0.5rem",
       },
     },
+    /**
+     * Defines the visual variant of the badge, affecting its background style.
+     * @defaiult solid
+     */
     variant: {
       solid: {},
       outlined: {
@@ -175,6 +188,6 @@ const badge = recipe({
   ],
 });
 
-export const styles = {
+export const badgeStyles = {
   badge,
 };

@@ -3,7 +3,7 @@
   "name": "Button",
   "totalProps": 8,
   "packageName": "@rarui-react/button",
-  "version": "1.0.3",
+  "version": "1.1.0-rc.5",
   "docLink": "https://rarui.com.br/documentation/src-components/button",
   "props": [
     {

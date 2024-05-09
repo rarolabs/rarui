@@ -17,7 +17,7 @@ export const icon = recipe({
   },
 });
 
-export const styles = {
+export const iconStyles = {
   icon,
 };
 
@@ -49,4 +49,4 @@ const defineProperties = defineRainbowProperties({
   },
 });
 
-export const sprinkle = createRainbowSprinkles(defineProperties);
+export const iconSprinkle = createRainbowSprinkles(defineProperties);

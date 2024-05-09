@@ -1,6 +1,6 @@
-import { styles } from "./rarui-badge.css";
+import { badgeStyles } from "./rarui-badge.css";
 
 export const badge = {
-  classnames: { ...styles },
+  classnames: badgeStyles,
 };
 export type { BadgeVariants } from "./rarui-badge.types";

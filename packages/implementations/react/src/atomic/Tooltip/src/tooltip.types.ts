@@ -9,7 +9,7 @@ export interface TooltipComponents {
   Header: typeof Header;
 }
 
-interface Tooltip {
+interface TooltipTyping {
   /**
    * An HTML element, or a function that returns one. It's used to set the position of the popover.
    * @TJS-type React.ReactNode | ((data: { open: boolean, setVisibility: (visibility: boolean) => void }) => React.ReactNode);
@@ -71,7 +71,7 @@ interface Tooltip {
   offset?: number;
 }
 
-export type TooltipProperties = Tooltip & TooltipVariants;
+export type TooltipProperties = TooltipTyping & TooltipVariants;
 
 export type TooltipProps = TooltipProperties &
   Omit<HTMLAttributes<HTMLDivElement>, "content">;

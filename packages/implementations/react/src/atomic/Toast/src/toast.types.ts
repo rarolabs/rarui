@@ -7,7 +7,7 @@ export interface ToastComponents {
   Provider: typeof Provider;
 }
 
-export interface Toast {
+export interface ToastTyping {
   /**
    * The content of the button.
    * @TJS-type React.ReactNode
@@ -33,7 +33,7 @@ export interface Toast {
   autoClose?: boolean;
 }
 
-export type ToastProperties = Toast & ToastVariants;
+export type ToastProperties = ToastTyping & ToastVariants;
 
 export type ToastProps = ToastProperties &
   Omit<HtmlHTMLAttributes<HTMLDivElement>, "id" | "size">;
