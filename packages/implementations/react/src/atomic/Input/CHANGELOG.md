@@ -2,6 +2,14 @@
 
 The Input component allows users to enter text into a UI. They typically appear on forms and dialog boxes.
 
+## 2024-05-07 `1.0.1`
+
+#### 🐛 Bug fixes
+
+- Adjusted the size of the `Input.Password` icon. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Adjusted the size of the `Input.search` icon. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Fixed component typing. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-05-01 `1.0.0`
 
 #### 🎉 New features

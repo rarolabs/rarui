@@ -1,5 +1,6 @@
 import React from "react";
 import { Preview } from "@storybook/react";
+import { themes } from "@storybook/theming";
 import { ThemeDocsProvider, ThemeRaruiProvider, dark, light } from "./theme";
 import "./static/style.css";
 
@@ -16,9 +17,8 @@ const preview: Preview = {
       current: "dark",
       darkClass: "darkClass",
       lightClass: "lightClass",
-      stylePreview: true,
-      light,
-      dark,
+      light: { ...themes.light, ...light },
+      dark: { ...themes.dark, ...dark },
     },
     docs: {
       container: ThemeDocsProvider,

@@ -17,7 +17,12 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({
   );
 
   return (
-    <div className={themes[theme]} {...rest} ref={refThemeProvider}>
+    <div
+      id="theme-provider"
+      className={themes[theme]}
+      {...rest}
+      ref={refThemeProvider}
+    >
       <ThemeProviderContext.Provider value={context}>
         {children}
       </ThemeProviderContext.Provider>

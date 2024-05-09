@@ -6,6 +6,7 @@ const Divider: React.FC<DividerProperties> = ({
   direction = "horizontal",
   type = "solid",
   thickness = "$1",
+  color = "$divider",
   size = "100%",
   ...rest
 }) => {
@@ -15,6 +16,7 @@ const Divider: React.FC<DividerProperties> = ({
     width: direction === "horizontal" ? size : 0,
     height: direction === "vertical" ? size : 0,
     borderStyle: type,
+    borderColor: color,
     ...rest,
   });
 

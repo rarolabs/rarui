@@ -7,25 +7,28 @@
   "docLink": "https://rarui.com.br/documentation/src-components/banner",
   "props": [
     {
-      "description": "The content of the button.",
+      "description": "The content to be displayed within the banner message. This can include text, icons, or any other ReactNode.",
       "type": "React.ReactNode",
       "title": "children",
       "required": true
     },
     {
-      "type": "object",
-      "additionalProperties": false,
-      "propertyOrder": [],
+      "description": "A function to be called when the user closes the banner. This function is typically used to handle the closing action.",
+      "type": "() => void;",
       "title": "onClose",
       "required": false
     },
     {
+      "description": "Specifies the visual appearance of the banner message, influencing its color and style.",
+      "default": "brand",
       "enum": ["brand", "error", "info", "inverted", "neutral", "warning"],
       "type": "string",
       "title": "appearance",
       "required": false
     },
     {
+      "description": "Determines whether the banner message should float above the content. This can be useful for ensuring the message remains visible even as the user scrolls.",
+      "default": false,
       "type": "boolean",
       "title": "floating",
       "required": false

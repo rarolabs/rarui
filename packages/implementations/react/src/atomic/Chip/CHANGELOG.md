@@ -2,6 +2,12 @@
 
 Chip is a small component used to make selections, filter content, or trigger actions.
 
+## 2024-05-07 `1.0.2`
+
+#### 🐛 Bug fixes
+
+- Fixed component typing. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-25 `1.0.1`
 
 #### 🐛 Bug fixes

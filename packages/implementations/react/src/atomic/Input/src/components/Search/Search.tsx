@@ -48,7 +48,7 @@ const Search = forwardRef<HTMLInputElement, _SearchProps>(
           size={size}
           divider={divider}
         >
-          <Icon color="$currentColor" source={<SearchIcon size="small" />} />
+          <Icon color="$currentColor" source={<SearchIcon size={size} />} />
         </Leading>
       </div>
     );

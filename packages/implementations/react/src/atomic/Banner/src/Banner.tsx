@@ -2,6 +2,7 @@ import React from "react";
 import { banner } from "@rarui/styles";
 import { CloseIcon } from "@rarui/icons";
 import { IconButton } from "@rarui-react/icon-button";
+
 import { BannerProps } from "./banner.types";
 import { getColorButtonClose } from "./banner.definitions";
 

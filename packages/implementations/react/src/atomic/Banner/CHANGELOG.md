@@ -2,6 +2,12 @@
 
 The Banner component is used to display general messages for the user
 
+## 2024-05-07 `1.0.1`
+
+#### 🐛 Bug fixes
+
+- Fixed component typing. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-25 `1.0.0`
 
 #### 🎉 New features

@@ -29,7 +29,11 @@ const Checkbox: React.FC<CheckboxProps> = ({
       />
       <span className={checkbox.classnames.overlay} />
     </div>
-    {label && <Text color="$primary">{label}</Text>}
+    {label && (
+      <Text color="$primary" fontSize="$s">
+        {label}
+      </Text>
+    )}
   </label>
 );
 

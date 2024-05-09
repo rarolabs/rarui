@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/toggle",
-  "version": "1.0.0",
+  "version": "1.0.1-rc.3",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -28,5 +28,6 @@
   },
   "devDependencies": {
     "@rarui/webpack": "workspace:^"
-  }
+  },
+  "stableVersion": "1.0.0"
 }

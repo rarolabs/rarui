@@ -9,6 +9,8 @@ export const argTypesConvert = (properties: any = {}) => {
           options: string[];
           description: string;
           defaultValue?: string;
+          type?: string;
+          table?: any;
         };
       },
       curr: any,
@@ -44,8 +46,11 @@ export const argTypesConvert = (properties: any = {}) => {
         case options?.length > 6:
           control = "select";
           break;
-        default:
+        case options?.length <= 6:
           control = "radio";
+          break;
+        default:
+          control = { disable: true } as any;
           break;
       }
 
@@ -54,6 +59,7 @@ export const argTypesConvert = (properties: any = {}) => {
         description: curr.description ?? "",
         control: control,
         options,
+        table: { type: { summary: curr.type } },
       };
       return prev;
     },

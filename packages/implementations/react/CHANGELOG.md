@@ -2,6 +2,21 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-05-07 `1.18.0`
+
+#### 🎉 New features
+
+- Added new atomic `Tooltip` component. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `color` property to the component `Divider`. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `opacity` property to the component `Box`. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `full` property to the component `Button`. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+
+#### 🐛 Bug fixes
+
+- Adjusted the font size of the checkbox component label. ([#32](https://git.rarolabs.com.br/frontend/rarui/pull/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Adjusted the size of the `Input.Password` icon. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Adjusted the size of the `Input.search` icon. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-05-02 `1.17.0`
 
 #### 🎉 New features

@@ -29,6 +29,12 @@ const config: StorybookConfig = {
       builder: {},
     },
   },
+  staticDirs: [
+    {
+      from: "./static",
+      to: "/static",
+    },
+  ],
   docs: {
     autodocs: "tag",
   },

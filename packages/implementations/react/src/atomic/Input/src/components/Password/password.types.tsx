@@ -1,9 +1,9 @@
 import { InputHTMLAttributes } from "react";
 import { InputProperties } from "../../input.types";
 
-export interface Password {}
+export interface PasswordTyping {}
 
-export type PasswordProperties = Password &
+export type PasswordProperties = PasswordTyping &
   Pick<InputProperties, "divider" | "appearance" | "size">;
 
 export type _PasswordProps = PasswordProperties &

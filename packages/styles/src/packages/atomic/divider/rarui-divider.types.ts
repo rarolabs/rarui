@@ -1,5 +1,6 @@
 import { dividerBorderWidthProperties } from "./rarui-divider.css";
 import { Conditions, AddDollar } from "../../../index.types";
+import { borderColorProperties } from "../../../properties";
 
 type DividerBorderStyle = "solid" | "dashed";
 
@@ -21,4 +22,10 @@ export interface DividerSprinkle {
   thickness?:
     | AddDollar<keyof typeof dividerBorderWidthProperties>
     | Conditions<AddDollar<keyof typeof dividerBorderWidthProperties>>;
+  /**
+   * The **`color`** CSS property sets an element's color.
+   */
+  color?:
+    | AddDollar<keyof typeof borderColorProperties>
+    | Conditions<AddDollar<keyof typeof borderColorProperties>>;
 }

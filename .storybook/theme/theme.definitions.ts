@@ -3,9 +3,9 @@ import tokens from "@rarui/tokens/dist/js/tokens";
 
 export const base = {
   brandTitle: "RarUI",
+  brandImage: "./static/logo-raroui.png",
   brandTarget: "_self",
-  // fontBase:
-  //   "Inter, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', arial, sans-serif",
+  fontBase: "inter",
 };
 
 export const light = create({ ...base, base: "light" });
@@ -14,7 +14,6 @@ export const dark = create({
   ...base,
   base: "dark",
   appBg: tokens.color.dark.surface.secondary.value,
-  // barBg: tokens.color.dark.neutral.surface.value,
   barBg: "#222425",
 });
 

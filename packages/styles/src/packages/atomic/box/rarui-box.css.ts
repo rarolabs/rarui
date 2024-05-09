@@ -91,6 +91,7 @@ const defineProperties = defineRainbowProperties({
     transitionTimingFunction: true,
     textDecoration: true,
     textAlign: true,
+    opacity: true,
   },
   staticProperties: {
     backgroundColor: backgroundColorProperties,
@@ -152,4 +153,4 @@ const defineProperties = defineRainbowProperties({
   },
 });
 
-export const sprinkle = createRainbowSprinkles(defineProperties);
+export const boxSprinkle = createRainbowSprinkles(defineProperties);

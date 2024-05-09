@@ -12,6 +12,7 @@ export const ThemeDocsProvider: React.FC<any> = (props) => {
   const [isDark, setDark] = useState();
   useEffect(() => {
     channel.on(DARK_MODE_EVENT_NAME, setDark);
+
     return () => channel.removeListener(DARK_MODE_EVENT_NAME, setDark);
   }, [channel, setDark]);
 
@@ -22,7 +23,10 @@ export const ThemeRaruiProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   return (
-    <ThemeProvider theme={useDarkMode() ? "dark" : "base"}>
+    <ThemeProvider
+      theme={useDarkMode() ? "dark" : "base"}
+      // style={{ background: "red" }}
+    >
       {children}
     </ThemeProvider>
   );

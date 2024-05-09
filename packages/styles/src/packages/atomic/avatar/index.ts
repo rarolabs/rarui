@@ -1,6 +1,6 @@
-import { styles } from "./rarui-avatar.css";
+import { avatarStyles } from "./rarui-avatar.css";
 
 export const avatar = {
-  classnames: { ...styles },
+  classnames: avatarStyles,
 };
 export type { AvatarVariants } from "./rarui-avatar.types";

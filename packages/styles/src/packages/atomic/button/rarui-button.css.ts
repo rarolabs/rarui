@@ -34,6 +34,11 @@ const button = recipe({
     },
   },
   variants: {
+    full: {
+      true: {
+        width: "100%",
+      },
+    },
     appearance: {
       brand: {
         backgroundColor: varsThemeBase.colors.surface.brand,

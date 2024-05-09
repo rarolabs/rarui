@@ -1,9 +1,9 @@
 {
   "id": "button",
   "name": "Button",
-  "totalProps": 7,
+  "totalProps": 8,
   "packageName": "@rarui-react/button",
-  "version": "1.0.3",
+  "version": "1.1.0-rc.5",
   "docLink": "https://rarui.com.br/documentation/src-components/button",
   "props": [
     {
@@ -38,6 +38,11 @@
       "default": false,
       "type": "boolean",
       "title": "disabled",
+      "required": false
+    },
+    {
+      "type": "boolean",
+      "title": "full",
       "required": false
     },
     {

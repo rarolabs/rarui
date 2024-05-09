@@ -3,7 +3,7 @@
   "name": "Title",
   "totalProps": 7,
   "packageName": "@rarui-react/title",
-  "version": "1.0.1",
+  "version": "1.0.2-rc.7",
   "docLink": "https://rarui.com.br/documentation/src-components/title",
   "props": [
     {

@@ -68,6 +68,7 @@ type BoxDynamicProperties = Pick<
   | "overflowY"
   | "transitionTimingFunction"
   | "textAlign"
+  | "opacity"
 > &
   Pick<
     StandardShorthandProperties,

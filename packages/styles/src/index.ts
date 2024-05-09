@@ -8,6 +8,7 @@ export { box } from "./packages/atomic/box";
 export { button } from "./packages/atomic/button";
 export { checkbox } from "./packages/atomic/checkbox";
 export { chip } from "./packages/atomic/chip";
+export { divider } from "./packages/atomic/divider";
 export { icon } from "./packages/atomic/icon";
 export { iconButton } from "./packages/atomic/iconButton";
 export { input } from "./packages/atomic/input";
@@ -21,7 +22,7 @@ export { title } from "./packages/atomic/title";
 export { banner } from "./packages/atomic/banner";
 export { toast } from "./packages/atomic/toast";
 export { toggle } from "./packages/atomic/toggle";
-export { divider } from "./packages/atomic/divider";
+export { tooltip } from "./packages/atomic/tooltip";
 
 // types
 export type { BoxSprinkle } from "./packages/atomic/box";
@@ -46,3 +47,4 @@ export type { StatusVariants } from "./packages/atomic/status";
 export type { BannerVariants } from "./packages/atomic/banner";
 export type { ToastVariants } from "./packages/atomic/toast";
 export type { ToggleVariants } from "./packages/atomic/toggle";
+export type { TooltipVariants } from "./packages/atomic/tooltip";

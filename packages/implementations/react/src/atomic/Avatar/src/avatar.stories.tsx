@@ -8,12 +8,18 @@ import docs from "./avatar.docs.json";
 
 import { Avatar } from "./Avatar";
 
+console.log("argTypesConvert", argTypesConvert(docs));
+
 const meta = {
   title: "Atomic/Avatar",
   component: Avatar,
   argTypes: {
     ...argTypesConvert(docs),
-    children: { control: { type: "text" } },
+    // badge: { control: { disa }, type: "string" },
+    // badge: {
+    //   control: { disable: true },
+    //   // table: { type: { summary: argTypesConvert(docs)?.table?.type?.summary, detail: 'das' } },
+    // },
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Avatar>;
