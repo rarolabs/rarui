@@ -3,7 +3,7 @@
   "name": "Input",
   "totalProps": 5,
   "packageName": "@rarui-react/input",
-  "version": "1.0.1-rc.6",
+  "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/input",
   "props": [
     {

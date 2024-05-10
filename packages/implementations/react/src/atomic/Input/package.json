@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/input",
-  "version": "1.0.1-rc.6",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -31,6 +31,5 @@
   },
   "devDependencies": {
     "@rarui/webpack": "workspace:^"
-  },
-  "stableVersion": "1.0.0"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/chip",
-  "version": "1.0.2-rc.3",
+  "version": "1.0.2",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -34,6 +34,5 @@
     "@rarui-react/text": "workspace:^",
     "@rarui/icons": "workspace:^",
     "@rarui/webpack": "workspace:^"
-  },
-  "stableVersion": "1.0.1"
+  }
 }

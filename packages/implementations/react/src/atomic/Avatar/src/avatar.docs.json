@@ -3,7 +3,7 @@
   "name": "Avatar",
   "totalProps": 3,
   "packageName": "@rarui-react/avatar",
-  "version": "1.0.1-rc.3",
+  "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/avatar",
   "props": [
     {

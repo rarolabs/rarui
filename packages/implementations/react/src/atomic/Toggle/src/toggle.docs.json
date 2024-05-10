@@ -3,7 +3,7 @@
   "name": "Toggle",
   "totalProps": 5,
   "packageName": "@rarui-react/toggle",
-  "version": "1.0.1-rc.3",
+  "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/toggle",
   "props": [
     {

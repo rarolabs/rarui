@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/box",
-  "version": "1.1.0-rc.7",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -28,6 +28,5 @@
   },
   "devDependencies": {
     "@rarui/webpack": "workspace:^"
-  },
-  "stableVersion": "1.0.1"
+  }
 }
