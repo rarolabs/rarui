@@ -26,6 +26,7 @@ export { toggle } from "./packages/atomic/toggle";
 export { tooltip } from "./packages/atomic/tooltip";
 
 // composite
+export { breadcrumbs } from "./packages/atomic/breadcrumbs";
 export { dropdown } from "./packages/composite/dropdown";
 export { sidebar } from "./packages/composite/sidebar";
 export { sideNavigation } from "./packages/composite/sideNavigation";

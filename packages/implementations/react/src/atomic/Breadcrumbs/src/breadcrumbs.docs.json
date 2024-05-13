@@ -1,0 +1,58 @@
+{
+  "id": "breadcrumbs",
+  "name": "Breadcrumbs",
+  "totalProps": 4,
+  "packageName": "@rarui-react/breadcrumbs",
+  "version": "1.0.0-rc.1",
+  "docLink": "https://rarui.com.br/documentation/src-components/breadcrumbs",
+  "props": [
+    {
+      "description": "The content of the button.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": true
+    },
+    {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Id of teh element, used as key.",
+            "type": "string",
+            "title": "id"
+          },
+          "title": {
+            "$ref": "#/definitions/React.ReactNode",
+            "description": "The title of the element, commonly used as a string or a React component in case of icons.",
+            "title": "title"
+          },
+          "href": {
+            "description": "The link destination.",
+            "type": "string",
+            "title": "href"
+          }
+        },
+        "additionalProperties": false,
+        "propertyOrder": ["id", "title", "href"]
+      },
+      "title": "itens",
+      "required": true
+    },
+    {
+      "description": "Maximun number of breadcrumbs displayed.",
+      "default": 10,
+      "type": "number",
+      "title": "maxItens",
+      "required": false
+    },
+    {
+      "description": "Number of breadcrumbs displayed after the truncate indicator.",
+      "default": 10,
+      "type": "number",
+      "title": "itensAfterTruncate",
+      "required": false
+    }
+  ],
+  "subComponents": []
+}

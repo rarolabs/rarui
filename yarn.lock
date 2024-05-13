@@ -3269,6 +3269,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-react/breadcrumbs@workspace:packages/implementations/react/src/atomic/Breadcrumbs":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/breadcrumbs@workspace:packages/implementations/react/src/atomic/Breadcrumbs"
+  dependencies:
+    "@rarui-react/icon": "workspace:^"
+    "@rarui/icons": "workspace:^"
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@rarui-react/button@workspace:^, @rarui-react/button@workspace:packages/implementations/react/src/atomic/Button":
   version: 0.0.0-use.local
   resolution: "@rarui-react/button@workspace:packages/implementations/react/src/atomic/Button"

@@ -51,6 +51,9 @@
       "@rarui-react/banner": [
         "./packages/implementations/react/src/atomic/Banner/src"
       ],
+      "@rarui-react/breadcrumbs": [
+        "./packages/implementations/react/src/atomic/Breadcrumbs/src"
+      ],
       "@rarui-react/box": [
         "./packages/implementations/react/src/atomic/Box/src"
       ],
