@@ -16,12 +16,17 @@
   "subComponents": [
     {
       "name": "Progress.Circle",
-      "totalProps": 1,
+      "totalProps": 2,
       "props": [
         {
           "description": "The percentage of progress to be displayed",
           "type": "number",
           "title": "percentage",
+          "required": true
+        },
+        {
+          "enum": ["small", "large"],
+          "title": "size",
           "required": true
         }
       ]

@@ -21,13 +21,13 @@ describe("GIVEN <Progress />", () => {
       makeSut({ percentage: 50 });
       expect(
         screen.getByTestId("progress-element-bar").getAttribute("class")
-      ).not.toContain("progressBar_completed_true");
+      ).not.toContain("progress_backgroundColor-success");
     });
     it("THEN should display the correct style when complete", () => {
       makeSut({ percentage: 100 });
       expect(
         screen.getByTestId("progress-element-bar").getAttribute("class")
-      ).toContain("progressBar_completed_true");
+      ).toContain("progress_backgroundColor-success");
     });
   });
 });
