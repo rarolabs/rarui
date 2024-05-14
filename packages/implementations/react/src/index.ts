@@ -12,6 +12,7 @@ export * from "@rarui-react/icon-button";
 export * from "@rarui-react/input";
 export * from "@rarui-react/label";
 export * from "@rarui-react/link";
+export * from "@rarui-react/progress";
 export * from "@rarui-react/radio-button";
 export * from "@rarui-react/skeleton";
 export * from "@rarui-react/status";

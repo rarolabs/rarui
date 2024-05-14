@@ -78,6 +78,10 @@
       "@rarui-react/link": [
         "./packages/implementations/react/src/atomic/Link/src"
       ],
+      "@rarui-react/progress": [
+        "./packages/implementations/react/src/atomic/Progress/src"
+      ],
+
       "@rarui-react/radio-button": [
         "./packages/implementations/react/src/atomic/RadioButton/src"
       ],
