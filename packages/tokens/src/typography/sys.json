@@ -48,6 +48,9 @@
         }
       },
       "button": {
+        "xs": {
+          "value": "0.75rem"
+        },
         "s": {
           "value": "0.875rem"
         },
