@@ -69,6 +69,8 @@ type BoxDynamicProperties = Pick<
   | "transitionTimingFunction"
   | "textAlign"
   | "opacity"
+  | "backgroundPositionY"
+  | "backgroundPositionX"
 > &
   Pick<
     StandardShorthandProperties,
