@@ -20,3 +20,7 @@ export * from "@rarui-react/title";
 export * from "@rarui-react/toast";
 export * from "@rarui-react/toggle";
 export * from "@rarui-react/tooltip";
+
+// composite
+export * from "@rarui-react/sidebar";
+export * from "@rarui-react/side-navigation";

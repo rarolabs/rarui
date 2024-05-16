@@ -1,0 +1,62 @@
+{
+  "id": "sideNavigation",
+  "name": "SideNavigation",
+  "totalProps": 6,
+  "packageName": "@rarui-react/side-navigation",
+  "version": "1.0.0-rc.7",
+  "docLink": "https://rarui.com.br/documentation/src-components/side-navigation",
+  "props": [
+    {
+      "description": "The content of the sideNavigation.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": true
+    },
+    {
+      "type": "string",
+      "title": "name",
+      "required": true
+    },
+    {
+      "type": "string",
+      "title": "description",
+      "required": false
+    },
+    {
+      "description": "Componet to be displayed on start input.",
+      "type": "React.ReactNode",
+      "title": "leadingStart",
+      "required": false
+    },
+    {
+      "description": "Componet to be displayed on end input.",
+      "type": "React.ReactNode",
+      "title": "leadingEnd",
+      "required": false
+    },
+    {
+      "type": "boolean",
+      "title": "active",
+      "required": false
+    }
+  ],
+  "subComponents": [
+    {
+      "name": "SideNavigation.Item",
+      "totalProps": 2,
+      "props": [
+        {
+          "description": "The content of the modal header.",
+          "type": "React.ReactNode",
+          "title": "children",
+          "required": false
+        },
+        {
+          "type": "boolean",
+          "title": "active",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
