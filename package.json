@@ -8,7 +8,8 @@
       "packages/*",
       "packages/core/*",
       "packages/implementations/*",
-      "packages/implementations/*/*/atomic/*"
+      "packages/implementations/*/*/atomic/*",
+      "packages/implementations/*/*/composite/*"
     ]
   },
   "scripts": {
