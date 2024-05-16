@@ -6,7 +6,7 @@ RarUI Styles deprive all styles needed to build components.
 
 #### 🎉 New features
 
-- Added new `backgroundPositionX` and `backgroundPositionY` properties to the component `Box`. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `backgroundPositionX` and `backgroundPositionY` properties to the component `Box`. ([#38](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/38) by [@junior](https://git.rarolabs.com.br/junior))
 - Added new style pack for `sideNavigation` component. ([#38](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/38) by [@junior](https://git.rarolabs.com.br/junior))
 - Added new style pack for `sidebar` component. ([#38](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/38) by [@junior](https://git.rarolabs.com.br/junior))
 
