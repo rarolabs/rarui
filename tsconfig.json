@@ -107,6 +107,12 @@
       ],
       "@rarui-react/divider": [
         "./packages/implementations/react/src/atomic/Divider/src"
+      ],
+      "@rarui-react/sidebar": [
+        "./packages/implementations/react/src/composite/Sidebar/src"
+      ],
+      "@rarui-react/side-navigation": [
+        "./packages/implementations/react/src/composite/SideNavigation/src"
       ]
     }
   },
