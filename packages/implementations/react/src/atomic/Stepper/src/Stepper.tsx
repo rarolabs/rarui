@@ -1,7 +1,8 @@
 import React from "react";
 import { stepper } from "@rarui/styles";
-import { StepperProps } from "./stepper.types";
+import { StepperComponents, StepperProps } from "./stepper.types";
 import { StepperContextProvider, useStepper } from "./contexts/StepperContext";
+import { Step } from "./components/Step";
 
 const Inner: React.FC<StepperProps> = ({
   className: _className,
@@ -18,12 +19,16 @@ const Inner: React.FC<StepperProps> = ({
   );
 };
 
-const Stepper: React.FC<StepperProps> = (props) => (
+const Stepper: React.FC<StepperProps> & StepperComponents = (
+  props: StepperProps
+) => (
   <StepperContextProvider>
     <Inner {...props} />
   </StepperContextProvider>
 );
 
 Stepper.displayName = "Stepper";
+Stepper.Step = Step;
+Stepper.Step.displayName = "Stepper.Step";
 
 export { Stepper };

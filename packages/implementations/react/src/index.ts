@@ -16,6 +16,7 @@ export * from "@rarui-react/progress";
 export * from "@rarui-react/radio-button";
 export * from "@rarui-react/skeleton";
 export * from "@rarui-react/status";
+export * from "@rarui-react/stepper";
 export * from "@rarui-react/text";
 export * from "@rarui-react/title";
 export * from "@rarui-react/toast";

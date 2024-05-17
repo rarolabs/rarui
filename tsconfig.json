@@ -91,6 +91,9 @@
       "@rarui-react/status": [
         "./packages/implementations/react/src/atomic/Status/src"
       ],
+      "@rarui-react/stepper": [
+        "./packages/implementations/react/src/atomic/Stepper/src"
+      ],
       "@rarui-react/text": [
         "./packages/implementations/react/src/atomic/Text/src"
       ],
