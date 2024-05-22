@@ -1,22 +1,18 @@
 import { recipe } from "@vanilla-extract/recipes";
+import { style } from "@vanilla-extract/css";
 import { createRainbowSprinkles, defineProperties } from "rainbow-sprinkles";
-import { globalStyle } from "@vanilla-extract/css";
 import { varsThemeBase } from "../../../themes";
 
-const progress = recipe({
-  base: {
-    display: "flex",
-    alignItems: "flex-start",
-    alignSelf: "stretch",
-    backgroundColor: varsThemeBase.colors.surface.disabled,
-  },
+const progress = style({
+  display: "flex",
+  alignItems: "flex-start",
+  alignSelf: "stretch",
+  backgroundColor: varsThemeBase.colors.surface.disabled,
 });
 
-const progressBar = recipe({
-  base: {
-    height: "0.25rem",
-    borderRadius: varsThemeBase.shape.border.radius.pill,
-  },
+const progressBar = style({
+  height: "0.25rem",
+  borderRadius: varsThemeBase.shape.border.radius.pill,
 });
 
 export const progressBackgroundColorProperties = {
@@ -39,7 +35,7 @@ export const sprinkle = createRainbowSprinkles(sprinklesProperties);
  * Circle
  * -----------------------------------------------------------------------------------------------*/
 
-const container = recipe({
+const circle = recipe({
   base: {
     fontWeight: varsThemeBase.fontWeight.bold,
     fontFamily: varsThemeBase.fontFamily.inter,
@@ -60,42 +56,36 @@ const container = recipe({
   },
 });
 
-export const circle = recipe({});
+const circleProgress = recipe({
+  base: {
+    transform: "rotate(-90deg)",
+    transformOrigin: "50% 50%",
+    stroke: varsThemeBase.colors.surface.info,
+  },
+  variants: {
+    completed: {
+      true: {
+        stroke: varsThemeBase.colors.surface.success,
+      },
+    },
+  },
+});
 
-globalStyle(`${circle()} text`, {
+export const circleText = style({
   dominantBaseline: "middle",
   textAnchor: "middle",
   fill: varsThemeBase.colors.content.primary,
-  // fontSize: "1rem",
 });
 
-export const circleBg = recipe({
-  base: {
-    stroke: varsThemeBase.colors.border.disabled,
-  },
+export const circleBase = style({
+  stroke: varsThemeBase.colors.border.disabled,
 });
-
-export const circleFg = recipe({
-  base: {
-    // stroke: varsThemeBase.colors.surface.info,
-    transform: "rotate(-90deg)",
-    transformOrigin: "50% 50%",
-  },
-});
-
-const circleSprinklesProperties = defineProperties({
-  staticProperties: {
-    stroke: progressBackgroundColorProperties,
-  },
-});
-
-export const circleSprinkle = createRainbowSprinkles(circleSprinklesProperties);
 
 export const styles = {
   progress,
   progressBar,
   circle,
-  circleBg,
-  circleFg,
-  container,
+  circleBase,
+  circleProgress,
+  circleText,
 };
