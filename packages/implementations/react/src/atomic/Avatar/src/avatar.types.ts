@@ -1,6 +1,6 @@
-import { BadgeProps } from "@rarui-react/badge";
-import { AvatarVariants } from "@rarui/styles";
 import { ReactNode, HTMLAttributes } from "react";
+import { BadgeProps , BadgeProperties } from "@rarui-react/badge";
+import { AvatarVariants } from "@rarui/styles";
 
 export interface AvatarTyping {
   /**
@@ -12,7 +12,7 @@ export interface AvatarTyping {
    * Renders a Badge component along with the Avatar. The badge prop accepts an object of type Badge, representing the Badge component.
    * @TJS-type Badge
    */
-  badge?: string;
+  badge?: BadgeProperties;
 }
 
 export type AvatarProperties = AvatarTyping & AvatarVariants;

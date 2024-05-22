@@ -5,7 +5,7 @@
 ## 2024-05-22 `1.21.0`
 
 #### 🎉 New features
-
+ 
 - Added new atomic `Stepper` component. ([#39](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/39) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
 
 ## 2024-05-22 `1.20.0`

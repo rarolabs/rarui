@@ -51,7 +51,6 @@ export type { LinkVariants } from "./packages/atomic/link";
 export type { ProgressVariants } from "./packages/atomic/progress";
 export type { RadioButtonVariants } from "./packages/atomic/radioButton";
 export type { StatusVariants } from "./packages/atomic/status";
-export type { StepperVariants } from "./packages/atomic/stepper";
 export type { BannerVariants } from "./packages/atomic/banner";
 export type { ToastVariants } from "./packages/atomic/toast";
 export type { ToggleVariants } from "./packages/atomic/toggle";
@@ -63,3 +62,7 @@ export type {
   SidebarSprinkle,
 } from "./packages/composite/sidebar";
 export type { SideNavigationVariants } from "./packages/composite/sideNavigation";
+export type {
+  StepperVariants,
+  StepperStepVariants,
+} from "./packages/atomic/stepper";

@@ -1,5 +1,8 @@
-import { styles } from "./rarui-stepper.css";
+import { stepperStyles } from "./rarui-stepper.css";
 
-export const stepper = { classNames: { ...styles } };
+export const stepper = { classNames: stepperStyles };
 
-export type { StepperVariants } from "./rarui-stepper.types";
+export type {
+  StepperVariants,
+  StepperStepVariants,
+} from "./rarui-stepper.types";

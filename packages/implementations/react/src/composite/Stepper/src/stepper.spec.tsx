@@ -10,7 +10,7 @@ const makeSut = (rest: Omit<StepperProps, "children">) => {
       <Step>1</Step>
       <Step>2</Step>
       <Step>3</Step>
-    </Stepper>
+    </Stepper>,
   );
 };
 describe("GIVEN <Step />", () => {
@@ -18,13 +18,13 @@ describe("GIVEN <Step />", () => {
     it("THEN should correctly render the default direction horizontal", () => {
       makeSut({});
       expect(
-        screen.getByTestId("stepper-element").getAttribute("class")
+        screen.getByTestId("stepper-element").getAttribute("class"),
       ).toContain("direction_horizontal");
     });
     it("AND should correctly render the direction vertical", () => {
       makeSut({ direction: "vertical" });
       expect(
-        screen.getByTestId("stepper-element").getAttribute("class")
+        screen.getByTestId("stepper-element").getAttribute("class"),
       ).toContain("direction_vertical");
     });
   });

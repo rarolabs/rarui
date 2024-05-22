@@ -2,7 +2,7 @@
   "color": {
     "light": {
       "surface": {
-        "background": { "value": "{color.neutral.99}" },
+        "background": { "value": "{color.neutral.97}" },
         "brand": { "value": "{color.brand.50}" },
         "brand-hover": { "value": "rgba({color.brand.50.rgb}, .10)" },
         "brand-press": { "value": "rgba({color.brand.50.rgb}, .20)" },
@@ -48,7 +48,7 @@
       "content": {
         "brand": { "value": "{color.brand.50}" },
         "brand-alt": { "value": "{color.brand.70}" },
-        "disabled": { "value": "{color.opacity.black.20}" },
+        "disabled": { "value": "{color.opacity.black.30}" },
         "error": { "value": "{color.red.40}" },
         "info": { "value": "{color.blue.40}" },
         "invert": { "value": "{color.neutral.100}" },

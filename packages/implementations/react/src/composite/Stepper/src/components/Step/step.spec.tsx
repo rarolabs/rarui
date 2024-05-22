@@ -12,19 +12,19 @@ describe("GIVEN <Step />", () => {
     it("THEN should correctly render the appearance disabled", () => {
       makeSut({ children: 1 });
       expect(
-        screen.getByTestId("step-element-circle").getAttribute("class")
+        screen.getByTestId("step-element-circle").getAttribute("class"),
       ).toContain("appearance_disabled");
     });
     it("AND should correctly render the appearance active", () => {
       makeSut({ children: 1, active: true });
       expect(
-        screen.getByTestId("step-element-circle").getAttribute("class")
+        screen.getByTestId("step-element-circle").getAttribute("class"),
       ).toContain("appearance_active");
     });
     it("AND should correctly render the appearance done", () => {
       makeSut({ children: 1, done: true });
       expect(
-        screen.getByTestId("step-element-circle").getAttribute("class")
+        screen.getByTestId("step-element-circle").getAttribute("class"),
       ).toContain("appearance_done");
     });
     it("AND should correctly render the given title", () => {

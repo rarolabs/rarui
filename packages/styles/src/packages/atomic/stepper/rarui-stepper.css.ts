@@ -1,76 +1,27 @@
 import { recipe } from "@vanilla-extract/recipes";
-import { style } from "@vanilla-extract/css";
 import { varsThemeBase } from "../../../themes";
 
 const stepper = recipe({
   base: {
     display: "flex",
-    alignItems: "flex-start",
-    fontFamily: varsThemeBase.fontFamily.inter,
-    justifyContent: "space-between",
+    flexWrap: "wrap",
+    margin: 0,
+    padding: 0,
   },
   variants: {
+    /**
+     * Specifies the direction of the stepper. This prop accepts one of the following values: vertical or horizontal.
+     * @default horizontal
+     */
     direction: {
       horizontal: {
         width: "100%",
         flexDirection: "row",
       },
-      vertical: { flexDirection: "column", height: "100%" },
-    },
-  },
-});
-
-const stepContainer = recipe({
-  base: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    width: "100%",
-    ":after": {
-      content: "",
-      backgroundColor: varsThemeBase.colors.border.divider,
-    },
-    ":before": {
-      content: "",
-      backgroundColor: varsThemeBase.colors.border.divider,
-    },
-    selectors: {
-      "div:first-child > &:before": {
-        backgroundColor: "unset",
-      },
-      "div:last-child > &:after": {
-        backgroundColor: "unset",
-      },
-    },
-  },
-
-  variants: {
-    direction: {
-      horizontal: {
-        ":after": {
-          height: "1px",
-          marginLeft: "0.5rem",
-          flexGrow: 1,
-        },
-        ":before": {
-          marginRight: "0.5rem",
-          height: "1px",
-          flexGrow: 1,
-        },
-      },
       vertical: {
         flexDirection: "column",
-        ":after": {
-          marginTop: "0.5rem",
-          width: "1px",
-          height: "1px",
-          flexGrow: 1,
-        },
-        ":before": {
-          width: "1px",
-          marginBottom: "0.5rem",
-          flexGrow: 1,
-        },
+        height: "100%",
+        alignItems: "flex-start",
       },
     },
   },
@@ -79,90 +30,76 @@ const stepContainer = recipe({
 const step = recipe({
   base: {
     display: "flex",
-    flex: "1 1 100%",
-  },
-  variants: {
-    direction: {
-      horizontal: { flexDirection: "column", alignItems: "center" },
-      vertical: {
-        flexDirection: "row",
-        gap: varsThemeBase.spacing.xs,
-        // alignItems: "stretch",
-        height: "100%",
-      },
-    },
-  },
-});
-
-const textContainer = recipe({
-  base: {
-    display: "flex",
-    flexDirection: "column",
-    gap: varsThemeBase.spacing["4xs"],
-  },
-  variants: {
-    direction: {
-      horizontal: {
-        padding: varsThemeBase.spacing["4xs"],
-        alignItems: "center",
-      },
-      vertical: {
-        flex: "1 0 auto",
-        justifyContent: "center",
-        paddingLeft: 0,
-      },
-    },
-  },
-});
-
-const title = recipe({
-  base: {
-    fontSize: varsThemeBase.fontSize.body.xs,
-    fontWeight: varsThemeBase.fontWeight.medium,
-    marginTop: "0.5rem",
-  },
-  variants: {
-    appearance: {
-      active: {
-        color: varsThemeBase.colors.content.primary,
-      },
-      disabled: {
-        color: varsThemeBase.colors.content.secondary,
-      },
-      done: {
-        color: varsThemeBase.colors.content.primary,
-      },
-    },
-  },
-});
-
-const description = style({
-  color: varsThemeBase.colors.content.secondary,
-  fontSize: varsThemeBase.fontSize.body.xxs,
-});
-
-const circle = recipe({
-  base: {
-    display: "flex",
-    alignItems: "center",
+    flex: 1,
+    placeItems: "center",
     justifyContent: "center",
-    borderRadius: "50%",
+    position: "relative",
+    gap: varsThemeBase.spacing["2xs"],
+    selectors: {
+      "&:not(:last-child):after": {
+        content: "",
+        position: "absolute",
+        backgroundColor: varsThemeBase.colors.border.divider,
+        borderRadius: varsThemeBase.shape.border.radius.pill,
+      },
+    },
+  },
+  variants: {
+    direction: {
+      /**
+       * Specifies the direction of the stepper. This prop accepts one of the following values: vertical or horizontal.
+       * @default horizontal
+       */
+      horizontal: {
+        flexDirection: "column",
+        ":after": {
+          top: "20px",
+          height: "1px",
+          width: "calc(100% - 60px)",
+          left: "calc(50% + 30px)",
+        },
+      },
+      vertical: {
+        ":after": {
+          width: "1px",
+          height: "calc(100% - 60px)",
+          top: "calc(50% + 30px)",
+          left: "18px",
+        },
+      },
+    },
+  },
+});
+
+const stepCircle = recipe({
+  base: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     width: "2.5rem",
     height: "2.5rem",
+    borderRadius: "50%",
+    backgroundColor: varsThemeBase.colors.surface.disabled,
+    color: varsThemeBase.colors.content.disabled,
+    fontFamily: varsThemeBase.fontFamily.inter,
     fontSize: varsThemeBase.fontSize.body.s,
-    fontWeight: varsThemeBase.fontWeight.semiBold,
+    fontWeight: varsThemeBase.fontWeight.bold,
   },
   variants: {
-    appearance: {
-      active: {
+    /**
+     * Indicates whether the step is currently active. An active step is typically highlighted to show that it is the current step.
+     */
+    active: {
+      true: {
         backgroundColor: varsThemeBase.colors.surface["brand-subdued"],
         color: varsThemeBase.colors.content.brand,
       },
-      disabled: {
-        backgroundColor: varsThemeBase.colors.surface.disabled,
-        color: varsThemeBase.colors.content.disabled,
-      },
-      done: {
+    },
+    /**
+     * Indicates whether the step has been completed. A completed step is usually marked with a checkmark or other indicator.
+     */
+    done: {
+      true: {
         backgroundColor: varsThemeBase.colors.surface.success,
         color: varsThemeBase.colors.content["on-success"],
       },
@@ -170,12 +107,8 @@ const circle = recipe({
   },
 });
 
-export const styles = {
-  circle,
+export const stepperStyles = {
   stepper,
-  textContainer,
   step,
-  title,
-  description,
-  stepContainer,
+  stepCircle,
 };
