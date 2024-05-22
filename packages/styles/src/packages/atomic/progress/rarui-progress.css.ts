@@ -3,6 +3,10 @@ import { style } from "@vanilla-extract/css";
 import { createRainbowSprinkles, defineProperties } from "rainbow-sprinkles";
 import { varsThemeBase } from "../../../themes";
 
+/* -------------------------------------------------------------------------------------------------
+ * Styles
+ * -----------------------------------------------------------------------------------------------*/
+
 const progress = style({
   display: "flex",
   alignItems: "flex-start",
@@ -15,26 +19,6 @@ const progressBar = style({
   borderRadius: varsThemeBase.shape.border.radius.pill,
 });
 
-export const progressBackgroundColorProperties = {
-  info: varsThemeBase.colors.surface.info,
-  success: varsThemeBase.colors.surface.success,
-};
-
-const sprinklesProperties = defineProperties({
-  dynamicProperties: {
-    width: true,
-  },
-  staticProperties: {
-    backgroundColor: progressBackgroundColorProperties,
-  },
-});
-
-export const sprinkle = createRainbowSprinkles(sprinklesProperties);
-
-/* -------------------------------------------------------------------------------------------------
- * Circle
- * -----------------------------------------------------------------------------------------------*/
-
 const circle = recipe({
   base: {
     fontWeight: varsThemeBase.fontWeight.bold,
@@ -43,6 +27,11 @@ const circle = recipe({
     lineHeight: varsThemeBase.lineHeight.heading.l,
   },
   variants: {
+    /**
+     * Specifies the size of the progress indicator.
+     * This prop accepts one of the following values: "large" or "small".
+     * @default large
+     */
     size: {
       large: {
         width: "8.75rem",
@@ -81,7 +70,7 @@ export const circleBase = style({
   stroke: varsThemeBase.colors.border.disabled,
 });
 
-export const styles = {
+export const progressStyles = {
   progress,
   progressBar,
   circle,
@@ -89,3 +78,23 @@ export const styles = {
   circleProgress,
   circleText,
 };
+
+/* -------------------------------------------------------------------------------------------------
+ * Sprinkles
+ * -----------------------------------------------------------------------------------------------*/
+
+export const progressBackgroundColorProperties = {
+  info: varsThemeBase.colors.surface.info,
+  success: varsThemeBase.colors.surface.success,
+};
+
+const sprinklesProperties = defineProperties({
+  dynamicProperties: {
+    width: true,
+  },
+  staticProperties: {
+    backgroundColor: progressBackgroundColorProperties,
+  },
+});
+
+export const progressSprinkle = createRainbowSprinkles(sprinklesProperties);

@@ -10,16 +10,17 @@ const Progress: React.FC<ProgressProps> & ProgressComponents = ({
   ...props
 }: ProgressProps) => {
   const dataTestid = (props as { "data-testid": string })?.["data-testid"];
-
   const completed = percentage >= 100;
+
   const { className, style, otherProps } = progress.sprinkle({
     width: `${percentage}%`,
-    backgroundColor: completed ? "$success" : "$info"
+    backgroundColor: completed ? "$success" : "$info",
   });
+
   return (
-    <div {...props} className={progress.classnames.progress()}>
+    <div {...props} className={progress.classnames.progress}>
       <div
-        className={[progress.classnames.progressBar(), className].join(" ")}
+        className={[progress.classnames.progressBar, className].join(" ")}
         style={style}
         {...otherProps}
         data-testid={dataTestid ? `${dataTestid}-bar` : ""}

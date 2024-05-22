@@ -47,10 +47,7 @@ export type { IconButtonVariants } from "./packages/atomic/iconButton";
 export type { InputVariants } from "./packages/atomic/input";
 export type { LabelVariants } from "./packages/atomic/label";
 export type { LinkVariants } from "./packages/atomic/link";
-export type {
-  ProgressVariants,
-  ProgressCircleVariants,
-} from "./packages/atomic/progress";
+export type { ProgressVariants } from "./packages/atomic/progress";
 export type { RadioButtonVariants } from "./packages/atomic/radioButton";
 export type { StatusVariants } from "./packages/atomic/status";
 export type { BannerVariants } from "./packages/atomic/banner";

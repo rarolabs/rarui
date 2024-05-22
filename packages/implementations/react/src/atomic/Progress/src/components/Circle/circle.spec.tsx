@@ -10,7 +10,7 @@ const makeSut = ({ percentage, size }: CircleProps) => {
       percentage={percentage}
       size={size}
       data-testid="progress-element"
-    />
+    />,
   );
 };
 describe("GIVEN <Progress.Cicle />", () => {
@@ -22,14 +22,14 @@ describe("GIVEN <Progress.Cicle />", () => {
     it("THEN should display the corrected style when not complete", () => {
       makeSut({ percentage: 50 });
       expect(
-        screen.getByTestId("progress-element-bar").getAttribute("class")
-      ).not.toContain("progress_stroke-success");
+        screen.getByTestId("progress-element-bar").getAttribute("class"),
+      ).not.toContain("completed_true");
     });
     it("THEN should display the corrected style when complete", () => {
       makeSut({ percentage: 100 });
       expect(
-        screen.getByTestId("progress-element-bar").getAttribute("class")
-      ).toContain("progress_stroke-success");
+        screen.getByTestId("progress-element-bar").getAttribute("class"),
+      ).toContain("completed_true");
     });
   });
 
@@ -37,13 +37,13 @@ describe("GIVEN <Progress.Cicle />", () => {
     it("THEN should correctly render the default size large", () => {
       makeSut({ percentage: 50 });
       expect(
-        screen.getByTestId("progress-element").getAttribute("class")
+        screen.getByTestId("progress-element").getAttribute("class"),
       ).toContain("size_large");
     });
     it("THEN should correctly render the size small", () => {
       makeSut({ percentage: 50, size: "small" });
       expect(
-        screen.getByTestId("progress-element").getAttribute("class")
+        screen.getByTestId("progress-element").getAttribute("class"),
       ).toContain("size_small");
     });
   });

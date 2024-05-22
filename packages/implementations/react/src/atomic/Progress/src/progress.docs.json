@@ -2,12 +2,12 @@
   "id": "progress",
   "name": "Progress",
   "totalProps": 1,
-  "packageName": "@rarui-react/progress",
-  "version": "1.0.0",
+  "packageName": "@rarui-react/progress-bar",
+  "version": "0.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/progress",
   "props": [
     {
-      "description": "The percentage of progress to be displayed",
+      "description": "The progress percentage, represented as a number between 0 and 100.\nThis indicates the completion level of the process.",
       "type": "number",
       "title": "percentage",
       "required": true
@@ -19,15 +19,18 @@
       "totalProps": 2,
       "props": [
         {
-          "description": "The percentage of progress to be displayed",
+          "description": "The progress percentage, represented as a number between 0 and 100.\nThis indicates the completion level of the process.",
           "type": "number",
           "title": "percentage",
           "required": true
         },
         {
-          "enum": ["small", "large"],
+          "description": "Specifies the size of the progress indicator.\nThis prop accepts one of the following values: \"large\" or \"small\".",
+          "default": "large",
+          "enum": ["large", "small"],
+          "type": "string",
           "title": "size",
-          "required": true
+          "required": false
         }
       ]
     }

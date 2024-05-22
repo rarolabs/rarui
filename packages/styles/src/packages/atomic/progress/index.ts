@@ -1,11 +1,8 @@
-import { sprinkle, styles } from "./rarui-progress.css";
+import { progressSprinkle, progressStyles } from "./rarui-progress.css";
 
 export const progress = {
-  classnames: {
-    ...styles,
-  },
-  sprinkle,
+  classnames: progressStyles,
+  sprinkle: progressSprinkle,
 };
 
 export type { ProgressVariants } from "./rarui-progress.types";
-export type { ProgressCircleVariants } from "./rarui-progress.types";
