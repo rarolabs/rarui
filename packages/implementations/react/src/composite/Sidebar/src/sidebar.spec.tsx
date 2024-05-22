@@ -8,7 +8,7 @@ const makeSut = (rest: SidebarProps) => {
   render(<Sidebar {...rest} data-testid="sidebar-element" />);
 };
 
-describe.skip("GIVEN <SideNavigation />", () => {
+describe("GIVEN <Sidebar />", () => {
   describe("WHEN rendered", () => {
     it("THEN should correctly render the submitted content", () => {
       makeSut({ children: <div>My content</div>, open: true });
@@ -22,7 +22,7 @@ describe.skip("GIVEN <SideNavigation />", () => {
       expect(screen.getByTestId("overlay-sidebar-button")).toBeTruthy();
       expect(
         screen.getByTestId("sidebar-element").getAttribute("class"),
-      ).toContain("isVisible");
+      ).toContain("open_true");
     });
 
     it("THEN should not render if open is false", () => {

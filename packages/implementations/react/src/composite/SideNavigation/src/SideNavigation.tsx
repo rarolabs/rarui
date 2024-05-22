@@ -64,9 +64,6 @@ const SideNavigation = forwardRef(
     }, [innerRef]);
 
     const ArrowIcon = open ? ArrowUpIcon : ArrowDownIcon;
-
-    console.log(open);
-
     return (
       <>
         <As
@@ -78,7 +75,7 @@ const SideNavigation = forwardRef(
           disabled={disabled}
           ref={innerRef}
         >
-          <Box display="flex" alignItems="center" gap="$3xs">
+          <Box display="flex" alignItems="center" gap="$3xs" zIndex="$100">
             {leadingStart && (
               <Icon source={leadingStart} color="$currentColor" />
             )}
@@ -102,10 +99,12 @@ const SideNavigation = forwardRef(
               )}
             </Box>
           </Box>
-          <Icon
-            source={leadingEnd || <ArrowIcon size="medium" />}
-            color="$currentColor"
-          />
+          <Box zIndex="$100">
+            <Icon
+              source={leadingEnd || <ArrowIcon size="medium" />}
+              color="$currentColor"
+            />
+          </Box>
         </As>
         <div className={sideNavigation.classnames.content({ open })}>
           {children}
