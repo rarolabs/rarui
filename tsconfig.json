@@ -91,6 +91,7 @@
       "@rarui-react/status": [
         "./packages/implementations/react/src/atomic/Status/src"
       ],
+
       "@rarui-react/text": [
         "./packages/implementations/react/src/atomic/Text/src"
       ],
@@ -117,6 +118,9 @@
       ],
       "@rarui-react/side-navigation": [
         "./packages/implementations/react/src/composite/SideNavigation/src"
+      ],
+      "@rarui-react/stepper": [
+        "./packages/implementations/react/src/composite/Stepper/src"
       ]
     }
   },

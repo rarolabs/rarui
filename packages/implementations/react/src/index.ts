@@ -25,3 +25,4 @@ export * from "@rarui-react/tooltip";
 // composite
 export * from "@rarui-react/sidebar";
 export * from "@rarui-react/side-navigation";
+export * from "@rarui-react/stepper";

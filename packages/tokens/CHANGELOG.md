@@ -2,6 +2,12 @@
 
 Our design tokens are the foundations of Design System.
 
+## 2024-05-22 `1.1.1`
+
+#### 🐛 Bug fixes
+
+- Adjusted the color scale of the `background` and `disabled` tokens of the light theme. ([#39](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/39) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-05-15 `1.1.0`
 
 #### 🎉 New features

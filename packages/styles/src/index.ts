@@ -18,6 +18,7 @@ export { progress } from "./packages/atomic/progress";
 export { radioButton } from "./packages/atomic/radioButton";
 export { skeleton } from "./packages/atomic/skeleton";
 export { status } from "./packages/atomic/status";
+export { stepper } from "./packages/atomic/stepper";
 export { text } from "./packages/atomic/text";
 export { title } from "./packages/atomic/title";
 export { banner } from "./packages/atomic/banner";
@@ -61,3 +62,7 @@ export type {
   SidebarSprinkle,
 } from "./packages/composite/sidebar";
 export type { SideNavigationVariants } from "./packages/composite/sideNavigation";
+export type {
+  StepperVariants,
+  StepperStepVariants,
+} from "./packages/atomic/stepper";

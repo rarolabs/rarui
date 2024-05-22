@@ -1,0 +1,10 @@
+releases:
+  "@rarui-react/components": minor
+  "@rarui-react/stepper": major
+  "@rarui/styles": minor
+  "@rarui/tokens": patch
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui-react/avatar"
+  - "@rarui-react/badge"
