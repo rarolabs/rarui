@@ -3,6 +3,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { argTypesConvert } from ".storybook/utils";
 import { CheckIcon, SentimentSatisfiedOutlinedIcon } from "@rarui/icons";
 import { Icon } from "@rarui-react/icon";
+import { Box } from "@rarui-react/box";
 
 import { Stepper } from "./Stepper";
 import { Step } from "./components";
@@ -22,9 +23,9 @@ const meta: Meta = {
 export default meta;
 
 const containerDecorator = (StoryComponent: React.FC) => (
-  <div style={{ height: "400px" }}>
+  <Box height="400px">
     <StoryComponent />
-  </div>
+  </Box>
 );
 
 type Story = StoryObj<typeof Stepper>;

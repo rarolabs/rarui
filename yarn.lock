@@ -3468,10 +3468,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui-react/stepper@workspace:packages/implementations/react/src/atomic/Stepper":
+"@rarui-react/stepper@workspace:packages/implementations/react/src/composite/Stepper":
   version: 0.0.0-use.local
-  resolution: "@rarui-react/stepper@workspace:packages/implementations/react/src/atomic/Stepper"
+  resolution: "@rarui-react/stepper@workspace:packages/implementations/react/src/composite/Stepper"
   dependencies:
+    "@rarui-react/box": "workspace:^"
+    "@rarui-react/icon": "workspace:^"
+    "@rarui-react/text": "workspace:^"
+    "@rarui/icons": "workspace:^"
     "@rarui/webpack": "workspace:^"
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
