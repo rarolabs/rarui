@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-05-22 `1.19.0`
+
+#### 🎉 New features
+
+- Added new style pack for `progress` component. ([#37](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/37) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-05-15 `1.18.0`
 
 #### 🎉 New features

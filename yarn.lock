@@ -3390,6 +3390,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-react/progress-bar@workspace:packages/implementations/react/src/atomic/Progress":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/progress-bar@workspace:packages/implementations/react/src/atomic/Progress"
+  dependencies:
+    "@rarui-react/text": "workspace:^"
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@rarui-react/radio-button@workspace:packages/implementations/react/src/atomic/RadioButton":
   version: 0.0.0-use.local
   resolution: "@rarui-react/radio-button@workspace:packages/implementations/react/src/atomic/RadioButton"

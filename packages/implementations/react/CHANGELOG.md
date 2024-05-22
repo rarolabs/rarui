@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-05-22 `1.20.0`
+
+#### 🎉 New features
+
+- Added new atomic `Progress` component. ([#37](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/37) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-05-15 `1.19.0`
 
 #### 🎉 New features
