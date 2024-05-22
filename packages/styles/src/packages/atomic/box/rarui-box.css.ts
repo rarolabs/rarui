@@ -67,6 +67,8 @@ const defineProperties = defineRainbowProperties({
     transitionProperty: true,
     backgroundImage: true,
     backgroundPosition: true,
+    backgroundPositionX: true,
+    backgroundPositionY: true,
     backgroundBlendMode: true,
     backgroundRepeat: true,
     backgroundSize: true,

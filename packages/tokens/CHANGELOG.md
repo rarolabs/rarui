@@ -2,6 +2,13 @@
 
 Our design tokens are the foundations of Design System.
 
+## 2024-05-15 `1.1.0`
+
+#### 🎉 New features
+
+- Added new token to font size `xs` size on buttons. ([#38](https://git.rarolabs.com.br/frontend/rarui/pull/38) by [@juniorconquista](https://github.com/juniorconquista))
+- Added new border token `focus-ring`. ([#38](https://git.rarolabs.com.br/frontend/rarui/pull/38) by [@juniorconquista](https://github.com/juniorconquista))
+
 ## 2024-04-25 `1.0.4`
 
 #### 💡 Others

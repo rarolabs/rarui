@@ -107,6 +107,9 @@ const darkTheme = {
       "5": elevation.bottom[5].value,
     },
   },
+  utils: {
+    "focus-ring": colors.border["focus-ring"].value,
+  },
 };
 
 export const variables = createTheme(vars, darkTheme);

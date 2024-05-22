@@ -104,6 +104,7 @@ export const vars = createGlobalThemeContract(
         xl: "",
       },
       button: {
+        xs: "",
         s: "",
         m: "",
         l: "",
@@ -222,6 +223,9 @@ export const vars = createGlobalThemeContract(
       md: "",
       lg: "",
       xl: "",
+    },
+    utils: {
+      "focus-ring": "",
     },
   },
   (_value, path) => `rarui-${path.join("-")}`,

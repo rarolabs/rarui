@@ -24,7 +24,11 @@ export { toast } from "./packages/atomic/toast";
 export { toggle } from "./packages/atomic/toggle";
 export { tooltip } from "./packages/atomic/tooltip";
 
-// types
+// composite
+export { sidebar } from "./packages/composite/sidebar";
+export { sideNavigation } from "./packages/composite/sideNavigation";
+
+// types atomic
 export type { BoxSprinkle } from "./packages/atomic/box";
 export type { ChipSprinkle } from "./packages/atomic/chip";
 export type { DividerSprinkle } from "./packages/atomic/divider";
@@ -48,3 +52,10 @@ export type { BannerVariants } from "./packages/atomic/banner";
 export type { ToastVariants } from "./packages/atomic/toast";
 export type { ToggleVariants } from "./packages/atomic/toggle";
 export type { TooltipVariants } from "./packages/atomic/tooltip";
+
+// types composite
+export type {
+  SidebarVariants,
+  SidebarSprinkle,
+} from "./packages/composite/sidebar";
+export type { SideNavigationVariants } from "./packages/composite/sideNavigation";

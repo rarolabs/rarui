@@ -1,6 +1,6 @@
 {
   "name": "@rarui/styles",
-  "version": "1.17.0",
+  "version": "1.18.0-rc.6",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -14,7 +14,7 @@
     "clean": "rm -rf dist",
     "version": "yarn version"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@vanilla-extract/recipes": "^0.5.2"
   },
   "homepage": "https://git.rarolabs.com.br/frontend/rarui",
@@ -30,11 +30,11 @@
     "@rarui/webpack": "workspace:^",
     "@vanilla-extract/css": "^1.14.1",
     "@vanilla-extract/dynamic": "^2.1.0",
-    "@vanilla-extract/recipes": "^0.5.2",
     "@vanilla-extract/sprinkles": "^1.6.1",
     "rainbow-sprinkles": "^0.17.1",
     "webpack": "^5.90.3",
     "webpack-merge": "^5.10.0",
     "webpack-shell-plugin-next": "^2.3.1"
-  }
+  },
+  "stableVersion": "1.17.0"
 }

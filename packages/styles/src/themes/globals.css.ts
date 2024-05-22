@@ -114,6 +114,7 @@ export const globalTheme = {
       xl: fontSize.heading.xl.value,
     },
     button: {
+      xs: fontSize.button.xs.value,
       s: fontSize.button.s.value,
       m: fontSize.button.m.value,
       l: fontSize.button.l.value,
@@ -232,6 +233,9 @@ export const globalTheme = {
     md: breakpoint.md.value,
     lg: breakpoint.lg.value,
     xl: breakpoint.xl.value,
+  },
+  utils: {
+    "focus-ring": colors.border["focus-ring"].value,
   },
 };
 

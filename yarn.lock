@@ -3402,6 +3402,36 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-react/side-navigation@workspace:packages/implementations/react/src/composite/SideNavigation":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/side-navigation@workspace:packages/implementations/react/src/composite/SideNavigation"
+  dependencies:
+    "@floating-ui/react": "npm:^0.26.13"
+    "@rarui-react/box": "workspace:^"
+    "@rarui-react/icon": "workspace:^"
+    "@rarui/icons": "workspace:^"
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@rarui-react/sidebar@workspace:packages/implementations/react/src/composite/Sidebar":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/sidebar@workspace:packages/implementations/react/src/composite/Sidebar"
+  dependencies:
+    "@floating-ui/react": "npm:^0.26.13"
+    "@rarui-react/box": "workspace:^"
+    "@rarui-react/button": "workspace:^"
+    "@rarui-react/text": "workspace:^"
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@rarui-react/skeleton@workspace:packages/implementations/react/src/atomic/Skeleton":
   version: 0.0.0-use.local
   resolution: "@rarui-react/skeleton@workspace:packages/implementations/react/src/atomic/Skeleton"
@@ -3653,8 +3683,6 @@ __metadata:
     webpack: "npm:^5.90.3"
     webpack-merge: "npm:^5.10.0"
     webpack-shell-plugin-next: "npm:^2.3.1"
-  peerDependencies:
-    "@vanilla-extract/recipes": ^0.5.2
   languageName: unknown
   linkType: soft
 
