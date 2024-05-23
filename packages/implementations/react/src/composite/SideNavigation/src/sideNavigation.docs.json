@@ -43,17 +43,24 @@
   "subComponents": [
     {
       "name": "SideNavigation.Item",
-      "totalProps": 2,
+      "totalProps": 3,
       "props": [
         {
-          "description": "The content of the modal header.",
+          "description": "The name of the dropdown item. This is typically the text that is displayed for the item.",
+          "type": "string",
+          "title": "name",
+          "required": false
+        },
+        {
+          "description": "The content of the dropdown item. This can include text, icons, or other React elements.",
           "type": "React.ReactNode",
           "title": "children",
           "required": false
         },
         {
-          "type": "boolean",
-          "title": "active",
+          "description": "An icon to be displayed alongside the dropdown item. This can be used to provide a visual representation of the item.",
+          "type": "React.ReactNode",
+          "title": "icon",
           "required": false
         }
       ]

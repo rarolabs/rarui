@@ -23,10 +23,7 @@ export const ThemeRaruiProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   return (
-    <ThemeProvider
-      theme={useDarkMode() ? "dark" : "base"}
-      // style={{ background: "red" }}
-    >
+    <ThemeProvider theme={useDarkMode() ? "dark" : "base"}>
       {children}
     </ThemeProvider>
   );

@@ -2,11 +2,17 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-05-23 `1.22.0`
+
+#### 🎉 New features
+
+- Added new composite `Dropdown` component. ([#41](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/41) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-05-22 `1.21.0`
 
 #### 🎉 New features
- 
-- Added new atomic `Stepper` component. ([#39](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/39) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
+- Added new composite `Stepper` component. ([#39](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/39) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
 
 ## 2024-05-22 `1.20.0`
 

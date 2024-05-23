@@ -6,6 +6,12 @@ RarUI Styles deprive all styles needed to build components.
 
 #### 🎉 New features
 
+- Added new style pack for `Dropdown` component. ([#39](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/39) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
+## 2024-05-22 `1.20.0`
+
+#### 🎉 New features
+
 - Added new style pack for `Stepper` component. ([#39](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/39) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
 
 ## 2024-05-22 `1.19.0`
