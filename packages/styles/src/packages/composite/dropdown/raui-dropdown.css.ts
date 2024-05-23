@@ -27,6 +27,7 @@ const dropdown = recipe({
     boxShadow: varsThemeBase.elevation.bottom[2],
     borderWidth: varsThemeBase.shape.border.width[1],
     borderColor: varsThemeBase.colors.border.subdued,
+    backgroundColor: varsThemeBase.colors.surface.primary,
   },
   variants: {
     /**
