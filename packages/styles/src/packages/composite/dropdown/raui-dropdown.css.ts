@@ -29,16 +29,10 @@ const dropdown = recipe({
     borderColor: varsThemeBase.colors.border.subdued,
   },
   variants: {
-    inverted: {
-      true: {
-        backgroundColor: varsThemeBase.colors.surface.invert,
-        color: varsThemeBase.colors.surface.invert,
-      },
-      false: {
-        backgroundColor: varsThemeBase.colors.surface.primary,
-        color: varsThemeBase.colors.surface.primary,
-      },
-    },
+    /**
+     * Specifies the padding inside the dropdown menu. This prop accepts one of the following values: "base" or "none".
+     * @default base
+     */
     padding: {
       base: {
         padding: varsThemeBase.spacing["3xs"],
