@@ -43,17 +43,23 @@
   "subComponents": [
     {
       "name": "SideNavigation.Item",
-      "totalProps": 2,
+      "totalProps": 3,
       "props": [
         {
-          "description": "The content of the modal header.",
+          "type": "string",
+          "title": "name",
+          "required": false
+        },
+        {
+          "description": "The content of the item.",
           "type": "React.ReactNode",
           "title": "children",
           "required": false
         },
         {
-          "type": "boolean",
-          "title": "active",
+          "description": "The SVG contents to display in the Icon.",
+          "type": "React.ReactNode",
+          "title": "icon",
           "required": false
         }
       ]

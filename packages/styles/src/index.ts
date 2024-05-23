@@ -18,7 +18,6 @@ export { progress } from "./packages/atomic/progress";
 export { radioButton } from "./packages/atomic/radioButton";
 export { skeleton } from "./packages/atomic/skeleton";
 export { status } from "./packages/atomic/status";
-export { stepper } from "./packages/atomic/stepper";
 export { text } from "./packages/atomic/text";
 export { title } from "./packages/atomic/title";
 export { banner } from "./packages/atomic/banner";
@@ -27,8 +26,10 @@ export { toggle } from "./packages/atomic/toggle";
 export { tooltip } from "./packages/atomic/tooltip";
 
 // composite
+export { dropdown } from "./packages/composite/dropdown";
 export { sidebar } from "./packages/composite/sidebar";
 export { sideNavigation } from "./packages/composite/sideNavigation";
+export { stepper } from "./packages/composite/stepper";
 
 // types atomic
 export type { BoxSprinkle } from "./packages/atomic/box";
@@ -58,6 +59,10 @@ export type { TooltipVariants } from "./packages/atomic/tooltip";
 
 // types composite
 export type {
+  DropdownVariants,
+  DropdownSprinkle,
+} from "./packages/composite/dropdown";
+export type {
   SidebarVariants,
   SidebarSprinkle,
 } from "./packages/composite/sidebar";
@@ -65,4 +70,4 @@ export type { SideNavigationVariants } from "./packages/composite/sideNavigation
 export type {
   StepperVariants,
   StepperStepVariants,
-} from "./packages/atomic/stepper";
+} from "./packages/composite/stepper";
