@@ -1,8 +1,0 @@
-releases:
-  "@rarui-react/components": minor
-  "@rarui-react/dropdown": major
-  "@rarui/styles": minor
-
-declined:
-  - "@rarui/design-system"
-  - "@rarui-react/side-navigation"
