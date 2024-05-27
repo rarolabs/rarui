@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/breadcrumb",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -34,6 +34,5 @@
   },
   "devDependencies": {
     "@rarui/webpack": "workspace:^"
-  },
-  "stableVersion": "0.0.0"
+  }
 }
