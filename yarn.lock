@@ -3273,7 +3273,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@rarui-react/breadcrumb@workspace:packages/implementations/react/src/composite/Breadcrumb"
   dependencies:
+    "@rarui-react/box": "workspace:^"
+    "@rarui-react/dropdown": "workspace:^"
     "@rarui-react/icon": "workspace:^"
+    "@rarui-react/icon-button": "workspace:^"
     "@rarui/icons": "workspace:^"
     "@rarui/webpack": "workspace:^"
   peerDependencies:
@@ -3343,7 +3346,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui-react/dropdown@workspace:packages/implementations/react/src/composite/Dropdown":
+"@rarui-react/dropdown@workspace:^, @rarui-react/dropdown@workspace:packages/implementations/react/src/composite/Dropdown":
   version: 0.0.0-use.local
   resolution: "@rarui-react/dropdown@workspace:packages/implementations/react/src/composite/Dropdown"
   dependencies:

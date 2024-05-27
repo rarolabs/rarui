@@ -14,7 +14,10 @@
     "version": "yarn version"
   },
   "dependencies": {
+    "@rarui-react/box": "workspace:^",
+    "@rarui-react/dropdown": "workspace:^",
     "@rarui-react/icon": "workspace:^",
+    "@rarui-react/icon-button": "workspace:^",
     "@rarui/icons": "workspace:^"
   },
   "peerDependencies": {

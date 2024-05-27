@@ -66,7 +66,6 @@ const Breadcrumb: React.FC<BreadcrumbProps> & BreadcrumbComponents = ({
           alignItems="center"
           color={index === lastIndex ? "$brand" : "$secondary"}
         >
-          {crypto.randomUUID()}
           {visibleItem}
           {index !== lastIndex && <Separator />}
         </Box>
