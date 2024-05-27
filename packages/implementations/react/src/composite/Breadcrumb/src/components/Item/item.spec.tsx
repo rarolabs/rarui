@@ -10,7 +10,7 @@ const makeSut = (props: ItemProps) => {
   render(<Item {...props} data-testid="body-element" />);
 };
 
-describe("GIVEN <Dropdown.Item />", () => {
+describe("GIVEN <Breadcrumb.Item />", () => {
   beforeAll(() => {
     jest.spyOn(console, "error").mockImplementation(mockedConsoleLog);
   });
