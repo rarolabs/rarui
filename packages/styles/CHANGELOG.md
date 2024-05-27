@@ -6,7 +6,7 @@ RarUI Styles deprive all styles needed to build components.
 
 #### 🎉 New features
 
-- Added new style pack for `breadcrumbs` component. ([#33](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/33) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+- Added new style pack for `breadcrumb` component. ([#33](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/33) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
 
 ## 2024-05-22 `1.21.0`
 

@@ -26,7 +26,7 @@ export { toggle } from "./packages/atomic/toggle";
 export { tooltip } from "./packages/atomic/tooltip";
 
 // composite
-export { breadcrumbs } from "./packages/atomic/breadcrumbs";
+export { breadcrumb } from "./packages/composite/breadcrumb";
 export { dropdown } from "./packages/composite/dropdown";
 export { sidebar } from "./packages/composite/sidebar";
 export { sideNavigation } from "./packages/composite/sideNavigation";
@@ -59,6 +59,7 @@ export type { ToggleVariants } from "./packages/atomic/toggle";
 export type { TooltipVariants } from "./packages/atomic/tooltip";
 
 // types composite
+export type { BreadcrumbVariants } from "./packages/composite/breadcrumb";
 export type {
   DropdownVariants,
   DropdownSprinkle,

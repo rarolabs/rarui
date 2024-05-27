@@ -33,6 +33,10 @@ const iconButton = recipe({
       color: varsThemeBase.colors.content.disabled,
       cursor: "not-allowed",
     },
+    ":focus-within": {
+      outline: "none",
+      boxShadow: varsThemeBase.utils["focus-ring"],
+    },
   },
   variants: {
     appearance: {
@@ -75,9 +79,10 @@ const iconButton = recipe({
       ghost: {
         backgroundColor: "transparent",
         textDecoration: "underline",
-        border: "none",
+        borderColor: "transparent",
         borderRadius: varsThemeBase.shape.border.radius.button,
         ":hover": {
+          borderColor: varsThemeBase.colors.surface.brand,
           borderRadius: varsThemeBase.shape.border.radius.button,
         },
         ":active": {
