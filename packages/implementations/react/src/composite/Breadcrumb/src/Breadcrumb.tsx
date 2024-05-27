@@ -2,7 +2,7 @@ import React, { Children, useMemo } from "react";
 import { breadcrumb } from "@rarui/styles";
 import { Dropdown } from "@rarui-react/dropdown";
 import { IconButton } from "@rarui-react/icon-button";
-import { Box } from "@rarui-react/Box";
+import { Box } from "@rarui-react/box";
 import { MoreHorizIcon } from "@rarui/icons";
 
 import { BreadcrumbProps, BreadcrumbComponents } from "./breadcrumb.types";
