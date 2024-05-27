@@ -183,7 +183,6 @@ export class Docgen {
   }
 
   private getPolymorphicProps(): string[] {
-    // console.log("this.component.source", this.component.source);
     const regex = RegExp("PolymorphicForwardRefComponent<(.+),.+>;$", "m");
     const match = regex.exec(this.component.source)?.[1] ?? "";
     return match ? match.replace(/[" ]/gm, "").split("|") : [];

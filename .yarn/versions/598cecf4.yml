@@ -1,7 +1,0 @@
-releases:
-  "@rarui-react/breadcrumbs": major
-  "@rarui-react/components": minor
-  "@rarui/styles": minor
-
-declined:
-  - "@rarui/design-system"

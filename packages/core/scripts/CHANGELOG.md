@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating custom script builds at design system build time.
 
+## 2024-05-24 `1.0.4`
+
+#### 🐛 Bug fixes
+
+- Fixed generation of polymorphic component documentation. ([#33](https://git.rarolabs.com.br/frontend/rarui/pull/33) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-05-01 `1.0.3`
 
 #### 🐛 Bug fixes
