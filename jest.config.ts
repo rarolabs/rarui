@@ -32,6 +32,8 @@ const config: Config.InitialOptions = {
     "@rarui-react/title":
       "<rootDir>/packages/implementations/react/src/atomic/Title/src",
     // composites
+    "@rarui-react/dropdown":
+      "<rootDir>/packages/implementations/react/src/composite/Dropdown/src",
   },
   transform: {
     "^.+\\.css\\.ts$": "babel-jest",

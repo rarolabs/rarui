@@ -183,6 +183,7 @@ export class Docgen {
   }
 
   private getPolymorphicProps(): string[] {
+    // console.log("this.component.source", this.component.source);
     const regex = RegExp("PolymorphicForwardRefComponent<(.+),.+>;$", "m");
     const match = regex.exec(this.component.source)?.[1] ?? "";
     return match ? match.replace(/[" ]/gm, "").split("|") : [];
@@ -208,7 +209,12 @@ export class Docgen {
     const subComponents = subComponentsNames.reduce((prev: Doc[], curr) => {
       const subComponent = curr.replace(`${this.component.name}.`, "");
       const schema = this.getSchema(`${subComponent}Properties`);
-      const props = this.formatProps(schema);
+      this.component.source = this.getSource(
+        `${this.component.path}/components/${subComponent}/${subComponent}.tsx`,
+      );
+
+      const polymorphicProps = this.getPolymorphicProps();
+      const props = this.formatProps(schema, polymorphicProps);
       prev.push({
         name: curr,
         totalProps: props.length,

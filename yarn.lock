@@ -3269,9 +3269,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui-react/breadcrumbs@workspace:packages/implementations/react/src/atomic/Breadcrumbs":
+"@rarui-react/breadcrumb@workspace:packages/implementations/react/src/composite/Breadcrumb":
   version: 0.0.0-use.local
-  resolution: "@rarui-react/breadcrumbs@workspace:packages/implementations/react/src/atomic/Breadcrumbs"
+  resolution: "@rarui-react/breadcrumb@workspace:packages/implementations/react/src/composite/Breadcrumb"
   dependencies:
     "@rarui-react/icon": "workspace:^"
     "@rarui/icons": "workspace:^"
@@ -3695,6 +3695,7 @@ __metadata:
     prettier: "npm:^3.2.5"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    react-keyed-flatten-children: "npm:^3.0.0"
     storybook: "npm:^8.0.8"
     storybook-dark-mode: "npm:^4.0.1"
     ts-jest: "npm:^29.1.2"
@@ -17410,6 +17411,24 @@ __metadata:
   version: 18.2.0
   resolution: "react-is@npm:18.2.0"
   checksum: 6eb5e4b28028c23e2bfcf73371e72cd4162e4ac7ab445ddae2afe24e347a37d6dc22fae6e1748632cd43c6d4f9b8f86dcf26bf9275e1874f436d129952528ae0
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^18.2.0":
+  version: 18.3.1
+  resolution: "react-is@npm:18.3.1"
+  checksum: f2f1e60010c683479e74c63f96b09fb41603527cd131a9959e2aee1e5a8b0caf270b365e5ca77d4a6b18aae659b60a86150bb3979073528877029b35aecd2072
+  languageName: node
+  linkType: hard
+
+"react-keyed-flatten-children@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "react-keyed-flatten-children@npm:3.0.0"
+  dependencies:
+    react-is: "npm:^18.2.0"
+  peerDependencies:
+    react: ">=15.0.0"
+  checksum: e8abfcf221ca4f5b3242d84d268f02f6b21940f054ca6f4e85232cbaf60de8f1bf95f38731d395634daca9aa8f1d4792c963aaf4d378779293e45ae323c21941
   languageName: node
   linkType: hard
 

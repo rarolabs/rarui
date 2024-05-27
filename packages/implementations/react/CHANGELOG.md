@@ -6,7 +6,7 @@
 
 #### 🎉 New features
 
-- Added new atomic `Breadcrumbs` component. ([#33](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/33) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+- Added new composite `Breadcrumb` component. ([#33](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/33) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
 
 ## 2024-05-23 `1.22.0`
 

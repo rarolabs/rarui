@@ -1,6 +1,6 @@
 {
-  "name": "@rarui-react/breadcrumbs",
-  "version": "1.0.0-rc.1",
+  "name": "@rarui-react/breadcrumb",
+  "version": "0.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
