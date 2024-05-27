@@ -1,48 +1,28 @@
 {
-  "id": "sideNavigation",
-  "name": "SideNavigation",
-  "totalProps": 6,
-  "packageName": "@rarui-react/side-navigation",
-  "version": "1.0.0",
-  "docLink": "https://rarui.com.br/documentation/src-components/side-navigation",
+  "id": "breadcrumb",
+  "name": "Breadcrumb",
+  "totalProps": 2,
+  "packageName": "@rarui-react/breadcrumb",
+  "version": "0.0.0",
+  "docLink": "https://rarui.com.br/documentation/src-components/breadcrumb",
   "props": [
     {
-      "description": "The content of the sideNavigation.",
+      "description": "Specifies the number of breadcrumb items to display after truncation.\nThis is useful for managing the display of long breadcrumb lists.",
+      "default": 10,
+      "type": "number",
+      "title": "itensAfterTruncate",
+      "required": false
+    },
+    {
+      "description": "The content of the breadcrumbs, which should be one or more Breadcrumb.Item components or other React nodes.",
       "type": "React.ReactNode",
       "title": "children",
-      "required": true
-    },
-    {
-      "type": "string",
-      "title": "name",
-      "required": true
-    },
-    {
-      "type": "string",
-      "title": "description",
-      "required": false
-    },
-    {
-      "description": "Componet to be displayed on start input.",
-      "type": "React.ReactNode",
-      "title": "leadingStart",
-      "required": false
-    },
-    {
-      "description": "Componet to be displayed on end input.",
-      "type": "React.ReactNode",
-      "title": "leadingEnd",
-      "required": false
-    },
-    {
-      "type": "boolean",
-      "title": "active",
       "required": false
     }
   ],
   "subComponents": [
     {
-      "name": "SideNavigation.Item",
+      "name": "Breadcrumb.Item",
       "totalProps": 6,
       "props": [
         {

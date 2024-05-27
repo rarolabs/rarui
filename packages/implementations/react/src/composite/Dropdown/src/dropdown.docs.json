@@ -354,24 +354,51 @@
   "subComponents": [
     {
       "name": "Dropdown.Item",
-      "totalProps": 3,
+      "totalProps": 6,
       "props": [
         {
-          "description": "The name of the dropdown item. This is typically the text that is displayed for the item.",
+          "description": "A ref to the element rendered by this component. Because this component is polymorphic, the type will vary based on the value of the as prop.",
+          "type": "React.Ref",
+          "title": "ref",
+          "required": false
+        },
+        {
+          "default": "button",
+          "description": "The underlying element to render — either a HTML element name or a React component.",
+          "anyOf": [
+            {
+              "enum": ["button", "a"],
+              "type": "string"
+            },
+            {
+              "type": "React.ElementType"
+            }
+          ],
+          "title": "as",
+          "required": false
+        },
+        {
+          "description": "The name of the breadcrumb item. This is typically the text that is displayed for the item.",
           "type": "string",
           "title": "name",
           "required": false
         },
         {
-          "description": "The content of the dropdown item. This can include text, icons, or other React elements.",
+          "description": "The content of the breadcrumb item. This can include text, icons, or other React elements.",
           "type": "React.ReactNode",
           "title": "children",
           "required": false
         },
         {
-          "description": "An icon to be displayed alongside the dropdown item. This can be used to provide a visual representation of the item.",
-          "type": "React.ReactNode",
+          "$ref": "#/definitions/React.ReactNode",
+          "description": "An icon to be displayed alongside the breadcrumb item.\nThis can be used to provide a visual representation of the item.",
           "title": "icon",
+          "required": false
+        },
+        {
+          "description": "Indicates whether the breadcrumb item is currently active.\nAn active item is typically styled differently to show that it represents the current page.",
+          "type": "boolean",
+          "title": "active",
           "required": false
         }
       ]
