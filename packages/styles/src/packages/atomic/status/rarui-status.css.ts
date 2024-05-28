@@ -23,6 +23,9 @@ const status = recipe({
     padding: `0 ${varsThemeBase.spacing["3xs"]}`,
   },
   variants: {
+    /**
+     * Determines the visual style of the status, influencing its color scheme.
+     */
     appearance: {
       success: {
         backgroundColor: varsThemeBase.colors.surface.success,
@@ -41,6 +44,9 @@ const status = recipe({
         color: varsThemeBase.colors.content.primary,
       },
     },
+    /**
+     * Specifies the size of the badge, controlling its dimensions.
+     */
     size: {
       normal: {
         height: "1.75rem",
@@ -51,9 +57,15 @@ const status = recipe({
         fontSize: varsThemeBase.fontSize.label.s,
       },
     },
+    /**
+     * Specifies whether the status is in subdued mode
+     */
     subdued: {
       true: {},
     },
+    /**
+     * Specifies the variant of the status
+     */
     variant: {
       solid: {},
       text: {
