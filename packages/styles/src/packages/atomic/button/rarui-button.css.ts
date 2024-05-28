@@ -34,11 +34,20 @@ const button = recipe({
     },
   },
   variants: {
+    /**
+     * Specifies whether the button should take up the full width of its container.
+     * This variant is useful when you want to make a button span the entire width of its parent container.
+     *
+     */
     full: {
       true: {
         width: "100%",
       },
     },
+    /**
+     * Defines the appearance variants for the button component.
+     * Each appearance variant corresponds to a specific background color, border color, and text color.
+     */
     appearance: {
       brand: {
         backgroundColor: varsThemeBase.colors.surface.brand,
@@ -71,6 +80,9 @@ const button = recipe({
         color: varsThemeBase.colors.content.primary,
       },
     },
+    /**
+     * Defines the size of the button component.
+     */
     size: {
       large: {
         padding: varsThemeBase.spacing.xs,
@@ -88,6 +100,9 @@ const button = recipe({
         fontSize: varsThemeBase.fontSize.button.s,
       },
     },
+    /**
+     * Defines the visual variant of the badge, affecting its background style, border and text.
+     */
     variant: {
       solid: {},
       outlined: {
