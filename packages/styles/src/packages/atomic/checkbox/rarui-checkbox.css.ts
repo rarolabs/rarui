@@ -51,6 +51,9 @@ export const checkbox = recipe({
     },
   },
   variants: {
+    /**
+     * Specifies whether the checkbox is in error state
+     */
     error: {
       true: {
         borderColor: varsThemeBase.colors.border.error,
@@ -59,6 +62,9 @@ export const checkbox = recipe({
         },
       },
     },
+    /**
+     * Specifies the size of the checkbox
+     */
     size: {
       medium: {
         width: "1.25rem",
@@ -69,6 +75,9 @@ export const checkbox = recipe({
         height: "1.5rem",
       },
     },
+    /**
+     * Specifies whether the checkbox is indeterminate state
+     */
     indeterminate: {
       true: {
         selectors: {
@@ -98,6 +107,9 @@ export const label = recipe({
     },
   },
   variants: {
+    /**
+     * Specifies whether the label is in error state
+     */
     error: {
       true: {
         vars: {
