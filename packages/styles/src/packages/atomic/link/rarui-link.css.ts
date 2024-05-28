@@ -28,6 +28,9 @@ const link = recipe({
     },
   },
   variants: {
+    /**
+     * Determines the visual style of the link.
+     */
     appearance: {
       brand: {
         color: varsThemeBase.colors.content.brand,
@@ -39,6 +42,9 @@ const link = recipe({
         color: varsThemeBase.colors.content.invert,
       },
     },
+    /**
+     * Specifies the size of the link.
+     */
     size: {
       large: {
         fontSize: "1.125rem",
