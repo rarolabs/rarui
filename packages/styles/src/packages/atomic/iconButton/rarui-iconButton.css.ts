@@ -39,6 +39,9 @@ const iconButton = recipe({
     },
   },
   variants: {
+    /**
+     * Determines the visual style of the icon button, influencing its color scheme and appearance.
+     */
     appearance: {
       brand: {
         backgroundColor: varsThemeBase.colors.surface.brand,
@@ -72,6 +75,9 @@ const iconButton = recipe({
       },
     },
     variant: {
+      /**
+       * Defines the visual variant of the icon button, affecting its background style, border and text.
+       */
       solid: {},
       outlined: {
         backgroundColor: "transparent",
