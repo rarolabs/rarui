@@ -1,4 +1,4 @@
-import { bannerStyles } from "./raui-banner.css";
+import { bannerStyles } from "./rarui-banner.css";
 
 export const banner = {
   classnames: bannerStyles,
