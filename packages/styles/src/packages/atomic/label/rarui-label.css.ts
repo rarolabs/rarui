@@ -13,6 +13,9 @@ const label = recipe({
     fontWeight: varsThemeBase.fontWeight.medium,
   },
   variants: {
+    /**
+     * Specifies whether the label is hidden or not
+     */
     hidden: {
       true: {
         border: "0",
