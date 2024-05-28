@@ -6,6 +6,10 @@ interface ItemTypings {
    * @TJS-type React.ReactNode
    */
   children?: ReactNode;
+
+  /**
+   * Determines if the item is active or not.
+   */
   active?: boolean;
 }
 
