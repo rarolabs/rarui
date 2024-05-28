@@ -17,6 +17,9 @@ export const tooltip = recipe({
     boxShadow: varsThemeBase.elevation.bottom[2],
   },
   variants: {
+    /**
+     * Specifies whether the color scheme should be inverted
+     */
     inverted: {
       true: {
         backgroundColor: varsThemeBase.colors.surface.invert,
@@ -27,6 +30,9 @@ export const tooltip = recipe({
         color: varsThemeBase.colors.surface.primary,
       },
     },
+    /**
+     * Specifies the padding for the tooltip
+     */
     padding: {
       base: {
         padding: varsThemeBase.spacing["3xs"],

@@ -1,4 +1,4 @@
-import { styles } from "./raui-tooltip.css";
+import { styles } from "./rarui-tooltip.css";
 
 export const tooltip = {
   classnames: { ...styles },
