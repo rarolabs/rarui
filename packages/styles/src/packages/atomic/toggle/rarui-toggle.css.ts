@@ -55,6 +55,9 @@ const toggle = recipe({
     },
   },
   variants: {
+    /**
+     * Specifies the size of the toggle, controlling its dimensions.
+     */
     size: {
       large: {
         ":before": {
@@ -81,6 +84,9 @@ const toggle = recipe({
         },
       },
     },
+    /**
+     * Specifies whether the radiobutton is in error state
+     */
     error: {
       true: {
         ":before": {
