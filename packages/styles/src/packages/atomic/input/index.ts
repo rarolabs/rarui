@@ -1,4 +1,4 @@
-import { styles } from "./raui-input.css";
+import { styles } from "./rarui-input.css";
 
 export const input = {
   classnames: { ...styles },
