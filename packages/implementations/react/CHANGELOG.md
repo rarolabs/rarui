@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-05-29 `1.23.1`
+
+#### 🐛 Bug fixes
+
+- Changed the `Status.displayName` from `Button` to `Status`. ([#44](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/44) by [@reubert.barbosa](https://git.rarolabs.com.br/reubert.barbosa))
+
 ## 2024-05-24 `1.23.0`
 
 #### 🎉 New features

@@ -4,10 +4,6 @@ import { render, screen } from "@testing-library/react";
 import { Breadcrumb } from "./Breadcrumb";
 import { BreadcrumbProps } from "./breadcrumb.types";
 
-Object.defineProperty(window, "crypto", {
-  value: { randomUUID: () => `${Math.floor(Math.random() * Date.now() + 1)}` },
-});
-
 const makeSut = (rest?: Omit<BreadcrumbProps, "children">) => {
   render(
     <Breadcrumb {...rest} data-testid="breadcrumb-element">
@@ -30,9 +26,12 @@ const makeSut = (rest?: Omit<BreadcrumbProps, "children">) => {
 describe("GIVEN <Breadcrumb />", () => {
   beforeEach(() => {
     Object.defineProperty(window, "crypto", {
-      value: { randomUUID: () => `${new Date().toISOString()}` },
+      value: {
+        randomUUID: () => `${Math.floor(Math.random() * Date.now() + 1)}`,
+      },
     });
   });
+
   describe("THEN should correctly render the component", () => {
     it("THEN should correctly render default component", () => {
       makeSut();
