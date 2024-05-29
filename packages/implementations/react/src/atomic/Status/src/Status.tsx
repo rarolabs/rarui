@@ -29,6 +29,6 @@ const Status: React.FC<StatusProps> = ({
   </div>
 );
 
-Status.displayName = "Button";
+Status.displayName = "Status";
 
 export { Status };
