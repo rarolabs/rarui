@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { LabelVariants } from "@rarui/styles";
 
-interface Label {
+interface LabelTyping {
   /**
    * The content of the button.
    * @TJS-type React.ReactNode
@@ -13,6 +13,6 @@ interface Label {
   htmlFor?: string;
 }
 
-export type LabelProperties = Label & LabelVariants;
+export type LabelProperties = LabelTyping & LabelVariants;
 
 export type LabelProps = LabelProperties & HTMLAttributes<HTMLLabelElement>;
