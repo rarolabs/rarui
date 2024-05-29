@@ -29,6 +29,9 @@ const sidebar = recipe({
     gap: varsThemeBase.spacing["3xs"],
   },
   variants: {
+    /**
+     * Specifies where the sidebar should be positioned
+     */
     position: {
       left: {
         left: 0,
@@ -39,6 +42,10 @@ const sidebar = recipe({
         transform: "translateX(100%)",
       },
     },
+    /**
+     * Determines if the sidebar is shown or not.
+     * @default true
+     */
     open: {
       true: {
         opacity: 1,
