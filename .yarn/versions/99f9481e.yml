@@ -13,5 +13,6 @@ releases:
   "@rarui/styles": patch
 
 declined:
+  - "@rarui/design-system"
   - "@rarui-react/toast"
   - "@rarui-react/breadcrumb"
