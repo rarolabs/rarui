@@ -58,16 +58,19 @@
       "required": false
     },
     {
+      "description": "Specifies whether the chip will be displayed in the pill shape",
       "type": "boolean",
       "title": "pill",
       "required": false
     },
     {
+      "description": "Specifies whether the chip is selected",
       "type": "boolean",
       "title": "selected",
       "required": false
     },
     {
+      "description": "Specifies the size of the chip",
       "enum": ["medium", "small"],
       "type": "string",
       "title": "size",

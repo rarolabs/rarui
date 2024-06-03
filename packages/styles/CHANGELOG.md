@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-06-02 `1.23.1`
+
+#### 💡 Others
+
+- Adjusted texts and description of the properties of each typing. ([#46](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/46) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-06-02 `1.23.0`
 
 #### 🎉 New features

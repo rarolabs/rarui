@@ -2,6 +2,12 @@
 
 The Link component allows us to navigate to external addresses.
 
+## 2024-06-02 `2.0.1`
+
+#### 💡 Others
+
+- Adjusted texts and description of the properties of each typing. ([#46](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/46) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-04-25 `2.0.0`
 
 #### 🛠 Breaking changes

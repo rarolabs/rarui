@@ -1,5 +1,7 @@
 releases:
   "@rarui-react/banner": patch
+  "@rarui-react/chip": patch
+  "@rarui-react/components": patch
   "@rarui-react/dropdown": patch
   "@rarui-react/label": patch
   "@rarui-react/link": patch

@@ -2,6 +2,12 @@
 
 Dropdown are informative, specific, and action -oriented text labels that provide contextual support.
 
+## 2024-06-02 `1.0.1`
+
+#### 💡 Others
+
+- Adjusted texts and description of the properties of each typing. ([#46](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/46) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-05-23 `1.0.0`
 
 #### 🎉 New features

@@ -2,6 +2,12 @@
 
 The label component allows us to name elements within a form.
 
+## 2024-06-02 `1.0.1`
+
+#### 💡 Others
+
+- Adjusted texts and description of the properties of each typing. ([#46](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/46) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-05-01 `1.0.0`
 
 #### 🎉 New features

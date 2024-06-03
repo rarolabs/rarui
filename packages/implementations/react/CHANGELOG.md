@@ -2,6 +2,13 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-06-02 `1.24.1`
+
+#### 💡 Others
+
+- Adjusted texts and description of properties for each typing of all components. ([#46](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/46) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+  yarn
+
 ## 2024-06-02 `1.24.0`
 
 #### 🎉 New features
