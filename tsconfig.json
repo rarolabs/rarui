@@ -119,6 +119,9 @@
       "@rarui-react/dropdown": [
         "./packages/implementations/react/src/composite/Dropdown/src"
       ],
+      "@rarui-react/pagination": [
+        "./packages/implementations/react/src/composite/Pagination/src"
+      ],
       "@rarui-react/sidebar": [
         "./packages/implementations/react/src/composite/Sidebar/src"
       ],

@@ -27,6 +27,9 @@ const container = recipe({
     },
   },
   variants: {
+    /**
+     * Determines the visual style of the input, affecting its border
+     */
     appearance: {
       success: {
         borderColor: varsThemeBase.colors.border.success,
@@ -70,9 +73,15 @@ const input = recipe({
     },
   },
   variants: {
+    /**
+     * Places a divider between the input and the leading components
+     */
     divider: {
       false: {},
     },
+    /**
+     * Specifies the size of the badge, controlling its dimensions.
+     */
     size: {
       large: {
         height: "3rem",

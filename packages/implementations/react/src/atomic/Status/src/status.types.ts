@@ -1,7 +1,7 @@
 import { ReactNode, HTMLAttributes } from "react";
 import { StatusVariants } from "@rarui/styles";
 
-interface StatusBase {
+interface StatusTyping {
   /**
    * The content of the button.
    * @TJS-type React.ReactNode
@@ -9,5 +9,5 @@ interface StatusBase {
   children: ReactNode;
 }
 
-export type StatusProperties = StatusBase & StatusVariants;
+export type StatusProperties = StatusTyping & StatusVariants;
 export type StatusProps = StatusProperties & HTMLAttributes<HTMLElement>;

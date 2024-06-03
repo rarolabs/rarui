@@ -20,6 +20,7 @@
       "required": false
     },
     {
+      "description": "Determines the visual style of the icon button, influencing its color scheme and appearance.",
       "enum": ["brand", "danger", "inverted", "neutral", "success", "warning"],
       "type": "string",
       "title": "appearance",

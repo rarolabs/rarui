@@ -13,11 +13,13 @@
       "required": true
     },
     {
+      "description": "Title of the sideNavigation",
       "type": "string",
       "title": "name",
       "required": true
     },
     {
+      "description": "Description of the sideNavigation.",
       "type": "string",
       "title": "description",
       "required": false

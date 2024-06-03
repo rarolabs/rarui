@@ -19,6 +19,7 @@
       "required": false
     },
     {
+      "description": "Specifies whether the label is hidden or not",
       "type": "boolean",
       "title": "hidden",
       "required": false

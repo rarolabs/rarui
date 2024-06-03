@@ -19,17 +19,20 @@
       "required": true
     },
     {
+      "description": "Specifies whether the checkbox is in error state",
       "type": "boolean",
       "title": "error",
       "required": false
     },
     {
+      "description": "Specifies the size of the checkbox",
       "enum": ["large", "medium"],
       "type": "string",
       "title": "size",
       "required": false
     },
     {
+      "description": "Specifies whether the checkbox is indeterminate state",
       "type": "boolean",
       "title": "indeterminate",
       "required": false

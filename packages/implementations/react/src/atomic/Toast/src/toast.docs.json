@@ -39,24 +39,28 @@
       "required": false
     },
     {
+      "description": "Where the toast is located",
       "type": "string",
       "enum": ["topRight"],
       "title": "placement",
       "required": false
     },
     {
+      "description": "Determines the visual style of the toast, influencing its color scheme and appearance.",
       "enum": ["error", "info", "invert", "neutral", "success", "warning"],
       "type": "string",
       "title": "appearance",
       "required": false
     },
     {
+      "description": "Specifies the size of the toast, controlling its dimensions.",
       "enum": ["large", "medium", "small"],
       "type": "string",
       "title": "size",
       "required": false
     },
     {
+      "description": "Specifies the variant of the toast",
       "enum": ["ghost", "solid", "tonal"],
       "type": "string",
       "title": "variant",

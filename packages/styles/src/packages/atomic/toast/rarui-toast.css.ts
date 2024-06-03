@@ -15,9 +15,15 @@ const toast = recipe({
     zIndex: varsThemeBase.zIndex[100],
   },
   variants: {
+    /**
+     * Where the toast is located
+     */
     placement: {
       topRight: {},
     },
+    /**
+     * Determines the visual style of the toast, influencing its color scheme and appearance.
+     */
     appearance: {
       info: {
         backgroundColor: varsThemeBase.colors.surface.info,
@@ -44,6 +50,9 @@ const toast = recipe({
         color: varsThemeBase.colors.content.secondary,
       },
     },
+    /**
+     * Specifies the size of the toast, controlling its dimensions.
+     */
     size: {
       small: {
         padding: `${varsThemeBase.spacing["4xs"]} ${varsThemeBase.spacing["3xs"]}`,
@@ -55,6 +64,9 @@ const toast = recipe({
         padding: varsThemeBase.spacing.s,
       },
     },
+    /**
+     * Specifies the variant of the toast
+     */
     variant: {
       solid: {},
       tonal: {

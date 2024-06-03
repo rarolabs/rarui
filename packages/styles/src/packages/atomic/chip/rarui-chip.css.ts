@@ -44,11 +44,17 @@ const chip = recipe({
     },
   },
   variants: {
+    /**
+     * Specifies whether the chip will be displayed in the pill shape
+     */
     pill: {
       true: {
         borderRadius: varsThemeBase.shape.border.radius.pill,
       },
     },
+    /**
+     * Specifies whether the chip is selected
+     */
     selected: {
       true: {
         borderColor: varsThemeBase.colors.surface.brand,
@@ -59,6 +65,9 @@ const chip = recipe({
         },
       },
     },
+    /**
+     * Specifies the size of the chip
+     */
     size: {
       medium: {
         lineHeight: varsThemeBase.lineHeight.button.m,

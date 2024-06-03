@@ -13,7 +13,14 @@ export interface SideNavigationTyping {
    * @TJS-type React.ReactNode
    */
   children: ReactNode;
+
+  /**
+   * Title of the sideNavigation
+   */
   name: string;
+  /**
+   * Description of the sideNavigation.
+   */
   description?: string;
   /**
    * Componet to be displayed on start input.

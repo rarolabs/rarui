@@ -11,12 +11,13 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "yarn g:vite build",
+    "build": "vite build",
     "clean": "rm -rf dist && rm -rf storybook-static",
     "version": "yarn version",
     "storybook:dev": "yarn g:storybook dev -p 6008 --config-dir ./.storybook",
     "storybook:build": "yarn g:storybook build --config-dir ./.storybook",
-    "storybook:move": "mv storybook-static ../../../storybook-static/vuejs"
+    "storybook:move": "mv storybook-static ../../../storybook-static/vuejs",
+    "g:vite": "vite"
   },
   "peerDependencies": {
     "vue": "^3"
@@ -30,7 +31,7 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui//issues"
   },
   "devDependencies": {
-    "@rarui/webpack": "workspace:^",
+    "vite": "^5.2.12",
     "vite-plugin-dts": "^3.7.3"
   }
 }

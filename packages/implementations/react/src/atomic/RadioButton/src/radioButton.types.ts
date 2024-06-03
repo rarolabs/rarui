@@ -1,7 +1,7 @@
 import { InputHTMLAttributes } from "react";
 import { RadioButtonVariants } from "@rarui/styles";
 
-interface RadioButton {
+interface RadioButtonTyping {
   /**
    * Sets radio state to activated or deactivated.
    */
@@ -12,7 +12,7 @@ interface RadioButton {
   label?: string;
 }
 
-export type RadioButtonProperties = RadioButton & RadioButtonVariants;
+export type RadioButtonProperties = RadioButtonTyping & RadioButtonVariants;
 
 export type RadioButtonProps = RadioButtonProperties &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

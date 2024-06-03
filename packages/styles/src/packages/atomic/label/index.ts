@@ -1,4 +1,4 @@
-import { styles } from "./raui-label.css";
+import { styles } from "./rarui-label.css";
 
 export const label = {
   classnames: { ...styles },

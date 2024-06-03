@@ -56,6 +56,9 @@ const radioButton = recipe({
     },
   },
   variants: {
+    /**
+     * Specifies the size of the radiobutton
+     */
     size: {
       small: {
         width: "1.25rem",
@@ -82,6 +85,9 @@ const radioButton = recipe({
         },
       },
     },
+    /**
+     * Specifies whether the radiobutton is in error state
+     */
     error: {
       true: {
         borderColor: varsThemeBase.colors.border.error,

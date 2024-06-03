@@ -5,7 +5,7 @@ export interface ProgressComponents {
   Circle: typeof Circle;
 }
 
-export interface Progress {
+export interface ProgressTyping {
   /**
    * The progress percentage, represented as a number between 0 and 100.
    * This indicates the completion level of the process.
@@ -13,5 +13,5 @@ export interface Progress {
   percentage: number;
 }
 
-export type ProgressProperties = Progress;
+export type ProgressProperties = ProgressTyping;
 export type ProgressProps = ProgressProperties & HTMLAttributes<HTMLDivElement>;

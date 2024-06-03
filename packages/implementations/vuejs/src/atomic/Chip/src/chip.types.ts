@@ -27,6 +27,3 @@ export interface ChipProps extends /* @vue-ignore */ ButtonHTMLAttributes {
    */
   selected?: boolean;
 }
-
-// selected
-// pill -> boolean

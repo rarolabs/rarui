@@ -1,7 +1,7 @@
 import { ReactNode, HTMLAttributes } from "react";
 import { LinkVariants } from "@rarui/styles";
 
-interface Link {
+interface LinkTyping {
   /**
    * The content of the link.
    * @TJS-type React.ReactNode
@@ -9,6 +9,6 @@ interface Link {
   children: ReactNode;
 }
 
-export type LinkProperties = Link & LinkVariants;
+export type LinkProperties = LinkTyping & LinkVariants;
 
 export type _LinkProps = LinkProperties & HTMLAttributes<HTMLElement>;

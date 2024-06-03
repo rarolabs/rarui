@@ -19,12 +19,14 @@
       "required": false
     },
     {
+      "description": "Specifies the size of the radiobutton",
       "enum": ["large", "small"],
       "type": "string",
       "title": "size",
       "required": false
     },
     {
+      "description": "Specifies whether the radiobutton is in error state",
       "type": "boolean",
       "title": "error",
       "required": false

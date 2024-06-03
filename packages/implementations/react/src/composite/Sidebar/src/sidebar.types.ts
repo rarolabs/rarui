@@ -9,13 +9,9 @@ export interface SidebarTyping {
   children: ReactNode;
   /**
    * Callback fired when the component requests to be closed.
-   * () => void;
+   * @TJS-type () => void;
    */
   onRemove?: () => void;
-  /**
-   * Determines if the sidebar is shown or not.
-   * @default true
-   */
   open?: boolean;
 }
 

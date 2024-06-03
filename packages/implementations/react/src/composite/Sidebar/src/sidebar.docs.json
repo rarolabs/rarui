@@ -13,14 +13,14 @@
       "required": true
     },
     {
-      "description": "Callback fired when the component requests to be closed.\n() => void;",
-      "type": "object",
-      "additionalProperties": false,
-      "propertyOrder": [],
+      "description": "Callback fired when the component requests to be closed.",
+      "type": "() => void;",
       "title": "onRemove",
       "required": false
     },
     {
+      "description": "Determines if the sidebar is shown or not.",
+      "default": true,
       "type": "boolean",
       "title": "open",
       "required": false
@@ -282,6 +282,7 @@
       "required": false
     },
     {
+      "description": "Specifies where the sidebar should be positioned",
       "enum": ["left", "right"],
       "type": "string",
       "title": "position",

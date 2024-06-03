@@ -13,23 +13,27 @@
       "required": true
     },
     {
+      "description": "Determines the visual style of the status, influencing its color scheme.",
       "enum": ["negative", "neutral", "success", "warning"],
       "type": "string",
       "title": "appearance",
       "required": false
     },
     {
+      "description": "Specifies the size of the badge, controlling its dimensions.",
       "enum": ["normal", "small"],
       "type": "string",
       "title": "size",
       "required": false
     },
     {
+      "description": "Specifies whether the status is in subdued mode",
       "type": "boolean",
       "title": "subdued",
       "required": false
     },
     {
+      "description": "Specifies the variant of the status",
       "enum": ["solid", "text"],
       "type": "string",
       "title": "variant",
