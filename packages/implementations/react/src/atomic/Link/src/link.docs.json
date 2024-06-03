@@ -3,7 +3,7 @@
   "name": "Link",
   "totalProps": 5,
   "packageName": "@rarui-react/link",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/link",
   "props": [
     {

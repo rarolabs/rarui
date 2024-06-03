@@ -3,7 +3,7 @@
   "name": "Label",
   "totalProps": 3,
   "packageName": "@rarui-react/label",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/label",
   "props": [
     {

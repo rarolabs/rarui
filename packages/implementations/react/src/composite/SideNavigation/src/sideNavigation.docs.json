@@ -3,7 +3,7 @@
   "name": "SideNavigation",
   "totalProps": 6,
   "packageName": "@rarui-react/side-navigation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/side-navigation",
   "props": [
     {

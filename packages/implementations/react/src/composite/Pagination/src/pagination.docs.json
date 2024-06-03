@@ -3,7 +3,7 @@
   "name": "Pagination",
   "totalProps": 6,
   "packageName": "@rarui-react/pagination",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/pagination",
   "props": [
     {

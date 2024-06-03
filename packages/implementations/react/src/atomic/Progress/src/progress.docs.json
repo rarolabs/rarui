@@ -3,7 +3,7 @@
   "name": "Progress",
   "totalProps": 1,
   "packageName": "@rarui-react/progress-bar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/progress",
   "props": [
     {

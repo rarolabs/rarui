@@ -3,7 +3,7 @@
   "name": "Checkbox",
   "totalProps": 5,
   "packageName": "@rarui-react/checkbox",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "docLink": "https://rarui.com.br/documentation/src-components/checkbox",
   "props": [
     {

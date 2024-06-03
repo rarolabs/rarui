@@ -3,7 +3,7 @@
   "name": "Banner",
   "totalProps": 4,
   "packageName": "@rarui-react/banner",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "docLink": "https://rarui.com.br/documentation/src-components/banner",
   "props": [
     {

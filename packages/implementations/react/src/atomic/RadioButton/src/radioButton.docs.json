@@ -3,7 +3,7 @@
   "name": "RadioButton",
   "totalProps": 4,
   "packageName": "@rarui-react/radio-button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/radio-button",
   "props": [
     {

@@ -3,7 +3,7 @@
   "name": "Stepper",
   "totalProps": 2,
   "packageName": "@rarui-react/stepper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/stepper",
   "props": [
     {
