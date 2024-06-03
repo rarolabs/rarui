@@ -50,7 +50,7 @@ const Input = forwardRef<HTMLInputElement, _InputProps>(
         <input
           {...rest}
           ref={inputRef}
-          className={input.classnames.input({ size, divider })}
+          className={input.classnames.input({ size })}
         />
         {leadingEnd && (
           <Leading

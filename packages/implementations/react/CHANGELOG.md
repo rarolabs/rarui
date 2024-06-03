@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-06-02 `1.24.0`
+
+#### 🎉 New features
+
+- Added new composite `Pagination` component. ([#47](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/47) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-05-29 `1.23.1`
 
 #### 🐛 Bug fixes
@@ -12,13 +18,13 @@
 
 #### 🎉 New features
 
-- Added new composite `Breadcrumb` component. ([#33](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/33) by [@mauricio.barbosa](https://git.rarolabs.com.br/mauricio.barbosa))
+- Added new composite `Breadcrumb` component. ([#33](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/33) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-05-23 `1.22.0`
 
 #### 🎉 New features
 
-- Added new composite `Dropdown` component. ([#41](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/41) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+- Added new composite `Dropdown` component. ([#41](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/41) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-05-22 `1.21.0`
 

@@ -6,6 +6,7 @@ node_modules
 dist
 tmp
 storybook-static
+rarui-react-storybook
 test-output.*
 .turbo
 .cache

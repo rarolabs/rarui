@@ -1,0 +1,42 @@
+{
+  "id": "pagination",
+  "name": "Pagination",
+  "totalProps": 5,
+  "packageName": "@rarui-react/pagination",
+  "version": "0.0.0",
+  "docLink": "https://rarui.com.br/documentation/src-components/pagination",
+  "props": [
+    {
+      "description": "The currently selected page.",
+      "type": "number",
+      "title": "activePage",
+      "required": true
+    },
+    {
+      "description": "The total number of pages.",
+      "type": "number",
+      "title": "pageCount",
+      "required": true
+    },
+    {
+      "description": "Called with event and page number when a page is clicked.",
+      "type": "(page: number) => void;",
+      "title": "onPageChange",
+      "required": true
+    },
+    {
+      "description": "Determines whether page numbers should be shown.",
+      "default": true,
+      "type": "boolean",
+      "title": "showNumbers",
+      "required": false
+    },
+    {
+      "enum": ["dot", "large", "small"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    }
+  ],
+  "subComponents": []
+}
