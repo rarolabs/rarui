@@ -19,9 +19,11 @@ releases:
   "@rarui-react/toast": patch
   "@rarui-react/toggle": patch
   "@rarui-react/tooltip": patch
-  "@rarui-vuejs/chip": patch
   "@rarui/styles": patch
 
 declined:
   - "@rarui/design-system"
   - "@rarui-react/breadcrumb"
+  - "@rarui-vuejs/components"
+  - "@rarui-vuejs/button"
+  - "@rarui-vuejs/chip"

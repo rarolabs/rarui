@@ -4,6 +4,7 @@
   "license": "MIT",
   "source": "src/index.ts",
   "main": "dist/index.js",
+  "type": "module",
   "files": [
     "dist",
     "README.md",
