@@ -78,7 +78,6 @@ const iconButton = recipe({
       },
       ghost: {
         backgroundColor: "transparent",
-        textDecoration: "underline",
         borderColor: "transparent",
         borderRadius: varsThemeBase.shape.border.radius.button,
         ":hover": {

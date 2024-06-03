@@ -56,7 +56,7 @@ const input = recipe({
     height: "100%",
     boxSizing: "border-box",
     border: "none",
-    padding: varsThemeBase.spacing["3xs"],
+    padding: varsThemeBase.spacing["2xs"],
     fontFamily: varsThemeBase.fontFamily.inter,
     backgroundColor: varsThemeBase.colors.surface.primary,
     color: varsThemeBase.colors.content.primary,
@@ -71,9 +71,7 @@ const input = recipe({
   },
   variants: {
     divider: {
-      false: {
-        padding: `${varsThemeBase.spacing["3xs"]} ${varsThemeBase.spacing["4xs"]}`,
-      },
+      false: {},
     },
     size: {
       large: {
@@ -90,6 +88,7 @@ const input = recipe({
         height: "2rem",
         fontSize: varsThemeBase.fontSize.body.s,
         lineHeight: varsThemeBase.lineHeight.body.m,
+        padding: `${varsThemeBase.spacing["2xs"]} ${varsThemeBase.spacing["3xs"]}`,
       },
     },
   },
@@ -137,14 +136,34 @@ const leading = recipe({
     },
     size: {
       large: {
-        padding: `${varsThemeBase.spacing["3xs"]} ${varsThemeBase.spacing.xs}`,
+        padding: `${varsThemeBase.spacing["2xs"]} ${varsThemeBase.spacing.xs}`,
       },
       medium: {
-        padding: `${varsThemeBase.spacing["3xs"]} ${varsThemeBase.spacing["2xs"]}`,
+        padding: varsThemeBase.spacing["2xs"],
       },
       small: {},
     },
   },
+  compoundVariants: [
+    {
+      variants: {
+        position: "start",
+        divider: false,
+      },
+      style: {
+        paddingRight: 0,
+      },
+    },
+    {
+      variants: {
+        position: "end",
+        divider: false,
+      },
+      style: {
+        paddingLeft: 0,
+      },
+    },
+  ],
 });
 
 globalStyle(`${container()}:has(${input()}:disabled) ${leading()}`, {

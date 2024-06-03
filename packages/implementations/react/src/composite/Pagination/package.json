@@ -1,21 +1,20 @@
 {
-  "name": "@rarui-react/components",
-  "version": "1.23.1",
+  "name": "@rarui-react/pagination",
+  "version": "0.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
     "dist",
-    "README.md",
-    "CHANGELOG.md"
+    "README.md"
   ],
   "sideEffects": false,
   "scripts": {
     "build": "yarn g:webpack",
-    "clean": "rm -rf dist && rm -rf storybook-static",
-    "version": "yarn version",
-    "storybook:dev": "yarn g:storybook dev -p 6007 --config-dir ./packages/implementations/react/.storybook",
-    "storybook:build": "yarn g:storybook build --config-dir ./packages/implementations/react/.storybook -o ./packages/implementations/react/storybook-static",
-    "storybook:move": "mv storybook-static ../../../storybook-static/react"
+    "clean": "rm -rf dist",
+    "version": "yarn version"
+  },
+  "dependencies": {
+    "@rarui/icons": "workspace:^"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17.0 || ^18.0",

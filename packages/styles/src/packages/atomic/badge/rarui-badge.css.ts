@@ -67,7 +67,6 @@ const badge = recipe({
      * Specifies the size of the badge, controlling its dimensions.
      * @defaiult medium
      */
-
     size: {
       large: {
         padding: `0 ${varsThemeBase.spacing.xs}`,

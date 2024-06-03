@@ -28,6 +28,7 @@ export { tooltip } from "./packages/atomic/tooltip";
 // composite
 export { breadcrumb } from "./packages/composite/breadcrumb";
 export { dropdown } from "./packages/composite/dropdown";
+export { pagination } from "./packages/composite/pagination";
 export { sidebar } from "./packages/composite/sidebar";
 export { sideNavigation } from "./packages/composite/sideNavigation";
 export { stepper } from "./packages/composite/stepper";
@@ -64,6 +65,7 @@ export type {
   DropdownVariants,
   DropdownSprinkle,
 } from "./packages/composite/dropdown";
+export type { PaginationVariants } from "./packages/composite/pagination";
 export type {
   SidebarVariants,
   SidebarSprinkle,

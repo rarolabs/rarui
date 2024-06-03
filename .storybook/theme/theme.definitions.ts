@@ -8,13 +8,26 @@ export const base = {
   fontBase: "inter",
 };
 
-export const light = create({ ...base, base: "light" });
+export const light = create({
+  ...base,
+  base: "light",
+  appBg: tokens.color.light.surface.secondary.value,
+  barBg: tokens.color.light.surface.secondary.value,
+  appContentBg: tokens.color.light.surface.primary.value,
+  appPreviewBg: tokens.color.light.surface.primary.value,
+  appBorderColor: tokens.color.light.border.subdued.value,
+  textColor: tokens.color.light.content.primary.value,
+});
 
 export const dark = create({
   ...base,
   base: "dark",
   appBg: tokens.color.dark.surface.secondary.value,
-  barBg: "#222425",
+  barBg: tokens.color.dark.surface.secondary.value,
+  appContentBg: tokens.color.dark.surface.primary.value,
+  appPreviewBg: tokens.color.dark.surface.primary.value,
+  appBorderColor: tokens.color.dark.border.subdued.value,
+  textColor: tokens.color.dark.content.primary.value,
 });
 
 export default light;

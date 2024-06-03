@@ -2,7 +2,6 @@ import React from "react";
 import { Preview } from "@storybook/react";
 import { themes } from "@storybook/theming";
 import { ThemeDocsProvider, ThemeRaruiProvider, dark, light } from "./theme";
-import "./static/style.css";
 
 const preview: Preview = {
   parameters: {

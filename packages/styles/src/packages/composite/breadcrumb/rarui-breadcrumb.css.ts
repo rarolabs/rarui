@@ -21,6 +21,7 @@ const breadcrumbItem = recipe({
     width: "100%",
     transition: "all 150ms ease",
     textDecoration: "underline",
+    boxSizing: "border-box",
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
     gap: varsThemeBase.spacing["3xs"],
     padding: varsThemeBase.spacing["3xs"],
