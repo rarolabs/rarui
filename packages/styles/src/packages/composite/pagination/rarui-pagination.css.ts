@@ -1,5 +1,5 @@
-import { varsThemeBase } from "../../../themes";
 import { recipe } from "@vanilla-extract/recipes";
+import { varsThemeBase } from "../../../themes";
 
 /* -------------------------------------------------------------------------------------------------
  * Style

@@ -25,6 +25,7 @@ const Pagination: React.FC<PaginationProps> = ({
       {showArrows && (
         <li>
           <button
+            type="button"
             data-testid="button-pagination-prev"
             className={pagination.classnames.paginationItem({
               size: size === "dot" ? "large" : size,
@@ -32,7 +33,7 @@ const Pagination: React.FC<PaginationProps> = ({
             onClick={() => onPageChange(Number(activePage - 1))}
             disabled={activePage === 1}
           >
-            <ChevronLeftIcon size="medium" />
+            <ChevronLeftIcon aria-label="prev-page-button" size="medium" />
           </button>
         </li>
       )}
@@ -44,6 +45,7 @@ const Pagination: React.FC<PaginationProps> = ({
               {pageNumber === DOTS && (
                 <li>
                   <button
+                    type="button"
                     className={pagination.classnames.paginationItem({ size })}
                     data-testid="button-pagination-page-dots"
                     disabled
@@ -55,6 +57,7 @@ const Pagination: React.FC<PaginationProps> = ({
               {pageNumber !== DOTS && (
                 <li>
                   <button
+                    type="button"
                     data-testid={`button-pagination-page-${pageNumber}`}
                     className={pagination.classnames.paginationItem({
                       selected: pageNumber === activePage,
@@ -71,6 +74,7 @@ const Pagination: React.FC<PaginationProps> = ({
       {showArrows && (
         <li>
           <button
+            type="button"
             data-testid="button-pagination-next"
             className={pagination.classnames.paginationItem({
               size: size === "dot" ? "large" : size,
@@ -78,7 +82,7 @@ const Pagination: React.FC<PaginationProps> = ({
             onClick={() => onPageChange(Number(activePage + 1))}
             disabled={activePage >= pageCount}
           >
-            <ChevronRightIcon size="medium" />
+            <ChevronRightIcon aria-label="next-page-button" size="medium" />
           </button>
         </li>
       )}

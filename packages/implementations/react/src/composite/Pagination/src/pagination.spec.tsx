@@ -78,7 +78,7 @@ describe("GIVEN <Pagination />", () => {
         pageCount: 20,
       });
       fireEvent.click(screen.getByText("20"));
-      expect(mockedOnPageChange).toBeCalledWith(20);
+      expect(mockedOnPageChange).toHaveBeenCalledWith(20);
     });
 
     it("AND should advance to the first page", () => {
@@ -87,7 +87,7 @@ describe("GIVEN <Pagination />", () => {
         pageCount: 20,
       });
       fireEvent.click(screen.getByText("1"));
-      expect(mockedOnPageChange).toBeCalledWith(1);
+      expect(mockedOnPageChange).toHaveBeenCalledWith(1);
     });
 
     it("AND should return to the previous page", () => {
@@ -96,7 +96,7 @@ describe("GIVEN <Pagination />", () => {
         pageCount: 20,
       });
       fireEvent.click(screen.getByTestId("button-pagination-prev"));
-      expect(mockedOnPageChange).toBeCalledWith(18);
+      expect(mockedOnPageChange).toHaveBeenCalledWith(18);
     });
 
     it("AND should return to the next page", () => {
@@ -105,7 +105,7 @@ describe("GIVEN <Pagination />", () => {
         pageCount: 20,
       });
       fireEvent.click(screen.getByTestId("button-pagination-next"));
-      expect(mockedOnPageChange).toBeCalledWith(6);
+      expect(mockedOnPageChange).toHaveBeenCalledWith(6);
     });
 
     it("AND disable the button to advance the previous page", () => {
