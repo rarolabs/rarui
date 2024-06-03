@@ -29,9 +29,6 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui//issues"
   },
   "devDependencies": {
-    "@rarui-react/box": "workspace:^",
-    "@rarui-react/button": "workspace:^",
-    "@rarui-react/text": "workspace:^",
     "@rarui/webpack": "workspace:^"
   }
 }
