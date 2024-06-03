@@ -3427,10 +3427,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@rarui-react/pagination@workspace:packages/implementations/react/src/composite/Pagination"
   dependencies:
-    "@floating-ui/react": "npm:^0.26.13"
     "@rarui-react/box": "workspace:^"
     "@rarui-react/button": "workspace:^"
     "@rarui-react/text": "workspace:^"
+    "@rarui/icons": "workspace:^"
     "@rarui/webpack": "workspace:^"
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
