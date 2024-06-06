@@ -12,7 +12,8 @@
   "scripts": {
     "build": "yarn g:tsc --outDir dist --declaration true",
     "clean": "rm -rf dist",
-    "g:webpack": "cd $INIT_CWD && webpack"
+    "g:webpack": "cd $INIT_CWD && webpack",
+    "g:dts": "cd $INIT_CWD && dts-bundle-generator"
   },
   "homepage": "https://git.rarolabs.com.br/frontend/rarui",
   "repository": {

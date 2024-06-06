@@ -27,6 +27,7 @@ export { tooltip } from "./packages/atomic/tooltip";
 
 // composite
 export { breadcrumb } from "./packages/composite/breadcrumb";
+export { datepicker } from "./packages/composite/datepicker";
 export { dropdown } from "./packages/composite/dropdown";
 export { pagination } from "./packages/composite/pagination";
 export { sidebar } from "./packages/composite/sidebar";

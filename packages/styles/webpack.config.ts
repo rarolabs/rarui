@@ -1,5 +1,5 @@
 import path from "path";
-import { plugins, rules, configuration, utils } from "@rarui/webpack/src";
+import { plugins, rules, configuration } from "@rarui/webpack/src";
 
 const baseConfig = {
   entry: {
@@ -21,8 +21,8 @@ config.plugins = [
   plugins.cssHashRemoverPlugin,
   plugins.dtsBundleGeneratorPlugin({
     entries: [
-      `node ${utils.rootDir}/node_modules/.bin/dts-bundle-generator -o ./dist/index.d.ts ./src/index.ts`,
-      `node ${utils.rootDir}/node_modules/.bin/dts-bundle-generator -o ./dist/themes/dark.d.ts ./src/themes/rarui-theme-dark.css.ts`,
+      `yarn g:dts -o ./dist/index.d.ts ./src/index.ts`,
+      `yarn g:dts -o ./dist/themes/dark.d.ts ./src/themes/rarui-theme-dark.css.ts`,
     ],
   }),
 ];

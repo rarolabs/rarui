@@ -116,6 +116,9 @@
       "@rarui-react/breadcrumb": [
         "./packages/implementations/react/src/composite/Breadcrumb/src"
       ],
+      "@rarui-react/datepicker": [
+        "./packages/implementations/react/src/composite/Datepicker/src"
+      ],
       "@rarui-react/dropdown": [
         "./packages/implementations/react/src/composite/Dropdown/src"
       ],

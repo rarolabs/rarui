@@ -5,6 +5,8 @@ const config: Config.InitialOptions = {
   testEnvironment: "jsdom",
   verbose: true,
   moduleNameMapper: {
+    "react-datepicker.css": "<rootDir>/styleMock.ts",
+
     // core
     "@rarui/typings": "<rootDir>/packages/core/typings/src",
     "@rarui/webpack": "<rootDir>/packages/core/webpack/src",
@@ -25,6 +27,8 @@ const config: Config.InitialOptions = {
       "<rootDir>/packages/implementations/react/src/atomic/Text/src",
     "@rarui-react/icon-button":
       "<rootDir>/packages/implementations/react/src/atomic/IconButton/src",
+    "@rarui-react/input":
+      "<rootDir>/packages/implementations/react/src/atomic/Input/src",
     "@rarui-react/icon":
       "<rootDir>/packages/implementations/react/src/atomic/Icon/src",
     "@rarui-react/divider":
@@ -34,6 +38,8 @@ const config: Config.InitialOptions = {
     // composites
     "@rarui-react/dropdown":
       "<rootDir>/packages/implementations/react/src/composite/Dropdown/src",
+    "@rarui-react/datepicker":
+      "<rootDir>/packages/implementations/react/src/composite/Datepicker/src",
   },
   transform: {
     "^.+\\.css\\.ts$": "babel-jest",
