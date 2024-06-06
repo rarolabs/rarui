@@ -1,0 +1,15 @@
+releases:
+  "@rarui-react/button": patch
+  "@rarui/styles": patch
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui/webpack"
+  - "@rarui/icons"
+  - "@rarui-react/banner"
+  - "@rarui-react/toast"
+  - "@rarui-react/tooltip"
+  - "@rarui-react/sidebar"
+  - "@rarui-vuejs/components"
+  - "@rarui-vuejs/badge"
+  - "@rarui-vuejs/button"
