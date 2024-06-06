@@ -1,4 +1,3 @@
-import { globalStyle, style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
 import { varsThemeBase } from "../../../themes";
 import { buttonVariants } from "./rarui-button.commons";
@@ -17,7 +16,6 @@ const button = recipe({
     cursor: "pointer",
     boxSizing: "border-box",
     position: "relative",
-    gap: varsThemeBase.spacing["4xs"],
     fontWeight: varsThemeBase.fontWeight.semiBold,
     lineHeight: varsThemeBase.lineHeight.button.l,
     fontSize: varsThemeBase.fontSize.button.l,
@@ -31,6 +29,20 @@ const button = recipe({
       borderColor: varsThemeBase.colors.surface.disabled,
       color: varsThemeBase.colors.content.disabled,
       cursor: "not-allowed",
+    },
+    ":after": {
+      transition: "opacity 150ms ease",
+      content: "",
+      position: "absolute",
+      opacity: 0,
+      inset: -1,
+      backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
+      borderRadius: varsThemeBase.shape.border.radius["2xs"],
+    },
+    selectors: {
+      "&:hover:after": {
+        opacity: 1,
+      },
     },
   },
   variants: {
@@ -82,20 +94,24 @@ const button = recipe({
     },
     /**
      * Defines the size of the button component.
+     * @default "large"
      */
     size: {
       large: {
-        padding: varsThemeBase.spacing.xs,
+        gap: varsThemeBase.spacing["3xs"],
+        padding: `0 ${varsThemeBase.spacing.s}`,
         height: "3rem",
         fontSize: varsThemeBase.fontSize.button.l,
       },
       medium: {
-        padding: varsThemeBase.spacing.xs,
-        height: "2.75rem",
+        gap: varsThemeBase.spacing["3xs"],
+        padding: `0 ${varsThemeBase.spacing.xs}`,
+        height: "2.5rem",
         fontSize: varsThemeBase.fontSize.button.m,
       },
       small: {
-        padding: varsThemeBase.spacing["3xs"],
+        gap: varsThemeBase.spacing["4xs"],
+        padding: `0 ${varsThemeBase.spacing["2xs"]}`,
         height: "2rem",
         fontSize: varsThemeBase.fontSize.button.s,
       },
@@ -111,18 +127,10 @@ const button = recipe({
       text: {
         backgroundColor: "transparent",
         textDecoration: "underline",
-        border: "none",
-        borderRadius: varsThemeBase.shape.border.radius.button,
-        ":hover": {
-          borderRadius: varsThemeBase.shape.border.radius.button,
-        },
-        ":active": {
-          borderRadius: varsThemeBase.shape.border.radius.button,
-        },
+        borderColor: "transparent",
       },
       tonal: {
-        border: "none",
-        borderRadius: varsThemeBase.shape.border.radius.button,
+        borderColor: "transparent",
       },
     },
   },
@@ -286,30 +294,6 @@ const button = recipe({
   ],
 });
 
-const overlay = style({
-  position: "absolute",
-  top: -1,
-  left: -1,
-  bottom: -1,
-  right: -1,
-  pointerEvents: "none",
-  opacity: 0,
-  borderRadius: "inherit",
-});
-
-globalStyle(`${button()}:hover ${overlay}`, {
-  opacity: 1,
-  backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
-  borderColor: varsThemeBase.colors.surface["on-brand-hover"],
-});
-
-globalStyle(`${button()}:active ${overlay}`, {
-  opacity: 1,
-  backgroundColor: varsThemeBase.colors.surface["on-brand-press"],
-  borderColor: varsThemeBase.colors.surface["on-brand-press"],
-});
-
 export const styles = {
   button,
-  overlay,
 };

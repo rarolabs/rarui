@@ -4,7 +4,6 @@
     :disabled="disabled"
   >
     <slot />
-    <span :class="button.classnames.overlay" />
   </button>
 </template>
 
