@@ -41,7 +41,6 @@ const config: Config.InitialOptions = {
     "^.+\\.css\\.ts$": "babel-jest",
     ".+\\.(ts|tsx)$": "ts-jest",
   },
-  // transformIgnorePatterns: ["/node_modules/(?!(react-datepicker)/)"],
   coveragePathIgnorePatterns: ["dist", ".scripts", "packages/core/typings"],
 };
 export default config;

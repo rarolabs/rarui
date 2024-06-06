@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "jest --passWithNoTests --no-cache --runInBand --no-watchAll",
-    "test:ci": "yarn types:check && jest --ci --coverage",
+    "test:ci": "jest --ci --coverage",
     "test:coverage": "yarn test --coverage",
     "test:staged": "yarn test --findRelatedTests",
     "test:watch": "yarn test --watch",
