@@ -1,5 +1,4 @@
 import React, { LegacyRef, forwardRef } from "react";
-
 import { CalendarEventOutlinedIcon } from "@rarui/icons";
 import { Input as RaruiInput } from "@rarui-react/input";
 import { Icon } from "@rarui-react/icon";

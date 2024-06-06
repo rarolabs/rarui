@@ -14,6 +14,13 @@
     "version": "yarn version"
   },
   "dependencies": {
+    "@rarui-react/box": "workspace:^",
+    "@rarui-react/button": "workspace:^",
+    "@rarui-react/icon": "workspace:^",
+    "@rarui-react/icon-button": "workspace:^",
+    "@rarui-react/input": "workspace:^",
+    "@rarui-react/text": "workspace:^",
+    "@rarui/icons": "workspace:^",
     "date-fns": "^3.6.0",
     "react-datepicker": "^6.9.0"
   },
@@ -30,9 +37,6 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui//issues"
   },
   "devDependencies": {
-    "@rarui-react/box": "workspace:^",
-    "@rarui-react/button": "workspace:^",
-    "@rarui-react/text": "workspace:^",
     "@rarui/webpack": "workspace:^",
     "@types/react-datepicker": "^6"
   }

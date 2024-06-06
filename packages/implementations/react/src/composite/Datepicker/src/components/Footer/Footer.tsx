@@ -1,10 +1,9 @@
 import React from "react";
-
 import { CalendarEventOutlinedIcon } from "@rarui/icons";
 import { Box } from "@rarui-react/box";
 import { Icon } from "@rarui-react/icon";
-
 import { Button } from "@rarui-react/button";
+
 import { FooterProps } from "./footer.types";
 
 const Footer: React.FC<FooterProps> = ({
