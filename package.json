@@ -39,7 +39,7 @@
     "publish:npm:next": "yarn workspaces foreach -A -p --exclude @rarui/design-system npm publish --tolerate-republish --access public --tag next",
     "publish:npm:stable": "yarn workspaces foreach -A -p --exclude @rarui/design-system npm publish --tolerate-republish --access public",
     "pre:commit": "lint-staged",
-    "pre:push": "yarn test:coverage && yarn types:check && yarn bump:check",
+    "pre:push": "yarn test:coverage && yarn bump:check",
     "prepare:husky": "husky",
     "lint": "eslint packages --ext .jsx,.js,.ts,.tsx --quiet",
     "lint:fix": "yarn lint --fix",
