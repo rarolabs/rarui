@@ -35,7 +35,7 @@ const paginationItem = recipe({
     backgroundColor: "transparent",
     transition: "all 150ms ease",
     border: "none",
-    color: varsThemeBase.colors.content["on-brand"],
+    color: varsThemeBase.colors.content.primary,
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
     fontFamily: varsThemeBase.fontFamily.inter,
     fontWeight: varsThemeBase.fontWeight.semiBold,
@@ -60,6 +60,7 @@ const paginationItem = recipe({
     selected: {
       true: {
         backgroundColor: varsThemeBase.colors.surface.brand,
+        color: varsThemeBase.colors.content["on-brand"],
         ":hover": {
           backgroundColor: varsThemeBase.colors.surface.brand,
           color: varsThemeBase.colors.content["on-brand"],
