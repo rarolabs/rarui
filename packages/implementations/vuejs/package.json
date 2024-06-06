@@ -14,8 +14,8 @@
     "build": "vite build",
     "clean": "rm -rf dist && rm -rf storybook-static",
     "version": "yarn version",
-    "storybook:dev": "yarn g:storybook dev -p 6008 --config-dir ./.storybook",
-    "storybook:build": "yarn g:storybook build --config-dir ./.storybook",
+    "storybook:dev": "yarn g:storybook dev -p 6008 --config-dir ./packages/implementations/vuejs/.storybook",
+    "storybook:build": "yarn g:storybook build --config-dir ./packages/implementations/vuejs/.storybook",
     "storybook:move": "mv storybook-static ../../../storybook-static/vuejs",
     "g:vite": "vite"
   },

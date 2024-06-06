@@ -1,5 +1,5 @@
 import path from "path";
-import { configuration, plugins, utils } from "@rarui/webpack";
+import { configuration, plugins } from "@rarui/webpack";
 
 const baseConfig = {
   entry: { "./index": "./tmp/index.ts" },
@@ -12,9 +12,7 @@ const baseConfig = {
 const config = configuration.getConfiguration(baseConfig);
 config.plugins = [
   plugins.dtsBundleGeneratorPlugin({
-    entries: [
-      `node ${utils.rootDir}/node_modules/.bin/dts-bundle-generator -o ./dist/index.d.ts ./tmp/index.ts`,
-    ],
+    entries: ["yarn g:dts -o ./dist/index.d.ts ./tmp/index.ts"],
   }),
 ];
 

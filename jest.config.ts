@@ -5,6 +5,8 @@ const config: Config.InitialOptions = {
   testEnvironment: "jsdom",
   verbose: true,
   moduleNameMapper: {
+    "react-datepicker.css": "<rootDir>/styleMock.ts",
+
     // core
     "@rarui/typings": "<rootDir>/packages/core/typings/src",
     "@rarui/webpack": "<rootDir>/packages/core/webpack/src",
@@ -39,6 +41,7 @@ const config: Config.InitialOptions = {
     "^.+\\.css\\.ts$": "babel-jest",
     ".+\\.(ts|tsx)$": "ts-jest",
   },
+  // transformIgnorePatterns: ["/node_modules/(?!(react-datepicker)/)"],
   coveragePathIgnorePatterns: ["dist", ".scripts", "packages/core/typings"],
 };
 export default config;
