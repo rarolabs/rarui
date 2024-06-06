@@ -1,0 +1,17 @@
+{
+  "id": "datepicker",
+  "name": "Datepicker",
+  "totalProps": 1,
+  "packageName": "@rarui-react/datepicker",
+  "version": "0.0.0",
+  "docLink": "https://rarui.com.br/documentation/src-components/datepicker",
+  "props": [
+    {
+      "description": "Specifies the input properties for the datepicker component. \nThis should be an object of type InputProperties, which defines various attributes and behaviors for the input field within the datepicker.",
+      "type": "Input",
+      "title": "input",
+      "required": false
+    }
+  ],
+  "subComponents": []
+}
