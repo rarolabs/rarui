@@ -7,7 +7,7 @@ import { Icon } from "@rarui-react/icon";
 import { InputProps } from "./input.types";
 
 const Input: React.FC<InputProps> = forwardRef(
-  ({ className: _className, style: _style, ...props }, ref) => (
+  ({ className: _className, style: _style, ...props }: InputProps, ref) => (
     <RaruiInput
       ref={ref as LegacyRef<HTMLInputElement>}
       divider={false}
