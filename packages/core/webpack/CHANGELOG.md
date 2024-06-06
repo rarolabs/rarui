@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating builds of each design system package. It contains all the necessary settings and dependencies to optimize the creation of our builds.
 
+## 2024-06-06 `1.2.0`
+
+#### 🐛 Bug fixes
+
+- Fixed from the typing generator plugin in Windows environments. ([#50](https://git.rarolabs.com.br/frontend/rarui/pull/50) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-25 `1.1.1`
 
 #### 🐛 Bug fixes
