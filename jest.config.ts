@@ -27,6 +27,8 @@ const config: Config.InitialOptions = {
       "<rootDir>/packages/implementations/react/src/atomic/Text/src",
     "@rarui-react/icon-button":
       "<rootDir>/packages/implementations/react/src/atomic/IconButton/src",
+    "@rarui-react/input":
+      "<rootDir>/packages/implementations/react/src/atomic/Input/src",
     "@rarui-react/icon":
       "<rootDir>/packages/implementations/react/src/atomic/Icon/src",
     "@rarui-react/divider":
