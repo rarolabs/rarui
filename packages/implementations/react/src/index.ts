@@ -24,6 +24,7 @@ export * from "@rarui-react/tooltip";
 
 // composite
 export * from "@rarui-react/breadcrumb";
+export * from "@rarui-react/datepicker";
 export * from "@rarui-react/dropdown";
 export * from "@rarui-react/pagination";
 export * from "@rarui-react/sidebar";

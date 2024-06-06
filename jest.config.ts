@@ -36,6 +36,8 @@ const config: Config.InitialOptions = {
     // composites
     "@rarui-react/dropdown":
       "<rootDir>/packages/implementations/react/src/composite/Dropdown/src",
+    "@rarui-react/datepicker":
+      "<rootDir>/packages/implementations/react/src/composite/Datepicker/src",
   },
   transform: {
     "^.+\\.css\\.ts$": "babel-jest",
