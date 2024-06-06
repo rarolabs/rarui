@@ -21,7 +21,8 @@ describe("GIVEN <Datepicker />", () => {
     it("THEN should correctly render the submitted content", () => {
       makeSut({
         input: {
-          //@ts-ignore
+          // eslint-disable-next-line
+          // @ts-ignore
           "data-testid": "input-element",
         },
         showTimeSelect: true,
@@ -32,7 +33,9 @@ describe("GIVEN <Datepicker />", () => {
     it("THEN should render a custom anchor", () => {
       makeSut({
         customInput: (
-          <button data-testid="button-datepicker">Datepicker</button>
+          <button data-testid="button-datepicker" type="button">
+            Datepicker
+          </button>
         ),
       });
       fireEvent.click(screen.getByTestId("button-datepicker"));

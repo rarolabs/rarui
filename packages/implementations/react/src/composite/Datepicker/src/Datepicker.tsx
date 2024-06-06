@@ -11,7 +11,6 @@ import { Footer, Header, Input } from "./components";
 const Datepicker: React.FC<DatepickerProps> = ({
   className: _className,
   style: _style,
-  children,
   showYearPicker,
   showMonthYearPicker,
   input,
@@ -30,12 +29,12 @@ const Datepicker: React.FC<DatepickerProps> = ({
       dayClassName={() => datepicker.classnames.day}
       weekDayClassName={() => datepicker.classnames.weekday}
       timeClassName={() => datepicker.classnames.time}
-      customInput={customInput ? customInput : <Input {...input} />}
-      renderCustomHeader={(props) => (
+      customInput={customInput ?? <Input {...input} />}
+      renderCustomHeader={(headerProps) => (
         <Header
           showYearPicker={showYearPicker}
           showMonthYearPicker={showMonthYearPicker}
-          {...props}
+          {...headerProps}
         />
       )}
       showPopperArrow={false}
