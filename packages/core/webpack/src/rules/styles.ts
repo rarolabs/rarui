@@ -16,5 +16,5 @@ export const cssLoaderExtractRule = {
 
 export const styleLoaderCssRule = {
   test: /\.css$/i,
-  use: ["style-loader", "css-loader"],
+  use: ["css-loader"],
 };

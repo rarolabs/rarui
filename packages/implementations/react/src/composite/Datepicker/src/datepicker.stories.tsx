@@ -12,7 +12,11 @@ const meta: Meta<typeof Datepicker> = {
     const [date, setDate] = useState(new Date());
     return (
       <Box display="flex" justifyContent="center">
-        <Datepicker {...args} selected={date} onChange={setDate as any} />
+        <Datepicker
+          {...args}
+          selected={date}
+          onChange={(date) => setDate(date as Date)}
+        />
       </Box>
     );
   },
@@ -66,13 +70,14 @@ export const rangePicker: Story = {
           selected={startDate}
           startDate={startDate}
           endDate={endDate}
-          onChange={handleChange as any}
+          onChange={(dates) => handleChange(dates as [Date, Date])}
         />
       </Box>
     );
   },
   args: {
     showTimeSelect: true,
+    selectsRange: true,
     dateFormat: "MMMM d, yyyy h:mm aa",
   },
 };

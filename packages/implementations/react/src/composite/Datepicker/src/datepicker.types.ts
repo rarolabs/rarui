@@ -1,5 +1,4 @@
-import { HTMLAttributes } from "react";
-import { ReactDatePickerProps } from "react-datepicker";
+import { HTMLAttributes, ReactNode } from "react";
 import { InputProperties, InputProps } from "@rarui-react/input";
 
 export interface DatepickerTyping {
@@ -9,12 +8,70 @@ export interface DatepickerTyping {
    * @TJS-type Input
    */
   input?: InputProperties;
+  /**
+   * Represents all of the things React can render.
+   * While ReactElement only represents JSX, ReactNode represents everything that can be rendered, allowing for a custom input component.
+   */
+  customInput?: ReactNode;
+  /**
+   * Specifies the locale for the datepicker, influencing how dates are displayed and formatted.
+   */
+  locale?: string;
+  /**
+   * Determines whether to show a year picker.
+   * When true, the datepicker will display options for selecting a year.
+   */
+  showYearPicker?: boolean;
+  /**
+   * Determines whether to show a time selector.
+   * When true, the datepicker will include options for selecting a time.
+   */
+  showTimeSelect?: boolean;
+  /**
+   * Determines whether to show a combined month and year picker.
+   * When true, the datepicker will display options for selecting both month and year together.
+   */
+  showMonthYearPicker?: boolean;
+  /**
+   * Specifies the format in which the date should be displayed.
+   * This should be a string representing the desired date format.
+   */
+  dateFormat?: string;
+  /**
+   * The currently selected date. This should be a Date object representing the selected date.
+   */
+  selected?: Date;
+  /**
+   * The start date in a date range selection. This should be a Date object.
+   */
+  startDate?: Date;
+  /**
+   * The end date in a date range selection. This should be a Date object.
+   */
+  endDate?: Date;
+  /**
+   * Determines whether the datepicker allows selecting a date range.
+   * When true, the datepicker enables range selection.
+   */
+  selectsRange?: boolean;
+  /**
+   * A callback function that is called when a date is selected.
+   * This function receives the selected date as a parameter.
+   * @TJS-type (date: Date) => void;
+   */
+  onSelect?: (date: Date) => void;
+  /**
+   * A callback function that is called when the date value changes.
+   * This function receives the selected date or an array of dates (in the case of range selection) as a parameter.
+   * @TJS-type (date: Date | Date[]) => void
+   */
+  onChange: (date: Date | Date[]) => void;
 }
 
 type DatepickerProperties = DatepickerTyping;
 
-export type DatepickerProps = ReactDatePickerProps<true, true> &
+export type DatepickerProps = DatepickerProperties &
   HTMLAttributes<HTMLDivElement> &
-  Omit<DatepickerProperties, "input"> & {
+  Omit<DatepickerTyping, "input"> & {
     input?: InputProps;
   };

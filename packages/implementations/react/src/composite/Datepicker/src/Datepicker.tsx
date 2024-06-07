@@ -1,6 +1,5 @@
 import React, { createRef } from "react";
-import Picker, { registerLocale } from "react-datepicker";
-import { ptBR } from "date-fns/locale/pt-BR";
+import Picker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 import { datepicker } from "@rarui/styles";
@@ -15,10 +14,10 @@ const Datepicker: React.FC<DatepickerProps> = ({
   showMonthYearPicker,
   input,
   customInput,
+  onChange,
   ...props
 }) => {
   const datePickerRef = createRef<{ setSelected: (date: Date) => void }>();
-  registerLocale("pt-BR", ptBR);
 
   return (
     <Picker
@@ -42,6 +41,7 @@ const Datepicker: React.FC<DatepickerProps> = ({
       todayButton={false}
       showYearPicker={showYearPicker}
       showMonthYearPicker={showMonthYearPicker}
+      onChange={(date: Date) => date && onChange(date)}
       {...props}
     >
       <Footer

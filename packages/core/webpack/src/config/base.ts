@@ -5,7 +5,7 @@ import merge from "webpack-merge";
 import { Configuration } from "webpack";
 
 import { arrayFilterEmpty, isProduction } from "../utils";
-import { typescriptRule, svgRule, VueRule } from "../rules";
+import { typescriptRule, svgRule, VueRule, styleLoaderCssRule } from "../rules";
 import { dtsBundleGeneratorPlugin } from "../plugins";
 import { aliasItems } from "./alias";
 import { externalItems } from "./external";
@@ -24,7 +24,12 @@ const webpack: Configuration = {
     libraryTarget: "umd",
   },
   module: {
-    rules: arrayFilterEmpty([typescriptRule, svgRule, VueRule]),
+    rules: arrayFilterEmpty([
+      typescriptRule,
+      svgRule,
+      VueRule,
+      styleLoaderCssRule,
+    ]),
   },
   plugins: [dtsBundleGeneratorPlugin()],
   resolve: {

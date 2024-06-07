@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/datepicker",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -21,7 +21,6 @@
     "@rarui-react/input": "workspace:^",
     "@rarui-react/text": "workspace:^",
     "@rarui/icons": "workspace:^",
-    "date-fns": "^3.6.0",
     "react-datepicker": "^6.9.0"
   },
   "peerDependencies": {

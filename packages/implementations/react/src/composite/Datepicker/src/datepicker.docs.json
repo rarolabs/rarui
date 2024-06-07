@@ -1,16 +1,91 @@
 {
   "id": "datepicker",
   "name": "Datepicker",
-  "totalProps": 1,
+  "totalProps": 13,
   "packageName": "@rarui-react/datepicker",
   "version": "0.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/datepicker",
   "props": [
     {
-      "description": "Specifies the input properties for the datepicker component. \nThis should be an object of type InputProperties, which defines various attributes and behaviors for the input field within the datepicker.",
+      "description": "Specifies the input properties for the datepicker component.\nThis should be an object of type InputProperties, which defines various attributes and behaviors for the input field within the datepicker.",
       "type": "Input",
       "title": "input",
       "required": false
+    },
+    {
+      "$ref": "#/definitions/React.ReactNode",
+      "description": "Represents all of the things React can render.\nWhile ReactElement only represents JSX, ReactNode represents everything that can be rendered, allowing for a custom input component.",
+      "title": "customInput",
+      "required": false
+    },
+    {
+      "description": "Specifies the locale for the datepicker, influencing how dates are displayed and formatted.",
+      "type": "string",
+      "title": "locale",
+      "required": false
+    },
+    {
+      "description": "Determines whether to show a year picker.\nWhen true, the datepicker will display options for selecting a year.",
+      "type": "boolean",
+      "title": "showYearPicker",
+      "required": false
+    },
+    {
+      "description": "Determines whether to show a time selector.\nWhen true, the datepicker will include options for selecting a time.",
+      "type": "boolean",
+      "title": "showTimeSelect",
+      "required": false
+    },
+    {
+      "description": "Determines whether to show a combined month and year picker.\nWhen true, the datepicker will display options for selecting both month and year together.",
+      "type": "boolean",
+      "title": "showMonthYearPicker",
+      "required": false
+    },
+    {
+      "description": "Specifies the format in which the date should be displayed.\nThis should be a string representing the desired date format.",
+      "type": "string",
+      "title": "dateFormat",
+      "required": false
+    },
+    {
+      "description": "The currently selected date. This should be a Date object representing the selected date.",
+      "type": "string",
+      "format": "date-time",
+      "title": "selected",
+      "required": false
+    },
+    {
+      "description": "The start date in a date range selection. This should be a Date object.",
+      "type": "string",
+      "format": "date-time",
+      "title": "startDate",
+      "required": false
+    },
+    {
+      "description": "The end date in a date range selection. This should be a Date object.",
+      "type": "string",
+      "format": "date-time",
+      "title": "endDate",
+      "required": false
+    },
+    {
+      "description": "Determines whether the datepicker allows selecting a date range.\nWhen true, the datepicker enables range selection.",
+      "type": "boolean",
+      "title": "selectsRange",
+      "required": false
+    },
+    {
+      "description": "A callback function that is called when a date is selected.\nThis function receives the selected date as a parameter.",
+      "type": "(date: Date) => void;",
+      "title": "onSelect",
+      "required": false
+    },
+    {
+      "description": "A callback function that is called when the date value changes.\nThis function receives the selected date or an array of dates (in the case of range selection) as a parameter.",
+      "type": "(date: Date | Date[]) => void",
+      "title": "onChange",
+      "required": true
     }
   ],
   "subComponents": []
