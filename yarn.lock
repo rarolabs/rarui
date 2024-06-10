@@ -3486,6 +3486,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-react/modal@workspace:packages/implementations/react/src/composite/Modal":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/modal@workspace:packages/implementations/react/src/composite/Modal"
+  dependencies:
+    "@floating-ui/react": "npm:^0.26.13"
+    "@rarui-react/box": "workspace:^"
+    "@rarui-react/icon": "workspace:^"
+    "@rarui-react/text": "workspace:^"
+    "@rarui/icons": "workspace:^"
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@rarui-react/pagination@workspace:packages/implementations/react/src/composite/Pagination":
   version: 0.0.0-use.local
   resolution: "@rarui-react/pagination@workspace:packages/implementations/react/src/composite/Pagination"
