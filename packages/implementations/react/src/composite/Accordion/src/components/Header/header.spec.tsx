@@ -64,14 +64,14 @@ describe("GIVEN <Accordion.Header />", () => {
       fireEvent.click(screen.getByTestId("accordion-header-element"));
       expect(
         screen.getByTestId("accordion-header-element").getAttribute("class"),
-      ).toContain("active");
+      ).toContain("selected_true");
     });
 
     it("AND should not open accordion item", () => {
       makeSut({}, "1");
       expect(
         screen.getByTestId("accordion-header-element").getAttribute("class"),
-      ).not.toContain("active");
+      ).not.toContain("selected_true");
     });
 
     it("AND should send the props correctly via render props", () => {
@@ -90,49 +90,33 @@ describe("GIVEN <Accordion.Header />", () => {
     });
   });
 
-  describe("THEN should correctly render the submitted borderBottom", () => {
-    it("THEN should correctly render the borderBottom default", () => {
+  describe("THEN should correctly render the submitted size", () => {
+    it("THEN should correctly render the size default", () => {
       makeSut();
       expect(
         screen.getByTestId("accordion-header-element").getAttribute("class"),
-      ).toContain("borderBottom_none");
+      ).toContain("size_medium");
     });
 
-    it("THEN should correctly render the borderBottom none", () => {
-      makeSut({ borderBottom: "none" });
+    it("AND should correctly render the size large", () => {
+      makeSut({ size: "large" });
       expect(
         screen.getByTestId("accordion-header-element").getAttribute("class"),
-      ).toContain("borderBottom_none");
+      ).toContain("size_large");
     });
 
-    it("THEN should correctly render the borderBottom base", () => {
-      makeSut({ borderBottom: "base" }, "1");
+    it("AND should correctly render the size medium", () => {
+      makeSut({ size: "medium" }, "1");
       expect(
         screen.getByTestId("accordion-header-element").getAttribute("class"),
-      ).toContain("borderBottom_base");
-    });
-  });
-
-  describe("THEN should correctly render the submitted borderTop", () => {
-    it("THEN should correctly render the borderTop default", () => {
-      makeSut();
-      expect(
-        screen.getByTestId("accordion-header-element").getAttribute("class"),
-      ).toContain("borderTop_base");
+      ).toContain("size_medium");
     });
 
-    it("THEN should correctly render the borderTop none", () => {
-      makeSut({ borderTop: "none" });
+    it("AND should correctly render the size small", () => {
+      makeSut({ size: "small" }, "1");
       expect(
         screen.getByTestId("accordion-header-element").getAttribute("class"),
-      ).toContain("borderTop_none");
-    });
-
-    it("THEN should correctly render the borderTop base", () => {
-      makeSut({ borderTop: "base" });
-      expect(
-        screen.getByTestId("accordion-header-element").getAttribute("class"),
-      ).toContain("borderTop_base");
+      ).toContain("size_small");
     });
   });
 });

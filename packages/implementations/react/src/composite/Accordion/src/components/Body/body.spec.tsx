@@ -28,26 +28,26 @@ describe("GIVEN <Accordion.Body />", () => {
     });
   });
 
-  describe("THEN should correctly render the submitted borderBottom", () => {
-    it("THEN should correctly render the borderBottom default", () => {
+  describe("THEN should correctly render the submitted padding", () => {
+    it("THEN should correctly render the padding default", () => {
       makeSut({ children: "My content" });
       expect(
         screen.getByTestId("accordion-body-element").getAttribute("class"),
-      ).toContain("borderBottom_none");
+      ).toContain("padding_base");
     });
 
-    it("THEN should correctly render the borderBottom none", () => {
-      makeSut({ children: "My content", borderBottom: "none" });
+    it("AND should correctly render the padding none", () => {
+      makeSut({ children: "My content", padding: "none" });
       expect(
         screen.getByTestId("accordion-body-element").getAttribute("class"),
-      ).toContain("borderBottom_none");
+      ).toContain("padding_none");
     });
 
-    it("THEN should correctly render the borderBottom base", () => {
-      makeSut({ children: "My content", borderBottom: "base" });
+    it("AND should correctly render the padding base", () => {
+      makeSut({ children: "My content", padding: "base" });
       expect(
         screen.getByTestId("accordion-body-element").getAttribute("class"),
-      ).toContain("borderBottom_base");
+      ).toContain("padding_base");
     });
   });
 });
