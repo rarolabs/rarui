@@ -1,12 +1,11 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import { argTypesConvert } from ".storybook/utils";
-import { StorefrontIcon } from "@rarui/icons";
+import { BookmarkOutlinedIcon } from "@rarui/icons";
 import { Box } from "@rarui-react/box";
 import { Text } from "@rarui-react/text";
 
 import { Accordion } from "./Accordion";
-
 import docs from "./accordion.docs.json";
 
 const meta: Meta = {
@@ -30,43 +29,50 @@ export const basic: Story = {
         <Accordion.Item index="0">
           <Accordion.Header
             title="Title one"
-            subtitle="Caption one"
-            icon={<StorefrontIcon size="medium" />}
+            icon={<BookmarkOutlinedIcon size="medium" />}
           />
           <Accordion.Body>
-            <Box
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              borderStyle="dashed"
-              borderWidth="$1"
-              borderColor="$warning"
-              width="100%"
-              height="100%"
-            >
-              <Text textAlign="center">Replace me with your content</Text>
+            <Box display="flex" flexDirection="column" gap="$2xs">
+              <Text color="$secondary">Lorem ipsum dolor sit amet.</Text>
+              <Box
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                borderStyle="dashed"
+                borderWidth="$1"
+                borderColor="$warning"
+                width="100%"
+                minHeight="200px"
+              >
+                <Text textAlign="center" color="$warning">
+                  Replace me with your content
+                </Text>
+              </Box>
             </Box>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item index="1">
           <Accordion.Header
             title="Title two"
-            subtitle="Caption two"
-            icon={<StorefrontIcon size="medium" />}
-            borderBottom="base"
+            icon={<BookmarkOutlinedIcon size="medium" />}
           />
-          <Accordion.Body borderBottom="base">
-            <Box
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              borderStyle="dashed"
-              borderWidth="$1"
-              borderColor="$warning"
-              width="100%"
-              height="100%"
-            >
-              <Text textAlign="center">Replace me with your content</Text>
+          <Accordion.Body>
+            <Box display="flex" flexDirection="column" gap="$2xs">
+              <Text color="$secondary">Lorem ipsum dolor sit amet.</Text>
+              <Box
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                borderStyle="dashed"
+                borderWidth="$1"
+                borderColor="$warning"
+                width="100%"
+                minHeight="200px"
+              >
+                <Text textAlign="center" color="$warning">
+                  Replace me with your content two
+                </Text>
+              </Box>
             </Box>
           </Accordion.Body>
         </Accordion.Item>

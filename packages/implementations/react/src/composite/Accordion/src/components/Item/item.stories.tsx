@@ -1,12 +1,19 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
+import { argTypesConvert } from ".storybook/utils";
 import { StorefrontIcon } from "@rarui/icons";
 import { Box } from "@rarui-react/box";
 import { Text } from "@rarui-react/text";
+
 import { Accordion } from "../../Accordion";
+import docs from "../../accordion.docs.json";
+
+const itemDocs = docs.subComponents.find(
+  (subComponent) => subComponent.name === "Accordion.Item",
+);
 
 const meta: Meta<typeof Accordion.Item> = {
-  title: "Composite/Accordion.Item",
+  title: "Composite/Accordion/Item",
   component: Accordion.Item,
   render: (args) => (
     <Accordion>
@@ -14,6 +21,7 @@ const meta: Meta<typeof Accordion.Item> = {
     </Accordion>
   ),
   argTypes: {
+    ...argTypesConvert(itemDocs),
     children: { control: { disable: true } },
   },
   tags: ["autodocs"],
