@@ -1,4 +1,4 @@
-import { Header } from "./Header";
+import { AccordionHeader } from "./Header";
 
-export { Header } from "./Header";
-export default Header;
+export { AccordionHeader } from "./Header";
+export default AccordionHeader;

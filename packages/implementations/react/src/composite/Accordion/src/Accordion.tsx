@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
+import { Box } from "@rarui-react/box";
 import { AccordionComponents, AccordionProps } from "./accordion.types";
-import { Body, Item, Header } from "./components";
-import { Manager } from "./contexts";
+import { AccordionBody, AccordionItem, AccordionHeader } from "./components";
+import { AccordionManager } from "./contexts";
 
 const Accordion: React.FC<AccordionProps> & AccordionComponents = ({
   className: _className,
@@ -28,15 +29,17 @@ const Accordion: React.FC<AccordionProps> & AccordionComponents = ({
   );
 
   return (
-    <div {...rest}>
-      <Manager.Provider value={context}>{children}</Manager.Provider>
-    </div>
+    <Box as="div" display="flex" flexDirection="column" {...rest}>
+      <AccordionManager.Provider value={context}>
+        {children}
+      </AccordionManager.Provider>
+    </Box>
   );
 };
 
-Accordion.Body = Body;
-Accordion.Item = Item;
-Accordion.Header = Header;
+Accordion.Body = AccordionBody;
+Accordion.Item = AccordionItem;
+Accordion.Header = AccordionHeader;
 Accordion.displayName = "Accordion";
 Accordion.Body.displayName = "Accordion.Body";
 Accordion.Item.displayName = "Accordion.Item";

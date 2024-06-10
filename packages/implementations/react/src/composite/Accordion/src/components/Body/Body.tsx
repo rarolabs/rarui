@@ -1,17 +1,15 @@
 import React, { useMemo } from "react";
-// import { accordion } from "@nimbus-ds/styles";
+import { accordion } from "@rarui/styles";
 
-import { BodyProps } from "./body.types";
+import { AccordionBodyProps } from "./body.types";
 import { useAccordion, useAccordionItem } from "../../hooks";
 
-const Body: React.FC<BodyProps> = ({
+const AccordionBody: React.FC<AccordionBodyProps> = ({
   className: _className,
   style: _style,
   children,
-  borderBottom = "none",
-  borderTop = "none",
   padding = "base",
-  ...rest
+  ...props
 }) => {
   const { selected } = useAccordion();
   const { index } = useAccordionItem();
@@ -23,16 +21,10 @@ const Body: React.FC<BodyProps> = ({
   }
 
   return (
-    <div
-      // className={[
-      //   accordion.classnames.body,
-      //   accordion.sprinkle({ borderBottom, borderTop, padding }),
-      // ].join(" ")}
-      {...rest}
-    >
+    <div className={accordion.classnames.body({ padding })} {...props}>
       {children}
     </div>
   );
 };
 
-export { Body };
+export { AccordionBody };

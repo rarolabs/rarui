@@ -1,4 +1,4 @@
-import { Body } from "./Body";
+import { AccordionBody } from "./Body";
 
-export { Body } from "./Body";
-export default Body;
+export { AccordionBody } from "./Body";
+export default AccordionBody;

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export interface ItemProperties {
+export interface AccordionItemProperties {
   /**
    * The content of the accordion body.
    * @TJS-type React.ReactNode
@@ -16,4 +16,4 @@ export interface ItemProperties {
   testId?: string;
 }
 
-export type ItemProps = ItemProperties;
+export type AccordionItemProps = AccordionItemProperties;

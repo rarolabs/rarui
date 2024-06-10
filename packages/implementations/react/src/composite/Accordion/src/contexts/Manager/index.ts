@@ -1,5 +1,5 @@
-import { Manager } from "./Manager";
+import { AccordionManager } from "./Manager";
 
-export { Manager } from "./Manager";
-export type { ManagerProps } from "./manager.types";
-export default Manager;
+export { AccordionManager } from "./Manager";
+export type { AccordionManagerProps } from "./manager.types";
+export default AccordionManager;

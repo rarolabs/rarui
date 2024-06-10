@@ -1,5 +1,5 @@
-import { ManagerItem } from "./ManagerItem";
+import { AccordionManagerItem } from "./ManagerItem";
 
-export { ManagerItem } from "./ManagerItem";
-export type { ManagerItemProps } from "./managerItem.types";
-export default ManagerItem;
+export { AccordionManagerItem } from "./ManagerItem";
+export type { AccordionManagerItemProps } from "./managerItem.types";
+export default AccordionManagerItem;

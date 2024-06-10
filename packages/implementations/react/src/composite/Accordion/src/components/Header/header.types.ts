@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { accordion } from "@nimbus-ds/styles";
+import { AccordionVariants } from "@rarui/styles";
 
-export interface HeaderProperties {
+export interface AccordionHeaderTypings {
   /**
    * The content of the accordion header.
    * @TJS-type React.ReactNode | ((data: { selected: string; index: string }) => React.ReactNode);
@@ -27,16 +27,10 @@ export interface HeaderProperties {
    * @default false
    */
   noIconToggle?: boolean;
-  /**
-   * The borderTop property defines a lower border of the accordion header.
-   * @default base
-   */
-  borderTop?: keyof typeof accordion.properties.borderTop;
-  /**
-   * The borderBottom property defines a lower border of the accordion header.
-   */
-  borderBottom?: keyof typeof accordion.properties.borderBottom;
 }
 
-export type HeaderProps = HeaderProperties &
+export type AccordionHeaderProperties = AccordionHeaderTypings &
+  Pick<AccordionVariants, "size">;
+
+export type AccordionHeaderProps = AccordionHeaderProperties &
   Omit<HTMLAttributes<HTMLElement>, "children">;

@@ -1,4 +1,4 @@
-export interface ManagerItemProps {
+export interface AccordionManagerItemProps {
   index: string;
   testId?: string;
 }

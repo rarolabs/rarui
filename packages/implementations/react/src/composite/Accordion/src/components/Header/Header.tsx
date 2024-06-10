@@ -1,23 +1,22 @@
 import React, { useCallback } from "react";
-import { Title } from "@rarui-react/title";
 import { Text } from "@rarui-react/text";
-import { Icon as NimbusIcon } from "@rarui-react/icon";
+import { Box } from "@rarui-react/box";
+import { Icon } from "@rarui-react/icon";
 import { ChevronDownIcon, ChevronUpIcon } from "@rarui/icons";
-// import { accordion } from "@nimbus-ds/styles";
 
-import { HeaderProps } from "./header.types";
+import { AccordionHeaderProps } from "./header.types";
 import { useAccordion, useAccordionItem } from "../../hooks";
+import { accordion } from "@rarui/styles";
 
-const Header: React.FC<HeaderProps> = ({
+const AccordionHeader: React.FC<AccordionHeaderProps> = ({
   className: _className,
   style: _style,
+  noIconToggle = false,
+  size = "medium",
   children,
   title,
   subtitle,
   icon,
-  noIconToggle = false,
-  borderTop = "base",
-  borderBottom,
   ...rest
 }) => {
   const { selected, onSelect } = useAccordion();
@@ -34,20 +33,11 @@ const Header: React.FC<HeaderProps> = ({
     <button
       type="button"
       data-testid={testId || `accordion-header-${index}`}
-      {...rest}
       onClick={handleSelect}
-      // className={[
-      //   accordion.classnames.header,
-      //   accordion.sprinkle({
-      //     borderTop,
-      //     borderBottom: !isOpen ? borderBottom : "none",
-      //   }),
-      //   isOpen && accordion.classnames.header_active,
-      // ].join(" ")}
+      className={accordion.classnames.item({ selected: isOpen, size })}
+      {...rest}
     >
-      <div
-      // className={accordion.classnames.header__content}
-      >
+      <Box display="flex" justifyContent="space-between" alignItems="center">
         {typeof children === "function"
           ? children({
               selected,
@@ -55,44 +45,45 @@ const Header: React.FC<HeaderProps> = ({
             })
           : children}
 
-        <div
-        // className={accordion.classnames.header__description}
+        <Box
+          display="flex"
+          gap="$3xs"
+          alignItems={subtitle ? "flex-start" : "center"}
         >
-          {icon && (
-            <NimbusIcon
-              source={icon}
-              // color="primary-textHigh"
-            />
-          )}
-          <div
-          // className={accordion.classnames.header__title}
+          {icon && <Icon source={icon} />}
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="flex-start"
+            gap="$3xs"
           >
             {title && (
-              <Title data-testid="accordion-header-title" as="h5">
+              <Text data-testid="accordion-header-title" fontSize="$xs">
                 {title}
-              </Title>
+              </Text>
             )}
             {subtitle && (
-              <Text
-                // fontSize="caption"
-                data-testid="accordion-header-subtitle"
-              >
+              <Text data-testid="accordion-header-subtitle" fontSize="$xxs">
                 {subtitle}
               </Text>
             )}
-          </div>
-        </div>
-
+          </Box>
+        </Box>
         {!noIconToggle && (
-          <NimbusIcon
+          <Icon
             data-testid="accordion-icon-Toggle"
-            // color="primary-textHigh"
-            source={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+            source={
+              isOpen ? (
+                <ChevronUpIcon size="medium" />
+              ) : (
+                <ChevronDownIcon size="medium" />
+              )
+            }
           />
         )}
-      </div>
+      </Box>
     </button>
   );
 };
 
-export { Header };
+export { AccordionHeader };

@@ -1,9 +1,9 @@
 import { useContext } from "react";
 
-import { AccordionContext, AccordionContextProps } from "../../contexts";
+import { AccordionManager, AccordionManagerProps } from "../../contexts";
 
-export const useAccordion: () => AccordionContextProps = () => {
-  const context = useContext(AccordionContext);
+export const useAccordion: () => AccordionManagerProps = () => {
+  const context = useContext(AccordionManager);
 
   if (context == null || Object.keys(context).length === 0) {
     throw new Error(

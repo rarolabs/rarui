@@ -1,11 +1,10 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { StepperVariants } from "@rarui/styles";
-import { Body, Item, Header } from "./components";
+import { AccordionBody, AccordionItem, AccordionHeader } from "./components";
 
 export interface AccordionComponents {
-  Body: typeof Body;
-  Item: typeof Item;
-  Header: typeof Header;
+  Body: typeof AccordionBody;
+  Item: typeof AccordionItem;
+  Header: typeof AccordionHeader;
 }
 
 export interface AccordionTyping {
@@ -20,6 +19,7 @@ export interface AccordionTyping {
   selectedDefault?: string;
 }
 
-export type AccordionProperties = AccordionTyping & StepperVariants;
+export type AccordionProperties = AccordionTyping;
 
-export type AccordionProps = AccordionProperties & HTMLAttributes<HTMLElement>;
+export type AccordionProps = AccordionProperties &
+  Omit<HTMLAttributes<HTMLElement>, "color">;

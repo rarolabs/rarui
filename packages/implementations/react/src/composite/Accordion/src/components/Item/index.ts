@@ -1,4 +1,4 @@
-import { Item } from "./Item";
+import { AccordionItem } from "./Item";
 
-export { Item } from "./Item";
-export default Item;
+export { AccordionItem } from "./Item";
+export default AccordionItem;
