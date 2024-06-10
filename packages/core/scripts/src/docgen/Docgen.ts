@@ -205,13 +205,15 @@ export class Docgen {
 
   private getSubComponents(): Doc[] {
     const subComponentsNames = this.getSubComponentsNames();
+
     const subComponents = subComponentsNames.reduce((prev: Doc[], curr) => {
       const subComponent = curr.replace(`${this.component.name}.`, "");
-      const schema = this.getSchema(`${subComponent}Properties`);
+      const schema = this.getSchema(
+        `${this.component.name}${subComponent}Properties`,
+      );
       this.component.source = this.getSource(
         `${this.component.path}/components/${subComponent}/${subComponent}.tsx`,
       );
-
       const polymorphicProps = this.getPolymorphicProps();
       const props = this.formatProps(schema, polymorphicProps);
       prev.push({
