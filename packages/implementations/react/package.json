@@ -17,6 +17,10 @@
     "storybook:build": "yarn g:storybook build --config-dir ./packages/implementations/react/.storybook -o ./packages/implementations/react/storybook-static",
     "storybook:move": "mv storybook-static ../../../storybook-static/react"
   },
+  "dependencies": {
+    "@floating-ui/react": "^0.26.13",
+    "react-datepicker": "^6.9.0"
+  },
   "peerDependencies": {
     "react": "^16.8 || ^17.0 || ^18.0",
     "react-dom": "^16.8 || ^17.0 || ^18.0"

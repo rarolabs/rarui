@@ -2,6 +2,16 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-06-10 `1.26.0`
+
+#### 🎉 New features
+
+- Added new composite `Accordion` component. ([#52](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/52) by [@junior](https://git.rarolabs.com.br/junior))
+
+#### 🐛 Bug fixes
+
+- Added peer dependence on packages. ([#52](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/52) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-06 `1.25.0`
 
 #### 🎉 New features
