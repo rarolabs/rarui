@@ -55,6 +55,7 @@
     },
     {
       "description": "Defines the size of the button component.",
+      "default": "large",
       "enum": ["large", "medium", "small"],
       "type": "string",
       "title": "size",

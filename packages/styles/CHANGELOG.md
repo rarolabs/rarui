@@ -2,7 +2,17 @@
 
 RarUI Styles deprive all styles needed to build components.
 
-## 2024-06-10 `1.35.0`
+## 2024-06-10 `1.25.1`
+
+#### 🐛 Bug fixes
+
+- Adjusting padding and gap for the `button` component on small, medium and large size. ([#50](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/50) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+#### 💡 Others
+
+- Added transition for hover state on `button` component. ([#50](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/50) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+## 2024-06-10 `1.25.0`
 
 #### 🎉 New features
 

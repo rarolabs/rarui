@@ -19,14 +19,14 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const basic: Story = {
+export const Basic: Story = {
   args: {
     appearance: "brand",
     children: (
       <>
         Label
         <Icon
-          source={<ArrowLineRightIcon size="medium" />}
+          source={<ArrowLineRightIcon size="small" />}
           color="$currentColor"
         />
       </>
@@ -34,7 +34,7 @@ export const basic: Story = {
   },
 };
 
-export const large: Story = {
+export const Large: Story = {
   args: {
     children: (
       <>
@@ -50,13 +50,13 @@ export const large: Story = {
   },
 };
 
-export const medium: Story = {
+export const Medium: Story = {
   args: {
     children: (
       <>
         Label
         <Icon
-          source={<ArrowLineRightIcon size="medium" />}
+          source={<ArrowLineRightIcon size="small" />}
           color="$currentColor"
         />
       </>
@@ -66,13 +66,13 @@ export const medium: Story = {
   },
 };
 
-export const small: Story = {
+export const Small: Story = {
   args: {
     children: (
       <>
         Label
         <Icon
-          source={<ArrowLineRightIcon size="medium" />}
+          source={<ArrowLineRightIcon size="small" />}
           color="$currentColor"
         />
       </>
@@ -82,14 +82,14 @@ export const small: Story = {
   },
 };
 
-export const disabled: Story = {
+export const Disabled: Story = {
   args: {
     disabled: true,
     children: (
       <>
         Label
         <Icon
-          source={<ArrowLineRightIcon size="medium" />}
+          source={<ArrowLineRightIcon size="small" />}
           color="$currentColor"
         />
       </>
@@ -97,7 +97,7 @@ export const disabled: Story = {
   },
 };
 
-export const asLink = {
+export const AsLink = {
   args: {
     as: "a",
     children: "Button as anchor",
@@ -106,13 +106,13 @@ export const asLink = {
   },
 };
 
-export const outlined: Story = {
+export const Outlined: Story = {
   args: {
     children: (
       <>
         Label
         <Icon
-          source={<ArrowLineRightIcon size="medium" />}
+          source={<ArrowLineRightIcon size="small" />}
           color="$currentColor"
         />
       </>
@@ -122,13 +122,13 @@ export const outlined: Story = {
   },
 };
 
-export const solid: Story = {
+export const Solid: Story = {
   args: {
     children: (
       <>
         Label
         <Icon
-          source={<ArrowLineRightIcon size="medium" />}
+          source={<ArrowLineRightIcon size="small" />}
           color="$currentColor"
         />
       </>
@@ -138,13 +138,13 @@ export const solid: Story = {
   },
 };
 
-export const text: Story = {
+export const Text: Story = {
   args: {
     children: (
       <>
         Label
         <Icon
-          source={<ArrowLineRightIcon size="medium" />}
+          source={<ArrowLineRightIcon size="small" />}
           color="$currentColor"
         />
       </>
@@ -154,13 +154,13 @@ export const text: Story = {
   },
 };
 
-export const tonal: Story = {
+export const Tonal: Story = {
   args: {
     children: (
       <>
         Label
         <Icon
-          source={<ArrowLineRightIcon size="medium" />}
+          source={<ArrowLineRightIcon size="small" />}
           color="$currentColor"
         />
       </>

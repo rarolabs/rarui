@@ -1,0 +1,11 @@
+releases:
+  "@rarui-react/button": patch
+  "@rarui/styles": patch
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui-react/banner"
+  - "@rarui-react/toast"
+  - "@rarui-react/tooltip"
+  - "@rarui-react/datepicker"
+  - "@rarui-react/sidebar"

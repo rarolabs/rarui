@@ -62,7 +62,6 @@ const Button = forwardRef(
         ref={innerRef}
       >
         {children}
-        <span className={button.classnames.overlay} />
       </As>
     );
   },

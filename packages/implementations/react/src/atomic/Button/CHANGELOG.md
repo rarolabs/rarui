@@ -2,6 +2,12 @@
 
 The Button component allows us to initiate actions, make state or page changes.
 
+## 2024-06-10 `1.1.3`
+
+#### 💡 Others
+
+- Fixed icon size on stories. ([#50](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/50) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-02 `1.1.2`
 
 #### 💡 Others
