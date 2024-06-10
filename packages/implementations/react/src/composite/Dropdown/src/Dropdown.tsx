@@ -16,7 +16,7 @@ import {
 } from "@floating-ui/react";
 
 import { DropdownComponents, DropdownProps } from "./dropdown.types";
-import { Item } from "./components";
+import { DropdownItem } from "./components";
 
 const Dropdown: React.FC<DropdownProps> & DropdownComponents = ({
   className: _className,
@@ -133,7 +133,7 @@ const Dropdown: React.FC<DropdownProps> & DropdownComponents = ({
   );
 };
 
-Dropdown.Item = Item;
+Dropdown.Item = DropdownItem;
 
 Dropdown.displayName = "Dropdown";
 Dropdown.Item.displayName = "Dropdown.Item";

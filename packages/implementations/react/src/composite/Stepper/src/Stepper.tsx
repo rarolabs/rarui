@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from "react";
 import { stepper } from "@rarui/styles";
 import { StepperComponents, StepperProps } from "./stepper.types";
-import { Context } from "./context";
-import { Step } from "./components";
+import { StepperContext } from "./context";
+import { StepperStep } from "./components";
 
 const Stepper: React.FC<StepperProps> & StepperComponents = ({
   className: _className,
@@ -18,16 +18,16 @@ const Stepper: React.FC<StepperProps> & StepperComponents = ({
   );
 
   return (
-    <Context.Provider value={contextValue}>
+    <StepperContext.Provider value={contextValue}>
       <ol className={stepper.classNames.stepper({ direction })} {...props}>
         {children}
       </ol>
-    </Context.Provider>
+    </StepperContext.Provider>
   );
 };
 
 Stepper.displayName = "Stepper";
-Stepper.Step = Step;
+Stepper.Step = StepperStep;
 Stepper.Step.displayName = "Stepper.Step";
 
 export { Stepper };

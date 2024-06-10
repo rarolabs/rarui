@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-06-10 `1.35.0`
+
+#### 🎉 New features
+
+- Added new style pack for `accordion` component. ([#52](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/52) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-02 `1.24.0`
 
 #### 🎉 New features

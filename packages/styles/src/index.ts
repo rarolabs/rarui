@@ -26,6 +26,7 @@ export { toggle } from "./packages/atomic/toggle";
 export { tooltip } from "./packages/atomic/tooltip";
 
 // composite
+export { accordion } from "./packages/composite/accordion";
 export { breadcrumb } from "./packages/composite/breadcrumb";
 export { datepicker } from "./packages/composite/datepicker";
 export { dropdown } from "./packages/composite/dropdown";
@@ -61,6 +62,7 @@ export type { ToggleVariants } from "./packages/atomic/toggle";
 export type { TooltipVariants } from "./packages/atomic/tooltip";
 
 // types composite
+export type { AccordionVariants } from "./packages/composite/accordion";
 export type { BreadcrumbVariants } from "./packages/composite/breadcrumb";
 export type {
   DropdownVariants,

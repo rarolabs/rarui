@@ -3,10 +3,13 @@ import { CalendarEventOutlinedIcon } from "@rarui/icons";
 import { Input as RaruiInput } from "@rarui-react/input";
 import { Icon } from "@rarui-react/icon";
 
-import { InputProps } from "./input.types";
+import { DatepickerInputProps } from "./input.types";
 
-const Input: React.FC<InputProps> = forwardRef(
-  ({ className: _className, style: _style, ...props }: InputProps, ref) => (
+const DatepickerInput: React.FC<DatepickerInputProps> = forwardRef(
+  (
+    { className: _className, style: _style, ...props }: DatepickerInputProps,
+    ref,
+  ) => (
     <RaruiInput
       ref={ref as LegacyRef<HTMLInputElement>}
       divider={false}
@@ -16,5 +19,5 @@ const Input: React.FC<InputProps> = forwardRef(
   ),
 );
 
-Input.displayName = "Datepicker.Input";
-export { Input };
+DatepickerInput.displayName = "Datepicker.Input";
+export { DatepickerInput };

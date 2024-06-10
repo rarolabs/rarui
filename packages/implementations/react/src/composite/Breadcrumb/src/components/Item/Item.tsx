@@ -11,9 +11,9 @@ import {
 } from "@rarui/typings";
 import { Icon } from "@rarui-react/icon";
 import { Box } from "@rarui-react/box";
-import { ItemProps } from "./item.types";
+import { BreadcrumbItemProps } from "./item.types";
 
-const Item = forwardRef(
+const BreadcrumbItem = forwardRef(
   (
     {
       className: _className,
@@ -24,7 +24,7 @@ const Item = forwardRef(
       icon,
       active,
       ...props
-    }: ItemProps & { as: any },
+    }: BreadcrumbItemProps & { as: any },
     ref,
   ) => {
     const innerRef = useRef<HTMLButtonElement>(null);
@@ -65,7 +65,7 @@ const Item = forwardRef(
       </As>
     );
   },
-) as PolymorphicForwardRefComponent<"button" | "a", ItemProps>;
+) as PolymorphicForwardRefComponent<"button" | "a", BreadcrumbItemProps>;
 
-Item.displayName = "Dropdown.Item";
-export { Item };
+BreadcrumbItem.displayName = "Dropdown.Item";
+export { BreadcrumbItem };

@@ -1,5 +1,5 @@
-import { Context } from "./Manager";
+import { ToastContext } from "./Manager";
 
-export { Context } from "./Manager";
-export type { ContextProps } from "./manager.types";
-export default Context;
+export { ToastContext } from "./Manager";
+export type { ToastContextProps } from "./manager.types";
+export default ToastContext;

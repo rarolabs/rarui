@@ -1,8 +1,8 @@
 import React, { OlHTMLAttributes } from "react";
-import { Item } from "./components";
+import { BreadcrumbItem } from "./components";
 
 export interface BreadcrumbComponents {
-  Item: typeof Item;
+  Item: typeof BreadcrumbItem;
 }
 
 export interface BreadcrumbProperties {

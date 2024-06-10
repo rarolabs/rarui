@@ -1,4 +1,4 @@
-import { Item } from "./Item";
+import { SideNavigationItem } from "./Item";
 
-export { Item } from "./Item";
-export default Item;
+export { SideNavigationItem } from "./Item";
+export default SideNavigationItem;

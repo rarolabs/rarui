@@ -1,4 +1,4 @@
-import { Input } from "./Input";
+import { DatepickerInput } from "./Input";
 
-export { Input } from "./Input";
-export default Input;
+export { DatepickerInput } from "./Input";
+export default DatepickerInput;

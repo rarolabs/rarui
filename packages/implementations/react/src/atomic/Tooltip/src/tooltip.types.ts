@@ -1,12 +1,12 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { Placement } from "@floating-ui/react";
 import { TooltipVariants } from "@rarui/styles";
-import { Body, Header, Footer } from "./components";
+import { TooltipBody, TooltipHeader, TooltipFooter } from "./components";
 
 export interface TooltipComponents {
-  Body: typeof Body;
-  Footer: typeof Footer;
-  Header: typeof Header;
+  Body: typeof TooltipBody;
+  Footer: typeof TooltipFooter;
+  Header: typeof TooltipHeader;
 }
 
 interface TooltipTyping {

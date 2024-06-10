@@ -1,11 +1,11 @@
 import { InputHTMLAttributes, ReactNode } from "react";
 import { InputVariants } from "@rarui/styles";
-import { Leading, Password, Search } from "./components";
+import { InputLeading, InputPassword, InputSearch } from "./components";
 
 export interface InputComponents {
-  Leading: typeof Leading;
-  Password: typeof Password;
-  Search: typeof Search;
+  Leading: typeof InputLeading;
+  Password: typeof InputPassword;
+  Search: typeof InputSearch;
 }
 
 export interface InputTyping {

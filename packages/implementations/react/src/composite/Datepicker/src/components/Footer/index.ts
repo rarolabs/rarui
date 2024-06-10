@@ -1,4 +1,4 @@
-import { Footer } from "./Footer";
+import { DatepickerFooter } from "./Footer";
 
-export { Footer } from "./Footer";
-export default Footer;
+export { DatepickerFooter } from "./Footer";
+export default DatepickerFooter;

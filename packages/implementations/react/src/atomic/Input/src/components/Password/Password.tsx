@@ -10,10 +10,10 @@ import { input } from "@rarui/styles";
 import { EyeOffOutlinedIcon, EyeOutlinedIcon } from "@rarui/icons";
 import { Icon } from "@rarui-react/icon";
 
-import { Leading } from "../Leading";
-import { _PasswordProps } from "./password.types";
+import { InputLeading } from "../Leading";
+import { _InputPasswordProps } from "./password.types";
 
-const Password = forwardRef<HTMLInputElement, _PasswordProps>(
+const InputPassword = forwardRef<HTMLInputElement, _InputPasswordProps>(
   (
     {
       className: _className,
@@ -22,7 +22,7 @@ const Password = forwardRef<HTMLInputElement, _PasswordProps>(
       appearance,
       divider = true,
       ...rest
-    }: _PasswordProps,
+    }: _InputPasswordProps,
     ref,
   ) => {
     const inputRef = useRef<HTMLInputElement>(null);
@@ -43,7 +43,7 @@ const Password = forwardRef<HTMLInputElement, _PasswordProps>(
           type={show ? "text" : "password"}
           className={input.classnames.input({ size, divider })}
         />
-        <Leading
+        <InputLeading
           data-testid="icon-show"
           position="end"
           onClick={() => {
@@ -63,17 +63,17 @@ const Password = forwardRef<HTMLInputElement, _PasswordProps>(
               </>
             }
           />
-        </Leading>
+        </InputLeading>
       </div>
     );
   },
 ) as ForwardRefExoticComponent<
-  _PasswordProps &
+  _InputPasswordProps &
     Omit<React.InputHTMLAttributes<HTMLInputElement>, "size"> &
     Omit<React.RefAttributes<HTMLInputElement>, "size">
 >;
 
-Password.displayName = "Input.Password";
+InputPassword.displayName = "Input.Password";
 
-export type PasswordProps = ComponentPropsWithRef<typeof Password>;
-export { Password };
+export type InputPasswordProps = ComponentPropsWithRef<typeof InputPassword>;
+export { InputPassword };

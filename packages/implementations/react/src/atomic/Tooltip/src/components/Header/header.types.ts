@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { TooltipVariants } from "@rarui/styles";
 
-interface Header {
+interface TooltipHeader {
   /**
    * The content of the modal header.
    * @TJS-type React.ReactNode
@@ -26,5 +26,6 @@ interface Header {
   onClose?: () => void;
 }
 
-export type HeaderProperties = Header & TooltipVariants;
-export type HeaderProps = HeaderProperties & HTMLAttributes<HTMLElement>;
+export type TooltipHeaderProperties = TooltipHeader & TooltipVariants;
+export type TooltipHeaderProps = TooltipHeaderProperties &
+  HTMLAttributes<HTMLElement>;

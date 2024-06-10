@@ -17,7 +17,7 @@ import {
   getColorIcon,
 } from "./toast.definitions";
 import { ToastComponents, ToastProps } from "./toast.types";
-import { Provider } from "./components";
+import { ToastProvider } from "./components";
 import { useToast } from "./hooks";
 
 const Toast: React.FC<ToastProps> & ToastComponents = ({
@@ -107,7 +107,7 @@ const Toast: React.FC<ToastProps> & ToastComponents = ({
   );
 };
 
-Toast.Provider = Provider;
+Toast.Provider = ToastProvider;
 Toast.displayName = "Toast";
 Toast.Provider.displayName = "Toast.Provider";
 

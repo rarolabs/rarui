@@ -1,13 +1,15 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 
-import { Item } from "./Item";
-import { ItemProps } from "./item.types";
+import { SideNavigationItem } from "./Item";
+import { SideNavigationItemProps } from "./item.types";
 
 const mockedConsoleLog = jest.fn();
 
-const makeSut = (rest: ItemProps) => {
-  render(<Item {...rest} data-testid="sidenavigation-item-element" />);
+const makeSut = (rest: SideNavigationItemProps) => {
+  render(
+    <SideNavigationItem {...rest} data-testid="sidenavigation-item-element" />,
+  );
 };
 
 describe("GIVEN <SideNavigation.Item />", () => {

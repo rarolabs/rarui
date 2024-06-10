@@ -1,11 +1,11 @@
 import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 
-import { Footer } from "./Footer";
-import { FooterProps } from "./footer.types";
+import { DatepickerFooter } from "./Footer";
+import { DatepickerFooterProps } from "./footer.types";
 
-const makeSut = (props: FooterProps) => {
-  render(<Footer {...props} data-testid="today-button" />);
+const makeSut = (props: DatepickerFooterProps) => {
+  render(<DatepickerFooter {...props} data-testid="today-button" />);
 };
 
 describe("GIVEN <Datepicker.Footer />", () => {

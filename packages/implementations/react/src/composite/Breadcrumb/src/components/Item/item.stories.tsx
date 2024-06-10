@@ -12,7 +12,7 @@ const footerDocs = docs.subComponents.find(
 );
 
 const meta = {
-  title: "Composite/Breadcrumb.Item",
+  title: "Composite/Breadcrumb/Item",
   component: Breadcrumb.Item,
   argTypes: {
     ...argTypesConvert(footerDocs),

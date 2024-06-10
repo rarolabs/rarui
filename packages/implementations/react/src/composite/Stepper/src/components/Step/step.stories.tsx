@@ -4,7 +4,6 @@ import { argTypesConvert } from ".storybook/utils";
 import { CheckIcon, SentimentSatisfiedOutlinedIcon } from "@rarui/icons";
 import { Icon } from "@rarui-react/icon";
 
-import { Step } from "./Step";
 import { Stepper } from "../../Stepper";
 import docs from "../../stepper.docs.json";
 
@@ -13,8 +12,8 @@ const stepDocs = docs.subComponents.find(
 );
 
 const meta: Meta = {
-  title: "Composite/Stepper.Step",
-  component: Step,
+  title: "Composite/Stepper/Step",
+  component: Stepper.Step,
   argTypes: {
     ...argTypesConvert(stepDocs),
     children: { control: { disable: true } },
@@ -24,7 +23,7 @@ const meta: Meta = {
 
 export default meta;
 
-type Story = StoryObj<typeof Step>;
+type Story = StoryObj<typeof Stepper.Step>;
 
 export const basic: Story = {
   args: {

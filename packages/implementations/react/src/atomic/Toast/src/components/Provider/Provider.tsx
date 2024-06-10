@@ -1,13 +1,13 @@
 import React, { useCallback, useMemo } from "react";
 import { toast as toastStyles } from "@rarui/styles";
 
-import { Context } from "../../context";
+import { ToastContext } from "../../context";
 import { ToastProps } from "../../toast.types";
 import { Toast } from "../../Toast";
 
-import { ProviderProps } from "./provider.types";
+import { ToastProviderProps } from "./provider.types";
 
-const Provider: React.FC<ProviderProps> = ({
+const ToastProvider: React.FC<ToastProviderProps> = ({
   children,
   placement = "bottomRight",
 }) => {
@@ -33,7 +33,7 @@ const Provider: React.FC<ProviderProps> = ({
   );
 
   return (
-    <Context.Provider value={contextValue}>
+    <ToastContext.Provider value={contextValue}>
       {children}
       <div className={toastStyles.classnames.container({ placement })}>
         {toasts.map((toast, index) => (
@@ -45,10 +45,10 @@ const Provider: React.FC<ProviderProps> = ({
           </div>
         ))}
       </div>
-    </Context.Provider>
+    </ToastContext.Provider>
   );
 };
 
-Provider.displayName = "Toast.Provider";
+ToastProvider.displayName = "Toast.Provider";
 
-export { Provider };
+export { ToastProvider };

@@ -3245,6 +3245,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rarui-react/accordion@workspace:packages/implementations/react/src/composite/Accordion":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/accordion@workspace:packages/implementations/react/src/composite/Accordion"
+  dependencies:
+    "@rarui-react/box": "workspace:^"
+    "@rarui-react/icon": "workspace:^"
+    "@rarui-react/text": "workspace:^"
+    "@rarui/icons": "workspace:^"
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@rarui-react/avatar@workspace:packages/implementations/react/src/atomic/Avatar":
   version: 0.0.0-use.local
   resolution: "@rarui-react/avatar@workspace:packages/implementations/react/src/atomic/Avatar"
@@ -3354,7 +3369,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@rarui-react/components@workspace:packages/implementations/react"
   dependencies:
+    "@floating-ui/react": "npm:^0.26.13"
     "@rarui/webpack": "workspace:^"
+    react-datepicker: "npm:^6.9.0"
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
     react-dom: ^16.8 || ^17.0 || ^18.0

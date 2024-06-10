@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating custom script builds at design system build time.
 
+## 2024-06-10 `1.0.5`
+
+#### 🐛 Bug fixes
+
+- Fixed subcomponent type generation method. ([#52](https://git.rarolabs.com.br/frontend/rarui/pull/52) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-05-24 `1.0.4`
 
 #### 🐛 Bug fixes

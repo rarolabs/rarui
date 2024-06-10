@@ -1,11 +1,11 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 
-import { Body } from "./Body";
-import { BodyProps } from "./body.types";
+import { TooltipBody } from "./Body";
+import { TooltipBodyProps } from "./body.types";
 
-const makeSut = (props: BodyProps) => {
-  render(<Body {...props} data-testid="body-element" />);
+const makeSut = (props: TooltipBodyProps) => {
+  render(<TooltipBody {...props} data-testid="body-element" />);
 };
 
 describe("GIVEN <Tooltip.Body />", () => {

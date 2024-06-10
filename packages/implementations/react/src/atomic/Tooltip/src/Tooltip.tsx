@@ -18,7 +18,7 @@ import {
 } from "@floating-ui/react";
 
 import { TooltipComponents, TooltipProps } from "./tooltip.types";
-import { Body, Footer, Header } from "./components";
+import { TooltipBody, TooltipFooter, TooltipHeader } from "./components";
 
 const Tooltip: React.FC<TooltipProps> & TooltipComponents = ({
   className: _className,
@@ -142,9 +142,9 @@ const Tooltip: React.FC<TooltipProps> & TooltipComponents = ({
   );
 };
 
-Tooltip.Body = Body;
-Tooltip.Footer = Footer;
-Tooltip.Header = Header;
+Tooltip.Body = TooltipBody;
+Tooltip.Footer = TooltipFooter;
+Tooltip.Header = TooltipHeader;
 
 Tooltip.displayName = "Tooltip";
 Tooltip.Footer.displayName = "Tooltip.Footer";

@@ -12,7 +12,7 @@ const headerDocs = docs.subComponents.find(
 );
 
 const meta = {
-  title: "Atomic/Tooltip.Header",
+  title: "Atomic/Tooltip/Header",
   component: Tooltip.Header,
   render: (args) => (
     <Box display="flex" justifyContent="center">

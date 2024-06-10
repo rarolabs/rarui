@@ -1,4 +1,4 @@
-import { Leading } from "./Leading";
+import { InputLeading } from "./Leading";
 
-export { Leading } from "./Leading";
-export default Leading;
+export { InputLeading } from "./Leading";
+export default InputLeading;

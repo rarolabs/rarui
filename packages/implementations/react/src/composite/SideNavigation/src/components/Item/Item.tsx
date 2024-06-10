@@ -9,9 +9,9 @@ import {
   useRefObjectAsForwardedRef,
 } from "@rarui/typings";
 import { sideNavigation } from "@rarui/styles";
-import { ItemProps } from "./item.types";
+import { SideNavigationItemProps } from "./item.types";
 
-const Item = forwardRef(
+const SideNavigationItem = forwardRef(
   (
     {
       className: _className,
@@ -20,7 +20,7 @@ const Item = forwardRef(
       children,
       active,
       ...props
-    }: ItemProps & { as: any },
+    }: SideNavigationItemProps & { as: any },
     ref,
   ) => {
     const innerRef = useRef<HTMLButtonElement>(null);
@@ -58,7 +58,7 @@ const Item = forwardRef(
       </As>
     );
   },
-) as PolymorphicForwardRefComponent<"button" | "a", ItemProps>;
+) as PolymorphicForwardRefComponent<"button" | "a", SideNavigationItemProps>;
 
-export default Item.displayName = "SideNavigation.Item";
-export { Item };
+export default SideNavigationItem.displayName = "SideNavigation.Item";
+export { SideNavigationItem };

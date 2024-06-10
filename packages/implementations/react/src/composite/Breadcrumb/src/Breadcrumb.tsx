@@ -6,7 +6,7 @@ import { Box } from "@rarui-react/box";
 import { MoreHorizIcon } from "@rarui/icons";
 
 import { BreadcrumbProps, BreadcrumbComponents } from "./breadcrumb.types";
-import { Item, Separator } from "./components";
+import { BreadcrumbItem, BreadcrumbSeparator } from "./components";
 
 const Breadcrumb: React.FC<BreadcrumbProps> & BreadcrumbComponents = ({
   className: _className,
@@ -38,7 +38,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> & BreadcrumbComponents = ({
       {childrens?.[0] && (
         <Box as="li" display="flex" alignItems="center" color="$secondary">
           {childrens?.[0]}
-          <Separator />
+          <BreadcrumbSeparator />
         </Box>
       )}
       {!!hiddenItems.length && (
@@ -55,7 +55,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> & BreadcrumbComponents = ({
               source={<MoreHorizIcon size="medium" />}
             />
           </Dropdown>
-          <Separator />
+          <BreadcrumbSeparator />
         </Box>
       )}
       {visibleItems.map((visibleItem, index: number) => (
@@ -67,7 +67,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> & BreadcrumbComponents = ({
           color={index === lastIndex ? "$brand" : "$secondary"}
         >
           {visibleItem}
-          {index !== lastIndex && <Separator />}
+          {index !== lastIndex && <BreadcrumbSeparator />}
         </Box>
       ))}
       <br />
@@ -75,7 +75,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> & BreadcrumbComponents = ({
   );
 };
 
-Breadcrumb.Item = Item;
+Breadcrumb.Item = BreadcrumbItem;
 
 Breadcrumb.displayName = "Breadcrumb";
 Breadcrumb.Item.displayName = "Breadcrumb.Item";

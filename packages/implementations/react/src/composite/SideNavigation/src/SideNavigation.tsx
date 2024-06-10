@@ -15,7 +15,7 @@ import { ArrowDownIcon, ArrowUpIcon } from "@rarui/icons";
 import { Box } from "@rarui-react/box";
 import { Icon } from "@rarui-react/icon";
 
-import { Item } from "./components";
+import { SideNavigationItem } from "./components";
 import {
   _SideNavigationProps,
   SideNavigationComponents,
@@ -115,7 +115,7 @@ const SideNavigation = forwardRef(
 ) as PolymorphicForwardRefComponent<"button" | "a", _SideNavigationProps> &
   SideNavigationComponents;
 
-SideNavigation.Item = Item;
+SideNavigation.Item = SideNavigationItem;
 SideNavigation.Item.displayName = "SideNavigation.Item";
 SideNavigation.displayName = "SideNavigation";
 

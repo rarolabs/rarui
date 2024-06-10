@@ -1,4 +1,5 @@
-import { Password } from "./Password";
+import { InputPassword } from "./Password";
 
-export { Password } from "./Password";
-export default Password;
+export { InputPassword } from "./Password";
+export type { InputPasswordProps } from "./Password";
+export default InputPassword;

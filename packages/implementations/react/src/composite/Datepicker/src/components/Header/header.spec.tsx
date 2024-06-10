@@ -2,12 +2,12 @@ import React from "react";
 import { ReactDatePickerCustomHeaderProps } from "react-datepicker";
 import { fireEvent, render, screen } from "@testing-library/react";
 
-import { Header } from "./Header";
-import { HeaderProps } from "./header.types";
+import { DatepickerHeader } from "./Header";
+import { DatepickerHeaderProps } from "./header.types";
 
-const makeSut = (props?: Partial<HeaderProps>) => {
+const makeSut = (props?: Partial<DatepickerHeaderProps>) => {
   render(
-    <Header
+    <DatepickerHeader
       {...(props as ReactDatePickerCustomHeaderProps)}
       date={new Date()}
       data-testid="header-element"

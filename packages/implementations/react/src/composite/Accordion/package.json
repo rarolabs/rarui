@@ -1,0 +1,40 @@
+{
+  "name": "@rarui-react/accordion",
+  "version": "1.0.0-rc.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn g:webpack",
+    "clean": "rm -rf dist",
+    "version": "yarn version"
+  },
+  "dependencies": {
+    "@rarui-react/box": "workspace:^",
+    "@rarui-react/icon": "workspace:^",
+    "@rarui-react/text": "workspace:^",
+    "@rarui/icons": "workspace:^"
+  },
+  "peerDependencies": {
+    "react": "^16.8 || ^17.0 || ^18.0",
+    "react-dom": "^16.8 || ^17.0 || ^18.0"
+  },
+  "homepage": "https://git.rarolabs.com.br/frontend/rarui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.rarolabs.com.br/frontend/rarui.git"
+  },
+  "bugs": {
+    "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
+  },
+  "devDependencies": {
+    "@rarui-react/icon": "workspace:^",
+    "@rarui/icons": "workspace:^",
+    "@rarui/webpack": "workspace:^"
+  },
+  "stableVersion": "0.0.0"
+}

@@ -1,6 +1,6 @@
 import { InputHTMLAttributes } from "react";
 
-export interface InputProperties {}
+export interface DatepickerInputProperties {}
 
-export type InputProps = InputProperties &
+export type DatepickerInputProps = DatepickerInputProperties &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

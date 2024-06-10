@@ -1,12 +1,12 @@
 import React from "react";
 
 import { render, screen } from "@testing-library/react";
-import { Progress } from "../../Progress";
-import { CircleProps } from "./circle.types";
+import { ProgressCircle } from "./Circle";
+import { ProgressCircleProps } from "./circle.types";
 
-const makeSut = ({ percentage, size }: CircleProps) => {
+const makeSut = ({ percentage, size }: ProgressCircleProps) => {
   render(
-    <Progress.Circle
+    <ProgressCircle
       percentage={percentage}
       size={size}
       data-testid="progress-element"

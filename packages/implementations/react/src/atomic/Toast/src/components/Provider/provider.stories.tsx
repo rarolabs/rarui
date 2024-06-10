@@ -14,7 +14,7 @@ const providerdDocs = docs.subComponents.find(
 );
 
 const meta: Meta<typeof Toast.Provider> = {
-  title: "Atomic/Toast.Provider",
+  title: "Atomic/Toast/Provider",
   component: Toast.Provider,
   argTypes: {
     ...argTypesConvert(providerdDocs),

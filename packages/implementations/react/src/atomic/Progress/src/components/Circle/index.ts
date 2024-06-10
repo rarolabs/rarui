@@ -1,6 +1,6 @@
-import { Circle } from "./Circle";
+import { ProgressCircle } from "./Circle";
 
-export type { CircleProps } from "./circle.types";
-export { Circle } from "./Circle";
+export type { ProgressCircleProps } from "./circle.types";
+export { ProgressCircle } from "./Circle";
 
-export default Circle;
+export default ProgressCircle;

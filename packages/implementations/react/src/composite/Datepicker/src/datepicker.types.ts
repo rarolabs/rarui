@@ -55,6 +55,11 @@ export interface DatepickerTyping {
    */
   selectsRange?: boolean;
   /**
+   * Specifies the ID of the portal element where the datepicker should be rendered.
+   * This can be useful for rendering the datepicker in a different part of the DOM, such as a modal or overlay.
+   */
+  portalId?: string;
+  /**
    * A callback function that is called when a date is selected.
    * This function receives the selected date as a parameter.
    * @TJS-type (date: Date) => void;

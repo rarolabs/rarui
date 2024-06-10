@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { TooltipVariants } from "@rarui/styles";
 
-interface Footer {
+interface TooltipFooter {
   /**
    * The content of the modal header.
    * @TJS-type React.ReactNode
@@ -9,5 +9,8 @@ interface Footer {
   children?: ReactNode;
 }
 
-export type FooterProperties = Footer & Exclude<TooltipVariants, "inverted">;
-export type FooterProps = FooterProperties & HTMLAttributes<HTMLElement>;
+export type TooltipFooterProperties = TooltipFooter &
+  Exclude<TooltipVariants, "inverted">;
+
+export type TooltipFooterProps = TooltipFooterProperties &
+  HTMLAttributes<HTMLElement>;

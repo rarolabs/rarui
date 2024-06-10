@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import { InputProperties } from "../../input.types";
 
-export interface LeadingTyping {
+export interface InputLeadingTyping {
   /**
    * The content of the Leading.
    * @TJS-type React.ReactNode
@@ -13,8 +13,8 @@ export interface LeadingTyping {
   position: "start" | "end";
 }
 
-export type LeadingProperties = LeadingTyping &
+export type InputLeadingProperties = InputLeadingTyping &
   Pick<InputProperties, "divider" | "appearance" | "size">;
 
-export type LeadingProps = LeadingProperties &
+export type InputLeadingProps = InputLeadingProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

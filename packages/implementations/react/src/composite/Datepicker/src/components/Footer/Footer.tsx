@@ -4,9 +4,9 @@ import { Box } from "@rarui-react/box";
 import { Icon } from "@rarui-react/icon";
 import { Button } from "@rarui-react/button";
 
-import { FooterProps } from "./footer.types";
+import { DatepickerFooterProps } from "./footer.types";
 
-const Footer: React.FC<FooterProps> = ({
+const DatepickerFooter: React.FC<DatepickerFooterProps> = ({
   className: _className,
   style: _style,
   setSelected,
@@ -41,5 +41,5 @@ const Footer: React.FC<FooterProps> = ({
   );
 };
 
-Footer.displayName = "Datepicker.Footer";
-export { Footer };
+DatepickerFooter.displayName = "Datepicker.Footer";
+export { DatepickerFooter };

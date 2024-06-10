@@ -4,6 +4,6 @@ import {
   ReactDatePickerProps,
 } from "react-datepicker";
 
-export type HeaderProps = ReactDatePickerCustomHeaderProps &
+export type DatepickerHeaderProps = ReactDatePickerCustomHeaderProps &
   Pick<ReactDatePickerProps, "showYearPicker" | "showMonthYearPicker"> &
   HTMLAttributes<HTMLDivElement>;

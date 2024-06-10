@@ -6,9 +6,9 @@ import { Text } from "@rarui-react/text";
 import { IconButton } from "@rarui-react/icon-button";
 import { Box } from "@rarui-react/box";
 
-import { HeaderProps } from "./header.types";
+import { TooltipHeaderProps } from "./header.types";
 
-const Header: React.FC<HeaderProps> = ({
+const TooltipHeader: React.FC<TooltipHeaderProps> = ({
   children,
   title,
   subtitle,
@@ -55,5 +55,5 @@ const Header: React.FC<HeaderProps> = ({
   </div>
 );
 
-Header.displayName = "Tooltip.Header";
-export { Header };
+TooltipHeader.displayName = "Tooltip.Header";
+export { TooltipHeader };

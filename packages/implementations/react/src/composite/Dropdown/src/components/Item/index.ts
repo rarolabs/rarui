@@ -1,4 +1,4 @@
-import { Item } from "./Item";
+import { DropdownItem } from "./Item";
 
-export { Item } from "./Item";
-export default Item;
+export { DropdownItem } from "./Item";
+export default DropdownItem;

@@ -1,10 +1,10 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import { SideNavigationVariants } from "@rarui/styles";
 
-import { Item } from "./components";
+import { SideNavigationItem } from "./components";
 
 export interface SideNavigationComponents {
-  Item: typeof Item;
+  Item: typeof SideNavigationItem;
 }
 
 export interface SideNavigationTyping {

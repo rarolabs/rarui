@@ -1,10 +1,10 @@
 import { HtmlHTMLAttributes, ReactNode } from "react";
 import { ToastVariants } from "@rarui/styles";
 
-import { Provider } from "./components";
+import { ToastProvider } from "./components";
 
 export interface ToastComponents {
-  Provider: typeof Provider;
+  Provider: typeof ToastProvider;
 }
 
 export interface ToastTyping {

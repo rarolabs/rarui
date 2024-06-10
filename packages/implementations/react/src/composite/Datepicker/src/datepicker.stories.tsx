@@ -15,7 +15,7 @@ const meta: Meta<typeof Datepicker> = {
         <Datepicker
           {...args}
           selected={date}
-          onChange={(date) => setDate(date as Date)}
+          onChange={(newDate) => setDate(newDate as Date)}
         />
       </Box>
     );
