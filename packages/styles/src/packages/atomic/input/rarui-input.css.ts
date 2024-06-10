@@ -96,7 +96,7 @@ const input = recipe({
         lineHeight: varsThemeBase.lineHeight.body.xl,
       },
       medium: {
-        height: "2.75rem",
+        height: "2.5rem",
         fontSize: varsThemeBase.fontSize.body.m,
         lineHeight: varsThemeBase.lineHeight.body.l,
       },
@@ -152,12 +152,14 @@ const leading = recipe({
     },
     size: {
       large: {
-        padding: `${varsThemeBase.spacing["2xs"]} ${varsThemeBase.spacing.xs}`,
+        padding: `0 ${varsThemeBase.spacing.xs}`,
       },
       medium: {
-        padding: varsThemeBase.spacing["2xs"],
+        padding: `0 ${varsThemeBase.spacing["2xs"]}`,
       },
-      small: {},
+      small: {
+        padding: `0 ${varsThemeBase.spacing["3xs"]}`,
+      },
     },
   },
   compoundVariants: [

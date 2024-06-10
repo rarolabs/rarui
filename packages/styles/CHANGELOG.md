@@ -37,6 +37,12 @@ RarUI Styles deprive all styles needed to build components.
 
 - Added new style pack for `accordion` component. ([#52](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/52) by [@junior](https://git.rarolabs.com.br/junior))
 
+## 2024-06-10 `1.24.1`
+
+#### 🐛 Bug fixes
+
+- Adjusting height for medium size and padding of the icon container for the `input` component on small, medium and large size. ([#52](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/52) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-02 `1.24.0`
 
 #### 🎉 New features
