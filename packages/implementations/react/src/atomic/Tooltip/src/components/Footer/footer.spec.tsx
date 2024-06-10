@@ -1,11 +1,11 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 
-import { Footer } from "./Footer";
-import { FooterProps } from "./footer.types";
+import { TooltipFooter } from "./Footer";
+import { TooltipFooterProps } from "./footer.types";
 
-const makeSut = (props: FooterProps) => {
-  render(<Footer {...props} data-testid="footer-element" />);
+const makeSut = (props: TooltipFooterProps) => {
+  render(<TooltipFooter {...props} data-testid="footer-element" />);
 };
 
 describe("GIVEN <Tooltip.Footer />", () => {

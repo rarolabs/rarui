@@ -1,6 +1,6 @@
 import { ToastProps } from "../../toast.types";
 
-export interface ContextProps {
+export interface ToastContextProps {
   closeToast: (id: string) => void;
   addToast: (
     toast: Omit<ToastProps, "autoClose" | "id"> & { id?: string },

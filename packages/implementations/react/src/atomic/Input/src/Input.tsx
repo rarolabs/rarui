@@ -7,9 +7,8 @@ import React, {
 import { useRefObjectAsForwardedRef } from "@rarui/typings";
 import { input } from "@rarui/styles";
 
-import { Leading, Password } from "./components";
+import { InputLeading, InputPassword, InputSearch } from "./components";
 import { _InputProps, InputComponents } from "./input.types";
-import Search from "./components/Search";
 
 const Input = forwardRef<HTMLInputElement, _InputProps>(
   (
@@ -36,7 +35,7 @@ const Input = forwardRef<HTMLInputElement, _InputProps>(
         className={input.classnames.container({ appearance })}
       >
         {leadingStart && (
-          <Leading
+          <InputLeading
             data-testid={dataTestid ? `${dataTestid}-leading-start` : ""}
             position="start"
             onClick={focusInput}
@@ -45,7 +44,7 @@ const Input = forwardRef<HTMLInputElement, _InputProps>(
             divider={divider}
           >
             {leadingStart}
-          </Leading>
+          </InputLeading>
         )}
         <input
           {...rest}
@@ -53,7 +52,7 @@ const Input = forwardRef<HTMLInputElement, _InputProps>(
           className={input.classnames.input({ size })}
         />
         {leadingEnd && (
-          <Leading
+          <InputLeading
             data-testid={dataTestid ? `${dataTestid}-leading-end` : ""}
             position="end"
             onClick={focusInput}
@@ -62,7 +61,7 @@ const Input = forwardRef<HTMLInputElement, _InputProps>(
             divider={divider}
           >
             {leadingEnd}
-          </Leading>
+          </InputLeading>
         )}
       </div>
     );
@@ -74,9 +73,9 @@ const Input = forwardRef<HTMLInputElement, _InputProps>(
 > &
   InputComponents;
 
-Input.Leading = Leading;
-Input.Password = Password;
-Input.Search = Search;
+Input.Leading = InputLeading;
+Input.Password = InputPassword;
+Input.Search = InputSearch;
 Input.displayName = "Input";
 Input.Leading.displayName = "Input.Leading";
 Input.Password.displayName = "Input.Password";

@@ -2,13 +2,16 @@ import { render, screen } from "@testing-library/react";
 import React from "react";
 
 import { Stepper } from "../../Stepper";
-import { Step } from "./Step";
-import { StepProps } from "./step.types";
+import { StepperStep } from "./Step";
+import { StepperStepProps } from "./step.types";
 
-const makeSut = (rest: StepProps, direction?: "vertical" | "horizontal") => {
+const makeSut = (
+  rest: StepperStepProps,
+  direction?: "vertical" | "horizontal",
+) => {
   render(
     <Stepper direction={direction ?? "vertical"}>
-      <Step {...rest} data-testid="step-element" />
+      <StepperStep {...rest} data-testid="step-element" />
     </Stepper>,
   );
 };

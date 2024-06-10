@@ -1,10 +1,10 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 
-import { Search, SearchProps } from "./Search";
+import { InputSearch, InputSearchProps } from "./Search";
 
-const makeSut = (rest?: Omit<SearchProps, "children">) => {
-  render(<Search {...rest} data-testid="input-search-element" />);
+const makeSut = (rest?: Omit<InputSearchProps, "children">) => {
+  render(<InputSearch {...rest} data-testid="input-search-element" />);
 };
 
 describe("GIVEN <Input.Search />", () => {

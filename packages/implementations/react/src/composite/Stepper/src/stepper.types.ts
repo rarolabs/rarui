@@ -1,9 +1,9 @@
 import { HTMLAttributes, ReactElement } from "react";
 import { StepperVariants } from "@rarui/styles";
-import { Step } from "./components/Step";
+import { StepperStep } from "./components/Step";
 
 export interface StepperComponents {
-  Step: typeof Step;
+  Step: typeof StepperStep;
 }
 
 export interface StepperTyping {

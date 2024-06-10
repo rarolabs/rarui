@@ -1,8 +1,8 @@
 import { ButtonHTMLAttributes } from "react";
 
-export interface FooterProperties {
+export interface DatepickerFooterProperties {
   setSelected?: () => void;
 }
 
-export type FooterProps = FooterProperties &
+export type DatepickerFooterProps = DatepickerFooterProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

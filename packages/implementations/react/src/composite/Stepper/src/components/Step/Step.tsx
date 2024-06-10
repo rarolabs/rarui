@@ -3,10 +3,10 @@ import { stepper } from "@rarui/styles";
 import { Box } from "@rarui-react/box";
 import { Text } from "@rarui-react/text";
 
-import { StepProps } from "./step.types";
+import { StepperStepProps } from "./step.types";
 import { useStepper } from "../../hooks";
 
-const Step: React.FC<StepProps> = ({
+const StepperStep: React.FC<StepperStepProps> = ({
   className: _className,
   style: _style,
   children,
@@ -54,4 +54,4 @@ const Step: React.FC<StepProps> = ({
     </li>
   );
 };
-export { Step };
+export { StepperStep };

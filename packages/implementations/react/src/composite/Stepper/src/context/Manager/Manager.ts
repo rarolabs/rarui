@@ -1,4 +1,6 @@
 import { createContext } from "react";
-import { ContextProps } from "./manager.types";
+import { StepperContextProps } from "./manager.types";
 
-export const Context = createContext<ContextProps>({} as ContextProps);
+export const StepperContext = createContext<StepperContextProps>(
+  {} as StepperContextProps,
+);

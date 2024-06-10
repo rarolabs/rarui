@@ -9,10 +9,10 @@ import { input } from "@rarui/styles";
 import { SearchIcon } from "@rarui/icons";
 import { Icon } from "@rarui-react/icon";
 
-import { Leading } from "../Leading";
-import { _SearchProps } from "./search.types";
+import { InputLeading } from "../Leading";
+import { _InputSearchProps } from "./search.types";
 
-const Search = forwardRef<HTMLInputElement, _SearchProps>(
+const InputSearch = forwardRef<HTMLInputElement, _InputSearchProps>(
   (
     {
       className: _className,
@@ -21,7 +21,7 @@ const Search = forwardRef<HTMLInputElement, _SearchProps>(
       appearance,
       divider = true,
       ...rest
-    }: _SearchProps,
+    }: _InputSearchProps,
     ref,
   ) => {
     const inputRef = useRef<HTMLInputElement>(null);
@@ -40,7 +40,7 @@ const Search = forwardRef<HTMLInputElement, _SearchProps>(
           type="search"
           className={input.classnames.input({ size, divider })}
         />
-        <Leading
+        <InputLeading
           data-testid="icon-search"
           position="end"
           onClick={focusInput}
@@ -49,17 +49,17 @@ const Search = forwardRef<HTMLInputElement, _SearchProps>(
           divider={divider}
         >
           <Icon color="$currentColor" source={<SearchIcon size={size} />} />
-        </Leading>
+        </InputLeading>
       </div>
     );
   },
 ) as ForwardRefExoticComponent<
-  _SearchProps &
+  _InputSearchProps &
     Omit<React.InputHTMLAttributes<HTMLInputElement>, "size"> &
     Omit<React.RefAttributes<HTMLInputElement>, "size">
 >;
 
-Search.displayName = "Input.Search";
+InputSearch.displayName = "Input.Search";
 
-export type SearchProps = ComponentPropsWithRef<typeof Search>;
-export { Search };
+export type InputSearchProps = ComponentPropsWithRef<typeof InputSearch>;
+export { InputSearch };

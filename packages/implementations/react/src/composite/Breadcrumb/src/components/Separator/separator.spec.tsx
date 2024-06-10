@@ -1,10 +1,10 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 
-import { Separator } from "./Separator";
+import { BreadcrumbSeparator } from "./Separator";
 
 const makeSut = () => {
-  render(<Separator data-testid="separator-element" />);
+  render(<BreadcrumbSeparator data-testid="separator-element" />);
 };
 
 describe("GIVEN <Breadcrumb.Separator />", () => {

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { argTypesConvert } from ".storybook/utils";
 
-import { Search } from "./Search";
+import { Input } from "../../Input";
 import docs from "../../input.docs.json";
 
 const passwordDocs = docs.subComponents.find(
@@ -9,16 +9,16 @@ const passwordDocs = docs.subComponents.find(
 );
 
 const meta = {
-  title: "Atomic/Input.Search",
-  component: Search,
+  title: "Atomic/Input/Search",
+  component: Input.Search,
   argTypes: {
     ...argTypesConvert(passwordDocs),
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof Search>;
+} satisfies Meta<typeof Input.Search>;
 
 export default meta;
-type Story = StoryObj<typeof Search>;
+type Story = StoryObj<typeof Input.Search>;
 
 export const basic: Story = {
   args: {

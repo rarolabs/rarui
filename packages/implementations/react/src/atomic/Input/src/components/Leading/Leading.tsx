@@ -1,8 +1,8 @@
 import React from "react";
 import { input } from "@rarui/styles";
-import { LeadingProps } from "./leading.types";
+import { InputLeadingProps } from "./leading.types";
 
-const Leading: React.FC<LeadingProps> = ({
+const InputLeading: React.FC<InputLeadingProps> = ({
   className: _className,
   style: _style,
   children,
@@ -26,6 +26,6 @@ const Leading: React.FC<LeadingProps> = ({
   </button>
 );
 
-Leading.displayName = "Input.Leading";
+InputLeading.displayName = "Input.Leading";
 
-export { Leading };
+export { InputLeading };

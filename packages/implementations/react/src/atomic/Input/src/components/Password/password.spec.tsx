@@ -1,10 +1,10 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 
-import { Password, PasswordProps } from "./Password";
+import { InputPassword, InputPasswordProps } from "./Password";
 
-const makeSut = (rest?: PasswordProps) => {
-  render(<Password {...rest} data-testid="input-password-element" />);
+const makeSut = (rest?: InputPasswordProps) => {
+  render(<InputPassword {...rest} data-testid="input-password-element" />);
 };
 
 describe("GIVEN <Input.Password />", () => {

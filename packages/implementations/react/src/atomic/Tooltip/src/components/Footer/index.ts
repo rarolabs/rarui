@@ -1,4 +1,4 @@
-import { Footer } from "./Footer";
+import { TooltipFooter } from "./Footer";
 
-export { Footer } from "./Footer";
-export default Footer;
+export { TooltipFooter } from "./Footer";
+export default TooltipFooter;

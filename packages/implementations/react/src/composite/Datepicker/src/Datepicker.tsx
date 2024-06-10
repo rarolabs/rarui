@@ -5,7 +5,11 @@ import "react-datepicker/dist/react-datepicker.css";
 import { datepicker } from "@rarui/styles";
 
 import { DatepickerProps } from "./datepicker.types";
-import { Footer, Header, Input } from "./components";
+import {
+  DatepickerFooter,
+  DatepickerHeader,
+  DatepickerInput,
+} from "./components";
 
 const Datepicker: React.FC<DatepickerProps> = ({
   className: _className,
@@ -14,6 +18,7 @@ const Datepicker: React.FC<DatepickerProps> = ({
   showMonthYearPicker,
   input,
   customInput,
+  portalId,
   onChange,
   ...props
 }) => {
@@ -22,15 +27,14 @@ const Datepicker: React.FC<DatepickerProps> = ({
   return (
     <Picker
       ref={datePickerRef as any}
-      portalId="theme-provider"
-      locale="pt-BR"
+      portalId={portalId ?? "theme-provider"}
       calendarClassName={datepicker.classnames.datepicker}
       dayClassName={() => datepicker.classnames.day}
       weekDayClassName={() => datepicker.classnames.weekday}
       timeClassName={() => datepicker.classnames.time}
-      customInput={customInput ?? <Input {...input} />}
+      customInput={customInput ?? <DatepickerInput {...input} />}
       renderCustomHeader={(headerProps) => (
-        <Header
+        <DatepickerHeader
           showYearPicker={showYearPicker}
           showMonthYearPicker={showMonthYearPicker}
           {...headerProps}
@@ -44,7 +48,7 @@ const Datepicker: React.FC<DatepickerProps> = ({
       onChange={(date: Date) => date && onChange(date)}
       {...props}
     >
-      <Footer
+      <DatepickerFooter
         setSelected={() => datePickerRef.current?.setSelected(new Date())}
       />
     </Picker>

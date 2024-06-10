@@ -1,5 +1,5 @@
-import { Context } from "./Manager";
+import { StepperContext } from "./Manager";
 
-export { Context } from "./Manager";
-export type { ContextProps } from "./manager.types";
-export default Context;
+export { StepperContext } from "./Manager";
+export type { StepperContextProps } from "./manager.types";
+export default StepperContext;

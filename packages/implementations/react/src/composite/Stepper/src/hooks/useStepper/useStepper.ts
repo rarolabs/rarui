@@ -1,5 +1,6 @@
 import { useContext } from "react";
 
-import { Context, ContextProps } from "../../context";
+import { StepperContext, StepperContextProps } from "../../context";
 
-export const useStepper: () => ContextProps = () => useContext(Context);
+export const useStepper: () => StepperContextProps = () =>
+  useContext(StepperContext);

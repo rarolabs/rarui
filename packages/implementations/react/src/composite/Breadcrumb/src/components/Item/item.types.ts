@@ -1,7 +1,7 @@
 import { BreadcrumbVariants } from "@rarui/styles";
 import { HTMLAttributes, ReactNode } from "react";
 
-interface ItemTypings {
+interface BreadcrumbItemTypings {
   /**
    * The name of the breadcrumb item. This is typically the text that is displayed for the item.
    */
@@ -18,5 +18,7 @@ interface ItemTypings {
   icon?: ReactNode;
 }
 
-export type ItemProperties = ItemTypings & BreadcrumbVariants;
-export type ItemProps = ItemProperties & HTMLAttributes<HTMLElement>;
+export type BreadcrumbItemProperties = BreadcrumbItemTypings &
+  BreadcrumbVariants;
+export type BreadcrumbItemProps = BreadcrumbItemProperties &
+  HTMLAttributes<HTMLElement>;

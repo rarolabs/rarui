@@ -1,13 +1,13 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 
-import { Item } from "./Item";
-import { ItemProps } from "./item.types";
+import { DropdownItem } from "./Item";
+import { DropdownItemProps } from "./item.types";
 
 const mockedConsoleLog = jest.fn();
 
-const makeSut = (props: ItemProps) => {
-  render(<Item {...props} data-testid="body-element" />);
+const makeSut = (props: DropdownItemProps) => {
+  render(<DropdownItem {...props} data-testid="body-element" />);
 };
 
 describe("GIVEN <Dropdown.Item />", () => {

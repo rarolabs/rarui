@@ -1,4 +1,5 @@
-import { Search } from "./Search";
+import { InputSearch } from "./Search";
 
-export { Search } from "./Search";
-export default Search;
+export { InputSearch } from "./Search";
+export type { InputSearchProps } from "./Search";
+export default InputSearch;

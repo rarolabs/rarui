@@ -1,4 +1,4 @@
-import { Provider } from "./Provider";
+import { ToastProvider } from "./Provider";
 
-export { Provider } from "./Provider";
-export default Provider;
+export { ToastProvider } from "./Provider";
+export default ToastProvider;

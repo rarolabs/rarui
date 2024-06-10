@@ -1,4 +1,4 @@
-import { Header } from "./Header";
+import { TooltipHeader } from "./Header";
 
-export { Header } from "./Header";
-export default Header;
+export { TooltipHeader } from "./Header";
+export default TooltipHeader;

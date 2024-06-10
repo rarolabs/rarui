@@ -9,7 +9,7 @@ const itemDocs = docs.subComponents.find(
 );
 
 const meta = {
-  title: "Composite/SideNavigation.Item",
+  title: "Composite/SideNavigation/Item",
   component: SideNavigation.Item,
 
   argTypes: {

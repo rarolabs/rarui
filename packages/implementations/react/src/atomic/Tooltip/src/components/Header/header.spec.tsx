@@ -1,11 +1,11 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 
-import { Header } from "./Header";
-import { HeaderProps } from "./header.types";
+import { TooltipHeader } from "./Header";
+import { TooltipHeaderProps } from "./header.types";
 
-const makeSut = (props: HeaderProps) => {
-  render(<Header {...props} data-testid="header-element" />);
+const makeSut = (props: TooltipHeaderProps) => {
+  render(<TooltipHeader {...props} data-testid="header-element" />);
 };
 
 describe("GIVEN <Tooltip.Header />", () => {

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export interface ProviderProperties {
+export interface ToastProviderProperties {
   /**
    * @TJS-type React.ReactNode
    */
@@ -18,4 +18,4 @@ export interface ProviderProperties {
     | "topLeft";
 }
 
-export type ProviderProps = ProviderProperties;
+export type ToastProviderProps = ToastProviderProperties;

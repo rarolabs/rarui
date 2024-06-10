@@ -1,9 +1,9 @@
 import React from "react";
 import { progress } from "@rarui/styles";
-import { CircleProps } from "./circle.types";
+import { ProgressCircleProps } from "./circle.types";
 import { circunference } from "./circle.definitions";
 
-const Circle: React.FC<CircleProps> = ({
+const ProgressCircle: React.FC<ProgressCircleProps> = ({
   className: _className,
   style: _style,
   percentage,
@@ -46,4 +46,4 @@ const Circle: React.FC<CircleProps> = ({
   );
 };
 
-export { Circle };
+export { ProgressCircle };

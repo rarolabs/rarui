@@ -1,6 +1,6 @@
 type DirectionOptions = "horizontal" | "vertical";
 
-export interface ContextProps {
+export interface StepperContextProps {
   /**
    * The direction of the steps
    */

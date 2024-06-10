@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { TooltipVariants } from "@rarui/styles";
 
-interface Body {
+interface TooltipBody {
   /**
    * The content of the modal header.
    * @TJS-type React.ReactNode
@@ -9,5 +9,7 @@ interface Body {
   children?: ReactNode;
 }
 
-export type BodyProperties = Body & Exclude<TooltipVariants, "inverted">;
-export type BodyProps = BodyProperties & HTMLAttributes<HTMLElement>;
+export type TooltipBodyProperties = TooltipBody &
+  Exclude<TooltipVariants, "inverted">;
+export type TooltipBodyProps = TooltipBodyProperties &
+  HTMLAttributes<HTMLElement>;

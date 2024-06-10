@@ -12,7 +12,7 @@ const footerDocs = docs.subComponents.find(
 );
 
 const meta = {
-  title: "Composite/Dropdown.Item",
+  title: "Composite/Dropdown/Item",
   component: Dropdown.Item,
   argTypes: {
     ...argTypesConvert(footerDocs),

@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
-interface ItemTypings {
+interface SideNavigationItemTypings {
   /**
    * The content of the modal header.
    * @TJS-type React.ReactNode
@@ -13,6 +13,6 @@ interface ItemTypings {
   active?: boolean;
 }
 
-export type ItemProperties = ItemTypings;
-export type ItemProps = ItemProperties &
+export type SideNavigationItemProperties = SideNavigationItemTypings;
+export type SideNavigationItemProps = SideNavigationItemProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

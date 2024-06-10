@@ -1,4 +1,6 @@
 import { createContext } from "react";
-import { ContextProps } from "./manager.types";
+import { ToastContextProps } from "./manager.types";
 
-export const Context = createContext<ContextProps>({} as ContextProps);
+export const ToastContext = createContext<ToastContextProps>(
+  {} as ToastContextProps,
+);

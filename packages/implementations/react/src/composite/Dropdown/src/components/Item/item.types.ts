@@ -1,6 +1,6 @@
 import { HTMLAttributes, ReactNode } from "react";
 
-interface ItemTyping {
+interface DropdownItemTyping {
   /**
    * The name of the dropdown item. This is typically the text that is displayed for the item.
    */
@@ -17,5 +17,6 @@ interface ItemTyping {
   icon?: ReactNode;
 }
 
-export type ItemProperties = ItemTyping;
-export type ItemProps = ItemProperties & HTMLAttributes<HTMLElement>;
+export type DropdownItemProperties = DropdownItemTyping;
+export type DropdownItemProps = DropdownItemProperties &
+  HTMLAttributes<HTMLElement>;

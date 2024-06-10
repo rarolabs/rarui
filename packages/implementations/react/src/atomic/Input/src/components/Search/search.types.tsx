@@ -1,10 +1,10 @@
 import { InputHTMLAttributes } from "react";
 import { InputProperties } from "../../input.types";
 
-export interface SearchTyping {}
+export interface InputSearchTyping {}
 
-export type SearchProperties = SearchTyping &
+export type InputSearchProperties = InputSearchTyping &
   Pick<InputProperties, "divider" | "appearance" | "size">;
 
-export type _SearchProps = SearchProperties &
+export type _InputSearchProps = InputSearchProperties &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

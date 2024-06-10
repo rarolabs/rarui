@@ -1,9 +1,9 @@
 import React from "react";
 import { tooltip } from "@rarui/styles";
 
-import { FooterProps } from "./footer.types";
+import { TooltipFooterProps } from "./footer.types";
 
-const Footer: React.FC<FooterProps> = ({
+const TooltipFooter: React.FC<TooltipFooterProps> = ({
   children,
   padding = "none",
   ...rest
@@ -13,5 +13,5 @@ const Footer: React.FC<FooterProps> = ({
   </div>
 );
 
-Footer.displayName = "Tooltip.Footer";
-export { Footer };
+TooltipFooter.displayName = "Tooltip.Footer";
+export { TooltipFooter };

@@ -5,9 +5,9 @@ import { IconButton } from "@rarui-react/icon-button";
 import { Text } from "@rarui-react/text";
 
 import { getLabelDate, getYearsPickerRangeStart } from "./header.definitions";
-import { HeaderProps } from "./header.types";
+import { DatepickerHeaderProps } from "./header.types";
 
-const Header: React.FC<HeaderProps> = ({
+const DatepickerHeader: React.FC<DatepickerHeaderProps> = ({
   decreaseYear,
   increaseYear,
   decreaseMonth,
@@ -62,5 +62,5 @@ const Header: React.FC<HeaderProps> = ({
   );
 };
 
-Header.displayName = "Datepicker.Header";
-export { Header };
+DatepickerHeader.displayName = "Datepicker.Header";
+export { DatepickerHeader };

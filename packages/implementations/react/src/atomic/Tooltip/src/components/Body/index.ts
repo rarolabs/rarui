@@ -1,4 +1,4 @@
-import { Body } from "./Body";
+import { TooltipBody } from "./Body";
 
-export { Body } from "./Body";
-export default Body;
+export { TooltipBody } from "./Body";
+export default TooltipBody;

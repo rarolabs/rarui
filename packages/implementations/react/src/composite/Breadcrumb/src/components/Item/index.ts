@@ -1,4 +1,4 @@
-import { Item } from "./Item";
+import { BreadcrumbItem } from "./Item";
 
-export { Item } from "./Item";
-export default Item;
+export { BreadcrumbItem } from "./Item";
+export default BreadcrumbItem;

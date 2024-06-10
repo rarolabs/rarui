@@ -13,7 +13,7 @@ const footerDocs = docs.subComponents.find(
 );
 
 const meta = {
-  title: "Atomic/Tooltip.Footer",
+  title: "Atomic/Tooltip/Footer",
   component: Tooltip.Footer,
   render: (args) => (
     <Box display="flex" justifyContent="center">

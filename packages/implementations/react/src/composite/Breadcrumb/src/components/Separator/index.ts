@@ -1,4 +1,4 @@
-import { Separator } from "./Separator";
+import { BreadcrumbSeparator } from "./Separator";
 
-export { Separator } from "./Separator";
-export default Separator;
+export { BreadcrumbSeparator } from "./Separator";
+export default BreadcrumbSeparator;

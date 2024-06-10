@@ -1,8 +1,8 @@
 import { HTMLAttributes } from "react";
-import { Circle } from "./components";
+import { ProgressCircle } from "./components";
 
 export interface ProgressComponents {
-  Circle: typeof Circle;
+  Circle: typeof ProgressCircle;
 }
 
 export interface ProgressTyping {

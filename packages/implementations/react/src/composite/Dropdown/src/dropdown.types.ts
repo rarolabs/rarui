@@ -1,10 +1,10 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { Placement } from "@floating-ui/react";
 import { DropdownSprinkle, DropdownVariants } from "@rarui/styles";
-import { Item } from "./components";
+import { DropdownItem } from "./components";
 
 export interface DropdownComponents {
-  Item: typeof Item;
+  Item: typeof DropdownItem;
 }
 
 interface DropdownTyping {

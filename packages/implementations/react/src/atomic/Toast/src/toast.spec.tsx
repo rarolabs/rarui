@@ -2,7 +2,7 @@ import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 
 import { Toast } from "./Toast";
-import { Context } from "./context";
+import { ToastContext } from "./context";
 import { ToastProps } from "./toast.types";
 
 const mockedAddToast = jest.fn();
@@ -10,11 +10,11 @@ const mockedCloseToast = jest.fn();
 
 const makeSut = (rest: ToastProps) => {
   render(
-    <Context.Provider
+    <ToastContext.Provider
       value={{ addToast: mockedAddToast, closeToast: mockedCloseToast }}
     >
       <Toast {...rest} data-testid="toast-element" />
-    </Context.Provider>,
+    </ToastContext.Provider>,
   );
 };
 

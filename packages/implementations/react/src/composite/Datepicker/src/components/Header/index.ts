@@ -1,4 +1,4 @@
-import { Header } from "./Header";
+import { DatepickerHeader } from "./Header";
 
-export { Header } from "./Header";
-export default Header;
+export { DatepickerHeader } from "./Header";
+export default DatepickerHeader;
