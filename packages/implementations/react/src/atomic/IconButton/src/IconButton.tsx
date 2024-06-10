@@ -8,6 +8,7 @@ const IconButton: React.FC<IconButtonProps> = ({
   style: _style,
   appearance = "brand",
   variant = "solid",
+  size = "medium",
   rounded,
   source,
   ...props
@@ -16,6 +17,7 @@ const IconButton: React.FC<IconButtonProps> = ({
     {...props}
     type="button"
     className={iconButton.classnames.iconButton({
+      size,
       variant,
       appearance,
       rounded,

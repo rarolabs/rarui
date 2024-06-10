@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-06-10 `1.26.0`
+
+#### 🎉 New features
+
+- Added new style size variants for `IconButton` component. ([#49](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/49) by [@reubert.barbosa](https://git.rarolabs.com.br/reubert.barbosa))
+
 ## 2024-06-10 `1.25.1`
 
 #### 🐛 Bug fixes

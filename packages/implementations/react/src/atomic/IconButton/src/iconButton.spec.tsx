@@ -140,4 +140,27 @@ describe("GIVEN <IconButton />", () => {
       );
     });
   });
+
+  describe("THEN should correctly render the submitted size", () => {
+    it("THEN should correctly render the size default medium", () => {
+      makeSut({});
+      expect(screen.getByRole("button").getAttribute("class")).toContain(
+        "size_medium",
+      );
+    });
+
+    it("THEN should correctly render the small size", () => {
+      makeSut({ size: "small" });
+      expect(screen.getByRole("button").getAttribute("class")).toContain(
+        "size_small",
+      );
+    });
+
+    it("THEN should correctly render the large size", () => {
+      makeSut({ size: "large" });
+      expect(screen.getByRole("button").getAttribute("class")).toContain(
+        "size_large",
+      );
+    });
+  });
 });
