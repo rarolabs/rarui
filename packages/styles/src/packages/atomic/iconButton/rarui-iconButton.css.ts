@@ -74,6 +74,30 @@ const iconButton = recipe({
         color: varsThemeBase.colors.content.primary,
       },
     },
+    /**
+     * Defines the size of the icon button component.
+     * @default medium
+     */
+    size: {
+      large: {
+        padding: varsThemeBase.spacing.xs,
+        height: "3rem",
+        width: "3rem",
+        fontSize: varsThemeBase.fontSize.button.l,
+      },
+      medium: {
+        padding: varsThemeBase.spacing.xs,
+        height: "2.5rem",
+        width: "2.5rem",
+        fontSize: varsThemeBase.fontSize.button.m,
+      },
+      small: {
+        padding: varsThemeBase.spacing["3xs"],
+        height: "2rem",
+        width: "2rem",
+        fontSize: varsThemeBase.fontSize.button.s,
+      },
+    },
     variant: {
       /**
        * Defines the visual variant of the icon button, affecting its background style, border and text.

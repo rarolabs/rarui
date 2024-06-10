@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-06-10 `1.27.0`
+
+#### 🎉 New features
+
+- Added `size` property to the `IconButton` component. ([#49](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/49) by [@reubert.barbosa](https://git.rarolabs.com.br/reubert.barbosa))
+
 ## 2024-06-10 `1.26.0`
 
 #### 🎉 New features

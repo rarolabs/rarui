@@ -22,6 +22,7 @@ type Story = StoryObj<typeof IconButton>;
 export const basic: Story = {
   args: {
     appearance: "brand",
+    size: "medium",
     source: (
       <Icon
         source={<TrashOutlinedIcon size="medium" />}
