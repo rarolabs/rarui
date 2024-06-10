@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/components",
-  "version": "1.26.0-rc.1",
+  "version": "1.26.0",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -35,6 +35,5 @@
   },
   "devDependencies": {
     "@rarui/webpack": "workspace:^"
-  },
-  "stableVersion": "1.25.0"
+  }
 }

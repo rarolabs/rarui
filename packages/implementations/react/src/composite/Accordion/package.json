@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/accordion",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -35,6 +35,5 @@
     "@rarui-react/icon": "workspace:^",
     "@rarui/icons": "workspace:^",
     "@rarui/webpack": "workspace:^"
-  },
-  "stableVersion": "0.0.0"
+  }
 }

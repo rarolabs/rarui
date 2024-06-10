@@ -1,6 +1,6 @@
 {
   "name": "@rarui/scripts",
-  "version": "1.0.5-rc.1",
+  "version": "1.0.5",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -24,6 +24,5 @@
   "dependencies": {
     "change-case": "^4.1.2",
     "typescript-json-schema": "^0.55.0"
-  },
-  "stableVersion": "1.0.4"
+  }
 }

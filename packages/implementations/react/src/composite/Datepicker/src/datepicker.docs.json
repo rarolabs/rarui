@@ -1,9 +1,9 @@
 {
   "id": "datepicker",
   "name": "Datepicker",
-  "totalProps": 13,
+  "totalProps": 14,
   "packageName": "@rarui-react/datepicker",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "docLink": "https://rarui.com.br/documentation/src-components/datepicker",
   "props": [
     {
@@ -73,6 +73,12 @@
       "description": "Determines whether the datepicker allows selecting a date range.\nWhen true, the datepicker enables range selection.",
       "type": "boolean",
       "title": "selectsRange",
+      "required": false
+    },
+    {
+      "description": "Specifies the ID of the portal element where the datepicker should be rendered.\nThis can be useful for rendering the datepicker in a different part of the DOM, such as a modal or overlay.",
+      "type": "string",
+      "title": "portalId",
       "required": false
     },
     {
