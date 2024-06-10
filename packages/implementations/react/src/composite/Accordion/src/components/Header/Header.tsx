@@ -1,4 +1,5 @@
 import React, { useCallback } from "react";
+import { accordion } from "@rarui/styles";
 import { Text } from "@rarui-react/text";
 import { Box } from "@rarui-react/box";
 import { Icon } from "@rarui-react/icon";
@@ -6,7 +7,6 @@ import { ChevronDownIcon, ChevronUpIcon } from "@rarui/icons";
 
 import { AccordionHeaderProps } from "./header.types";
 import { useAccordion, useAccordionItem } from "../../hooks";
-import { accordion } from "@rarui/styles";
 
 const AccordionHeader: React.FC<AccordionHeaderProps> = ({
   className: _className,
