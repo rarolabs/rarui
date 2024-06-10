@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating builds of each design system package. It contains all the necessary settings and dependencies to optimize the creation of our builds.
 
+## 2024-06-10 `1.3.0`
+
+#### 💡 Others
+
+- Externalizing packages `@floating-ui/react` and `react-datepicker` . ([#52](https://git.rarolabs.com.br/frontend/rarui/pull/52) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-06 `1.2.0`
 
 #### 🐛 Bug fixes
