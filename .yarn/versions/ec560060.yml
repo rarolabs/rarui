@@ -1,7 +1,14 @@
 releases:
-  "@rarui-react/datepicker": patch
+  "@rarui-react/button": patch
   "@rarui-react/input": patch
   "@rarui/styles": patch
 
 declined:
   - "@rarui/design-system"
+  - "@rarui-react/components"
+  - "@rarui-react/banner"
+  - "@rarui-react/icon-button"
+  - "@rarui-react/toast"
+  - "@rarui-react/tooltip"
+  - "@rarui-react/datepicker"
+  - "@rarui-react/sidebar"
