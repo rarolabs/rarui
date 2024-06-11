@@ -1,0 +1,39 @@
+{
+  "name": "@rarui-react/modal",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn g:webpack",
+    "clean": "rm -rf dist",
+    "version": "yarn version"
+  },
+  "dependencies": {
+    "@floating-ui/react": "^0.26.13",
+    "@rarui-react/box": "workspace:^",
+    "@rarui-react/icon-button": "workspace:^",
+    "@rarui-react/text": "workspace:^",
+    "@rarui-react/title": "workspace:^",
+    "@rarui/icons": "workspace:^"
+  },
+  "peerDependencies": {
+    "react": "^16.8 || ^17.0 || ^18.0",
+    "react-dom": "^16.8 || ^17.0 || ^18.0"
+  },
+  "homepage": "https://git.rarolabs.com.br/frontend/rarui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.rarolabs.com.br/frontend/rarui.git"
+  },
+  "bugs": {
+    "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
+  },
+  "devDependencies": {
+    "@rarui/webpack": "workspace:^"
+  }
+}

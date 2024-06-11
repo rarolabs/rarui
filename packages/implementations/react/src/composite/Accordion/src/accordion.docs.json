@@ -1,7 +1,7 @@
 {
   "id": "accordion",
   "name": "Accordion",
-  "totalProps": 2,
+  "totalProps": 3,
   "packageName": "@rarui-react/accordion",
   "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/accordion",
@@ -16,6 +16,13 @@
       "description": "Informs which accordion item is open by default, this value must be the same as informed in the index of each item",
       "type": "string",
       "title": "selectedDefault",
+      "required": false
+    },
+    {
+      "description": "Disables the accordion, disallowing user interaction.",
+      "default": false,
+      "type": "boolean",
+      "title": "disabled",
       "required": false
     }
   ],

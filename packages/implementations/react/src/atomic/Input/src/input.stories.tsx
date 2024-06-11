@@ -1,4 +1,5 @@
 import React from "react";
+import { useMask } from "@react-input/mask";
 import type { Meta, StoryObj } from "@storybook/react";
 import { argTypesConvert } from ".storybook/utils";
 import {
@@ -142,6 +143,22 @@ export const withLeadings: Story = {
         />
         <Text>Copy</Text>
       </Box>
+    ),
+  },
+};
+
+export const withMask: Story = {
+  render: (args) => {
+    const inputRef = useMask({
+      mask: "+0 (___) ___-__-__",
+      replacement: { _: /\d/ },
+    });
+    return <Input ref={inputRef} {...args} />;
+  },
+  args: {
+    placeholder: "Placeholder",
+    leadingEnd: (
+      <Icon color="$currentColor" source={<MailOutlinedIcon size="small" />} />
     ),
   },
 };

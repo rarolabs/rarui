@@ -9,7 +9,7 @@ const Accordion: React.FC<AccordionProps> & AccordionComponents = ({
   style: _style,
   children,
   selectedDefault,
-  className,
+  disabled,
   ...rest
 }: AccordionProps) => {
   const [selected, onSelect] = useState("");
@@ -23,13 +23,14 @@ const Accordion: React.FC<AccordionProps> & AccordionComponents = ({
   const context = useMemo(
     () => ({
       selected,
+      disabled,
       onSelect,
     }),
-    [selected, onSelect],
+    [selected, disabled, onSelect],
   );
 
   return (
-    <Box as="div" display="flex" flexDirection="column" {...rest}>
+    <Box as="div" display="flex" flexDirection="column" gap="$3xs" {...rest}>
       <AccordionManager.Provider value={context}>
         {children}
       </AccordionManager.Provider>

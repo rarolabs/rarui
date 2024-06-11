@@ -80,19 +80,16 @@ const iconButton = recipe({
      */
     size: {
       large: {
-        padding: varsThemeBase.spacing.xs,
         height: "3rem",
         width: "3rem",
         fontSize: varsThemeBase.fontSize.button.l,
       },
       medium: {
-        padding: varsThemeBase.spacing.xs,
         height: "2.5rem",
         width: "2.5rem",
         fontSize: varsThemeBase.fontSize.button.m,
       },
       small: {
-        padding: varsThemeBase.spacing["3xs"],
         height: "2rem",
         width: "2rem",
         fontSize: varsThemeBase.fontSize.button.s,

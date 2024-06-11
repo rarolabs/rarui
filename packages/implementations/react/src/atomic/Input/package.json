@@ -30,6 +30,9 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui//issues"
   },
   "devDependencies": {
-    "@rarui/webpack": "workspace:^"
+    "@rarui/webpack": "workspace:^",
+    "@react-input/mask": "^1.2.5",
+    "@types/react-input-mask": "^2",
+    "react-input-mask": "^2.0.4"
   }
 }

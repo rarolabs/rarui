@@ -1,4 +1,4 @@
-import { HTMLAttributes, ReactNode } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 import { AccordionVariants } from "@rarui/styles";
 
 export interface AccordionHeaderTypings {
@@ -33,4 +33,4 @@ export type AccordionHeaderProperties = AccordionHeaderTypings &
   Pick<AccordionVariants, "size">;
 
 export type AccordionHeaderProps = AccordionHeaderProperties &
-  Omit<HTMLAttributes<HTMLElement>, "children">;
+  Omit<ButtonHTMLAttributes<HTMLButtonElement>, "children">;

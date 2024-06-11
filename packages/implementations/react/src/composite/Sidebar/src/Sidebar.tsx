@@ -37,7 +37,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   const { getFloatingProps } = useInteractions([dismiss]);
 
   return (
-    <FloatingPortal id="rarui-side-navigation" root={refThemeProvider?.current}>
+    <FloatingPortal id="rarui-sidebar" root={refThemeProvider?.current}>
       <FloatingFocusManager context={context}>
         <div
           {...otherProps}
