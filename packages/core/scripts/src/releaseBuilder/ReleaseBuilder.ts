@@ -47,7 +47,6 @@ export class ReleaseBuilder {
   private getDifflog(changelogPath: string, packageName: string) {
     try {
       const diffCommand = `git diff main..HEAD -- ${changelogPath}`;
-      console.log(diffCommand);
       const diffLog = execSync(diffCommand).toString();
       if (!diffLog) {
         console.error(
@@ -107,7 +106,6 @@ export class ReleaseBuilder {
 
       const packageBuilder = new PackageBuilder();
       const packages = packageBuilder.getPackagesToBuild(paths[0]);
-      console.log({ packages });
       return this.processPackages(packages);
     } catch (err) {
       console.error(`\x1b[33m ${(err as Error).message} \x1b[0m`);

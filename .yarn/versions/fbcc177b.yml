@@ -1,0 +1,5 @@
+releases:
+  "@rarui/scripts": minor
+
+declined:
+  - "@rarui/design-system"
