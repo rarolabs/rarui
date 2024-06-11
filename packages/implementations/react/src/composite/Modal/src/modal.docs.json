@@ -3,7 +3,7 @@
   "name": "Modal",
   "totalProps": 7,
   "packageName": "@rarui-react/modal",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/modal",
   "props": [
     {

@@ -3,7 +3,7 @@
   "name": "Accordion",
   "totalProps": 3,
   "packageName": "@rarui-react/accordion",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "docLink": "https://rarui.com.br/documentation/src-components/accordion",
   "props": [
     {
