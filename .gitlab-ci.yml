@@ -20,9 +20,12 @@ image: node:lts
 
 stages: # List of stages for jobs, and their order of execution
   - setup
+  - check-releases
   - check-version
   - quality
   - deploy
+  - releases
+  - clean-releases
 
 setup-job:
   stage: setup
@@ -32,6 +35,12 @@ setup-job:
   artifacts:
     paths:
       - node_modules/ # Salva as dependências instaladas como artefatos para uso em etapas subsequentes
+  only:
+    - merge_requests
+check-releases-job:
+  stage: check-releases
+  script:
+    - if [ ! -f releases.json]; then echo "Releases file not found. Run 'yarn build:releases' before merge"; exit 1; fi
   only:
     - merge_requests
 
@@ -94,3 +103,37 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
   rules:
     - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
     - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
+
+release-job:
+  stage: releases
+  script:
+    - yarn install
+    - yarn releases:launch
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
+    - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
+  needs:
+    - job: deploy-stable-job
+
+
+
+clean-releases-job:
+  image: node:lts
+  stage: clean-releases
+  environment: production
+  script:
+  - echo "cleaning releases"
+  - git config --global user.email "${GITLAB_USER_NAME}"
+  - git config --global user.name "${GITLAB_USER_EMAIL}"
+  - git checkout main
+  - git pull --rebase
+  - rm -f releases.json
+  - git add .
+  - git commit -m "cleaning releases [skip ci]"
+  - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
+
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
+    - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
+  needs:
+    - job: release-job

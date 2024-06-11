@@ -2,6 +2,13 @@
 
 This package is intended for internal use in generating custom script builds at design system build time.
 
+## 2024-05-24 `1.1.0`
+
+#### 🎉 New features
+
+- Added new script to launch the releases on gitlab pipeline ([#54](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/54) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+- Added new script to prepare releases for new packages versions ([#54](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/54) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-06-10 `1.0.5`
 
 #### 🐛 Bug fixes
