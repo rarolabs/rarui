@@ -3542,6 +3542,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-react/select@workspace:packages/implementations/react/src/atomic/Select":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/select@workspace:packages/implementations/react/src/atomic/Select"
+  dependencies:
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@rarui-react/side-navigation@workspace:packages/implementations/react/src/composite/SideNavigation":
   version: 0.0.0-use.local
   resolution: "@rarui-react/side-navigation@workspace:packages/implementations/react/src/composite/SideNavigation"
