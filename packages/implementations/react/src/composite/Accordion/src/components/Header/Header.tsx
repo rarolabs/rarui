@@ -6,6 +6,7 @@ import { Icon } from "@rarui-react/icon";
 import { ChevronDownIcon, ChevronUpIcon } from "@rarui/icons";
 
 import { AccordionHeaderProps } from "./header.types";
+import { subtitleSizes, titleSizes } from "./header.definitions";
 import { useAccordion, useAccordionItem } from "../../hooks";
 
 const AccordionHeader: React.FC<AccordionHeaderProps> = ({
@@ -13,13 +14,14 @@ const AccordionHeader: React.FC<AccordionHeaderProps> = ({
   style: _style,
   noIconToggle = false,
   size = "medium",
+  disabled: itemDisabled,
   children,
   title,
   subtitle,
   icon,
   ...rest
 }) => {
-  const { selected, onSelect } = useAccordion();
+  const { selected, disabled, onSelect } = useAccordion();
   const { index, testId } = useAccordionItem();
 
   const isOpen = selected === index;
@@ -35,6 +37,7 @@ const AccordionHeader: React.FC<AccordionHeaderProps> = ({
       data-testid={testId || `accordion-header-${index}`}
       onClick={handleSelect}
       className={accordion.classnames.item({ selected: isOpen, size })}
+      disabled={itemDisabled ?? disabled}
       {...rest}
     >
       <Box display="flex" justifyContent="space-between" alignItems="center">
@@ -58,12 +61,18 @@ const AccordionHeader: React.FC<AccordionHeaderProps> = ({
             gap="$3xs"
           >
             {title && (
-              <Text data-testid="accordion-header-title" fontSize="$xs">
+              <Text
+                data-testid="accordion-header-title"
+                fontSize={titleSizes[size]}
+              >
                 {title}
               </Text>
             )}
             {subtitle && (
-              <Text data-testid="accordion-header-subtitle" fontSize="$xxs">
+              <Text
+                data-testid="accordion-header-subtitle"
+                fontSize={subtitleSizes[size]}
+              >
                 {subtitle}
               </Text>
             )}

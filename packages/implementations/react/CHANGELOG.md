@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-06-11 `1.28.0`
+
+#### 🎉 New features
+
+- Added new composite `Modal` component. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-10 `1.27.0`
 
 #### 🎉 New features
