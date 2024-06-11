@@ -3,9 +3,9 @@ import {
   createRainbowSprinkles,
   defineProperties as defineRainbowProperties,
 } from "rainbow-sprinkles";
+import { keyframes, style } from "@vanilla-extract/css";
 import { zIndexProperties } from "../../../properties";
 import { mediaQueries, varsThemeBase } from "../../../themes";
-import { keyframes, style } from "@vanilla-extract/css";
 
 /* -------------------------------------------------------------------------------------------------
  * Style

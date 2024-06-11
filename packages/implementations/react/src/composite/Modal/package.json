@@ -16,8 +16,9 @@
   "dependencies": {
     "@floating-ui/react": "^0.26.13",
     "@rarui-react/box": "workspace:^",
-    "@rarui-react/icon": "workspace:^",
+    "@rarui-react/icon-button": "workspace:^",
     "@rarui-react/text": "workspace:^",
+    "@rarui-react/title": "workspace:^",
     "@rarui/icons": "workspace:^"
   },
   "peerDependencies": {
@@ -33,8 +34,6 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
   },
   "devDependencies": {
-    "@rarui-react/icon": "workspace:^",
-    "@rarui/icons": "workspace:^",
     "@rarui/webpack": "workspace:^"
   }
 }

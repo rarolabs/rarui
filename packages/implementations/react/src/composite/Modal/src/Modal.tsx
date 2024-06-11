@@ -53,7 +53,7 @@ const Modal: React.FC<ModalProps> & ModalComponents = ({
       open,
       onDismiss,
     }),
-    [onDismiss],
+    [open, onDismiss],
   );
 
   return (

@@ -1,7 +1,6 @@
 import React from "react";
-
-import { ModalBodyProps } from "./body.types";
 import { Box } from "@rarui-react/box";
+import { ModalBodyProps } from "./body.types";
 
 const ModalBody: React.FC<ModalBodyProps> = ({
   className: _className,

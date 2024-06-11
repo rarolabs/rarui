@@ -1,6 +1,6 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { ModalBody, ModalFooter, ModalHeader } from "./components";
 import { ModalSprinkle, ModalVariants } from "@rarui/styles";
+import { ModalBody, ModalFooter, ModalHeader } from "./components";
 
 export interface ModalComponents {
   Body: typeof ModalBody;
