@@ -66,7 +66,7 @@ const overlayAnimation = keyframes({
 
 const overlay = style({
   position: "fixed",
-  backgroundColor: "rgba(0, 0, 0, 0.5)",
+  backgroundColor: varsThemeBase.colors.surface.overlay,
   top: 0,
   bottom: 0,
   left: 0,
