@@ -88,7 +88,7 @@ export class ReleaseBuilder {
       const version = this.getVersion(description, packageName);
 
       return {
-        package: `${packageName} Release ${version}`,
+        package: `${packageName} ${version}`,
         description,
         version,
         tagName: `${packageName.slice(1)}-${version}`,
