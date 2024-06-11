@@ -116,10 +116,11 @@ export class ReleaseBuilder {
   public run() {
     try {
       const packagesToRelease = this.getPackagesToRelease();
+      const rootDir = path.resolve(__dirname, "../../../../../");
 
       console.log("Creating releases");
 
-      const outputFile = path.join(__dirname, "../../../../../releases.json");
+      const outputFile = path.join(rootDir, "releases.json");
       fs.writeFile(outputFile, JSON.stringify(packagesToRelease), (err) => {
         if (err) console.error(err);
       });

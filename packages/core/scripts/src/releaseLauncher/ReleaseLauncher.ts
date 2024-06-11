@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import fetch from "node-fetch";
+import path from "path";
 
 export class ReleaseLauncher {
   private readonly gitlabUrl: string;
@@ -43,7 +44,9 @@ export class ReleaseLauncher {
   }
 
   // Path to the JSON file with releases
-  private readonly releasesFile = "../../../../../releases.json";
+  private readonly rootdir = path.resolve(__dirname, "../../../../../");
+
+  private readonly releasesFile = path.join(this.rootdir, "releases.json");
 
   // Read and parse the JSON file
   async launchReleases() {
