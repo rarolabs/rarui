@@ -30,6 +30,7 @@ export { accordion } from "./packages/composite/accordion";
 export { breadcrumb } from "./packages/composite/breadcrumb";
 export { datepicker } from "./packages/composite/datepicker";
 export { dropdown } from "./packages/composite/dropdown";
+export { modal } from "./packages/composite/modal";
 export { pagination } from "./packages/composite/pagination";
 export { sidebar } from "./packages/composite/sidebar";
 export { sideNavigation } from "./packages/composite/sideNavigation";
@@ -68,6 +69,7 @@ export type {
   DropdownVariants,
   DropdownSprinkle,
 } from "./packages/composite/dropdown";
+export type { ModalVariants, ModalSprinkle } from "./packages/composite/modal";
 export type { PaginationVariants } from "./packages/composite/pagination";
 export type {
   SidebarVariants,

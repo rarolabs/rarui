@@ -16,11 +16,28 @@ const item = recipe({
     borderBottomColor: varsThemeBase.colors.border.subdued,
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
     color: varsThemeBase.colors.content.primary,
+    transition: "all 150ms ease",
+    ":hover": {
+      backgroundColor: varsThemeBase.colors.surface.hover,
+    },
+    ":disabled": {
+      backgroundColor: "transparent",
+      cursor: "not-allowed",
+      color: varsThemeBase.colors.content.disabled,
+    },
   },
   variants: {
     selected: {
       true: {
         color: varsThemeBase.colors.content.brand,
+        borderBottomColor: varsThemeBase.colors.border["brand-alt"],
+        ":hover": {
+          backgroundColor: varsThemeBase.colors.surface["brand-hover"],
+        },
+        ":disabled": {
+          borderBottomColor: varsThemeBase.colors.border.subdued,
+          backgroundColor: "transparent",
+        },
       },
     },
     size: {
@@ -38,6 +55,12 @@ const item = recipe({
 });
 
 const body = recipe({
+  base: {
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderBottomWidth: varsThemeBase.shape.border.width[1],
+    borderBottomColor: varsThemeBase.colors.border.subdued,
+  },
   variants: {
     /**
      * Padding properties are used to generate space around the content area of an Accordion.Body..

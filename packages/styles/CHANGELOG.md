@@ -2,11 +2,17 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-06-11 `1.27.0`
+
+#### 🎉 New features
+
+- Added new style size variants for `modal` component. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-10 `1.26.0`
 
 #### 🎉 New features
 
-- Added new style size variants for `IconButton` component. ([#49](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/49) by [@reubert.barbosa](https://git.rarolabs.com.br/reubert.barbosa))
+- Added new style size variants for `iconButton` component. ([#49](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/49) by [@reubert.barbosa](https://git.rarolabs.com.br/reubert.barbosa))
 
 ## 2024-06-10 `1.25.1`
 
