@@ -116,11 +116,17 @@
       "@rarui-react/breadcrumb": [
         "./packages/implementations/react/src/composite/Breadcrumb/src"
       ],
+      "@rarui-react/accordion": [
+        "./packages/implementations/react/src/composite/Accordion/src"
+      ],
       "@rarui-react/datepicker": [
         "./packages/implementations/react/src/composite/Datepicker/src"
       ],
       "@rarui-react/dropdown": [
         "./packages/implementations/react/src/composite/Dropdown/src"
+      ],
+      "@rarui-react/modal": [
+        "./packages/implementations/react/src/composite/Modal/src"
       ],
       "@rarui-react/pagination": [
         "./packages/implementations/react/src/composite/Pagination/src"
