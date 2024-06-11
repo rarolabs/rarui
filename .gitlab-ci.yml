@@ -83,6 +83,7 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
   stage: deploy # It only runs when *both* jobs in the test stage complete successfully.
   environment: production
   script:
+    - echo "Galo doido!"
     # - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
     # - yarn install # Instala as dependências com o Yarn
     # - yarn bump:check
