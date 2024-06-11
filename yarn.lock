@@ -3458,6 +3458,9 @@ __metadata:
     "@rarui-react/icon": "workspace:^"
     "@rarui/icons": "workspace:^"
     "@rarui/webpack": "workspace:^"
+    "@react-input/mask": "npm:^1.2.5"
+    "@types/react-input-mask": "npm:^2"
+    react-input-mask: "npm:^2.0.4"
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
     react-dom: ^16.8 || ^17.0 || ^18.0
@@ -3876,6 +3879,36 @@ __metadata:
     webpack-shell-plugin-next: "npm:^2.3.1"
   languageName: unknown
   linkType: soft
+
+"@react-input/core@npm:^1.0.12":
+  version: 1.0.12
+  resolution: "@react-input/core@npm:1.0.12"
+  peerDependencies:
+    "@types/react": ">=16.8"
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 9e544adabdc49bc00700e0a41a958d0f4f6c3166b48f03bad5af0eeb61dce6e890992d12bca7f17a88c289a4966cf7899a3a39a18020251962d7d0faa45c580a
+  languageName: node
+  linkType: hard
+
+"@react-input/mask@npm:^1.2.5":
+  version: 1.2.5
+  resolution: "@react-input/mask@npm:1.2.5"
+  dependencies:
+    "@react-input/core": "npm:^1.0.12"
+  peerDependencies:
+    "@types/react": ">=16.8"
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: e3a9af2bf85d2ba3879770b526d5c3c8f83b0a06d64165465d495adf1b85aa7159bb1da1c52f9bf39b6481a44228fd659d90dc9c59b55d7ef1f86f7687892546
+  languageName: node
+  linkType: hard
 
 "@rollup/pluginutils@npm:^5.1.0":
   version: 5.1.0
@@ -6328,6 +6361,15 @@ __metadata:
   dependencies:
     "@types/react": "npm:*"
   checksum: cd85b5f402126e44b8c7b573e74737389816abcc931b2b14d8f946ba81cce8637ea490419488fcae842efb1e2f69853bc30522e43fd8359e1007d4d14b8d8146
+  languageName: node
+  linkType: hard
+
+"@types/react-input-mask@npm:^2":
+  version: 2.0.5
+  resolution: "@types/react-input-mask@npm:2.0.5"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 43750b72da9eeb8acc6b6a78093c0a5a040feecd6d2d26340c12c1a4cb6f0e8b69f988cbdb426203306f8db2c20919897d7246b83eac9ad7a0d3d367600f59d9
   languageName: node
   linkType: hard
 
@@ -12760,6 +12802,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"invariant@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "invariant@npm:2.2.4"
+  dependencies:
+    loose-envify: "npm:^1.0.0"
+  checksum: 5af133a917c0bcf65e84e7f23e779e7abc1cd49cb7fdc62d00d1de74b0d8c1b5ee74ac7766099fb3be1b05b26dfc67bab76a17030d2fe7ea2eef867434362dfc
+  languageName: node
+  linkType: hard
+
 "ip-address@npm:^9.0.5":
   version: 9.0.5
   resolution: "ip-address@npm:9.0.5"
@@ -14660,7 +14711,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.0.0, loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -17519,6 +17570,19 @@ __metadata:
     react: ^0.14.8 || ^15.0.1 || ^16.0.0 || ^17.0.1 || ^18.0.0
     react-dom: ^0.14.8 || ^15.0.1 || ^16.0.0 || ^17.0.1 || ^18.0.0
   checksum: 0d60a0ea758529c32a706d0c69d70b69fb94de3c46442fffdee34f08f51ffceddbb5395b41dfd1565895653e9f60f98ca525835be9d5db1f16d6b22be12f4cd4
+  languageName: node
+  linkType: hard
+
+"react-input-mask@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "react-input-mask@npm:2.0.4"
+  dependencies:
+    invariant: "npm:^2.2.4"
+    warning: "npm:^4.0.2"
+  peerDependencies:
+    react: ">=0.14.0"
+    react-dom: ">=0.14.0"
+  checksum: 89fc110a99e79ee3fa3f63696d5d46ab8889c653b33c0e50c6b24d70b715e1c8d475b8637ceb9e0f4fcacec5e39f653156faef4f5f06972886c4b1e643f66a82
   languageName: node
   linkType: hard
 
@@ -20819,6 +20883,15 @@ __metadata:
   dependencies:
     makeerror: "npm:1.0.12"
   checksum: a17e037bccd3ca8a25a80cb850903facdfed0de4864bd8728f1782370715d679fa72e0a0f5da7c1c1379365159901e5935f35be531229da53bbfc0efdabdb48e
+  languageName: node
+  linkType: hard
+
+"warning@npm:^4.0.2":
+  version: 4.0.3
+  resolution: "warning@npm:4.0.3"
+  dependencies:
+    loose-envify: "npm:^1.0.0"
+  checksum: aebab445129f3e104c271f1637fa38e55eb25f968593e3825bd2f7a12bd58dc3738bb70dc8ec85826621d80b4acfed5a29ebc9da17397c6125864d72301b937e
   languageName: node
   linkType: hard
 
