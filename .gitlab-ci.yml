@@ -113,8 +113,8 @@ release-job:
   rules:
     # - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
     - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
-  # needs:
-  #   - job: deploy-stable-job
+  needs:
+    - job: deploy-stable-job
 
 clean-releases-job:
   image: node:lts

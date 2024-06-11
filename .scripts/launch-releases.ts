@@ -7,11 +7,11 @@ config();
 // GitLab API URL and credentials
 const GITLAB_URL = "https://git.rarolabs.com.br";
 const PROJECT_ID = 1374;
-const PRIVATE_TOKEN = process.env.PRIVATE_TOKEN || "";
+const PERSONAL_ACCESS_TOKEN = process.env.PERSONAL_ACCESS_TOKEN || "";
 
-if (!PROJECT_ID || !PRIVATE_TOKEN) {
+if (!PROJECT_ID || !PERSONAL_ACCESS_TOKEN) {
   console.error(
-    "PROJECT_ID and PRIVATE_TOKEN environment variables are required.",
+    "PROJECT_ID and PERSONAL_ACCESS_TOKEN environment variables are required.",
   );
   process.exit(1);
 }
@@ -19,6 +19,6 @@ if (!PROJECT_ID || !PRIVATE_TOKEN) {
 const releaseManager = new ReleaseLauncher(
   GITLAB_URL,
   PROJECT_ID,
-  PRIVATE_TOKEN,
+  PERSONAL_ACCESS_TOKEN,
 );
 releaseManager.launchReleases();
