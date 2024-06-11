@@ -1,8 +1,0 @@
-[
-  {
-    "package": "@rarui/scripts Release 1.1.0",
-    "description": "## 2024-05-24 `1.1.0`\n\n#### 🎉 New features\n\n- Added new script to launch the releases on gitlab pipeline ([#54](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/54) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))\n- Added new script to prepare releases for new packages versions ([#54](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/54) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))",
-    "version": "1.1.0",
-    "tagName": "rarui/scripts-1.1.0"
-  }
-]
