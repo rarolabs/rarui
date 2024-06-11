@@ -83,26 +83,25 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
   stage: deploy # It only runs when *both* jobs in the test stage complete successfully.
   environment: production
   script:
-    - echo "Galo doido!"
-    # - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
-    # - yarn install # Instala as dependências com o Yarn
-    # - yarn bump:check
-    # - export NODE_OPTIONS="--max_old_space_size=8192"
-    # - yarn publish:stable
-    # - yarn build:docs
-    # - git config --global user.email "${GITLAB_USER_NAME}"
-    # - git config --global user.name "${GITLAB_USER_EMAIL}"
-    # - git fetch
-    # - git stash
-    # - git checkout main
-    # - git stash apply
-    # - git pull
-    # - git add .
-    # - git commit -m "Publish release stable [skip ci]"
-    # - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
+    - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
+    - yarn install # Instala as dependências com o Yarn
+    - yarn bump:check
+    - export NODE_OPTIONS="--max_old_space_size=8192"
+    - yarn publish:stable
+    - yarn build:docs
+    - git config --global user.email "${GITLAB_USER_NAME}"
+    - git config --global user.name "${GITLAB_USER_EMAIL}"
+    - git fetch
+    - git stash
+    - git checkout main
+    - git stash apply
+    - git pull
+    - git add .
+    - git commit -m "Publish release stable [skip ci]"
+    - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
 
   rules:
-    # - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
+    - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
     - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
 
 release-job:
@@ -111,7 +110,7 @@ release-job:
     - yarn install
     - yarn releases:launch
   rules:
-    # - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
+    - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
     - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
   needs:
     - job: deploy-stable-job
