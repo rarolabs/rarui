@@ -6,7 +6,7 @@ RarUI Styles deprive all styles needed to build components.
 
 #### 🎉 New features
 
-- Added new style size variants for `modal` component. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new style size variants for `modal` component. ([#54](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/54) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-06-10 `1.26.0`
 

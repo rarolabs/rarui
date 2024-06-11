@@ -6,11 +6,11 @@ The Accordion component allows the user to show and hide content sections on a p
 
 ### 🎉 New features
 
-- Added `disabled` property to the Component `Accordion`. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@junior](https://git.rarolabs.com.br/junior))
+- Added `disabled` property to the Component `Accordion`. ([#54](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/54) by [@junior](https://git.rarolabs.com.br/junior))
 
 #### 🐛 Bug fixes
 
-- Added spacing between `Accordion` items. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@junior](https://git.rarolabs.com.br/junior))
+- Added spacing between `Accordion` items. ([#54](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/54) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-06-10 `1.0.0`
 
