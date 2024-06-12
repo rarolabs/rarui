@@ -46,7 +46,7 @@
   },
   {
     "package": "@rarui-react/select 1.0.0",
-    "description": "# Changelog\n\nUse a select box when a user needs to select one or more than one option from a list.\n\n## 2024-06-12 `1.0.0`\n\n#### 🎉 New features\n\n- Added `onChange`, `value`, `options`, `children`, `size` and `appearance` properties to the component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))\n- Added stories on Component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))\n\n<!-- #### 🛠 Breaking changes -->\n\n<!-- #### 📚 3rd party library updates -->\n\n<!-- #### 🎉 New features -->\n\n<!-- #### 🐛 Bug fixes -->\n\n<!-- #### 💡 Others -->",
+    "description": "## 2024-06-12 `1.0.0`\n\n#### 🎉 New features\n\n- Added `onChange`, `value`, `options`, `children`, `size` and `appearance` properties to the component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))\n- Added stories on Component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))",
     "version": "1.0.0",
     "tagName": "rarui-react/select-1.0.0",
     "assets": {
