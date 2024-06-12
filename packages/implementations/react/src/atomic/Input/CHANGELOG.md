@@ -2,6 +2,14 @@
 
 The Input component allows users to enter text into a UI. They typically appear on forms and dialog boxes.
 
+## 2024-06-12 `1.1.0`
+
+#### 🎉 New features
+
+- Added `border` property to the `Input` Component. ([#49](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/49) by [@reubert.barbosa](https://git.rarolabs.com.br/reubert.barbosa))
+- Added `border` property to the `Input.Password` Component. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Added `border` property to the `Input.search` Component. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-02 `1.0.2`
 
 #### 💡 Others
@@ -12,7 +20,7 @@ The Input component allows users to enter text into a UI. They typically appear 
 
 #### 🐛 Bug fixes
 
-- Adjusted the size of the `Input.Password` icon. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
+- Adjusted property to the `Input.Password` icon. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
 - Adjusted the size of the `Input.search` icon. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
 - Fixed component typing. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
 
