@@ -5,19 +5,29 @@ import { execSync } from "child_process";
 import { pascalCase } from "change-case";
 import * as fs from "fs";
 
+type Assets = {
+  links: {
+    name: string;
+    url: string;
+    link_type: string;
+  }[];
+};
+
 type ProcessedPackage = {
   package: string;
   description: string;
   version: string;
   tagName: string;
+  assets: Assets;
 };
 
 export class ReleaseBuilder {
   private breakPackageName(packageName: string) {
     if (packageName.indexOf("-") === -1) return packageName.split("/")[1];
+    console.log({ packageName });
     const folders = packageName.split("@rarui-")[1].split("/");
     folders[1] = pascalCase(folders[1]);
-    return folders.join("/**/");
+    return folders.join("/**/").replace("/Components", "");
   }
 
   private getChangeLogPath(packageName: string): string {
@@ -84,14 +94,25 @@ export class ReleaseBuilder {
     return packages.map((packageName) => {
       const changelogPath = this.getChangeLogPath(packageName);
       const description = this.getDescription(changelogPath, packageName);
-
+      const _packageName =
+        packageName === "@rarui-react" || packageName === "vuejs"
+          ? `${packageName}/components/`
+          : packageName;
       const version = this.getVersion(description, packageName);
-
       return {
-        package: `${packageName} ${version}`,
+        package: `${_packageName} ${version}`,
         description,
         version,
-        tagName: `${packageName.slice(1)}-${version}`,
+        tagName: `${_packageName.slice(1)}-${version}`,
+        assets: {
+          links: [
+            {
+              name: "npm",
+              url: `https://www.npmjs.com/package/${_packageName}`,
+              link_type: "package",
+            },
+          ],
+        },
       };
     });
   }
@@ -118,12 +139,13 @@ export class ReleaseBuilder {
       const packagesToRelease = this.getPackagesToRelease();
       const rootDir = path.resolve(__dirname, "../../../../../");
 
-      console.log("Creating releases");
+      console.log("Creating releases...");
 
       const outputFile = path.join(rootDir, "releases.json");
       fs.writeFile(outputFile, JSON.stringify(packagesToRelease), (err) => {
         if (err) console.error(err);
       });
+      console.log("Releases file created successfully");
     } catch (err) {
       console.error(`\x1b[33m ${(err as Error).message} \x1b[0m`);
       process.exit(1);

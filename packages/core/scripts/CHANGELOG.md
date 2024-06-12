@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating custom script builds at design system build time.
 
+## 2024-06-11 `1.1.1`
+
+#### 🎉 Bug fixes
+
+- Fixed release name and tag name for @rarui-react/components package ([#56](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/56) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-06-11 `1.1.0`
 
 #### 🎉 New features
