@@ -4,7 +4,7 @@ import { InputProperties } from "../../input.types";
 export interface InputPasswordTyping {}
 
 export type InputPasswordProperties = InputPasswordTyping &
-  Pick<InputProperties, "divider" | "appearance" | "size">;
+  Pick<InputProperties, "divider" | "appearance" | "size" | "border">;
 
 export type _InputPasswordProps = InputPasswordProperties &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

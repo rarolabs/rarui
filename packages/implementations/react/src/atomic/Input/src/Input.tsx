@@ -16,10 +16,11 @@ const Input = forwardRef<HTMLInputElement, _InputProps>(
       className: _className,
       style: _style,
       size = "medium",
+      divider = true,
+      border = true,
       appearance,
       leadingStart,
       leadingEnd,
-      divider = true,
       ...rest
     }: _InputProps,
     ref,
@@ -32,7 +33,7 @@ const Input = forwardRef<HTMLInputElement, _InputProps>(
     return (
       <div
         data-testid={dataTestid ? `${dataTestid}-container` : ""}
-        className={input.classnames.container({ appearance })}
+        className={input.classnames.container({ appearance, border })}
       >
         {leadingStart && (
           <InputLeading

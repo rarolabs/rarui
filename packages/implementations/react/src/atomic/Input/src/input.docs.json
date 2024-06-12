@@ -1,7 +1,7 @@
 {
   "id": "input",
   "name": "Input",
-  "totalProps": 5,
+  "totalProps": 6,
   "packageName": "@rarui-react/input",
   "version": "1.0.2",
   "docLink": "https://rarui.com.br/documentation/src-components/input",
@@ -23,6 +23,11 @@
       "enum": ["error", "success"],
       "type": "string",
       "title": "appearance",
+      "required": false
+    },
+    {
+      "type": "boolean",
+      "title": "border",
       "required": false
     },
     {
@@ -81,8 +86,13 @@
     },
     {
       "name": "Input.Password",
-      "totalProps": 3,
+      "totalProps": 4,
       "props": [
+        {
+          "type": "boolean",
+          "title": "border",
+          "required": false
+        },
         {
           "description": "Places a divider between the input and the leading components",
           "type": "boolean",
@@ -107,8 +117,13 @@
     },
     {
       "name": "Input.Search",
-      "totalProps": 3,
+      "totalProps": 4,
       "props": [
+        {
+          "type": "boolean",
+          "title": "border",
+          "required": false
+        },
         {
           "description": "Places a divider between the input and the leading components",
           "type": "boolean",
