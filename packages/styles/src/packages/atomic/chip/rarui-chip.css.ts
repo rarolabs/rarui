@@ -21,6 +21,7 @@ const chip = recipe({
     position: "relative",
     overflow: "hidden",
     borderStyle: "solid",
+    transition: "all 150ms ease",
     gap: varsThemeBase.spacing["3xs"],
     fontWeight: varsThemeBase.fontWeight.medium,
     fontFamily: varsThemeBase.fontFamily.inter,
@@ -29,7 +30,10 @@ const chip = recipe({
     borderColor: varsThemeBase.colors.border.subdued,
     backgroundColor: varsThemeBase.colors.surface.primary,
     color: varsThemeBase.colors.content.primary,
-    transition: "all 150ms ease",
+    ":focus-within": {
+      outline: "none",
+      boxShadow: varsThemeBase.utils["focus-ring"],
+    },
     ":disabled": {
       background: varsThemeBase.colors.surface.disabled,
       borderColor: varsThemeBase.colors.surface.disabled,
@@ -85,8 +89,13 @@ const chip = recipe({
 });
 
 export const close = style({
-  color: varsThemeBase.colors.content.secondary,
   transition: "all 150ms ease",
+  color: varsThemeBase.colors.content.secondary,
+  borderRadius: varsThemeBase.shape.border.radius.pill,
+  ":focus-within": {
+    outline: "none",
+    boxShadow: varsThemeBase.utils["focus-ring"],
+  },
   ":hover": {
     color: varsThemeBase.colors.content.primary,
   },
