@@ -1,25 +1,135 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 
-import { Label } from "./Select";
-import { LabelProps } from "./select.types";
+import { Select } from "./Select";
+import { SelectProps } from "./select.types";
 
-const makeSut = (rest: LabelProps) => {
-  render(<Label {...rest} data-testid="label-element" />);
+const selectName = "myName";
+const selectId = "myId";
+const mockedOptions = [
+  {
+    label: "Option 1",
+    value: "option-1",
+  },
+  {
+    label: "Option 2",
+    value: "option-2",
+  },
+  {
+    label: "Option 3",
+    value: "option-3",
+  },
+];
+
+const mockedValues = [
+  {
+    label: "Option 1",
+    value: "option-1",
+  },
+];
+
+const makeSut = (
+  rest?: Partial<Omit<SelectProps, "id" | "name">>,
+  id = selectId,
+  name = selectName,
+  options = [],
+) => {
+  render(
+    <Select
+      {...rest}
+      data-testid="select-element"
+      id={id}
+      name={name}
+      options={rest?.options || options}
+    />,
+  );
 };
 
-describe("GIVEN <Label />", () => {
-  it("THEN it should correctly remain visually hidden", () => {
-    makeSut({ children: "Label", hidden: true });
-    expect(screen.getByTestId("label-element").getAttribute("class")).toContain(
-      "hidden",
-    );
+describe("GIVEN <Select />", () => {
+  it("THEN should correctly render the size base", () => {
+    makeSut();
+    expect(
+      screen
+        .getByTestId<HTMLSelectElement>("select-element")
+        .getAttribute("class"),
+    ).toContain("size_medium");
   });
 
-  it("THEN it should correctly remain visually default", () => {
-    makeSut({ children: "Label" });
+  it("AND should correctly render the size large", () => {
+    makeSut({ size: "large" });
     expect(
-      screen.getByTestId("label-element").getAttribute("class"),
-    ).not.toContain("hidden");
+      screen
+        .getByTestId<HTMLSelectElement>("select-element")
+        .getAttribute("class"),
+    ).toContain("size_large");
+  });
+
+  it("AND should correctly render the size medium", () => {
+    makeSut({ size: "medium" });
+    expect(
+      screen
+        .getByTestId<HTMLSelectElement>("select-element")
+        .getAttribute("class"),
+    ).toContain("size_medium");
+  });
+
+  it("AND should correctly render the size small", () => {
+    makeSut({ size: "small" });
+    expect(
+      screen
+        .getByTestId<HTMLSelectElement>("select-element")
+        .getAttribute("class"),
+    ).toContain("size_small");
+  });
+
+  it("AND should render the id", () => {
+    makeSut();
+    expect(
+      screen.getByTestId<HTMLSelectElement>("select-element").id,
+    ).toContain(selectId);
+  });
+
+  it("AND should correctly send the selected options in the onChange prop", () => {
+    const mockedOnChange = jest.fn();
+    makeSut({
+      onChange: mockedOnChange,
+      options: mockedOptions,
+      placeholder: "Placeholder",
+    });
+    fireEvent.click(screen.getByTestId("select-element"));
+    fireEvent.click(screen.getByLabelText(mockedOptions[0].label));
+    expect(mockedOnChange).toHaveBeenCalledWith([mockedOptions[0]]);
+    fireEvent.click(screen.getByLabelText(mockedOptions[0].label));
+    expect(mockedOnChange).toHaveBeenCalledWith([]);
+  });
+
+  it("AND should correctly render items when value is changed", () => {
+    makeSut({
+      value: mockedValues,
+      options: mockedOptions,
+    });
+    expect(
+      screen.getByTestId<HTMLSelectElement>(
+        `option-selected-${mockedValues[0].value}`,
+      ),
+    ).toBeDefined();
+  });
+
+  it("AND should correctly send the selected and remove options in the onChange prop", () => {
+    const mockedOnChange = jest.fn();
+    makeSut({
+      onChange: mockedOnChange,
+      options: mockedOptions,
+      placeholder: "Placeholder",
+    });
+    fireEvent.click(screen.getByTestId("select-element"));
+    fireEvent.click(screen.getByText(mockedOptions[0].label));
+    expect(mockedOnChange).toHaveBeenCalledWith([mockedOptions[0]]);
+    fireEvent.click(
+      screen.getByTestId(
+        `option-selected-${mockedOptions[0].value}-button-close`,
+      ),
+    );
+    expect(mockedOnChange).toHaveBeenCalledWith([]);
   });
 });
