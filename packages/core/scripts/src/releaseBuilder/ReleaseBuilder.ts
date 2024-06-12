@@ -5,11 +5,20 @@ import { execSync } from "child_process";
 import { pascalCase } from "change-case";
 import * as fs from "fs";
 
+type Assets = {
+  links: {
+    name: string;
+    url: string;
+    link_type: string;
+  }[];
+};
+
 type ProcessedPackage = {
   package: string;
   description: string;
   version: string;
   tagName: string;
+  assets: Assets;
 };
 
 export class ReleaseBuilder {
@@ -84,14 +93,26 @@ export class ReleaseBuilder {
     return packages.map((packageName) => {
       const changelogPath = this.getChangeLogPath(packageName);
       const description = this.getDescription(changelogPath, packageName);
-
+      const _packageName =
+        packageName === "@rarui-react" || packageName === "vuejs"
+          ? packageName.concat("/components/")
+          : packageName;
       const version = this.getVersion(description, packageName);
 
       return {
-        package: `${packageName} ${version}`,
+        package: `${_packageName} ${version}`,
         description,
         version,
-        tagName: `${packageName.slice(1)}-${version}`,
+        tagName: `${_packageName.slice(1)}-${version}`,
+        assets: {
+          links: [
+            {
+              name: "npm",
+              url: `https://www.npmjs.com/package/${_packageName}`,
+              link_type: "package",
+            },
+          ],
+        },
       };
     });
   }
