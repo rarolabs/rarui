@@ -116,7 +116,6 @@ release-job:
     - job: deploy-stable-job
 
 clean-releases-job:
-  image: node:lts
   stage: clean-releases
   environment: production
   script:
