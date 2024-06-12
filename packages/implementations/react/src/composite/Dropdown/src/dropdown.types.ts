@@ -53,6 +53,11 @@ interface DropdownTyping {
    */
   enabledDismiss?: boolean;
   /**
+   * Adds click event listeners that change the open state.
+   * @default true
+   */
+  enabledClick?: boolean;
+  /**
    * Offest displaces the floating element from its core placement along the specified axes.
    * @default 10
    */

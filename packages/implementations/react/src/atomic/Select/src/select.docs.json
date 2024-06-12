@@ -1,0 +1,87 @@
+{
+  "id": "select",
+  "name": "Select",
+  "totalProps": 6,
+  "packageName": "@rarui-react/select",
+  "version": "0.0.0",
+  "docLink": "https://rarui.com.br/documentation/src-components/select",
+  "props": [
+    {
+      "description": "Element to be rendered inside the Box of options component.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": false
+    },
+    {
+      "description": "Options for the Select component. This should be an array of SelectOption objects.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "description": "Label for the option. This is the text that will be displayed for the option.",
+            "type": "string",
+            "title": "label"
+          },
+          "value": {
+            "description": "Value of the option. This is the value that will be used internally and returned when the option is selected.",
+            "type": "string",
+            "title": "value"
+          }
+        },
+        "additionalProperties": false,
+        "propertyOrder": ["label", "value"],
+        "required": ["label", "value"]
+      },
+      "title": "options",
+      "required": true
+    },
+    {
+      "description": "Default selected values for the Select component.\nThis should be an array of SelectOption objects representing the selected options.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "description": "Label for the option. This is the text that will be displayed for the option.",
+            "type": "string",
+            "title": "label"
+          },
+          "value": {
+            "description": "Value of the option. This is the value that will be used internally and returned when the option is selected.",
+            "type": "string",
+            "title": "value"
+          }
+        },
+        "additionalProperties": false,
+        "propertyOrder": ["label", "value"],
+        "required": ["label", "value"]
+      },
+      "title": "value",
+      "required": false
+    },
+    {
+      "description": "Callback function that is called when the selected values change.\nThis function receives an array of SelectOption objects representing the selected options.",
+      "type": "object",
+      "additionalProperties": false,
+      "propertyOrder": [],
+      "title": "onChange",
+      "required": false
+    },
+    {
+      "description": "Determines the visual style of the input, affecting its border",
+      "enum": ["error", "success"],
+      "type": "string",
+      "title": "appearance",
+      "required": false
+    },
+    {
+      "description": "Specifies the size of the badge, controlling its dimensions.",
+      "enum": ["large", "medium", "small"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    }
+  ],
+  "subComponents": []
+}

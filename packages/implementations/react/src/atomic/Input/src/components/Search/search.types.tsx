@@ -4,7 +4,7 @@ import { InputProperties } from "../../input.types";
 export interface InputSearchTyping {}
 
 export type InputSearchProperties = InputSearchTyping &
-  Pick<InputProperties, "divider" | "appearance" | "size">;
+  Pick<InputProperties, "divider" | "appearance" | "size" | "border">;
 
 export type _InputSearchProps = InputSearchProperties &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

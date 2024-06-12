@@ -1,0 +1,77 @@
+[
+  {
+    "package": "@rarui-react/components 1.29.0",
+    "description": "## 2024-06-12 `1.29.0`\n\n#### 🎉 New features\n\n- Added new atomic `Select` component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))\n- Added `enabledClick` property to the `Dropdown` component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))\n- Added `border` property to the `Input` component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))\n- Added `border` property to the `Input.Search` component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))\n- Added `border` property to the `Input.Password` component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "1.29.0",
+    "tagName": "rarui-react/components-1.29.0",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/components",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/dropdown 1.1.0",
+    "description": "## 2024-06-12 `1.1.0`\n\n#### 🎉 New features\n\n- Added `enabledClick` property to the Component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "1.1.0",
+    "tagName": "rarui-react/dropdown-1.1.0",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/dropdown",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/input 1.1.0",
+    "description": "## 2024-06-12 `1.1.0`\n\n#### 🎉 New features\n\n- Added `border` property to the `Input` Component. ([#49](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/49) by [@reubert.barbosa](https://git.rarolabs.com.br/reubert.barbosa))\n- Added `border` property to the `Input.Password` Component. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))\n- Added `border` property to the `Input.search` Component. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))\n\n- Adjusted property to the `Input.Password` icon. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "1.1.0",
+    "tagName": "rarui-react/input-1.1.0",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/input",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/select 1.0.0",
+    "description": "## 2024-06-12 `1.0.0`\n\n#### 🎉 New features\n\n- Added `onChange`, `value`, `options`, `children`, `size` and `appearance` properties to the component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))\n- Added stories on Component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "1.0.0",
+    "tagName": "rarui-react/select-1.0.0",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/select",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui/styles 1.28.0",
+    "description": "## 2024-06-12 `1.28.0`\n\n#### 🎉 New features\n\n- Added new style pack for `select` component. ( ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new style `border` variants for `input` component. ( ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))\n\n- Added new style pack for `modal` component. ([#54](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/54) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "1.28.0",
+    "tagName": "rarui/styles-1.28.0",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui/styles",
+          "link_type": "package"
+        }
+      ]
+    }
+  }
+]

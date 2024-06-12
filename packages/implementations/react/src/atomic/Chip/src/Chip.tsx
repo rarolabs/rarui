@@ -13,12 +13,14 @@ const Chip: React.FC<ChipProps> = ({
   padding = "$medium",
   selected,
   children,
+  onClick,
   ...rest
 }) => {
   const { className, style, otherProps } = chip.sprinkle({
     ...rest,
     padding,
   });
+  const dataTestid = (rest as { "data-testid": string })?.["data-testid"];
 
   return (
     <button
@@ -33,17 +35,27 @@ const Chip: React.FC<ChipProps> = ({
         }),
         className,
       ].join(" ")}
+      onClick={!closeable ? onClick : undefined}
     >
       {children}
       {closeable && (
-        <Icon
-          source={<CancelCircleFilledIcon size={16} aria-label="close" />}
-        />
+        <span
+          className={chip.classnames.close}
+          onClick={closeable ? onClick : undefined}
+          data-testid={`${dataTestid}-button-close`}
+          aria-label="Close"
+          role="presentation"
+        >
+          <Icon
+            source={<CancelCircleFilledIcon size={16} aria-label="close" />}
+          />
+        </span>
       )}
       <span className={chip.classnames.overlay} />
     </button>
   );
 };
+
 Chip.displayName = "Chip";
 
 export { Chip };
