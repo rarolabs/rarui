@@ -1,0 +1,17 @@
+[
+  {
+    "package": "@rarui/scripts 1.1.1",
+    "description": "## 2024-06-11 `1.1.1`\n\n#### 🎉 Bug fixes\n\n- Fixed release name and tag name for @rarui-react/components package ([#56](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/56) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))\n\n## 2024-06-11 `1.1.0`\n\n#### 🎉 New features\n\n- Added new script to launch the releases on gitlab pipeline ([#54](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/54) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))\n- Added new script to prepare releases for new packages versions ([#54](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/54) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))",
+    "version": "1.1.1",
+    "tagName": "rarui/scripts-1.1.1",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui/scripts",
+          "link_type": "package"
+        }
+      ]
+    }
+  }
+]
