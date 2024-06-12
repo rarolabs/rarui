@@ -1,4 +1,3 @@
-import { globalStyle, style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
 import { varsThemeBase } from "../../../themes";
 import { buttonVariants } from "./rarui-iconButton.commons";
@@ -36,6 +35,25 @@ const iconButton = recipe({
     ":focus-within": {
       outline: "none",
       boxShadow: varsThemeBase.utils["focus-ring"],
+    },
+    ":after": {
+      transition: "opacity 150ms ease",
+      content: "",
+      position: "absolute",
+      opacity: 0,
+      inset: -1,
+      backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
+      borderRadius: varsThemeBase.shape.border.radius["2xs"],
+    },
+    selectors: {
+      "&:hover:after": {
+        opacity: 1,
+      },
+      "&:active:after": {
+        opacity: 1,
+        backgroundColor: varsThemeBase.colors.surface["brand-press"],
+        borderColor: varsThemeBase.colors.surface["on-brand-press"],
+      },
     },
   },
   variants: {
@@ -292,30 +310,6 @@ const iconButton = recipe({
   ],
 });
 
-const overlay = style({
-  position: "absolute",
-  top: -1,
-  left: -1,
-  bottom: -1,
-  right: -1,
-  pointerEvents: "none",
-  opacity: 0,
-  borderRadius: "inherit",
-});
-
-globalStyle(`${iconButton()}:hover ${overlay}`, {
-  opacity: 1,
-  backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
-  borderColor: varsThemeBase.colors.surface["on-brand-hover"],
-});
-
-globalStyle(`${iconButton()}:active ${overlay}`, {
-  opacity: 1,
-  backgroundColor: varsThemeBase.colors.surface["on-brand-press"],
-  borderColor: varsThemeBase.colors.surface["on-brand-press"],
-});
-
 export const styles = {
   iconButton,
-  overlay,
 };

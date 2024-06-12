@@ -30,6 +30,10 @@ const button = recipe({
       color: varsThemeBase.colors.content.disabled,
       cursor: "not-allowed",
     },
+    ":focus-within": {
+      outline: "none",
+      boxShadow: varsThemeBase.utils["focus-ring"],
+    },
     ":after": {
       transition: "opacity 150ms ease",
       content: "",
@@ -42,6 +46,11 @@ const button = recipe({
     selectors: {
       "&:hover:after": {
         opacity: 1,
+      },
+      "&:active:after": {
+        opacity: 1,
+        backgroundColor: varsThemeBase.colors.surface["brand-press"],
+        borderColor: varsThemeBase.colors.surface["on-brand-press"],
       },
     },
   },

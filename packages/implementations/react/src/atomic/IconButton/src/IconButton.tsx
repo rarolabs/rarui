@@ -24,7 +24,6 @@ const IconButton: React.FC<IconButtonProps> = ({
     })}
   >
     {source}
-    <span className={iconButton.classnames.overlay} />
   </button>
 );
 

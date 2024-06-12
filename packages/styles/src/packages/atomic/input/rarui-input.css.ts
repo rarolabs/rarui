@@ -19,6 +19,10 @@ const container = recipe({
     ":focus": {
       borderColor: varsThemeBase.colors.border.primary,
     },
+    ":focus-within": {
+      outline: "none",
+      boxShadow: varsThemeBase.utils["focus-ring"],
+    },
     selectors: {
       "&:has(input:disabled)": {
         borderColor: varsThemeBase.colors.surface.disabled,
@@ -78,6 +82,9 @@ const input = recipe({
       backgroundColor: varsThemeBase.colors.surface.disabled,
       borderColor: varsThemeBase.colors.surface.disabled,
     },
+    "::placeholder": {
+      color: varsThemeBase.colors.content.disabled,
+    },
   },
   variants: {
     /**
@@ -92,16 +99,19 @@ const input = recipe({
     size: {
       large: {
         height: "3rem",
+        maxHeight: "3rem",
         fontSize: varsThemeBase.fontSize.body.l,
         lineHeight: varsThemeBase.lineHeight.body.xl,
       },
       medium: {
         height: "2.5rem",
+        maxHeight: "2.5rem",
         fontSize: varsThemeBase.fontSize.body.m,
         lineHeight: varsThemeBase.lineHeight.body.l,
       },
       small: {
         height: "2rem",
+        maxHeight: "2rem",
         fontSize: varsThemeBase.fontSize.body.s,
         lineHeight: varsThemeBase.lineHeight.body.m,
         padding: `${varsThemeBase.spacing["2xs"]} ${varsThemeBase.spacing["3xs"]}`,
@@ -131,7 +141,7 @@ const leading = recipe({
     divider: {
       true: {
         borderStyle: "solid",
-        borderColor: varsThemeBase.colors.border.primary,
+        borderColor: varsThemeBase.colors.border.secondary,
       },
       false: {
         borderRightWidth: 0,
@@ -183,6 +193,24 @@ const leading = recipe({
     },
   ],
 });
+
+globalStyle(`${container()}:hover ${leading()}`, {
+  borderColor: varsThemeBase.colors.border.primary,
+});
+
+globalStyle(
+  `${container()}:hover ${leading({ appearance: "success" }).split(" ")[1]}`,
+  {
+    borderColor: varsThemeBase.colors.border.success,
+  },
+);
+
+globalStyle(
+  `${container()}:hover ${leading({ appearance: "error" }).split(" ")[1]}`,
+  {
+    borderColor: varsThemeBase.colors.border.error,
+  },
+);
 
 globalStyle(`${container()}:has(${input()}:disabled) ${leading()}`, {
   borderColor: varsThemeBase.colors.border.disabled,

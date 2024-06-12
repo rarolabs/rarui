@@ -2,6 +2,18 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-06-12 `1.28.1`
+
+#### 🐛 Bug fixes
+
+- Added maxHeight for `input` component on small, medium and large size. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+#### 💡 Others
+
+- Added focus and pressed state on `button` component. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+- Added transition for hover and pressed state on `iconButton` component. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-12 `1.28.0`
 
 #### 🎉 New features
