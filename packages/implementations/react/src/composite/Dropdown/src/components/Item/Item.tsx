@@ -38,12 +38,13 @@ const DropdownItem = forwardRef(
       if (
         innerRef.current &&
         !(innerRef.current instanceof HTMLAnchorElement) &&
+        !(innerRef.current instanceof HTMLLabelElement) &&
         !(innerRef.current instanceof HTMLButtonElement)
       ) {
         console.error(
-          "Error: Found `Button` component that renders an inaccessible element",
+          "Error: Found `Dropdown.Item` component that renders an inaccessible element",
           innerRef.current,
-          "Please ensure `Button` always renders as <a> or <button>",
+          "Please ensure `Dropdown.Item` always renders as <a>, <label> or <button>",
         );
       }
     }, [innerRef]);
