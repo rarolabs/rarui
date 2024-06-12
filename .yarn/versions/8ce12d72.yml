@@ -3,5 +3,6 @@ releases:
   "@rarui/styles": patch
 
 declined:
+  - "@rarui/design-system"
   - "@rarui-react/icon-button"
   - "@rarui-react/datepicker"
