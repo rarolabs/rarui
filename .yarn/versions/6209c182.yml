@@ -1,7 +1,7 @@
 releases:
   "@rarui-react/components": minor
   "@rarui-react/dropdown": minor
-  "@rarui-react/input": patch
+  "@rarui-react/input": minor
   "@rarui-react/select": major
   "@rarui/styles": minor
 
