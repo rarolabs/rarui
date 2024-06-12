@@ -12,7 +12,6 @@ const container = recipe({
     borderStyle: "solid",
     transition: "all 150ms ease",
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
-    borderWidth: varsThemeBase.shape.border.width[1],
     borderColor: varsThemeBase.colors.border.secondary,
     ":hover": {
       borderColor: varsThemeBase.colors.border.primary,
@@ -48,6 +47,14 @@ const container = recipe({
         ":focus": {
           borderColor: varsThemeBase.colors.border.error,
         },
+      },
+    },
+    border: {
+      true: {
+        borderWidth: varsThemeBase.shape.border.width[1],
+      },
+      false: {
+        borderWidth: 0,
       },
     },
   },

@@ -10,16 +10,13 @@ import { mediaQueries, varsThemeBase } from "../../../themes";
  * Style
  * -----------------------------------------------------------------------------------------------*/
 
-const container = style({
-  width: "fit-content",
-});
-
 const dropdown = recipe({
   base: {
     width: "fit-content",
     display: "flex",
     flexDirection: "column",
     borderStyle: "solid",
+    boxSizing: "border-box",
     gap: varsThemeBase.spacing["3xs"],
     zIndex: varsThemeBase.zIndex[800],
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
@@ -52,6 +49,7 @@ const dropdownItem = style({
   backgroundColor: "transparent",
   border: "none",
   width: "100%",
+  boxSizing: "border-box",
   transition: "all 150ms ease",
   borderRadius: varsThemeBase.shape.border.radius["2xs"],
   gap: varsThemeBase.spacing["3xs"],
@@ -74,7 +72,6 @@ const dropdownItem = style({
 export const dropdownStyles = {
   dropdown,
   dropdownItem,
-  container,
 };
 
 /* -------------------------------------------------------------------------------------------------

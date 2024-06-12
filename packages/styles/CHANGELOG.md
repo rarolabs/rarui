@@ -2,11 +2,18 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-06-12 `1.28.0`
+
+#### 🎉 New features
+
+- Added new style pack for `select` component. ( ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new style size variants for `input` component. ( ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-11 `1.27.0`
 
 #### 🎉 New features
 
-- Added new style size variants for `modal` component. ([#54](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/54) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new style pack for `modal` component. ([#54](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/54) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-06-10 `1.26.0`
 
