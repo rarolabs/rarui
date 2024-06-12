@@ -2,6 +2,8 @@
 
 Dropdown are informative, specific, and action -oriented text labels that provide contextual support.
 
+## 2024-06-12 `1.1.0`
+
 #### 🎉 New features
 
 - Added `enabledClick` property to the Component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))
