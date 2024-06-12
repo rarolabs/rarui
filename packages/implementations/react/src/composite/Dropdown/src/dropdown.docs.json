@@ -1,7 +1,7 @@
 {
   "id": "dropdown",
   "name": "Dropdown",
-  "totalProps": 12,
+  "totalProps": 13,
   "packageName": "@rarui-react/dropdown",
   "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/dropdown",
@@ -70,6 +70,13 @@
       "default": true,
       "type": "boolean",
       "title": "enabledDismiss",
+      "required": false
+    },
+    {
+      "description": "Adds click event listeners that change the open state.",
+      "default": true,
+      "type": "boolean",
+      "title": "enabledClick",
       "required": false
     },
     {

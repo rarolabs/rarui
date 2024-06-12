@@ -27,6 +27,7 @@ const Dropdown: React.FC<DropdownProps> & DropdownComponents = ({
   arrow = false,
   offset = 10,
   enabledDismiss = true,
+  enabledClick = true,
   matchReferenceWidth = false,
   position = "bottom-start",
   padding = "base",
@@ -75,7 +76,7 @@ const Dropdown: React.FC<DropdownProps> & DropdownComponents = ({
 
   const { getReferenceProps, getFloatingProps } = useInteractions([
     useClick(context, {
-      enabled: true,
+      enabled: enabledClick,
     }),
     useDismiss(context, {
       enabled: enabledDismiss,
@@ -89,7 +90,6 @@ const Dropdown: React.FC<DropdownProps> & DropdownComponents = ({
       <div
         data-testid="dropdown-container"
         ref={context.refs.setReference}
-        className={dropdown.classnames.container}
         {...getReferenceProps()}
       >
         {typeof children === "function"
