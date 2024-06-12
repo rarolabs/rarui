@@ -24,9 +24,10 @@ type ProcessedPackage = {
 export class ReleaseBuilder {
   private breakPackageName(packageName: string) {
     if (packageName.indexOf("-") === -1) return packageName.split("/")[1];
+    console.log({ packageName });
     const folders = packageName.split("@rarui-")[1].split("/");
     folders[1] = pascalCase(folders[1]);
-    return folders.join("/**/");
+    return folders.join("/**/").replace("/Components", "");
   }
 
   private getChangeLogPath(packageName: string): string {
@@ -95,10 +96,9 @@ export class ReleaseBuilder {
       const description = this.getDescription(changelogPath, packageName);
       const _packageName =
         packageName === "@rarui-react" || packageName === "vuejs"
-          ? packageName.concat("/components/")
+          ? `${packageName}/components/`
           : packageName;
       const version = this.getVersion(description, packageName);
-
       return {
         package: `${_packageName} ${version}`,
         description,
@@ -139,12 +139,13 @@ export class ReleaseBuilder {
       const packagesToRelease = this.getPackagesToRelease();
       const rootDir = path.resolve(__dirname, "../../../../../");
 
-      console.log("Creating releases");
+      console.log("Creating releases...");
 
       const outputFile = path.join(rootDir, "releases.json");
       fs.writeFile(outputFile, JSON.stringify(packagesToRelease), (err) => {
         if (err) console.error(err);
       });
+      console.log("Releases file created successfully");
     } catch (err) {
       console.error(`\x1b[33m ${(err as Error).message} \x1b[0m`);
       process.exit(1);
