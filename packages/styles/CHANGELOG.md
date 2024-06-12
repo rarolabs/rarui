@@ -7,7 +7,7 @@ RarUI Styles deprive all styles needed to build components.
 #### 🎉 New features
 
 - Added new style pack for `select` component. ( ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))
-- Added new style size variants for `input` component. ( ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new style `border` variants for `input` component. ( ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-06-11 `1.27.0`
 

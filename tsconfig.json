@@ -81,9 +81,11 @@
       "@rarui-react/progress": [
         "./packages/implementations/react/src/atomic/Progress/src"
       ],
-
       "@rarui-react/radio-button": [
         "./packages/implementations/react/src/atomic/RadioButton/src"
+      ],
+      "@rarui-react/select": [
+        "./packages/implementations/react/src/atomic/Select/src"
       ],
       "@rarui-react/skeleton": [
         "./packages/implementations/react/src/atomic/Skeleton/src"

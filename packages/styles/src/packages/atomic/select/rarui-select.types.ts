@@ -1,4 +1,6 @@
 import { RecipeVariants } from "@vanilla-extract/recipes";
-import { styles } from "./rarui-select.css";
+import { selectStyles } from "./rarui-select.css";
 
-export type LabelVariants = RecipeVariants<typeof styles.label>;
+export type SelectVariants = NonNullable<
+  RecipeVariants<typeof selectStyles.select>
+>;
