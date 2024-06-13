@@ -3,12 +3,30 @@
     "package": "@rarui-react/input 1.0.3",
     "description": "## 2024-06-10 `1.0.3`\n\n#### 🐛 Bug fixes\n\n- Adjusted the size of the `Input.Password` icon. ([#52](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/52) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Adjusted the size of the `Input.search` icon. ([#52](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/52) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
     "version": "1.0.3",
-    "tagName": "rarui-react/input-1.0.3"
+    "tagName": "rarui-react/input-1.0.3",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/input",
+          "link_type": "package"
+        }
+      ]
+    }
   },
   {
-    "package": "@rarui/styles 1.27.1",
-    "description": "## 2024-06-12 `1.27.1`\n\n#### 🐛 Bug fixes\n\n- Added maxHeight for `input` component on small, medium and large size. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n#### 💡 Others\n\n- Added focus and pressed state on `button` component. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n- Added transition for hover and pressed state on `iconButton` component. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n## 2024-06-10 `1.26.1`\n\n#### 🐛 Bug fixes\n\n- Adjusting height for medium size and padding of the icon container for the `input` component on small, medium and large size. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n## 2024-06-10 `1.26.0`\n\n#### 🎉 New features\n\n- Added new style size variants for `IconButton` component. ([#49](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/49) by [@reubert.barbosa](https://git.rarolabs.com.br/reubert.barbosa))\n\n- Adjusting padding and gap for the `button` component on small, medium and large size. ([#51](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/51) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Added transition for hover state on `button` component. ([#51](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/51) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n## 2024-06-10 `1.24.1`\n\n#### 🐛 Bug fixes\n\n- Adjusting height for medium size and padding of the icon container for the `input` component on small, medium and large size. ([#52](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/52) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
-    "version": "1.27.1",
-    "tagName": "rarui/styles-1.27.1"
+    "package": "@rarui/styles 1.28.1",
+    "description": "## 2024-06-12 `1.28.1`\n\n#### 🐛 Bug fixes\n\n- Added maxHeight for `input` component on small, medium and large size. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n#### 💡 Others\n\n- Added focus and pressed state on `button` component. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n- Added transition for hover and pressed state on `iconButton` component. ([#53](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/53) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n## 2024-06-10 `1.24.1`\n\n#### 🐛 Bug fixes\n\n- Adjusting height for medium size and padding of the icon container for the `input` component on small, medium and large size. ([#52](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/52) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.28.1",
+    "tagName": "rarui/styles-1.28.1",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui/styles",
+          "link_type": "package"
+        }
+      ]
+    }
   }
 ]
