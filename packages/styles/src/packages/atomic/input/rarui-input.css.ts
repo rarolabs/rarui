@@ -5,6 +5,7 @@ import { varsThemeBase } from "../../../themes";
 const container = recipe({
   base: {
     display: "flex",
+    height: "2.5rem",
     alignItems: "stretch",
     position: "relative",
     width: "100%",
@@ -61,6 +62,17 @@ const container = recipe({
         borderWidth: 0,
       },
     },
+    size: {
+      large: {
+        height: "3rem",
+      },
+      medium: {
+        height: "2.5rem",
+      },
+      small: {
+        height: "2rem",
+      },
+    },
   },
 });
 
@@ -98,23 +110,17 @@ const input = recipe({
      */
     size: {
       large: {
-        height: "3rem",
-        maxHeight: "3rem",
         fontSize: varsThemeBase.fontSize.body.l,
         lineHeight: varsThemeBase.lineHeight.body.xl,
       },
       medium: {
-        height: "2.5rem",
-        maxHeight: "2.5rem",
         fontSize: varsThemeBase.fontSize.body.m,
         lineHeight: varsThemeBase.lineHeight.body.l,
       },
       small: {
-        height: "2rem",
-        maxHeight: "2rem",
         fontSize: varsThemeBase.fontSize.body.s,
         lineHeight: varsThemeBase.lineHeight.body.m,
-        padding: `${varsThemeBase.spacing["2xs"]} ${varsThemeBase.spacing["3xs"]}`,
+        padding: `0 ${varsThemeBase.spacing["3xs"]}`,
       },
     },
   },

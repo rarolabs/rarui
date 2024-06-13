@@ -41,7 +41,7 @@ export const disabled: Story = {
     leadingEnd: (
       <Icon
         color="$currentColor"
-        source={<CreditCardOutlinedIcon size="small" />}
+        source={<CreditCardOutlinedIcon size="medium" />}
       />
     ),
   },
@@ -54,7 +54,7 @@ export const success: Story = {
     leadingEnd: (
       <Icon
         color="$currentColor"
-        source={<CreditCardOutlinedIcon size="small" />}
+        source={<CreditCardOutlinedIcon size="medium" />}
       />
     ),
   },
@@ -67,7 +67,7 @@ export const error: Story = {
     leadingEnd: (
       <Icon
         color="$currentColor"
-        source={<CreditCardOutlinedIcon size="small" />}
+        source={<CreditCardOutlinedIcon size="medium" />}
       />
     ),
   },
@@ -80,7 +80,7 @@ export const large: Story = {
     leadingEnd: (
       <Icon
         color="$currentColor"
-        source={<CreditCardOutlinedIcon size="small" />}
+        source={<CreditCardOutlinedIcon size="medium" />}
       />
     ),
   },
@@ -93,7 +93,7 @@ export const medium: Story = {
     leadingEnd: (
       <Icon
         color="$currentColor"
-        source={<CreditCardOutlinedIcon size="small" />}
+        source={<CreditCardOutlinedIcon size="medium" />}
       />
     ),
   },

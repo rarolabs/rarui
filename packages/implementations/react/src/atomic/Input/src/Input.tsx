@@ -33,7 +33,7 @@ const Input = forwardRef<HTMLInputElement, _InputProps>(
     return (
       <div
         data-testid={dataTestid ? `${dataTestid}-container` : ""}
-        className={input.classnames.container({ appearance, border })}
+        className={input.classnames.container({ appearance, border, size })}
       >
         {leadingStart && (
           <InputLeading
