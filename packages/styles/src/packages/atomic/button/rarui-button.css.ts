@@ -40,7 +40,7 @@ const button = recipe({
       position: "absolute",
       opacity: 0,
       inset: -1,
-      backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
+      backgroundColor: varsThemeBase.colors.surface["brand-hover"],
       borderRadius: varsThemeBase.shape.border.radius["2xs"],
     },
     selectors: {
@@ -129,7 +129,22 @@ const button = recipe({
      * Defines the visual variant of the badge, affecting its background style, border and text.
      */
     variant: {
-      solid: {},
+      solid: {
+        ":after": {
+          transition: "opacity 150ms ease",
+          content: "",
+          position: "absolute",
+          opacity: 0,
+          inset: -1,
+          backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
+          borderRadius: varsThemeBase.shape.border.radius["2xs"],
+        },
+        selectors: {
+          "&:hover:after": {
+            opacity: 1,
+          },
+        },
+      },
       outlined: {
         backgroundColor: "transparent",
       },
