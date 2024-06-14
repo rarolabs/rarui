@@ -54,6 +54,9 @@ const container = recipe({
         },
       },
     },
+    /**
+     * Determines if the input have borders or not.
+     */
     border: {
       true: {
         borderWidth: varsThemeBase.shape.border.width[1],
@@ -106,7 +109,7 @@ const input = recipe({
       false: {},
     },
     /**
-     * Specifies the size of the badge, controlling its dimensions.
+     * Specifies the size of the input, controlling its dimensions.
      */
     size: {
       large: {

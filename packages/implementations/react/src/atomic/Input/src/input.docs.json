@@ -26,21 +26,22 @@
       "required": false
     },
     {
+      "description": "Determines if the input have borders or not.",
       "type": "boolean",
       "title": "border",
+      "required": false
+    },
+    {
+      "description": "Specifies the size of the input, controlling its dimensions.",
+      "enum": ["large", "medium", "small"],
+      "type": "string",
+      "title": "size",
       "required": false
     },
     {
       "description": "Places a divider between the input and the leading components",
       "type": "boolean",
       "title": "divider",
-      "required": false
-    },
-    {
-      "description": "Specifies the size of the badge, controlling its dimensions.",
-      "enum": ["large", "medium", "small"],
-      "type": "string",
-      "title": "size",
       "required": false
     }
   ],
@@ -69,7 +70,7 @@
           "required": false
         },
         {
-          "description": "Specifies the size of the badge, controlling its dimensions.",
+          "description": "Specifies the size of the input, controlling its dimensions.",
           "enum": ["large", "medium", "small"],
           "type": "string",
           "title": "size",
@@ -89,6 +90,7 @@
       "totalProps": 4,
       "props": [
         {
+          "description": "Determines if the input have borders or not.",
           "type": "boolean",
           "title": "border",
           "required": false
@@ -100,7 +102,7 @@
           "required": false
         },
         {
-          "description": "Specifies the size of the badge, controlling its dimensions.",
+          "description": "Specifies the size of the input, controlling its dimensions.",
           "enum": ["large", "medium", "small"],
           "type": "string",
           "title": "size",
@@ -120,6 +122,7 @@
       "totalProps": 4,
       "props": [
         {
+          "description": "Determines if the input have borders or not.",
           "type": "boolean",
           "title": "border",
           "required": false
@@ -131,7 +134,7 @@
           "required": false
         },
         {
-          "description": "Specifies the size of the badge, controlling its dimensions.",
+          "description": "Specifies the size of the input, controlling its dimensions.",
           "enum": ["large", "medium", "small"],
           "type": "string",
           "title": "size",
