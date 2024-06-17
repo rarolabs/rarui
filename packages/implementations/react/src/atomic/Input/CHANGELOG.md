@@ -10,6 +10,13 @@ The Input component allows users to enter text into a UI. They typically appear 
 - Added `border` property to the `Input.Password` Component. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
 - Added `border` property to the `Input.search` Component. ([#32](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/32) by [@junior](https://git.rarolabs.com.br/junior))
 
+## 2024-06-10 `1.0.3`
+
+#### 🐛 Bug fixes
+
+- Adjusted the size of the `Input.Password` icon. ([#52](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/52) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Adjusted the size of the `Input.search` icon. ([#52](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/52) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-02 `1.0.2`
 
 #### 💡 Others

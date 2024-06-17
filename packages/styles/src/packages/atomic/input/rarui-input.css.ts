@@ -19,6 +19,10 @@ const container = recipe({
     ":focus": {
       borderColor: varsThemeBase.colors.border.primary,
     },
+    ":focus-within": {
+      outline: "none",
+      boxShadow: varsThemeBase.utils["focus-ring"],
+    },
     selectors: {
       "&:has(input:disabled)": {
         borderColor: varsThemeBase.colors.surface.disabled,
@@ -49,12 +53,26 @@ const container = recipe({
         },
       },
     },
+    /**
+     * Determines if the input have borders or not.
+     */
     border: {
       true: {
         borderWidth: varsThemeBase.shape.border.width[1],
       },
       false: {
         borderWidth: 0,
+      },
+    },
+    size: {
+      large: {
+        height: "3rem",
+      },
+      medium: {
+        height: "2.5rem",
+      },
+      small: {
+        height: "2rem",
       },
     },
   },
@@ -78,6 +96,9 @@ const input = recipe({
       backgroundColor: varsThemeBase.colors.surface.disabled,
       borderColor: varsThemeBase.colors.surface.disabled,
     },
+    "::placeholder": {
+      color: varsThemeBase.colors.content.disabled,
+    },
   },
   variants: {
     /**
@@ -87,24 +108,21 @@ const input = recipe({
       false: {},
     },
     /**
-     * Specifies the size of the badge, controlling its dimensions.
+     * Specifies the size of the input, controlling its dimensions.
      */
     size: {
       large: {
-        height: "3rem",
         fontSize: varsThemeBase.fontSize.body.l,
         lineHeight: varsThemeBase.lineHeight.body.xl,
       },
       medium: {
-        height: "2.75rem",
         fontSize: varsThemeBase.fontSize.body.m,
         lineHeight: varsThemeBase.lineHeight.body.l,
       },
       small: {
-        height: "2rem",
         fontSize: varsThemeBase.fontSize.body.s,
         lineHeight: varsThemeBase.lineHeight.body.m,
-        padding: `${varsThemeBase.spacing["2xs"]} ${varsThemeBase.spacing["3xs"]}`,
+        padding: `0 ${varsThemeBase.spacing["3xs"]}`,
       },
     },
   },
@@ -131,7 +149,7 @@ const leading = recipe({
     divider: {
       true: {
         borderStyle: "solid",
-        borderColor: varsThemeBase.colors.border.primary,
+        borderColor: varsThemeBase.colors.border.secondary,
       },
       false: {
         borderRightWidth: 0,
@@ -152,12 +170,14 @@ const leading = recipe({
     },
     size: {
       large: {
-        padding: `${varsThemeBase.spacing["2xs"]} ${varsThemeBase.spacing.xs}`,
+        padding: `0 ${varsThemeBase.spacing.xs}`,
       },
       medium: {
-        padding: varsThemeBase.spacing["2xs"],
+        padding: `0 ${varsThemeBase.spacing["2xs"]}`,
       },
-      small: {},
+      small: {
+        padding: `0 ${varsThemeBase.spacing["3xs"]}`,
+      },
     },
   },
   compoundVariants: [
@@ -181,6 +201,24 @@ const leading = recipe({
     },
   ],
 });
+
+globalStyle(`${container()}:hover ${leading()}`, {
+  borderColor: varsThemeBase.colors.border.primary,
+});
+
+globalStyle(
+  `${container()}:hover ${leading({ appearance: "success" }).split(" ")[1]}`,
+  {
+    borderColor: varsThemeBase.colors.border.success,
+  },
+);
+
+globalStyle(
+  `${container()}:hover ${leading({ appearance: "error" }).split(" ")[1]}`,
+  {
+    borderColor: varsThemeBase.colors.border.error,
+  },
+);
 
 globalStyle(`${container()}:has(${input()}:disabled) ${leading()}`, {
   borderColor: varsThemeBase.colors.border.disabled,
