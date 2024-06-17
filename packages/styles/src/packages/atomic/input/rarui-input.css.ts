@@ -5,7 +5,6 @@ import { varsThemeBase } from "../../../themes";
 const container = recipe({
   base: {
     display: "flex",
-    height: "2.5rem",
     alignItems: "stretch",
     position: "relative",
     width: "100%",
