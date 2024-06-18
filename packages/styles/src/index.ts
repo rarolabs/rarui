@@ -36,6 +36,7 @@ export { pagination } from "./packages/composite/pagination";
 export { sidebar } from "./packages/composite/sidebar";
 export { sideNavigation } from "./packages/composite/sideNavigation";
 export { stepper } from "./packages/composite/stepper";
+export { tabs } from "./packages/composite/tabs";
 
 // types atomic
 export type { BoxSprinkle } from "./packages/atomic/box";
@@ -81,3 +82,4 @@ export type {
   StepperVariants,
   StepperStepVariants,
 } from "./packages/composite/stepper";
+export type { TabsVariants } from "./packages/composite/tabs";
