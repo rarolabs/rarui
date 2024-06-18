@@ -1,4 +1,5 @@
 import { recipe } from "@vanilla-extract/recipes";
+import { style } from "@vanilla-extract/css";
 import { varsThemeBase } from "../../../themes";
 
 const select = recipe({
@@ -71,6 +72,29 @@ const select = recipe({
   },
 });
 
+const close = style({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  cursor: "pointer",
+  background: "transparent",
+  color: "currentcolor",
+  transition: "all 150ms ease",
+  height: "1rem",
+  width: "1rem",
+  border: 0,
+  padding: 0,
+  borderRadius: varsThemeBase.shape.border.radius["2xs"],
+  ":focus-within": {
+    outline: "none",
+    boxShadow: varsThemeBase.utils["focus-ring"],
+  },
+  ":hover": {
+    color: varsThemeBase.colors.content.primary,
+  },
+});
+
 export const selectStyles = {
   select,
+  close,
 };

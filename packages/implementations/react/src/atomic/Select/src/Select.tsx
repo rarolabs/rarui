@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { select } from "@rarui/styles";
-import { ArrowDownIcon } from "@rarui/icons";
+import { ArrowDownIcon, CloseIcon } from "@rarui/icons";
 import { Dropdown } from "@rarui-react/dropdown";
 import { Icon } from "@rarui-react/icon";
 import { Box } from "@rarui-react/box";
@@ -46,6 +46,11 @@ const Select: React.FC<SelectProps> = ({
     setSelectedOptions(selectedOptions.filter((item) => item !== option));
   };
 
+  const handleResetOptions = () => {
+    setOpen(true);
+    setSelectedOptions([]);
+  };
+
   useEffect(() => {
     if (value) {
       setSelectedOptions(value);
@@ -56,7 +61,7 @@ const Select: React.FC<SelectProps> = ({
     if (onChange) {
       onChange(selectedOptions);
     }
-  }, [selectedOptions, onChange]);
+  }, [selectedOptions]);
 
   return (
     <Dropdown
@@ -84,7 +89,7 @@ const Select: React.FC<SelectProps> = ({
       }
     >
       <div className={select.classnames.select({ size })} {...props}>
-        <Box display="flex" flexWrap="wrap" gap="$3xs">
+        <Box display="flex" flex="1" gap="$3xs" overflowY="hidden">
           {selectedOptions.map((selectedOption) => (
             <Chip
               key={selectedOption.value}
@@ -98,7 +103,17 @@ const Select: React.FC<SelectProps> = ({
             </Chip>
           ))}
         </Box>
-        <Icon source={<ArrowDownIcon size="medium" />} />
+        <Box display="flex" alignItems="center" gap="$4xs" paddingLeft="$3xs">
+          {!!selectedOptions.length && (
+            <button
+              className={select.classnames.close}
+              onClick={handleResetOptions}
+            >
+              <Icon source={<CloseIcon size="small" />} />
+            </button>
+          )}
+          <Icon source={<ArrowDownIcon size="medium" />} />
+        </Box>
       </div>
     </Dropdown>
   );

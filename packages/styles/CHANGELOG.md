@@ -8,6 +8,10 @@ RarUI Styles deprive all styles needed to build components.
 
 - Added new style pack for `tabs` component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))
 
+#### 🐛 Bug fixes
+
+- Adjusted overflow of chips within the `select` component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-12 `1.28.1`
 
 #### 🐛 Bug fixes
