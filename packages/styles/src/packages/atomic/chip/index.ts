@@ -1,8 +1,8 @@
-import { styles, sprinkle } from "./rarui-chip.css";
+import { chipStyles, chipSprinkle } from "./rarui-chip.css";
 
 export const chip = {
-  sprinkle,
-  classnames: { ...styles },
+  classnames: chipStyles,
+  sprinkle: chipSprinkle,
 };
 
 export type { ChipVariants, ChipSprinkle } from "./rarui-chip.types";
