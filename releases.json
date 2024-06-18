@@ -1,0 +1,62 @@
+[
+  {
+    "package": "@rarui-react/components 1.30.0",
+    "description": "## 2024-06-12 `1.30.0`\n\n#### 🎉 New features\n\n- Added new composite `Tabs` component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "1.30.0",
+    "tagName": "rarui-react/components-1.30.0",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/components",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/select 1.0.1",
+    "description": "## 2024-06-18 `1.0.1`\n\n#### 🎉 New features\n\n- Added button to clean the selected options. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))\n\n#### 🐛 Bug fixes\n\n- Fixed function callback being called several times. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "1.0.1",
+    "tagName": "rarui-react/select-1.0.1",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/select",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/tabs 1.0.0",
+    "description": "# Changelog\n\nTabs are used to switch between different display modes or pages.\n\n## 2024-06-18 `1.0.0`\n\n### 🎉 New features\n\n- Added `children`, `preSelectedTab`, `full` and `underlined` properties to the Component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))\n- Added stories on Component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))\n- Created new `Tabs.Item` subcomponent. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))\n- Added `label` and `children` properties to the Component `Tabs.Item`. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))\n- Created new `Tabs.Item` subcomponent. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))\n\n<!-- #### 🛠 Breaking changes -->\n\n<!-- #### 📚 3rd party library updates -->\n\n<!-- #### 🎉 New features -->\n\n<!-- #### 🐛 Bug fixes -->\n\n<!-- #### 💡 Others -->",
+    "version": "1.0.0",
+    "tagName": "rarui-react/tabs-1.0.0",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/tabs",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui/styles 1.29.0",
+    "description": "## 2024-06-18 `1.29.0`\n\n#### 🎉 New features\n\n- Added new style pack for `tabs` component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))\n\n#### 🐛 Bug fixes\n\n- Adjusted overflow of chips within the `select` component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))\n\n- Added new style pack for `select` component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new style `border` variants for `input` component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "1.29.0",
+    "tagName": "rarui/styles-1.29.0",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui/styles",
+          "link_type": "package"
+        }
+      ]
+    }
+  }
+]
