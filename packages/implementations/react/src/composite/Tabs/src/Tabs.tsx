@@ -10,7 +10,7 @@ const Tabs: React.FC<TabsProps> & TabsComponents = ({
   children,
   preSelectedTab,
   full,
-  ...rest
+  ...props
 }: TabsProps) => {
   const [selectedTab, setSelectedTab] = useState<number>(preSelectedTab || 0);
 
@@ -24,7 +24,7 @@ const Tabs: React.FC<TabsProps> & TabsComponents = ({
       <ul
         role="tablist"
         className={tabs.classnames.ul({ underlined })}
-        {...rest}
+        {...props}
       >
         {tabsChildren.map((tabChildren, index) => {
           const { label, ...rest } = tabChildren.props;
@@ -32,7 +32,6 @@ const Tabs: React.FC<TabsProps> & TabsComponents = ({
             <li
               key={crypto.randomUUID()}
               className={tabs.classnames.li({ full })}
-              aria-selected={selectedTab === index}
             >
               <TabsButton
                 underlined={underlined}

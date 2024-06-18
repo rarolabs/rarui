@@ -12,6 +12,7 @@ const TabsButton: React.FC<TabsButtonProps> = ({
   ...props
 }) => (
   <button
+    type="button"
     className={tabs.classnames.button({ underlined, selected })}
     {...props}
   >

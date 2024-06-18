@@ -61,7 +61,7 @@ const Select: React.FC<SelectProps> = ({
     if (onChange) {
       onChange(selectedOptions);
     }
-  }, [selectedOptions]);
+  }, [selectedOptions, onChange]);
 
   return (
     <Dropdown
@@ -106,8 +106,10 @@ const Select: React.FC<SelectProps> = ({
         <Box display="flex" alignItems="center" gap="$4xs" paddingLeft="$3xs">
           {!!selectedOptions.length && (
             <button
+              type="button"
               className={select.classnames.close}
               onClick={handleResetOptions}
+              aria-label="clear options"
             >
               <Icon source={<CloseIcon size="small" />} />
             </button>

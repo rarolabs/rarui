@@ -116,7 +116,7 @@ describe("GIVEN <Tabs />", () => {
       ).not.toContain("full_true");
     });
 
-    it.only("AND should correctly render the underlined property", () => {
+    it("AND should correctly render the underlined property", () => {
       makeSut({
         underlined: true,
         children: flattenChildren(
@@ -134,7 +134,7 @@ describe("GIVEN <Tabs />", () => {
       );
     });
 
-    it.only("AND should correctly not render the underlined property", () => {
+    it("AND should correctly not render the underlined property", () => {
       makeSut({
         children: flattenChildren(
           <>
