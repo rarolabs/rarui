@@ -141,6 +141,9 @@
       ],
       "@rarui-react/stepper": [
         "./packages/implementations/react/src/composite/Stepper/src"
+      ],
+      "@rarui-react/tabs": [
+        "./packages/implementations/react/src/composite/Tabs/src"
       ]
     }
   },
