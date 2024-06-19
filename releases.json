@@ -1,0 +1,62 @@
+[
+  {
+    "package": "@rarui-react/components 1.30.1",
+    "description": "## 2024-06-19 `1.30.1`\n\n#### 🐛 Bug fixes\n\n- Added a div to position the icon of the `Toast`component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.30.1",
+    "tagName": "rarui-react/components-1.30.1",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/components",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/input 1.1.2",
+    "description": "## 2024-06-19 `1.1.2`\n\n#### 🐛 Bug fixes\n\n- Added the size prop for the `container` class of the `Input.Password` and `Input.Search`. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.1.2",
+    "tagName": "rarui-react/input-1.1.2",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/input",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/toast 1.0.3",
+    "description": "## 2024-06-19 `1.0.3`\n\n#### 🐛 Bug fixes\n\n- Removed index of the content of `Toast.provider` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed placement of the icon of `Toast` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed font size and line height of the title of `Toast` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed appearance of close icon button for the neutral appearance of `Toast` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.0.3",
+    "tagName": "rarui-react/toast-1.0.3",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/toast",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui/styles 1.29.1",
+    "description": "## 2024-06-12 `1.29.1`\n\n#### 🐛 Bug fixes\n\n- Fixed the hover state for `IconButton` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed border radius for ghost and tonal variants for `IconButton` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed padding and spacing for `Toast` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Added iconContainer style for the icon of the `Toast` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.29.1",
+    "tagName": "rarui/styles-1.29.1",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui/styles",
+          "link_type": "package"
+        }
+      ]
+    }
+  }
+]
