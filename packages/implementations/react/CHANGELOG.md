@@ -2,6 +2,18 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-06-21 `1.31.1`
+
+#### 🐛 Bug fixes
+
+- Added a div to position the icon of the `Toast`component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+## 2024-06-19 `1.30.1`
+
+#### 🐛 Bug fixes
+
+- Added a div to position the icon of the `Toast`component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-21 `1.31.0`
 
 #### 🎉 New features

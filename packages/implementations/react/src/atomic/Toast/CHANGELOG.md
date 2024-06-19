@@ -6,10 +6,10 @@ The Toast component presents notifications that provide feedback on an operation
 
 #### 🐛 Bug fixes
 
-- Removed index of the content of `Toast.provider` component. ([#59](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/59) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
-- Fixed placement of the icon of `Toast` component. ([#59](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/59) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
-- Fixed font size and line height of the title of `Toast` component. ([#59](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/59) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
-- Fixed appearance of close icon button for the neutral appearance of `Toast` component. ([#59](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/59) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Removed index of the content of `Toast.provider` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Fixed placement of the icon of `Toast` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Fixed font size and line height of the title of `Toast` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Fixed appearance of close icon button for the neutral appearance of `Toast` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 
 ## 2024-06-02 `1.0.2`
 

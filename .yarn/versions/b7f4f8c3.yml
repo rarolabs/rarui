@@ -5,7 +5,4 @@ releases:
   "@rarui/styles": patch
 
 declined:
-  - "@rarui/design-system"
-  - "@rarui-react/select"
   - "@rarui-react/datepicker"
-  - "@rarui-react/tabs"
