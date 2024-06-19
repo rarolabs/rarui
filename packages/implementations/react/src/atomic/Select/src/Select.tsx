@@ -63,6 +63,8 @@ const Select: React.FC<SelectProps> = ({
     }
   }, [selectedOptions, onChange]);
 
+  const { className, style } = select.sprinkle(props);
+
   return (
     <Dropdown
       width="100%"
@@ -70,7 +72,10 @@ const Select: React.FC<SelectProps> = ({
       visible={open}
       onVisibility={handleOpen}
       content={
-        <Box display="flex" flexDirection="column" width="100%" gap="$3xs">
+        <div
+          className={[select.classnames.list, className].join(" ")}
+          style={style}
+        >
           {children}
           {options.map((option) => (
             <Dropdown.Item key={option.value} as="label" htmlFor={option.value}>
@@ -85,7 +90,7 @@ const Select: React.FC<SelectProps> = ({
               />
             </Dropdown.Item>
           ))}
-        </Box>
+        </div>
       }
     >
       <div className={select.classnames.select({ size })} {...props}>

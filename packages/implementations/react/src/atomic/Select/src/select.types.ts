@@ -1,5 +1,5 @@
 import { InputHTMLAttributes, ReactNode } from "react";
-import { SelectVariants } from "@rarui/styles";
+import { SelectSprinkle, SelectVariants } from "@rarui/styles";
 
 export interface SelectOption {
   /**
@@ -34,7 +34,7 @@ interface SelectTyping {
   onChange?: (values: SelectOption[]) => void;
 }
 
-export type SelectProperties = SelectTyping & SelectVariants;
+export type SelectProperties = SelectTyping & SelectVariants & SelectSprinkle;
 
 export type SelectProps = SelectProperties &
   Omit<InputHTMLAttributes<HTMLInputElement>, "value" | "size" | "options">;

@@ -1,6 +1,7 @@
-import { selectStyles } from "./rarui-select.css";
+import { selectStyles, selectSprinkle } from "./rarui-select.css";
 
 export const select = {
   classnames: selectStyles,
+  sprinkle: selectSprinkle,
 };
-export type { SelectVariants } from "./rarui-select.types";
+export type { SelectVariants, SelectSprinkle } from "./rarui-select.types";

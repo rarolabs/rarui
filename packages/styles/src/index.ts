@@ -57,7 +57,7 @@ export type { LabelVariants } from "./packages/atomic/label";
 export type { LinkVariants } from "./packages/atomic/link";
 export type { ProgressVariants } from "./packages/atomic/progress";
 export type { RadioButtonVariants } from "./packages/atomic/radioButton";
-export type { SelectVariants } from "./packages/atomic/select";
+export type { SelectVariants, SelectSprinkle } from "./packages/atomic/select";
 export type { StatusVariants } from "./packages/atomic/status";
 export type { BannerVariants } from "./packages/atomic/banner";
 export type { ToastVariants } from "./packages/atomic/toast";

@@ -3,7 +3,7 @@
   "name": "Tabs",
   "totalProps": 4,
   "packageName": "@rarui-react/tabs",
-  "version": "0.0.0",
+  "version": "1.0.0-rc.1",
   "docLink": "https://rarui.com.br/documentation/src-components/tabs",
   "props": [
     {
@@ -46,7 +46,7 @@
           "description": "The content of the tabs item.",
           "type": "ReactNode",
           "title": "children",
-          "required": true
+          "required": false
         }
       ]
     }

@@ -5,7 +5,7 @@ import { SentimentSatisfiedOutlinedIcon } from "@rarui/icons";
 import { Icon } from "@rarui-react/icon";
 
 import { Tabs } from "../../Tabs";
-import { TabsButton } from "../../components";
+import { TabsButton } from "../Button";
 import docs from "../../tabs.docs.json";
 
 const itemDocs = docs.subComponents.find(

@@ -1,6 +1,10 @@
+import {
+  createRainbowSprinkles,
+  defineProperties as defineRainbowProperties,
+} from "rainbow-sprinkles";
 import { recipe } from "@vanilla-extract/recipes";
 import { style } from "@vanilla-extract/css";
-import { varsThemeBase } from "../../../themes";
+import { mediaQueries, varsThemeBase } from "../../../themes";
 
 const select = recipe({
   base: {
@@ -72,6 +76,22 @@ const select = recipe({
   },
 });
 
+const list = style({
+  display: "flex",
+  flexDirection: "column",
+  width: "100%",
+  overflowY: "scroll",
+  gap: varsThemeBase.spacing["3xs"],
+  "::-webkit-scrollbar": {
+    width: ".375rem",
+    background: "transparent",
+  },
+  "::-webkit-scrollbar-thumb": {
+    borderRadius: varsThemeBase.shape.border.radius["2xs"],
+    backgroundColor: varsThemeBase.colors.content.disabled,
+  },
+});
+
 const close = style({
   display: "flex",
   alignItems: "center",
@@ -96,5 +116,33 @@ const close = style({
 
 export const selectStyles = {
   select,
+  list,
   close,
 };
+
+/* -------------------------------------------------------------------------------------------------
+ * Sprinkle
+ * -----------------------------------------------------------------------------------------------*/
+
+const defineProperties = defineRainbowProperties({
+  conditions: {
+    xs: {
+      "@media": mediaQueries.xs(),
+    },
+    md: {
+      "@media": mediaQueries.md(),
+    },
+    lg: {
+      "@media": mediaQueries.lg(),
+    },
+    xl: {
+      "@media": mediaQueries.xl(),
+    },
+  },
+  defaultCondition: "xs",
+  dynamicProperties: {
+    maxHeight: true,
+  },
+});
+
+export const selectSprinkle = createRainbowSprinkles(defineProperties);

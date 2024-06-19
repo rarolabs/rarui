@@ -7,6 +7,7 @@ Use a select box when a user needs to select one or more than one option from a 
 #### 🎉 New features
 
 - Added button to clean the selected options. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))
+- Added `maxHeight` property to the component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))
 
 #### 🐛 Bug fixes
 
