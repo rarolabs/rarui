@@ -57,7 +57,7 @@ const toast = recipe({
         padding: `${varsThemeBase.spacing["3xs"]} ${varsThemeBase.spacing["2xs"]}`,
       },
       medium: {
-        padding: `${varsThemeBase.spacing["2xs"]} ${varsThemeBase.spacing["xs"]}`,
+        padding: `${varsThemeBase.spacing["2xs"]} ${varsThemeBase.spacing.xs}`,
       },
       large: {
         padding: `${varsThemeBase.spacing.xs} ${varsThemeBase.spacing.s}`,
