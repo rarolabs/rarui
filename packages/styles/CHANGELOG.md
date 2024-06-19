@@ -2,6 +2,15 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-06-21 `1.30.1`
+
+#### 🐛 Bug fixes
+
+- Fixed the hover state for `IconButton` component. ([#59](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/59) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Fixed border radius for ghost and tonal variants for `IconButton` component. ([#59](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/59) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Fixed padding and spacing for `Toast` component. ([#59](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/59) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Added iconContainer style for the icon of the `Toast` component. ([#59](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/59) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-21 `1.30.0`
 
 #### 🎉 New features

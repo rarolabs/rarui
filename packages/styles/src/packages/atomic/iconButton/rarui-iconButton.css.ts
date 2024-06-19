@@ -42,7 +42,7 @@ const iconButton = recipe({
       position: "absolute",
       opacity: 0,
       inset: -1,
-      backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
+      backgroundColor: varsThemeBase.colors.surface["brand-hover"],
       borderRadius: varsThemeBase.shape.border.radius["2xs"],
     },
     selectors: {
@@ -117,34 +117,43 @@ const iconButton = recipe({
       /**
        * Defines the visual variant of the icon button, affecting its background style, border and text.
        */
-      solid: {},
+      solid: {
+        ":after": {
+          transition: "opacity 150ms ease",
+          content: "",
+          position: "absolute",
+          opacity: 0,
+          inset: -1,
+          backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
+          borderRadius: varsThemeBase.shape.border.radius["2xs"],
+        },
+        selectors: {
+          "&:hover:after": {
+            opacity: 1,
+          },
+        },
+      },
       outlined: {
         backgroundColor: "transparent",
       },
       ghost: {
         backgroundColor: "transparent",
         borderColor: "transparent",
-        borderRadius: varsThemeBase.shape.border.radius.button,
         ":hover": {
           borderColor: varsThemeBase.colors.surface.brand,
-          borderRadius: varsThemeBase.shape.border.radius.button,
-        },
-        ":active": {
-          borderRadius: varsThemeBase.shape.border.radius.button,
         },
       },
       tonal: {
-        border: "none",
-        borderRadius: varsThemeBase.shape.border.radius.button,
+        borderColor: "transparent",
+      },
+      ":active": {
+        borderRadius: varsThemeBase.shape.border.radius["2xs"],
       },
     },
     rounded: {
       true: {
         borderRadius: varsThemeBase.shape.border.radius.pill,
-        ":hover": {
-          borderRadius: varsThemeBase.shape.border.radius.pill,
-        },
-        ":active": {
+        ":after": {
           borderRadius: varsThemeBase.shape.border.radius.pill,
         },
       },

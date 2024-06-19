@@ -2,6 +2,12 @@
 
 The Input component allows users to enter text into a UI. They typically appear on forms and dialog boxes.
 
+## 2024-06-19 `1.1.2`
+
+#### 🐛 Bug fixes
+
+- Added the size prop for the `container` class of the `Input.Password` and `Input.Search`. ([#59](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/59) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-17 `1.1.1`
 
 #### 🐛 Bug fixes

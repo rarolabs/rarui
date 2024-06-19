@@ -7,9 +7,8 @@ const toast = recipe({
     position: "relative",
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between",
     boxSizing: "border-box",
-    gap: varsThemeBase.spacing["3xs"],
+    gap: varsThemeBase.spacing.xs,
     maxWidth: "100%",
     width: "420px",
     zIndex: varsThemeBase.zIndex[100],
@@ -55,13 +54,13 @@ const toast = recipe({
      */
     size: {
       small: {
-        padding: `${varsThemeBase.spacing["4xs"]} ${varsThemeBase.spacing["3xs"]}`,
+        padding: `${varsThemeBase.spacing["3xs"]} ${varsThemeBase.spacing["2xs"]}`,
       },
       medium: {
-        padding: varsThemeBase.spacing["3xs"],
+        padding: `${varsThemeBase.spacing["2xs"]} ${varsThemeBase.spacing["xs"]}`,
       },
       large: {
-        padding: varsThemeBase.spacing.s,
+        padding: `${varsThemeBase.spacing.xs} ${varsThemeBase.spacing.s}`,
       },
     },
     /**
@@ -338,10 +337,15 @@ export const container = recipe({
   },
 });
 
+const iconContainer = style({
+  alignSelf: "self-start",
+});
+
 export const styles = {
   toast,
   container,
   content,
+  iconContainer,
   toastContainer,
   wrapper,
 };

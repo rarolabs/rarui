@@ -82,14 +82,20 @@ const Toast: React.FC<ToastProps> & ToastComponents = ({
         display: isVisible ? "flex" : "none",
       }}
     >
-      <Icon
-        data-testid={`toast-icon-${appearance}`}
-        source={<SourceIcon size={size !== "small" ? size : 20} />}
-        color={getColorIcon[variant][appearance]}
-      />
+      <div className={children ? toast.classnames.iconContainer : ''}>
+        <Icon
+          data-testid={`toast-icon-${appearance}`}
+          source={<SourceIcon size={size} />}
+          color={getColorIcon[variant][appearance]}
+        />
+      </div>
       <div className={toast.classnames.content}>
         {title && (
-          <Text fontSize="$m" lineHeight="$m" fontWeight="$medium">
+          <Text
+            fontSize={size === "large" ? "$m" : "$s"}
+            lineHeight={size === "large" ? "$l" : "$m"}
+            fontWeight="$medium"
+          >
             {title}
           </Text>
         )}
@@ -99,7 +105,7 @@ const Toast: React.FC<ToastProps> & ToastComponents = ({
         onClick={() => closeToast(id)}
         data-testid="dismiss-button"
         variant="ghost"
-        appearance={getAppearanceIconButton[variant]}
+        appearance={appearance === 'neutral' ? 'inverted' : getAppearanceIconButton[variant]}
         source={<CloseIcon size="medium" />}
         rounded
       />
