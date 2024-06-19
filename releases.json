@@ -16,7 +16,7 @@
   },
   {
     "package": "@rarui-react/select 1.0.1",
-    "description": "## 2024-06-18 `1.0.1`\n\n#### 🎉 New features\n\n- Added button to clean the selected options. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))\n\n#### 🐛 Bug fixes\n\n- Fixed function callback being called several times. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))",
+    "description": "## 2024-06-18 `1.0.1`\n\n#### 🎉 New features\n\n- Added button to clean the selected options. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))\n- Added `maxHeight` property to the component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))\n\n#### 🐛 Bug fixes\n\n- Fixed function callback being called several times. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))",
     "version": "1.0.1",
     "tagName": "rarui-react/select-1.0.1",
     "assets": {
