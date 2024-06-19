@@ -36,6 +36,7 @@ export { pagination } from "./packages/composite/pagination";
 export { sidebar } from "./packages/composite/sidebar";
 export { sideNavigation } from "./packages/composite/sideNavigation";
 export { stepper } from "./packages/composite/stepper";
+export { tabs } from "./packages/composite/tabs";
 
 // types atomic
 export type { BoxSprinkle } from "./packages/atomic/box";
@@ -56,7 +57,7 @@ export type { LabelVariants } from "./packages/atomic/label";
 export type { LinkVariants } from "./packages/atomic/link";
 export type { ProgressVariants } from "./packages/atomic/progress";
 export type { RadioButtonVariants } from "./packages/atomic/radioButton";
-export type { SelectVariants } from "./packages/atomic/select";
+export type { SelectVariants, SelectSprinkle } from "./packages/atomic/select";
 export type { StatusVariants } from "./packages/atomic/status";
 export type { BannerVariants } from "./packages/atomic/banner";
 export type { ToastVariants } from "./packages/atomic/toast";
@@ -81,3 +82,4 @@ export type {
   StepperVariants,
   StepperStepVariants,
 } from "./packages/composite/stepper";
+export type { TabsVariants } from "./packages/composite/tabs";

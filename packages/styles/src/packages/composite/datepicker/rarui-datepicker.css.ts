@@ -72,9 +72,6 @@ globalStyle(`${datepicker} .react-datepicker__time-list`, {
 
 globalStyle(`${datepicker} .react-datepicker__time-list::-webkit-scrollbar`, {
   width: ".375rem",
-});
-
-globalStyle(`${datepicker} .react-datepicker__time-list::-webkit-scrollbar`, {
   background: "transparent",
 });
 

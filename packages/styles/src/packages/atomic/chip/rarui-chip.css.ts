@@ -16,7 +16,7 @@ const chip = recipe({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    width: "fit-content",
+    minWidth: "fit-content",
     boxSizing: "border-box",
     position: "relative",
     overflow: "hidden",
@@ -117,7 +117,7 @@ globalStyle(`${chip()}:active ${overlay}`, {
   borderColor: varsThemeBase.colors.surface["on-brand-press"],
 });
 
-export const styles = {
+export const chipStyles = {
   chip,
   close,
   overlay,
@@ -153,4 +153,4 @@ const defineProperties = defineRainbowProperties({
   },
 });
 
-export const sprinkle = createRainbowSprinkles(defineProperties);
+export const chipSprinkle = createRainbowSprinkles(defineProperties);

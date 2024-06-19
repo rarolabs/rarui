@@ -310,6 +310,6 @@ const iconButton = recipe({
   ],
 });
 
-export const styles = {
+export const iconButtonStyles = {
   iconButton,
 };

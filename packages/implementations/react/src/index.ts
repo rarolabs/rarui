@@ -33,3 +33,4 @@ export * from "@rarui-react/pagination";
 export * from "@rarui-react/sidebar";
 export * from "@rarui-react/side-navigation";
 export * from "@rarui-react/stepper";
+export * from "@rarui-react/tabs";

@@ -1,6 +1,6 @@
-import { styles } from "./rarui-iconButton.css";
+import { iconButtonStyles } from "./rarui-iconButton.css";
 
 export const iconButton = {
-  classnames: { ...styles },
+  classnames: iconButtonStyles,
 };
 export type { IconButtonVariants } from "./rarui-iconButton.types";

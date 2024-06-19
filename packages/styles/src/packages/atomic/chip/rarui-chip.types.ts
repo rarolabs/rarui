@@ -1,9 +1,9 @@
 import { RecipeVariants } from "@vanilla-extract/recipes";
-import { styles, paddingProperties } from "./rarui-chip.css";
+import { chipStyles, paddingProperties } from "./rarui-chip.css";
 
 import { Conditions, AddDollar } from "../../../index.types";
 
-export type ChipVariants = RecipeVariants<typeof styles.chip>;
+export type ChipVariants = RecipeVariants<typeof chipStyles.chip>;
 
 export interface ChipSprinkle {
   /**

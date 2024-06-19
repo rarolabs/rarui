@@ -1,9 +1,9 @@
 {
   "id": "select",
   "name": "Select",
-  "totalProps": 6,
+  "totalProps": 7,
   "packageName": "@rarui-react/select",
-  "version": "1.0.0",
+  "version": "1.0.1-rc.1",
   "docLink": "https://rarui.com.br/documentation/src-components/select",
   "props": [
     {
@@ -80,6 +80,135 @@
       "enum": ["large", "medium", "small"],
       "type": "string",
       "title": "size",
+      "required": false
+    },
+    {
+      "description": "The **`max-height`** CSS property sets the maximum height of an element. It prevents the used value of the `height` property from becoming larger than the value specified for `max-height`.\n\n\n**Initial value**: `none`",
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "none",
+            "stretch"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "maxHeight",
       "required": false
     }
   ],

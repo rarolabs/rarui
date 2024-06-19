@@ -1,0 +1,54 @@
+{
+  "id": "tabs",
+  "name": "Tabs",
+  "totalProps": 4,
+  "packageName": "@rarui-react/tabs",
+  "version": "1.0.0-rc.1",
+  "docLink": "https://rarui.com.br/documentation/src-components/tabs",
+  "props": [
+    {
+      "description": "The content of the tabs component.\nThis prop accepts one or more Tabs.Item components or other React nodes.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": false
+    },
+    {
+      "description": "Sets the indicated tab as active by default.\nIf unset, defaults to the first tab. This prop should be a number representing the index of the tab.",
+      "type": "number",
+      "title": "preSelectedTab",
+      "required": false
+    },
+    {
+      "description": "Determines whether the tabs should occupy the full width of their container.",
+      "type": "boolean",
+      "title": "full",
+      "required": false
+    },
+    {
+      "description": "Determines whether the tabs should have an underline style.",
+      "type": "boolean",
+      "title": "underlined",
+      "required": false
+    }
+  ],
+  "subComponents": [
+    {
+      "name": "Tabs.Item",
+      "totalProps": 2,
+      "props": [
+        {
+          "$ref": "#/definitions/React.ReactNode",
+          "description": "Label of the tabpanel. Used to pair with it's corresponding tab control.",
+          "title": "label",
+          "required": true
+        },
+        {
+          "description": "The content of the tabs item.",
+          "type": "ReactNode",
+          "title": "children",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

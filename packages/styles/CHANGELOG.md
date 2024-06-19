@@ -2,6 +2,16 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-06-18 `1.29.0`
+
+#### 🎉 New features
+
+- Added new style pack for `tabs` component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))
+
+#### 🐛 Bug fixes
+
+- Adjusted overflow of chips within the `select` component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-12 `1.28.1`
 
 #### 🐛 Bug fixes
@@ -20,8 +30,8 @@ RarUI Styles deprive all styles needed to build components.
 
 #### 🎉 New features
 
-- Added new style pack for `select` component. ( ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))
-- Added new style `border` variants for `input` component. ( ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new style pack for `select` component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new style `border` variants for `input` component. ([#57](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/57) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-06-11 `1.27.0`
 
