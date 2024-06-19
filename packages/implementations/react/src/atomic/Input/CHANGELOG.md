@@ -2,7 +2,7 @@
 
 The Input component allows users to enter text into a UI. They typically appear on forms and dialog boxes.
 
-## 2024-06-19 `1.1.2`
+## 2024-06-21 `1.1.2`
 
 #### 🐛 Bug fixes
 

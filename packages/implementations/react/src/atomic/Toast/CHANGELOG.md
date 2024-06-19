@@ -2,7 +2,7 @@
 
 The Toast component presents notifications that provide feedback on an operation through a message.
 
-## 2024-06-19 `1.0.3`
+## 2024-06-21 `1.0.3`
 
 #### 🐛 Bug fixes
 
