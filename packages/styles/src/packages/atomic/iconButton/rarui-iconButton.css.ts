@@ -11,8 +11,6 @@ const iconButton = recipe({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "2.5rem",
-    width: "2.5rem",
     textDecoration: "none",
     cursor: "pointer",
     boxSizing: "border-box",
@@ -119,13 +117,7 @@ const iconButton = recipe({
        */
       solid: {
         ":after": {
-          transition: "opacity 150ms ease",
-          content: "",
-          position: "absolute",
-          opacity: 0,
-          inset: -1,
           backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
-          borderRadius: varsThemeBase.shape.border.radius["2xs"],
         },
         selectors: {
           "&:hover:after": {
@@ -139,15 +131,9 @@ const iconButton = recipe({
       ghost: {
         backgroundColor: "transparent",
         borderColor: "transparent",
-        ":hover": {
-          borderColor: varsThemeBase.colors.surface.brand,
-        },
       },
       tonal: {
         borderColor: "transparent",
-      },
-      ":active": {
-        borderRadius: varsThemeBase.shape.border.radius["2xs"],
       },
     },
     rounded: {
