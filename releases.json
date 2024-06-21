@@ -8,7 +8,7 @@
       "links": [
         {
           "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui-react/components",
+          "url": "https://www.npmjs.com/package/@rarui-react/card",
           "link_type": "package"
         }
       ]
@@ -23,7 +23,7 @@
       "links": [
         {
           "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui-react/input",
+          "url": "https://www.npmjs.com/package/@rarui-react/components",
           "link_type": "package"
         }
       ]
