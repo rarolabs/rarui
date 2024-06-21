@@ -1,7 +1,7 @@
 [
   {
     "package": "@rarui-react/components 1.31.1",
-    "description": "## 2024-06-21 `1.31.1`\n\n#### 🐛 Bug fixes\n\n- Added a div to position the icon of the `Toast`component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "description": "## 2024-06-21 `1.31.1`\n\n#### 🐛 Bug fixes\n\n- Added a Box to position the icon of the `Toast`component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
     "version": "1.31.1",
     "tagName": "rarui-react/components-1.31.1",
     "assets": {
@@ -46,7 +46,7 @@
   },
   {
     "package": "@rarui/styles 1.30.1",
-    "description": "## 2024-06-21 `1.30.1`\n\n#### 🐛 Bug fixes\n\n- Fixed the hover state for `IconButton` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed the hover state for variant tonal for `IconButton` and `Button` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed the appearance inverted for variant tonal for `IconButton` and `Button` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed border radius for ghost and tonal variants for `IconButton` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed padding and spacing for `Toast` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Added iconContainer style for the icon of the `Toast` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "description": "## 2024-06-21 `1.30.1`\n\n#### 🐛 Bug fixes\n\n- Fixed the hover state for `IconButton` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed the hover state for variant tonal for `IconButton` and `Button` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed the appearance inverted for variant tonal for `IconButton` and `Button` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed border radius for ghost and tonal variants for `IconButton` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Fixed padding and spacing for `Toast` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
     "version": "1.30.1",
     "tagName": "rarui/styles-1.30.1",
     "assets": {
