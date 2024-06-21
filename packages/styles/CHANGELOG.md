@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-06-21 `1.30.0`
+
+#### 🎉 New features
+
+- Added new style pack for `card` component. ([#61](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/61) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-18 `1.29.0`
 
 #### 🎉 New features

@@ -118,6 +118,9 @@
       "@rarui-react/breadcrumb": [
         "./packages/implementations/react/src/composite/Breadcrumb/src"
       ],
+      "@rarui-react/card": [
+        "./packages/implementations/react/src/composite/Card/src"
+      ],
       "@rarui-react/accordion": [
         "./packages/implementations/react/src/composite/Accordion/src"
       ],

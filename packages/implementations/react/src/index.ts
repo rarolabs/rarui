@@ -26,6 +26,7 @@ export * from "@rarui-react/tooltip";
 // composite
 export * from "@rarui-react/accordion";
 export * from "@rarui-react/breadcrumb";
+export * from "@rarui-react/card";
 export * from "@rarui-react/datepicker";
 export * from "@rarui-react/dropdown";
 export * from "@rarui-react/modal";
