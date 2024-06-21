@@ -8,7 +8,7 @@ const toast = recipe({
     display: "flex",
     alignItems: "center",
     boxSizing: "border-box",
-    gap: varsThemeBase.spacing.xs,
+    gap: varsThemeBase.spacing["2xs"],
     maxWidth: "100%",
     width: "420px",
     zIndex: varsThemeBase.zIndex[100],
@@ -55,12 +55,14 @@ const toast = recipe({
     size: {
       small: {
         padding: `${varsThemeBase.spacing["3xs"]} ${varsThemeBase.spacing["2xs"]}`,
+        gap: varsThemeBase.spacing["3xs"],
       },
       medium: {
         padding: `${varsThemeBase.spacing["2xs"]} ${varsThemeBase.spacing.xs}`,
       },
       large: {
         padding: `${varsThemeBase.spacing.xs} ${varsThemeBase.spacing.s}`,
+        gap: varsThemeBase.spacing.xs,
       },
     },
     /**
@@ -206,8 +208,8 @@ const toastContainer = recipe({
     position: "fixed",
     display: "flex",
     flexDirection: "column",
-    gap: "16px",
-    padding: "16px",
+    gap: varsThemeBase.spacing.xs,
+    padding: varsThemeBase.spacing.xs,
     listStyle: "none",
   },
 
@@ -303,7 +305,7 @@ export const container = recipe({
     position: "fixed",
     flexDirection: "column-reverse",
     width: "fit-content",
-    gap: "1rem",
+    gap: varsThemeBase.spacing.xs,
   },
   variants: {
     placement: {

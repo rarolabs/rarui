@@ -3,12 +3,13 @@ import {
   CheckCircleFilledIcon,
   DangerFilledIcon,
   BookmarkFilledIcon,
+  WarningFilledIcon,
 } from "@rarui/icons";
 
 export const getSourceIcon = {
   info: InfoCircleFilledIcon,
   success: CheckCircleFilledIcon,
-  warning: InfoCircleFilledIcon,
+  warning: WarningFilledIcon,
   error: DangerFilledIcon,
   neutral: BookmarkFilledIcon,
   invert: BookmarkFilledIcon,
