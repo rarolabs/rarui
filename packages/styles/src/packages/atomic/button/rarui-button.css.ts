@@ -132,8 +132,8 @@ const button = recipe({
             backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
           },
           "&:active:after": {
-            borderColor: varsThemeBase.colors.surface["press"],
-            backgroundColor: varsThemeBase.colors.surface["press"],
+            borderColor: varsThemeBase.colors.surface.press,
+            backgroundColor: varsThemeBase.colors.surface.press,
           },
         },
       },
@@ -327,7 +327,7 @@ const button = recipe({
         backgroundColor: varsThemeBase.colors.surface.secondary,
         selectors: {
           "&:hover:after": {
-            backgroundColor: varsThemeBase.colors.surface["hover"],
+            backgroundColor: varsThemeBase.colors.surface.hover,
           },
         },
       },
