@@ -2,7 +2,13 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
-## 2024-06-12 `1.30.0`
+## 2024-06-21 `1.31.0`
+
+#### 🎉 New features
+
+- Added new composite `Card` component. ([#61](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/61) by [@junior](https://git.rarolabs.com.br/junior))
+
+## 2024-06-19 `1.30.0`
 
 #### 🎉 New features
 

@@ -3339,6 +3339,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-react/card@workspace:packages/implementations/react/src/composite/Card":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/card@workspace:packages/implementations/react/src/composite/Card"
+  dependencies:
+    "@rarui-react/box": "workspace:^"
+    "@rarui-react/text": "workspace:^"
+    "@rarui-react/title": "workspace:^"
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@rarui-react/checkbox@workspace:packages/implementations/react/src/atomic/Checkbox":
   version: 0.0.0-use.local
   resolution: "@rarui-react/checkbox@workspace:packages/implementations/react/src/atomic/Checkbox"
