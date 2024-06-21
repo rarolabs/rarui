@@ -6,7 +6,7 @@
 
 #### 🐛 Bug fixes
 
-- Added a div to position the icon of the `Toast`component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Added a Box to position the icon of the `Toast`component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 
 ## 2024-06-19 `1.30.1`
 

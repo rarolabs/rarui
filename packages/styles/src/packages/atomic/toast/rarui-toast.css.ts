@@ -339,15 +339,10 @@ export const container = recipe({
   },
 });
 
-const iconContainer = style({
-  alignSelf: "self-start",
-});
-
 export const styles = {
   toast,
   container,
   content,
-  iconContainer,
   toastContainer,
   wrapper,
 };

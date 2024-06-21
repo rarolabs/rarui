@@ -10,6 +10,7 @@ import { CloseIcon } from "@rarui/icons";
 import { Icon } from "@rarui-react/icon";
 import { Text } from "@rarui-react/text";
 import { IconButton } from "@rarui-react/icon-button";
+import { Box } from "@rarui-react/box";
 
 import {
   getAppearanceIconButton,
@@ -82,13 +83,13 @@ const Toast: React.FC<ToastProps> & ToastComponents = ({
         display: isVisible ? "flex" : "none",
       }}
     >
-      <div className={children ? toast.classnames.iconContainer : ''}>
+      <Box alignSelf={children ? "flex-start" : "auto"}>
         <Icon
           data-testid={`toast-icon-${appearance}`}
-          source={<SourceIcon size={size} />}
+          source={<SourceIcon size={size !== "small" ? size : 20} />}
           color={getColorIcon[variant][appearance]}
         />
-      </div>
+      </Box>
       <div className={toast.classnames.content}>
         {title && (
           <Text
@@ -105,7 +106,11 @@ const Toast: React.FC<ToastProps> & ToastComponents = ({
         onClick={() => closeToast(id)}
         data-testid="dismiss-button"
         variant="ghost"
-        appearance={appearance === 'neutral' ? 'inverted' : getAppearanceIconButton[variant]}
+        appearance={
+          appearance === "neutral"
+            ? "inverted"
+            : getAppearanceIconButton[variant]
+        }
         source={<CloseIcon size="medium" />}
         rounded
       />
