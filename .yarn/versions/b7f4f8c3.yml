@@ -6,4 +6,7 @@ releases:
 
 declined:
   - "@rarui/design-system"
+  - "@rarui-react/select"
+  - "@rarui-react/card"
   - "@rarui-react/datepicker"
+  - "@rarui-react/tabs"
