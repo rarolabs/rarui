@@ -1,0 +1,9 @@
+releases:
+  "@rarui-react/card": major
+  "@rarui-react/components": minor
+  "@rarui/styles": minor
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui-react/select"
+  - "@rarui-react/tabs"
