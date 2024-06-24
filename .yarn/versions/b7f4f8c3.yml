@@ -1,8 +1,0 @@
-releases:
-  "@rarui-react/components": patch
-  "@rarui-react/input": patch
-  "@rarui-react/toast": patch
-  "@rarui/styles": patch
-
-declined:
-  - "@rarui-react/datepicker"
