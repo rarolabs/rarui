@@ -332,7 +332,12 @@ const iconButton = recipe({
       },
       style: {
         ...buttonVariants.text.inverted,
-        backgroundColor: varsThemeBase.colors.surface.invert,
+        backgroundColor: varsThemeBase.colors.surface["invert-secondary"],
+        selectors: {
+          "&:hover:after": {
+            backgroundColor: varsThemeBase.colors.surface["invert-hover"],
+          },
+        },
       },
     },
   ],
