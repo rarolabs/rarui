@@ -150,6 +150,7 @@
       "required": false
     },
     {
+      "description": "Specifies whether to handle text overflow within the chip.\nWhen true, overflowing text is typically truncated with an ellipsis.",
       "type": "boolean",
       "title": "textOverflow",
       "required": false
