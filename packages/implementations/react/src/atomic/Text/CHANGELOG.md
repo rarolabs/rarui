@@ -2,6 +2,12 @@
 
 Text is a basic component that allows us to write blocks of text and give it formatting to use within other components, sections and pages of our application or website.
 
+## 2024-06-25 `1.1.0`
+
+#### 🎉 New features
+
+- Added `width`, `textOverflow`, `textTransform`, `whiteSpace`, `overflow`, and `textDecoration` properties to the Component. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-04-25 `1.0.1`
 
 #### 🐛 Bug fixes

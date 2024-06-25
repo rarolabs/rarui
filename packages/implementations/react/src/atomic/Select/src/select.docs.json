@@ -3,7 +3,7 @@
   "name": "Select",
   "totalProps": 7,
   "packageName": "@rarui-react/select",
-  "version": "1.0.1",
+  "version": "1.0.2-rc.4",
   "docLink": "https://rarui.com.br/documentation/src-components/select",
   "props": [
     {
@@ -40,22 +40,7 @@
       "description": "Default selected values for the Select component.\nThis should be an array of SelectOption objects representing the selected options.",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "label": {
-            "description": "Label for the option. This is the text that will be displayed for the option.",
-            "type": "string",
-            "title": "label"
-          },
-          "value": {
-            "description": "Value of the option. This is the value that will be used internally and returned when the option is selected.",
-            "type": "string",
-            "title": "value"
-          }
-        },
-        "additionalProperties": false,
-        "propertyOrder": ["label", "value"],
-        "required": ["label", "value"]
+        "type": "string"
       },
       "title": "value",
       "required": false

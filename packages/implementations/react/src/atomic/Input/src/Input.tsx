@@ -18,6 +18,7 @@ const Input = forwardRef<HTMLInputElement, _InputProps>(
       size = "medium",
       divider = true,
       border = true,
+      disabled,
       appearance,
       leadingStart,
       leadingEnd,
@@ -43,12 +44,14 @@ const Input = forwardRef<HTMLInputElement, _InputProps>(
             appearance={appearance}
             size={size}
             divider={divider}
+            disabled={disabled}
           >
             {leadingStart}
           </InputLeading>
         )}
         <input
           {...rest}
+          disabled={disabled}
           ref={inputRef}
           className={input.classnames.input({ size })}
         />
@@ -60,6 +63,7 @@ const Input = forwardRef<HTMLInputElement, _InputProps>(
             appearance={appearance}
             size={size}
             divider={divider}
+            disabled={disabled}
           >
             {leadingEnd}
           </InputLeading>

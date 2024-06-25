@@ -25,20 +25,7 @@ type Story = StoryObj<typeof Select>;
 export const basic: Story = {
   args: {
     onChange: (options) => console.log(options),
-    value: [
-      {
-        label: "Item 1",
-        value: "item-1",
-      },
-      {
-        label: "Item 2",
-        value: "item-2",
-      },
-      {
-        label: "Item 3",
-        value: "item-3",
-      },
-    ],
+    value: ["item-1", "item-2", "item-3"],
     options: [
       {
         label: "Item 1",

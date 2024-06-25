@@ -7,7 +7,12 @@ import { DatepickerInputProps } from "./input.types";
 
 const DatepickerInput: React.FC<DatepickerInputProps> = forwardRef(
   (
-    { className: _className, style: _style, ...props }: DatepickerInputProps,
+    {
+      className: _className,
+      style: _style,
+      input,
+      ...props
+    }: DatepickerInputProps,
     ref,
   ) => (
     <RaruiInput
@@ -15,6 +20,7 @@ const DatepickerInput: React.FC<DatepickerInputProps> = forwardRef(
       divider={false}
       leadingEnd={<Icon source={<CalendarEventOutlinedIcon />} />}
       {...props}
+      {...input}
     />
   ),
 );

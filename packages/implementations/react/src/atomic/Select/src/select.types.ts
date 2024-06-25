@@ -26,15 +26,18 @@ interface SelectTyping {
    * Default selected values for the Select component.
    * This should be an array of SelectOption objects representing the selected options.
    */
-  value?: SelectOption[];
+  value?: string[];
   /**
    * Callback function that is called when the selected values change.
    * This function receives an array of SelectOption objects representing the selected options.
    */
-  onChange?: (values: SelectOption[]) => void;
+  onChange?: (values: string[]) => void;
 }
 
 export type SelectProperties = SelectTyping & SelectVariants & SelectSprinkle;
 
 export type SelectProps = SelectProperties &
-  Omit<InputHTMLAttributes<HTMLInputElement>, "value" | "size" | "options">;
+  Omit<
+    InputHTMLAttributes<HTMLInputElement>,
+    "value" | "size" | "options" | "onChange"
+  >;

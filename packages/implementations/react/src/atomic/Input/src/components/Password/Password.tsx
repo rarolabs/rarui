@@ -21,6 +21,7 @@ const InputPassword = forwardRef<HTMLInputElement, _InputPasswordProps>(
       size = "medium",
       divider = true,
       border = true,
+      disabled,
       appearance,
       ...rest
     }: _InputPasswordProps,
@@ -36,11 +37,12 @@ const InputPassword = forwardRef<HTMLInputElement, _InputPasswordProps>(
     return (
       <div
         data-testid={dataTestid ? `${dataTestid}-container` : ""}
-        className={input.classnames.container({ appearance, border })}
+        className={input.classnames.container({ appearance, border, size })}
       >
         <input
           {...rest}
           ref={inputRef}
+          disabled={disabled}
           type={show ? "text" : "password"}
           className={input.classnames.input({ size, divider })}
         />
@@ -54,6 +56,7 @@ const InputPassword = forwardRef<HTMLInputElement, _InputPasswordProps>(
           appearance={appearance}
           size={size}
           divider={divider}
+          disabled={disabled}
         >
           <Icon
             color="$currentColor"

@@ -95,6 +95,8 @@ const defineProperties = defineRainbowProperties({
   defaultCondition: "xs",
   dynamicProperties: {
     textAlign: true,
+    textTransform: true,
+    textDecoration: true,
   },
   staticProperties: {
     color: colorProperties,

@@ -1,0 +1,25 @@
+releases:
+  "@rarui-react/checkbox": patch
+  "@rarui-react/chip": minor
+  "@rarui-react/components": patch
+  "@rarui-react/datepicker": patch
+  "@rarui-react/input": patch
+  "@rarui-react/select": major
+  "@rarui-react/text": minor
+  "@rarui-react/title": minor
+  "@rarui/styles": patch
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui-react/avatar"
+  - "@rarui-react/progress-bar"
+  - "@rarui-react/radio-button"
+  - "@rarui-react/toast"
+  - "@rarui-react/tooltip"
+  - "@rarui-react/accordion"
+  - "@rarui-react/card"
+  - "@rarui-react/dropdown"
+  - "@rarui-react/modal"
+  - "@rarui-react/sidebar"
+  - "@rarui-react/stepper"
+  - "@rarui-react/tabs"

@@ -1,9 +1,9 @@
 {
   "id": "chip",
   "name": "Chip",
-  "totalProps": 6,
+  "totalProps": 8,
   "packageName": "@rarui-react/chip",
-  "version": "1.0.3",
+  "version": "1.1.0-rc.3",
   "docLink": "https://rarui.com.br/documentation/src-components/chip",
   "props": [
     {
@@ -58,6 +58,79 @@
       "required": false
     },
     {
+      "description": "The **`text-transform`** CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby.\n\n\n**Initial value**: `none`",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "capitalize",
+                "full-size-kana",
+                "full-width",
+                "lowercase",
+                "none",
+                "uppercase"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "capitalize",
+                "full-size-kana",
+                "full-width",
+                "lowercase",
+                "none",
+                "uppercase"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "capitalize",
+                "full-size-kana",
+                "full-width",
+                "lowercase",
+                "none",
+                "uppercase"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "capitalize",
+                "full-size-kana",
+                "full-width",
+                "lowercase",
+                "none",
+                "uppercase"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "capitalize",
+            "full-size-kana",
+            "full-width",
+            "lowercase",
+            "none",
+            "uppercase"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "textTransform",
+      "required": false
+    },
+    {
       "description": "Specifies whether the chip will be displayed in the pill shape",
       "type": "boolean",
       "title": "pill",
@@ -74,6 +147,12 @@
       "enum": ["medium", "small"],
       "type": "string",
       "title": "size",
+      "required": false
+    },
+    {
+      "description": "Specifies whether to handle text overflow within the chip.\nWhen true, overflowing text is typically truncated with an ellipsis.",
+      "type": "boolean",
+      "title": "textOverflow",
       "required": false
     }
   ],

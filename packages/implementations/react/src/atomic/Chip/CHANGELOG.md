@@ -2,6 +2,12 @@
 
 Chip is a small component used to make selections, filter content, or trigger actions.
 
+## 2024-06-25 `1.1.0`
+
+#### 🎉 New features
+
+- Added `textTransform` and `textOverflow` properties to the Component. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-02 `1.0.3`
 
 #### 💡 Others

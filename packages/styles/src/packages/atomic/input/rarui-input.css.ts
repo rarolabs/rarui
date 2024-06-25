@@ -95,6 +95,7 @@ const input = recipe({
     ":disabled": {
       backgroundColor: varsThemeBase.colors.surface.disabled,
       borderColor: varsThemeBase.colors.surface.disabled,
+      color: varsThemeBase.colors.content.disabled,
     },
     "::placeholder": {
       color: varsThemeBase.colors.content.disabled,
@@ -199,6 +200,24 @@ const leading = recipe({
         paddingLeft: 0,
       },
     },
+    {
+      variants: {
+        appearance: "error",
+        divider: false,
+      },
+      style: {
+        backgroundColor: "transparent",
+      },
+    },
+    {
+      variants: {
+        appearance: "success",
+        divider: false,
+      },
+      style: {
+        backgroundColor: "transparent",
+      },
+    },
   ],
 });
 
@@ -221,6 +240,7 @@ globalStyle(
 );
 
 globalStyle(`${container()}:has(${input()}:disabled) ${leading()}`, {
+  cursor: "auto",
   borderColor: varsThemeBase.colors.border.disabled,
   backgroundColor: varsThemeBase.colors.surface.disabled,
   color: varsThemeBase.colors.content.disabled,
