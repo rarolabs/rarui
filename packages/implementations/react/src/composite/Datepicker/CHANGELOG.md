@@ -2,7 +2,13 @@
 
 The Datepicker component lets you select a date value of a predetermined set.
 
-## 2024-06-10 `1.0.0`
+## 2024-06-25 `1.1.1`
+
+#### 🐛 Bug fixes
+
+- Adjusted colors of the disabled state of the component. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+
+## 2024-06-10 `1.1.0`
 
 #### 🎉 New features
 
