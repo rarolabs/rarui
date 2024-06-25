@@ -12,38 +12,48 @@ const Chip: React.FC<ChipProps> = ({
   size = "medium",
   padding = "$medium",
   selected,
+  textOverflow,
+  textTransform,
   children,
+  disabled,
   onClick,
   ...rest
 }) => {
   const { className, style, otherProps } = chip.sprinkle({
     ...rest,
     padding,
+    textTransform,
   });
+
   const dataTestid = (rest as { "data-testid": string })?.["data-testid"];
 
   return (
     <button
-      {...otherProps}
-      {...style}
+      disabled={disabled}
       type="button"
       className={[
         chip.classnames.chip({
           pill,
           selected,
           size,
+          textOverflow,
         }),
         className,
       ].join(" ")}
+      style={style}
+      {...otherProps}
       onClick={!closeable ? onClick : undefined}
     >
-      {children}
+      <span className={chip.classnames.content({ textOverflow })}>
+        {children}
+      </span>
       {closeable && (
         <span
           className={chip.classnames.close}
           onClick={closeable ? onClick : undefined}
           data-testid={`${dataTestid}-button-close`}
           aria-label="Close"
+          aria-disabled={disabled}
           role="presentation"
         >
           <Icon

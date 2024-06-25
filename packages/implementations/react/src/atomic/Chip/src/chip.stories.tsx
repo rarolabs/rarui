@@ -42,6 +42,14 @@ export const Closeable: Story = {
   },
 };
 
+export const Disabled: Story = {
+  args: {
+    children: "label",
+    closeable: true,
+    disabled: true,
+  },
+};
+
 export const WithIcon: Story = {
   args: {
     padding: "$medium",
