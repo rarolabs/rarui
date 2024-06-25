@@ -5,7 +5,6 @@ import { argTypesConvert } from ".storybook/utils";
 import { Button } from "@rarui-react/button";
 import { Box } from "@rarui-react/box";
 import { Text } from "@rarui-react/text";
-import { Link } from "@rarui-react/link";
 
 import { Toast } from "./Toast";
 import { useToast } from "./hooks";
@@ -30,14 +29,6 @@ export const basic: Story = {
         <Text fontSize="$s" lineHeight="$s" fontWeight="$regular">
           Lorem ipsum dolor sit amet.
         </Text>
-        <Link
-          as="a"
-          size="small"
-          appearance="inverted"
-          href="https://www.google.com.br"
-        >
-          Action
-        </Link>
       </Box>
     ),
     autoClose: false,

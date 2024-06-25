@@ -36,12 +36,12 @@ const ToastProvider: React.FC<ToastProviderProps> = ({
     <ToastContext.Provider value={contextValue}>
       {children}
       <div className={toastStyles.classnames.container({ placement })}>
-        {toasts.map((toast, index) => (
+        {toasts.map((toast) => (
           <div
             key={toast.id}
             className={toastStyles.classnames.wrapper({ placement })}
           >
-            <Toast {...toast} title={`${index} - ${toast.title}`} />
+            <Toast {...toast} title={`${toast.title}`} />
           </div>
         ))}
       </div>

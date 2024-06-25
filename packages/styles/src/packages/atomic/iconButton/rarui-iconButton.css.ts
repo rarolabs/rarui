@@ -11,8 +11,6 @@ const iconButton = recipe({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "2.5rem",
-    width: "2.5rem",
     textDecoration: "none",
     cursor: "pointer",
     boxSizing: "border-box",
@@ -42,7 +40,6 @@ const iconButton = recipe({
       position: "absolute",
       opacity: 0,
       inset: -1,
-      backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
       borderRadius: varsThemeBase.shape.border.radius["2xs"],
     },
     selectors: {
@@ -51,8 +48,6 @@ const iconButton = recipe({
       },
       "&:active:after": {
         opacity: 1,
-        backgroundColor: varsThemeBase.colors.surface["brand-press"],
-        borderColor: varsThemeBase.colors.surface["on-brand-press"],
       },
     },
   },
@@ -117,34 +112,32 @@ const iconButton = recipe({
       /**
        * Defines the visual variant of the icon button, affecting its background style, border and text.
        */
-      solid: {},
+      solid: {
+        selectors: {
+          "&:hover:after": {
+            backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
+          },
+          "&:active:after": {
+            borderColor: varsThemeBase.colors.surface.press,
+            backgroundColor: varsThemeBase.colors.surface.press,
+          },
+        },
+      },
       outlined: {
         backgroundColor: "transparent",
       },
       ghost: {
         backgroundColor: "transparent",
         borderColor: "transparent",
-        borderRadius: varsThemeBase.shape.border.radius.button,
-        ":hover": {
-          borderColor: varsThemeBase.colors.surface.brand,
-          borderRadius: varsThemeBase.shape.border.radius.button,
-        },
-        ":active": {
-          borderRadius: varsThemeBase.shape.border.radius.button,
-        },
       },
       tonal: {
-        border: "none",
-        borderRadius: varsThemeBase.shape.border.radius.button,
+        borderColor: "transparent",
       },
     },
     rounded: {
       true: {
         borderRadius: varsThemeBase.shape.border.radius.pill,
-        ":hover": {
-          borderRadius: varsThemeBase.shape.border.radius.pill,
-        },
-        ":active": {
+        ":after": {
           borderRadius: varsThemeBase.shape.border.radius.pill,
         },
       },
@@ -265,6 +258,11 @@ const iconButton = recipe({
       style: {
         ...buttonVariants.text.brand,
         backgroundColor: varsThemeBase.colors.surface["brand-subdued"],
+        selectors: {
+          "&:hover:after": {
+            backgroundColor: varsThemeBase.colors.surface["brand-hover"],
+          },
+        },
       },
     },
     {
@@ -275,6 +273,11 @@ const iconButton = recipe({
       style: {
         ...buttonVariants.text.danger,
         backgroundColor: varsThemeBase.colors.surface["error-subdued"],
+        selectors: {
+          "&:hover:after": {
+            backgroundColor: varsThemeBase.colors.surface["error-hover"],
+          },
+        },
       },
     },
     {
@@ -285,6 +288,11 @@ const iconButton = recipe({
       style: {
         ...buttonVariants.text.success,
         backgroundColor: varsThemeBase.colors.surface["success-subdued"],
+        selectors: {
+          "&:hover:after": {
+            backgroundColor: varsThemeBase.colors.surface["success-hover"],
+          },
+        },
       },
     },
     {
@@ -295,6 +303,11 @@ const iconButton = recipe({
       style: {
         ...buttonVariants.text.warning,
         backgroundColor: varsThemeBase.colors.surface["warning-subdued"],
+        selectors: {
+          "&:hover:after": {
+            backgroundColor: varsThemeBase.colors.surface["warning-hover"],
+          },
+        },
       },
     },
     {
@@ -305,6 +318,26 @@ const iconButton = recipe({
       style: {
         ...buttonVariants.text.neutral,
         backgroundColor: varsThemeBase.colors.surface.secondary,
+        selectors: {
+          "&:hover:after": {
+            backgroundColor: varsThemeBase.colors.surface.hover,
+          },
+        },
+      },
+    },
+    {
+      variants: {
+        appearance: "inverted",
+        variant: "tonal",
+      },
+      style: {
+        ...buttonVariants.text.inverted,
+        backgroundColor: varsThemeBase.colors.surface["invert-secondary"],
+        selectors: {
+          "&:hover:after": {
+            backgroundColor: varsThemeBase.colors.surface["invert-hover"],
+          },
+        },
       },
     },
   ],
