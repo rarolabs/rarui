@@ -11,22 +11,19 @@ import { Text } from "@rarui-react/text";
 import { SelectOption, SelectProps } from "./select.types";
 
 const Select: React.FC<SelectProps> = forwardRef(
-  (
-    {
-      className: _className,
-      style: _style,
-      size = "medium",
-      children,
-      options,
-      value,
-      placeholder,
-      disabled,
-      appearance,
-      onChange,
-      ...props
-    }: SelectProps,
-    _ref,
-  ) => {
+  ({
+    className: _className,
+    style: _style,
+    size = "medium",
+    children,
+    options,
+    value,
+    placeholder,
+    disabled,
+    appearance,
+    onChange,
+    ...props
+  }: SelectProps) => {
     const [selectedOptions, setSelectedOptions] = useState<string[]>(
       value ?? [],
     );
@@ -76,7 +73,7 @@ const Select: React.FC<SelectProps> = forwardRef(
       ) {
         setSelectedOptions(value);
       }
-    }, [value]);
+    }, [value, selectedOptions]);
 
     const { className, style } = select.sprinkle(props);
 
@@ -136,7 +133,7 @@ const Select: React.FC<SelectProps> = forwardRef(
           >
             {selectedOptions.map((selectedOption) => {
               const option = options.find(
-                (option) => option.value === selectedOption,
+                (opt) => opt.value === selectedOption,
               );
               return (
                 <Chip

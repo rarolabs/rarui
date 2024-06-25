@@ -54,7 +54,10 @@ const Chip: React.FC<ChipProps> = ({
           data-testid={`${dataTestid}-button-close`}
           aria-label="Close"
           aria-disabled={disabled}
-          role="presentation"
+          onKeyDown={() => {}}
+          onFocus={() => {}}
+          tabIndex={0}
+          role="button"
         >
           <Icon
             source={<CancelCircleFilledIcon size={16} aria-label="close" />}

@@ -17,7 +17,7 @@ const DatepickerInput: React.FC<DatepickerInputProps> = forwardRef(
   ) => (
     <RaruiInput
       ref={ref as LegacyRef<HTMLInputElement>}
-      divider={true}
+      divider={false}
       leadingEnd={<Icon source={<CalendarEventOutlinedIcon />} />}
       {...props}
       {...input}
