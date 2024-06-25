@@ -28,7 +28,32 @@ const meta: Meta<typeof Datepicker> = {
 export default meta;
 type Story = StoryObj<typeof Datepicker>;
 
-export const basic: Story = {};
+export const basic: Story = {
+  args: {
+    dateFormat: "dd/MM/yyyy",
+  },
+};
+
+export const disabled: Story = {
+  args: {
+    disabled: true,
+    dateFormat: "dd/MM/yyyy",
+  },
+};
+
+export const error: Story = {
+  args: {
+    input: { appearance: "error" },
+    dateFormat: "dd/MM/yyyy",
+  },
+};
+
+export const success: Story = {
+  args: {
+    input: { appearance: "success" },
+    dateFormat: "dd/MM/yyyy",
+  },
+};
 
 export const yearPicker: Story = {
   args: {

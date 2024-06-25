@@ -73,6 +73,12 @@ const defineProperties = defineRainbowProperties({
   dynamicProperties: {
     textAlign: true,
     wordBreak: true,
+    textTransform: true,
+    textDecoration: true,
+    textOverflow: true,
+    width: true,
+    overflow: true,
+    whiteSpace: true,
   },
   staticProperties: {
     color: colorProperties,

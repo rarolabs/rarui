@@ -19,9 +19,9 @@ const chip = recipe({
     minWidth: "fit-content",
     boxSizing: "border-box",
     position: "relative",
-    overflow: "hidden",
     borderStyle: "solid",
     transition: "all 150ms ease",
+    overflow: "hidden",
     gap: varsThemeBase.spacing["3xs"],
     fontWeight: varsThemeBase.fontWeight.medium,
     fontFamily: varsThemeBase.fontFamily.inter,
@@ -34,18 +34,18 @@ const chip = recipe({
       outline: "none",
       boxShadow: varsThemeBase.utils["focus-ring"],
     },
-    ":disabled": {
-      background: varsThemeBase.colors.surface.disabled,
-      borderColor: varsThemeBase.colors.surface.disabled,
-      color: varsThemeBase.colors.content.disabled,
-      cursor: "not-allowed",
-    },
     ":hover": {
       backgroundColor: varsThemeBase.colors.surface["brand-hover"],
       borderColor: varsThemeBase.colors.border.brand,
     },
     ":active": {
       backgroundColor: varsThemeBase.colors.surface["brand-press"],
+    },
+    ":disabled": {
+      background: varsThemeBase.colors.surface.disabled,
+      borderColor: varsThemeBase.colors.border.disabled,
+      color: varsThemeBase.colors.content.disabled,
+      cursor: "not-allowed",
     },
   },
   variants: {
@@ -85,6 +85,40 @@ const chip = recipe({
         height: "1.5rem",
       },
     },
+    /**
+     * Specifies whether to handle text overflow within the chip.
+     * When true, overflowing text is typically truncated with an ellipsis.
+     */
+    textOverflow: {
+      true: {
+        minWidth: "auto",
+        width: "100%",
+      },
+    },
+  },
+});
+
+const content = recipe({
+  base: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: varsThemeBase.spacing["3xs"],
+  },
+  variants: {
+    /**
+     * Specifies whether to handle text overflow within the chip.
+     * When true, overflowing text is typically truncated with an ellipsis.
+     */
+    textOverflow: {
+      true: {
+        textOverflow: "ellipsis",
+        whiteSpace: "nowrap",
+        width: "100%",
+        display: "block",
+        overflow: "hidden",
+      },
+    },
   },
 });
 
@@ -98,6 +132,11 @@ export const close = style({
   },
   ":hover": {
     color: varsThemeBase.colors.content.primary,
+  },
+  selectors: {
+    "&[aria-disabled='true']": {
+      color: varsThemeBase.colors.content.disabled,
+    },
   },
 });
 
@@ -117,8 +156,13 @@ globalStyle(`${chip()}:active ${overlay}`, {
   borderColor: varsThemeBase.colors.surface["on-brand-press"],
 });
 
+globalStyle(`${chip()}:disabled ${overlay}`, {
+  opacity: 0,
+});
+
 export const chipStyles = {
   chip,
+  content,
   close,
   overlay,
 };
@@ -148,6 +192,9 @@ const defineProperties = defineRainbowProperties({
     },
   },
   defaultCondition: "xs",
+  dynamicProperties: {
+    textTransform: true,
+  },
   staticProperties: {
     padding: paddingProperties,
   },

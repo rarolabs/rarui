@@ -40,7 +40,7 @@ export interface DatepickerTyping {
   /**
    * The currently selected date. This should be a Date object representing the selected date.
    */
-  selected?: Date;
+  selected?: Date | null;
   /**
    * The start date in a date range selection. This should be a Date object.
    */
@@ -59,6 +59,11 @@ export interface DatepickerTyping {
    * This can be useful for rendering the datepicker in a different part of the DOM, such as a modal or overlay.
    */
   portalId?: string;
+
+  /**
+   * Specifies whether the datepicker is disabled.
+   */
+  disabled?: boolean;
   /**
    * A callback function that is called when a date is selected.
    * This function receives the selected date as a parameter.

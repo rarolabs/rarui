@@ -6,13 +6,20 @@ import {
   Conditions,
   AddDollar,
   StandardLonghandProperties,
+  StandardShorthandProperties,
 } from "../../../index.types";
 import { colorProperties, fontWeightProperties } from "../../../properties";
 
 type TextDynamicProperties = Pick<
   StandardLonghandProperties,
-  "textAlign" | "wordBreak"
->;
+  | "textAlign"
+  | "wordBreak"
+  | "textTransform"
+  | "textOverflow"
+  | "width"
+  | "whiteSpace"
+> &
+  Pick<StandardShorthandProperties, "textDecoration" | "overflow">;
 
 export interface TextSprinkle extends TextDynamicProperties {
   /**

@@ -2,6 +2,12 @@
 
 Checkboxes allow the user to select multiple options from a set, or to turn an option on and off.
 
+## 2024-06-25 `1.0.3`
+
+#### 🐛 Bug fixes
+
+- The `Checkbox` component did not receive a property of `ref` which some cases caused an unwanted manner, then added this new propa to the component. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-02 `1.0.2`
 
 #### 💡 Others

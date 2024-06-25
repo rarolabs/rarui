@@ -2,7 +2,7 @@
 
 RarUI Styles deprive all styles needed to build components.
 
-## 2024-06-21 `1.30.1`
+## 2024-06-25 `1.30.2`
 
 #### 🐛 Bug fixes
 
@@ -11,6 +11,21 @@ RarUI Styles deprive all styles needed to build components.
 - Fixed the appearance inverted for variant tonal for `IconButton` and `Button` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 - Fixed border radius for ghost and tonal variants for `IconButton` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 - Fixed padding and spacing for `Toast` component. ([#60](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+## 2024-06-25 `1.30.1`
+
+#### 🐛 Bug fixes
+
+- Adjusted colors of the disabled state of the `Select` component. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+- Adjusted the height of the component `Select`. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+- Adjusted colors of the disabled state of the `Input` component. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+- Adjusted the height of the component `Input`. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+
+#### 🎉 New features
+
+- Added `textTransform` and `textDecoration` properties to the Component `Title`. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+- Added `width`, `textOverflow`, `textTransform`, `whiteSpace`, `overflow`, and `textDecoration` properties to the Component `Text`. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+- Added `textTransform` and `textOverflow` properties to the Component `Chip`. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-06-21 `1.30.0`
 

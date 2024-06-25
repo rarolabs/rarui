@@ -2,6 +2,14 @@
 
 Use a select box when a user needs to select one or more than one option from a list.
 
+## 2024-06-25 `2.0.0`
+
+#### 🐛 Bug fixes
+
+- Adjusted colors of the disabled state of the component. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+- Fixed infinite loop behavior when executing the call from the `onchange` property. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+- Fixed `Option` property to receive a string array. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-18 `1.0.1`
 
 #### 🎉 New features

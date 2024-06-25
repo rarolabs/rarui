@@ -21,12 +21,7 @@ const mockedOptions = [
   },
 ];
 
-const mockedValues = [
-  {
-    label: "Option 1",
-    value: "option-1",
-  },
-];
+const mockedValues = ["option-1"];
 
 const makeSut = (
   rest?: Partial<Omit<SelectProps, "id" | "name">>,
@@ -98,7 +93,7 @@ describe("GIVEN <Select />", () => {
     });
     fireEvent.click(screen.getByTestId("select-element"));
     fireEvent.click(screen.getByLabelText(mockedOptions[0].label));
-    expect(mockedOnChange).toHaveBeenCalledWith([mockedOptions[0]]);
+    expect(mockedOnChange).toHaveBeenCalledWith([mockedOptions[0].value]);
     fireEvent.click(screen.getByLabelText(mockedOptions[0].label));
     expect(mockedOnChange).toHaveBeenCalledWith([]);
   });
@@ -110,7 +105,7 @@ describe("GIVEN <Select />", () => {
     });
     expect(
       screen.getByTestId<HTMLSelectElement>(
-        `option-selected-${mockedValues[0].value}`,
+        `option-selected-${mockedValues[0]}`,
       ),
     ).toBeDefined();
   });
@@ -124,7 +119,7 @@ describe("GIVEN <Select />", () => {
     });
     fireEvent.click(screen.getByTestId("select-element"));
     fireEvent.click(screen.getByText(mockedOptions[0].label));
-    expect(mockedOnChange).toHaveBeenCalledWith([mockedOptions[0]]);
+    expect(mockedOnChange).toHaveBeenCalledWith([mockedOptions[0].value]);
     fireEvent.click(
       screen.getByTestId(
         `option-selected-${mockedOptions[0].value}-button-close`,

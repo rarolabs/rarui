@@ -18,12 +18,14 @@ export const basic: Story = {
     label: "Label",
   },
 };
+
 export const error: Story = {
   args: {
     error: true,
     label: "Label",
   },
 };
+
 export const disabled: Story = {
   args: {
     label: "Label",

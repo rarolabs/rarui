@@ -6,10 +6,15 @@ import {
   Conditions,
   AddDollar,
   StandardLonghandProperties,
+  StandardShorthandProperties,
 } from "../../../index.types";
 import { colorProperties, fontWeightProperties } from "../../../properties";
 
-type TitleDynamicProperties = Pick<StandardLonghandProperties, "textAlign">;
+type TitleDynamicProperties = Pick<
+  StandardLonghandProperties,
+  "textAlign" | "textTransform"
+> &
+  Pick<StandardShorthandProperties, "textDecoration">;
 
 export interface TitleSprinkle extends TitleDynamicProperties {
   /**

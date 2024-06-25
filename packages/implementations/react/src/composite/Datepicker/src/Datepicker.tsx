@@ -1,4 +1,4 @@
-import React, { createRef } from "react";
+import React, { createRef, useState } from "react";
 import Picker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
@@ -19,10 +19,13 @@ const Datepicker: React.FC<DatepickerProps> = ({
   input,
   customInput,
   portalId,
+  selected,
+  disabled,
   onChange,
   ...props
 }) => {
-  const datePickerRef = createRef<{ setSelected: (date: Date) => void }>();
+  const [date, setDate] = useState(selected);
+  const datePickerRef = createRef<{ setSelected: (newDate: Date) => void }>();
 
   return (
     <Picker
@@ -32,7 +35,9 @@ const Datepicker: React.FC<DatepickerProps> = ({
       dayClassName={() => datepicker.classnames.day}
       weekDayClassName={() => datepicker.classnames.weekday}
       timeClassName={() => datepicker.classnames.time}
-      customInput={customInput ?? <DatepickerInput {...input} />}
+      customInput={
+        customInput ?? <DatepickerInput input={{ ...input, disabled }} />
+      }
       renderCustomHeader={(headerProps) => (
         <DatepickerHeader
           showYearPicker={showYearPicker}
@@ -45,7 +50,13 @@ const Datepicker: React.FC<DatepickerProps> = ({
       todayButton={false}
       showYearPicker={showYearPicker}
       showMonthYearPicker={showMonthYearPicker}
-      onChange={(date: Date) => date && onChange(date)}
+      selected={selected !== undefined ? selected : date}
+      onChange={(newDate: Date) => {
+        if (newDate) {
+          onChange(newDate);
+          setDate(newDate);
+        }
+      }}
       {...props}
     >
       <DatepickerFooter
