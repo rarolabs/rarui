@@ -3,7 +3,7 @@
   "name": "Text",
   "totalProps": 15,
   "packageName": "@rarui-react/text",
-  "version": "1.1.0-rc.3",
+  "version": "1.1.0",
   "docLink": "https://rarui.com.br/documentation/src-components/text",
   "props": [
     {

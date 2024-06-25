@@ -3,7 +3,7 @@
   "name": "Datepicker",
   "totalProps": 15,
   "packageName": "@rarui-react/datepicker",
-  "version": "1.1.1-rc.4",
+  "version": "1.1.1",
   "docLink": "https://rarui.com.br/documentation/src-components/datepicker",
   "props": [
     {
