@@ -20,6 +20,7 @@ const InputSearch = forwardRef<HTMLInputElement, _InputSearchProps>(
       size = "medium",
       border = true,
       divider = true,
+      disabled,
       appearance,
       ...rest
     }: _InputSearchProps,
@@ -33,11 +34,12 @@ const InputSearch = forwardRef<HTMLInputElement, _InputSearchProps>(
     return (
       <div
         data-testid={dataTestid ? `${dataTestid}-container` : ""}
-        className={input.classnames.container({ appearance, border })}
+        className={input.classnames.container({ appearance, border, size })}
       >
         <input
           {...rest}
           ref={inputRef}
+          disabled={disabled}
           type="search"
           className={input.classnames.input({ size, divider })}
         />
@@ -48,6 +50,7 @@ const InputSearch = forwardRef<HTMLInputElement, _InputSearchProps>(
           appearance={appearance}
           size={size}
           divider={divider}
+          disabled={disabled}
         >
           <Icon
             color="$currentColor"
