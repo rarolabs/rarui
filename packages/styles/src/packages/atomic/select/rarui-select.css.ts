@@ -28,8 +28,17 @@ const select = recipe({
     ":focus": {
       borderColor: varsThemeBase.colors.border.primary,
     },
+    ":focus-within": {
+      outline: "none",
+      boxShadow: varsThemeBase.utils["focus-ring"],
+    },
     selectors: {
       "&:has(input:disabled)": {
+        borderColor: varsThemeBase.colors.surface.disabled,
+      },
+      "&[aria-disabled='true']": {
+        cursor: "not-allowed",
+        backgroundColor: varsThemeBase.colors.surface.disabled,
         borderColor: varsThemeBase.colors.surface.disabled,
       },
     },
@@ -43,6 +52,11 @@ const select = recipe({
         borderColor: varsThemeBase.colors.border.success,
         ":hover": {
           borderColor: varsThemeBase.colors.border.success,
+          // "&[aria-disabled='true']": {
+          //   cursor: "not-allowed",
+          //   backgroundColor: varsThemeBase.colors.surface.disabled,
+          //   borderColor: varsThemeBase.colors.surface.disabled,
+          // },
         },
         ":focus": {
           borderColor: varsThemeBase.colors.border.success,
@@ -63,14 +77,14 @@ const select = recipe({
      */
     size: {
       large: {
-        minHeight: "3rem",
+        height: "3rem",
       },
       medium: {
-        minHeight: "2.75rem",
+        height: "2.5rem",
       },
       small: {
-        minHeight: "2rem",
-        padding: `${varsThemeBase.spacing["2xs"]} ${varsThemeBase.spacing["3xs"]}`,
+        height: "2rem",
+        padding: `0 ${varsThemeBase.spacing["3xs"]}`,
       },
     },
   },
@@ -81,6 +95,7 @@ const list = style({
   flexDirection: "column",
   width: "100%",
   overflowY: "scroll",
+  padding: "0.125rem",
   gap: varsThemeBase.spacing["3xs"],
   "::-webkit-scrollbar": {
     width: ".375rem",
@@ -111,6 +126,10 @@ const close = style({
   },
   ":hover": {
     color: varsThemeBase.colors.content.primary,
+  },
+  ":disabled": {
+    cursor: "not-allowed",
+    color: varsThemeBase.colors.content.disabled,
   },
 });
 
