@@ -4,7 +4,7 @@ releases:
   "@rarui-react/components": patch
   "@rarui-react/datepicker": patch
   "@rarui-react/input": patch
-  "@rarui-react/select": patch
+  "@rarui-react/select": major
   "@rarui-react/text": minor
   "@rarui-react/title": minor
   "@rarui/styles": patch

@@ -2,7 +2,7 @@
 
 Use a select box when a user needs to select one or more than one option from a list.
 
-## 2024-06-25 `1.0.2`
+## 2024-06-25 `2.0.0`
 
 #### 🐛 Bug fixes
 

@@ -2,7 +2,7 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
-## 2024-06-25 `1.31.2`
+## 2024-06-25 `1.31.1`
 
 #### 🐛 Bug fixes
 
@@ -21,10 +21,6 @@
 - Added `textTransform` and `textDecoration` properties to the Component `Title`. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
 - Added `width`, `textOverflow`, `textTransform`, `whiteSpace`, `overflow`, and `textDecoration` properties to the Component `Text`. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
 - Added `textTransform` and `textOverflow` properties to the Component `Chip`. ([#62](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/62) by [@junior](https://git.rarolabs.com.br/junior))
-
-## 2024-06-24 `1.31.1`
-
-#### 🐛 Bug fixes
 
 ## 2024-06-21 `1.31.0`
 
