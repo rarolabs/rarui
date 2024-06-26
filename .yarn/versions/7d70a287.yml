@@ -1,0 +1,4 @@
+releases:
+  "@rarui-react/components": patch
+  "@rarui-react/modal": patch
+  "@rarui/styles": patch

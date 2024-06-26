@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-06-26 `1.30.3`
+
+#### 🐛 Bug fixes
+
+- Adjusted padding for `modal` component. ([#63](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/63) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-25 `1.30.2`
 
 #### 🐛 Bug fixes

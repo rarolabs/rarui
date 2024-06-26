@@ -35,7 +35,7 @@ const modal = recipe({
      */
     padding: {
       base: {
-        padding: varsThemeBase.spacing["2xs"],
+        padding: `${varsThemeBase.spacing.md} ${varsThemeBase.spacing.s}`,
       },
       none: {
         padding: 0,

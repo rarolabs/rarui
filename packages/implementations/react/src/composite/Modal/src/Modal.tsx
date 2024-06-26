@@ -21,7 +21,7 @@ const Modal: React.FC<ModalProps> & ModalComponents = ({
   style: _style,
   open = false,
   padding = "base",
-  maxWidth = { xs: "100%", md: "500px" },
+  maxWidth = { xs: "100%", md: "600px" },
   children,
   portalId,
   onDismiss,

@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-06-26 `1.31.3`
+
+#### 🐛 Bug fixes
+
+- Fixed the gap and spacement for `Modal.Header` component. ([#63](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/63) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-25 `1.31.2`
 
 #### 🐛 Bug fixes
