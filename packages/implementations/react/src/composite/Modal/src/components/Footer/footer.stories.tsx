@@ -5,6 +5,7 @@ import { argTypesConvert } from ".storybook/utils";
 import { Button } from "@rarui-react/button";
 import { Box } from "@rarui-react/box";
 import { Text } from "@rarui-react/text";
+import { Title } from "@rarui-react/title";
 
 import { Modal } from "../../Modal";
 import docs from "../../modal.docs.json";
@@ -23,20 +24,26 @@ const meta: Meta<typeof Modal.Footer> = {
       <Box minHeight={open ? "500px" : "auto"}>
         <Button onClick={handleClose}>Open</Button>
         <Modal open={open} onDismiss={handleClose}>
-          <Modal.Header title="Modal title" subtitle="Description" />
           <Modal.Body>
             <Box
               display="flex"
+              flexDirection="column"
               alignItems="center"
               justifyContent="center"
               borderStyle="dashed"
               borderWidth="$1"
               borderColor="$warning"
+              borderRadius="$2xs"
+              gap="$3xs"
               width="100%"
               minHeight="200px"
+              backgroundColor="$warning-subdued"
             >
-              <Text textAlign="center" color="$warning">
-                Replace me with your content
+              <Title as="h6" textAlign="center" color="$warning">
+                ❖ Slot
+              </Title>
+              <Text fontSize="$s" textAlign="center" color="$warning">
+                Substitua por Componente
               </Text>
             </Box>
           </Modal.Body>

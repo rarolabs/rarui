@@ -20,11 +20,12 @@ const ModalHeader: React.FC<ModalHeaderProps> = ({
   return (
     <Box
       display="flex"
+      gap="$xs"
       justifyContent="space-between"
       alignItems="center"
       {...props}
     >
-      <Box display="flex" flexDirection="column">
+      <Box width="100%" display="flex" gap="$3xs" flexDirection="column">
         {title && (
           <Title data-testid="header-title" as="h5" color="$primary">
             {title}
@@ -42,15 +43,16 @@ const ModalHeader: React.FC<ModalHeaderProps> = ({
           </Text>
         )}
       </Box>
-      <IconButton
-        aria-label="Dismiss modal"
-        data-testid="dismiss-modal-button"
-        tabIndex={0}
-        variant="ghost"
-        appearance="neutral"
-        source={<CloseIcon size="medium" />}
-        onClick={() => onDismiss(!open)}
-      />
+      <Box alignSelf="flex-start">
+        <IconButton
+          aria-label="Dismiss modal"
+          data-testid="dismiss-modal-button"
+          variant="ghost"
+          appearance="neutral"
+          source={<CloseIcon size="medium" />}
+          onClick={() => onDismiss(!open)}
+        />
+      </Box>
       {children}
     </Box>
   );

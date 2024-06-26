@@ -2,6 +2,12 @@
 
 The modal component provides a base for popovers, suspended forms, tutorials, or any other content above the UI main surface.
 
+## 2024-06-26 `1.0.1`
+
+#### 🐛 Bug fixes
+
+- Fixed the gap and spacement for `Modal.Header` component. ([#63](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/63) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-11 `1.0.0`
 
 ### 🎉 New features
