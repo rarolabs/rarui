@@ -95,7 +95,7 @@ export class ReleaseBuilder {
       const changelogPath = this.getChangeLogPath(packageName);
       const description = this.getDescription(changelogPath, packageName);
       const _packageName =
-        packageName === "@rarui-react" || packageName === "vuejs"
+        packageName === "@rarui-react" || packageName === "@rarui-vuejs"
           ? `${packageName}/components/`
           : packageName;
       const version = this.getVersion(description, packageName);
