@@ -1,5 +1,6 @@
 releases:
   "@rarui-react/box": major
+  "@rarui-react/components": minor
   "@rarui/styles": patch
   "@rarui/tokens": major
 

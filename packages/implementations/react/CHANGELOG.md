@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-06-27 `1.32.0`
+
+#### 🐛 Bug fixes
+
+- Removed _on-[variant]-hover_ and _on-[variant]-press_ backgroundColor options of `Box` component. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-26 `1.31.3`
 
 #### 🐛 Bug fixes
