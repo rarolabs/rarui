@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating custom script builds at design system build time.
 
+## 2024-06-28 `1.1.2`
+
+#### 🎉 Bug fixes
+
+- Fixed package link not sent to gitlab when launching a release ([#65](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/65) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-06-11 `1.1.1`
 
 #### 🎉 Bug fixes
