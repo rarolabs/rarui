@@ -1,0 +1,7 @@
+releases:
+  "@rarui/styles": patch
+  "@rarui/tokens": major
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui-react/box"
