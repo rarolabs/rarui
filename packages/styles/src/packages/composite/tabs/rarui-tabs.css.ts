@@ -63,7 +63,7 @@ const button = recipe({
     gap: varsThemeBase.spacing["3xs"],
     borderWidth: varsThemeBase.shape.border.width[1],
     color: varsThemeBase.colors.content.secondary,
-    fontFamily: varsThemeBase.fontFamily.inter,
+    fontFamily: varsThemeBase.fontFamily.base,
     fontWeight: varsThemeBase.fontWeight.semiBold,
     fontSize: varsThemeBase.fontSize.button.m,
     backgroundColor: varsThemeBase.colors.surface.secondary,

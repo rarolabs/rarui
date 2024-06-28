@@ -12,7 +12,7 @@ import { colorProperties, fontWeightProperties } from "../../../properties";
 
 export const title = recipe({
   base: {
-    fontFamily: varsThemeBase.fontFamily.inter,
+    fontFamily: varsThemeBase.fontFamily.base,
     margin: 0,
   },
   variants: {

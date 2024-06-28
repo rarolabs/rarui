@@ -11,6 +11,11 @@ const meta: Meta<typeof Button> = {
   component: Button,
   argTypes: {
     ...argTypesConvert(docs),
+    as: {
+      control: { disable: true },
+      description:
+        "The underlying element to render — either a HTML element name or a React component.",
+    },
     children: { control: { type: "text" } },
   },
   tags: ["autodocs"],

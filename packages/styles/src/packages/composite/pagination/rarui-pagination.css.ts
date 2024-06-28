@@ -37,7 +37,7 @@ const paginationItem = recipe({
     border: "none",
     color: varsThemeBase.colors.content.primary,
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
-    fontFamily: varsThemeBase.fontFamily.inter,
+    fontFamily: varsThemeBase.fontFamily.base,
     fontWeight: varsThemeBase.fontWeight.semiBold,
     ":focus-within": {
       outline: "none",

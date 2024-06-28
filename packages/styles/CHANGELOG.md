@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-06-27 `1.30.4`
+
+#### 🐛 Bug fixes
+
+- Fixed hover and pressed state for tonal variant for `IconButton` and `Button` component. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-26 `1.30.3`
 
 #### 🐛 Bug fixes

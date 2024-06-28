@@ -10,7 +10,7 @@ const sideNavigation = recipe({
   base: {
     padding: varsThemeBase.spacing["2xs"],
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
-    fontFamily: varsThemeBase.fontFamily.inter,
+    fontFamily: varsThemeBase.fontFamily.base,
     color: varsThemeBase.colors.content.secondary,
     display: "flex",
     justifyContent: "space-between",

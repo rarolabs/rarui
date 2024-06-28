@@ -8,7 +8,7 @@ import { varsThemeBase } from "../../../themes";
 
 const datepicker = style({
   border: "none",
-  fontFamily: varsThemeBase.fontFamily.inter,
+  fontFamily: varsThemeBase.fontFamily.base,
   color: varsThemeBase.colors.content.primary,
   backgroundColor: varsThemeBase.colors.surface.primary,
   boxShadow: varsThemeBase.elevation.bottom[1],
@@ -102,7 +102,7 @@ globalStyle(`${datepicker} .react-datepicker__year-wrapper`, {
 
 globalStyle(
   `
-    ${datepicker} .react-datepicker__month, 
+    ${datepicker} .react-datepicker__month,
     ${datepicker} .react-datepicker__children-container
   `,
   {
@@ -126,8 +126,8 @@ globalStyle(`${datepicker} .react-datepicker__month`, {
 
 globalStyle(
   `
-    ${datepicker} .react-datepicker__day, 
-    ${datepicker} .react-datepicker__month-text, 
+    ${datepicker} .react-datepicker__day,
+    ${datepicker} .react-datepicker__month-text,
     ${datepicker} .react-datepicker__year-text,
     ${datepicker} ${time}
   `,
@@ -146,8 +146,8 @@ globalStyle(
 
 globalStyle(
   `
-    ${datepicker} .react-datepicker__day:hover, 
-    ${datepicker} .react-datepicker__month-text:hover, 
+    ${datepicker} .react-datepicker__day:hover,
+    ${datepicker} .react-datepicker__month-text:hover,
     ${datepicker} .react-datepicker__year-text:hover,
     ${datepicker} ${time}:hover
   `,
@@ -160,8 +160,8 @@ globalStyle(
 
 globalStyle(
   `
-    ${datepicker} .react-datepicker__day:focus-within, 
-    ${datepicker} .react-datepicker__month-text:focus-within, 
+    ${datepicker} .react-datepicker__day:focus-within,
+    ${datepicker} .react-datepicker__month-text:focus-within,
     ${datepicker} .react-datepicker__year-text:focus-within,
     ${datepicker} .react-datepicker__time-list-item:focus-within
   `,
@@ -173,7 +173,7 @@ globalStyle(
 
 globalStyle(
   `
-    ${datepicker} .react-datepicker__day--today, 
+    ${datepicker} .react-datepicker__day--today,
     ${datepicker} .react-datepicker__month-text--today,
     ${datepicker} .react-datepicker__year-text--today,
     ${datepicker} .react-datepicker__time-list--today
@@ -187,10 +187,10 @@ globalStyle(
 
 globalStyle(
   `
-    ${datepicker} .react-datepicker__day--keyboard-selected, 
+    ${datepicker} .react-datepicker__day--keyboard-selected,
     ${datepicker} .react-datepicker__month-text--keyboard-selected,
     ${datepicker} .react-datepicker__year-text--keyboard-selected
-   
+
   `,
   {
     backgroundColor: "transparent",
@@ -199,7 +199,7 @@ globalStyle(
 
 globalStyle(
   `
-    ${datepicker} .react-datepicker__day--selected, 
+    ${datepicker} .react-datepicker__day--selected,
     ${datepicker} .react-datepicker__month-text--selected,
     ${datepicker} .react-datepicker__year-text--selected,
     ${datepicker} .react-datepicker__time-list-item--selected,

@@ -21,7 +21,7 @@ const card = recipe({
     borderColor: varsThemeBase.colors.border.subdued,
     gap: varsThemeBase.spacing["3xs"],
     color: varsThemeBase.colors.content.primary,
-    fontFamily: varsThemeBase.fontFamily.inter,
+    fontFamily: varsThemeBase.fontFamily.base,
   },
   variants: {
     /**
