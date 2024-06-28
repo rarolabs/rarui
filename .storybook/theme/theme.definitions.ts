@@ -14,7 +14,7 @@ export const light = create({
   appBg: tokens.color.light.surface.secondary.value,
   barBg: tokens.color.light.surface.secondary.value,
   appContentBg: tokens.color.light.surface.primary.value,
-  appPreviewBg: tokens.color.light.surface.secondary.value,
+  appPreviewBg: tokens.color.light.surface.primary.value,
   appBorderColor: tokens.color.light.border.subdued.value,
   textColor: tokens.color.light.content.primary.value,
 });
@@ -26,7 +26,7 @@ export const dark = create({
   appBg: tokens.color.dark.surface.secondary.value,
   barBg: tokens.color.dark.surface.secondary.value,
   appContentBg: tokens.color.dark.surface.primary.value,
-  appPreviewBg: tokens.color.dark.surface.secondary.value,
+  appPreviewBg: tokens.color.dark.surface.primary.value,
   appBorderColor: tokens.color.dark.border.subdued.value,
   textColor: tokens.color.dark.content.primary.value,
 });
