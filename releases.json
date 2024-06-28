@@ -15,6 +15,21 @@
     }
   },
   {
+    "package": "@rarui-react/components 1.32.0",
+    "description": "## 2024-06-27 `1.32.0`\n\n#### 🐛 Bug fixes\n\n- Removed _on-[variant]-hover_ and _on-[variant]-press_ backgroundColor options of `Box` component. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.32.0",
+    "tagName": "rarui-react/components-1.32.0",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/components",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
     "package": "@rarui/styles 1.30.4",
     "description": "## 2024-06-27 `1.30.4`\n\n#### 🐛 Bug fixes\n\n- Fixed hover and pressed state for tonal variant for `IconButton` and `Button` component. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Removed color option `on-success-hover` for light and dark theme. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Removed color option `on-success-press` for light and dark theme. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Removed color option `on-warning-hover` for light and dark theme. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Removed color option `on-warning-press\" for light and dark theme]`. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Removed color option `on-brand-hover`. for light and dark theme([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Removed color option `on-brand-press`. for light and dark theme([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Removed color option `on-error-hover`. for light and dark theme([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Removed color option `on-error-press`. for light and dark theme([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Removed color option `on-info-hover`. ( for light and dark theme[#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Removed color option `on-info-press`. ( for light and dark theme[#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
     "version": "1.30.4",
