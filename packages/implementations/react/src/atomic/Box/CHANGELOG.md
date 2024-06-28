@@ -2,6 +2,21 @@
 
 A low-level utility component that accepts styled system props to enable custom theme-aware styling
 
+## 2024-06-27 `2.0.0`
+
+#### 🐛 Bug fixes
+
+- Removed backgroundColor option `on-success-hover`. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Removed backgroundColor option `on-success-press`. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Removed backgroundColor option `on-warning-hover`. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Removed backgroundColor option `on-warning-press"]`. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Removed backgroundColor option `on-brand-hover`. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Removed backgroundColor option `on-brand-press`. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Removed backgroundColor option `on-error-hover`. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Removed backgroundColor option `on-error-press`. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Removed backgroundColor option `on-info-hover`. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Removed backgroundColor option `on-info-press`. ([#64](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/64) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-05-07 `1.1.0`
 
 #### 🎉 New features
