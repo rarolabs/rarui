@@ -1,6 +1,7 @@
 import { recipe } from "@vanilla-extract/recipes";
 import { style } from "@vanilla-extract/css";
 import { varsThemeBase } from "../../../themes";
+import { createRainbowSprinkles, defineProperties } from "rainbow-sprinkles";
 
 /* -------------------------------------------------------------------------------------------------
  * Style
@@ -68,6 +69,13 @@ const sideNavigation = recipe({
   },
 });
 
+const sprinklesProperties = defineProperties({
+  dynamicProperties: {
+    paddingLeft: true,
+  },
+});
+
+export const paddingSprinkle = createRainbowSprinkles(sprinklesProperties);
 const name = recipe({
   base: {
     fontSize: varsThemeBase.fontSize.button.s,

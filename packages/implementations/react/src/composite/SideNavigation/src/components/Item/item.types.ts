@@ -11,6 +11,11 @@ interface SideNavigationItemTypings {
    * Determines if the item is active or not.
    */
   active?: boolean;
+
+  /**
+   * Determines the level of nesting for the item.
+   */
+  level?: number;
 }
 
 export type SideNavigationItemProperties = SideNavigationItemTypings;

@@ -10,6 +10,7 @@ import {
 } from "@rarui/typings";
 import { sideNavigation } from "@rarui/styles";
 import { SideNavigationItemProps } from "./item.types";
+import { varsThemeBase } from "../../../../../../../../styles/src/themes";
 
 const SideNavigationItem = forwardRef(
   (
@@ -19,12 +20,16 @@ const SideNavigationItem = forwardRef(
       as: As = "button",
       children,
       active,
+      level = 1,
       ...props
     }: SideNavigationItemProps & { as: any },
     ref,
   ) => {
     const innerRef = useRef<HTMLButtonElement>(null);
     useRefObjectAsForwardedRef(ref, innerRef);
+    const { className, otherProps, style } = sideNavigation.paddingSprinkle({
+      paddingLeft: `calc(${level} * ${varsThemeBase.spacing["2xs"]}`,
+    });
 
     useImperativeHandle<
       HTMLButtonElement | HTMLAnchorElement | null,
@@ -49,10 +54,13 @@ const SideNavigationItem = forwardRef(
       <As
         {...props}
         className={[
+          className,
           sideNavigation.classnames.sideNavigation({ active }),
           sideNavigation.classnames.sideNavigationItem,
         ].join(" ")}
         ref={innerRef}
+        style={style}
+        {...otherProps}
       >
         {children}
       </As>
