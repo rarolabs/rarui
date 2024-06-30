@@ -22,7 +22,7 @@ const progressBar = style({
 const circle = recipe({
   base: {
     fontWeight: varsThemeBase.fontWeight.bold,
-    fontFamily: varsThemeBase.fontFamily.inter,
+    fontFamily: varsThemeBase.fontFamily.base,
     fontSize: varsThemeBase.fontSize.heading.l,
     lineHeight: varsThemeBase.lineHeight.heading.l,
   },

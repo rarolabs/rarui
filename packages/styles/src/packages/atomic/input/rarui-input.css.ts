@@ -85,7 +85,7 @@ const input = recipe({
     boxSizing: "border-box",
     border: "none",
     padding: varsThemeBase.spacing["2xs"],
-    fontFamily: varsThemeBase.fontFamily.inter,
+    fontFamily: varsThemeBase.fontFamily.base,
     backgroundColor: varsThemeBase.colors.surface.primary,
     color: varsThemeBase.colors.content.primary,
     ":focus-within": {

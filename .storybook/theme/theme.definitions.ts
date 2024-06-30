@@ -3,7 +3,6 @@ import tokens from "@rarui/tokens/dist/js/tokens";
 
 export const base = {
   brandTitle: "RarUI",
-  brandImage: "./static/logo-raroui.png",
   brandTarget: "_self",
   fontBase: "inter",
 };
@@ -11,6 +10,7 @@ export const base = {
 export const light = create({
   ...base,
   base: "light",
+  brandImage: "./static/rarui.svg",
   appBg: tokens.color.light.surface.secondary.value,
   barBg: tokens.color.light.surface.secondary.value,
   appContentBg: tokens.color.light.surface.primary.value,
@@ -22,6 +22,7 @@ export const light = create({
 export const dark = create({
   ...base,
   base: "dark",
+  brandImage: "./static/rarui_dark.svg",
   appBg: tokens.color.dark.surface.secondary.value,
   barBg: tokens.color.dark.surface.secondary.value,
   appContentBg: tokens.color.dark.surface.primary.value,

@@ -1,7 +1,7 @@
 {
   "font": {
     "family": {
-      "inter": {
+      "base": {
         "value": "Inter, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', arial, sans-serif",
         "comment": "Font family value by default, to use in css and set components font."
       }
@@ -15,7 +15,7 @@
           "value": "1.25rem"
         },
         "s": {
-          "value": "1.25rem"
+          "value": "1.5rem"
         },
         "m": {
           "value": "1.75rem"
@@ -121,10 +121,10 @@
           "value": "1.25rem"
         },
         "m": {
-          "value": "1.375rem"
+          "value": "1.5rem"
         },
         "l": {
-          "value": "1.5rem"
+          "value": "1.75rem"
         },
         "xl": {
           "value": "2rem"

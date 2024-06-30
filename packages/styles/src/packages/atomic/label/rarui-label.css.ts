@@ -9,7 +9,7 @@ const label = recipe({
     color: varsThemeBase.colors.content.primary,
     fontSize: varsThemeBase.fontSize.label.m,
     lineHeight: varsThemeBase.lineHeight.label.m,
-    fontFamily: varsThemeBase.fontFamily.inter,
+    fontFamily: varsThemeBase.fontFamily.base,
     fontWeight: varsThemeBase.fontWeight.medium,
   },
   variants: {

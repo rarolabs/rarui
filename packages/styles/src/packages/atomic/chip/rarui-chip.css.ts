@@ -24,7 +24,7 @@ const chip = recipe({
     overflow: "hidden",
     gap: varsThemeBase.spacing["3xs"],
     fontWeight: varsThemeBase.fontWeight.medium,
-    fontFamily: varsThemeBase.fontFamily.inter,
+    fontFamily: varsThemeBase.fontFamily.base,
     borderWidth: varsThemeBase.shape.border.width[1],
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
     borderColor: varsThemeBase.colors.border.subdued,
@@ -147,13 +147,13 @@ export const overlay = style({
 });
 
 globalStyle(`${chip()}:hover ${overlay}`, {
-  borderColor: varsThemeBase.colors.surface["on-brand-hover"],
+  borderColor: varsThemeBase.colors.surface.hover,
 });
 
 globalStyle(`${chip()}:active ${overlay}`, {
   opacity: 1,
-  backgroundColor: varsThemeBase.colors.surface["on-brand-press"],
-  borderColor: varsThemeBase.colors.surface["on-brand-press"],
+  backgroundColor: varsThemeBase.colors.surface.press,
+  borderColor: varsThemeBase.colors.surface.press,
 });
 
 globalStyle(`${chip()}:disabled ${overlay}`, {

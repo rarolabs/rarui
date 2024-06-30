@@ -19,7 +19,7 @@ const button = recipe({
     fontWeight: varsThemeBase.fontWeight.semiBold,
     lineHeight: varsThemeBase.lineHeight.button.l,
     fontSize: varsThemeBase.fontSize.button.l,
-    fontFamily: varsThemeBase.fontFamily.inter,
+    fontFamily: varsThemeBase.fontFamily.base,
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
     borderWidth: varsThemeBase.shape.border.width[1],
     borderStyle: "solid",
@@ -129,11 +129,11 @@ const button = recipe({
       solid: {
         selectors: {
           "&:hover:after": {
-            backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
+            backgroundColor: varsThemeBase.colors.surface["invert-hover"],
           },
           "&:active:after": {
-            borderColor: varsThemeBase.colors.surface.press,
-            backgroundColor: varsThemeBase.colors.surface.press,
+            borderColor: varsThemeBase.colors.surface["invert-press"],
+            backgroundColor: varsThemeBase.colors.surface["invert-press"],
           },
         },
       },
@@ -266,8 +266,17 @@ const button = recipe({
         ...buttonVariants.text.brand,
         backgroundColor: varsThemeBase.colors.surface["brand-subdued"],
         selectors: {
+          "&:hover": {
+            backgroundColor: varsThemeBase.colors.surface["brand-subdued"],
+          },
+          "&:active": {
+            backgroundColor: varsThemeBase.colors.surface["brand-subdued"],
+          },
           "&:hover:after": {
             backgroundColor: varsThemeBase.colors.surface["brand-hover"],
+          },
+          "&:active:after": {
+            backgroundColor: varsThemeBase.colors.surface["brand-press"],
           },
         },
       },
@@ -281,8 +290,17 @@ const button = recipe({
         ...buttonVariants.text.danger,
         backgroundColor: varsThemeBase.colors.surface["error-subdued"],
         selectors: {
+          "&:hover": {
+            backgroundColor: varsThemeBase.colors.surface["error-subdued"],
+          },
+          "&:active": {
+            backgroundColor: varsThemeBase.colors.surface["error-subdued"],
+          },
           "&:hover:after": {
             backgroundColor: varsThemeBase.colors.surface["error-hover"],
+          },
+          "&:active:after": {
+            backgroundColor: varsThemeBase.colors.surface["error-press"],
           },
         },
       },
@@ -296,8 +314,17 @@ const button = recipe({
         ...buttonVariants.text.success,
         backgroundColor: varsThemeBase.colors.surface["success-subdued"],
         selectors: {
+          "&:hover": {
+            backgroundColor: varsThemeBase.colors.surface["success-subdued"],
+          },
+          "&:active": {
+            backgroundColor: varsThemeBase.colors.surface["success-subdued"],
+          },
           "&:hover:after": {
             backgroundColor: varsThemeBase.colors.surface["success-hover"],
+          },
+          "&:active:after": {
+            backgroundColor: varsThemeBase.colors.surface["success-press"],
           },
         },
       },
@@ -311,8 +338,17 @@ const button = recipe({
         ...buttonVariants.text.warning,
         backgroundColor: varsThemeBase.colors.surface["warning-subdued"],
         selectors: {
+          "&:hover": {
+            backgroundColor: varsThemeBase.colors.surface["warning-subdued"],
+          },
+          "&:active": {
+            backgroundColor: varsThemeBase.colors.surface["warning-subdued"],
+          },
           "&:hover:after": {
             backgroundColor: varsThemeBase.colors.surface["warning-hover"],
+          },
+          "&:active:after": {
+            backgroundColor: varsThemeBase.colors.surface["warning-press"],
           },
         },
       },
@@ -326,8 +362,17 @@ const button = recipe({
         ...buttonVariants.text.neutral,
         backgroundColor: varsThemeBase.colors.surface.secondary,
         selectors: {
+          "&:hover": {
+            backgroundColor: varsThemeBase.colors.surface.secondary,
+          },
+          "&:active": {
+            backgroundColor: varsThemeBase.colors.surface.secondary,
+          },
           "&:hover:after": {
             backgroundColor: varsThemeBase.colors.surface.hover,
+          },
+          "&:active:after": {
+            backgroundColor: varsThemeBase.colors.surface.press,
           },
         },
       },
@@ -341,8 +386,17 @@ const button = recipe({
         ...buttonVariants.text.inverted,
         backgroundColor: varsThemeBase.colors.surface["invert-secondary"],
         selectors: {
+          "&:hover": {
+            backgroundColor: varsThemeBase.colors.surface["invert-secondary"],
+          },
+          "&:active": {
+            backgroundColor: varsThemeBase.colors.surface["invert-secondary"],
+          },
           "&:hover:after": {
             backgroundColor: varsThemeBase.colors.surface["invert-hover"],
+          },
+          "&:active:after": {
+            backgroundColor: varsThemeBase.colors.surface["invert-press"],
           },
         },
       },

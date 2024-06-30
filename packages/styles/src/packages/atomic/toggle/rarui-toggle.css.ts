@@ -223,14 +223,14 @@ globalStyle(
 globalStyle(
   `${toggle()}:has(${input}:checked) ${slider()}:not([aria-disabled='true']):hover:before`,
   {
-    backgroundColor: varsThemeBase.colors.surface["on-brand-hover"],
+    backgroundColor: varsThemeBase.colors.surface.hover,
   },
 );
 
 globalStyle(
   `${toggle()}:has(${input}:checked) ${slider()}:not([aria-disabled='true']):active:before`,
   {
-    backgroundColor: varsThemeBase.colors.surface["on-brand-press"],
+    backgroundColor: varsThemeBase.colors.surface.press,
   },
 );
 
