@@ -15,7 +15,7 @@ interface SideNavigationItemTypings {
   /**
    * Determines the level of nesting for the item.
    */
-  level?: number;
+  level?: "$1" | "$2";
 }
 
 export type SideNavigationItemProperties = SideNavigationItemTypings;

@@ -27,3 +27,10 @@ export const basic: Story = {
     children: "Title",
   },
 };
+
+export const levelTwo: Story = {
+  args: {
+    children: "Title",
+    level: "$2",
+  },
+};

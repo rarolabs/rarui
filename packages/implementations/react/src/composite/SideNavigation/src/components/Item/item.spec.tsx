@@ -22,6 +22,13 @@ describe("GIVEN <SideNavigation.Item />", () => {
       makeSut({ children: <div>My content</div> });
       expect(screen.getByText("My content")).toBeDefined();
     });
+
+    it("THEN should correctly render the submitted level", () => {
+      makeSut({ children: <div>My content</div>, level: "$2" });
+      expect(
+        screen.getByTestId("sidenavigation-item-element").getAttribute("class"),
+      ).toContain("paddingLeft-2");
+    });
   });
 
   describe("THEN should correctly render or not based on the active property", () => {
