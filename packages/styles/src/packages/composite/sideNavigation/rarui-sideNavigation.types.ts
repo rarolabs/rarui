@@ -4,8 +4,5 @@ import { sideNavigationStyles } from "./rarui-sideNavigation.css";
 
 export type SideNavigationVariants = RecipeVariants<
   typeof sideNavigationStyles.sideNavigation
->;
-
-export type SideNavigationItemVariants = RecipeVariants<
-  typeof sideNavigationStyles.sideNavigationItem
->;
+> &
+  RecipeVariants<typeof sideNavigationStyles.sideNavigationItem>;

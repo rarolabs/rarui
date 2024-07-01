@@ -5,4 +5,3 @@ export const sideNavigation = {
 };
 
 export type { SideNavigationVariants } from "./rarui-sideNavigation.types";
-export type { SideNavigationItemVariants } from "./rarui-sideNavigation.types";

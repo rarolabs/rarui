@@ -111,6 +111,9 @@ export const sideNavigationItem = recipe({
     },
   },
   variants: {
+    /**
+     * Determines the level of nesting for the item.
+     */
     level: {
       0: {
         paddingLeft: varsThemeBase.spacing.xs,

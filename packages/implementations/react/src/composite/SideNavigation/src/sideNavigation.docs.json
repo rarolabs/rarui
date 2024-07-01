@@ -1,7 +1,7 @@
 {
   "id": "sideNavigation",
   "name": "SideNavigation",
-  "totalProps": 6,
+  "totalProps": 7,
   "packageName": "@rarui-react/side-navigation",
   "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/side-navigation",
@@ -40,12 +40,19 @@
       "type": "boolean",
       "title": "active",
       "required": false
+    },
+    {
+      "description": "Determines the level of nesting for the item.",
+      "enum": [0, 1, 2],
+      "type": "number",
+      "title": "level",
+      "required": false
     }
   ],
   "subComponents": [
     {
       "name": "SideNavigation.Item",
-      "totalProps": 4,
+      "totalProps": 5,
       "props": [
         {
           "description": "A ref to the element rendered by this component. Because this component is polymorphic, the type will vary based on the value of the as prop.",
@@ -78,6 +85,13 @@
           "description": "Determines if the item is active or not.",
           "type": "boolean",
           "title": "active",
+          "required": false
+        },
+        {
+          "description": "Determines the level of nesting for the item.",
+          "enum": [0, 1, 2],
+          "type": "number",
+          "title": "level",
           "required": false
         }
       ]
