@@ -1,6 +1,4 @@
 import { recipe } from "@vanilla-extract/recipes";
-import { style } from "@vanilla-extract/css";
-import { createRainbowSprinkles, defineProperties } from "rainbow-sprinkles";
 import { varsThemeBase } from "../../../themes";
 
 /* -------------------------------------------------------------------------------------------------
@@ -69,19 +67,6 @@ const sideNavigation = recipe({
   },
 });
 
-const paddingProperties = {
-  0: varsThemeBase.spacing.xs,
-  1: varsThemeBase.spacing.md,
-  2: varsThemeBase.spacing["2xl"],
-};
-
-const sprinklesProperties = defineProperties({
-  staticProperties: {
-    paddingLeft: paddingProperties,
-  },
-});
-
-export const paddingSprinkle = createRainbowSprinkles(sprinklesProperties);
 const name = recipe({
   base: {
     fontSize: varsThemeBase.fontSize.button.s,
@@ -116,12 +101,27 @@ const description = recipe({
   },
 });
 
-export const sideNavigationItem = style({
-  backgroundColor: "transparent",
-  fontSize: varsThemeBase.fontSize.button.s,
-  textDecoration: "none",
-  ":after": {
+export const sideNavigationItem = recipe({
+  base: {
     backgroundColor: "transparent",
+    fontSize: varsThemeBase.fontSize.button.s,
+    textDecoration: "none",
+    ":after": {
+      backgroundColor: "transparent",
+    },
+  },
+  variants: {
+    level: {
+      0: {
+        paddingLeft: varsThemeBase.spacing.xs,
+      },
+      1: {
+        paddingLeft: varsThemeBase.spacing.md,
+      },
+      2: {
+        paddingLeft: varsThemeBase.spacing["2xl"],
+      },
+    },
   },
 });
 

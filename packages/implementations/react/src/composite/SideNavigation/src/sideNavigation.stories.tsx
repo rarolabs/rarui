@@ -44,7 +44,10 @@ export const withLevel: Story = {
     children: (
       <>
         <SideNavigation.Item>About</SideNavigation.Item>
-        <SideNavigation.Item level="$2" active as="a" href="/">
+        <SideNavigation.Item level={1} as="a" href="/">
+          History
+        </SideNavigation.Item>
+        <SideNavigation.Item level={2} active as="a" href="/">
           Link
         </SideNavigation.Item>
       </>

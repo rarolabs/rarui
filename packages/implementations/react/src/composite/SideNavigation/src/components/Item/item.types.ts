@@ -1,3 +1,4 @@
+import { SideNavigationItemVariants } from "@rarui/styles";
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
 interface SideNavigationItemTypings {
@@ -11,13 +12,9 @@ interface SideNavigationItemTypings {
    * Determines if the item is active or not.
    */
   active?: boolean;
-
-  /**
-   * Determines the level of nesting for the item.
-   */
-  level?: "$0" | "$1" | "$2";
 }
 
-export type SideNavigationItemProperties = SideNavigationItemTypings;
+export type SideNavigationItemProperties = SideNavigationItemTypings &
+  SideNavigationItemVariants;
 export type SideNavigationItemProps = SideNavigationItemProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

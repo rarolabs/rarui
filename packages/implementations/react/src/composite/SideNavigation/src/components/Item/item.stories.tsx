@@ -28,9 +28,16 @@ export const basic: Story = {
   },
 };
 
+export const levelOne: Story = {
+  args: {
+    children: "Title",
+    level: 1,
+  },
+};
+
 export const levelTwo: Story = {
   args: {
     children: "Title",
-    level: "$2",
+    level: 2,
   },
 };

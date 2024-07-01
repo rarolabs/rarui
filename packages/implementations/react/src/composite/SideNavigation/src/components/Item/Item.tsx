@@ -19,16 +19,13 @@ const SideNavigationItem = forwardRef(
       as: As = "button",
       children,
       active,
-      level = "$0",
+      level = 0,
       ...props
     }: SideNavigationItemProps & { as: any },
     ref,
   ) => {
     const innerRef = useRef<HTMLButtonElement>(null);
     useRefObjectAsForwardedRef(ref, innerRef);
-    const { className, otherProps, style } = sideNavigation.paddingSprinkle({
-      paddingLeft: level,
-    });
 
     useImperativeHandle<
       HTMLButtonElement | HTMLAnchorElement | null,
@@ -53,13 +50,10 @@ const SideNavigationItem = forwardRef(
       <As
         {...props}
         className={[
-          className,
           sideNavigation.classnames.sideNavigation({ active }),
-          sideNavigation.classnames.sideNavigationItem,
+          sideNavigation.classnames.sideNavigationItem({ level }),
         ].join(" ")}
         ref={innerRef}
-        style={style}
-        {...otherProps}
       >
         {children}
       </As>
