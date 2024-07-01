@@ -33,7 +33,13 @@ interface SelectTyping {
    * This function receives an array of SelectOption objects representing the selected options.
    */
   onChange?: (selectedOptions: string | string[]) => void;
+  /**
+   * Fazer
+   */
   multiple?: boolean;
+  /**
+   * Fazer
+   */
   defaultValue?: string | string[];
   /**
    * If true, the Select component is shown.

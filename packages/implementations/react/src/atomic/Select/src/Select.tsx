@@ -30,7 +30,7 @@ const Select: React.FC<SelectProps> = forwardRef(
       enabledFlip,
       position,
       maxHeight,
-
+      zIndex,
       onChange,
       ...props
     }: SelectProps,
@@ -61,6 +61,7 @@ const Select: React.FC<SelectProps> = forwardRef(
         portalId={portalId}
         enabledFlip={enabledFlip}
         position={position}
+        zIndex={zIndex}
         content={
           <div
             className={[select.classnames.list, className].join(" ")}
