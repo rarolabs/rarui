@@ -6,10 +6,11 @@ import { DatepickerHeader } from "./Header";
 import { DatepickerHeaderProps } from "./header.types";
 
 const makeSut = (props?: Partial<DatepickerHeaderProps>) => {
+  const date = props?.date || new Date();
   render(
     <DatepickerHeader
       {...(props as ReactDatePickerCustomHeaderProps)}
-      date={new Date()}
+      date={date}
       data-testid="header-element"
     />,
   );

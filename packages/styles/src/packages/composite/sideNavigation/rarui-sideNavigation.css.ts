@@ -70,6 +70,7 @@ const sideNavigation = recipe({
 });
 
 const paddingProperties = {
+  0: varsThemeBase.spacing.xs,
   1: varsThemeBase.spacing.md,
   2: varsThemeBase.spacing["2xl"],
 };

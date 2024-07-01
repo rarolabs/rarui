@@ -19,7 +19,7 @@ const SideNavigationItem = forwardRef(
       as: As = "button",
       children,
       active,
-      level = "$1",
+      level = "$0",
       ...props
     }: SideNavigationItemProps & { as: any },
     ref,
