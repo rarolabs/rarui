@@ -2,6 +2,12 @@
 
 Side navigation allows users to browse the content of a product or section. It can be used for single level or multi-level navigation.
 
+## 2024-06-28 `1.1.0`
+
+#### 🎉 New features
+
+- Added`level` property on SideNavigation Item ([#65](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/65) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-05-15 `1.0.0`
 
 #### 🎉 New features

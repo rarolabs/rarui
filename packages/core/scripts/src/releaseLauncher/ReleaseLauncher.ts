@@ -18,7 +18,12 @@ export class ReleaseLauncher {
     tagName: string,
     releaseName: string,
     description: string,
+    packageName: string,
   ) {
+    const _packageName =
+      packageName === "@rarui-react" || packageName === "@rarui-vuejs"
+        ? `${packageName}/components/`
+        : packageName;
     const response = await fetch(
       `${this.gitlabUrl}/api/v4/projects/${this.projectId}/releases?ref=main`,
       {
@@ -31,6 +36,15 @@ export class ReleaseLauncher {
           name: releaseName,
           tag_name: tagName,
           description: description,
+          assets: {
+            links: [
+              {
+                name: "npm",
+                url: `https://www.npmjs.com/package/${_packageName}`,
+                link_type: "package",
+              },
+            ],
+          },
         }),
       },
     );
@@ -64,6 +78,7 @@ export class ReleaseLauncher {
             release.tagName,
             release.package,
             release.description,
+            release.package,
           );
         }
       } catch (err) {

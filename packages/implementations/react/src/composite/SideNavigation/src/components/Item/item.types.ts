@@ -1,3 +1,4 @@
+import { SideNavigationVariants } from "@rarui/styles";
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
 interface SideNavigationItemTypings {
@@ -13,6 +14,7 @@ interface SideNavigationItemTypings {
   active?: boolean;
 }
 
-export type SideNavigationItemProperties = SideNavigationItemTypings;
+export type SideNavigationItemProperties = SideNavigationItemTypings &
+  Pick<SideNavigationVariants, "level">;
 export type SideNavigationItemProps = SideNavigationItemProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

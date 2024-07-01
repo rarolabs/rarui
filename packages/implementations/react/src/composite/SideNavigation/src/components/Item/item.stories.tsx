@@ -27,3 +27,17 @@ export const basic: Story = {
     children: "Title",
   },
 };
+
+export const levelOne: Story = {
+  args: {
+    children: "Title",
+    level: 1,
+  },
+};
+
+export const levelTwo: Story = {
+  args: {
+    children: "Title",
+    level: 2,
+  },
+};

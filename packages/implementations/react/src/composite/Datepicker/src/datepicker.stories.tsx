@@ -64,7 +64,7 @@ export const yearPicker: Story = {
 
 export const monthPicker: Story = {
   args: {
-    showYearPicker: true,
+    showMonthYearPicker: true,
     dateFormat: "MM/yyyy",
   },
 };

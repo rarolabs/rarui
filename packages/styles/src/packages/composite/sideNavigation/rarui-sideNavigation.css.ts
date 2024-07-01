@@ -1,5 +1,4 @@
 import { recipe } from "@vanilla-extract/recipes";
-import { style } from "@vanilla-extract/css";
 import { varsThemeBase } from "../../../themes";
 
 /* -------------------------------------------------------------------------------------------------
@@ -102,12 +101,30 @@ const description = recipe({
   },
 });
 
-export const sideNavigationItem = style({
-  backgroundColor: "transparent",
-  fontSize: varsThemeBase.fontSize.button.s,
-  textDecoration: "none",
-  ":after": {
+export const sideNavigationItem = recipe({
+  base: {
     backgroundColor: "transparent",
+    fontSize: varsThemeBase.fontSize.button.s,
+    textDecoration: "none",
+    ":after": {
+      backgroundColor: "transparent",
+    },
+  },
+  variants: {
+    /**
+     * Determines the level of nesting for the item.
+     */
+    level: {
+      0: {
+        paddingLeft: varsThemeBase.spacing.xs,
+      },
+      1: {
+        paddingLeft: varsThemeBase.spacing.md,
+      },
+      2: {
+        paddingLeft: varsThemeBase.spacing["2xl"],
+      },
+    },
   },
 });
 

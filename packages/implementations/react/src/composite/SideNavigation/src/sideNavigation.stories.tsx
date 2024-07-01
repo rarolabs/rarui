@@ -35,3 +35,22 @@ export const basic: Story = {
     ),
   },
 };
+
+export const withLevel: Story = {
+  args: {
+    name: "Title",
+    description: "Description",
+    leadingStart: <FolderOutlinedIcon size="medium" />,
+    children: (
+      <>
+        <SideNavigation.Item>About</SideNavigation.Item>
+        <SideNavigation.Item level={1} as="a" href="/">
+          History
+        </SideNavigation.Item>
+        <SideNavigation.Item level={2} active as="a" href="/">
+          Link
+        </SideNavigation.Item>
+      </>
+    ),
+  },
+};

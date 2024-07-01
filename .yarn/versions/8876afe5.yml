@@ -1,0 +1,7 @@
+releases:
+  "@rarui-react/side-navigation": minor
+  "@rarui/scripts": patch
+  "@rarui/styles": patch
+
+declined:
+  - "@rarui/design-system"
