@@ -19,16 +19,16 @@
       "required": true
     },
     {
+      "description": "Specifies the ID of the portal element where the modal should be rendered.\nThis can be useful for rendering the modal in a different part of the DOM, such as a modal or overlay.",
+      "type": "string",
+      "title": "portalId",
+      "required": false
+    },
+    {
       "description": "Callback fired when the component requests to be closed.",
       "type": "(open: boolean) => void;",
       "title": "onDismiss",
       "required": true
-    },
-    {
-      "description": "Id to be embedded in the portal element",
-      "type": "string",
-      "title": "portalId",
-      "required": false
     },
     {
       "description": "The zIndex property specifies the stack order of the box.",

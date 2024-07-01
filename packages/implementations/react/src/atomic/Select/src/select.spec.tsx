@@ -36,6 +36,7 @@ const makeSut = (
       id={id}
       name={name}
       options={rest?.options || options}
+      onChange={rest?.onChange || jest.fn()}
     />,
   );
 };

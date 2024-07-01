@@ -10,7 +10,7 @@ import {
   useInteractions,
   useRole,
 } from "@floating-ui/react";
-import { useTheme, modal } from "@rarui/styles";
+import { modal } from "@rarui/styles";
 import { Box } from "@rarui-react/box";
 import { ModalBody, ModalFooter, ModalHeader } from "./components";
 import { ModalManager } from "./contexts";
@@ -27,8 +27,6 @@ const Modal: React.FC<ModalProps> & ModalComponents = ({
   onDismiss,
   ...rest
 }: ModalProps) => {
-  const { refThemeProvider } = useTheme();
-
   const { context } = useFloating({
     open,
     onOpenChange: onDismiss,
@@ -57,10 +55,7 @@ const Modal: React.FC<ModalProps> & ModalComponents = ({
   );
 
   return (
-    <FloatingPortal
-      id={portalId ?? "rarui-modal"}
-      root={refThemeProvider?.current}
-    >
+    <FloatingPortal id={portalId ?? "theme-provider"}>
       {open && (
         <ModalManager.Provider value={contextManager}>
           <FloatingFocusManager context={context}>

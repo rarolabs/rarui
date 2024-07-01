@@ -1400,6 +1400,778 @@
       "required": false
     },
     {
+      "description": "The borderRadius property rounds the corners of an box's outer border edge.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "focus": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "focus"
+            },
+            "focusWithin": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "focusWithin"
+            },
+            "active": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "active"
+            },
+            "hover": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "hover"
+            },
+            "disabled": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "disabled"
+            },
+            "xs": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": [
+            "focus",
+            "focusWithin",
+            "active",
+            "hover",
+            "disabled",
+            "xs",
+            "md",
+            "lg",
+            "xl"
+          ]
+        },
+        {
+          "enum": [
+            "$2xl",
+            "$2xs",
+            "$button",
+            "$input",
+            "$lg",
+            "$md",
+            "$none",
+            "$pill",
+            "$sm",
+            "$xl",
+            "$xs"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "borderTopLeftRadius",
+      "required": false
+    },
+    {
+      "description": "The borderRadius property rounds the corners of an box's outer border edge.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "focus": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "focus"
+            },
+            "focusWithin": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "focusWithin"
+            },
+            "active": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "active"
+            },
+            "hover": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "hover"
+            },
+            "disabled": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "disabled"
+            },
+            "xs": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": [
+            "focus",
+            "focusWithin",
+            "active",
+            "hover",
+            "disabled",
+            "xs",
+            "md",
+            "lg",
+            "xl"
+          ]
+        },
+        {
+          "enum": [
+            "$2xl",
+            "$2xs",
+            "$button",
+            "$input",
+            "$lg",
+            "$md",
+            "$none",
+            "$pill",
+            "$sm",
+            "$xl",
+            "$xs"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "borderTopRightRadius",
+      "required": false
+    },
+    {
+      "description": "The borderRadius property rounds the corners of an box's outer border edge.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "focus": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "focus"
+            },
+            "focusWithin": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "focusWithin"
+            },
+            "active": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "active"
+            },
+            "hover": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "hover"
+            },
+            "disabled": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "disabled"
+            },
+            "xs": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": [
+            "focus",
+            "focusWithin",
+            "active",
+            "hover",
+            "disabled",
+            "xs",
+            "md",
+            "lg",
+            "xl"
+          ]
+        },
+        {
+          "enum": [
+            "$2xl",
+            "$2xs",
+            "$button",
+            "$input",
+            "$lg",
+            "$md",
+            "$none",
+            "$pill",
+            "$sm",
+            "$xl",
+            "$xs"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "borderBottomLeftRadius",
+      "required": false
+    },
+    {
+      "description": "The borderRadius property rounds the corners of an box's outer border edge.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "focus": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "focus"
+            },
+            "focusWithin": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "focusWithin"
+            },
+            "active": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "active"
+            },
+            "hover": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "hover"
+            },
+            "disabled": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "disabled"
+            },
+            "xs": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "$2xl",
+                "$2xs",
+                "$button",
+                "$input",
+                "$lg",
+                "$md",
+                "$none",
+                "$pill",
+                "$sm",
+                "$xl",
+                "$xs"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": [
+            "focus",
+            "focusWithin",
+            "active",
+            "hover",
+            "disabled",
+            "xs",
+            "md",
+            "lg",
+            "xl"
+          ]
+        },
+        {
+          "enum": [
+            "$2xl",
+            "$2xs",
+            "$button",
+            "$input",
+            "$lg",
+            "$md",
+            "$none",
+            "$pill",
+            "$sm",
+            "$xl",
+            "$xs"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "borderBottomRightRadius",
+      "required": false
+    },
+    {
       "description": "The borderWidth property sets the width of an box's border.",
       "anyOf": [
         {

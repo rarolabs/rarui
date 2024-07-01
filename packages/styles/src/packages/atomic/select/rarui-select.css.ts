@@ -17,6 +17,8 @@ const select = recipe({
     borderStyle: "solid",
     transition: "all 150ms ease",
     boxSizing: "border-box",
+    cursor: "pointer",
+    backgroundColor: varsThemeBase.colors.surface.primary,
     padding: `0 ${varsThemeBase.spacing["2xs"]}`,
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
     borderWidth: varsThemeBase.shape.border.width[1],
@@ -52,11 +54,6 @@ const select = recipe({
         borderColor: varsThemeBase.colors.border.success,
         ":hover": {
           borderColor: varsThemeBase.colors.border.success,
-          // "&[aria-disabled='true']": {
-          //   cursor: "not-allowed",
-          //   backgroundColor: varsThemeBase.colors.surface.disabled,
-          //   borderColor: varsThemeBase.colors.surface.disabled,
-          // },
         },
         ":focus": {
           borderColor: varsThemeBase.colors.border.success,

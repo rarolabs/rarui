@@ -1,6 +1,6 @@
-import React, { forwardRef, useEffect, useState } from "react";
+import React, { forwardRef, useState, LegacyRef } from "react";
 import { select } from "@rarui/styles";
-import { ArrowDownIcon, ArrowUpIcon, CloseIcon } from "@rarui/icons";
+import { ArrowDownIcon, CloseIcon, CheckIcon } from "@rarui/icons";
 import { Dropdown } from "@rarui-react/dropdown";
 import { Icon } from "@rarui-react/icon";
 import { Box } from "@rarui-react/box";
@@ -8,111 +8,110 @@ import { Chip } from "@rarui-react/chip";
 import { Checkbox } from "@rarui-react/checkbox";
 import { Text } from "@rarui-react/text";
 
-import { SelectOption, SelectProps } from "./select.types";
+import { SelectProps } from "./select.types";
+import { useSelect } from "./hooks";
 
 const Select: React.FC<SelectProps> = forwardRef(
-  ({
-    className: _className,
-    style: _style,
-    size = "medium",
-    children,
-    options,
-    value,
-    placeholder,
-    disabled,
-    appearance,
-    onChange,
-    ...props
-  }: SelectProps) => {
-    const [selectedOptions, setSelectedOptions] = useState<string[]>(
-      value ?? [],
-    );
+  (
+    {
+      className: _className,
+      style: _style,
+      size = "medium",
+      children,
+      open,
+      value,
+      defaultValue,
+      multiple,
+      options,
+      placeholder,
+      disabled,
+      appearance,
+      portalId,
+      enabledFlip,
+      position,
+      maxHeight,
 
-    const handleOptionChange = (option: SelectOption) => {
-      if (
-        selectedOptions.some(
-          (selectedOption) => selectedOption === option.value,
-        )
-      ) {
-        const newOptions = selectedOptions.filter(
-          (item) => item !== option.value,
-        );
-        setSelectedOptions(newOptions);
-        onChange?.(newOptions);
-      } else {
-        setSelectedOptions([...selectedOptions, option.value]);
-        onChange?.([...selectedOptions, option.value]);
-      }
-    };
+      onChange,
+      ...props
+    }: SelectProps,
+    ref,
+  ) => {
+    const {
+      selectedOptions,
+      handleSelect,
+      handleRemoveOption,
+      handleResetOptions,
+    } = useSelect({
+      value,
+      defaultValue,
+      multiple: !!multiple,
+      onChange,
+    });
 
-    const [open, setOpen] = useState(false);
-    const handleOpen = () => setOpen((prevState) => !prevState);
+    const [menuOpen, setMenuOpen] = useState(open);
 
-    const handleRemoveOption = (option: string) => {
-      setOpen(true);
-      const newOptions = selectedOptions.filter((item) => item !== option);
-      setSelectedOptions(newOptions);
-      onChange?.(newOptions);
-    };
-
-    const handleResetOptions = () => {
-      setOpen(true);
-      setSelectedOptions([]);
-      onChange?.([]);
-    };
-
-    // Atualiza o estado quando a prop value muda
-    useEffect(() => {
-      // Verificar se os valores são diferentes antes de atualizar o estado
-      const valueSet = new Set(value);
-      const selectedValueSet = new Set(selectedOptions);
-      if (
-        value &&
-        (valueSet.size !== selectedValueSet.size ||
-          ![...valueSet].every((val) => selectedValueSet.has(val)))
-      ) {
-        setSelectedOptions(value);
-      }
-    }, [value, selectedOptions]);
-
-    const { className, style } = select.sprinkle(props);
+    const { className, style } = select.sprinkle({ ...props, maxHeight });
 
     return (
       <Dropdown
         width="100%"
         matchReferenceWidth
         visible={open}
-        onVisibility={handleOpen}
         enabledClick={!disabled}
+        portalId={portalId}
+        enabledFlip={enabledFlip}
+        position={position}
         content={
           <div
             className={[select.classnames.list, className].join(" ")}
             style={style}
           >
             {children}
-            {options.map((option) => (
-              <Dropdown.Item
-                key={option.value}
-                as="label"
-                htmlFor={option.value}
-              >
-                <Checkbox
-                  id={option.value}
-                  label={option.label}
-                  onChange={() => handleOptionChange(option)}
-                  size="medium"
-                  checked={selectedOptions.some(
-                    (selectedOption) => selectedOption === option.value,
-                  )}
-                />
-              </Dropdown.Item>
+            {options?.map((option) => (
+              <React.Fragment key={option.value}>
+                {!multiple && (
+                  <Dropdown.Item
+                    key={option.value}
+                    selected={selectedOptions[0] === option.value}
+                    onClick={(event) => handleSelect(option.value, event)}
+                  >
+                    {option.label}
+                    {selectedOptions[0] === option.value && (
+                      <Icon
+                        color="$brand"
+                        source={<CheckIcon size="small" />}
+                      />
+                    )}
+                  </Dropdown.Item>
+                )}
+                {multiple && (
+                  <Dropdown.Item
+                    key={option.value}
+                    as="label"
+                    htmlFor={option.value}
+                  >
+                    <Checkbox
+                      size="medium"
+                      id={option.value}
+                      label={option.label}
+                      readOnly
+                      onClick={(event) => handleSelect(option.value, event)}
+                      checked={selectedOptions.some(
+                        (selectedOption) => selectedOption === option.value,
+                      )}
+                    />
+                  </Dropdown.Item>
+                )}
+              </React.Fragment>
             ))}
           </div>
         }
       >
         <div
+          ref={ref as LegacyRef<HTMLDivElement>}
           className={select.classnames.select({ size, appearance })}
           aria-disabled={disabled}
+          onClick={() => setMenuOpen(!menuOpen)}
           {...props}
         >
           {!selectedOptions.length && (
@@ -126,58 +125,62 @@ const Select: React.FC<SelectProps> = forwardRef(
           )}
           <Box
             display="flex"
+            alignItems="center"
             flex="1"
             gap="$3xs"
             overflow="hidden"
             padding="$4xs"
           >
-            {selectedOptions.map((selectedOption) => {
-              const option = options.find(
-                (opt) => opt.value === selectedOption,
-              );
-              return (
-                <Chip
-                  key={selectedOption}
-                  size="small"
-                  onClick={() => handleRemoveOption(selectedOption)}
-                  pill
-                  closeable
-                  data-testid={`option-selected-${selectedOption}`}
-                  textTransform="capitalize"
-                  disabled={disabled}
-                >
+            {selectedOptions?.map((option) => (
+              <React.Fragment key={option}>
+                {!multiple && (
                   <Text
                     textTransform="capitalize"
                     textOverflow="ellipsis"
                     whiteSpace="nowrap"
                     overflow="hidden"
                   >
-                    {option?.label}
+                    {options?.find((opt) => opt.value === option)?.label}
                   </Text>
-                </Chip>
-              );
-            })}
+                )}
+                {multiple && (
+                  <Chip
+                    size="small"
+                    onClick={(event) => handleRemoveOption(option, event)}
+                    pill
+                    closeable
+                    data-testid={`option-selected-${option}`}
+                    textTransform="capitalize"
+                    disabled={disabled}
+                  >
+                    <Text
+                      textTransform="capitalize"
+                      textOverflow="ellipsis"
+                      whiteSpace="nowrap"
+                      overflow="hidden"
+                    >
+                      {options.find((opt) => opt.value === option)?.label}
+                    </Text>
+                  </Chip>
+                )}
+              </React.Fragment>
+            ))}
           </Box>
           <Box display="flex" alignItems="center" gap="$4xs" paddingLeft="$3xs">
             {!!selectedOptions.length && (
               <button
                 type="button"
-                className={select.classnames.close}
-                onClick={handleResetOptions}
                 aria-label="clear options"
+                className={select.classnames.close}
                 disabled={disabled}
+                onClick={handleResetOptions}
               >
                 <Icon source={<CloseIcon size="small" />} />
               </button>
             )}
             <Icon
               color={disabled ? "$disabled" : "$currentColor"}
-              source={
-                <>
-                  {open && <ArrowUpIcon size="medium" />}
-                  {!open && <ArrowDownIcon size="medium" />}
-                </>
-              }
+              source={<ArrowDownIcon size="medium" />}
             />
           </Box>
         </div>

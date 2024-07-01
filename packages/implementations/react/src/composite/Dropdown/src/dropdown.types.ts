@@ -24,15 +24,6 @@ interface DropdownTyping {
    */
   content: ReactNode;
   /**
-   * If true, the component is shown.
-   */
-  visible?: boolean;
-  /**
-   * Function to control dropdown opening and closing.
-   * @TJS-type (visible: boolean) => void;
-   */
-  onVisibility?: (visible: boolean) => void;
-  /**
    * Conditional for displaying the dropdown arrow.
    * @default true
    */
@@ -58,15 +49,34 @@ interface DropdownTyping {
    */
   enabledClick?: boolean;
   /**
+   * Fazer
+   * @default true
+   */
+  enabledFlip?: boolean;
+  /**
    * Offest displaces the floating element from its core placement along the specified axes.
    * @default 10
    */
   offset?: number;
+  /**
+   * Specifies the ID of the portal element where the dropdown should be rendered.
+   * This can be useful for rendering the dropdown in a different part of the DOM, such as a modal or overlay.
+   */
+  portalId?: string;
+  /**
+   * If true, the component is shown.
+   */
+  visible?: boolean;
+  /**
+   * Function to control dropdown opening and closing.
+   * @TJS-type (visible: boolean) => void;
+   */
+  onVisibility?: (visible: boolean) => void;
 }
 
 export type DropdownProperties = DropdownTyping &
-  DropdownVariants &
-  DropdownSprinkle;
+  DropdownSprinkle &
+  Pick<DropdownVariants, "padding">;
 
 export type DropdownProps = DropdownProperties &
   Omit<HTMLAttributes<HTMLDivElement>, "content">;

@@ -26,15 +26,6 @@ interface TooltipTyping {
    */
   content: ReactNode;
   /**
-   * If true, the component is shown.
-   */
-  visible?: boolean;
-  /**
-   * Function to control popover opening and closing.
-   * @TJS-type (visible: boolean) => void;
-   */
-  onVisibility?: (visible: boolean) => void;
-  /**
    * Conditional for displaying the popover arrow.
    * @default true
    */
@@ -69,6 +60,20 @@ interface TooltipTyping {
    * @default 10
    */
   offset?: number;
+  /**
+   * Specifies the ID of the portal element where the tooltip should be rendered.
+   * This can be useful for rendering the tooltip in a different part of the DOM, such as a modal or overlay.
+   */
+  portalId?: string;
+  /**
+   * If true, the component is shown.
+   */
+  visible?: boolean;
+  /**
+   * Function to control popover opening and closing.
+   * @TJS-type (visible: boolean) => void;
+   */
+  onVisibility?: (visible: boolean) => void;
 }
 
 export type TooltipProperties = TooltipTyping & TooltipVariants;

@@ -1,9 +1,9 @@
 {
   "id": "select",
   "name": "Select",
-  "totalProps": 7,
+  "totalProps": 13,
   "packageName": "@rarui-react/select",
-  "version": "2.0.0",
+  "version": "2.1.0-rc.5",
   "docLink": "https://rarui.com.br/documentation/src-components/select",
   "props": [
     {
@@ -38,10 +38,17 @@
     },
     {
       "description": "Default selected values for the Select component.\nThis should be an array of SelectOption objects representing the selected options.",
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "string"
+        }
+      ],
       "title": "value",
       "required": false
     },
@@ -51,6 +58,66 @@
       "additionalProperties": false,
       "propertyOrder": [],
       "title": "onChange",
+      "required": false
+    },
+    {
+      "type": "boolean",
+      "title": "multiple",
+      "required": false
+    },
+    {
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "title": "defaultValue",
+      "required": false
+    },
+    {
+      "description": "If true, the Select component is shown.",
+      "type": "boolean",
+      "title": "open",
+      "required": false
+    },
+    {
+      "description": "Position of the select.",
+      "default": "bottom",
+      "enum": [
+        "bottom",
+        "bottom-end",
+        "bottom-start",
+        "left",
+        "left-end",
+        "left-start",
+        "right",
+        "right-end",
+        "right-start",
+        "top",
+        "top-end",
+        "top-start"
+      ],
+      "type": "string",
+      "title": "position",
+      "required": false
+    },
+    {
+      "description": "Fazer",
+      "default": true,
+      "type": "boolean",
+      "title": "enabledFlip",
+      "required": false
+    },
+    {
+      "description": "Specifies the ID of the portal element where the dropdown should be rendered.\nThis can be useful for rendering the dropdown in a different part of the DOM, such as a modal or overlay.",
+      "type": "string",
+      "title": "portalId",
       "required": false
     },
     {

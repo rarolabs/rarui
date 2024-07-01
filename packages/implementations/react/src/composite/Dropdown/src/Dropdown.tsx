@@ -1,5 +1,5 @@
 import React, { useMemo, useRef, useState } from "react";
-import { dropdown, useTheme } from "@rarui/styles";
+import { dropdown } from "@rarui/styles";
 import {
   useFloating,
   useInteractions,
@@ -24,10 +24,12 @@ const Dropdown: React.FC<DropdownProps> & DropdownComponents = ({
   children,
   content,
   visible,
+  portalId,
   arrow = false,
   offset = 10,
   enabledDismiss = true,
   enabledClick = true,
+  enabledFlip = true,
   matchReferenceWidth = false,
   position = "bottom-start",
   padding = "base",
@@ -48,11 +50,12 @@ const Dropdown: React.FC<DropdownProps> & DropdownComponents = ({
       element: arrowRef,
     }),
     shift(),
-    flip({
-      crossAxis: position.includes("-"),
-      fallbackAxisSideDirection: "end",
-      padding: 5,
-    }),
+    enabledFlip &&
+      flip({
+        crossAxis: position.includes("-"),
+        fallbackAxisSideDirection: "end",
+        padding: 5,
+      }),
     matchReferenceWidth &&
       size({
         apply({ rects, elements }) {
@@ -62,8 +65,6 @@ const Dropdown: React.FC<DropdownProps> & DropdownComponents = ({
         },
       }),
   ].filter((middleware) => middleware !== false);
-
-  const { refThemeProvider } = useTheme();
 
   const { context, floatingStyles } = useFloating({
     open,
@@ -99,10 +100,7 @@ const Dropdown: React.FC<DropdownProps> & DropdownComponents = ({
             })
           : children}
       </div>
-      <FloatingPortal
-        id="rarui-dropdown-floating"
-        root={refThemeProvider?.current}
-      >
+      <FloatingPortal id={portalId ?? "theme-provider"}>
         {open && (
           <div
             {...otherProps}
