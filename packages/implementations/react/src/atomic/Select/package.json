@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/select",
-  "version": "2.1.0-rc.8",
+  "version": "2.1.0-rc.9",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [

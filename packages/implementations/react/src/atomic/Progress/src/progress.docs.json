@@ -11,18 +11,98 @@
       "type": "number",
       "title": "percentage",
       "required": true
+    },
+    {
+      "description": "Specifies the background color of the progress.\nThis prop accepts one of the following values: \"$info\", \"$success\" or \"$brand\"",
+      "default": "$info",
+      "examples": "[\"$brand\", { xs: \"$brand\", md: \"$info\" }]",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$brand", "$info", "$success"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["$brand", "$info", "$success"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$brand", "$info", "$success"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["$brand", "$info", "$success"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["$brand", "$info", "$success"],
+          "type": "string"
+        }
+      ],
+      "title": "backgroundColor",
+      "required": false
     }
   ],
   "subComponents": [
     {
       "name": "Progress.Circle",
-      "totalProps": 2,
+      "totalProps": 3,
       "props": [
         {
           "description": "The progress percentage, represented as a number between 0 and 100.\nThis indicates the completion level of the process.",
           "type": "number",
           "title": "percentage",
           "required": true
+        },
+        {
+          "description": "Specifies the background color of the progress.\nThis prop accepts one of the following values: \"$info\", \"$success\" or \"$brand\"",
+          "default": "$info",
+          "examples": "[\"$brand\", { xs: \"$brand\", md: \"$info\" }]",
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "xs": {
+                  "enum": ["$brand", "$info", "$success"],
+                  "type": "string",
+                  "title": "xs"
+                },
+                "md": {
+                  "enum": ["$brand", "$info", "$success"],
+                  "type": "string",
+                  "title": "md"
+                },
+                "lg": {
+                  "enum": ["$brand", "$info", "$success"],
+                  "type": "string",
+                  "title": "lg"
+                },
+                "xl": {
+                  "enum": ["$brand", "$info", "$success"],
+                  "type": "string",
+                  "title": "xl"
+                }
+              },
+              "additionalProperties": false,
+              "propertyOrder": ["xs", "md", "lg", "xl"]
+            },
+            {
+              "enum": ["$brand", "$info", "$success"],
+              "type": "string"
+            }
+          ],
+          "title": "backgroundColor",
+          "required": false
         },
         {
           "description": "Specifies the size of the progress indicator.\nThis prop accepts one of the following values: \"large\" or \"small\".",

@@ -86,6 +86,7 @@ export const progressStyles = {
 export const progressBackgroundColorProperties = {
   info: varsThemeBase.colors.surface.info,
   success: varsThemeBase.colors.surface.success,
+  brand: varsThemeBase.colors.surface.brand,
 };
 
 const sprinklesProperties = defineProperties({

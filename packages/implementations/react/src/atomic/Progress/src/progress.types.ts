@@ -1,4 +1,5 @@
 import { HTMLAttributes } from "react";
+import { ProgressSprinkle } from "@rarui/styles";
 import { ProgressCircle } from "./components";
 
 export interface ProgressComponents {
@@ -13,5 +14,5 @@ export interface ProgressTyping {
   percentage: number;
 }
 
-export type ProgressProperties = ProgressTyping;
+export type ProgressProperties = ProgressTyping & ProgressSprinkle;
 export type ProgressProps = ProgressProperties & HTMLAttributes<HTMLDivElement>;

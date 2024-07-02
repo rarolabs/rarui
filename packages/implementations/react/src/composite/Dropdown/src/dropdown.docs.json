@@ -1,9 +1,9 @@
 {
   "id": "dropdown",
   "name": "Dropdown",
-  "totalProps": 15,
+  "totalProps": 16,
   "packageName": "@rarui-react/dropdown",
-  "version": "1.2.0-rc.5",
+  "version": "1.2.0-rc.9",
   "docLink": "https://rarui.com.br/documentation/src-components/dropdown",
   "props": [
     {
@@ -97,6 +97,94 @@
       "description": "Function to control dropdown opening and closing.",
       "type": "(visible: boolean) => void;",
       "title": "onVisibility",
+      "required": false
+    },
+    {
+      "description": "The zIndex property specifies the stack order of the box.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "$100",
+            "$200",
+            "$300",
+            "$400",
+            "$500",
+            "$600",
+            "$700",
+            "$800",
+            "$900"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "zIndex",
       "required": false
     },
     {
