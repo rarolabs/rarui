@@ -2,12 +2,6 @@
 
 The progress bar expresses an unspecified time to wait or displays the duration of a process
 
-## 2024-07-01 `1.0.4`
-
-#### 🐛 Bug fixes
-
-- Updated docs file. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
-
 ## 2024-07-02 `1.0.3`
 
 #### 🐛 Bug fixes
