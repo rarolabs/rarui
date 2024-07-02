@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/modal",
-  "version": "1.0.1",
+  "version": "1.1.0-rc.3",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -35,5 +35,6 @@
   },
   "devDependencies": {
     "@rarui/webpack": "workspace:^"
-  }
+  },
+  "stableVersion": "1.0.1"
 }

@@ -1,3 +1,4 @@
+import { DropdownVariants } from "@rarui/styles";
 import { HTMLAttributes, ReactNode } from "react";
 
 interface DropdownItemTyping {
@@ -17,6 +18,8 @@ interface DropdownItemTyping {
   icon?: ReactNode;
 }
 
-export type DropdownItemProperties = DropdownItemTyping;
+export type DropdownItemProperties = DropdownItemTyping &
+  Pick<DropdownVariants, "selected">;
+
 export type DropdownItemProps = DropdownItemProperties &
   HTMLAttributes<HTMLElement>;

@@ -1,5 +1,6 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { InputProperties, InputProps } from "@rarui-react/input";
+import { Middleware, Placement } from "@floating-ui/react";
 
 export interface DatepickerTyping {
   /**
@@ -59,11 +60,11 @@ export interface DatepickerTyping {
    * This can be useful for rendering the datepicker in a different part of the DOM, such as a modal or overlay.
    */
   portalId?: string;
-
   /**
    * Specifies whether the datepicker is disabled.
    */
   disabled?: boolean;
+  open?: boolean;
   /**
    * A callback function that is called when a date is selected.
    * This function receives the selected date as a parameter.
@@ -76,6 +77,9 @@ export interface DatepickerTyping {
    * @TJS-type (date: Date | Date[]) => void
    */
   onChange: (date: Date | Date[]) => void;
+
+  popperPlacement?: Placement;
+  popperModifiers?: Middleware[];
 }
 
 type DatepickerProperties = DatepickerTyping;

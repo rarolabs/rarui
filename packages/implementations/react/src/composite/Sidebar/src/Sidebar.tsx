@@ -7,7 +7,7 @@ import {
   useDismiss,
   useInteractions,
 } from "@floating-ui/react";
-import { sidebar, useTheme } from "@rarui/styles";
+import { sidebar } from "@rarui/styles";
 import { SidebarProps } from "./sidebar.types";
 
 const Sidebar: React.FC<SidebarProps> = ({
@@ -18,6 +18,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   padding = "$small",
   open = false,
   children,
+  portalId,
   onRemove,
   ...rest
 }) => {
@@ -27,7 +28,6 @@ const Sidebar: React.FC<SidebarProps> = ({
     padding,
   });
 
-  const { refThemeProvider } = useTheme();
   const { context } = useFloating({
     open,
     onOpenChange: onRemove,
@@ -37,7 +37,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   const { getFloatingProps } = useInteractions([dismiss]);
 
   return (
-    <FloatingPortal id="rarui-sidebar" root={refThemeProvider?.current}>
+    <FloatingPortal id={portalId ?? "theme-provider"}>
       <FloatingFocusManager context={context}>
         <div
           {...otherProps}

@@ -1,5 +1,6 @@
 import { InputHTMLAttributes, ReactNode } from "react";
 import { SelectSprinkle, SelectVariants } from "@rarui/styles";
+import { Placement } from "@floating-ui/react";
 
 export interface SelectOption {
   /**
@@ -26,16 +27,42 @@ interface SelectTyping {
    * Default selected values for the Select component.
    * This should be an array of SelectOption objects representing the selected options.
    */
-  value?: string[];
+  value?: string | string[];
   /**
    * Callback function that is called when the selected values change.
    * This function receives an array of SelectOption objects representing the selected options.
    */
-  onChange?: (values: string[]) => void;
+  onChange?: (selectedOptions: string | string[]) => void;
+  /**
+   * Fazer
+   */
+  multiple?: boolean;
+  /**
+   * Fazer
+   */
+  defaultValue?: string | string[];
+  /**
+   * If true, the Select component is shown.
+   */
+  open?: boolean;
+  /**
+   * Position of the select.
+   * @default bottom
+   */
+  position?: Placement;
+  /**
+   * Fazer
+   * @default true
+   */
+  enabledFlip?: boolean;
+  /**
+   * Specifies the ID of the portal element where the dropdown should be rendered.
+   * This can be useful for rendering the dropdown in a different part of the DOM, such as a modal or overlay.
+   */
+  portalId?: string;
 }
 
 export type SelectProperties = SelectTyping & SelectVariants & SelectSprinkle;
-
 export type SelectProps = SelectProperties &
   Omit<
     InputHTMLAttributes<HTMLInputElement>,

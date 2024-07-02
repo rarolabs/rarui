@@ -117,6 +117,30 @@ export interface BoxSprinkle extends BoxDynamicProperties {
     | AddDollar<keyof typeof borderRadiusProperties>
     | BoxConditions<AddDollar<keyof typeof borderRadiusProperties>>;
   /**
+   * The borderTopLeftRadius property rounds the corners of an box's outer border edge.
+   */
+  borderTopLeftRadius?:
+    | AddDollar<keyof typeof borderRadiusProperties>
+    | BoxConditions<AddDollar<keyof typeof borderRadiusProperties>>;
+  /**
+   * The borderTopRightRadius property rounds the corners of an box's outer border edge.
+   */
+  borderTopRightRadius?:
+    | AddDollar<keyof typeof borderRadiusProperties>
+    | BoxConditions<AddDollar<keyof typeof borderRadiusProperties>>;
+  /**
+   * The borderBottomLeftRadius property rounds the corners of an box's outer border edge.
+   */
+  borderBottomLeftRadius?:
+    | AddDollar<keyof typeof borderRadiusProperties>
+    | BoxConditions<AddDollar<keyof typeof borderRadiusProperties>>;
+  /**
+   * The borderBottomRightRadius property rounds the corners of an box's outer border edge.
+   */
+  borderBottomRightRadius?:
+    | AddDollar<keyof typeof borderRadiusProperties>
+    | BoxConditions<AddDollar<keyof typeof borderRadiusProperties>>;
+  /**
    * The borderWidth property sets the width of an box's border.
    */
   borderWidth?:
@@ -230,7 +254,6 @@ export interface BoxSprinkle extends BoxDynamicProperties {
   marginRight?:
     | AddDollar<keyof typeof marginProperties>
     | BoxConditions<AddDollar<keyof typeof marginProperties>>;
-
   /**
    * The zIndex property specifies the stack order of the box.
    */

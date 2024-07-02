@@ -2,6 +2,12 @@
 
 The modal component provides a base for popovers, suspended forms, tutorials, or any other content above the UI main surface.
 
+## 2024-07-02 `1.1.0`
+
+#### 🎉 New features
+
+- Added new `portalId` property to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-26 `1.0.1`
 
 #### 🐛 Bug fixes

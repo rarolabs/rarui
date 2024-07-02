@@ -5,4 +5,7 @@ export const progress = {
   sprinkle: progressSprinkle,
 };
 
-export type { ProgressVariants } from "./rarui-progress.types";
+export type {
+  ProgressVariants,
+  ProgressSprinkle,
+} from "./rarui-progress.types";

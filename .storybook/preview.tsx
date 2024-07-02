@@ -22,6 +22,7 @@ const preview: Preview = {
     docs: {
       container: ThemeDocsProvider,
       autodocs: true,
+      source: "code",
     },
   },
   decorators: [

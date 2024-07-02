@@ -3,8 +3,8 @@ import {
   defineProperties as defineRainbowProperties,
 } from "rainbow-sprinkles";
 import { recipe } from "@vanilla-extract/recipes";
-import { style } from "@vanilla-extract/css";
 import { mediaQueries, varsThemeBase } from "../../../themes";
+import { zIndexProperties } from "../../../properties";
 
 /* -------------------------------------------------------------------------------------------------
  * Style
@@ -42,30 +42,42 @@ const dropdown = recipe({
   },
 });
 
-const dropdownItem = style({
-  display: "flex",
-  justifyContent: "space-between",
-  cursor: "pointer",
-  backgroundColor: "transparent",
-  border: "none",
-  width: "100%",
-  boxSizing: "border-box",
-  transition: "all 150ms ease",
-  borderRadius: varsThemeBase.shape.border.radius["2xs"],
-  gap: varsThemeBase.spacing["3xs"],
-  padding: varsThemeBase.spacing["3xs"],
-  color: varsThemeBase.colors.content.primary,
-  fontWeight: varsThemeBase.fontWeight.medium,
-  fontSize: varsThemeBase.fontSize.button.s,
-  ":focus-within": {
-    outline: "none",
-    boxShadow: varsThemeBase.utils["focus-ring"],
+const dropdownItem = recipe({
+  base: {
+    display: "flex",
+    justifyContent: "space-between",
+    cursor: "pointer",
+    backgroundColor: "transparent",
+    border: "none",
+    width: "100%",
+    boxSizing: "border-box",
+    transition: "all 150ms ease",
+    borderRadius: varsThemeBase.shape.border.radius["2xs"],
+    gap: varsThemeBase.spacing["3xs"],
+    padding: varsThemeBase.spacing["3xs"],
+    color: varsThemeBase.colors.content.primary,
+    fontWeight: varsThemeBase.fontWeight.medium,
+    fontSize: varsThemeBase.fontSize.button.s,
+    ":focus-within": {
+      outline: "none",
+      boxShadow: varsThemeBase.utils["focus-ring"],
+    },
+    ":hover": {
+      backgroundColor: varsThemeBase.colors.surface.hover,
+    },
+    ":disabled": {
+      color: varsThemeBase.colors.content.disabled,
+    },
   },
-  ":hover": {
-    backgroundColor: varsThemeBase.colors.surface.hover,
-  },
-  ":disabled": {
-    color: varsThemeBase.colors.content.disabled,
+  variants: {
+    selected: {
+      true: {
+        backgroundColor: varsThemeBase.colors.surface["brand-subdued"],
+        ":hover": {
+          backgroundColor: varsThemeBase.colors.surface["brand-subdued"],
+        },
+      },
+    },
   },
 });
 
@@ -97,6 +109,9 @@ const defineProperties = defineRainbowProperties({
   dynamicProperties: {
     width: true,
     maxWidth: true,
+  },
+  staticProperties: {
+    zIndex: zIndexProperties,
   },
 });
 

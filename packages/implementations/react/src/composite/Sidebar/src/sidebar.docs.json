@@ -1,9 +1,9 @@
 {
   "id": "sidebar",
   "name": "Sidebar",
-  "totalProps": 7,
+  "totalProps": 8,
   "packageName": "@rarui-react/sidebar",
-  "version": "1.0.1",
+  "version": "1.1.0-rc.3",
   "docLink": "https://rarui.com.br/documentation/src-components/sidebar",
   "props": [
     {
@@ -13,16 +13,22 @@
       "required": true
     },
     {
-      "description": "Callback fired when the component requests to be closed.",
-      "type": "() => void;",
-      "title": "onRemove",
-      "required": false
-    },
-    {
       "description": "Determines if the sidebar is shown or not.",
       "default": true,
       "type": "boolean",
       "title": "open",
+      "required": false
+    },
+    {
+      "description": "Specifies the ID of the portal element where the sidebar should be rendered.\nThis can be useful for rendering the sidebar in a different part of the DOM, such as a modal or overlay.",
+      "type": "string",
+      "title": "portalId",
+      "required": false
+    },
+    {
+      "description": "Callback fired when the component requests to be closed.",
+      "type": "() => void;",
+      "title": "onRemove",
       "required": false
     },
     {

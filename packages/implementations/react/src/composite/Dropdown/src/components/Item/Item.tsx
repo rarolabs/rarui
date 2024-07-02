@@ -22,6 +22,7 @@ const DropdownItem = forwardRef(
       children,
       name,
       icon,
+      selected,
       ...props
     }: DropdownItemProps & { as: any },
     ref,
@@ -52,7 +53,7 @@ const DropdownItem = forwardRef(
     return (
       <As
         {...props}
-        className={dropdown.classnames.dropdownItem}
+        className={dropdown.classnames.dropdownItem({ selected })}
         ref={innerRef}
       >
         {(name || icon) && (

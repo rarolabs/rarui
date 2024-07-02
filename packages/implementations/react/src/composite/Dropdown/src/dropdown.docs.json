@@ -1,9 +1,9 @@
 {
   "id": "dropdown",
   "name": "Dropdown",
-  "totalProps": 13,
+  "totalProps": 16,
   "packageName": "@rarui-react/dropdown",
-  "version": "1.1.0",
+  "version": "1.2.0-rc.9",
   "docLink": "https://rarui.com.br/documentation/src-components/dropdown",
   "props": [
     {
@@ -17,18 +17,6 @@
       "type": "React.ReactNode",
       "title": "content",
       "required": true
-    },
-    {
-      "description": "If true, the component is shown.",
-      "type": "boolean",
-      "title": "visible",
-      "required": false
-    },
-    {
-      "description": "Function to control dropdown opening and closing.",
-      "type": "(visible: boolean) => void;",
-      "title": "onVisibility",
-      "required": false
     },
     {
       "description": "Conditional for displaying the dropdown arrow.",
@@ -80,6 +68,13 @@
       "required": false
     },
     {
+      "description": "Fazer",
+      "default": true,
+      "type": "boolean",
+      "title": "enabledFlip",
+      "required": false
+    },
+    {
       "description": "Offest displaces the floating element from its core placement along the specified axes.",
       "default": 10,
       "type": "number",
@@ -87,11 +82,109 @@
       "required": false
     },
     {
-      "description": "Specifies the padding inside the dropdown menu. This prop accepts one of the following values: \"base\" or \"none\".",
-      "default": "base",
-      "enum": ["base", "none"],
+      "description": "Specifies the ID of the portal element where the dropdown should be rendered.\nThis can be useful for rendering the dropdown in a different part of the DOM, such as a modal or overlay.",
       "type": "string",
-      "title": "padding",
+      "title": "portalId",
+      "required": false
+    },
+    {
+      "description": "If true, the component is shown.",
+      "type": "boolean",
+      "title": "visible",
+      "required": false
+    },
+    {
+      "description": "Function to control dropdown opening and closing.",
+      "type": "(visible: boolean) => void;",
+      "title": "onVisibility",
+      "required": false
+    },
+    {
+      "description": "The zIndex property specifies the stack order of the box.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "$100",
+            "$200",
+            "$300",
+            "$400",
+            "$500",
+            "$600",
+            "$700",
+            "$800",
+            "$900"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "zIndex",
       "required": false
     },
     {
@@ -356,12 +449,20 @@
       ],
       "title": "maxWidth",
       "required": false
+    },
+    {
+      "description": "Specifies the padding inside the dropdown menu. This prop accepts one of the following values: \"base\" or \"none\".",
+      "default": "base",
+      "enum": ["base", "none"],
+      "type": "string",
+      "title": "padding",
+      "required": false
     }
   ],
   "subComponents": [
     {
       "name": "Dropdown.Item",
-      "totalProps": 5,
+      "totalProps": 6,
       "props": [
         {
           "description": "A ref to the element rendered by this component. Because this component is polymorphic, the type will vary based on the value of the as prop.",
@@ -400,6 +501,11 @@
           "description": "An icon to be displayed alongside the dropdown item. This can be used to provide a visual representation of the item.",
           "type": "React.ReactNode",
           "title": "icon",
+          "required": false
+        },
+        {
+          "type": "boolean",
+          "title": "selected",
           "required": false
         }
       ]

@@ -2,6 +2,19 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-07-02 `1.34.0`
+
+#### 🎉 New features
+
+- Added new `borderTopLeftRadius`, `borderTopRightRadius`, `borderBottomLeftRadius` and `borderBottomRightRadius` properties to the component `Box`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `backgroundColor` property to the component `Progress`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `multiple`, `defaultValue`, `open`, `position`, `enabledFlip`, `portalId` and `zIndex` properties to the component `Select`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `portalId` property to the component `Tooltip`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `open`, `popperPlacement` and `popperModifiers` properties to the component `Datepicker`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `enabledFlip`, `portalId` and `zIndex` properties to the component `Dropdown`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `portalId` property to the component `Modal`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `open` and `portalId` properties to the component `Sidebar`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-01 `1.33.0`
 
 #### 🐛 Bug fixes
@@ -12,7 +25,7 @@
 
 Added `fontFamily` property to `Box` Component. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 
-## 2024-06-27 `1.32.1`
+## 2024-07-01 `1.32.1`
 
 #### 🐛 Bug fixes
 

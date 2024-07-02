@@ -1,9 +1,9 @@
 {
   "id": "tooltip",
   "name": "Tooltip",
-  "totalProps": 13,
+  "totalProps": 14,
   "packageName": "@rarui-react/tooltip",
-  "version": "1.0.1",
+  "version": "1.1.0-rc.3",
   "docLink": "https://rarui.com.br/documentation/src-components/tooltip",
   "props": [
     {
@@ -17,18 +17,6 @@
       "type": "React.ReactNode",
       "title": "content",
       "required": true
-    },
-    {
-      "description": "If true, the component is shown.",
-      "type": "boolean",
-      "title": "visible",
-      "required": false
-    },
-    {
-      "description": "Function to control popover opening and closing.",
-      "type": "(visible: boolean) => void;",
-      "title": "onVisibility",
-      "required": false
     },
     {
       "description": "Conditional for displaying the popover arrow.",
@@ -91,6 +79,24 @@
       "default": 10,
       "type": "number",
       "title": "offset",
+      "required": false
+    },
+    {
+      "description": "Specifies the ID of the portal element where the tooltip should be rendered.\nThis can be useful for rendering the tooltip in a different part of the DOM, such as a modal or overlay.",
+      "type": "string",
+      "title": "portalId",
+      "required": false
+    },
+    {
+      "description": "If true, the component is shown.",
+      "type": "boolean",
+      "title": "visible",
+      "required": false
+    },
+    {
+      "description": "Function to control popover opening and closing.",
+      "type": "(visible: boolean) => void;",
+      "title": "onVisibility",
       "required": false
     },
     {

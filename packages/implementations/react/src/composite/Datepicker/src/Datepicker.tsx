@@ -1,8 +1,7 @@
 import React, { createRef, useState } from "react";
-import Picker from "react-datepicker";
-
 import "react-datepicker/dist/react-datepicker.css";
 import { datepicker } from "@rarui/styles";
+import Picker from "react-datepicker";
 
 import { DatepickerProps } from "./datepicker.types";
 import {
@@ -21,6 +20,8 @@ const Datepicker: React.FC<DatepickerProps> = ({
   portalId,
   selected,
   disabled,
+  popperModifiers,
+  popperPlacement,
   onChange,
   ...props
 }) => {
@@ -57,6 +58,8 @@ const Datepicker: React.FC<DatepickerProps> = ({
           setDate(newDate);
         }
       }}
+      popperPlacement={popperPlacement}
+      popperModifiers={popperModifiers}
       {...props}
     >
       <DatepickerFooter

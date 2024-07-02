@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/tooltip",
-  "version": "1.0.1",
+  "version": "1.1.0-rc.3",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -37,5 +37,6 @@
     "@rarui-react/text": "workspace:^",
     "@rarui-react/title": "workspace:^",
     "@rarui/icons": "workspace:^"
-  }
+  },
+  "stableVersion": "1.0.1"
 }

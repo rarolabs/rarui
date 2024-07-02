@@ -36,6 +36,7 @@ const makeSut = (
       id={id}
       name={name}
       options={rest?.options || options}
+      onChange={rest?.onChange || jest.fn()}
     />,
   );
 };
@@ -90,6 +91,7 @@ describe("GIVEN <Select />", () => {
       onChange: mockedOnChange,
       options: mockedOptions,
       placeholder: "Placeholder",
+      multiple: true,
     });
     fireEvent.click(screen.getByTestId("select-element"));
     fireEvent.click(screen.getByLabelText(mockedOptions[0].label));
@@ -102,6 +104,7 @@ describe("GIVEN <Select />", () => {
     makeSut({
       value: mockedValues,
       options: mockedOptions,
+      multiple: true,
     });
     expect(
       screen.getByTestId<HTMLSelectElement>(
@@ -116,6 +119,7 @@ describe("GIVEN <Select />", () => {
       onChange: mockedOnChange,
       options: mockedOptions,
       placeholder: "Placeholder",
+      multiple: true,
     });
     fireEvent.click(screen.getByTestId("select-element"));
     fireEvent.click(screen.getByText(mockedOptions[0].label));

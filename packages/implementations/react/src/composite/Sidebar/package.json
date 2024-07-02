@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/sidebar",
-  "version": "1.0.1",
+  "version": "1.1.0-rc.3",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -33,5 +33,6 @@
     "@rarui-react/button": "workspace:^",
     "@rarui-react/text": "workspace:^",
     "@rarui/webpack": "workspace:^"
-  }
+  },
+  "stableVersion": "1.0.1"
 }

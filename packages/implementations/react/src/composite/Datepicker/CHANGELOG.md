@@ -2,6 +2,12 @@
 
 The Datepicker component lets you select a date value of a predetermined set.
 
+## 2024-07-02 `1.2.0`
+
+#### 🎉 New features
+
+- Added new `open`, `popperPlacement` and `popperModifiers` properties to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-25 `1.1.1`
 
 #### 🐛 Bug fixes

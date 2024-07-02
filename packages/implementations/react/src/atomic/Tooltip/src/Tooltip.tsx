@@ -1,5 +1,5 @@
 import React, { useMemo, useRef, useState } from "react";
-import { tooltip, useTheme } from "@rarui/styles";
+import { tooltip } from "@rarui/styles";
 import {
   useFloating,
   useHover,
@@ -26,6 +26,7 @@ const Tooltip: React.FC<TooltipProps> & TooltipComponents = ({
   children,
   content,
   visible,
+  portalId,
   arrow = true,
   offset = 10,
   enabledHover = true,
@@ -66,8 +67,6 @@ const Tooltip: React.FC<TooltipProps> & TooltipComponents = ({
         },
       }),
   ].filter((middleware) => middleware !== false);
-
-  const { refThemeProvider } = useTheme();
 
   const { context, floatingStyles } = useFloating({
     open,
@@ -112,10 +111,7 @@ const Tooltip: React.FC<TooltipProps> & TooltipComponents = ({
             })
           : children}
       </div>
-      <FloatingPortal
-        id="rarui-tooltip-floating"
-        root={refThemeProvider?.current}
-      >
+      <FloatingPortal id={portalId ?? "theme-provider"}>
         {open && (
           <div
             {...rest}
