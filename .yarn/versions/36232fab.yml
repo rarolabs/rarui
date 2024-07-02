@@ -1,7 +1,0 @@
-releases:
-  "@rarui-react/components": patch
-  "@rarui-react/progress": patch
-  "@rarui/styles": patch
-
-declined:
-  - "@rarui/design-system"
