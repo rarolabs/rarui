@@ -1,0 +1,47 @@
+[
+  {
+    "package": "@rarui-react/components 1.32.1",
+    "description": "## 2024-06-27 `1.32.1`\n\n#### 🐛 Bug fixes\n\n- Fixed `Progress.Circle` component completed before 100% ([#67](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/67) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))",
+    "version": "1.32.1",
+    "tagName": "rarui-react/components-1.32.1",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/components",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/progress 1.0.3",
+    "description": "## 2024-07-02 `1.0.3`\n\n#### 🐛 Bug fixes\n\n- Fixed `Progress.Circle` completed before 100% ([#67](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/67) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))",
+    "version": "1.0.3",
+    "tagName": "rarui-react/progress-1.0.3",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/progress",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui/styles 1.30.6",
+    "description": "## 2024-06-28 `1.30.6`\n\n#### 🐛 Bug fixes\n\n- Adjusted `max-height` on SideNavigation `open` ([#67](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/67) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))\n\n## 2024-06-28 `1.30.5`\n\n#### 🎉 New features\n\n- Adjusted `paddingLeft` to work with `level` property on SideNavigation Item ([#65](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/65) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))",
+    "version": "1.30.6",
+    "tagName": "rarui/styles-1.30.6",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui/styles",
+          "link_type": "package"
+        }
+      ]
+    }
+  }
+]
