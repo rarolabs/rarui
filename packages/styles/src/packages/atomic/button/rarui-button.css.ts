@@ -19,7 +19,7 @@ const button = recipe({
     fontWeight: varsThemeBase.fontWeight.semiBold,
     lineHeight: varsThemeBase.lineHeight.button.l,
     fontSize: varsThemeBase.fontSize.button.l,
-    fontFamily: varsThemeBase.fontFamily.base,
+    fontFamily: varsThemeBase.fontFamily.button,
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
     borderWidth: varsThemeBase.shape.border.width[1],
     borderStyle: "solid",

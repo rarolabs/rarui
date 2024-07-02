@@ -24,7 +24,7 @@ const chip = recipe({
     overflow: "hidden",
     gap: varsThemeBase.spacing["3xs"],
     fontWeight: varsThemeBase.fontWeight.medium,
-    fontFamily: varsThemeBase.fontFamily.base,
+    fontFamily: varsThemeBase.fontFamily.body,
     borderWidth: varsThemeBase.shape.border.width[1],
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
     borderColor: varsThemeBase.colors.border.subdued,

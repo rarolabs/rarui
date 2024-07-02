@@ -17,6 +17,7 @@ import {
   lineHeightProperties,
   fontSizeProperties,
   fontWeightProperties,
+  fontFamilyProperties,
 } from "../../../properties";
 
 interface BoxConditions<T> extends Conditions<T> {
@@ -344,6 +345,12 @@ export interface BoxSprinkle extends BoxDynamicProperties {
   marginY?:
     | AddDollar<keyof typeof marginProperties>
     | BoxConditions<AddDollar<keyof typeof marginProperties>>;
+  /**
+   * The fontFamily property sets the font family of the box.
+   */
+  fontFamily?:
+    | AddDollar<keyof typeof fontFamilyProperties>
+    | BoxConditions<AddDollar<keyof typeof fontFamilyProperties>>;
   /**
    * The fontSize property sets the size of the box.
    */

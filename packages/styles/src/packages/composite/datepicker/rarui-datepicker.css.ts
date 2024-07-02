@@ -8,7 +8,7 @@ import { varsThemeBase } from "../../../themes";
 
 const datepicker = style({
   border: "none",
-  fontFamily: varsThemeBase.fontFamily.base,
+  fontFamily: varsThemeBase.fontFamily.body,
   color: varsThemeBase.colors.content.primary,
   backgroundColor: varsThemeBase.colors.surface.primary,
   boxShadow: varsThemeBase.elevation.bottom[1],

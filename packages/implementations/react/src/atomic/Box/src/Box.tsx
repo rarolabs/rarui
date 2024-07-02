@@ -11,6 +11,7 @@ const Box = forwardRef(
       style: _style,
       as: As = "div",
       boxSizing = "border-box",
+      fontFamily = "$body",
       ...rest
     }: _BoxProps & { as: any },
     ref,

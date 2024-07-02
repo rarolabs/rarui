@@ -1,9 +1,17 @@
 {
   "font": {
     "family": {
-      "base": {
+      "body": {
         "value": "Inter, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', arial, sans-serif",
         "comment": "Font family value by default, to use in css and set components font."
+      },
+      "heading": {
+        "value": "Inter, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', arial, sans-serif",
+        "comment": "Font family value by default for headings, to use in css and set components font."
+      },
+      "button": {
+        "value": "Inter, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', arial, sans-serif",
+        "comment": "Font family value by default for headings, to use in css and set components font."
       }
     },
     "size": {

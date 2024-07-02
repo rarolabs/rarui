@@ -18,7 +18,7 @@ const badge = recipe({
     fontWeight: varsThemeBase.fontWeight.medium,
     lineHeight: varsThemeBase.lineHeight.button.m,
     fontSize: varsThemeBase.fontSize.button.m,
-    fontFamily: varsThemeBase.fontFamily.base,
+    fontFamily: varsThemeBase.fontFamily.body,
     borderRadius: varsThemeBase.shape.border.radius.pill,
   },
   variants: {

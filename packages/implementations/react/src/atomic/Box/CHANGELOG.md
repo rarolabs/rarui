@@ -2,6 +2,12 @@
 
 A low-level utility component that accepts styled system props to enable custom theme-aware styling
 
+## 2024-07-01 `2.1.0`
+
+#### 🎉 New features
+
+- Added new `fontFamily` property to the component. ([#67](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/67) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-27 `2.0.0`
 
 #### 🐛 Bug fixes

@@ -74,7 +74,9 @@ export const vars = createGlobalThemeContract(
       },
     },
     fontFamily: {
-      base: "",
+      body: "",
+      heading: "",
+      button: "",
     },
     fontSize: {
       hero: "",

@@ -16,7 +16,7 @@ const link = recipe({
     gap: varsThemeBase.spacing["4xs"],
     textDecoration: "underline",
     fontWeight: varsThemeBase.fontWeight.regular,
-    fontFamily: varsThemeBase.fontFamily.base,
+    fontFamily: varsThemeBase.fontFamily.body,
     backgroundColor: "transparent",
     border: "none",
     ":hover": {

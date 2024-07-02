@@ -30,7 +30,7 @@ export const textFontSizeProperties = {
 
 export const text = recipe({
   base: {
-    fontFamily: varsThemeBase.fontFamily.base,
+    fontFamily: varsThemeBase.fontFamily.body,
     fontWeight: varsThemeBase.fontWeight.regular,
     margin: 0,
   },

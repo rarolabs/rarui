@@ -81,7 +81,7 @@ const stepCircle = recipe({
     borderRadius: "50%",
     backgroundColor: varsThemeBase.colors.surface.disabled,
     color: varsThemeBase.colors.content.disabled,
-    fontFamily: varsThemeBase.fontFamily.base,
+    fontFamily: varsThemeBase.fontFamily.body,
     fontSize: varsThemeBase.fontSize.body.s,
     fontWeight: varsThemeBase.fontWeight.bold,
   },

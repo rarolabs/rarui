@@ -16,6 +16,7 @@ import {
   shadowProperties,
   lineHeightProperties,
   fontSizeProperties,
+  fontFamilyProperties,
   fontWeightProperties,
 } from "../../../properties";
 
@@ -122,6 +123,7 @@ const defineProperties = defineRainbowProperties({
     lineHeight: lineHeightProperties,
     fontWeight: fontWeightProperties,
     fontSize: fontSizeProperties,
+    fontFamily: fontFamilyProperties,
   },
   shorthands: {
     borderWidth: [
