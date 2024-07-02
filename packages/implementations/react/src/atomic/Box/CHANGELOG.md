@@ -6,7 +6,7 @@ A low-level utility component that accepts styled system props to enable custom 
 
 #### 🎉 New features
 
-- Added new `fontFamily` property to the component. ([#67](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/67) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Added new `fontFamily` property to the component. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 
 ## 2024-06-27 `2.0.0`
 

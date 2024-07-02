@@ -6,11 +6,11 @@
 
 #### 🐛 Bug fixes
 
-- Replaced fontFamily token `base` to `body`, `heading` and `button`. ([#67](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/67) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Replaced fontFamily token `base` to `body`, `heading` and `button`. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 
 #### 🎉 New features
 
-Added `fontFamily` property to `Box` Component. ([#67](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/67) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+Added `fontFamily` property to `Box` Component. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 
 ## 2024-06-27 `1.32.1`
 

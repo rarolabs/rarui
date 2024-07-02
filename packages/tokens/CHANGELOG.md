@@ -6,11 +6,11 @@ Our design tokens are the foundations of Design System.
 
 #### 🎉 New features
 
-- Added fontFamily tokens `body`,`heading` and `button`. ([#67](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/67) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Added fontFamily tokens `body`,`heading` and `button`. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 
 #### 🐛 Bug fixes
 
-- Removed fontFamily token `base`. ([#67](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/67) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Removed fontFamily token `base`. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 
 ## 2024-06-27 `2.0.0`
 
