@@ -1,4 +1,4 @@
-# `@rarui-react/progress-bar`
+# `@rarui-react/progress`
 
 The progress bar expresses an unspecified time to wait or displays the duration of a process
 

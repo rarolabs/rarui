@@ -3532,9 +3532,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui-react/progress-bar@workspace:packages/implementations/react/src/atomic/Progress":
+"@rarui-react/progress@workspace:packages/implementations/react/src/atomic/Progress":
   version: 0.0.0-use.local
-  resolution: "@rarui-react/progress-bar@workspace:packages/implementations/react/src/atomic/Progress"
+  resolution: "@rarui-react/progress@workspace:packages/implementations/react/src/atomic/Progress"
   dependencies:
     "@rarui-react/text": "workspace:^"
     "@rarui/webpack": "workspace:^"
