@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/dropdown",
-  "version": "1.2.0-rc.9",
+  "version": "1.2.0",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -35,6 +35,5 @@
     "@floating-ui/react": "^0.26.13",
     "@rarui-react/box": "workspace:^",
     "@rarui-react/icon": "workspace:^"
-  },
-  "stableVersion": "1.1.0"
+  }
 }

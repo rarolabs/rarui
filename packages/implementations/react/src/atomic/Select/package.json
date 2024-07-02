@@ -1,6 +1,6 @@
 {
   "name": "@rarui-react/select",
-  "version": "2.1.0-rc.9",
+  "version": "2.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -27,6 +27,5 @@
   },
   "devDependencies": {
     "@rarui/webpack": "workspace:^"
-  },
-  "stableVersion": "2.0.0"
+  }
 }
