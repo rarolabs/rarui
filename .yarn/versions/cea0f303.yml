@@ -1,0 +1,5 @@
+releases:
+  "@rarui/scripts": patch
+
+declined:
+  - "@rarui/design-system"

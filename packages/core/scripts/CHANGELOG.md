@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating custom script builds at design system build time.
 
+## 2024-06-28 `1.1.3`
+
+#### 🎉 Bug fixes
+
+- Fixed package link url on `ReleasesLauncher` script([#68](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/68) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-06-28 `1.1.2`
 
 #### 🎉 Bug fixes
