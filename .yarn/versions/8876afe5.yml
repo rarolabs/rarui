@@ -1,0 +1,9 @@
+declined:
+  - "@rarui/design-system"
+  - "@rarui/scripts"
+  - "@rarui-react/components"
+  - "@rarui-react/box"
+  - "@rarui-react/progress"
+  - "@rarui-react/side-navigation"
+  - "@rarui/styles"
+  - "@rarui/tokens"
