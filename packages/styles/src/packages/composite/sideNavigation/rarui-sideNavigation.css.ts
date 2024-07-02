@@ -141,7 +141,7 @@ const content = recipe({
     open: {
       true: {
         overflow: "visible",
-        maxHeight: "100vh",
+        maxHeight: "unset",
         marginTop: varsThemeBase.spacing["3xs"],
       },
     },

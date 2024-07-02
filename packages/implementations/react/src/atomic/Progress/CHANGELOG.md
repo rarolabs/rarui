@@ -2,6 +2,12 @@
 
 The progress bar expresses an unspecified time to wait or displays the duration of a process
 
+## 2024-07-02 `1.0.3`
+
+#### 🐛 Bug fixes
+
+- Fixed `Progress.Circle` completed before 100% ([#67](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/67) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-06-02 `1.0.2`
 
 #### 💡 Others
