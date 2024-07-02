@@ -1,5 +1,5 @@
 {
-  "name": "@rarui-react/progress-bar",
+  "name": "@rarui-react/progress",
   "version": "1.0.1",
   "license": "MIT",
   "main": "dist/index.js",
