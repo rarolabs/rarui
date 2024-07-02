@@ -1,14 +1,74 @@
 [
   {
-    "package": "@rarui/scripts 1.1.3",
-    "description": "## 2024-06-28 `1.1.3`\n\n#### 🎉 Bug fixes\n\n- Fixed package link url on `ReleasesLauncher` script([#68](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/68) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))",
-    "version": "1.1.3",
-    "tagName": "rarui/scripts-1.1.3",
+    "package": "@rarui-react/box 2.1.0",
+    "description": "## 2024-07-01 `2.1.0`\n\n#### 🎉 New features\n\n- Added new `fontFamily` property to the component. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "2.1.0",
+    "tagName": "rarui-react/box-2.1.0",
     "assets": {
       "links": [
         {
           "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/scripts",
+          "url": "https://www.npmjs.com/package/@rarui-react/box",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/components 1.33.0",
+    "description": "## 2024-07-01 `1.33.0`\n\n#### 🐛 Bug fixes\n\n- Replaced fontFamily token `base` to `body`, `heading` and `button`. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n#### 🎉 New features\n\nAdded `fontFamily` property to `Box` Component. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.33.0",
+    "tagName": "rarui-react/components-1.33.0",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/components",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/progress 1.0.4",
+    "description": "## 2024-07-01 `1.0.4`\n\n#### 🐛 Bug fixes\n\n- Updated docs file. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))",
+    "version": "1.0.4",
+    "tagName": "rarui-react/progress-1.0.4",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/progress",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui/styles 1.30.7",
+    "description": "## 2024-07-01 `1.30.7`\n\n#### 🐛 Bug fixes\n\n- Replaced fontFamily option `base` to `body`, `heading` and `button`. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.30.7",
+    "tagName": "rarui/styles-1.30.7",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui/styles",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui/tokens 2.1.0",
+    "description": "## 2024-07-01 `2.1.0`\n\n#### 🎉 New features\n\n- Added fontFamily tokens `body`,`heading` and `button`. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n#### 🐛 Bug fixes\n\n- Removed fontFamily token `base`. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "2.1.0",
+    "tagName": "rarui/tokens-2.1.0",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui/tokens",
           "link_type": "package"
         }
       ]

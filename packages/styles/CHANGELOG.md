@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-07-01 `1.30.7`
+
+#### 🐛 Bug fixes
+
+- Replaced fontFamily option `base` to `body`, `heading` and `button`. ([#69](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/69) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-28 `1.30.6`
 
 #### 🐛 Bug fixes

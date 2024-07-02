@@ -18,7 +18,7 @@ const status = recipe({
     fontWeight: varsThemeBase.fontWeight.medium,
     lineHeight: varsThemeBase.lineHeight.label.m,
     fontSize: varsThemeBase.fontSize.label.m,
-    fontFamily: varsThemeBase.fontFamily.base,
+    fontFamily: varsThemeBase.fontFamily.body,
     borderRadius: varsThemeBase.shape.border.radius["2xs"],
     padding: `0 ${varsThemeBase.spacing["3xs"]}`,
   },

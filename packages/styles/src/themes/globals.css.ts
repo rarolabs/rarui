@@ -84,7 +84,9 @@ export const globalTheme = {
     },
   },
   fontFamily: {
-    base: fontFamily.base.value,
+    body: fontFamily.body.value,
+    heading: fontFamily.heading.value,
+    button: fontFamily.button.value,
   },
   fontSize: {
     hero: fontSize.hero.value,

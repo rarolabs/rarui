@@ -1,7 +1,7 @@
 {
   "id": "box",
   "name": "Box",
-  "totalProps": 98,
+  "totalProps": 99,
   "packageName": "@rarui-react/box",
   "version": "2.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/box",
@@ -9441,6 +9441,79 @@
         }
       ],
       "title": "marginY",
+      "required": false
+    },
+    {
+      "description": "The fontFamily property sets the font family of the box.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "focus": {
+              "enum": ["$body", "$button", "$heading"],
+              "type": "string",
+              "title": "focus"
+            },
+            "focusWithin": {
+              "enum": ["$body", "$button", "$heading"],
+              "type": "string",
+              "title": "focusWithin"
+            },
+            "active": {
+              "enum": ["$body", "$button", "$heading"],
+              "type": "string",
+              "title": "active"
+            },
+            "hover": {
+              "enum": ["$body", "$button", "$heading"],
+              "type": "string",
+              "title": "hover"
+            },
+            "disabled": {
+              "enum": ["$body", "$button", "$heading"],
+              "type": "string",
+              "title": "disabled"
+            },
+            "xs": {
+              "enum": ["$body", "$button", "$heading"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["$body", "$button", "$heading"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$body", "$button", "$heading"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["$body", "$button", "$heading"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": [
+            "focus",
+            "focusWithin",
+            "active",
+            "hover",
+            "disabled",
+            "xs",
+            "md",
+            "lg",
+            "xl"
+          ]
+        },
+        {
+          "enum": ["$body", "$button", "$heading"],
+          "type": "string"
+        }
+      ],
+      "title": "fontFamily",
       "required": false
     },
     {

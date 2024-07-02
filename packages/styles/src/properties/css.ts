@@ -42,6 +42,12 @@ export const fontSizeProperties = {
   "label-l": varsThemeBase.fontSize.label.l,
 };
 
+export const fontFamilyProperties = {
+  body: varsThemeBase.fontFamily.body,
+  heading: varsThemeBase.fontFamily.heading,
+  button: varsThemeBase.fontFamily.button,
+};
+
 export const lineHeightProperties = {
   hero: varsThemeBase.lineHeight.hero,
   "body-xxs": varsThemeBase.lineHeight.body.xxs,
