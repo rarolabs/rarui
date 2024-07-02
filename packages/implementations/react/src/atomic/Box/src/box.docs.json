@@ -3,7 +3,7 @@
   "name": "Box",
   "totalProps": 99,
   "packageName": "@rarui-react/box",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "docLink": "https://rarui.com.br/documentation/src-components/box",
   "props": [
     {
