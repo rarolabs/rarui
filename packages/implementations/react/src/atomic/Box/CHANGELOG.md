@@ -2,6 +2,12 @@
 
 A low-level utility component that accepts styled system props to enable custom theme-aware styling
 
+## 2024-07-02 `2.2.0`
+
+#### 🎉 New features
+
+- Added new `borderTopLeftRadius`, `borderTopRightRadius`, `borderBottomLeftRadius` and `borderBottomRightRadius` properties to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-01 `2.1.0`
 
 #### 🎉 New features

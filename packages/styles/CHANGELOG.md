@@ -2,6 +2,15 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-07-02 `1.31.0`
+
+#### 🎉 New features
+
+- Added new `borderTopLeftRadius`, `borderTopRightRadius`, `borderBottomLeftRadius` and `borderBottomRightRadius` properties to the component `Box`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `backgroundColor` property to the component `Progress`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `zIndex` property to the component `Select`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `zIndex` property to the component `Dropdown`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-01 `1.30.7`
 
 #### 🐛 Bug fixes

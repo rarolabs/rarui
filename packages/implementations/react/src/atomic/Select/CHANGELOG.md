@@ -2,6 +2,12 @@
 
 Use a select box when a user needs to select one or more than one option from a list.
 
+## 2024-07-02 `2.1.0`
+
+#### 🎉 New features
+
+- Added new `multiple`, `defaultValue`, `open`, `position`, `enabledFlip`, `portalId` and `zIndex` properties to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-25 `2.0.0`
 
 #### 🐛 Bug fixes

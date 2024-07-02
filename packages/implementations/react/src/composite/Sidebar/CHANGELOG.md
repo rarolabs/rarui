@@ -2,6 +2,12 @@
 
 The Sidebar component is a large floating container that goes into the page from the corners. It allows us to present actions, forms or sections with a lot of information about the context of the page.
 
+## 2024-07-02 `1.1.0`
+
+#### 🎉 New features
+
+- Added new `open` and `portalId` properties to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-02 `1.0.1`
 
 #### 💡 Others

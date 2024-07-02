@@ -113,6 +113,10 @@ const Select: React.FC<SelectProps> = forwardRef(
           className={select.classnames.select({ size, appearance })}
           aria-disabled={disabled}
           onClick={() => setMenuOpen(!menuOpen)}
+          onKeyDown={() => {}}
+          onFocus={() => {}}
+          tabIndex={0}
+          role="button"
           {...props}
         >
           {!selectedOptions.length && (
@@ -168,7 +172,7 @@ const Select: React.FC<SelectProps> = forwardRef(
             ))}
           </Box>
           <Box display="flex" alignItems="center" gap="$4xs" paddingLeft="$3xs">
-            {!!selectedOptions.length && (
+            {!!selectedOptions.length && multiple && (
               <button
                 type="button"
                 aria-label="clear options"

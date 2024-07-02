@@ -2,7 +2,7 @@
 
 This package is intended for internal use in generating custom script builds at design system build time.
 
-## 2024-06-28 `1.1.3`
+## 2024-07-01 `1.1.3`
 
 #### 🎉 Bug fixes
 

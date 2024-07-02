@@ -2,6 +2,12 @@
 
 Tooltip are informative, specific, and action -oriented text labels that provide contextual support.
 
+## 2024-07-02 `1.1.0`
+
+#### 🎉 New features
+
+- Added new `portalId` property to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-06-02 `1.0.1`
 
 #### 💡 Others

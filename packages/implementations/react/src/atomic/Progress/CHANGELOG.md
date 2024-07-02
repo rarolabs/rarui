@@ -2,6 +2,12 @@
 
 The progress bar expresses an unspecified time to wait or displays the duration of a process
 
+## 2024-07-02 `1.1.0`
+
+#### 🎉 New features
+
+- Added new `backgroundColor` property to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-02 `1.0.3`
 
 #### 🐛 Bug fixes
@@ -22,7 +28,7 @@ The progress bar expresses an unspecified time to wait or displays the duration 
 
 ## 2024-05-22 `1.0.0`
 
-### 🎉 New features
+#### 🎉 New features
 
 - Added `percentage` property to the component. ([#37](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/37) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
 - Added stories to component. ([#37](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/37) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))

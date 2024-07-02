@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { SelectProps } from "../../select.types";
 
 export const useSelect = ({
