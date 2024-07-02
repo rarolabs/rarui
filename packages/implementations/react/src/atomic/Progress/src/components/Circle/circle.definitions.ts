@@ -1,1 +1,1 @@
-export const circunference = 67 * Math.PI * 2;
+export const circunference = 65.5 * Math.PI * 2;

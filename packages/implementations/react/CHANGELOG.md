@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-06-27 `1.32.1`
+
+#### 🐛 Bug fixes
+
+- Fixed `Progress.Circle` component completed before 100% ([#67](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/67) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-06-27 `1.32.0`
 
 #### 🐛 Bug fixes
