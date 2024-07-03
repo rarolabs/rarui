@@ -1,7 +1,7 @@
 {
   "id": "toggle",
   "name": "Toggle",
-  "totalProps": 5,
+  "totalProps": 6,
   "packageName": "@rarui-react/toggle",
   "version": "1.0.2",
   "docLink": "https://rarui.com.br/documentation/src-components/toggle",
@@ -22,6 +22,12 @@
       "description": "Text to be rendered inside the component",
       "type": "string",
       "title": "label",
+      "required": false
+    },
+    {
+      "description": "The content of the icons. Receives an object with 2 optional props, \"unchecked\" and \"checked\" both as ReactNode.",
+      "type": "React.ReactNode",
+      "title": "icons",
       "required": false
     },
     {

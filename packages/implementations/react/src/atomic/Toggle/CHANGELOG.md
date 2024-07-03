@@ -2,6 +2,12 @@
 
 Toggle switches enable or disable the state of a single item.
 
+## 2024-07-03 `1.0.3`
+
+#### 🎉 New features
+
+- Added `icons` property to the component. ([#70](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/70) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-02 `1.0.2`
 
 #### 💡 Others
