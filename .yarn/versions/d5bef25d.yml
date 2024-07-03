@@ -1,0 +1,7 @@
+releases:
+  "@rarui-react/components": patch
+  "@rarui-react/toggle": minor
+  "@rarui/styles": patch
+
+declined:
+  - "@rarui/design-system"

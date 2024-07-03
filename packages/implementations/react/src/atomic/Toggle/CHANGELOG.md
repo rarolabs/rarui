@@ -2,7 +2,7 @@
 
 Toggle switches enable or disable the state of a single item.
 
-## 2024-07-03 `1.0.3`
+## 2024-07-03 `1.1.0`
 
 #### 🎉 New features
 
