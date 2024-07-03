@@ -1,9 +1,9 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { argTypesConvert } from ".storybook/utils";
-import { Toggle } from "./Toggle";
 import { Icon } from "@rarui-react/icon";
 import { LightbulbFilledIcon, LightbulbOutlinedIcon } from "@rarui/icons";
+import { Toggle } from "./Toggle";
 
 import docs from "./toggle.docs.json";
 
