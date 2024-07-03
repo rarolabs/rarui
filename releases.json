@@ -1,24 +1,9 @@
 [
   {
-    "package": "@rarui-react/box 2.2.0",
-    "description": "## 2024-07-02 `2.2.0`\n\n#### 🎉 New features\n\n- Added new `borderTopLeftRadius`, `borderTopRightRadius`, `borderBottomLeftRadius` and `borderBottomRightRadius` properties to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "2.2.0",
-    "tagName": "rarui-react/box-2.2.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui-react/box",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui-react/components 1.34.0",
-    "description": "## 2024-07-02 `1.34.0`\n\n#### 🎉 New features\n\n- Added new `borderTopLeftRadius`, `borderTopRightRadius`, `borderBottomLeftRadius` and `borderBottomRightRadius` properties to the component `Box`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new `backgroundColor` property to the component `Progress`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new `multiple`, `defaultValue`, `open`, `position`, `enabledFlip`, `portalId` and `zIndex` properties to the component `Select`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new `portalId` property to the component `Tooltip`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new `open`, `popperPlacement` and `popperModifiers` properties to the component `Datepicker`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new `enabledFlip`, `portalId` and `zIndex` properties to the component `Dropdown`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new `portalId` property to the component `Modal`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new `open` and `portalId` properties to the component `Sidebar`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))\n\n## 2024-07-01 `1.32.1`",
-    "version": "1.34.0",
-    "tagName": "rarui-react/components-1.34.0",
+    "package": "@rarui-react/components 1.34.1",
+    "description": "## 2024-07-03 `1.34.1`\n\n#### 🎉 New features\n\n- Added `icons` property to `Toast` component. ([#70](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/70) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.34.1",
+    "tagName": "rarui-react/components-1.34.1",
     "assets": {
       "links": [
         {
@@ -30,100 +15,25 @@
     }
   },
   {
-    "package": "@rarui-react/datepicker 1.2.0",
-    "description": "## 2024-07-02 `1.2.0`\n\n#### 🎉 New features\n\n- Added new `open`, `popperPlacement` and `popperModifiers` properties to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "1.2.0",
-    "tagName": "rarui-react/datepicker-1.2.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui-react/datepicker",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui-react/dropdown 1.2.0",
-    "description": "## 2024-07-02 `1.2.0`\n\n#### 🎉 New features\n\n- Added new `enabledFlip`, `portalId` and `zIndex` properties to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "1.2.0",
-    "tagName": "rarui-react/dropdown-1.2.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui-react/dropdown",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui-react/modal 1.1.0",
-    "description": "## 2024-07-02 `1.1.0`\n\n#### 🎉 New features\n\n- Added new `portalId` property to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))",
+    "package": "@rarui-react/toggle 1.1.0",
+    "description": "## 2024-07-03 `1.1.0`\n\n#### 🎉 New features\n\n- Added `icons` property to the component. ([#70](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/70) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
     "version": "1.1.0",
-    "tagName": "rarui-react/modal-1.1.0",
+    "tagName": "rarui-react/toggle-1.1.0",
     "assets": {
       "links": [
         {
           "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui-react/modal",
+          "url": "https://www.npmjs.com/package/@rarui-react/toggle",
           "link_type": "package"
         }
       ]
     }
   },
   {
-    "package": "@rarui-react/select 2.1.0",
-    "description": "## 2024-07-02 `2.1.0`\n\n#### 🎉 New features\n\n- Added new `multiple`, `defaultValue`, `open`, `position`, `enabledFlip`, `portalId` and `zIndex` properties to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "2.1.0",
-    "tagName": "rarui-react/select-2.1.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui-react/select",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui-react/sidebar 1.1.0",
-    "description": "## 2024-07-02 `1.1.0`\n\n#### 🎉 New features\n\n- Added new `open` and `portalId` properties to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "1.1.0",
-    "tagName": "rarui-react/sidebar-1.1.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui-react/sidebar",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui-react/tooltip 1.1.0",
-    "description": "## 2024-07-02 `1.1.0`\n\n#### 🎉 New features\n\n- Added new `portalId` property to the component. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "1.1.0",
-    "tagName": "rarui-react/tooltip-1.1.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui-react/tooltip",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui/styles 1.31.0",
-    "description": "## 2024-07-02 `1.31.0`\n\n#### 🎉 New features\n\n- Added new `borderTopLeftRadius`, `borderTopRightRadius`, `borderBottomLeftRadius` and `borderBottomRightRadius` properties to the component `Box`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new `backgroundColor` property to the component `Progress`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new `zIndex` property to the component `Select`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new `zIndex` property to the component `Dropdown`. ([#66](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/66) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "1.31.0",
-    "tagName": "rarui/styles-1.31.0",
+    "package": "@rarui/styles 1.31.1",
+    "description": "## 2024-07-03 `1.31.1`\n\n#### 🎉 New features\n\n- Added new `checked` and `unchecked` containers for the icons of the `Toggle` component. ([#70](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/70) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n#### 🐛 Bug fixes\n\n- Fixed spacements and colors of the `Toggle` component. ([#70](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/70) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n- Removed the `icon` style and all its related states of the `Toggle` component. ([#70](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/70) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.31.1",
+    "tagName": "rarui/styles-1.31.1",
     "assets": {
       "links": [
         {
