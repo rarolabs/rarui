@@ -50,6 +50,11 @@ describe("GIVEN <Status />", () => {
         screen.getByTestId("status-element").getAttribute("class"),
       ).toContain("appearance_negative");
     });
+
+    it("AND não deve renderizar o dot do satatus", () => {
+      makeSut({ children: "label", dot: false });
+      expect(screen.queryByTestId("status-dot")).toBeNull();
+    });
   });
 
   describe("THEN should correctly render the submitted size", () => {
@@ -71,6 +76,13 @@ describe("GIVEN <Status />", () => {
       expect(screen.getByTestId("status-dot").getAttribute("class")).toContain(
         "size_small",
       );
+    });
+
+    it("AND should correctly render the full", () => {
+      makeSut({ children: "label", full: true });
+      expect(
+        screen.getByTestId("status-element").getAttribute("class"),
+      ).toContain("full_true");
     });
   });
 
@@ -104,6 +116,7 @@ describe("GIVEN <Status />", () => {
         screen.getByTestId("status-element").getAttribute("class"),
       ).not.toContain("subdued_true");
     });
+
     it("AND should correctly render the subdued default", () => {
       makeSut({ children: "label", subdued: true });
       expect(

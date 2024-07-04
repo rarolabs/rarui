@@ -93,9 +93,11 @@
       "@rarui-react/status": [
         "./packages/implementations/react/src/atomic/Status/src"
       ],
-
       "@rarui-react/text": [
         "./packages/implementations/react/src/atomic/Text/src"
+      ],
+      "@rarui-react/textarea": [
+        "./packages/implementations/react/src/atomic/Textarea/src"
       ],
       "@rarui-react/title": [
         "./packages/implementations/react/src/atomic/Title/src"

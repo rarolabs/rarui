@@ -2,6 +2,13 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-07-04 `1.35.0`
+
+#### 🎉 New features
+
+- Added new atomic `Textarea` component. ([#71](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/71) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `dot` and `full` properties to the component `Status`. ([#71](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/71) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-03 `1.34.1`
 
 #### 🎉 New features

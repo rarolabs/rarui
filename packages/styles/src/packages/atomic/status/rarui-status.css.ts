@@ -24,6 +24,16 @@ const status = recipe({
   },
   variants: {
     /**
+     * Specifies whether the status should take up the full width of its container.
+     * This variant is useful when you want to make a status span the entire width of its parent container.
+     *
+     */
+    full: {
+      true: {
+        width: "100%",
+      },
+    },
+    /**
      * Determines the visual style of the status, influencing its color scheme.
      */
     appearance: {

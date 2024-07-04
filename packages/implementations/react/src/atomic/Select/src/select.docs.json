@@ -67,7 +67,7 @@
       "required": false
     },
     {
-      "description": "Fazer",
+      "description": "Specifies the default selected value(s) for the select box.\nThis can be a string for single selection or an array of strings for multiple selections.",
       "anyOf": [
         {
           "type": "array",
@@ -110,7 +110,7 @@
       "required": false
     },
     {
-      "description": "Fazer",
+      "description": "Determines whether the select box should enable flipping the options' dropdown when there is not enough space to display it in its default direction.\nThis can help ensure the dropdown is always visible on the screen.",
       "default": true,
       "type": "boolean",
       "title": "enabledFlip",

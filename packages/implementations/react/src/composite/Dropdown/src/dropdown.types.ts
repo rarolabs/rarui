@@ -49,7 +49,8 @@ interface DropdownTyping {
    */
   enabledClick?: boolean;
   /**
-   * Fazer
+   * Determines whether the dropdown should enable flipping the options' dropdown when there is not enough space to display it in its default direction.
+   * This can help ensure the dropdown is always visible on the screen.
    * @default true
    */
   enabledFlip?: boolean;

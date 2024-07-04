@@ -105,6 +105,7 @@
       "required": true
     },
     {
+      "description": "Specifies the placement of the datepicker popper.\nThis can be useful for positioning the datepicker relative to its input field.",
       "enum": [
         "bottom",
         "bottom-end",
@@ -124,6 +125,7 @@
       "required": false
     },
     {
+      "description": "Specifies the modifiers for the datepicker popper.\nThis can be useful for customizing the behavior and appearance of the datepicker popper.",
       "type": "array",
       "items": {
         "type": "object",

@@ -38,7 +38,8 @@ interface SelectTyping {
    */
   multiple?: boolean;
   /**
-   * Fazer
+   * Specifies the default selected value(s) for the select box.
+   * This can be a string for single selection or an array of strings for multiple selections.
    */
   defaultValue?: string | string[];
   /**
@@ -51,7 +52,8 @@ interface SelectTyping {
    */
   position?: Placement;
   /**
-   * Fazer
+   * Determines whether the select box should enable flipping the options' dropdown when there is not enough space to display it in its default direction.
+   * This can help ensure the dropdown is always visible on the screen.
    * @default true
    */
   enabledFlip?: boolean;
