@@ -9,15 +9,13 @@ const Textarea: React.FC<TextareaProps> = ({
   lines = 2,
   appearance,
   ...rest
-}) => {
-  return (
-    <textarea
-      className={textarea.classnames.textarea({ appearance })}
-      rows={lines}
-      {...rest}
-    />
-  );
-};
+}) => (
+  <textarea
+    className={textarea.classnames.textarea({ appearance })}
+    rows={lines}
+    {...rest}
+  />
+);
 
 Textarea.displayName = "Textarea";
 
