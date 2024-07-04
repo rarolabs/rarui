@@ -13,12 +13,12 @@
       "required": true
     },
     {
-      "description": "Specifies the background color of the progress.\nThis prop accepts one of the following values: \"$info\", \"$success\" or \"$brand\"",
+      "description": "Specifies the color of the progress.\nThis prop accepts one of the following values: \"$info\", \"$success\" or \"$brand\"",
       "default": "$info",
       "examples": "[\"$brand\", { xs: \"$brand\", md: \"$info\" }]",
       "enum": ["$brand", "$info", "$success"],
       "type": "string",
-      "title": "backgroundColor",
+      "title": "color",
       "required": false
     }
   ],
@@ -34,12 +34,12 @@
           "required": true
         },
         {
-          "description": "Specifies the background color of the progress.\nThis prop accepts one of the following values: \"$info\", \"$success\" or \"$brand\"",
+          "description": "Specifies the color of the progress.\nThis prop accepts one of the following values: \"$info\", \"$success\" or \"$brand\"",
           "default": "$info",
           "examples": "[\"$brand\", { xs: \"$brand\", md: \"$info\" }]",
           "enum": ["$brand", "$info", "$success"],
           "type": "string",
-          "title": "backgroundColor",
+          "title": "color",
           "required": false
         },
         {

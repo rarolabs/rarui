@@ -10,9 +10,7 @@ const progressDocs = docs.subComponents.find(
 const meta: Meta = {
   title: "Atomic/Progress/Circle",
   component: Progress.Circle,
-  argTypes: {
-    ...argTypesConvert(progressDocs),
-  },
+  argTypes: argTypesConvert(progressDocs),
   tags: ["autodocs"],
 } satisfies Meta<typeof Progress.Circle>;
 
