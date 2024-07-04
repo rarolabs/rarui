@@ -1,0 +1,11 @@
+declined:
+  - "@rarui/design-system"
+  - "@rarui-react/components"
+  - "@rarui-react/progress"
+  - "@rarui-react/select"
+  - "@rarui-react/status"
+  - "@rarui-react/textarea"
+  - "@rarui-react/toggle"
+  - "@rarui-react/datepicker"
+  - "@rarui-react/dropdown"
+  - "@rarui/styles"
