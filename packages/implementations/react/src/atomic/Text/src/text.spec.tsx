@@ -87,29 +87,6 @@ describe("GIVEN <Text />", () => {
     });
   });
 
-  // describe("THEN should correctly render the size", () => {
-  //   it("THEN should correctly render the size caption", () => {
-  //     makeSut({ fontSize: "caption" });
-  //     expect(
-  //       screen.getByTestId("text-element").getAttribute("class"),
-  //     ).toContain("fontSize-caption");
-  //   });
-
-  //   it("THEN should correctly render the size base", () => {
-  //     makeSut({ fontSize: "base" });
-  //     expect(
-  //       screen.getByTestId("text-element").getAttribute("class"),
-  //     ).toContain("fontSize-base");
-  //   });
-
-  //   it("THEN should correctly render the size highlight", () => {
-  //     makeSut({ fontSize: "highlight" });
-  //     expect(
-  //       screen.getByTestId("text-element").getAttribute("class"),
-  //     ).toContain("fontSize-highlight");
-  //   });
-  // });
-
   describe("THEN should correctly render the submitted color", () => {
     it("THEN should correctly render the color primary", () => {
       makeSut({ color: "$primary" });
