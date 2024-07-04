@@ -1,0 +1,16 @@
+releases:
+  "@rarui-react/components": minor
+  "@rarui-react/status": minor
+  "@rarui-react/textarea": major
+  "@rarui/styles": minor
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui-react/box"
+  - "@rarui-react/progress"
+  - "@rarui-react/select"
+  - "@rarui-react/tooltip"
+  - "@rarui-react/datepicker"
+  - "@rarui-react/dropdown"
+  - "@rarui-react/modal"
+  - "@rarui-react/sidebar"

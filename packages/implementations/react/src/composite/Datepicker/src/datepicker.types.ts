@@ -77,8 +77,15 @@ export interface DatepickerTyping {
    * @TJS-type (date: Date | Date[]) => void
    */
   onChange: (date: Date | Date[]) => void;
-
+  /**
+   * Specifies the placement of the datepicker popper.
+   * This can be useful for positioning the datepicker relative to its input field.
+   */
   popperPlacement?: Placement;
+  /**
+   * Specifies the modifiers for the datepicker popper.
+   * This can be useful for customizing the behavior and appearance of the datepicker popper.
+   */
   popperModifiers?: Middleware[];
 }
 

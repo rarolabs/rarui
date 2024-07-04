@@ -3,7 +3,7 @@
   "name": "Textarea",
   "totalProps": 2,
   "packageName": "@rarui-react/textarea",
-  "version": "0.0.0",
+  "version": "1.0.0-rc.3",
   "docLink": "https://rarui.com.br/documentation/src-components/textarea",
   "props": [
     {
