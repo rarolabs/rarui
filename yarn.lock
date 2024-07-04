@@ -3662,6 +3662,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui-react/textarea@workspace:packages/implementations/react/src/atomic/Textarea":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/textarea@workspace:packages/implementations/react/src/atomic/Textarea"
+  dependencies:
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@rarui-react/title@workspace:^, @rarui-react/title@workspace:packages/implementations/react/src/atomic/Title":
   version: 0.0.0-use.local
   resolution: "@rarui-react/title@workspace:packages/implementations/react/src/atomic/Title"
