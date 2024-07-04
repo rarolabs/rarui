@@ -3,7 +3,7 @@
   "name": "Status",
   "totalProps": 7,
   "packageName": "@rarui-react/status",
-  "version": "1.1.0-rc.4",
+  "version": "1.1.0",
   "docLink": "https://rarui.com.br/documentation/src-components/status",
   "props": [
     {
