@@ -9,6 +9,8 @@ const Status: React.FC<StatusProps> = ({
   size = "normal",
   variant = "solid",
   subdued = false,
+  dot = true,
+  full,
   children,
   ...props
 }) => (
@@ -18,13 +20,16 @@ const Status: React.FC<StatusProps> = ({
       variant,
       appearance,
       subdued,
+      full,
     })}
     {...props}
   >
-    <span
-      data-testid="status-dot"
-      className={status.classnames.dot({ size })}
-    />
+    {dot && (
+      <span
+        data-testid="status-dot"
+        className={status.classnames.dot({ size })}
+      />
+    )}
     {children}
   </div>
 );
