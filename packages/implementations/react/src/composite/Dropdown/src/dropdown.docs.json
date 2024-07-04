@@ -3,7 +3,7 @@
   "name": "Dropdown",
   "totalProps": 16,
   "packageName": "@rarui-react/dropdown",
-  "version": "1.2.0-rc.9",
+  "version": "1.2.0",
   "docLink": "https://rarui.com.br/documentation/src-components/dropdown",
   "props": [
     {

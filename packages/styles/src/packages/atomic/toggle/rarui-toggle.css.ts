@@ -15,8 +15,8 @@ const toggle = recipe({
     ":before": {
       content: "",
       position: "absolute",
-      left: ".25rem",
-      backgroundColor: varsThemeBase.colors.content.secondary,
+      left: ".3125rem",
+      backgroundColor: varsThemeBase.colors.surface["invert-secondary"],
       borderRadius: varsThemeBase.shape.border.radius.pill,
       zIndex: 1,
       transition: "all 150ms ease",
@@ -37,8 +37,8 @@ const toggle = recipe({
         backgroundColor: varsThemeBase.colors.surface.hover,
       },
       "&:has(input:checked):before": {
-        left: "1.5rem",
-        backgroundColor: varsThemeBase.colors.content["on-brand"],
+        left: "1.5625rem",
+        backgroundColor: varsThemeBase.colors.surface.primary,
       },
       "&:has(input:checked):after": {
         left: ".9375rem",
@@ -66,7 +66,7 @@ const toggle = recipe({
         },
         ":after": {
           top: "-.3125rem",
-          left: "-.375rem",
+          left: "-.3125rem",
           height: "2.75rem",
           width: "2.75rem",
         },
@@ -110,38 +110,6 @@ export const input = style({
   width: 0,
 });
 
-export const icon = style({
-  position: "absolute",
-  zIndex: 2,
-  left: ".625rem",
-  top: "1rem",
-  opacity: 1,
-  transition: "all 150ms ease",
-  ":before": {
-    content: "",
-    position: "absolute",
-    backgroundColor: varsThemeBase.colors.content.invert,
-    borderRadius: varsThemeBase.shape.border.radius["2xs"],
-    height: "2px",
-    width: "12px",
-    transform: "rotate(45deg)",
-  },
-  ":after": {
-    content: "",
-    position: "absolute",
-    backgroundColor: varsThemeBase.colors.content.invert,
-    borderRadius: varsThemeBase.shape.border.radius["2xs"],
-    height: "2px",
-    width: "12px",
-    transform: "rotate(-45deg)",
-  },
-  selectors: {
-    "&[aria-disabled='true']:after, &[aria-disabled='true']:before": {
-      backgroundColor: varsThemeBase.colors.surface.disabled,
-    },
-  },
-});
-
 export const slider = recipe({
   base: {
     backgroundColor: varsThemeBase.colors.surface.disabled,
@@ -167,9 +135,6 @@ export const slider = recipe({
       },
       "&:not([aria-disabled='true']):hover:before": {
         backgroundColor: varsThemeBase.colors.surface.hover,
-      },
-      "&:not([aria-disabled='true']):active:before": {
-        backgroundColor: varsThemeBase.colors.surface.press,
       },
     },
   },
@@ -200,11 +165,92 @@ export const slider = recipe({
   },
 });
 
+export const unchecked = recipe({
+  base: {
+    position: "absolute",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    overflow: "hidden",
+    zIndex: 2,
+    opacity: 1,
+    left: "0",
+    top: "50%",
+    transform: "translate(-50%, -50%)",
+    transition: "all 150ms ease",
+    selectors: {
+      [`${toggle()}:has(${input}:checked) &`]: {
+        opacity: 0,
+      },
+      "&[aria-disabled='true']:after, &[aria-disabled='true']:before": {
+        backgroundColor: varsThemeBase.colors.surface.disabled,
+      },
+    },
+  },
+  variants: {
+    size: {
+      large: {
+        left: "1rem",
+        height: "1.5rem",
+        width: "1.5rem",
+        borderRadius: "0.75rem",
+      },
+      small: {
+        left: "0.75rem",
+        width: "1rem",
+        height: "1rem",
+        borderRadius: "0.5rem",
+      },
+    },
+  },
+});
+
+export const checked = recipe({
+  base: {
+    position: "absolute",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    overflow: "hidden",
+    zIndex: 2,
+    left: "0",
+    top: "50%",
+    transform: "translate(-50%, -50%)",
+    opacity: 0,
+    transition: "all 150ms ease",
+    selectors: {
+      [`${toggle()}:has(${input}:checked) &`]: {
+        opacity: 1,
+      },
+      "&[aria-disabled='true']:after, &[aria-disabled='true']:before": {
+        backgroundColor: varsThemeBase.colors.surface.disabled,
+      },
+    },
+  },
+  variants: {
+    size: {
+      large: {
+        left: "2.25rem",
+        height: "1.5rem",
+        width: "1.5rem",
+        borderRadius: "0.75rem",
+      },
+      small: {
+        left: "2rem",
+        width: "1rem",
+        height: "1rem",
+        borderRadius: "0.5rem",
+      },
+    },
+  },
+});
+
 export const styles = {
   toggle,
   input,
-  icon,
   slider,
+  unchecked,
+  checked,
 };
 
 globalStyle(`${toggle()}:has(${input}:checked) ${slider()}`, {
@@ -227,71 +273,9 @@ globalStyle(
   },
 );
 
-globalStyle(
-  `${toggle()}:has(${input}:checked) ${slider()}:not([aria-disabled='true']):active:before`,
-  {
-    backgroundColor: varsThemeBase.colors.surface.press,
-  },
-);
-
 globalStyle(`${toggle()}:has(${input}:checked) ${slider()}:after`, {
   opacity: 1,
 });
-
-globalStyle(`${toggle()}:has(${input}:checked) ${icon}`, {
-  left: "1.5rem",
-  top: " .875rem",
-});
-
-globalStyle(`${toggle()}:has(${input}:checked) ${icon}:before`, {
-  top: ".125rem",
-  height: ".4375rem",
-  width: ".125rem",
-  transform: "translateX(10px) rotate(-45deg)",
-  transformOrigin: "left bottom",
-  backgroundColor: varsThemeBase.colors.surface.brand,
-});
-
-globalStyle(
-  `${toggle()}:has(${input}:checked) ${icon}[aria-disabled='true']:before`,
-  {
-    backgroundColor: varsThemeBase.colors.surface.disabled,
-  },
-);
-
-globalStyle(
-  `${toggle()}:has(${input}:checked) ${icon}[aria-disabled='true']:after`,
-  {
-    backgroundColor: varsThemeBase.colors.surface.disabled,
-  },
-);
-
-globalStyle(`${toggle()}:has(${input}:checked) ${icon}:after`, {
-  height: ".125rem",
-  width: ".6875rem",
-  top: "6.8px",
-  transform: "translateX(10px) rotate(-45deg)",
-  transformOrigin: "left bottom",
-  backgroundColor: varsThemeBase.colors.surface.brand,
-});
-
-globalStyle(`${toggle({ size: "small" }).split(" ")[1]} ${icon}`, {
-  opacity: 0,
-});
-
-globalStyle(
-  `${toggle({ error: true }).split(" ")[1]}:has(${input}:checked) ${icon}:before`,
-  {
-    backgroundColor: varsThemeBase.colors.surface.error,
-  },
-);
-
-globalStyle(
-  `${toggle({ error: true }).split(" ")[1]}:has(${input}:checked) ${icon}:after`,
-  {
-    backgroundColor: varsThemeBase.colors.surface.error,
-  },
-);
 
 globalStyle(
   `${toggle()}:has(${input}:checked) ${slider({ error: true }).split(" ")[1]}`,

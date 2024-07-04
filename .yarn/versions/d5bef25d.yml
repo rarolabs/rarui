@@ -1,20 +1,15 @@
 releases:
-  "@rarui-react/box": minor
-  "@rarui-react/components": minor
-  "@rarui-react/datepicker": minor
-  "@rarui-react/dropdown": minor
-  "@rarui-react/modal": minor
-  "@rarui-react/select": minor
-  "@rarui-react/sidebar": minor
-  "@rarui-react/tooltip": minor
-  "@rarui/styles": minor
+  "@rarui-react/components": patch
+  "@rarui-react/toggle": minor
+  "@rarui/styles": patch
 
 declined:
   - "@rarui/design-system"
-  - "@rarui-react/toast"
-  - "@rarui-react/accordion"
-  - "@rarui-react/breadcrumb"
-  - "@rarui-react/card"
-  - "@rarui-react/side-navigation"
-  - "@rarui-react/stepper"
-  - "@rarui-react/tabs"
+  - "@rarui-react/box"
+  - "@rarui-react/progress"
+  - "@rarui-react/select"
+  - "@rarui-react/tooltip"
+  - "@rarui-react/datepicker"
+  - "@rarui-react/dropdown"
+  - "@rarui-react/modal"
+  - "@rarui-react/sidebar"

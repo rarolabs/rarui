@@ -2,6 +2,17 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-07-03 `1.31.1`
+
+#### 🎉 New features
+
+- Added new `checked` and `unchecked` containers for the icons of the `Toggle` component. ([#70](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/70) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+#### 🐛 Bug fixes
+
+- Fixed spacements and colors of the `Toggle` component. ([#70](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/70) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Removed the `icon` style and all its related states of the `Toggle` component. ([#70](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/70) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-02 `1.31.0`
 
 #### 🎉 New features

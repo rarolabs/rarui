@@ -14,6 +14,7 @@ const Toggle: React.FC<ToggleProps> = ({
   selected,
   error,
   disabled,
+  icons,
   ...rest
 }) => (
   <label
@@ -34,12 +35,19 @@ const Toggle: React.FC<ToggleProps> = ({
       data-testid="slider"
       className={toggle.classnames.slider({ size, error })}
       aria-disabled={disabled}
-    />
-    <span
-      data-testid="icon"
-      className={toggle.classnames.icon}
-      aria-disabled={disabled}
-    />
+    >
+      {icons?.unchecked && (
+        <span className={toggle.classnames.unchecked({ size })}>
+          {icons.unchecked}
+        </span>
+      )}
+      {icons?.checked && (
+        <span className={toggle.classnames.checked({ size })}>
+          {icons.checked}
+        </span>
+      )}
+    </span>
+
     {label && (
       <Text data-testid="text" color="$primary">
         {label}
