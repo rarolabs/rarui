@@ -1,9 +1,9 @@
 {
   "id": "box",
   "name": "Box",
-  "totalProps": 99,
+  "totalProps": 103,
   "packageName": "@rarui-react/box",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "docLink": "https://rarui.com.br/documentation/src-components/box",
   "props": [
     {
@@ -1400,7 +1400,7 @@
       "required": false
     },
     {
-      "description": "The borderRadius property rounds the corners of an box's outer border edge.",
+      "description": "The borderTopLeftRadius property rounds the corners of an box's outer border edge.",
       "anyOf": [
         {
           "type": "object",
@@ -1593,7 +1593,7 @@
       "required": false
     },
     {
-      "description": "The borderRadius property rounds the corners of an box's outer border edge.",
+      "description": "The borderTopRightRadius property rounds the corners of an box's outer border edge.",
       "anyOf": [
         {
           "type": "object",
@@ -1786,7 +1786,7 @@
       "required": false
     },
     {
-      "description": "The borderRadius property rounds the corners of an box's outer border edge.",
+      "description": "The borderBottomLeftRadius property rounds the corners of an box's outer border edge.",
       "anyOf": [
         {
           "type": "object",
@@ -1979,7 +1979,7 @@
       "required": false
     },
     {
-      "description": "The borderRadius property rounds the corners of an box's outer border edge.",
+      "description": "The borderBottomRightRadius property rounds the corners of an box's outer border edge.",
       "anyOf": [
         {
           "type": "object",
