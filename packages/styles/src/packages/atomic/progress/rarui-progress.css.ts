@@ -45,19 +45,11 @@ const circle = recipe({
   },
 });
 
-const circleProgress = recipe({
-  base: {
-    transform: "rotate(-90deg)",
-    transformOrigin: "50% 50%",
-    stroke: varsThemeBase.colors.surface.info,
-  },
-  variants: {
-    completed: {
-      true: {
-        stroke: varsThemeBase.colors.surface.success,
-      },
-    },
-  },
+const circleProgress = style({
+  transition: "all 150ms ease",
+  transform: "rotate(-90deg)",
+  transformOrigin: "50% 50%",
+  stroke: varsThemeBase.colors.surface.info,
 });
 
 export const circleText = style({
@@ -83,7 +75,7 @@ export const progressStyles = {
  * Sprinkles
  * -----------------------------------------------------------------------------------------------*/
 
-export const progressBackgroundColorProperties = {
+export const progressColorProperties = {
   info: varsThemeBase.colors.surface.info,
   success: varsThemeBase.colors.surface.success,
   brand: varsThemeBase.colors.surface.brand,
@@ -94,7 +86,8 @@ const sprinklesProperties = defineProperties({
     width: true,
   },
   staticProperties: {
-    backgroundColor: progressBackgroundColorProperties,
+    backgroundColor: progressColorProperties,
+    stroke: progressColorProperties,
   },
 });
 

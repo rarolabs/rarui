@@ -1,6 +1,6 @@
 {
   "name": "@rarui/styles",
-  "version": "1.31.1",
+  "version": "1.32.0-rc.4",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -35,5 +35,6 @@
     "webpack": "^5.90.3",
     "webpack-merge": "^5.10.0",
     "webpack-shell-plugin-next": "^2.3.1"
-  }
+  },
+  "stableVersion": "1.31.0"
 }
