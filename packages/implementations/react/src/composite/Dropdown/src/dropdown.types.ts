@@ -24,11 +24,6 @@ interface DropdownTyping {
    */
   content: ReactNode;
   /**
-   * Conditional for displaying the dropdown arrow.
-   * @default true
-   */
-  arrow?: boolean;
-  /**
    * A common feature of select dropdowns is that the dropdown matches the width of the reference regardless of its contents.
    * @default false
    */

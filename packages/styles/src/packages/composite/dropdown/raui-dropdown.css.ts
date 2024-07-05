@@ -65,6 +65,9 @@ const dropdownItem = recipe({
     ":hover": {
       backgroundColor: varsThemeBase.colors.surface.hover,
     },
+    ":active": {
+      backgroundColor: varsThemeBase.colors.surface.press,
+    },
     ":disabled": {
       color: varsThemeBase.colors.content.disabled,
     },
