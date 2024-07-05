@@ -45,13 +45,17 @@ const status = recipe({
         backgroundColor: varsThemeBase.colors.surface.warning,
         color: varsThemeBase.colors.content["on-warning"],
       },
-      negative: {
+      danger: {
         backgroundColor: varsThemeBase.colors.surface.error,
         color: varsThemeBase.colors.content["on-error"],
       },
-      neutral: {
-        backgroundColor: "transparent",
+      inverted: {
+        backgroundColor: varsThemeBase.colors.surface.primary,
         color: varsThemeBase.colors.content.primary,
+      },
+      neutral: {
+        backgroundColor: varsThemeBase.colors.surface.invert,
+        color: varsThemeBase.colors.content.invert,
       },
     },
     /**
@@ -70,9 +74,6 @@ const status = recipe({
     /**
      * Specifies whether the status is in subdued mode
      */
-    subdued: {
-      true: {},
-    },
     /**
      * Specifies the variant of the status
      */
@@ -81,6 +82,7 @@ const status = recipe({
       text: {
         backgroundColor: "transparent",
       },
+      subdued: {},
     },
   },
   compoundVariants: [
@@ -105,7 +107,7 @@ const status = recipe({
     },
     {
       variants: {
-        appearance: "negative",
+        appearance: "danger",
         variant: "text",
       },
       style: {
@@ -114,18 +116,27 @@ const status = recipe({
     },
     {
       variants: {
-        appearance: "neutral",
+        appearance: "inverted",
         variant: "text",
       },
       style: {
         color: varsThemeBase.colors.content.primary,
       },
     },
+    {
+      variants: {
+        appearance: "neutral",
+        variant: "text",
+      },
+      style: {
+        color: varsThemeBase.colors.content.invert,
+      },
+    },
     // subdued
     {
       variants: {
         appearance: "success",
-        subdued: true,
+        variant: "subdued",
       },
       style: {
         backgroundColor: varsThemeBase.colors.surface["success-subdued"],
@@ -135,7 +146,7 @@ const status = recipe({
     {
       variants: {
         appearance: "warning",
-        subdued: true,
+        variant: "subdued",
       },
       style: {
         backgroundColor: varsThemeBase.colors.surface["warning-subdued"],
@@ -144,8 +155,8 @@ const status = recipe({
     },
     {
       variants: {
-        appearance: "negative",
-        subdued: true,
+        appearance: "danger",
+        variant: "subdued",
       },
       style: {
         backgroundColor: varsThemeBase.colors.surface["error-subdued"],
@@ -154,12 +165,22 @@ const status = recipe({
     },
     {
       variants: {
-        appearance: "neutral",
-        subdued: true,
+        appearance: "inverted",
+        variant: "subdued",
       },
       style: {
-        backgroundColor: varsThemeBase.colors.surface.primary,
+        backgroundColor: varsThemeBase.colors.surface.secondary,
         color: varsThemeBase.colors.content.secondary,
+      },
+    },
+    {
+      variants: {
+        appearance: "neutral",
+        variant: "subdued",
+      },
+      style: {
+        backgroundColor: varsThemeBase.colors.surface["invert-disabled"],
+        color: varsThemeBase.colors.content["invert-secondary"],
       },
     },
   ],

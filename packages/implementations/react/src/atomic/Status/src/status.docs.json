@@ -1,7 +1,7 @@
 {
   "id": "status",
   "name": "Status",
-  "totalProps": 7,
+  "totalProps": 6,
   "packageName": "@rarui-react/status",
   "version": "1.1.0",
   "docLink": "https://rarui.com.br/documentation/src-components/status",
@@ -27,7 +27,7 @@
     },
     {
       "description": "Determines the visual style of the status, influencing its color scheme.",
-      "enum": ["negative", "neutral", "success", "warning"],
+      "enum": ["danger", "inverted", "neutral", "success", "warning"],
       "type": "string",
       "title": "appearance",
       "required": false
@@ -40,14 +40,8 @@
       "required": false
     },
     {
-      "description": "Specifies whether the status is in subdued mode",
-      "type": "boolean",
-      "title": "subdued",
-      "required": false
-    },
-    {
       "description": "Specifies the variant of the status",
-      "enum": ["solid", "text"],
+      "enum": ["solid", "subdued", "text"],
       "type": "string",
       "title": "variant",
       "required": false

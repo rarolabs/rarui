@@ -44,11 +44,11 @@ describe("GIVEN <Status />", () => {
       ).toContain("appearance_neutral");
     });
 
-    it("AND should correctly render the appearance negative", () => {
-      makeSut({ appearance: "negative", children: "label" });
+    it("AND should correctly render the appearance danger", () => {
+      makeSut({ appearance: "danger", children: "label" });
       expect(
         screen.getByTestId("status-element").getAttribute("class"),
-      ).toContain("appearance_negative");
+      ).toContain("appearance_danger");
     });
 
     it("AND não deve renderizar o dot do satatus", () => {
@@ -106,22 +106,6 @@ describe("GIVEN <Status />", () => {
       expect(
         screen.getByTestId("status-element").getAttribute("class"),
       ).toContain("variant_text");
-    });
-  });
-
-  describe("THEN should correctly render the submitted subdued", () => {
-    it("THEN should correctly render the subdued default", () => {
-      makeSut({ children: "label" });
-      expect(
-        screen.getByTestId("status-element").getAttribute("class"),
-      ).not.toContain("subdued_true");
-    });
-
-    it("AND should correctly render the subdued default", () => {
-      makeSut({ children: "label", subdued: true });
-      expect(
-        screen.getByTestId("status-element").getAttribute("class"),
-      ).toContain("subdued_true");
     });
   });
 });
