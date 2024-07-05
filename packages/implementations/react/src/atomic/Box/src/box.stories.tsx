@@ -20,6 +20,8 @@ export const basic: Story = {
     borderWidth: "$2",
     borderStyle: "dashed",
     borderRadius: "$xs",
+    borderColor: "$brand",
+    backgroundColor: "$brand-subdued",
   },
 };
 
