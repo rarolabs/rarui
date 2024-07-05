@@ -27,6 +27,9 @@ const select = recipe({
     ":hover": {
       borderColor: varsThemeBase.colors.border.primary,
     },
+    ":active": {
+      backgroundColor: varsThemeBase.colors.surface.press,
+    },
     ":focus": {
       borderColor: varsThemeBase.colors.border.primary,
     },
@@ -58,6 +61,9 @@ const select = recipe({
         ":focus": {
           borderColor: varsThemeBase.colors.border.success,
         },
+        ":active": {
+          backgroundColor: varsThemeBase.colors.surface["success-press"],
+        },
       },
       error: {
         borderColor: varsThemeBase.colors.border.error,
@@ -66,6 +72,9 @@ const select = recipe({
         },
         ":focus": {
           borderColor: varsThemeBase.colors.border.error,
+        },
+        ":active": {
+          backgroundColor: varsThemeBase.colors.surface["error-press"],
         },
       },
     },

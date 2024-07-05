@@ -14,16 +14,24 @@ const item = recipe({
     borderWidth: 0,
     borderBottomWidth: varsThemeBase.shape.border.width[1],
     borderBottomColor: varsThemeBase.colors.border.subdued,
-    borderRadius: varsThemeBase.shape.border.radius["2xs"],
+    borderTopLeftRadius: varsThemeBase.shape.border.radius["2xs"],
+    borderTopRightRadius: varsThemeBase.shape.border.radius["2xs"],
     color: varsThemeBase.colors.content.primary,
     transition: "all 150ms ease",
     ":hover": {
       backgroundColor: varsThemeBase.colors.surface.hover,
     },
+    ":active": {
+      backgroundColor: varsThemeBase.colors.surface.press,
+    },
     ":disabled": {
       backgroundColor: "transparent",
       cursor: "not-allowed",
       color: varsThemeBase.colors.content.disabled,
+    },
+    ":focus-within": {
+      outline: "none",
+      boxShadow: varsThemeBase.utils["focus-ring"],
     },
   },
   variants: {
@@ -33,6 +41,9 @@ const item = recipe({
         borderBottomColor: varsThemeBase.colors.border["brand-alt"],
         ":hover": {
           backgroundColor: varsThemeBase.colors.surface["brand-hover"],
+        },
+        ":active": {
+          backgroundColor: varsThemeBase.colors.surface["brand-press"],
         },
         ":disabled": {
           borderBottomColor: varsThemeBase.colors.border.subdued,

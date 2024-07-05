@@ -2,6 +2,22 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-07-04 `1.32.1`
+
+#### 🎉 New features
+
+- Added `fill` property to `Box` component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+#### 🐛 Bug fixes
+
+- Fixed padding and background color of the `Tooltip` component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Fixed hover state of the `Tabs` component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Fixed press state of the `Dropdown` component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Fixed press state of the `Select` component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Fixed press state, removed border radius left bottom and right bottom and fixed the focus ring color of the `Accordion` component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Changed the name of the variant `negative` to `danger`, fixed the colors of `neutral` and `inverted` `appearances` of the `Status` component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Fixed the colors of `neutral` and `inverted` `appearances` of `outlined` variant of the `Badge` component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-04 `1.32.0`
 
 #### 🎉 New features

@@ -2,6 +2,16 @@
 
 Status are used to indicate the current state of a process.
 
+## 2024-07-04 `1.2.0`
+
+#### 🎉 New features
+
+- Added variant `subdued` option to the component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+#### 🐛 Bug fixes
+
+- Removed property `subdued` of the component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-04 `1.1.0`
 
 #### 🎉 New features

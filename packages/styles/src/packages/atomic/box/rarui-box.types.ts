@@ -19,6 +19,7 @@ import {
   fontWeightProperties,
   fontFamilyProperties,
 } from "../../../properties";
+import { boxFillProperties } from "./rarui-box.css";
 
 interface BoxConditions<T> extends Conditions<T> {
   focus?: T;
@@ -110,6 +111,12 @@ export interface BoxSprinkle extends BoxDynamicProperties {
   color?:
     | AddDollar<keyof typeof colorProperties>
     | BoxConditions<AddDollar<keyof typeof colorProperties>>;
+  /**
+   * The fill color property is used to set the color of the box.
+   */
+  fill?:
+    | AddDollar<keyof typeof boxFillProperties>
+    | BoxConditions<AddDollar<keyof typeof boxFillProperties>>;
   /**
    * The borderRadius property rounds the corners of an box's outer border edge.
    */

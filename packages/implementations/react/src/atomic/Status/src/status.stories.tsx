@@ -30,9 +30,9 @@ export const warning: Story = {
   },
 };
 
-export const negative: Story = {
+export const danger: Story = {
   args: {
-    appearance: "negative",
+    appearance: "danger",
     children: "Label",
   },
 };
@@ -63,6 +63,6 @@ export const small: Story = {
   args: {
     children: "Label",
     size: "small",
-    appearance: "negative",
+    appearance: "danger",
   },
 };
