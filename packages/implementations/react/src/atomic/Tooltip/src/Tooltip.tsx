@@ -17,9 +17,9 @@ import {
   autoUpdate,
 } from "@floating-ui/react";
 
+import { Box } from "@rarui-react/box";
 import { TooltipComponents, TooltipProps } from "./tooltip.types";
 import { TooltipBody, TooltipFooter, TooltipHeader } from "./components";
-import { Box } from "@rarui-react/box";
 
 const Tooltip: React.FC<TooltipProps> & TooltipComponents = ({
   className: _className,
