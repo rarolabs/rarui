@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { argTypesConvert } from ".storybook/utils";
 import { Box } from "@rarui-react/box";
 import { Text } from "@rarui-react/text";
+import { Title } from "@rarui-react/title";
 
 import { Tooltip } from "../../Tooltip";
 import docs from "../../tooltip.docs.json";
@@ -15,7 +16,7 @@ const meta = {
   title: "Atomic/Tooltip/Body",
   component: Tooltip.Body,
   render: (args) => (
-    <Box display="flex" justifyContent="center">
+    <Box cursor="default" display="flex" justifyContent="center">
       <Tooltip
         content={
           <>
@@ -47,16 +48,24 @@ export const basic: Story = {
     children: (
       <Box
         display="flex"
+        flexDirection="column"
         alignItems="center"
         justifyContent="center"
         borderStyle="dashed"
         borderWidth="$1"
         borderColor="$warning"
+        borderRadius="$2xs"
+        gap="$3xs"
         width="100%"
-        height="150px"
+        minHeight="252px"
+        minWidth="260px"
+        backgroundColor="$warning-subdued"
       >
-        <Text textAlign="center" color="$warning" fontSize="$s" lineHeight="$m">
-          Replace me with your content
+        <Title as="h6" textAlign="center" color="$warning">
+          ❖ Slot
+        </Title>
+        <Text fontSize="$s" textAlign="center" color="$warning">
+          Substitua por Componente
         </Text>
       </Box>
     ),

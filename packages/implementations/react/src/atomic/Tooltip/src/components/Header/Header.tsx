@@ -19,15 +19,9 @@ const TooltipHeader: React.FC<TooltipHeaderProps> = ({
   ...rest
 }) => (
   <div {...rest} className={tooltip.classnames.header({ padding })}>
-    <Box display="flex" flexDirection="column">
+    <Box display="flex" gap="$4xs" padding="$3xs" flexDirection="column">
       {title && (
-        <Title
-          as="h4"
-          color={inverted ? "$invert" : "$primary"}
-          fontWeight="$medium"
-          fontSize="$s"
-          lineHeight="$m"
-        >
+        <Title as="h6" color={inverted ? "$invert" : "$primary"}>
           {title}
         </Title>
       )}
@@ -35,7 +29,7 @@ const TooltipHeader: React.FC<TooltipHeaderProps> = ({
         <Text
           color={inverted ? "$invert" : "$secondary"}
           fontSize="$xs"
-          lineHeight="$s"
+          lineHeight="$xs"
         >
           {subtitle}
         </Text>
@@ -43,14 +37,16 @@ const TooltipHeader: React.FC<TooltipHeaderProps> = ({
     </Box>
     {children}
     {closeable && (
-      <IconButton
-        data-testid="close-button"
-        variant="ghost"
-        source={<CloseIcon size="medium" />}
-        appearance={inverted ? "inverted" : "neutral"}
-        onClick={onClose}
-        rounded
-      />
+      <Box alignSelf="flex-start">
+        <IconButton
+          size="small"
+          data-testid="close-button"
+          variant="ghost"
+          source={<CloseIcon size="medium" />}
+          appearance={inverted ? "inverted" : "neutral"}
+          onClick={onClose}
+        />
+      </Box>
     )}
   </div>
 );

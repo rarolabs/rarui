@@ -19,6 +19,7 @@ import {
 
 import { TooltipComponents, TooltipProps } from "./tooltip.types";
 import { TooltipBody, TooltipFooter, TooltipHeader } from "./components";
+import { Box } from "@rarui-react/box";
 
 const Tooltip: React.FC<TooltipProps> & TooltipComponents = ({
   className: _className,
@@ -124,11 +125,12 @@ const Tooltip: React.FC<TooltipProps> & TooltipComponents = ({
           >
             {content}
             {arrow && (
-              <FloatingArrow
+              <Box
+                as={FloatingArrow}
                 data-testid="arrow-element"
                 ref={arrowRef}
                 context={context}
-                fill="currentColor"
+                fill="$secondary"
               />
             )}
           </div>

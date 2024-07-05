@@ -2,6 +2,13 @@
 
 Tooltip are informative, specific, and action -oriented text labels that provide contextual support.
 
+## 2024-07-04 `1.1.1`
+
+#### 🐛 Bug fixes
+
+- Fixed padding, font size, gap and general aligments of the `Tooltip.Header` component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Fixed floating arrow color to match background color. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-02 `1.1.0`
 
 #### 🎉 New features
