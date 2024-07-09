@@ -20,10 +20,6 @@ export const PreviewHTML = (Story, context) => {
   ) => {
     const htmlPanel = root.parentElement?.querySelector(".html-display");
 
-    if (root.querySelectorAll(".html-display").length) {
-      return;
-    }
-
     if (htmlPanel) {
       root.parentElement?.removeChild(htmlPanel);
       return;
@@ -69,10 +65,12 @@ export const PreviewHTML = (Story, context) => {
     });
     copyButtonContainer.appendChild(copyButton);
     mainWrapper.appendChild(copyButtonContainer);
-    const existingPanel = root.parentElement?.querySelector(".css-1xrl4hz");
-    if (existingPanel) {
-      root.parentElement?.insertBefore(mainWrapper, existingPanel);
-      return;
+    const showCodeButton = root.parentElement?.querySelector(
+      ".docblock-code-toggle",
+    ) as HTMLButtonElement;
+    if (root.querySelector(".docblock-code-toggle--expanded")) {
+      // console.log("click")
+      showCodeButton.click(); // dispatchEvent(new MouseEvent("click"));
     }
     root.parentElement?.appendChild(mainWrapper);
   };
@@ -88,11 +86,11 @@ export const PreviewHTML = (Story, context) => {
       classes.button,
     );
     button.textContent = "Show HTML";
-    button.addEventListener("click", getPanel);
+    button.addEventListener("click", showHTMLPanel);
     root?.appendChild(button);
   };
 
-  const getPanel = (e) => {
+  const showHTMLPanel = (e) => {
     setTimeout(() => {
       e.target.textContent =
         e.target.textContent === "Show HTML" ? "Hide HTML" : "Show HTML";
@@ -104,6 +102,19 @@ export const PreviewHTML = (Story, context) => {
         e.target.parentElement.parentElement.querySelector("#theme-provider");
       appendHTMLPanel(root, element);
     }, 50);
+  };
+
+  const removeHTMLPanel = (e) => {
+    const root =
+      e.target?.parentElement.parentElement.parentElement.querySelector(
+        ".docs-story",
+      ) as HTMLDivElement;
+    const htmlPanel = root.parentElement?.querySelector(".html-display");
+    if (htmlPanel) {
+      const button = root.querySelector(".show-html-button");
+      if (button) button.textContent = "Show HTML";
+      root.parentElement?.removeChild(htmlPanel);
+    }
   };
 
   useEffect(() => {
@@ -122,6 +133,11 @@ export const PreviewHTML = (Story, context) => {
     document
       .querySelectorAll<HTMLDivElement>(classes.buttonsWrapper)
       ?.forEach((element) => appendButton(element));
+    document
+      .querySelectorAll(".docblock-code-toggle:first-child")
+      .forEach((element) => {
+        element.addEventListener("click", (e) => removeHTMLPanel(e));
+      });
   }, []);
 
   return (
