@@ -101,10 +101,9 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - git commit -m "Publish release stable [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
   rules:
-    - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
-    - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
-  except:
-    - triggers
+    - if: $CI_PIPELINE_SOURCE != "trigger"
+    - if: $CI_PIPELINE_SOURCE = "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
+    - if: $CI_COMMIT_BRANCH = "main" # Verifica se a branch de destino do merge request é a main
 
 release-job:
   stage: releases
@@ -116,8 +115,6 @@ release-job:
     - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
   needs:
     - job: deploy-stable-job
-  except:
-    - triggers
 
 clean-releases-job:
   stage: clean-releases
@@ -137,8 +134,6 @@ clean-releases-job:
     - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
   needs:
     - job: release-job
-  except:
-    - triggers
 
 publish-storybook-job:
   stage: publish-storybook # It only runs when *both* jobs in the test stage complete successfully.
