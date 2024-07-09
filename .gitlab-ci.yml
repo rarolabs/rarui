@@ -142,5 +142,5 @@ publish-storybook-job:
   script:
     - yarn install # Instala as dependências com o Yarn
     - yarn workspace @rarui-react/components run storybook:build
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
+  only:
+    - triggers
