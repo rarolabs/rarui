@@ -69,8 +69,7 @@ export const PreviewHTML = (Story, context) => {
       ".docblock-code-toggle",
     ) as HTMLButtonElement;
     if (root.querySelector(".docblock-code-toggle--expanded")) {
-      // console.log("click")
-      showCodeButton.click(); // dispatchEvent(new MouseEvent("click"));
+      showCodeButton.click();
     }
     root.parentElement?.appendChild(mainWrapper);
   };
