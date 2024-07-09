@@ -89,6 +89,8 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - yarn install # Instala as dependências com o Yarn
     - yarn bump:check
     - export NODE_OPTIONS="--max_old_space_size=8192"
+    - yarn publish:stable
+    - yarn build:docs
     - git config --global user.email "${GITLAB_USER_NAME}"
     - git config --global user.name "${GITLAB_USER_EMAIL}"
     - git fetch
@@ -96,8 +98,6 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - git checkout main
     - git stash apply
     - git pull --rebase
-    - yarn publish:stable
-    - yarn build:docs
     - git add .
     - git commit -m "Publish release stable [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
