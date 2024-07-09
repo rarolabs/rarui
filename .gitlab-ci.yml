@@ -102,7 +102,7 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - git commit -m "Publish release stable [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
   rules:
-    - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
+    - if: $CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE != "trigger" # Verifica se o evento que acionou a pipeline é um merge request
 
 release-job:
   stage: releases
@@ -110,7 +110,7 @@ release-job:
     - yarn install
     - yarn releases:launch
   rules:
-    - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
+    - if: $CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE != "trigger" # Verifica se o evento que acionou a pipeline é um merge request
   needs:
     - job: deploy-stable-job
 
@@ -128,7 +128,7 @@ clean-releases-job:
     - git commit -m "cleaning releases [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
   rules:
-    - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
+    - if: $CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE != "trigger" # Verifica se o evento que acionou a pipeline é um merge request
   needs:
     - job: release-job
 
