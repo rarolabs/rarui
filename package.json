@@ -53,6 +53,7 @@
     "g:storybook": "storybook"
   },
   "dependencies": {
+    "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vue": "^3.4.21"
@@ -82,6 +83,7 @@
     "@types/babel__register": "^7",
     "@types/eslint": "^8",
     "@types/jest": "^29.5.12",
+    "@types/prismjs": "^1",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vanilla-extract/babel-plugin": "^1.2.0",

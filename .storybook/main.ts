@@ -40,7 +40,9 @@ const config: StorybookConfig = {
   },
   webpackFinal(config) {
     config.plugins?.push(
-      new VanillaExtractPlugin(),
+      new VanillaExtractPlugin({
+        identifiers: "debug",
+      }),
       new MiniCssExtractPlugin(),
     );
     config.resolve = {
