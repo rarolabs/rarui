@@ -25,6 +25,7 @@ declined:
   - "@rarui-react/skeleton"
   - "@rarui-react/status"
   - "@rarui-react/text"
+  - "@rarui-react/textarea"
   - "@rarui-react/title"
   - "@rarui-react/toast"
   - "@rarui-react/toggle"
