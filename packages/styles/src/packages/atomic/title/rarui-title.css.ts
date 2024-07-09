@@ -18,8 +18,8 @@ export const title = recipe({
   variants: {
     as: {
       h1: {
-        fontSize: varsThemeBase.fontSize.hero,
-        lineHeight: varsThemeBase.lineHeight.hero,
+        fontSize: varsThemeBase.fontSize.heading.hero,
+        lineHeight: varsThemeBase.lineHeight.heading.hero,
         fontWeight: varsThemeBase.fontWeight.bold,
       },
       h2: {
@@ -60,7 +60,7 @@ export const styles = {
  * -----------------------------------------------------------------------------------------------*/
 
 export const titleLineHeightProperties = {
-  hero: varsThemeBase.lineHeight.hero,
+  hero: varsThemeBase.lineHeight.heading.hero,
   xs: varsThemeBase.lineHeight.heading.xs,
   s: varsThemeBase.lineHeight.heading.s,
   m: varsThemeBase.lineHeight.heading.m,
@@ -69,7 +69,7 @@ export const titleLineHeightProperties = {
 };
 
 export const titleFontSizeProperties = {
-  hero: varsThemeBase.fontSize.hero,
+  hero: varsThemeBase.fontSize.heading.hero,
   xs: varsThemeBase.fontSize.heading.xs,
   s: varsThemeBase.fontSize.heading.s,
   m: varsThemeBase.fontSize.heading.m,

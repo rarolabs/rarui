@@ -32,7 +32,7 @@ const chip = recipe({
     color: varsThemeBase.colors.content.primary,
     ":focus-within": {
       outline: "none",
-      boxShadow: varsThemeBase.utils["focus-ring"],
+      boxShadow: varsThemeBase.elevation["focus-ring"],
     },
     ":hover": {
       backgroundColor: varsThemeBase.colors.surface["brand-hover"],
@@ -128,7 +128,7 @@ export const close = style({
   borderRadius: varsThemeBase.shape.border.radius.pill,
   ":focus-within": {
     outline: "none",
-    boxShadow: varsThemeBase.utils["focus-ring"],
+    boxShadow: varsThemeBase.elevation["focus-ring"],
   },
   ":hover": {
     color: varsThemeBase.colors.content.primary,

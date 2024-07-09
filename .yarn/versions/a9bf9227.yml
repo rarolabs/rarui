@@ -1,0 +1,7 @@
+releases:
+  "@rarui/tokens": major
+
+declined:
+  - "@rarui/design-system"
+  - "@rarui-react/toggle"
+  - "@rarui/styles"

@@ -71,7 +71,7 @@ const button = recipe({
     padding: `${varsThemeBase.spacing["3xs"]} ${varsThemeBase.spacing.xs}`,
     ":focus-within": {
       outline: "none",
-      boxShadow: varsThemeBase.utils["focus-ring"],
+      boxShadow: varsThemeBase.elevation["focus-ring"],
     },
     ":hover": {
       backgroundColor: varsThemeBase.colors.surface.hover,

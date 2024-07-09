@@ -32,7 +32,7 @@ const button = recipe({
     },
     ":focus-within": {
       outline: "none",
-      boxShadow: varsThemeBase.utils["focus-ring"],
+      boxShadow: varsThemeBase.elevation["focus-ring"],
     },
     ":after": {
       transition: "opacity 150ms ease",

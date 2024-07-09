@@ -31,7 +31,7 @@ const breadcrumbItem = recipe({
     fontFamily: varsThemeBase.fontFamily.body,
     ":focus-within": {
       outline: "none",
-      boxShadow: varsThemeBase.utils["focus-ring"],
+      boxShadow: varsThemeBase.elevation["focus-ring"],
     },
     ":hover": {
       color: varsThemeBase.colors.content.brand,

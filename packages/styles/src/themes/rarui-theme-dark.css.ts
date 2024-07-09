@@ -96,9 +96,7 @@ const darkTheme = {
       "4": elevation.bottom[4].value,
       "5": elevation.bottom[5].value,
     },
-  },
-  utils: {
-    "focus-ring": colors.border["focus-ring"].value,
+    "focus-ring": elevation["focus-ring"].value,
   },
 };
 

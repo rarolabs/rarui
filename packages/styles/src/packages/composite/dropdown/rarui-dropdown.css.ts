@@ -60,7 +60,7 @@ const dropdownItem = recipe({
     fontSize: varsThemeBase.fontSize.button.s,
     ":focus-within": {
       outline: "none",
-      boxShadow: varsThemeBase.utils["focus-ring"],
+      boxShadow: varsThemeBase.elevation["focus-ring"],
     },
     ":hover": {
       backgroundColor: varsThemeBase.colors.surface.hover,

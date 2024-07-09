@@ -167,7 +167,7 @@ globalStyle(
   `,
   {
     outline: "none",
-    boxShadow: varsThemeBase.utils["focus-ring"],
+    boxShadow: varsThemeBase.elevation["focus-ring"],
   },
 );
 

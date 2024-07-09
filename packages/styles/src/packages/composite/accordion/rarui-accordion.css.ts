@@ -31,7 +31,7 @@ const item = recipe({
     },
     ":focus-within": {
       outline: "none",
-      boxShadow: varsThemeBase.utils["focus-ring"],
+      boxShadow: varsThemeBase.elevation["focus-ring"],
     },
   },
   variants: {
