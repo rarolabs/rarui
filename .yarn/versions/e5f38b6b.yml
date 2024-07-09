@@ -2,6 +2,7 @@ releases:
   "@rarui/webpack": patch
 
 declined:
+  - "@rarui/design-system"
   - "@rarui/typings"
   - "@rarui/icons"
   - "@rarui-react/components"
@@ -45,6 +46,3 @@ declined:
   - "@rarui-vuejs/chip"
   - "@rarui-vuejs/link"
   - "@rarui/styles"
-
-undecided:
-  - "@rarui/design-system"
