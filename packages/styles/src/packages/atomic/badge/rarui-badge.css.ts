@@ -168,9 +168,9 @@ const badge = recipe({
         variant: "outlined",
       },
       style: {
-        color: varsThemeBase.colors.content.primary,
-        borderColor: varsThemeBase.colors.border.secondary,
-        backgroundColor: varsThemeBase.colors.surface.primary,
+        color: varsThemeBase.colors.content["invert-secondary"],
+        borderColor: varsThemeBase.colors.border.invert,
+        backgroundColor: varsThemeBase.colors.surface["invert-disabled"],
       },
     },
     {
@@ -179,9 +179,9 @@ const badge = recipe({
         variant: "outlined",
       },
       style: {
-        color: varsThemeBase.colors.content.invert,
-        borderColor: varsThemeBase.colors.border.invert,
-        backgroundColor: varsThemeBase.colors.surface.invert,
+        color: varsThemeBase.colors.content.secondary,
+        borderColor: varsThemeBase.colors.border.subdued,
+        backgroundColor: varsThemeBase.colors.surface.secondary,
       },
     },
   ],

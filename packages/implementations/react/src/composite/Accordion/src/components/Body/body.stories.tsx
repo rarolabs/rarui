@@ -4,6 +4,7 @@ import { argTypesConvert } from ".storybook/utils";
 import { BookmarkOutlinedIcon } from "@rarui/icons";
 import { Box } from "@rarui-react/box";
 import { Text } from "@rarui-react/text";
+import { Title } from "@rarui-react/title";
 
 import { Accordion } from "../../Accordion";
 import docs from "../../accordion.docs.json";
@@ -40,19 +41,29 @@ export const basic: Story = {
   args: {
     children: (
       <Box display="flex" flexDirection="column" gap="$2xs">
-        <Text color="$secondary">Lorem ipsum dolor sit amet.</Text>
+        <Text fontSize="$s" color="$secondary">
+          Lorem ipsum dolor sit amet.
+        </Text>
         <Box
           display="flex"
+          flexDirection="column"
           alignItems="center"
           justifyContent="center"
           borderStyle="dashed"
           borderWidth="$1"
           borderColor="$warning"
+          borderRadius="$2xs"
+          gap="$3xs"
           width="100%"
-          minHeight="200px"
+          minHeight="252px"
+          minWidth="260px"
+          backgroundColor="$warning-subdued"
         >
-          <Text textAlign="center" color="$warning">
-            Replace me with your content two
+          <Title as="h6" textAlign="center" color="$warning">
+            ❖ Slot
+          </Title>
+          <Text fontSize="$s" textAlign="center" color="$warning">
+            Substitua por Componente
           </Text>
         </Box>
       </Box>

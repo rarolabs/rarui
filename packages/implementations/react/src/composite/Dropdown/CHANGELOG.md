@@ -2,6 +2,12 @@
 
 Dropdown are informative, specific, and action -oriented text labels that provide contextual support.
 
+## 2024-07-04 `1.2.1`
+
+#### 🐛 Bug fixes
+
+- Removed arrow option of the component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-02 `1.2.0`
 
 #### 🎉 New features

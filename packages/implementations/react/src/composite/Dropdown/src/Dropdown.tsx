@@ -4,7 +4,6 @@ import {
   useFloating,
   useInteractions,
   FloatingPortal,
-  FloatingArrow,
   useClick,
   useDismiss,
   flip,
@@ -25,7 +24,6 @@ const Dropdown: React.FC<DropdownProps> & DropdownComponents = ({
   content,
   visible,
   portalId,
-  arrow = false,
   offset = 10,
   enabledDismiss = true,
   enabledClick = true,
@@ -116,14 +114,6 @@ const Dropdown: React.FC<DropdownProps> & DropdownComponents = ({
             {...getFloatingProps()}
           >
             {content}
-            {arrow && (
-              <FloatingArrow
-                data-testid="arrow-element"
-                ref={arrowRef}
-                context={context}
-                fill="currentColor"
-              />
-            )}
           </div>
         )}
       </FloatingPortal>

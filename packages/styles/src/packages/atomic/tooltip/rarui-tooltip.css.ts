@@ -26,7 +26,7 @@ export const tooltip = recipe({
         color: varsThemeBase.colors.surface.invert,
       },
       false: {
-        backgroundColor: varsThemeBase.colors.surface.primary,
+        backgroundColor: varsThemeBase.colors.surface.secondary,
         color: varsThemeBase.colors.surface.primary,
       },
     },
@@ -35,7 +35,7 @@ export const tooltip = recipe({
      */
     padding: {
       base: {
-        padding: varsThemeBase.spacing["3xs"],
+        padding: varsThemeBase.spacing["2xs"],
       },
       none: {
         padding: 0,

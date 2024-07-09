@@ -24,6 +24,11 @@ import {
  * Sprinkle
  * -----------------------------------------------------------------------------------------------*/
 
+export const boxFillProperties = {
+  ...backgroundColorProperties,
+  currentColor: "currentColor",
+};
+
 const defineProperties = defineRainbowProperties({
   conditions: {
     xs: {
@@ -98,6 +103,7 @@ const defineProperties = defineRainbowProperties({
   },
   staticProperties: {
     backgroundColor: backgroundColorProperties,
+    fill: boxFillProperties,
     borderColor: borderColorProperties,
     color: colorProperties,
     borderRadius: borderRadiusProperties,

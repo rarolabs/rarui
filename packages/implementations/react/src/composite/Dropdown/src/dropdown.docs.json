@@ -1,7 +1,7 @@
 {
   "id": "dropdown",
   "name": "Dropdown",
-  "totalProps": 16,
+  "totalProps": 15,
   "packageName": "@rarui-react/dropdown",
   "version": "1.2.0",
   "docLink": "https://rarui.com.br/documentation/src-components/dropdown",
@@ -17,13 +17,6 @@
       "type": "React.ReactNode",
       "title": "content",
       "required": true
-    },
-    {
-      "description": "Conditional for displaying the dropdown arrow.",
-      "default": true,
-      "type": "boolean",
-      "title": "arrow",
-      "required": false
     },
     {
       "description": "A common feature of select dropdowns is that the dropdown matches the width of the reference regardless of its contents.",

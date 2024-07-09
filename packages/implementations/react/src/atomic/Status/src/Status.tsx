@@ -8,7 +8,6 @@ const Status: React.FC<StatusProps> = ({
   appearance = "success",
   size = "normal",
   variant = "solid",
-  subdued = false,
   dot = true,
   full,
   children,
@@ -19,7 +18,6 @@ const Status: React.FC<StatusProps> = ({
       size,
       variant,
       appearance,
-      subdued,
       full,
     })}
     {...props}

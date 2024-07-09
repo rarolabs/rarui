@@ -11,7 +11,7 @@ const ProgressCircle: React.FC<ProgressCircleProps> = ({
   size = "large",
   ...props
 }) => {
-  const completed = percentage >= 100;
+  const completed = parseFloat(percentage.toFixed(1)) >= 100;
   const dataTestid = (props as { "data-testid": string })?.["data-testid"];
 
   const { className, style } = progress.sprinkle({
@@ -43,7 +43,7 @@ const ProgressCircle: React.FC<ProgressCircleProps> = ({
           data-testid={dataTestid ? `${dataTestid}-bar` : ""}
         />
         <text className={progress.classnames.circleText} x="70" y="73">
-          {completed ? "100" : percentage}%
+          {completed ? "100" : parseFloat(percentage.toFixed(1))}%
         </text>
       </svg>
     </div>

@@ -2,6 +2,18 @@
 
 Our design tokens are the foundations of Design System.
 
+## 2024-07-01 `2.1.1`
+
+#### 🐛 Bug fixes
+
+- Adjusted color of the light theme `color-light-surface-warning` token. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Adjusted color of the light theme `color-light-surface["invert-disabled"]` token. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Adjusted color of the light theme `color-light-border-invert` token. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Adjusted color of the dark theme `color-dark-surface["invert-disable"]` token. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Adjusted color of the dark theme `color-dark-surface["invert-secondary"]` token. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Adjusted color of the dark theme `color-dark-surface-warning` token. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Adjusted color of the dark theme `color-dark-content["invert-secondary"]` token. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-01 `2.1.0`
 
 #### 🎉 New features

@@ -17,6 +17,7 @@ import {
   autoUpdate,
 } from "@floating-ui/react";
 
+import { Box } from "@rarui-react/box";
 import { TooltipComponents, TooltipProps } from "./tooltip.types";
 import { TooltipBody, TooltipFooter, TooltipHeader } from "./components";
 
@@ -124,11 +125,12 @@ const Tooltip: React.FC<TooltipProps> & TooltipComponents = ({
           >
             {content}
             {arrow && (
-              <FloatingArrow
+              <Box
+                as={FloatingArrow}
                 data-testid="arrow-element"
                 ref={arrowRef}
                 context={context}
-                fill="currentColor"
+                fill="$secondary"
               />
             )}
           </div>

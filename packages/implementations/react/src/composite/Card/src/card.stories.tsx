@@ -4,6 +4,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { argTypesConvert } from ".storybook/utils";
 import { Box } from "@rarui-react/box";
 import { Text } from "@rarui-react/text";
+import { Title } from "@rarui-react/title";
 
 import { Card } from "./Card";
 import docs from "./card.docs.json";
@@ -33,23 +34,24 @@ export const basic: Story = {
         <Card.Body>
           <Box
             display="flex"
+            flexDirection="column"
             alignItems="center"
             justifyContent="center"
             borderStyle="dashed"
             borderWidth="$1"
             borderColor="$warning"
             borderRadius="$2xs"
+            gap="$3xs"
             width="100%"
-            height="250px"
+            minHeight="250px"
+            minWidth="260px"
             backgroundColor="$warning-subdued"
           >
-            <Text
-              textAlign="center"
-              color="$warning"
-              fontSize="$s"
-              lineHeight="$m"
-            >
-              Replace me with your content
+            <Title as="h6" textAlign="center" color="$warning">
+              ❖ Slot
+            </Title>
+            <Text fontSize="$s" textAlign="center" color="$warning">
+              Substitua por Componente
             </Text>
           </Box>
         </Card.Body>
@@ -64,18 +66,24 @@ export const customContent: Story = {
     children: (
       <Box
         display="flex"
+        flexDirection="column"
         alignItems="center"
         justifyContent="center"
         borderStyle="dashed"
         borderWidth="$1"
         borderColor="$warning"
         borderRadius="$2xs"
+        gap="$3xs"
         width="100%"
-        height="250px"
+        minHeight="250px"
+        minWidth="260px"
         backgroundColor="$warning-subdued"
       >
-        <Text textAlign="center" color="$warning" fontSize="$s" lineHeight="$m">
-          Replace me with your content
+        <Title as="h6" textAlign="center" color="$warning">
+          ❖ Slot
+        </Title>
+        <Text fontSize="$s" textAlign="center" color="$warning">
+          Substitua por Componente
         </Text>
       </Box>
     ),

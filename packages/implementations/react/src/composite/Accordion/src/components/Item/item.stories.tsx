@@ -4,6 +4,7 @@ import { argTypesConvert } from ".storybook/utils";
 import { StorefrontIcon } from "@rarui/icons";
 import { Box } from "@rarui-react/box";
 import { Text } from "@rarui-react/text";
+import { Title } from "@rarui-react/title";
 
 import { Accordion } from "../../Accordion";
 import docs from "../../accordion.docs.json";
@@ -43,15 +44,25 @@ export const basic: Story = {
         <Accordion.Body>
           <Box
             display="flex"
+            flexDirection="column"
             alignItems="center"
             justifyContent="center"
             borderStyle="dashed"
             borderWidth="$1"
             borderColor="$warning"
+            borderRadius="$2xs"
+            gap="$3xs"
             width="100%"
-            height="100%"
+            minHeight="252px"
+            minWidth="260px"
+            backgroundColor="$warning-subdued"
           >
-            <Text textAlign="center">Replace me with your content</Text>
+            <Title as="h6" textAlign="center" color="$warning">
+              ❖ Slot
+            </Title>
+            <Text fontSize="$s" textAlign="center" color="$warning">
+              Substitua por Componente
+            </Text>
           </Box>
         </Accordion.Body>
       </>

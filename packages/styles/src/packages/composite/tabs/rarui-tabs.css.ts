@@ -74,7 +74,7 @@ const button = recipe({
       boxShadow: varsThemeBase.utils["focus-ring"],
     },
     ":hover": {
-      backgroundColor: varsThemeBase.colors.surface.primary,
+      backgroundColor: varsThemeBase.colors.surface.hover,
       boxShadow: varsThemeBase.elevation.bottom[1],
       color: varsThemeBase.colors.content.primary,
     },

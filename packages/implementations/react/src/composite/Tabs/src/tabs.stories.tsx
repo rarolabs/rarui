@@ -5,6 +5,7 @@ import { argTypesConvert } from ".storybook/utils";
 import { SentimentSatisfiedOutlinedIcon } from "@rarui/icons";
 import { Box } from "@rarui-react/box";
 import { Text } from "@rarui-react/text";
+import { Title } from "@rarui-react/title";
 import { Icon } from "@rarui-react/icon";
 
 import { Tabs } from "./Tabs";
@@ -34,44 +35,48 @@ export const basic: Story = {
         <Tabs.Item label="Label">
           <Box
             display="flex"
+            flexDirection="column"
             alignItems="center"
             justifyContent="center"
             borderStyle="dashed"
             borderWidth="$1"
             borderColor="$warning"
+            borderRadius="$2xs"
+            gap="$3xs"
             width="100%"
             height="150px"
+            minWidth="260px"
             backgroundColor="$warning-subdued"
           >
-            <Text
-              textAlign="center"
-              color="$warning"
-              fontSize="$s"
-              lineHeight="$m"
-            >
-              Replace me with your content tab 1
+            <Title as="h6" textAlign="center" color="$warning">
+              ❖ Slot
+            </Title>
+            <Text fontSize="$s" textAlign="center" color="$warning">
+              Substitua por Componente
             </Text>
           </Box>
         </Tabs.Item>
         <Tabs.Item label="Label">
           <Box
             display="flex"
+            flexDirection="column"
             alignItems="center"
             justifyContent="center"
             borderStyle="dashed"
             borderWidth="$1"
             borderColor="$warning"
+            borderRadius="$2xs"
+            gap="$3xs"
             width="100%"
             height="150px"
+            minWidth="260px"
             backgroundColor="$warning-subdued"
           >
-            <Text
-              textAlign="center"
-              color="$warning"
-              fontSize="$s"
-              lineHeight="$m"
-            >
-              Replace me with your content tab 2
+            <Title as="h6" textAlign="center" color="$warning">
+              ❖ Slot 2
+            </Title>
+            <Text fontSize="$s" textAlign="center" color="$warning">
+              Substitua por Componente
             </Text>
           </Box>
         </Tabs.Item>
@@ -88,44 +93,48 @@ export const underlined: Story = {
         <Tabs.Item label="Label">
           <Box
             display="flex"
+            flexDirection="column"
             alignItems="center"
             justifyContent="center"
             borderStyle="dashed"
             borderWidth="$1"
             borderColor="$warning"
+            borderRadius="$2xs"
+            gap="$3xs"
             width="100%"
             height="150px"
+            minWidth="260px"
             backgroundColor="$warning-subdued"
           >
-            <Text
-              textAlign="center"
-              color="$warning"
-              fontSize="$s"
-              lineHeight="$m"
-            >
-              Replace me with your content tab 1
+            <Title as="h6" textAlign="center" color="$warning">
+              ❖ Slot
+            </Title>
+            <Text fontSize="$s" textAlign="center" color="$warning">
+              Substitua por Componente
             </Text>
           </Box>
         </Tabs.Item>
         <Tabs.Item label="Label">
           <Box
             display="flex"
+            flexDirection="column"
             alignItems="center"
             justifyContent="center"
             borderStyle="dashed"
             borderWidth="$1"
             borderColor="$warning"
+            borderRadius="$2xs"
+            gap="$3xs"
             width="100%"
             height="150px"
+            minWidth="260px"
             backgroundColor="$warning-subdued"
           >
-            <Text
-              textAlign="center"
-              color="$warning"
-              fontSize="$s"
-              lineHeight="$m"
-            >
-              Replace me with your content tab 2
+            <Title as="h6" textAlign="center" color="$warning">
+              ❖ Slot 2
+            </Title>
+            <Text fontSize="$s" textAlign="center" color="$warning">
+              Substitua por Componente
             </Text>
           </Box>
         </Tabs.Item>
@@ -149,44 +158,48 @@ export const customLabel: Story = {
         >
           <Box
             display="flex"
+            flexDirection="column"
             alignItems="center"
             justifyContent="center"
             borderStyle="dashed"
             borderWidth="$1"
             borderColor="$warning"
+            borderRadius="$2xs"
+            gap="$3xs"
             width="100%"
             height="150px"
+            minWidth="260px"
             backgroundColor="$warning-subdued"
           >
-            <Text
-              textAlign="center"
-              color="$warning"
-              fontSize="$s"
-              lineHeight="$m"
-            >
-              Replace me with your content tab 1
+            <Title as="h6" textAlign="center" color="$warning">
+              ❖ Slot
+            </Title>
+            <Text fontSize="$s" textAlign="center" color="$warning">
+              Substitua por Componente
             </Text>
           </Box>
         </Tabs.Item>
         <Tabs.Item label="Label">
           <Box
             display="flex"
+            flexDirection="column"
             alignItems="center"
             justifyContent="center"
             borderStyle="dashed"
             borderWidth="$1"
             borderColor="$warning"
+            borderRadius="$2xs"
+            gap="$3xs"
             width="100%"
             height="150px"
+            minWidth="260px"
             backgroundColor="$warning-subdued"
           >
-            <Text
-              textAlign="center"
-              color="$warning"
-              fontSize="$s"
-              lineHeight="$m"
-            >
-              Replace me with your content tab 2
+            <Title as="h6" textAlign="center" color="$warning">
+              ❖ Slot 2
+            </Title>
+            <Text fontSize="$s" textAlign="center" color="$warning">
+              Substitua por Componente
             </Text>
           </Box>
         </Tabs.Item>

@@ -15,7 +15,7 @@ const meta = {
   title: "Atomic/Tooltip/Header",
   component: Tooltip.Header,
   render: (args) => (
-    <Box display="flex" justifyContent="center">
+    <Box cursor="default" display="flex" justifyContent="center">
       <Tooltip content={<Tooltip.Header {...args} />}>
         <Text color="$primary">Hover</Text>
       </Tooltip>

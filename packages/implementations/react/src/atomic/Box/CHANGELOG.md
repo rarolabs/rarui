@@ -2,6 +2,12 @@
 
 A low-level utility component that accepts styled system props to enable custom theme-aware styling
 
+## 2024-07-04 `2.3.0`
+
+#### 🎉 New features
+
+- Added new `fill` property to the component. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-02 `2.2.0`
 
 #### 🎉 New features
