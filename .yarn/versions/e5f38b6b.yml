@@ -46,3 +46,4 @@ declined:
   - "@rarui-vuejs/chip"
   - "@rarui-vuejs/link"
   - "@rarui/styles"
+  - "@rarui/tokens"
