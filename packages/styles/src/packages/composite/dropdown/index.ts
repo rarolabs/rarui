@@ -1,4 +1,4 @@
-import { dropdownStyles, dropdownSprinkle } from "./raui-dropdown.css";
+import { dropdownStyles, dropdownSprinkle } from "./rarui-dropdown.css";
 
 export const dropdown = {
   classnames: dropdownStyles,

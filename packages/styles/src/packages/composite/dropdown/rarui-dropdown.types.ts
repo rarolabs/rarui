@@ -1,5 +1,5 @@
 import { RecipeVariants } from "@vanilla-extract/recipes";
-import { dropdownStyles } from "./raui-dropdown.css";
+import { dropdownStyles } from "./rarui-dropdown.css";
 import {
   StandardLonghandProperties,
   Conditions,

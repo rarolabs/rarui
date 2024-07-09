@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating builds of each design system package. It contains all the necessary settings and dependencies to optimize the creation of our builds.
 
+## 2024-08-09 `1.3.1`
+
+#### 🐛 Bug fixes
+
+- Fixed `cssHashRemoverPlugin` to properly remove hashs ([#73](https://git.rarolabs.com.br/frontend/rarui/pull/73) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-06-10 `1.3.0`
 
 #### 💡 Others

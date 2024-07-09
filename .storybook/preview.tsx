@@ -2,6 +2,7 @@ import React from "react";
 import { Preview } from "@storybook/react";
 import { themes } from "@storybook/theming";
 import { ThemeDocsProvider, ThemeRaruiProvider, dark, light } from "./theme";
+import { PreviewHTML } from "./decorators/PreviewHTML";
 
 const preview: Preview = {
   parameters: {
@@ -31,6 +32,7 @@ const preview: Preview = {
         <Story />
       </ThemeRaruiProvider>
     ),
+    PreviewHTML,
   ],
 };
 
