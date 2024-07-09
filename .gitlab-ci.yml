@@ -137,6 +137,8 @@ publish-storybook-job:
   environment: production
   script:
     - yarn install # Instala as dependências com o Yarn
+    - yarn build:tokens
+    - yarn build:icons
     - yarn workspace @rarui-react/components run storybook:build
   only:
     - triggers
