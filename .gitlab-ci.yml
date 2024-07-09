@@ -102,8 +102,8 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
   rules:
     - if: $CI_PIPELINE_SOURCE != "trigger"
-    - if: $CI_PIPELINE_SOURCE = "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
-    - if: $CI_COMMIT_BRANCH = "main" # Verifica se a branch de destino do merge request é a main
+    - if: $CI_PIPELINE_SOURCE == "merged_result" # Verifica se o evento que acionou a pipeline é um merge request
+    - if: $CI_COMMIT_BRANCH == "main" # Verifica se a branch de destino do merge request é a main
 
 release-job:
   stage: releases
