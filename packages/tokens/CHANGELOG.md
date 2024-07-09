@@ -2,6 +2,13 @@
 
 Our design tokens are the foundations of Design System.
 
+## 2024-07-09 `3.0.0`
+
+#### 💡 Others
+
+- Removed all tokens with named colors `red`, `yellow`, `blue` and `green`. ([#74](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/74) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Updated tokens previously using `red`, `yellow`, `blue`, and `green` to `error`, `yellow`, `brand/info`, and `success` respectively. . ([#74](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/74) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-01 `2.1.1`
 
 #### 🐛 Bug fixes
