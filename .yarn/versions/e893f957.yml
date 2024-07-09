@@ -1,6 +1,0 @@
-releases:
-  "@rarui/tokens": major
-
-declined:
-  - "@rarui/design-system"
-  - "@rarui/styles"
