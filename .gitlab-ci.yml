@@ -162,7 +162,7 @@ build-storybook-job:
     - triggers
 
 deploy-s3-job:
-  stage: deploy
+  stage: deploy-s3
   image:
     name: amazon/aws-cli:latest
     entrypoint:
