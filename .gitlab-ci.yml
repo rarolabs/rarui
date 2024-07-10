@@ -18,6 +18,13 @@
 
 image: node:lts
 
+.image-aws: &image-aws
+  image:
+    name: rarolabs/aws-cli
+    entrypoint: ['']
+  services:
+    - docker:20.10.15-dind
+
 .assume_role: &assume_role
   - >
     STS=($(aws sts assume-role-with-web-identity
@@ -162,17 +169,13 @@ build-storybook-job:
     - triggers
 
 deploy-s3-job:
+  <<: *image-aws
   stage: deploy-s3
-  image:
-    name: amazon/aws-cli:latest
-    entrypoint:
-      - "/usr/bin/env"
-  id_tokens:
-    ID_TOKEN:
-      aud: react_s3_gl
   script:
-    - *assume_role
-    - aws s3 sync build/ s3://$S3_BUCKET
+    - amazon-linux-extras install docker
+    - aws --version
+    - aws ecr get-login-password --region ${AWS_REGION}
+    - aws s3 sync build/ s3://${S3_BUCKET}
   needs:
     - job: build-storybook-job
   only:
