@@ -42,6 +42,17 @@ export const PreviewHTML = (Story: StoryFn, context: StoryContext) => {
     mainWrapper.appendChild(copyButtonContainer);
 
     const secondWrapper = createElementWithClasses("div", "css-8ycahn");
+    let newHeight = "";
+    secondWrapper.addEventListener("mouseenter", () => {
+      if (!newHeight)
+        newHeight = `${secondWrapper.parentElement!.scrollHeight - 6}px`;
+      secondWrapper.style.height = newHeight;
+      secondWrapper.style.overflowX = "scroll";
+    });
+    secondWrapper.addEventListener("mouseleave", () => {
+      secondWrapper.style.height = newHeight;
+      secondWrapper.style.overflowX = "hidden";
+    });
     mainWrapper.appendChild(secondWrapper);
 
     const htmlDisplay = createElementWithClasses(

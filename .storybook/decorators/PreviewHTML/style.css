@@ -105,3 +105,25 @@ pre {
   margin-left: -1px;
   border-radius: 4px 0 0 0;
 }
+
+.css-8ycahn {
+  transition: all 2s ease-in-out;
+  overflow-y: hidden;
+}
+.html-display {
+  padding: 3px;
+}
+
+.css-8ycahn::-webkit-scrollbar {
+  height: 8px;
+}
+
+.css-8ycahn::-webkit-scrollbar-thumb {
+  background: rgba(121, 129, 134, 0.2);
+  opacity: 0.2;
+  border-radius: 8px;
+  border: 8px solid rgba(121, 129, 134, 0.3);
+}
+.css-8ycahn::-webkit-scrollbar-thumb:hover {
+  border: 8px solid rgba(121, 129, 134, 0.5);
+}
