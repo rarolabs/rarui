@@ -41,19 +41,28 @@ export const PreviewHTML = (Story: StoryFn, context: StoryContext) => {
     const copyButtonContainer = createElementWithClasses("div", "css-111a2cx");
     mainWrapper.appendChild(copyButtonContainer);
 
-    const secondWrapper = createElementWithClasses("div", "css-8ycahn");
-    let newHeight = "";
-    secondWrapper.addEventListener("mouseenter", () => {
-      if (!newHeight)
-        newHeight = `${secondWrapper.parentElement!.scrollHeight - 6}px`;
-      secondWrapper.style.height = newHeight;
-      secondWrapper.style.overflowX = "scroll";
+    const codeContainer = createElementWithClasses("div", "css-8ycahn");
+    const scroller = createElementWithClasses("div", "scroller");
+    const scrollerInner = createElementWithClasses("div", "scroller-inner");
+
+    mainWrapper.addEventListener("mouseenter", () => {
+      scroller.style.position = "absolute";
+      scroller.style.bottom = "2px";
+      scrollerInner.style.width = codeContainer.scrollWidth + "px";
+      scroller.style.width = codeContainer.clientWidth + "px";
+      scrollerInner.style.height = "1px";
+      scroller.appendChild(scrollerInner);
+      scroller.style.overflowX = "scroll";
+      scroller.addEventListener("scroll", () => {
+        codeContainer.scrollLeft = scroller.scrollLeft;
+      });
+
+      mainWrapper.appendChild(scroller);
     });
-    secondWrapper.addEventListener("mouseleave", () => {
-      secondWrapper.style.height = newHeight;
-      secondWrapper.style.overflowX = "hidden";
+    mainWrapper.addEventListener("mouseleave", () => {
+      mainWrapper.removeChild(scroller);
     });
-    mainWrapper.appendChild(secondWrapper);
+    mainWrapper.appendChild(codeContainer);
 
     const htmlDisplay = createElementWithClasses(
       "div",
@@ -65,7 +74,7 @@ export const PreviewHTML = (Story: StoryFn, context: StoryContext) => {
       "css-4zr3vl",
       "prismjs",
     );
-    secondWrapper.appendChild(htmlWrapper);
+    codeContainer.appendChild(htmlWrapper);
 
     if (htmlWrapper.innerHTML === "") {
       htmlWrapper.appendChild(htmlDisplay);
