@@ -9,11 +9,19 @@ import {
 } from "./previewHTML.helpers";
 
 import "./style.css";
+import { StoryContext, StoryFn } from "@storybook/react";
 
-export const PreviewHTML = (Story, context) => {
-  const darkMode = useDarkMode();
+export const PreviewHTML = (Story: StoryFn, context: StoryContext) => {
+  const [darkMode, setDarkMode] = useState(false);
 
-  const [classes] = useState(darkMode ? darkClasses : lightClasses);
+  const changeDarkMode = (message: MessageEvent) => {
+    console.log(`Received ${message}`);
+    if (message.data?.type === "change_dark_theme") {
+      setDarkMode(message.data.value);
+    }
+  };
+
+  const classes = darkMode ? darkClasses : lightClasses;
   const appendHTMLPanel = async (
     root: HTMLDivElement,
     element: HTMLDivElement,
@@ -89,7 +97,7 @@ export const PreviewHTML = (Story, context) => {
     root?.appendChild(button);
   };
 
-  const showHTMLPanel = (e) => {
+  const showHTMLPanel = (e: any) => {
     setTimeout(() => {
       e.target.textContent =
         e.target.textContent === "Show HTML" ? "Hide HTML" : "Show HTML";
@@ -103,7 +111,7 @@ export const PreviewHTML = (Story, context) => {
     }, 50);
   };
 
-  const removeHTMLPanel = (e) => {
+  const removeHTMLPanel = (e: any) => {
     const root =
       e.target?.parentElement.parentElement.parentElement.querySelector(
         ".docs-story",
@@ -137,11 +145,8 @@ export const PreviewHTML = (Story, context) => {
       .forEach((element) => {
         element.addEventListener("click", (e) => removeHTMLPanel(e));
       });
+    window.addEventListener("message", changeDarkMode);
   }, []);
 
-  return (
-    <div>
-      <Story {...context} />
-    </div>
-  );
+  return <Story {...context} />;
 };

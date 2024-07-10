@@ -67,3 +67,41 @@ pre {
 .css-8ycahn * .token.attr-value {
   color: #b474dd;
 }
+
+.css-111a2cx {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: #1b1c1d;
+  z-index: 1;
+}
+
+.css-9hpw1j {
+  margin: 0;
+  border: 0 none;
+  padding: 4px 10px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #c9cdcf;
+  background: #1b1c1d;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: inter;
+  font-weight: 700;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  margin-left: -1px;
+  border-radius: 4px 0 0 0;
+}
