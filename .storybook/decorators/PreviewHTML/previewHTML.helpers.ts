@@ -1,6 +1,7 @@
 import Prism from "prismjs";
 import "prismjs/components/prism-cshtml";
 import prettier from "prettier/standalone";
+// @ts-ignore
 import * as parserHtml from "prettier/parser-html";
 
 export const darkClasses = {

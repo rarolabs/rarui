@@ -9,11 +9,19 @@ import {
 } from "./previewHTML.helpers";
 
 import "./style.css";
+import { StoryContext, StoryFn } from "@storybook/react";
 
-export const PreviewHTML = (Story, context) => {
-  const darkMode = useDarkMode();
+export const PreviewHTML = (Story: StoryFn, context: StoryContext) => {
+  const [darkMode, setDarkMode] = useState(false);
 
-  const [classes] = useState(darkMode ? darkClasses : lightClasses);
+  const changeDarkMode = (message: MessageEvent) => {
+    console.log(`Received ${message}`);
+    if (message.data?.type === "change_dark_theme") {
+      setDarkMode(message.data.value);
+    }
+  };
+
+  const classes = darkMode ? darkClasses : lightClasses;
   const appendHTMLPanel = async (
     root: HTMLDivElement,
     element: HTMLDivElement,
@@ -33,8 +41,28 @@ export const PreviewHTML = (Story, context) => {
     const copyButtonContainer = createElementWithClasses("div", "css-111a2cx");
     mainWrapper.appendChild(copyButtonContainer);
 
-    const secondWrapper = createElementWithClasses("div", "css-8ycahn");
-    mainWrapper.appendChild(secondWrapper);
+    const codeContainer = createElementWithClasses("div", "css-8ycahn");
+    const scroller = createElementWithClasses("div", "scroller");
+    const scrollerInner = createElementWithClasses("div", "scroller-inner");
+
+    mainWrapper.addEventListener("mouseenter", () => {
+      scroller.style.position = "absolute";
+      scroller.style.bottom = "2px";
+      scrollerInner.style.width = codeContainer.scrollWidth + "px";
+      scroller.style.width = codeContainer.clientWidth + "px";
+      scrollerInner.style.height = "1px";
+      scroller.appendChild(scrollerInner);
+      scroller.style.overflowX = "scroll";
+      scroller.addEventListener("scroll", () => {
+        codeContainer.scrollLeft = scroller.scrollLeft;
+      });
+
+      mainWrapper.appendChild(scroller);
+    });
+    mainWrapper.addEventListener("mouseleave", () => {
+      mainWrapper.removeChild(scroller);
+    });
+    mainWrapper.appendChild(codeContainer);
 
     const htmlDisplay = createElementWithClasses(
       "div",
@@ -46,7 +74,7 @@ export const PreviewHTML = (Story, context) => {
       "css-4zr3vl",
       "prismjs",
     );
-    secondWrapper.appendChild(htmlWrapper);
+    codeContainer.appendChild(htmlWrapper);
 
     if (htmlWrapper.innerHTML === "") {
       htmlWrapper.appendChild(htmlDisplay);
@@ -89,7 +117,7 @@ export const PreviewHTML = (Story, context) => {
     root?.appendChild(button);
   };
 
-  const showHTMLPanel = (e) => {
+  const showHTMLPanel = (e: any) => {
     setTimeout(() => {
       e.target.textContent =
         e.target.textContent === "Show HTML" ? "Hide HTML" : "Show HTML";
@@ -103,7 +131,7 @@ export const PreviewHTML = (Story, context) => {
     }, 50);
   };
 
-  const removeHTMLPanel = (e) => {
+  const removeHTMLPanel = (e: any) => {
     const root =
       e.target?.parentElement.parentElement.parentElement.querySelector(
         ".docs-story",
@@ -137,11 +165,8 @@ export const PreviewHTML = (Story, context) => {
       .forEach((element) => {
         element.addEventListener("click", (e) => removeHTMLPanel(e));
       });
+    window.addEventListener("message", changeDarkMode);
   }, []);
 
-  return (
-    <div>
-      <Story {...context} />
-    </div>
-  );
+  return <Story {...context} />;
 };
