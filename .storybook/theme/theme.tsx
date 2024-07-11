@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { DocsContainer } from "@storybook/addon-docs";
 import { addons } from "@storybook/preview-api";
 import { DARK_MODE_EVENT_NAME, useDarkMode } from "storybook-dark-mode";
-import { ThemeProvider } from "@rarui/styles";
+import { variablesDark } from "@rarui/styles";
 
 import light, { dark } from "./theme.definitions";
 
@@ -34,9 +34,9 @@ export const ThemeDocsProvider: React.FC<any> = (props) => {
   }, [channel, setDark]);
 
   return (
-    <ThemeProvider theme={isDark ? "dark" : "base"}>
+    <div id="theme-provider" className={isDark ? variablesDark : ""}>
       <DocsContainer {...props} theme={isDark ? dark : light} />
-    </ThemeProvider>
+    </div>
   );
 };
 
@@ -44,8 +44,8 @@ export const ThemeRaruiProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   return (
-    <ThemeProvider theme={useDarkMode() ? "dark" : "base"}>
+    <div id="theme-provider" className={useDarkMode() ? variablesDark : ""}>
       {children}
-    </ThemeProvider>
+    </div>
   );
 };

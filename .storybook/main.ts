@@ -1,6 +1,18 @@
 import type { StorybookConfig } from "@storybook/react-webpack5";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import { VanillaExtractPlugin } from "@vanilla-extract/webpack-plugin";
+import "dotenv/config";
+
+console.log({
+  react: {
+    title: "@rarui-react",
+    url: process.env.STORYBOOK_REACT_URL ?? "",
+  },
+  vuejs: {
+    title: "@rarui-vuejs",
+    url: process.env.STORYBOOK_VUEJS_URL ?? "",
+  },
+});
 
 import { convertTsConfigPathsToWebpackAliases } from "./utils";
 
@@ -9,11 +21,11 @@ const config: StorybookConfig = {
   refs: {
     react: {
       title: "@rarui-react",
-      url: "http://localhost:6007",
+      url: process.env.STORYBOOK_REACT_URL ?? "",
     },
     vuejs: {
       title: "@rarui-vuejs",
-      url: "http://localhost:6008",
+      url: process.env.STORYBOOK_VUEJS_URL ?? "",
     },
   },
   addons: [

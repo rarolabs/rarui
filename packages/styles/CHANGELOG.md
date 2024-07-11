@@ -2,6 +2,10 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-07-11 `2.0.0`
+
+#### 🛠 Breaking changes
+
 ## 2024-07-04 `1.32.1`
 
 #### 🎉 New features

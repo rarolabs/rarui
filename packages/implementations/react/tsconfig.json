@@ -1,5 +1,11 @@
 {
   "extends": "../../../tsconfig.json",
-  "include": ["./src/index.ts", "./atomics/*", ".storybook/*"],
+  "include": [
+    "./src/index.ts",
+    "./src/atomics/*",
+    "./src/composite/*",
+    "./src/theme/*",
+    ".storybook/*"
+  ],
   "exclude": ["./src/**/*.spec.tsx"]
 }

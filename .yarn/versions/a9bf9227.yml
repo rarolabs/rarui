@@ -1,7 +1,10 @@
 releases:
+  "@rarui-react/components": minor
+  "@rarui-react/theme-provider": major
+  "@rarui/styles": major
   "@rarui/tokens": major
 
 declined:
   - "@rarui/design-system"
+  - "@rarui-react/box"
   - "@rarui-react/toggle"
-  - "@rarui/styles"

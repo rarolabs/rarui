@@ -1,3 +1,5 @@
+import basePreview from "../../../../.storybook/preview";
+
 import type { Preview } from "@storybook/vue3";
 
 const preview: Preview = {
@@ -8,6 +10,7 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    ...basePreview.parameters,
   },
 };
 

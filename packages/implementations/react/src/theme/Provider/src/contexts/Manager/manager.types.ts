@@ -1,7 +1,7 @@
 import { MutableRefObject } from "react";
-import { Theme } from "../../themeProvider.types";
+import { Theme } from "../../provider.types";
 
-export interface ThemeProviderContextProps {
+export interface ThemeProviderManagerProps {
   refThemeProvider: MutableRefObject<null | HTMLDivElement>;
   currentTheme: Theme;
 }

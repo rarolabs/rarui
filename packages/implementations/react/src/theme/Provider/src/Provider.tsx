@@ -1,10 +1,10 @@
 import React, { useMemo } from "react";
 
-import { themes } from "./themeProvider.definitions";
-import { ThemeProviderProps } from "./themeProvider.types";
-import { ThemeProviderContext } from "./contexts";
+import { themes } from "./provider.definitions";
+import { ProviderProps } from "./provider.types";
+import { ThemeProviderManager } from "./contexts";
 
-const ThemeProvider: React.FC<ThemeProviderProps> = ({
+const ThemeProvider: React.FC<ProviderProps> = ({
   children,
   theme = "base",
   ...rest
@@ -23,9 +23,9 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({
       {...rest}
       ref={refThemeProvider}
     >
-      <ThemeProviderContext.Provider value={context}>
+      <ThemeProviderManager.Provider value={context}>
         {children}
-      </ThemeProviderContext.Provider>
+      </ThemeProviderManager.Provider>
     </div>
   );
 };
