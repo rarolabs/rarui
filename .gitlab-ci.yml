@@ -147,8 +147,8 @@ build-storybook-job:
     - yarn install # Instala as dependências com o Yarn
     - yarn build:tokens
     - yarn build:icons
-    - build:storybook
-    - move:storybook
+    - yarn build:storybook
+    - yarn move:storybook
   artifacts:
     paths:
       - storybook-static/
