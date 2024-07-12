@@ -6,12 +6,13 @@ const config: Config.InitialOptions = {
   verbose: true,
   moduleNameMapper: {
     "react-datepicker.css": "<rootDir>/styleMock.ts",
-
     // core
     "@rarui/typings": "<rootDir>/packages/core/typings/src",
     "@rarui/webpack": "<rootDir>/packages/core/webpack/src",
     // commons
     "@rarui/styles": "<rootDir>/packages/styles/src",
+    "@rarui/tokens/dist/js/tokens":
+      "<rootDir>/packages/tokens/dist/js/tokens.cjs",
     // atomics
     "@rarui-react/avatar":
       "<rootDir>/packages/implementations/react/src/atomic/Avatar/src",
@@ -47,7 +48,12 @@ const config: Config.InitialOptions = {
   },
   transform: {
     "^.+\\.css\\.ts$": "babel-jest",
-    ".+\\.(ts|tsx)$": "ts-jest",
+    ".+\\.(ts|tsx)$": [
+      "ts-jest",
+      {
+        useESM: true,
+      },
+    ],
   },
   coveragePathIgnorePatterns: ["dist", ".scripts", "packages/core/typings"],
 };

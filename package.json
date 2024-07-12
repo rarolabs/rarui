@@ -9,7 +9,8 @@
       "packages/core/*",
       "packages/implementations/*",
       "packages/implementations/*/*/atomic/*",
-      "packages/implementations/*/*/composite/*"
+      "packages/implementations/*/*/composite/*",
+      "packages/implementations/*/*/theme/*"
     ]
   },
   "scripts": {
@@ -21,7 +22,7 @@
     "start:dev": "storybook dev -p 6006",
     "start:storybook": "turbo run storybook:dev --parallel",
     "build:storybook": "storybook build && turbo run storybook:build --parallel",
-    "move:storybook": "turbo run storybook:move --filter=@rarui/design-system && turbo run storybook:move --filter=!@rarui/design-system",
+    "move:storybook": "turbo run storybook:move --parallel",
     "setup": "turbo run build --filter=@rarui/webpack --filter=@rarui/typings",
     "build": "yarn build:packages",
     "build:packages": "yarn build:tokens && yarn build:icons && babel-node -x .ts ./.scripts/build-packages",

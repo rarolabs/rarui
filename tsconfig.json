@@ -149,6 +149,9 @@
       ],
       "@rarui-react/tabs": [
         "./packages/implementations/react/src/composite/Tabs/src"
+      ],
+      "@rarui-react/theme-provider": [
+        "./packages/implementations/react/src/theme/Provider/src"
       ]
     }
   },

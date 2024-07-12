@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-07-12 `2.0.0`
+
+#### 🛠 Breaking changes
+
+- Component `ThemeProvider` was moved to the package responsible for its implementation (`@rarui-react/components`). The styles package should be agnostic. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-04 `1.32.1`
 
 #### 🎉 New features

@@ -35,7 +35,7 @@ const select = recipe({
     },
     ":focus-within": {
       outline: "none",
-      boxShadow: varsThemeBase.utils["focus-ring"],
+      boxShadow: varsThemeBase.elevation["focus-ring"],
     },
     selectors: {
       "&:has(input:disabled)": {
@@ -128,7 +128,7 @@ const close = style({
   borderRadius: varsThemeBase.shape.border.radius["2xs"],
   ":focus-within": {
     outline: "none",
-    boxShadow: varsThemeBase.utils["focus-ring"],
+    boxShadow: varsThemeBase.elevation["focus-ring"],
   },
   ":hover": {
     color: varsThemeBase.colors.content.primary,

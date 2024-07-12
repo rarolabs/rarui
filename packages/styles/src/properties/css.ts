@@ -22,13 +22,13 @@ export const fontWeightProperties = {
 };
 
 export const fontSizeProperties = {
-  hero: varsThemeBase.fontSize.hero,
   "body-xxs": varsThemeBase.fontSize.body.xxs,
   "body-xs": varsThemeBase.fontSize.body.xs,
   "body-s": varsThemeBase.fontSize.body.s,
   "body-m": varsThemeBase.fontSize.body.m,
   "body-l": varsThemeBase.fontSize.body.l,
   "body-xl": varsThemeBase.fontSize.body.xl,
+  "heading-hero": varsThemeBase.fontSize.heading.hero,
   "heading-xs": varsThemeBase.fontSize.heading.xs,
   "heading-s": varsThemeBase.fontSize.heading.s,
   "heading-m": varsThemeBase.fontSize.heading.m,
@@ -49,13 +49,13 @@ export const fontFamilyProperties = {
 };
 
 export const lineHeightProperties = {
-  hero: varsThemeBase.lineHeight.hero,
   "body-xxs": varsThemeBase.lineHeight.body.xxs,
   "body-xs": varsThemeBase.lineHeight.body.xs,
   "body-s": varsThemeBase.lineHeight.body.s,
   "body-m": varsThemeBase.lineHeight.body.m,
   "body-l": varsThemeBase.lineHeight.body.l,
   "body-xl": varsThemeBase.lineHeight.body.xl,
+  "heading-hero": varsThemeBase.lineHeight.heading.hero,
   "heading-xs": varsThemeBase.lineHeight.heading.xs,
   "heading-s": varsThemeBase.lineHeight.heading.s,
   "heading-m": varsThemeBase.lineHeight.heading.m,
@@ -70,7 +70,7 @@ export const lineHeightProperties = {
 } as const;
 
 export const titleFontSizeProperties = {
-  hero: varsThemeBase.fontSize.hero,
+  hero: varsThemeBase.fontSize.heading.hero,
   xs: varsThemeBase.fontSize.heading.xs,
   s: varsThemeBase.fontSize.heading.s,
   m: varsThemeBase.fontSize.heading.m,
@@ -79,7 +79,7 @@ export const titleFontSizeProperties = {
 };
 
 export const titleLineHeightProperties = {
-  hero: varsThemeBase.lineHeight.hero,
+  hero: varsThemeBase.lineHeight.heading.hero,
   xs: varsThemeBase.lineHeight.heading.xs,
   s: varsThemeBase.lineHeight.heading.s,
   m: varsThemeBase.lineHeight.heading.m,

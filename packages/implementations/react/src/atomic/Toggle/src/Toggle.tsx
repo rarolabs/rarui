@@ -47,7 +47,6 @@ const Toggle: React.FC<ToggleProps> = ({
         </span>
       )}
     </span>
-
     {label && (
       <Text data-testid="text" color="$primary">
         {label}

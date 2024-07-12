@@ -3385,6 +3385,7 @@ __metadata:
   dependencies:
     "@floating-ui/react": "npm:^0.26.13"
     "@rarui/webpack": "workspace:^"
+    dotenv: "npm:^16.4.5"
     react-datepicker: "npm:^6.9.0"
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
@@ -3665,6 +3666,17 @@ __metadata:
 "@rarui-react/textarea@workspace:packages/implementations/react/src/atomic/Textarea":
   version: 0.0.0-use.local
   resolution: "@rarui-react/textarea@workspace:packages/implementations/react/src/atomic/Textarea"
+  dependencies:
+    "@rarui/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@rarui-react/theme-provider@workspace:packages/implementations/react/src/theme/Provider":
+  version: 0.0.0-use.local
+  resolution: "@rarui-react/theme-provider@workspace:packages/implementations/react/src/theme/Provider"
   dependencies:
     "@rarui/webpack": "workspace:^"
   peerDependencies:
@@ -10184,7 +10196,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^16.0.0":
+"dotenv@npm:^16.0.0, dotenv@npm:^16.4.5":
   version: 16.4.5
   resolution: "dotenv@npm:16.4.5"
   checksum: 48d92870076832af0418b13acd6e5a5a3e83bb00df690d9812e94b24aff62b88ade955ac99a05501305b8dc8f1b0ee7638b18493deb6fe93d680e5220936292f

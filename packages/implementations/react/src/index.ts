@@ -36,3 +36,6 @@ export * from "@rarui-react/sidebar";
 export * from "@rarui-react/side-navigation";
 export * from "@rarui-react/stepper";
 export * from "@rarui-react/tabs";
+
+// theme
+export * from "@rarui-react/theme-provider";

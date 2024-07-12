@@ -1,6 +1,6 @@
 {
   "name": "@rarui/tokens",
-  "version": "3.0.0",
+  "version": "3.0.0-rc.3",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -23,5 +23,6 @@
   },
   "devDependencies": {
     "style-dictionary": "^3.7.1"
-  }
+  },
+  "stableVersion": "2.1.1"
 }

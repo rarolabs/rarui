@@ -79,7 +79,6 @@ export const vars = createGlobalThemeContract(
       button: "",
     },
     fontSize: {
-      hero: "",
       body: {
         xxs: "",
         xs: "",
@@ -94,6 +93,7 @@ export const vars = createGlobalThemeContract(
         m: "",
         l: "",
         xl: "",
+        hero: "",
       },
       button: {
         xs: "",
@@ -114,7 +114,6 @@ export const vars = createGlobalThemeContract(
       bold: "",
     },
     lineHeight: {
-      hero: "",
       body: {
         xxs: "",
         xs: "",
@@ -129,6 +128,7 @@ export const vars = createGlobalThemeContract(
         m: "",
         l: "",
         xl: "",
+        hero: "",
       },
       button: {
         s: "",
@@ -157,6 +157,7 @@ export const vars = createGlobalThemeContract(
         "4": "",
         "5": "",
       },
+      "focus-ring": "",
     },
     shape: {
       border: {
@@ -215,9 +216,6 @@ export const vars = createGlobalThemeContract(
       md: "",
       lg: "",
       xl: "",
-    },
-    utils: {
-      "focus-ring": "",
     },
   },
   (_value, path) => `rarui-${path.join("-")}`,

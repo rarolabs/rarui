@@ -2,8 +2,8 @@ import React from "react";
 import { renderHook } from "@testing-library/react";
 
 import { useTheme } from "./useTheme";
-import { ThemeProvider } from "../../ThemeProvider";
-import { Theme } from "../../themeProvider.types";
+import { ThemeProvider } from "../../Provider";
+import { Theme } from "../../provider.types";
 
 const makeSut = (theme?: Theme) =>
   renderHook(() => useTheme(), {

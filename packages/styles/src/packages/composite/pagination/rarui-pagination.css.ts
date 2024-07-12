@@ -41,7 +41,7 @@ const paginationItem = recipe({
     fontWeight: varsThemeBase.fontWeight.semiBold,
     ":focus-within": {
       outline: "none",
-      boxShadow: varsThemeBase.utils["focus-ring"],
+      boxShadow: varsThemeBase.elevation["focus-ring"],
     },
     ":hover": {
       backgroundColor: varsThemeBase.colors.surface["brand-hover"],

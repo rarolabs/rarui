@@ -1,5 +1,6 @@
-// components
-export * from "./components";
+// variables
+export { varsThemeBase as variables } from "./themes/globals.css";
+export { variables as variablesDark } from "./themes/rarui-theme-dark.css";
 
 // atomic
 export { avatar } from "./packages/atomic/avatar";

@@ -89,7 +89,6 @@ export const globalTheme = {
     button: fontFamily.button.value,
   },
   fontSize: {
-    hero: fontSize.hero.value,
     body: {
       xxs: fontSize.body.xxs.value,
       xs: fontSize.body.xs.value,
@@ -104,6 +103,7 @@ export const globalTheme = {
       m: fontSize.heading.m.value,
       l: fontSize.heading.l.value,
       xl: fontSize.heading.xl.value,
+      hero: fontSize.heading.hero.value,
     },
     button: {
       xs: fontSize.button.xs.value,
@@ -124,7 +124,6 @@ export const globalTheme = {
     bold: fontWeight.bold.value,
   },
   lineHeight: {
-    hero: lineHeight.hero.value,
     body: {
       xxs: lineHeight.body.xxs.value,
       xs: lineHeight.body.xs.value,
@@ -139,6 +138,7 @@ export const globalTheme = {
       m: lineHeight.heading.m.value,
       l: lineHeight.heading.l.value,
       xl: lineHeight.heading.xl.value,
+      hero: lineHeight.heading.hero.value,
     },
     button: {
       s: lineHeight.button.s.value,
@@ -167,6 +167,7 @@ export const globalTheme = {
       "4": elevation.bottom[4].value,
       "5": elevation.bottom[5].value,
     },
+    "focus-ring": elevation["focus-ring"].value,
   },
   shape: {
     border: {
@@ -225,9 +226,6 @@ export const globalTheme = {
     md: breakpoint.md.value,
     lg: breakpoint.lg.value,
     xl: breakpoint.xl.value,
-  },
-  utils: {
-    "focus-ring": colors.border["focus-ring"].value,
   },
 };
 

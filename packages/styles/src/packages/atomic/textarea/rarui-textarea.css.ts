@@ -20,7 +20,7 @@ const textarea = recipe({
     },
     ":focus-within": {
       outline: "none",
-      boxShadow: varsThemeBase.utils["focus-ring"],
+      boxShadow: varsThemeBase.elevation["focus-ring"],
     },
     ":disabled": {
       backgroundColor: varsThemeBase.colors.surface.disabled,
