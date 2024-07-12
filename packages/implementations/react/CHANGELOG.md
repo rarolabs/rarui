@@ -2,6 +2,10 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-07-12 `1.36.0`
+
+- Added new theme `ThemeProvider` component. This component was migrated from the `@rarui/style` package to this main package. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-04 `1.35.1`
 
 #### 🎉 New features

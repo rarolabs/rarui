@@ -22,9 +22,6 @@ export const PreviewHTML = (Story: StoryFn, context: StoryContext) => {
     return () => channel.removeListener(DARK_MODE_EVENT_NAME, setDarkMode);
   }, [channel, setDarkMode]);
 
-  console.log("useDarkMode()", useDarkMode());
-  console.log("darkMode", darkMode);
-
   const changeDarkMode = (message: MessageEvent) => {
     if (message.data?.type === "change_dark_theme") {
       setDarkMode(message.data.value);

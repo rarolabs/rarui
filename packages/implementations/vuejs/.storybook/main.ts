@@ -1,7 +1,7 @@
 import main from "../../../../.storybook/main";
 import type { StorybookConfig } from "@storybook/vue3-vite";
 import path from "path";
-import { esbuildCommonjs } from "@originjs/vite-plugin-commonjs";
+
 export const convertTsConfigPathsToWebpackAliases = () => {
   const rootDir = path.resolve(__dirname, "../");
   const paths: any = [];
@@ -34,9 +34,10 @@ const config: StorybookConfig = {
   },
 
   async viteFinal(config) {
-    config.optimizeDeps?.esbuildOptions?.plugins?.push(
-      esbuildCommonjs(["@rarui/tokens"]),
-    );
+    config.build = {
+      ...config.build,
+      chunkSizeWarningLimit: 1000,
+    };
     config.resolve = {
       ...config.resolve,
       alias: {
@@ -44,7 +45,9 @@ const config: StorybookConfig = {
         ...convertTsConfigPathsToWebpackAliases(),
       },
     };
-    console.log(config);
+    config.plugins = config.plugins?.filter(
+      (plugin: any) => plugin.name !== "vite:dts",
+    );
     return config;
   },
 };

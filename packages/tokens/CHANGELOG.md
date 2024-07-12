@@ -2,9 +2,17 @@
 
 Our design tokens are the foundations of Design System.
 
+## 2024-07-12 `4.0.0`
+
+#### 🛠 Breaking changes
+
+- The token `fontSize-hero` was moved to` fontSize-heading-hero`. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@junior](https://git.rarolabs.com.br/junior))
+- The token `lineHeight-hero` was moved to `lineHeight-heading-hero`. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@junior](https://git.rarolabs.com.br/junior))
+- The token `color-border-focus-ring` was moved to `elevation-focus-ring`. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-09 `3.0.0`
 
-#### 💡 Others
+#### 💡 Breaking changes
 
 - Removed all tokens with named colors `red`, `yellow`, `blue` and `green`. ([#74](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/74) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 - Updated tokens previously using `red`, `yellow`, `blue`, and `green` to `error`, `yellow`, `brand/info`, and `success` respectively. . ([#74](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/74) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))

@@ -8,3 +8,4 @@ declined:
   - "@rarui/design-system"
   - "@rarui-react/box"
   - "@rarui-react/toggle"
+  - "@rarui-vuejs/components"

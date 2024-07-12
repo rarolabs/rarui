@@ -3,17 +3,6 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import { VanillaExtractPlugin } from "@vanilla-extract/webpack-plugin";
 import "dotenv/config";
 
-console.log({
-  react: {
-    title: "@rarui-react",
-    url: process.env.STORYBOOK_REACT_URL ?? "",
-  },
-  vuejs: {
-    title: "@rarui-vuejs",
-    url: process.env.STORYBOOK_VUEJS_URL ?? "",
-  },
-});
-
 import { convertTsConfigPathsToWebpackAliases } from "./utils";
 
 const config: StorybookConfig = {
