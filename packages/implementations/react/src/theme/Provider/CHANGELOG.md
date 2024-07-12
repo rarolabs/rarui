@@ -1,16 +1,12 @@
 # Changelog
 
-<!-- Tabs are used to switch between different display modes or pages. -->
+The `ThemeProvider` component is responsible for managing and providing consistent visual topics for the application.It surrounds the component tree and provides context theme values, allowing children components to access and apply styles according to the defined theme.ThemeProvider facilitates the alteration of global themes such as light and dark modes, and specific customizations, ensuring a cohesive and stylistically harmonious user experience.
 
 ## 2024-07-11 `1.0.0`
 
-<!-- ### 🎉 New features
+#### 🎉 New features
 
-- Added `children`, `preSelectedTab`, `full` and `underlined` properties to the Component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))
-- Added stories on Component. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))
-- Created new `Tabs.Item` subcomponent. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))
-- Added `label` and `children` properties to the Component `Tabs.Item`. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior))
-- Created new `Tabs.Item` subcomponent. ([#58](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/58) by [@junior](https://git.rarolabs.com.br/junior)) -->
+- Added `theme` property to the Component. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@junior](https://git.rarolabs.com.br/junior))
 
 <!-- #### 🛠 Breaking changes -->
 

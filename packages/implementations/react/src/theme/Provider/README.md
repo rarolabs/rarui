@@ -1,6 +1,6 @@
 # `@rarui-react/theme-provider`
 
-Tabs are used to switch between different display modes or pages.
+The `ThemeProvider` component is responsible for managing and providing consistent visual topics for the application.It surrounds the component tree and provides context theme values, allowing children components to access and apply styles according to the defined theme.ThemeProvider facilitates the alteration of global themes such as light and dark modes, and specific customizations, ensuring a cohesive and stylistically harmonious user experience.
 
 ## Installation
 
