@@ -149,10 +149,10 @@ build-storybook-job:
     - yarn build:icons
     - build:storybook
     - move:storybook
-  artifacts:
-    paths:
-      - storybook-static/
-    when: always
+  # artifacts:
+  #   paths:
+  #     - storybook-static/
+  #   when: always
   only:
     - triggers
 
