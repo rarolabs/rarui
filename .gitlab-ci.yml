@@ -144,7 +144,7 @@ build-storybook-job:
   stage: build-storybook # It only runs when *both* jobs in the test stage complete successfully.
   environment: production
   script:
-    - yarn install --frozen-lockfile
+    - yarn install # Instala as dependências com o Yarn
     - yarn build:tokens
     - yarn build:icons
     - build:storybook
