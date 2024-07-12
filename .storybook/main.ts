@@ -5,6 +5,8 @@ import "dotenv/config";
 
 import { convertTsConfigPathsToWebpackAliases } from "./utils";
 
+console.log("process.env", process.env);
+
 const config: StorybookConfig = {
   stories: ["./introduction.mdx"],
   refs: {
