@@ -6,4 +6,4 @@ The Rarui Helper extension is a powerful tool for developers working with VS Cod
 
 ### 🎉 New features
 
-- Get comprehensive and detailed information about the properties and components of your Rarui Design System directly in the editor, providing a more intuitive development, also checks outdated Rarui dependencies when opening project. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Get comprehensive and detailed information about the properties and components of your Rarui Design System directly in the editor, providing a more intuitive development, also checks outdated Rarui dependencies when opening project. ([#78](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/78) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
