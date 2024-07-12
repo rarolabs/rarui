@@ -21,5 +21,6 @@ export const aliasItems = {
   "@rarui/styles": join(rootDir, "./packages/styles/src"),
   "@rarui/typings": join(rootDir, "./packages/core/typings/src"),
   "@rarui/webpack": join(rootDir, "./packages/core/webpack/src"),
+  "@rarui-react/theme-provider": packages["@rarui-react/provider"],
   ...packages,
 };

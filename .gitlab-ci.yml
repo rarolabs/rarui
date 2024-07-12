@@ -147,10 +147,11 @@ build-storybook-job:
     - yarn install # Instala as dependências com o Yarn
     - yarn build:tokens
     - yarn build:icons
-    - yarn workspace @rarui-react/components run storybook:build
+    - build:storybook
+    - move:storybook
   artifacts:
     paths:
-      - packages/implementations/react/storybook-static/
+      - storybook-static/
     when: always
   only:
     - triggers
@@ -162,7 +163,7 @@ deploy-s3-job:
     - amazon-linux-extras install docker
     - aws --version
     - aws ecr get-login-password --region ${AWS_REGION}
-    - aws s3 sync packages/implementations/react/storybook-static/ s3://${S3_BUCKET}
+    - aws s3 sync storybook-static/ s3://${S3_BUCKET}
     - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths "/*"
   needs:
     - job: build-storybook-job
