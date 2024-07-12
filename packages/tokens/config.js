@@ -1,14 +1,14 @@
+// eslint-disable-next-line
 const StyleDictionary = require("style-dictionary");
 
 const { fileHeader } = StyleDictionary.formatHelpers;
 
 StyleDictionary.registerFormat({
   name: "custom/javascript/module",
-  formatter: function ({ file, dictionary }) {
-    return (
-      fileHeader({ file }) +
-      `export default ${JSON.stringify(dictionary.tokens, null, 2)};`
-    );
+  formatter({ file, dictionary }) {
+    return `${fileHeader({
+      file,
+    })}export default ${JSON.stringify(dictionary.tokens, null, 2)};`;
   },
 });
 

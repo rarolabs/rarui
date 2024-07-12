@@ -91,13 +91,3 @@ export type {
   StepperStepVariants,
 } from "./packages/composite/stepper";
 export type { TabsVariants } from "./packages/composite/tabs";
-
-import { button } from "./packages/atomic/button";
-import { iconButton } from "./packages/atomic/iconButton";
-import { chip } from "./packages/atomic/chip";
-
-export default {
-  button,
-  iconButton,
-  chip,
-};
