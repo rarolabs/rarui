@@ -144,15 +144,15 @@ build-storybook-job:
   stage: build-storybook # It only runs when *both* jobs in the test stage complete successfully.
   environment: production
   script:
-    - yarn install # Instala as dependências com o Yarn
+    - yarn install --frozen-lockfile
     - yarn build:tokens
     - yarn build:icons
     - build:storybook
     - move:storybook
-  # artifacts:
-  #   paths:
-  #     - storybook-static/
-  #   when: always
+  artifacts:
+    paths:
+      - storybook-static/
+    when: always
   only:
     - triggers
 
