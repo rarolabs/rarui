@@ -35,7 +35,7 @@ export class HoverProvider implements vscode.HoverProvider {
           if (prop) {
             const md = HoverProvider.generateDocProps(
               prop,
-              documentation.docLink,
+              // documentation.docLink,
             );
             return new vscode.Hover(md, new vscode.Range(position, position));
           }
@@ -54,7 +54,7 @@ export class HoverProvider implements vscode.HoverProvider {
 
   static generateDocProps(
     prop: DocumentProps,
-    docLink: string,
+    // docLink: string,
   ): vscode.MarkdownString {
     const content = new vscode.MarkdownString(
       `<h3>${prop.title} ${
