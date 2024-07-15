@@ -136,6 +136,10 @@ clean-releases-job:
     - git add .
     - git commit -m "cleaning releases [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
+    - curl --location 'https://git.rarolabs.com.br/api/v4/projects/1374/trigger/pipeline' \
+      --form 'token="${TRIGGER_TOKEN}"' \
+      --form 'ref="main"' \
+      --form 'variables[TRIGGER_JOB]="deploy-storybook"'
   rules:
     - if: $CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE != "trigger" # Verifica se o evento que acionou a pipeline é um merge request
   needs:
