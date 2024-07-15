@@ -157,8 +157,6 @@ build-storybook-job:
     when: always
   rules:
     - if: '$CI_PIPELINE_SOURCE == "trigger" && $TRIGGER_JOB == "deploy-storybook"'
-  # only:
-  #   - triggers
 
 deploy-s3-job:
   <<: *image-aws
@@ -173,8 +171,6 @@ deploy-s3-job:
     - job: build-storybook-job
   rules:
     - if: '$CI_PIPELINE_SOURCE == "trigger" && $TRIGGER_JOB == "deploy-storybook"'
-  # only:
-  #   - triggers
 
 deploy-rarui-helper-job:
   stage: deploy-rarui-helper
@@ -184,9 +180,5 @@ deploy-rarui-helper-job:
     - cd ./packages/helper
     - yarn bump:stable
     - vsce publish
-  needs:
-    - job: build-storybook-job
   rules:
     - if: '$CI_PIPELINE_SOURCE == "trigger" && $TRIGGER_JOB == "deploy-rarui-helper"'
-  # only:
-  #   - triggers
