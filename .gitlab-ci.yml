@@ -156,6 +156,7 @@ build-storybook-job:
       - storybook-static/
     when: always
   rules:
+    - if: '$CI_PIPELINE_SOURCE == "trigger"'
     - if: '$TRIGGER_JOB == "deploy-storybook"'
   # only:
   #   - triggers
@@ -172,6 +173,7 @@ deploy-s3-job:
   needs:
     - job: build-storybook-job
   rules:
+    - if: '$CI_PIPELINE_SOURCE == "trigger"'
     - if: '$TRIGGER_JOB == "deploy-storybook"'
   # only:
   #   - triggers
@@ -187,6 +189,7 @@ deploy-rarui-helper-job:
   needs:
     - job: build-storybook-job
   rules:
+    - if: '$CI_PIPELINE_SOURCE == "trigger"'
     - if: '$TRIGGER_JOB == "deploy-rarui-helper"'
   # only:
   #   - triggers
