@@ -25,7 +25,7 @@
     "move:storybook": "turbo run storybook:move --parallel",
     "setup": "turbo run build --filter=@rarui/webpack --filter=@rarui/typings",
     "build": "yarn build:packages",
-    "build:packages": "babel-node -x .ts ./.scripts/build-packages",
+    "build:packages": "yarn build:tokens && yarn build:icons && babel-node -x .ts ./.scripts/build-packages",
     "build:icons": "turbo run build --filter=@rarui/icons",
     "build:tokens": "turbo run build --filter=@rarui/tokens",
     "build:styles": "turbo run build --filter=@rarui/styles",
