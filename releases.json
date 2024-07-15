@@ -1,9 +1,24 @@
 [
   {
-    "package": "rarui-helper 1.0.0",
-    "description": "# Changelog\n\nThe RarUI Helper extension is a powerful tool for developers working with VS Code. It is designed to streamline and enhance your workflow, offering advanced and customized features to maximize productivity.\n\n## 2024-07-11 `1.0.0`\n\n### 🎉 New features\n\n- Get comprehensive and detailed information about the properties and components of your RarUI Design System directly in the editor, providing a more intuitive development, also checks outdated RarUI dependencies when opening project. ([#78](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/78) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
-    "version": "1.0.0",
-    "tagName": "rarui-helper-1.0.0 ",
+    "package": "@rarui/scripts 1.1.4",
+    "description": "## 2024-07-15 `1.1.4`\n\n#### 🎉 Bug fixes\n\n- Fixed folder name and tag name for `rarui-helper` case on `ReleasesLauncher` script([#78](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/78) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.1.4",
+    "tagName": "rarui/scripts-1.1.4 ",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui/scripts",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "rarui-helper 1.0.1",
+    "description": "# Changelog\n\nThe RarUI Helper extension is a powerful tool for developers working with VS Code. It is designed to streamline and enhance your workflow, offering advanced and customized features to maximize productivity.\n\n#### 🐛 Bug fixes\n\n## 2024-07-11 `1.0.1`\n\n- Updated the display name from `Rarui Helper` to `RarUI Helper`. ([#78](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/78) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n## 2024-07-11 `1.0.0`\n\n### 🎉 New features\n\n- Get comprehensive and detailed information about the properties and components of your Rarui Design System directly in the editor, providing a more intuitive development, also checks outdated Rarui dependencies when opening project. ([#78](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/78) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n<!-- #### 🛠 Breaking changes -->\n\n<!-- #### 📚 3rd party library updates -->\n\n<!-- #### 🎉 New features -->\n\n<!-- #### 🐛 Bug fixes -->\n\n<!-- #### 💡 Others -->\n\n<!-- #### ⚠️ Notices -->",
+    "version": "1.0.1",
+    "tagName": "rarui-helper-1.0.1 ",
     "assets": {
       "links": [
         {
