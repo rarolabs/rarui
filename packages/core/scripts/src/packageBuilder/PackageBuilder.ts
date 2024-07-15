@@ -44,7 +44,7 @@ export class PackageBuilder {
     body: { [key: string]: string },
   ) {
     try {
-      if (!process.env.GITHUB_TOKEN) {
+      if (!process.env.TRIGGER_TOKEN) {
         throw new Error(
           "You need to set an environment variable called GITHUB_TOKEN with your personal git token",
         );
