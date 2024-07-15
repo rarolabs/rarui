@@ -540,6 +540,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/node@npm:^7.22.5":
+  version: 7.24.7
+  resolution: "@babel/node@npm:7.24.7"
+  dependencies:
+    "@babel/register": "npm:^7.24.6"
+    commander: "npm:^6.2.0"
+    core-js: "npm:^3.30.2"
+    node-environment-flags: "npm:^1.0.5"
+    regenerator-runtime: "npm:^0.14.0"
+    v8flags: "npm:^3.1.1"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  bin:
+    babel-node: ./bin/babel-node.js
+  checksum: 5beab9adf8b1a2050f4612bd1e332799ad2c9be385c5cfb1fd3055948b2e89b53edba57dbda1912b1eb4a54395c38c4facc27331798ad63b99197d12ddbbbec4
+  languageName: node
+  linkType: hard
+
 "@babel/node@npm:^7.23.9":
   version: 7.23.9
   resolution: "@babel/node@npm:7.23.9"
@@ -573,6 +591,15 @@ __metadata:
   bin:
     parser: ./bin/babel-parser.js
   checksum: d2a8b99aa5f33182b69d5569367403a40e7c027ae3b03a1f81fd8ac9b06ceb85b31f6ee4267fb90726dc2ac99909c6bdaa9cf16c379efab73d8dfe85cee32c50
+  languageName: node
+  linkType: hard
+
+"@babel/parser@npm:^7.22.5":
+  version: 7.24.7
+  resolution: "@babel/parser@npm:7.24.7"
+  bin:
+    parser: ./bin/babel-parser.js
+  checksum: 8b244756872185a1c6f14b979b3535e682ff08cb5a2a5fd97cc36c017c7ef431ba76439e95e419d43000c5b07720495b00cf29a7f0d9a483643d08802b58819b
   languageName: node
   linkType: hard
 
@@ -1759,6 +1786,21 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: b2466e41a4394e725b57e139ba45c3f61b88546d3cb443e84ce46cb34071b60c6cdb706a14c58a1443db530691a54f51da1f0c97f6c1aecbb838a2fb7eb5dbb9
+  languageName: node
+  linkType: hard
+
+"@babel/register@npm:^7.24.6":
+  version: 7.24.6
+  resolution: "@babel/register@npm:7.24.6"
+  dependencies:
+    clone-deep: "npm:^4.0.1"
+    find-cache-dir: "npm:^2.0.0"
+    make-dir: "npm:^2.1.0"
+    pirates: "npm:^4.0.6"
+    source-map-support: "npm:^0.5.16"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: e0c6d6c8945dd792f83dc7bd6be468246b3aedd62b32620e56a3f3328389b577a6261d4338a9de9519f4eadddfef5aa0fdc1f92082c778dedddcc5854e357f09
   languageName: node
   linkType: hard
 
@@ -3881,7 +3923,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui/scripts@workspace:packages/core/scripts":
+"@rarui/scripts@workspace:^, @rarui/scripts@workspace:packages/core/scripts":
   version: 0.0.0-use.local
   resolution: "@rarui/scripts@workspace:packages/core/scripts"
   dependencies:
@@ -5947,6 +5989,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/babel__traverse@npm:^7":
+  version: 7.20.6
+  resolution: "@types/babel__traverse@npm:7.20.6"
+  dependencies:
+    "@babel/types": "npm:^7.20.7"
+  checksum: 7ba7db61a53e28cac955aa99af280d2600f15a8c056619c05b6fc911cbe02c61aa4f2823299221b23ce0cce00b294c0e5f618ec772aa3f247523c2e48cf7b888
+  languageName: node
+  linkType: hard
+
 "@types/body-parser@npm:*":
   version: 1.19.5
   resolution: "@types/body-parser@npm:1.19.5"
@@ -6548,6 +6599,13 @@ __metadata:
   version: 9.0.8
   resolution: "@types/uuid@npm:9.0.8"
   checksum: b411b93054cb1d4361919579ef3508a1f12bf15b5fdd97337d3d351bece6c921b52b6daeef89b62340fd73fd60da407878432a1af777f40648cbe53a01723489
+  languageName: node
+  linkType: hard
+
+"@types/vscode@npm:^1.79.0":
+  version: 1.91.0
+  resolution: "@types/vscode@npm:1.91.0"
+  checksum: 46c2faab49b79ff6cb4fbdb480ea149cb38e178a77961baa0edbd2899c62f2c281b8f1762bb36883ce6ddb600a6d3b22dda0a29eadc640c111a60dfc6552dceb
   languageName: node
   linkType: hard
 
@@ -9057,7 +9115,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^6.2.1":
+"commander@npm:^6.2.0, commander@npm:^6.2.1":
   version: 6.2.1
   resolution: "commander@npm:6.2.1"
   checksum: 85748abd9d18c8bc88febed58b98f66b7c591d9b5017cad459565761d7b29ca13b7783ea2ee5ce84bf235897333706c4ce29adf1ce15c8252780e7000e2ce9ea
@@ -17560,6 +17618,22 @@ __metadata:
   checksum: 96c032ac2475c8027b7a4e9fe22dc0dfe0f6d90b85e496e0f016fbdb99d6d066de0112e680805075bd989905e2123b3b3d002765149294dce0c1f7f01fcc2ea0
   languageName: node
   linkType: hard
+
+"rarui-helper@workspace:packages/helper":
+  version: 0.0.0-use.local
+  resolution: "rarui-helper@workspace:packages/helper"
+  dependencies:
+    "@babel/node": "npm:^7.22.5"
+    "@babel/parser": "npm:^7.22.5"
+    "@babel/traverse": "npm:^7.23.2"
+    "@babel/types": "npm:^7.22.5"
+    "@rarui/scripts": "workspace:^"
+    "@types/babel__core": "npm:^7"
+    "@types/babel__traverse": "npm:^7"
+    "@types/vscode": "npm:^1.79.0"
+    change-case: "npm:^4.1.2"
+  languageName: unknown
+  linkType: soft
 
 "raw-body@npm:2.5.2":
   version: 2.5.2

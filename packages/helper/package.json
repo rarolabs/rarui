@@ -1,0 +1,49 @@
+{
+  "name": "rarui-helper",
+  "displayName": "RarUI Helper",
+  "description": "The RarUI Helper extension is a powerful tool for developers working with VS Code.",
+  "version": "1.0.0",
+  "icon": "src/assets/rarui-helper-logo.png",
+  "publisher": "RaroLabs",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "rarui-helper.checkraruidependencies",
+        "title": "Check for updates to RarUI packages"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.rarolabs.com.br/frontend/rarui/-/tree/main/packages/helper/README.md"
+  },
+  "main": "./dist/extension.js",
+  "scripts": {
+    "vscode:prepublish": "yarn run build",
+    "build": "yarn prepublish && yarn g:webpack",
+    "build:elements": "babel-node -x .ts ./.scripts/build-doc-elements",
+    "prepublish": "yarn build:elements",
+    "clean": "rm -rf dist",
+    "watch": "yarn g:webpack --watch"
+  },
+  "devDependencies": {
+    "@babel/node": "^7.22.5",
+    "@babel/parser": "^7.22.5",
+    "@babel/traverse": "^7.23.2",
+    "@babel/types": "^7.22.5",
+    "@rarui/scripts": "workspace:^",
+    "@types/babel__core": "^7",
+    "@types/babel__traverse": "^7",
+    "@types/vscode": "^1.79.0",
+    "change-case": "^4.1.2"
+  }
+}

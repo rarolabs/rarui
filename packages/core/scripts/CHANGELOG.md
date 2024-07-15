@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating custom script builds at design system build time.
 
+## 2024-07-15 `1.1.4`
+
+#### 🎉 Bug fixes
+
+- Fixed folder name and tag name for `rarui-helper` case on `ReleasesLauncher` script([#78](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/78) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-01 `1.1.3`
 
 #### 🎉 Bug fixes
