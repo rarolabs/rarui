@@ -145,6 +145,7 @@ build-storybook-job:
   stage: build-storybook # It only runs when *both* jobs in the test stage complete successfully.
   environment: production
   script:
+    - printenv
     - yarn install # Instala as dependências com o Yarn
     - yarn build:tokens
     - yarn build:icons
@@ -156,8 +157,8 @@ build-storybook-job:
     when: always
   rules:
     - if: '$TRIGGER_JOB == "deploy-storybook"'
-  only:
-    - triggers
+  # only:
+  #   - triggers
 
 deploy-s3-job:
   <<: *image-aws
@@ -172,8 +173,8 @@ deploy-s3-job:
     - job: build-storybook-job
   rules:
     - if: '$TRIGGER_JOB == "deploy-storybook"'
-  only:
-    - triggers
+  # only:
+  #   - triggers
 
 deploy-rarui-helper-job:
   stage: deploy-rarui-helper
@@ -187,5 +188,5 @@ deploy-rarui-helper-job:
     - job: build-storybook-job
   rules:
     - if: '$TRIGGER_JOB == "deploy-rarui-helper"'
-  only:
-    - triggers
+  # only:
+  #   - triggers
