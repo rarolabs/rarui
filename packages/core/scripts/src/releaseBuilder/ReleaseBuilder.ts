@@ -106,7 +106,7 @@ export class ReleaseBuilder {
         package: `${_packageName} ${version}`,
         description,
         version,
-        tagName: `${_packageName.startsWith("@") ? _packageName.slice(1) : _packageName}-${version} `,
+        tagName: `${_packageName.startsWith("@") ? _packageName.slice(1) : _packageName}-${version}`,
         assets: {
           links: [
             {

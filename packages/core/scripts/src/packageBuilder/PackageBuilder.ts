@@ -39,7 +39,7 @@ export class PackageBuilder {
     execSync(command, { stdio: "inherit" });
   }
 
-  public async triggerBuildGithubAction(
+  public async triggerBuildGitlabCi(
     url: string,
     body: { [key: string]: string },
   ) {
@@ -54,7 +54,6 @@ export class PackageBuilder {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `token ${process.env.GITHUB_TOKEN}`,
         },
         body: JSON.stringify(body),
       });

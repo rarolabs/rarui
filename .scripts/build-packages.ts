@@ -17,8 +17,26 @@ try {
 
   const packageBuilder = new PackageBuilder();
   const packagesToBuild = packageBuilder.getPackagesToBuild(paths[0]);
+  const raruiHelper = packagesToBuild.find(
+    (packageToBuild) => packageToBuild === "rarui-helper",
+  );
 
-  const removePackages = ["@rarui/design-system", "@rarui/webpack"];
+  if (raruiHelper) {
+    packageBuilder.triggerBuildGitlabCi(
+      "https://git.rarolabs.com.br/api/v4/projects/1374/trigger/pipeline",
+      {
+        ref: "main",
+        token: `${process.env.TRIGGER_TOKEN}`,
+        "variables[TRIGGER_JOB]": "deploy-rarui-helper",
+      },
+    );
+  }
+
+  const removePackages = [
+    "@rarui/design-system",
+    "@rarui/webpack",
+    "rarui-helper",
+  ];
 
   const command = packageBuilder.getCommmandBuildNPM(
     packagesToBuild,
