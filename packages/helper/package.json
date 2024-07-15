@@ -2,7 +2,7 @@
   "name": "rarui-helper",
   "displayName": "RarUI Helper",
   "description": "The RarUI Helper extension is a powerful tool for developers working with VS Code.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "src/assets/rarui-helper-logo.png",
   "publisher": "RaroLabs",
   "engines": {

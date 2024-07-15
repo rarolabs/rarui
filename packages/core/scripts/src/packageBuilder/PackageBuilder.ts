@@ -46,7 +46,7 @@ export class PackageBuilder {
     try {
       if (!process.env.TRIGGER_TOKEN) {
         throw new Error(
-          "You need to set an environment variable called GITHUB_TOKEN with your personal git token",
+          "You need to set an environment variable called TRIGGER_TOKEN with your personal git token",
         );
       }
 

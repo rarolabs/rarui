@@ -1,6 +1,0 @@
-releases:
-  "@rarui/scripts": patch
-  rarui-helper: patch
-
-declined:
-  - "@rarui/design-system"
