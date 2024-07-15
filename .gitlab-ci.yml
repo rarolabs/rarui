@@ -94,6 +94,13 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
   script:
     - printenv
     - if [ ! -d .yarn/versions ]; then echo "Não há uma versão a ser publicada, abortando deploy."; exit 0; fi
+
+    # Instalar o yq para manipular arquivos YAML
+    - apt-get update && apt-get install -y yq
+
+    # Verificar se rarui-helper está em releases
+    - if [ "$(yq e '.releases | has("rarui-helper")' .yarn/versions.yml)" != "true" ]; then echo "Não há uma versão a ser publicada para rarui-helper, abortando deploy."; exit 0; fi
+
     - yarn install # Instala as dependências com o Yarn
     - yarn bump:check
     - export NODE_OPTIONS="--max_old_space_size=8192"
@@ -109,6 +116,13 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - git add .
     - git commit -m "Publish release stable [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
+
+    # Verificação e comandos específicos para rarui-helper
+    - if [ "$(yq e '.releases | has("rarui-helper")' .yarn/versions.yml)" == "true" ]; then
+        npm install -g @vscode/vsce
+        cd ./packages/helper
+        vsce publish
+      fi
   rules:
     - if: $CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE != "trigger" # Verifica se o evento que acionou a pipeline é um merge request
 

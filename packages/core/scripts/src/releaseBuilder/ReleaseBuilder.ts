@@ -23,6 +23,9 @@ type ProcessedPackage = {
 
 export class ReleaseBuilder {
   private breakPackageName(packageName: string) {
+    if (packageName === "rarui-helper") {
+      return "/helper";
+    }
     if (packageName.indexOf("-") === -1) return packageName.split("/")[1];
     console.log({ packageName });
     const folders = packageName.split("@rarui-")[1].split("/");
@@ -103,7 +106,7 @@ export class ReleaseBuilder {
         package: `${_packageName} ${version}`,
         description,
         version,
-        tagName: `${_packageName.slice(1)}-${version}`,
+        tagName: `${_packageName.startsWith("@") ? _packageName.slice(1) : _packageName}-${version} `,
         assets: {
           links: [
             {

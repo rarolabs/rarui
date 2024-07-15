@@ -7,7 +7,7 @@ export class RaruiDependenciesChecker {
     await vscode.window.withProgress(
       {
         location: vscode.ProgressLocation.Notification,
-        title: "Checking Rarui Dependencies",
+        title: "Checking RarUI Dependencies",
       },
       async () => {
         const raruiDsDependencies =
@@ -112,7 +112,7 @@ export class RaruiDependenciesChecker {
     currentVersion: string,
   ) {
     const message = `
-    🚨 Outdated Rarui dependency "${packageName}" found! ⚙️
+    🚨 Outdated RarUI dependency "${packageName}" found! ⚙️
     Current version in your project: ${currentVersion}  📦
     Latest version available: ${latestVersion}  🆕
     Time to update! 🚀

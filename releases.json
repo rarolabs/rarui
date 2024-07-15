@@ -1,59 +1,14 @@
 [
   {
-    "package": "@rarui-react/components 1.36.0",
-    "description": "## 2024-07-12 `1.36.0`\n\n- Added new theme `ThemeProvider` component. This component was migrated from the `@rarui/style` package to this main package. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "1.36.0",
-    "tagName": "rarui-react/components-1.36.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui-react/components",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui-react/theme-provider 1.0.0",
-    "description": "## 2024-07-12 `1.36.0`\n\nAdded `theme` property to the Component. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@junior](https://git.rarolabs.com.br/junior))",
+    "package": "rarui-helper 1.0.0",
+    "description": "# Changelog\n\nThe RarUI Helper extension is a powerful tool for developers working with VS Code. It is designed to streamline and enhance your workflow, offering advanced and customized features to maximize productivity.\n\n## 2024-07-11 `1.0.0`\n\n### 🎉 New features\n\n- Get comprehensive and detailed information about the properties and components of your RarUI Design System directly in the editor, providing a more intuitive development, also checks outdated RarUI dependencies when opening project. ([#78](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/78) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
     "version": "1.0.0",
-    "tagName": "rarui-react/theme-provider-1.0.0",
+    "tagName": "rarui-helper-1.0.0 ",
     "assets": {
       "links": [
         {
           "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui-react/theme-provider",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui/styles 2.0.0",
-    "description": "## 2024-07-12 `2.0.0`\n\n#### 🛠 Breaking changes\n\n- Component `ThemeProvider` was moved to the package responsible for its implementation (`@rarui-react/components`). The styles package should be agnostic. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "2.0.0",
-    "tagName": "rarui/styles-2.0.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/styles",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui/tokens 4.0.0",
-    "description": "## 2024-07-12 `4.0.0`\n\n#### 🛠 Breaking changes\n\n- The token `fontSize-hero` was moved to` fontSize-heading-hero`. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@junior](https://git.rarolabs.com.br/junior))\n- The token `lineHeight-hero` was moved to `lineHeight-heading-hero`. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@junior](https://git.rarolabs.com.br/junior))\n- The token `color-border-focus-ring` was moved to `elevation-focus-ring`. ([#77](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/77) by [@junior](https://git.rarolabs.com.br/junior))\n\n#### 💡 Breaking changes",
-    "version": "4.0.0",
-    "tagName": "rarui/tokens-4.0.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/tokens",
+          "url": "https://www.npmjs.com/package/rarui-helper",
           "link_type": "package"
         }
       ]

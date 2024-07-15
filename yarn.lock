@@ -3913,22 +3913,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui/helper@workspace:packages/helper":
-  version: 0.0.0-use.local
-  resolution: "@rarui/helper@workspace:packages/helper"
-  dependencies:
-    "@babel/node": "npm:^7.22.5"
-    "@babel/parser": "npm:^7.22.5"
-    "@babel/traverse": "npm:^7.23.2"
-    "@babel/types": "npm:^7.22.5"
-    "@rarui/scripts": "workspace:^"
-    "@types/babel__core": "npm:^7"
-    "@types/babel__traverse": "npm:^7"
-    "@types/vscode": "npm:^1.79.0"
-    change-case: "npm:^4.1.2"
-  languageName: unknown
-  linkType: soft
-
 "@rarui/icons@workspace:^, @rarui/icons@workspace:packages/icons":
   version: 0.0.0-use.local
   resolution: "@rarui/icons@workspace:packages/icons"
@@ -17634,6 +17618,22 @@ __metadata:
   checksum: 96c032ac2475c8027b7a4e9fe22dc0dfe0f6d90b85e496e0f016fbdb99d6d066de0112e680805075bd989905e2123b3b3d002765149294dce0c1f7f01fcc2ea0
   languageName: node
   linkType: hard
+
+"rarui-helper@workspace:packages/helper":
+  version: 0.0.0-use.local
+  resolution: "rarui-helper@workspace:packages/helper"
+  dependencies:
+    "@babel/node": "npm:^7.22.5"
+    "@babel/parser": "npm:^7.22.5"
+    "@babel/traverse": "npm:^7.23.2"
+    "@babel/types": "npm:^7.22.5"
+    "@rarui/scripts": "workspace:^"
+    "@types/babel__core": "npm:^7"
+    "@types/babel__traverse": "npm:^7"
+    "@types/vscode": "npm:^1.79.0"
+    change-case: "npm:^4.1.2"
+  languageName: unknown
+  linkType: soft
 
 "raw-body@npm:2.5.2":
   version: 2.5.2

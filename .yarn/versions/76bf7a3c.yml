@@ -1,5 +1,0 @@
-releases:
-  "@rarui/helper": major
-
-declined:
-  - "@rarui/design-system"
