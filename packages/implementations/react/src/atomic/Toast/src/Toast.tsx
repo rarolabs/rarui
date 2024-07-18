@@ -106,8 +106,9 @@ const Toast: React.FC<ToastProps> & ToastComponents = ({
       <IconButton
         onClick={() => {
           closeToast(id);
-          onClose && onClose();
-          console.log(id);
+          if (onClose) {
+            onClose();
+          }
         }}
         data-testid="dismiss-button"
         variant="ghost"
