@@ -16,12 +16,6 @@ const toast = recipe(
     },
     variants: {
       /**
-       * Where the toast is located
-       */
-      placement: {
-        topRight: {},
-      },
-      /**
        * Determines the visual style of the toast, influencing its color scheme and appearance.
        */
       appearance: {

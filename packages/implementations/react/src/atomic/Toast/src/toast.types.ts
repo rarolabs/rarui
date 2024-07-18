@@ -31,6 +31,11 @@ export interface ToastTyping {
    * @default true
    */
   autoClose?: boolean;
+  /**
+   * Receives a function to be executed when the Toast is closed.
+   * @default true
+   */
+  onClose?: () => void;
 }
 
 export type ToastProperties = ToastTyping & ToastVariants;

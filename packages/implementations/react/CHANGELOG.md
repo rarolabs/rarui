@@ -2,6 +2,16 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-07-22 `1.37.1`
+
+#### 🐛 Bug fixes
+
+- Removed `placement` property of the `Toast` component. ([#79](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+#### 🎉 New features
+
+- Added the property `onClose` to `Toast` component. ([#79](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-19 `1.37.0`
 
 #### 💡 Others
