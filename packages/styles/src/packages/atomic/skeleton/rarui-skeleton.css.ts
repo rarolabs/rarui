@@ -41,26 +41,29 @@ const skeletonAnimation = keyframes({
   },
 });
 
-export const skeleton = recipe({
-  base: {
-    backgroundColor: varsThemeBase.colors.surface.disabled,
-    position: "relative",
-    overflow: "hidden",
-    ":before": {
-      content: "",
-      position: "absolute",
-      height: "100%",
-      left: "0",
-      top: "0",
-      width: "0%",
-      backgroundColor: varsThemeBase.colors.surface.secondary,
-      animationName: skeletonAnimation,
-      animationDuration: "3000ms",
-      animationIterationCount: "infinite",
-      animationTimingFunction: "ease",
+export const skeleton = recipe(
+  {
+    base: {
+      backgroundColor: varsThemeBase.colors.surface.disabled,
+      position: "relative",
+      overflow: "hidden",
+      ":before": {
+        content: "",
+        position: "absolute",
+        height: "100%",
+        left: "0",
+        top: "0",
+        width: "0%",
+        backgroundColor: varsThemeBase.colors.surface.secondary,
+        animationName: skeletonAnimation,
+        animationDuration: "3000ms",
+        animationIterationCount: "infinite",
+        animationTimingFunction: "ease",
+      },
     },
   },
-});
+  "",
+);
 
 export const styles = {
   skeleton,

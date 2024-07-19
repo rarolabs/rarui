@@ -11,38 +11,41 @@ import { mediaQueries, varsThemeBase } from "../../../themes";
  * Style
  * -----------------------------------------------------------------------------------------------*/
 
-const modal = recipe({
-  base: {
-    position: "relative",
-    display: "flex",
-    flexDirection: "column",
-    width: "calc(100% - 2rem)",
-    minHeight: "3rem",
-    justifyContent: "center",
-    flexWrap: "nowrap",
-    height: "auto",
-    boxSizing: "border-box",
-    backgroundColor: varsThemeBase.colors.surface.primary,
-    borderRadius: varsThemeBase.shape.border.radius.sm,
-    padding: varsThemeBase.spacing.s,
-    gap: varsThemeBase.spacing.xs,
-    zIndex: varsThemeBase.zIndex[800],
-  },
-  variants: {
-    /**
-     * Padding properties are used to generate space around the content area of an Accordion.Body..
-     * @default base
-     */
-    padding: {
-      base: {
-        padding: `${varsThemeBase.spacing.md} ${varsThemeBase.spacing.s}`,
-      },
-      none: {
-        padding: 0,
+const modal = recipe(
+  {
+    base: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      width: "calc(100% - 2rem)",
+      minHeight: "3rem",
+      justifyContent: "center",
+      flexWrap: "nowrap",
+      height: "auto",
+      boxSizing: "border-box",
+      backgroundColor: varsThemeBase.colors.surface.primary,
+      borderRadius: varsThemeBase.shape.border.radius.sm,
+      padding: varsThemeBase.spacing.s,
+      gap: varsThemeBase.spacing.xs,
+      zIndex: varsThemeBase.zIndex[800],
+    },
+    variants: {
+      /**
+       * Padding properties are used to generate space around the content area of an Accordion.Body..
+       * @default base
+       */
+      padding: {
+        base: {
+          padding: `${varsThemeBase.spacing.md} ${varsThemeBase.spacing.s}`,
+        },
+        none: {
+          padding: 0,
+        },
       },
     },
   },
-});
+  "",
+);
 
 const overlayAnimation = keyframes({
   "0%": {

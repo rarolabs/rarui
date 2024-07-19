@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-07-19 `2.0.1`
+
+#### 🐛 Bug fixes
+
+- Adjusting style package to contain semantic usage classes in pure HTML applications. ([#80](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/80) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-12 `2.0.0`
 
 #### 🛠 Breaking changes

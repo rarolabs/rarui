@@ -4,5 +4,5 @@ import { sideNavigationStyles } from "./rarui-sideNavigation.css";
 
 export type SideNavigationVariants = NonNullable<
   RecipeVariants<typeof sideNavigationStyles.sideNavigation> &
-    RecipeVariants<typeof sideNavigationStyles.sideNavigationItem>
+    RecipeVariants<typeof sideNavigationStyles.item>
 >;

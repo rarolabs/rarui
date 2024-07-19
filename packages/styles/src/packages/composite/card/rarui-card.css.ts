@@ -10,35 +10,38 @@ import { backgroundColorProperties } from "../../../properties";
  * Style
  * -----------------------------------------------------------------------------------------------*/
 
-const card = recipe({
-  base: {
-    display: "flex",
-    flexDirection: "column",
-    borderStyle: "solid",
-    borderWidth: varsThemeBase.shape.border.width[1],
-    borderRadius: varsThemeBase.shape.border.radius.xs,
-    backgroundColor: varsThemeBase.colors.surface.primary,
-    borderColor: varsThemeBase.colors.border.subdued,
-    gap: varsThemeBase.spacing["3xs"],
-    color: varsThemeBase.colors.content.primary,
-    fontFamily: varsThemeBase.fontFamily.body,
-  },
-  variants: {
-    /**
-     * Specifies the padding inside the card.
-     * This prop accepts one of the following values: "none" or "base".
-     * @default base
-     */
-    padding: {
-      base: {
-        padding: varsThemeBase.spacing.s,
-      },
-      none: {
-        padding: 0,
+const card = recipe(
+  {
+    base: {
+      display: "flex",
+      flexDirection: "column",
+      borderStyle: "solid",
+      borderWidth: varsThemeBase.shape.border.width[1],
+      borderRadius: varsThemeBase.shape.border.radius.xs,
+      backgroundColor: varsThemeBase.colors.surface.primary,
+      borderColor: varsThemeBase.colors.border.subdued,
+      gap: varsThemeBase.spacing["3xs"],
+      color: varsThemeBase.colors.content.primary,
+      fontFamily: varsThemeBase.fontFamily.body,
+    },
+    variants: {
+      /**
+       * Specifies the padding inside the card.
+       * This prop accepts one of the following values: "none" or "base".
+       * @default base
+       */
+      padding: {
+        base: {
+          padding: varsThemeBase.spacing.s,
+        },
+        none: {
+          padding: 0,
+        },
       },
     },
   },
-});
+  "",
+);
 
 export const cardStyles = {
   card,
