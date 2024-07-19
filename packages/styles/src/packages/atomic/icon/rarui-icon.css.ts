@@ -10,12 +10,15 @@ import { colorProperties } from "../../../properties";
  * Style
  * -----------------------------------------------------------------------------------------------*/
 
-export const icon = recipe({
-  base: {
-    display: "flex",
-    alignItems: "center",
+export const icon = recipe(
+  {
+    base: {
+      display: "flex",
+      alignItems: "center",
+    },
   },
-});
+  "",
+);
 
 export const iconStyles = {
   icon,

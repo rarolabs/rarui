@@ -10,46 +10,49 @@ import { colorProperties, fontWeightProperties } from "../../../properties";
  * Style
  * -----------------------------------------------------------------------------------------------*/
 
-export const title = recipe({
-  base: {
-    fontFamily: varsThemeBase.fontFamily.heading,
-    margin: 0,
-  },
-  variants: {
-    as: {
-      h1: {
-        fontSize: varsThemeBase.fontSize.heading.hero,
-        lineHeight: varsThemeBase.lineHeight.heading.hero,
-        fontWeight: varsThemeBase.fontWeight.bold,
-      },
-      h2: {
-        fontSize: varsThemeBase.fontSize.heading.xl,
-        lineHeight: varsThemeBase.lineHeight.heading.xl,
-        fontWeight: varsThemeBase.fontWeight.bold,
-      },
-      h3: {
-        fontSize: varsThemeBase.fontSize.heading.l,
-        lineHeight: varsThemeBase.lineHeight.heading.l,
-        fontWeight: varsThemeBase.fontWeight.semiBold,
-      },
-      h4: {
-        fontSize: varsThemeBase.fontSize.heading.m,
-        lineHeight: varsThemeBase.lineHeight.heading.m,
-        fontWeight: varsThemeBase.fontWeight.regular,
-      },
-      h5: {
-        fontSize: varsThemeBase.fontSize.heading.s,
-        lineHeight: varsThemeBase.lineHeight.heading.s,
-        fontWeight: varsThemeBase.fontWeight.regular,
-      },
-      h6: {
-        fontSize: varsThemeBase.fontSize.heading.xs,
-        lineHeight: varsThemeBase.lineHeight.heading.xs,
-        fontWeight: varsThemeBase.fontWeight.regular,
+export const title = recipe(
+  {
+    base: {
+      fontFamily: varsThemeBase.fontFamily.heading,
+      margin: 0,
+    },
+    variants: {
+      as: {
+        h1: {
+          fontSize: varsThemeBase.fontSize.heading.hero,
+          lineHeight: varsThemeBase.lineHeight.heading.hero,
+          fontWeight: varsThemeBase.fontWeight.bold,
+        },
+        h2: {
+          fontSize: varsThemeBase.fontSize.heading.xl,
+          lineHeight: varsThemeBase.lineHeight.heading.xl,
+          fontWeight: varsThemeBase.fontWeight.bold,
+        },
+        h3: {
+          fontSize: varsThemeBase.fontSize.heading.l,
+          lineHeight: varsThemeBase.lineHeight.heading.l,
+          fontWeight: varsThemeBase.fontWeight.semiBold,
+        },
+        h4: {
+          fontSize: varsThemeBase.fontSize.heading.m,
+          lineHeight: varsThemeBase.lineHeight.heading.m,
+          fontWeight: varsThemeBase.fontWeight.regular,
+        },
+        h5: {
+          fontSize: varsThemeBase.fontSize.heading.s,
+          lineHeight: varsThemeBase.lineHeight.heading.s,
+          fontWeight: varsThemeBase.fontWeight.regular,
+        },
+        h6: {
+          fontSize: varsThemeBase.fontSize.heading.xs,
+          lineHeight: varsThemeBase.lineHeight.heading.xs,
+          fontWeight: varsThemeBase.fontWeight.regular,
+        },
       },
     },
   },
-});
+  "",
+);
 
 export const styles = {
   title,

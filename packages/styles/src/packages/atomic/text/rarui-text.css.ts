@@ -28,23 +28,26 @@ export const textFontSizeProperties = {
   xl: varsThemeBase.fontSize.body.xl,
 };
 
-export const text = recipe({
-  base: {
-    fontFamily: varsThemeBase.fontFamily.body,
-    fontWeight: varsThemeBase.fontWeight.regular,
-    margin: 0,
-  },
-  variants: {
-    lineClamp: {
-      true: {
-        display: "-webkit-box",
-        overflow: "hidden",
-        textOverflow: "ellipsis",
-        WebkitBoxOrient: "vertical",
+export const text = recipe(
+  {
+    base: {
+      fontFamily: varsThemeBase.fontFamily.body,
+      fontWeight: varsThemeBase.fontWeight.regular,
+      margin: 0,
+    },
+    variants: {
+      lineClamp: {
+        true: {
+          display: "-webkit-box",
+          overflow: "hidden",
+          textOverflow: "ellipsis",
+          WebkitBoxOrient: "vertical",
+        },
       },
     },
   },
-});
+  "",
+);
 
 export const styles = {
   text,

@@ -10,50 +10,53 @@ import { mediaQueries, varsThemeBase } from "../../../themes";
 /* -------------------------------------------------------------------------------------------------
  * Style
  * -----------------------------------------------------------------------------------------------*/
-const sidebar = recipe({
-  base: {
-    position: "fixed",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "stretch",
-    height: "100%",
-    minHeight: "100%",
-    width: "100%",
-    zIndex: varsThemeBase.zIndex[700],
-    top: 0,
-    opacity: 0,
-    overflowY: "auto",
-    boxSizing: "border-box",
-    transition: "opacity 300ms ease, transform 300ms ease",
-    backgroundColor: varsThemeBase.colors.surface.primary,
-    gap: varsThemeBase.spacing["3xs"],
-  },
-  variants: {
-    /**
-     * Specifies where the sidebar should be positioned
-     */
-    position: {
-      left: {
-        left: 0,
-        transform: "translateX(-100%)",
+const sidebar = recipe(
+  {
+    base: {
+      position: "fixed",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "stretch",
+      height: "100%",
+      minHeight: "100%",
+      width: "100%",
+      zIndex: varsThemeBase.zIndex[700],
+      top: 0,
+      opacity: 0,
+      overflowY: "auto",
+      boxSizing: "border-box",
+      transition: "opacity 300ms ease, transform 300ms ease",
+      backgroundColor: varsThemeBase.colors.surface.primary,
+      gap: varsThemeBase.spacing["3xs"],
+    },
+    variants: {
+      /**
+       * Specifies where the sidebar should be positioned
+       */
+      position: {
+        left: {
+          left: 0,
+          transform: "translateX(-100%)",
+        },
+        right: {
+          right: 0,
+          transform: "translateX(100%)",
+        },
       },
-      right: {
-        right: 0,
-        transform: "translateX(100%)",
+      /**
+       * Determines if the sidebar is shown or not.
+       * @default true
+       */
+      open: {
+        true: {
+          opacity: 1,
+          transform: "translateX(0)",
+        },
       },
     },
-    /**
-     * Determines if the sidebar is shown or not.
-     * @default true
-     */
-    open: {
-      true: {
-        opacity: 1,
-        transform: "translateX(0)",
-      },
-    },
   },
-});
+  "sidebar",
+);
 
 const overlayAnimation = keyframes({
   "0%": {
@@ -64,17 +67,20 @@ const overlayAnimation = keyframes({
   },
 });
 
-const overlay = style({
-  position: "fixed",
-  backgroundColor: varsThemeBase.colors.surface.overlay,
-  top: 0,
-  bottom: 0,
-  left: 0,
-  right: 0,
-  zIndex: varsThemeBase.zIndex[600],
-  border: "none",
-  animation: `${overlayAnimation} 0.5s ease`,
-});
+const overlay = style(
+  {
+    position: "fixed",
+    backgroundColor: varsThemeBase.colors.surface.overlay,
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    zIndex: varsThemeBase.zIndex[600],
+    border: "none",
+    animation: `${overlayAnimation} 0.5s ease`,
+  },
+  "overlay",
+);
 
 export const sidebarStyles = {
   sidebar,

@@ -46,14 +46,23 @@ class CssHashRemoverPlugin {
         },
         (assets) => {
           const source = assets?.["./index.css"]?.source()?.toString() ?? "";
-          const matches = Array.from(
+
+          const matchesHashCss = Array.from(
             source?.matchAll(
               /(?:\.rarui-[\w|-]+)(?:(__\w{7,}))(?::{0,2}(?:disabled|focus|active|hover|placeholder|focus-visible|focus-within|after)?){0,}{/gm,
             ),
             (m) => m[1],
           );
 
-          const uniqueMatches = [...new Set(matches)];
+          const matchesHashVars = Array.from(
+            source?.matchAll(/var\(--[^)]+(__\w+)\)/g),
+            (m) => m[1],
+          );
+
+          const uniqueMatches = [
+            ...new Set(matchesHashCss),
+            ...new Set(matchesHashVars),
+          ];
 
           this.content = source;
           uniqueMatches?.forEach((hash) => {

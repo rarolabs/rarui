@@ -6,37 +6,49 @@ import { varsThemeBase } from "../../../themes";
  * Style
  * -----------------------------------------------------------------------------------------------*/
 
-const datepicker = style({
-  border: "none",
-  fontFamily: varsThemeBase.fontFamily.body,
-  color: varsThemeBase.colors.content.primary,
-  backgroundColor: varsThemeBase.colors.surface.primary,
-  boxShadow: varsThemeBase.elevation.bottom[1],
-  borderRadius: varsThemeBase.shape.border.radius.xs,
-  overflow: "hidden",
-});
-
-const weekday = style({
-  textTransform: "capitalize",
-  flex: 1,
-  color: varsThemeBase.colors.content.secondary,
-  fontSize: varsThemeBase.fontSize.body.xs,
-  fontWeight: varsThemeBase.fontWeight.regular,
-});
-
-const day = style({
-  width: "2.5rem",
-});
-
-const time = style({
-  height: "auto !important",
-  padding: "0 !important",
-  margin: `0px ${varsThemeBase.spacing["4xs"]}`,
-  marginBottom: varsThemeBase.spacing["4xs"],
-  ":hover": {
-    backgroundColor: `${varsThemeBase.colors.surface["brand-hover"]} !important`,
+const datepicker = style(
+  {
+    border: "none",
+    fontFamily: varsThemeBase.fontFamily.body,
+    color: varsThemeBase.colors.content.primary,
+    backgroundColor: varsThemeBase.colors.surface.primary,
+    boxShadow: varsThemeBase.elevation.bottom[1],
+    borderRadius: varsThemeBase.shape.border.radius.xs,
+    overflow: "hidden",
   },
-});
+  "",
+);
+
+const weekday = style(
+  {
+    textTransform: "capitalize",
+    flex: 1,
+    color: varsThemeBase.colors.content.secondary,
+    fontSize: varsThemeBase.fontSize.body.xs,
+    fontWeight: varsThemeBase.fontWeight.regular,
+  },
+  "weekday",
+);
+
+const day = style(
+  {
+    width: "2.5rem",
+  },
+  "day",
+);
+
+const time = style(
+  {
+    height: "auto !important",
+    padding: "0 !important",
+    margin: `0px ${varsThemeBase.spacing["4xs"]}`,
+    marginBottom: varsThemeBase.spacing["4xs"],
+    ":hover": {
+      backgroundColor: `${varsThemeBase.colors.surface["brand-hover"]} !important`,
+    },
+  },
+  "time",
+);
 
 globalStyle(`${datepicker} .react-datepicker__header`, {
   backgroundColor: "transparent",

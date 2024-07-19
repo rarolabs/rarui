@@ -14,6 +14,7 @@
     },
     {
       "description": "Determines the visual style of the badge, influencing its color scheme and appearance.",
+      "default": "brand",
       "enum": [
         "brand",
         "danger",

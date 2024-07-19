@@ -9,7 +9,7 @@ import { zIndexProperties } from "../../../properties";
 
 export type DropdownVariants = NonNullable<
   RecipeVariants<typeof dropdownStyles.dropdown> &
-    RecipeVariants<typeof dropdownStyles.dropdownItem>
+    RecipeVariants<typeof dropdownStyles.item>
 >;
 export type DropdownDynamicProperties = Pick<
   StandardLonghandProperties,

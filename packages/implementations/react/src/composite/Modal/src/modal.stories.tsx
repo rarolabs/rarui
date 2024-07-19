@@ -33,10 +33,10 @@ export const basic: Story = {
     const [{ open }, updateArgs] = useArgs();
     const handleClose = () => updateArgs({ open: !open });
     return (
-      <Box minHeight={open ? "500px" : "auto"}>
+      <>
         <Button onClick={handleClose}>Open</Button>
         <Modal {...args} open={open} onDismiss={handleClose} />
-      </Box>
+      </>
     );
   },
   args: {

@@ -10,11 +10,14 @@ import { borderColorProperties } from "../../../properties";
  * Style
  * -----------------------------------------------------------------------------------------------*/
 
-const divider = recipe({
-  base: {
-    borderWidth: 0,
+const divider = recipe(
+  {
+    base: {
+      borderWidth: 0,
+    },
   },
-});
+  "",
+);
 
 export const styles = {
   divider,

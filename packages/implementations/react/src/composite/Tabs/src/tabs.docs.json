@@ -1,7 +1,7 @@
 {
   "id": "tabs",
   "name": "Tabs",
-  "totalProps": 4,
+  "totalProps": 5,
   "packageName": "@rarui-react/tabs",
   "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/tabs",
@@ -16,6 +16,14 @@
       "description": "Sets the indicated tab as active by default.\nIf unset, defaults to the first tab. This prop should be a number representing the index of the tab.",
       "type": "number",
       "title": "preSelectedTab",
+      "required": false
+    },
+    {
+      "description": "Controls where the tab buttons are displayed. This prop accepts one of the following values: \"left\", \"center\", or \"right\".",
+      "default": "left",
+      "enum": ["center", "left", "right"],
+      "type": "string",
+      "title": "position",
       "required": false
     },
     {
@@ -34,7 +42,7 @@
   "subComponents": [
     {
       "name": "Tabs.Item",
-      "totalProps": 2,
+      "totalProps": 3,
       "props": [
         {
           "$ref": "#/definitions/React.ReactNode",
@@ -46,6 +54,12 @@
           "description": "The content of the tabs item.",
           "type": "ReactNode",
           "title": "children",
+          "required": false
+        },
+        {
+          "description": "A callback function that is called when a tab is clicked.\nThis function receives the index of the selected tab as a parameter.",
+          "type": "(tab: number) => void",
+          "title": "onSelectTab",
           "required": false
         }
       ]

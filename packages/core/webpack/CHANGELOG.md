@@ -2,17 +2,23 @@
 
 This package is intended for internal use in generating builds of each design system package. It contains all the necessary settings and dependencies to optimize the creation of our builds.
 
-## 2024-08-09 `1.3.1`
+## 2024-08-19 `1.3.2`
 
 #### 🐛 Bug fixes
 
-- Fixed `cssHashRemoverPlugin` to properly remove hashs ([#73](https://git.rarolabs.com.br/frontend/rarui/pull/73) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+- Adjusted `cssHashRemoverPlugin` to remove hash from tags style. ([#80](https://git.rarolabs.com.br/frontend/rarui/pull/80) by [@junior](https://git.rarolabs.com.br/junior))
+
+## 2024-07-09 `1.3.1`
+
+#### 🐛 Bug fixes
+
+- Fixed `cssHashRemoverPlugin` to properly remove hashs. ([#73](https://git.rarolabs.com.br/frontend/rarui/pull/73) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
 
 ## 2024-06-10 `1.3.0`
 
 #### 💡 Others
 
-- Externalizing packages `@floating-ui/react` and `react-datepicker` . ([#52](https://git.rarolabs.com.br/frontend/rarui/pull/52) by [@junior](https://git.rarolabs.com.br/junior))
+- Externalizing packages `@floating-ui/react` and `react-datepicker`. ([#52](https://git.rarolabs.com.br/frontend/rarui/pull/52) by [@junior](https://git.rarolabs.com.br/junior))
 
 ## 2024-06-06 `1.2.0`
 
