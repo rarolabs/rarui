@@ -23,7 +23,7 @@ const channel = addons.getChannel();
 export const WithHTMLSource = (StoryFn: any) => {
   const [selected, setSelected] = useState(0);
   const [hasCopied, setHasCopied] = useState(false);
-  const [isDark, setDark] = useState<boolean>(useDarkMode());
+  const [isDark, setDark] = useState<boolean>();
 
   useEffect(() => {
     if (hasCopied) setTimeout(() => setHasCopied(false), 1500);
@@ -33,6 +33,18 @@ export const WithHTMLSource = (StoryFn: any) => {
     channel.on(DARK_MODE_EVENT_NAME, setDark);
     return () => channel.removeListener(DARK_MODE_EVENT_NAME, setDark);
   }, [channel, setDark]);
+
+  useEffect(() => window.addEventListener("message", receiveMessage), []);
+
+  const receiveMessage = (message: MessageEvent) => {
+    switch (message.data?.type) {
+      case "change_dark_theme":
+        setDark(message.data.value);
+        break;
+      default:
+        break;
+    }
+  };
 
   const html = renderToStaticMarkup(<StoryFn />);
   const formattedHtml = (formatter as any)(html, { method: "html" });
