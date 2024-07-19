@@ -2,7 +2,7 @@
 
 Tabs are used to switch between different display modes or pages.
 
-## 2024-07-19 `1.0.0`
+## 2024-07-19 `1.1.0`
 
 #### 🎉 New features
 
