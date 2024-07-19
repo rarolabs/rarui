@@ -2,9 +2,8 @@ import React from "react";
 import { Preview } from "@storybook/react";
 import { themes } from "@storybook/theming";
 import { ThemeDocsProvider, ThemeRaruiProvider, dark, light } from "./theme";
-import { WithHTMLSource } from "./decorators";
 
-const preview: Preview = {
+const basePreview: Preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
@@ -32,8 +31,7 @@ const preview: Preview = {
         <Story />
       </ThemeRaruiProvider>
     ),
-    WithHTMLSource,
   ],
 };
 
-export default preview;
+export default basePreview;

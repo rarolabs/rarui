@@ -2,6 +2,8 @@ import main from "../../../../.storybook/main";
 import type { StorybookConfig } from "@storybook/vue3-vite";
 import path from "path";
 
+console.log("to aqui");
+
 export const convertTsConfigPathsToWebpackAliases = () => {
   const rootDir = path.resolve(__dirname, "../");
   const paths: any = [];

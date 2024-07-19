@@ -1,4 +1,4 @@
-import basePreview from "../../../../.storybook/preview";
+import basePreview from "../../../../.storybook/basePreview";
 
 import type { Preview } from "@storybook/vue3";
 

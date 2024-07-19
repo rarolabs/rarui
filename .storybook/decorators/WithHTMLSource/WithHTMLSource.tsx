@@ -9,11 +9,8 @@ import {
 import formatter from "code-formatter";
 import tokens from "@rarui/tokens/dist/js/tokens";
 
-//@ts-ignore
 import { Tabs } from "@rarui-react/tabs";
-//@ts-ignore
 import { Box } from "@rarui-react/box";
-//@ts-ignore
 import { IconButton } from "@rarui-react/icon-button";
 import { FileCopyOutlinedIcon } from "@rarui/icons";
 import { hashsRemoves } from "./withHTMLSource.definitions";
