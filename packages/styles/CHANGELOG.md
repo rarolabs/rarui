@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-07-04 `2.1.0`
+
+#### 🎉 New features
+
+- Added new `info` appearance variant to `Status` component. ([#81](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/81) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-07-19 `2.0.1`
 
 #### 🐛 Bug fixes
