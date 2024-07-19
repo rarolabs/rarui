@@ -27,7 +27,7 @@
     },
     {
       "description": "Determines the visual style of the status, influencing its color scheme.",
-      "enum": ["danger", "inverted", "neutral", "success", "warning"],
+      "enum": ["danger", "info", "inverted", "neutral", "success", "warning"],
       "type": "string",
       "title": "appearance",
       "required": false
