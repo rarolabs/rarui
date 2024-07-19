@@ -54,9 +54,10 @@ class CssHashRemoverPlugin {
             (m) => m[1],
           );
 
-          const matchesHashVars = [
-            ...source?.matchAll(/var\(--[^)]+(__\w+)\)/g),
-          ].map((match) => match[1]);
+          const matchesHashVars = Array.from(
+            source?.matchAll(/var\(--[^)]+(__\w+)\)/g),
+            (m) => m[1],
+          );
 
           const uniqueMatches = [
             ...new Set(matchesHashCss),
