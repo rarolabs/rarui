@@ -1,11 +1,10 @@
+import { dirname, join } from "path";
 import type { StorybookConfig } from "@storybook/react-webpack5";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import { VanillaExtractPlugin } from "@vanilla-extract/webpack-plugin";
 import "dotenv/config";
 
 import { convertTsConfigPathsToWebpackAliases } from "./utils";
-
-console.log("process.env", process.env);
 
 const config: StorybookConfig = {
   stories: ["./introduction.mdx"],
@@ -20,14 +19,14 @@ const config: StorybookConfig = {
     },
   },
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
-    "storybook-dark-mode",
-    "@storybook/addon-webpack5-compiler-swc",
+    getAbsolutePath("@storybook/addon-links"),
+    getAbsolutePath("@storybook/addon-essentials"),
+    getAbsolutePath("@storybook/addon-interactions"),
+    getAbsolutePath("storybook-dark-mode"),
+    getAbsolutePath("@storybook/addon-webpack5-compiler-swc"),
   ],
   framework: {
-    name: "@storybook/react-webpack5",
+    name: getAbsolutePath("@storybook/react-webpack5"),
     options: {
       builder: {},
     },
@@ -38,9 +37,8 @@ const config: StorybookConfig = {
       to: "/static",
     },
   ],
-  docs: {
-    autodocs: "tag",
-  },
+  docs: {},
+
   webpackFinal(config) {
     config.plugins?.push(
       new VanillaExtractPlugin({
@@ -48,6 +46,16 @@ const config: StorybookConfig = {
       }),
       new MiniCssExtractPlugin(),
     );
+    config.module?.rules?.push({
+      test: /\.(stories|story)\.[tj]sx?$/,
+      use: [
+        {
+          loader: require.resolve("@storybook/source-loader"),
+          options: { injectStoryParameters: true },
+        },
+      ],
+      enforce: "pre",
+    });
     config.resolve = {
       ...config.resolve,
       alias: {
@@ -60,3 +68,7 @@ const config: StorybookConfig = {
 };
 
 export default config;
+
+function getAbsolutePath(value: string): any {
+  return dirname(require.resolve(join(value, "package.json")));
+}
