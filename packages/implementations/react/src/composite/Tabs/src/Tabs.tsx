@@ -6,6 +6,7 @@ import { TabsButton, TabsItem, TabsItemProps } from "./components";
 const Tabs: React.FC<TabsProps> & TabsComponents = ({
   className: _className,
   style: _style,
+  position = "left",
   underlined,
   children,
   preSelectedTab,
@@ -23,11 +24,11 @@ const Tabs: React.FC<TabsProps> & TabsComponents = ({
     <>
       <ul
         role="tablist"
-        className={tabs.classnames.ul({ underlined })}
+        className={tabs.classnames.ul({ underlined, position })}
         {...props}
       >
         {tabsChildren.map((tabChildren, index) => {
-          const { label, ...rest } = tabChildren.props;
+          const { label, onSelectTab, ...rest } = tabChildren.props;
           return (
             <li
               key={crypto.randomUUID()}
@@ -36,7 +37,10 @@ const Tabs: React.FC<TabsProps> & TabsComponents = ({
               <TabsButton
                 underlined={underlined}
                 selected={selectedTab === index}
-                onClick={() => setSelectedTab(index)}
+                onClick={() => {
+                  onSelectTab?.(index);
+                  setSelectedTab(index);
+                }}
                 {...rest}
               >
                 {label}

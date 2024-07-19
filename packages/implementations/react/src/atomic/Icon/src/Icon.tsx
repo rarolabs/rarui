@@ -13,7 +13,7 @@ const Icon: React.FC<IconProps> = ({
 
   return (
     <div
-      className={[className, icon.classnames.icon()].join(" ")}
+      className={[icon.classnames.icon(), className].join(" ")}
       style={style}
       {...otherProps}
     >

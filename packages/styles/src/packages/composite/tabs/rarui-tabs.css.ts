@@ -32,6 +32,11 @@ const ul = recipe(
           borderBottomColor: varsThemeBase.colors.border.subdued,
         },
       },
+      /**
+       * Controls where the tab buttons are displayed. This prop accepts one of the following values: "left", "center", or "right".
+       * @default left
+       */
+
       position: {
         left: {
           justifyContent: "flex-start",

@@ -51,7 +51,7 @@ const SideNavigationItem = forwardRef(
         {...props}
         className={[
           sideNavigation.classnames.sideNavigation({ active }),
-          sideNavigation.classnames.sideNavigationItem({ level }),
+          sideNavigation.classnames.item({ level }),
         ].join(" ")}
         ref={innerRef}
       >

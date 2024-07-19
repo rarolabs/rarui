@@ -52,7 +52,7 @@ const BreadcrumbItem = forwardRef(
     return (
       <As
         {...props}
-        className={breadcrumb.classnames.breadcrumbItem({ active })}
+        className={breadcrumb.classnames.item({ active })}
         ref={innerRef}
       >
         {(name || icon) && (

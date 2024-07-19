@@ -26,13 +26,13 @@ describe("GIVEN <SideNavigation.Item />", () => {
       makeSut({ children: <div>My content</div>, level: 1 });
       expect(
         screen.getByTestId("sidenavigation-item-element").getAttribute("class"),
-      ).toContain("sideNavigationItem_level_1");
+      ).toContain("rarui-sideNavigation_item_level_1");
     });
     it("THEN should correctly render the submitted level 2", () => {
       makeSut({ children: <div>My content</div>, level: 2 });
       expect(
         screen.getByTestId("sidenavigation-item-element").getAttribute("class"),
-      ).toContain("sideNavigationItem_level_2");
+      ).toContain("rarui-sideNavigation_item_level_2");
     });
   });
 

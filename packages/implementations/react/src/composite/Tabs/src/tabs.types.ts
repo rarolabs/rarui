@@ -21,7 +21,7 @@ export interface TabsTyping {
 }
 
 export type TabsProperties = TabsTyping &
-  Pick<TabsVariants, "underlined" | "full">;
+  Pick<TabsVariants, "underlined" | "full" | "position">;
 
 export type TabsProps = TabsProperties &
   Omit<HTMLAttributes<HTMLElement>, "color">;

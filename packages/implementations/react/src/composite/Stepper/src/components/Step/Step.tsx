@@ -9,9 +9,9 @@ import { useStepper } from "../../hooks";
 const StepperStep: React.FC<StepperStepProps> = ({
   className: _className,
   style: _style,
-  children,
   active = false,
   done = false,
+  children,
   title,
   description,
   ...props
@@ -21,7 +21,7 @@ const StepperStep: React.FC<StepperStepProps> = ({
   return (
     <li className={stepper.classNames.step({ direction })} {...props}>
       <div
-        className={stepper.classNames.stepCircle({ active, done })}
+        className={stepper.classNames.circle({ active, done })}
         data-testid="step-circle"
       >
         {children}

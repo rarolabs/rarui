@@ -21,7 +21,7 @@ const Progress: React.FC<ProgressProps> & ProgressComponents = ({
   return (
     <div {...props} className={progress.classnames.progress}>
       <div
-        className={[progress.classnames.progressBar, className].join(" ")}
+        className={[progress.classnames.bar, className].join(" ")}
         style={style}
         data-testid={dataTestid ? `${dataTestid}-bar` : ""}
       />

@@ -27,7 +27,7 @@ const Pagination: React.FC<PaginationProps> = ({
           <button
             type="button"
             data-testid="button-pagination-prev"
-            className={pagination.classnames.paginationItem({
+            className={pagination.classnames.item({
               size: size === "dot" ? "large" : size,
             })}
             onClick={() => onPageChange(Number(activePage - 1))}
@@ -46,7 +46,7 @@ const Pagination: React.FC<PaginationProps> = ({
                 <li>
                   <button
                     type="button"
-                    className={pagination.classnames.paginationItem({ size })}
+                    className={pagination.classnames.item({ size })}
                     data-testid="button-pagination-page-dots"
                     disabled
                   >
@@ -59,7 +59,7 @@ const Pagination: React.FC<PaginationProps> = ({
                   <button
                     type="button"
                     data-testid={`button-pagination-page-${pageNumber}`}
-                    className={pagination.classnames.paginationItem({
+                    className={pagination.classnames.item({
                       selected: pageNumber === activePage,
                       size,
                     })}
@@ -76,7 +76,7 @@ const Pagination: React.FC<PaginationProps> = ({
           <button
             type="button"
             data-testid="button-pagination-next"
-            className={pagination.classnames.paginationItem({
+            className={pagination.classnames.item({
               size: size === "dot" ? "large" : size,
             })}
             onClick={() => onPageChange(Number(activePage + 1))}
