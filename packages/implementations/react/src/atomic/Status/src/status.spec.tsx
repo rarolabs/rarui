@@ -30,6 +30,13 @@ describe("GIVEN <Status />", () => {
       ).toContain("appearance_success");
     });
 
+    it("AND should correctly render the appearance info", () => {
+      makeSut({ appearance: "info", children: "label" });
+      expect(
+        screen.getByTestId("status-element").getAttribute("class"),
+      ).toContain("appearance_info");
+    });
+
     it("AND should correctly render the appearance warning", () => {
       makeSut({ appearance: "warning", children: "label" });
       expect(

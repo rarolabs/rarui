@@ -23,6 +23,13 @@ export const basic: Story = {
   },
 };
 
+export const info: Story = {
+  args: {
+    appearance: "info",
+    children: "Label",
+  },
+};
+
 export const warning: Story = {
   args: {
     appearance: "warning",
