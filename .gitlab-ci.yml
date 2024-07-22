@@ -117,9 +117,8 @@ publish-release-job: # This job runs in the publish-release-job stage.
     - rm -f releases.json
     - git config --global user.email "${GITLAB_USER_NAME}"
     - git config --global user.name "${GITLAB_USER_EMAIL}"
-    - git pull
     - git add .
-    - git commit -m "Publish release [skip ci]"
+    - git commit -m "ci:🎡 Publish release [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
     - curl --location 'https://git.rarolabs.com.br/api/v4/projects/1374/trigger/pipeline' \
       --form 'token="${TRIGGER_TOKEN}"' \
