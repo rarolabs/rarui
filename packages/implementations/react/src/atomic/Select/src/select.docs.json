@@ -1,10 +1,358 @@
 {
   "id": "select",
   "name": "Select",
-  "totalProps": 0,
+  "totalProps": 14,
   "packageName": "@rarui-react/select",
   "version": "2.1.0",
   "docLink": "https://rarui.com.br/documentation/src-components/select",
-  "props": [],
+  "props": [
+    {
+      "description": "Element to be rendered inside the Box of options component.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": false
+    },
+    {
+      "description": "Options for the Select component. This should be an array of SelectOption objects.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "description": "Label for the option. This is the text that will be displayed for the option.",
+            "type": "string",
+            "title": "label"
+          },
+          "value": {
+            "description": "Value of the option. This is the value that will be used internally and returned when the option is selected.",
+            "type": "string",
+            "title": "value"
+          }
+        },
+        "additionalProperties": false,
+        "propertyOrder": ["label", "value"],
+        "required": ["label", "value"]
+      },
+      "title": "options",
+      "required": true
+    },
+    {
+      "description": "Default selected values for the Select component.\nThis should be an array of SelectOption objects representing the selected options.",
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "title": "value",
+      "required": false
+    },
+    {
+      "description": "Callback function that is called when the selected values change.\nThis function receives an array of SelectOption objects representing the selected options.",
+      "type": "object",
+      "additionalProperties": false,
+      "propertyOrder": [],
+      "title": "onChange",
+      "required": false
+    },
+    {
+      "description": "Fazer",
+      "type": "boolean",
+      "title": "multiple",
+      "required": false
+    },
+    {
+      "description": "Specifies the default selected value(s) for the select box.\nThis can be a string for single selection or an array of strings for multiple selections.",
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "title": "defaultValue",
+      "required": false
+    },
+    {
+      "description": "If true, the Select component is shown.",
+      "type": "boolean",
+      "title": "open",
+      "required": false
+    },
+    {
+      "description": "Position of the select.",
+      "default": "bottom",
+      "enum": [
+        "bottom",
+        "bottom-end",
+        "bottom-start",
+        "left",
+        "left-end",
+        "left-start",
+        "right",
+        "right-end",
+        "right-start",
+        "top",
+        "top-end",
+        "top-start"
+      ],
+      "type": "string",
+      "title": "position",
+      "required": false
+    },
+    {
+      "description": "Determines whether the select box should enable flipping the options' dropdown when there is not enough space to display it in its default direction.\nThis can help ensure the dropdown is always visible on the screen.",
+      "default": true,
+      "type": "boolean",
+      "title": "enabledFlip",
+      "required": false
+    },
+    {
+      "description": "Specifies the ID of the portal element where the dropdown should be rendered.\nThis can be useful for rendering the dropdown in a different part of the DOM, such as a modal or overlay.",
+      "type": "string",
+      "title": "portalId",
+      "required": false
+    },
+    {
+      "description": "Determines the visual style of the input, affecting its border",
+      "enum": ["error", "success"],
+      "type": "string",
+      "title": "appearance",
+      "required": false
+    },
+    {
+      "description": "Specifies the size of the badge, controlling its dimensions.",
+      "enum": ["large", "medium", "small"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    },
+    {
+      "description": "The **`max-height`** CSS property sets the maximum height of an element. It prevents the used value of the `height` property from becoming larger than the value specified for `max-height`.\n\n\n**Initial value**: `none`",
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "none",
+            "stretch"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "maxHeight",
+      "required": false
+    },
+    {
+      "description": "The zIndex property specifies the stack order of the box.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "$100",
+            "$200",
+            "$300",
+            "$400",
+            "$500",
+            "$600",
+            "$700",
+            "$800",
+            "$900"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "zIndex",
+      "required": false
+    }
+  ],
   "subComponents": []
 }

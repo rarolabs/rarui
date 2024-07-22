@@ -1,10 +1,25 @@
 {
   "id": "textarea",
   "name": "Textarea",
-  "totalProps": 0,
+  "totalProps": 2,
   "packageName": "@rarui-react/textarea",
   "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/textarea",
-  "props": [],
+  "props": [
+    {
+      "description": "Number of lines to be rendered for the user to input text",
+      "default": 2,
+      "type": "number",
+      "title": "lines",
+      "required": false
+    },
+    {
+      "description": "Determines the visual style of the textarea, affecting its border",
+      "enum": ["error", "success"],
+      "type": "string",
+      "title": "appearance",
+      "required": false
+    }
+  ],
   "subComponents": []
 }

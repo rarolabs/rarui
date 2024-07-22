@@ -1,16 +1,100 @@
 {
   "id": "toast",
   "name": "Toast",
-  "totalProps": 0,
+  "totalProps": 9,
   "packageName": "@rarui-react/toast",
   "version": "2.1.0",
   "docLink": "https://rarui.com.br/documentation/src-components/toast",
-  "props": [],
+  "props": [
+    {
+      "description": "The content of the button.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": false
+    },
+    {
+      "description": "Auto generated id.",
+      "type": "string",
+      "title": "id",
+      "required": true
+    },
+    {
+      "description": "The title of the toast",
+      "type": "string",
+      "title": "title",
+      "required": false
+    },
+    {
+      "description": "Time in miliseconds to auto dismiss the component",
+      "enum": [16000, 4000, 8000],
+      "type": "number",
+      "title": "duration",
+      "required": false
+    },
+    {
+      "description": "Tells you whether or not Toast should close automatically.",
+      "default": true,
+      "type": "boolean",
+      "title": "autoClose",
+      "required": false
+    },
+    {
+      "description": "Receives a function to be executed when the Toast is closed.",
+      "default": true,
+      "type": "object",
+      "additionalProperties": false,
+      "propertyOrder": [],
+      "title": "onClose",
+      "required": false
+    },
+    {
+      "description": "Determines the visual style of the toast, influencing its color scheme and appearance.",
+      "enum": ["error", "info", "invert", "neutral", "success", "warning"],
+      "type": "string",
+      "title": "appearance",
+      "required": false
+    },
+    {
+      "description": "Specifies the size of the toast, controlling its dimensions.",
+      "enum": ["large", "medium", "small"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    },
+    {
+      "description": "Specifies the variant of the toast",
+      "enum": ["ghost", "solid", "tonal"],
+      "type": "string",
+      "title": "variant",
+      "required": false
+    }
+  ],
   "subComponents": [
     {
       "name": "Toast.Provider",
-      "totalProps": 0,
-      "props": []
+      "totalProps": 2,
+      "props": [
+        {
+          "type": "React.ReactNode",
+          "title": "children",
+          "required": true
+        },
+        {
+          "description": "Position of the toast.",
+          "default": "bottomRight",
+          "enum": [
+            "bottomCenter",
+            "bottomLeft",
+            "bottomRight",
+            "topCenter",
+            "topLeft",
+            "topRight"
+          ],
+          "type": "string",
+          "title": "placement",
+          "required": false
+        }
+      ]
     }
   ]
 }

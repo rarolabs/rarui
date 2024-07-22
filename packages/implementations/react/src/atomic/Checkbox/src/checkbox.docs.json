@@ -1,10 +1,42 @@
 {
   "id": "checkbox",
   "name": "Checkbox",
-  "totalProps": 0,
+  "totalProps": 5,
   "packageName": "@rarui-react/checkbox",
   "version": "1.0.3",
   "docLink": "https://rarui.com.br/documentation/src-components/checkbox",
-  "props": [],
+  "props": [
+    {
+      "description": "The label of the checkbox.",
+      "type": "string",
+      "title": "label",
+      "required": false
+    },
+    {
+      "description": "The id of the checkbox.",
+      "type": "string",
+      "title": "id",
+      "required": true
+    },
+    {
+      "description": "Specifies whether the checkbox is in error state",
+      "type": "boolean",
+      "title": "error",
+      "required": false
+    },
+    {
+      "description": "Specifies the size of the checkbox",
+      "enum": ["large", "medium"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    },
+    {
+      "description": "Specifies whether the checkbox is indeterminate state",
+      "type": "boolean",
+      "title": "indeterminate",
+      "required": false
+    }
+  ],
   "subComponents": []
 }

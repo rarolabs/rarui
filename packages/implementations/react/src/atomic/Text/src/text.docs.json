@@ -1,10 +1,951 @@
 {
   "id": "text",
   "name": "Text",
-  "totalProps": 0,
+  "totalProps": 15,
   "packageName": "@rarui-react/text",
   "version": "1.1.0",
   "docLink": "https://rarui.com.br/documentation/src-components/text",
-  "props": [],
+  "props": [
+    {
+      "description": "The content of the link.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": true
+    },
+    {
+      "description": "Type of html tag to create for the Text component.",
+      "default": "p",
+      "enum": ["p", "span"],
+      "type": "string",
+      "title": "as",
+      "required": false
+    },
+    {
+      "description": "The -webkit-line-clamp CSS property allows limiting of the contents of a block to the specified number of lines.",
+      "type": "number",
+      "title": "lineClamp",
+      "required": false
+    },
+    {
+      "description": "The color property is used to set the color of the title.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$currentColor",
+                "$disabled",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$invert-secondary",
+                "$on-brand",
+                "$on-error",
+                "$on-info",
+                "$on-success",
+                "$on-warning",
+                "$primary",
+                "$secondary",
+                "$success",
+                "$warning",
+                "$warning-alt"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$currentColor",
+                "$disabled",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$invert-secondary",
+                "$on-brand",
+                "$on-error",
+                "$on-info",
+                "$on-success",
+                "$on-warning",
+                "$primary",
+                "$secondary",
+                "$success",
+                "$warning",
+                "$warning-alt"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$currentColor",
+                "$disabled",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$invert-secondary",
+                "$on-brand",
+                "$on-error",
+                "$on-info",
+                "$on-success",
+                "$on-warning",
+                "$primary",
+                "$secondary",
+                "$success",
+                "$warning",
+                "$warning-alt"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$currentColor",
+                "$disabled",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$invert-secondary",
+                "$on-brand",
+                "$on-error",
+                "$on-info",
+                "$on-success",
+                "$on-warning",
+                "$primary",
+                "$secondary",
+                "$success",
+                "$warning",
+                "$warning-alt"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "$brand",
+            "$brand-alt",
+            "$currentColor",
+            "$disabled",
+            "$error",
+            "$info",
+            "$invert",
+            "$invert-disabled",
+            "$invert-secondary",
+            "$on-brand",
+            "$on-error",
+            "$on-info",
+            "$on-success",
+            "$on-warning",
+            "$primary",
+            "$secondary",
+            "$success",
+            "$warning",
+            "$warning-alt"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "color",
+      "required": false
+    },
+    {
+      "description": "The color property is used to set the color of the title.",
+      "default": "$regular",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$bold", "$medium", "$regular", "$semiBold"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["$bold", "$medium", "$regular", "$semiBold"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$bold", "$medium", "$regular", "$semiBold"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["$bold", "$medium", "$regular", "$semiBold"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["$bold", "$medium", "$regular", "$semiBold"],
+          "type": "string"
+        }
+      ],
+      "title": "fontWeight",
+      "required": false
+    },
+    {
+      "description": "The fontSize property sets the size of the text.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+          "type": "string"
+        }
+      ],
+      "title": "fontSize",
+      "required": false
+    },
+    {
+      "description": "The lineHeight property specifies the line height of the title.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["$l", "$m", "$s", "$xl", "$xs", "$xxs"],
+          "type": "string"
+        }
+      ],
+      "title": "lineHeight",
+      "required": false
+    },
+    {
+      "description": "The **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area.\n\n\n**Initial value**: `auto`",
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "auto",
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "min-intrinsic",
+            "stretch"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "width",
+      "required": false
+    },
+    {
+      "description": "The **`text-align`** CSS property sets the horizontal alignment of a block element or table-cell box. This means it works like `vertical-align` but in the horizontal direction.\n\n\n**Initial value**: `start`, or a nameless value that acts as `left` if _direction_ is `ltr`, `right` if _direction_ is `rtl` if `start` is not supported by the browser.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "center",
+                "end",
+                "justify",
+                "left",
+                "match-parent",
+                "right",
+                "start"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "center",
+                "end",
+                "justify",
+                "left",
+                "match-parent",
+                "right",
+                "start"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "center",
+                "end",
+                "justify",
+                "left",
+                "match-parent",
+                "right",
+                "start"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "center",
+                "end",
+                "justify",
+                "left",
+                "match-parent",
+                "right",
+                "start"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "center",
+            "end",
+            "justify",
+            "left",
+            "match-parent",
+            "right",
+            "start"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "textAlign",
+      "required": false
+    },
+    {
+      "description": "The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.\n\n\n**Initial value**: `clip`",
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": ["clip", "ellipsis"],
+                  "type": "string"
+                }
+              ],
+              "title": "xs"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": ["clip", "ellipsis"],
+                  "type": "string"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": ["clip", "ellipsis"],
+                  "type": "string"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": ["clip", "ellipsis"],
+                  "type": "string"
+                }
+              ],
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["clip", "ellipsis"],
+          "type": "string"
+        }
+      ],
+      "title": "textOverflow",
+      "required": false
+    },
+    {
+      "description": "The **`text-transform`** CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby.\n\n\n**Initial value**: `none`",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "capitalize",
+                "full-size-kana",
+                "full-width",
+                "lowercase",
+                "none",
+                "uppercase"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "capitalize",
+                "full-size-kana",
+                "full-width",
+                "lowercase",
+                "none",
+                "uppercase"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "capitalize",
+                "full-size-kana",
+                "full-width",
+                "lowercase",
+                "none",
+                "uppercase"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "capitalize",
+                "full-size-kana",
+                "full-width",
+                "lowercase",
+                "none",
+                "uppercase"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "capitalize",
+            "full-size-kana",
+            "full-width",
+            "lowercase",
+            "none",
+            "uppercase"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "textTransform",
+      "required": false
+    },
+    {
+      "description": "The **`white-space`** CSS property sets how white space inside an element is handled.\n\n\n**Initial value**: `normal`",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "break-spaces",
+                "normal",
+                "nowrap",
+                "pre",
+                "pre-line",
+                "pre-wrap"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "break-spaces",
+                "normal",
+                "nowrap",
+                "pre",
+                "pre-line",
+                "pre-wrap"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "break-spaces",
+                "normal",
+                "nowrap",
+                "pre",
+                "pre-line",
+                "pre-wrap"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "break-spaces",
+                "normal",
+                "nowrap",
+                "pre",
+                "pre-line",
+                "pre-wrap"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "break-spaces",
+            "normal",
+            "nowrap",
+            "pre",
+            "pre-line",
+            "pre-wrap"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "whiteSpace",
+      "required": false
+    },
+    {
+      "description": "The **`word-break`** CSS property sets whether line breaks appear wherever the text would otherwise overflow its content box.\n\n\n**Initial value**: `normal`",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["break-all", "break-word", "keep-all", "normal"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["break-all", "break-word", "keep-all", "normal"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["break-all", "break-word", "keep-all", "normal"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["break-all", "break-word", "keep-all", "normal"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["break-all", "break-word", "keep-all", "normal"],
+          "type": "string"
+        }
+      ],
+      "title": "wordBreak",
+      "required": false
+    },
+    {
+      "description": "The **`overflow`** CSS shorthand property sets the desired behavior for an element's overflow — i.e. when an element's content is too big to fit in its block formatting context — in both directions.\n\n\n**Initial value**: `visible`",
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": ["auto", "clip", "hidden", "scroll", "visible"],
+                  "type": "string"
+                }
+              ],
+              "title": "xs"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": ["auto", "clip", "hidden", "scroll", "visible"],
+                  "type": "string"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": ["auto", "clip", "hidden", "scroll", "visible"],
+                  "type": "string"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": ["auto", "clip", "hidden", "scroll", "visible"],
+                  "type": "string"
+                }
+              ],
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["auto", "clip", "hidden", "scroll", "visible"],
+          "type": "string"
+        }
+      ],
+      "title": "overflow",
+      "required": false
+    },
+    {
+      "description": "The **`text-decoration`** shorthand CSS property sets the appearance of decorative lines on text. It is a shorthand for `text-decoration-line`, `text-decoration-color`, `text-decoration-style`, and the newer `text-decoration-thickness` property.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "auto",
+                "blink",
+                "dashed",
+                "dotted",
+                "double",
+                "from-font",
+                "grammar-error",
+                "line-through",
+                "none",
+                "overline",
+                "solid",
+                "spelling-error",
+                "underline",
+                "wavy"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "auto",
+                "blink",
+                "dashed",
+                "dotted",
+                "double",
+                "from-font",
+                "grammar-error",
+                "line-through",
+                "none",
+                "overline",
+                "solid",
+                "spelling-error",
+                "underline",
+                "wavy"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "auto",
+                "blink",
+                "dashed",
+                "dotted",
+                "double",
+                "from-font",
+                "grammar-error",
+                "line-through",
+                "none",
+                "overline",
+                "solid",
+                "spelling-error",
+                "underline",
+                "wavy"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "auto",
+                "blink",
+                "dashed",
+                "dotted",
+                "double",
+                "from-font",
+                "grammar-error",
+                "line-through",
+                "none",
+                "overline",
+                "solid",
+                "spelling-error",
+                "underline",
+                "wavy"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "auto",
+            "blink",
+            "dashed",
+            "dotted",
+            "double",
+            "from-font",
+            "grammar-error",
+            "line-through",
+            "none",
+            "overline",
+            "solid",
+            "spelling-error",
+            "underline",
+            "wavy"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "textDecoration",
+      "required": false
+    }
+  ],
   "subComponents": []
 }

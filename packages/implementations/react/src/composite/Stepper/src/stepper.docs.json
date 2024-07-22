@@ -1,16 +1,62 @@
 {
   "id": "stepper",
   "name": "Stepper",
-  "totalProps": 0,
+  "totalProps": 2,
   "packageName": "@rarui-react/stepper",
   "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/stepper",
-  "props": [],
+  "props": [
+    {
+      "description": "The content of the stepper, which should be one or more Step components.",
+      "type": "<Stepper.Step />",
+      "title": "children",
+      "required": true
+    },
+    {
+      "description": "Specifies the direction of the stepper. This prop accepts one of the following values: vertical or horizontal.",
+      "default": "horizontal",
+      "enum": ["horizontal", "vertical"],
+      "type": "string",
+      "title": "direction",
+      "required": false
+    }
+  ],
   "subComponents": [
     {
       "name": "Stepper.Step",
-      "totalProps": 0,
-      "props": []
+      "totalProps": 5,
+      "props": [
+        {
+          "description": "The title of the step. This provides a brief summary of the step's purpose.",
+          "type": "string",
+          "title": "title",
+          "required": false
+        },
+        {
+          "description": "A more detailed description of the step. This can provide additional context or instructions.",
+          "type": "string",
+          "title": "description",
+          "required": false
+        },
+        {
+          "description": "The content of the step, which can include text, icon, or other React elements.",
+          "type": "React.ReactNode",
+          "title": "children",
+          "required": true
+        },
+        {
+          "description": "Indicates whether the step is currently active. An active step is typically highlighted to show that it is the current step.",
+          "type": "boolean",
+          "title": "active",
+          "required": false
+        },
+        {
+          "description": "Indicates whether the step has been completed. A completed step is usually marked with a checkmark or other indicator.",
+          "type": "boolean",
+          "title": "done",
+          "required": false
+        }
+      ]
     }
   ]
 }
