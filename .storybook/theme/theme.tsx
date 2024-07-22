@@ -12,6 +12,18 @@ export const ThemeDocsProvider: React.FC<any> = (props) => {
   const [isDark, setDark] = useState<boolean>();
 
   useEffect(() => window.addEventListener("message", receiveMessage), []);
+  useEffect(() => {
+    const iframeScript = document.getElementById("@iframe-resizer-child");
+    if (!iframeScript) {
+      const script = document.createElement("script");
+      script.src =
+        "https://cdn.jsdelivr.net/npm/@iframe-resizer/child@5.2.1/index.umd.min.js";
+      script.type = "text/javascript";
+      script.async = true;
+      script.id = "@iframe-resizer-child";
+      document.body.appendChild(script);
+    }
+  }, []);
 
   const receiveMessage = (message: MessageEvent) => {
     switch (message.data?.type) {
