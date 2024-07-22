@@ -1,4 +1,5 @@
 releases:
+  "@rarui-react/components": minor
   "@rarui-react/status": minor
   "@rarui/styles": minor
 
