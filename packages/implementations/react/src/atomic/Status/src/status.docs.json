@@ -1,51 +1,10 @@
 {
   "id": "status",
   "name": "Status",
-  "totalProps": 6,
+  "totalProps": 0,
   "packageName": "@rarui-react/status",
   "version": "1.2.0",
   "docLink": "https://rarui.com.br/documentation/src-components/status",
-  "props": [
-    {
-      "description": "The content of the status component. This prop accepts any React node.",
-      "type": "React.ReactNode",
-      "title": "children",
-      "required": true
-    },
-    {
-      "description": "Specifies whether to display a dot indicator alongside the status text. When true, a dot is shown to visually represent the status.",
-      "default": true,
-      "type": "boolean",
-      "title": "dot",
-      "required": false
-    },
-    {
-      "description": "Specifies whether the status should take up the full width of its container.\nThis variant is useful when you want to make a status span the entire width of its parent container.",
-      "type": "boolean",
-      "title": "full",
-      "required": false
-    },
-    {
-      "description": "Determines the visual style of the status, influencing its color scheme.",
-      "enum": ["danger", "inverted", "neutral", "success", "warning"],
-      "type": "string",
-      "title": "appearance",
-      "required": false
-    },
-    {
-      "description": "Specifies the size of the badge, controlling its dimensions.",
-      "enum": ["normal", "small"],
-      "type": "string",
-      "title": "size",
-      "required": false
-    },
-    {
-      "description": "Specifies the variant of the status",
-      "enum": ["solid", "subdued", "text"],
-      "type": "string",
-      "title": "variant",
-      "required": false
-    }
-  ],
+  "props": [],
   "subComponents": []
 }

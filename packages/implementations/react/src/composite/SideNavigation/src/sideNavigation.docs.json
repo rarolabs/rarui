@@ -1,58 +1,15 @@
 {
   "id": "sideNavigation",
   "name": "SideNavigation",
-  "totalProps": 7,
+  "totalProps": 0,
   "packageName": "@rarui-react/side-navigation",
   "version": "1.1.0",
   "docLink": "https://rarui.com.br/documentation/src-components/side-navigation",
-  "props": [
-    {
-      "description": "The content of the sideNavigation.",
-      "type": "React.ReactNode",
-      "title": "children",
-      "required": true
-    },
-    {
-      "description": "Title of the sideNavigation",
-      "type": "string",
-      "title": "name",
-      "required": true
-    },
-    {
-      "description": "Description of the sideNavigation.",
-      "type": "string",
-      "title": "description",
-      "required": false
-    },
-    {
-      "description": "Componet to be displayed on start input.",
-      "type": "React.ReactNode",
-      "title": "leadingStart",
-      "required": false
-    },
-    {
-      "description": "Componet to be displayed on end input.",
-      "type": "React.ReactNode",
-      "title": "leadingEnd",
-      "required": false
-    },
-    {
-      "type": "boolean",
-      "title": "active",
-      "required": false
-    },
-    {
-      "description": "Determines the level of nesting for the item.",
-      "enum": [0, 1, 2],
-      "type": "number",
-      "title": "level",
-      "required": false
-    }
-  ],
+  "props": [],
   "subComponents": [
     {
       "name": "SideNavigation.Item",
-      "totalProps": 5,
+      "totalProps": 2,
       "props": [
         {
           "description": "A ref to the element rendered by this component. Because this component is polymorphic, the type will vary based on the value of the as prop.",
@@ -73,25 +30,6 @@
             }
           ],
           "title": "as",
-          "required": false
-        },
-        {
-          "description": "The content of the modal header.",
-          "type": "React.ReactNode",
-          "title": "children",
-          "required": false
-        },
-        {
-          "description": "Determines if the item is active or not.",
-          "type": "boolean",
-          "title": "active",
-          "required": false
-        },
-        {
-          "description": "Determines the level of nesting for the item.",
-          "enum": [0, 1, 2],
-          "type": "number",
-          "title": "level",
           "required": false
         }
       ]
