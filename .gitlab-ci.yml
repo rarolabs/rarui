@@ -30,11 +30,10 @@ stages: # List of stages for jobs, and their order of execution
   - check-releases
   - check-version
   - quality
-  - deploy
-  - releases
-  - clean-releases
+  - deploy-rarui
+  - publish-release
   - build-storybook
-  - deploy-s3
+  - publish-storybook
   - deploy-rarui-helper
 
 setup-job:
@@ -89,8 +88,8 @@ lint-job: # This job also runs in the test stage.
   only:
     - merge_requests
 
-deploy-stable-job: # This job runs in the deploy-stable stage.
-  stage: deploy # It only runs when *both* jobs in the test stage complete successfully.
+deploy-rarui-job: # This job runs in the deploy-stable stage.
+  stage: deploy-rarui # It only runs when *both* jobs in the test stage complete successfully.
   environment: production
   script:
     - printenv
@@ -99,51 +98,35 @@ deploy-stable-job: # This job runs in the deploy-stable stage.
     - yarn bump:check
     - export NODE_OPTIONS="--max_old_space_size=8192"
     - yarn publish:stable
-    - yarn build:docs
-    - git config --global user.email "${GITLAB_USER_NAME}"
-    - git config --global user.name "${GITLAB_USER_EMAIL}"
-    - git fetch
-    - git stash
-    - git checkout main
-    - git stash apply
-    - git pull --rebase
-    - git add .
-    - git commit -m "Publish release stable [skip ci]"
-    - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
+    - curl --location 'https://git.rarolabs.com.br/api/v4/projects/1374/trigger/pipeline' \
+      --form 'token="${TRIGGER_TOKEN}"' \
+      --form 'ref="main"' \
+      --form 'variables[TRIGGER_JOB]="publish-release"'
   rules:
     - if: $CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE != "trigger" # Verifica se o evento que acionou a pipeline é um merge request
 
-release-job:
-  stage: releases
-  script:
-    - yarn install
-    - yarn releases:launch
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE != "trigger" # Verifica se o evento que acionou a pipeline é um merge request
-  needs:
-    - job: deploy-stable-job
-
-clean-releases-job:
-  stage: clean-releases
+publish-release-job: # This job runs in the publish-release-job stage.
+  stage: publish-release # It only runs when *both* jobs in the test stage complete successfully.
   environment: production
   script:
-    - echo "cleaning releases"
+    - yarn install # Instala as dependências com o Yarn
+    - yarn bump:check
+    - yarn bump:stable
+    - yarn build:docs
+    - yarn releases:launch
+    - rm -f releases.json
     - git config --global user.email "${GITLAB_USER_NAME}"
     - git config --global user.name "${GITLAB_USER_EMAIL}"
-    - git checkout main
-    - git pull --rebase
-    - rm -f releases.json
+    - git pull
     - git add .
-    - git commit -m "cleaning releases [skip ci]"
+    - git commit -m "Publish release [skip ci]"
     - git push https://gitlab-ci-token:${PERSONAL_ACCESS_TOKEN}@git.rarolabs.com.br/frontend/rarui.git HEAD:main
     - curl --location 'https://git.rarolabs.com.br/api/v4/projects/1374/trigger/pipeline' \
       --form 'token="${TRIGGER_TOKEN}"' \
       --form 'ref="main"' \
       --form 'variables[TRIGGER_JOB]="deploy-storybook"'
   rules:
-    - if: $CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE != "trigger" # Verifica se o evento que acionou a pipeline é um merge request
-  needs:
-    - job: release-job
+    - if: '$CI_PIPELINE_SOURCE == "trigger" && $TRIGGER_JOB == "publish-release"'
 
 build-storybook-job:
   stage: build-storybook # It only runs when *both* jobs in the test stage complete successfully.
@@ -162,9 +145,9 @@ build-storybook-job:
   rules:
     - if: '$CI_PIPELINE_SOURCE == "trigger" && $TRIGGER_JOB == "deploy-storybook"'
 
-deploy-s3-job:
+publish-storybook-job:
   <<: *image-aws
-  stage: deploy-s3
+  stage: publish-storybook
   script:
     - amazon-linux-extras install docker
     - aws --version
