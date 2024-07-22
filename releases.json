@@ -1,9 +1,9 @@
 [
   {
-    "package": "@rarui-react/components 1.37.0",
-    "description": "## 2024-07-19 `1.37.0`\n\n#### 💡 Others\n\n- Adjusting style package to contain semantic usage classes in pure HTML applications. ([#80](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/80) by [@junior](https://git.rarolabs.com.br/junior))\n\n#### 🎉 New features\n\n- Added `position` and `onSelectTab` properties to `Tabs` the Component. ([#80](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/80) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "1.37.0",
-    "tagName": "rarui-react/components-1.37.0",
+    "package": "@rarui-react/components 1.37.1",
+    "description": "## 2024-07-22 `1.37.1`\n\n#### 🐛 Bug fixes\n\n- Removed `placement` property of the `Toast` component. ([#79](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n#### 🎉 New features\n\n- Added the property `onClose` to `Toast` component. ([#79](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.37.1",
+    "tagName": "rarui-react/components-1.37.1",
     "assets": {
       "links": [
         {
@@ -15,45 +15,30 @@
     }
   },
   {
-    "package": "@rarui-react/tabs 1.0.0",
-    "description": "## 2024-07-19 `1.0.0`\n\n#### 🎉 New features\n\n- Added `position` and `onSelectTab` properties to the Component. ([#80](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/80) by [@junior](https://git.rarolabs.com.br/junior))\n\n#### 🎉 New features",
-    "version": "1.0.0",
-    "tagName": "rarui-react/tabs-1.0.0",
+    "package": "@rarui-react/toast 1.1.0",
+    "description": "## 2024-07-18 `1.1.0`\n\n#### 🐛 Bug fixes\n\n- Removed `placement` property of the `Toast` component, it is defined at `Toast.provider`. ([#79](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/79) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))\n\n#### 🎉 New features\n\n- Added the property `onClose` to `Toast` component. ([#79](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/79) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "1.1.0",
+    "tagName": "rarui-react/toast-1.1.0",
     "assets": {
       "links": [
         {
           "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui-react/tabs",
+          "url": "https://www.npmjs.com/package/@rarui-react/toast",
           "link_type": "package"
         }
       ]
     }
   },
   {
-    "package": "@rarui/styles 2.0.1",
-    "description": "## 2024-07-19 `2.0.1`\n\n#### 🐛 Bug fixes\n\n- Adjusting style package to contain semantic usage classes in pure HTML applications. ([#80](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/80) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "2.0.1",
-    "tagName": "rarui/styles-2.0.1",
+    "package": "@rarui/tokens 4.0.1",
+    "description": "## 2024-07-18 `4.0.1`\n\n#### 🐛 Bug fixes\n\n- Adjusted color of the light theme `color-light-surface[\"brand-subdued\"]` token. ([#72](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/72) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))",
+    "version": "4.0.1",
+    "tagName": "rarui/tokens-4.0.1",
     "assets": {
       "links": [
         {
           "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/styles",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui/webpack 1.3.2",
-    "description": "## 2024-08-19 `1.3.2`\n- Adjusted `cssHashRemoverPlugin` to remove hash from tags style. ([#80](https://git.rarolabs.com.br/frontend/rarui/pull/80) by [@junior](https://git.rarolabs.com.br/junior))\n\n## 2024-07-09 `1.3.1`\n\n#### 🐛 Bug fixes\n\n- Fixed `cssHashRemoverPlugin` to properly remove hashs. ([#73](https://git.rarolabs.com.br/frontend/rarui/pull/73) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))\n- Externalizing packages `@floating-ui/react` and `react-datepicker`. ([#52](https://git.rarolabs.com.br/frontend/rarui/pull/52) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "1.3.2",
-    "tagName": "rarui/webpack-1.3.2",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/webpack",
+          "url": "https://www.npmjs.com/package/@rarui/tokens",
           "link_type": "package"
         }
       ]

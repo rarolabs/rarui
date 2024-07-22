@@ -29,6 +29,7 @@ const Toast: React.FC<ToastProps> & ToastComponents = ({
   variant = "solid",
   size = "medium",
   autoClose = true,
+  onClose,
   duration = 4000,
   title,
   id,
@@ -103,7 +104,12 @@ const Toast: React.FC<ToastProps> & ToastComponents = ({
         {children}
       </div>
       <IconButton
-        onClick={() => closeToast(id)}
+        onClick={() => {
+          closeToast(id);
+          if (onClose) {
+            onClose();
+          }
+        }}
         data-testid="dismiss-button"
         variant="ghost"
         appearance={

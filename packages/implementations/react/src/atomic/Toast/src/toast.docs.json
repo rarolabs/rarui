@@ -39,10 +39,12 @@
       "required": false
     },
     {
-      "description": "Where the toast is located",
-      "type": "string",
-      "enum": ["topRight"],
-      "title": "placement",
+      "description": "Receives a function to be executed when the Toast is closed.",
+      "default": true,
+      "type": "object",
+      "additionalProperties": false,
+      "propertyOrder": [],
+      "title": "onClose",
       "required": false
     },
     {
@@ -79,7 +81,7 @@
         },
         {
           "description": "Position of the toast.",
-          "default": "bottom",
+          "default": "bottomRight",
           "enum": [
             "bottomCenter",
             "bottomLeft",

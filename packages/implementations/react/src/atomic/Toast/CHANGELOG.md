@@ -2,6 +2,16 @@
 
 The Toast component presents notifications that provide feedback on an operation through a message.
 
+## 2024-07-18 `1.1.0`
+
+#### 🐛 Bug fixes
+
+- Removed `placement` property of the `Toast` component, it is defined at `Toast.provider`. ([#79](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/79) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+#### 🎉 New features
+
+- Added the property `onClose` to `Toast` component. ([#79](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/79) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-06-21 `1.0.3`
 
 #### 🐛 Bug fixes

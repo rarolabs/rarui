@@ -7,7 +7,7 @@ export interface ToastProviderProperties {
   children: ReactNode;
   /**
    * Position of the toast.
-   * @default bottom
+   * @default bottomRight
    */
   placement?:
     | "bottomRight"
