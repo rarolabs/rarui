@@ -113,7 +113,7 @@ publish-release-job: # This job runs in the publish-release-job stage.
     - yarn bump:check
     - yarn bump:stable
     - yarn build:docs
-    - yarn releases:launch
+    # - yarn releases:launch
     - rm -f releases.json
     - git config --global user.email "${GITLAB_USER_NAME}"
     - git config --global user.name "${GITLAB_USER_EMAIL}"
