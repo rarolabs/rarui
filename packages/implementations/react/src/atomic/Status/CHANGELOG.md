@@ -2,6 +2,12 @@
 
 Status are used to indicate the current state of a process.
 
+## 2024-07-19 `1.3.0`
+
+#### 🎉 New features
+
+- Added appearance `info` option to the component. ([#81](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/81) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-07-04 `1.2.0`
 
 #### 🎉 New features

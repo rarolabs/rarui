@@ -58,6 +58,10 @@ const status = recipe(
           backgroundColor: varsThemeBase.colors.surface.invert,
           color: varsThemeBase.colors.content.invert,
         },
+        info: {
+          backgroundColor: varsThemeBase.colors.surface.info,
+          color: varsThemeBase.colors.content["on-info"],
+        },
       },
       /**
        * Specifies the size of the badge, controlling its dimensions.
@@ -126,6 +130,15 @@ const status = recipe(
       },
       {
         variants: {
+          appearance: "info",
+          variant: "text",
+        },
+        style: {
+          color: varsThemeBase.colors.content.info,
+        },
+      },
+      {
+        variants: {
           appearance: "neutral",
           variant: "text",
         },
@@ -184,8 +197,19 @@ const status = recipe(
           color: varsThemeBase.colors.content["invert-secondary"],
         },
       },
+      {
+        variants: {
+          appearance: "info",
+          variant: "subdued",
+        },
+        style: {
+          backgroundColor: varsThemeBase.colors.surface["info-subdued"],
+          color: varsThemeBase.colors.content.info,
+        },
+      },
     ],
   },
+
   "",
 );
 

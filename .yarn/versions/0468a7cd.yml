@@ -1,0 +1,7 @@
+releases:
+  "@rarui-react/components": minor
+  "@rarui-react/status": minor
+  "@rarui/styles": minor
+
+declined:
+  - "@rarui/design-system"
