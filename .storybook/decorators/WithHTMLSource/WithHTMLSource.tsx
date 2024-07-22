@@ -23,7 +23,7 @@ const channel = addons.getChannel();
 export const WithHTMLSource = (StoryFn: any) => {
   const [selected, setSelected] = useState(0);
   const [hasCopied, setHasCopied] = useState(false);
-  const [isDark, setDark] = useState<boolean>();
+  const [isDark, setDark] = useState<boolean>(useDarkMode());
 
   useEffect(() => {
     if (hasCopied) setTimeout(() => setHasCopied(false), 1500);
