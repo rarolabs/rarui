@@ -10,6 +10,7 @@
       "packages/implementations/*",
       "packages/implementations/*/*/atomic/*",
       "packages/implementations/*/*/composite/*",
+      "packages/implementations/*/*/input/*",
       "packages/implementations/*/*/theme/*"
     ]
   },
@@ -74,7 +75,6 @@
     "@storybook/blocks": "^8.0.8",
     "@storybook/react": "^8.0.8",
     "@storybook/react-webpack5": "^8.0.8",
-    "@storybook/source-loader": "^8.2.4",
     "@storybook/test": "^8.0.8",
     "@storybook/vue-webpack5": "^7.6.17",
     "@storybook/vue3": "^8.0.8",

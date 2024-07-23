@@ -1,0 +1,28 @@
+{
+  "name": "@rarui/stencil",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn g:tsc --outDir dist --declaration true",
+    "clean": "rm -rf dist",
+    "g:stencil": "cd $INIT_CWD && stencil"
+  },
+  "homepage": "https://git.rarolabs.com.br/frontend/rarui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.rarolabs.com.br/frontend/rarui.git"
+  },
+  "bugs": {
+    "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
+  },
+  "devDependencies": {
+    "@stencil/core": "^4.19.2"
+  }
+}

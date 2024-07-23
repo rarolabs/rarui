@@ -1,0 +1,32 @@
+{
+  "name": "@rarui/button",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn g:stencil build",
+    "clean": "rm -rf dist",
+    "version": "yarn version"
+  },
+  "homepage": "https://git.rarolabs.com.br/frontend/rarui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.rarolabs.com.br/frontend/rarui.git"
+  },
+  "bugs": {
+    "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
+  },
+  "devDependencies": {
+    "@rarui/stencil": "workspace:^"
+  }
+}

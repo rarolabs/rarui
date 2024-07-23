@@ -4012,6 +4012,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rarui/button@workspace:packages/implementations/web-components/src/input/Button":
+  version: 0.0.0-use.local
+  resolution: "@rarui/button@workspace:packages/implementations/web-components/src/input/Button"
+  dependencies:
+    "@rarui/stencil": "workspace:^"
+  languageName: unknown
+  linkType: soft
+
+"@rarui/components@workspace:packages/implementations/web-components":
+  version: 0.0.0-use.local
+  resolution: "@rarui/components@workspace:packages/implementations/web-components"
+  dependencies:
+    "@rarui/stencil": "workspace:^"
+  languageName: unknown
+  linkType: soft
+
 "@rarui/design-system@workspace:.":
   version: 0.0.0-use.local
   resolution: "@rarui/design-system@workspace:."
@@ -4031,7 +4047,6 @@ __metadata:
     "@storybook/blocks": "npm:^8.0.8"
     "@storybook/react": "npm:^8.0.8"
     "@storybook/react-webpack5": "npm:^8.0.8"
-    "@storybook/source-loader": "npm:^8.2.4"
     "@storybook/test": "npm:^8.0.8"
     "@storybook/vue-webpack5": "npm:^7.6.17"
     "@storybook/vue3": "npm:^8.0.8"
@@ -4107,6 +4122,14 @@ __metadata:
   dependencies:
     change-case: "npm:^4.1.2"
     typescript-json-schema: "npm:^0.55.0"
+  languageName: unknown
+  linkType: soft
+
+"@rarui/stencil@workspace:^, @rarui/stencil@workspace:packages/core/stencil":
+  version: 0.0.0-use.local
+  resolution: "@rarui/stencil@workspace:packages/core/stencil"
+  dependencies:
+    "@stencil/core": "npm:^4.19.2"
   languageName: unknown
   linkType: soft
 
@@ -4366,6 +4389,15 @@ __metadata:
   dependencies:
     "@sinonjs/commons": "npm:^3.0.0"
   checksum: 2e2fb6cc57f227912814085b7b01fede050cd4746ea8d49a1e44d5a0e56a804663b0340ae2f11af7559ea9bf4d087a11f2f646197a660ea3cb04e19efc04aa63
+  languageName: node
+  linkType: hard
+
+"@stencil/core@npm:^4.19.2":
+  version: 4.19.2
+  resolution: "@stencil/core@npm:4.19.2"
+  bin:
+    stencil: bin/stencil
+  checksum: b067bf66b0d36194164788b0e516229bb0e25c88bbd13d3162972f9f5a1b5fa76fadc4f1fc1539ad78a77e2aa6c0ba68b207a56277e86644804e981927748544
   languageName: node
   linkType: hard
 
@@ -5118,15 +5150,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/csf@npm:0.1.11":
-  version: 0.1.11
-  resolution: "@storybook/csf@npm:0.1.11"
-  dependencies:
-    type-fest: "npm:^2.19.0"
-  checksum: c5329fc13e7d762049b5c91df1bc1c0e510a1a898c401b72b68f1ff64139a85ab64a92f8e681d2fcb226c0a4a55d0f23b569b2bdb517e0f067bd05ea46228356
-  languageName: node
-  linkType: hard
-
 "@storybook/csf@npm:^0.0.1":
   version: 0.0.1
   resolution: "@storybook/csf@npm:0.0.1"
@@ -5492,20 +5515,6 @@ __metadata:
     memoizerific: "npm:^1.11.3"
     qs: "npm:^6.10.0"
   checksum: cc3c4de5992fb961cab17d9b1bc184b9c1fe730ff9ea4d4aebbbf188721ab7b59b4e3ac5be23fe19c8811a5d8d9df076d4a1310ec87182e42c241553d58cf27d
-  languageName: node
-  linkType: hard
-
-"@storybook/source-loader@npm:^8.2.4":
-  version: 8.2.4
-  resolution: "@storybook/source-loader@npm:8.2.4"
-  dependencies:
-    "@storybook/csf": "npm:0.1.11"
-    estraverse: "npm:^5.2.0"
-    lodash: "npm:^4.17.21"
-    prettier: "npm:^3.1.1"
-  peerDependencies:
-    storybook: ^8.2.4
-  checksum: 87e7e8a77c836fbf536793f24fc7afd1a93240625809374d149426a482512c9cb625620d8eea52427632d2761b80cc6983cbb5cac924dba2a6c8d28f7aed4e66
   languageName: node
   linkType: hard
 
