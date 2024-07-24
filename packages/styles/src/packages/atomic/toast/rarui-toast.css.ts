@@ -1,10 +1,10 @@
 import { keyframes, style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
-import { mediaQueries, varsThemeBase } from "../../../themes";
 import {
   createRainbowSprinkles,
   defineProperties as defineRainbowProperties,
 } from "rainbow-sprinkles";
+import { mediaQueries, varsThemeBase } from "../../../themes";
 
 const toast = recipe(
   {
