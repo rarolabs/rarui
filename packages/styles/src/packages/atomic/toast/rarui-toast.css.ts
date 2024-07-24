@@ -1,6 +1,10 @@
 import { keyframes, style } from "@vanilla-extract/css";
 import { recipe } from "@vanilla-extract/recipes";
-import { varsThemeBase } from "../../../themes";
+import { mediaQueries, varsThemeBase } from "../../../themes";
+import {
+  createRainbowSprinkles,
+  defineProperties as defineRainbowProperties,
+} from "rainbow-sprinkles";
 
 const toast = recipe(
   {
@@ -348,18 +352,37 @@ export const container = recipe(
   "container",
 );
 
-const iconContainer = style(
-  {
-    alignSelf: "self-start",
-  },
-  "icon-container",
-);
-
 export const styles = {
   toast,
   container,
   content,
-  iconContainer,
   toastContainer,
   wrapper,
 };
+
+/* -------------------------------------------------------------------------------------------------
+ * Sprinkle
+ * -----------------------------------------------------------------------------------------------*/
+
+const defineProperties = defineRainbowProperties({
+  conditions: {
+    xs: {
+      "@media": mediaQueries.xs(),
+    },
+    md: {
+      "@media": mediaQueries.md(),
+    },
+    lg: {
+      "@media": mediaQueries.lg(),
+    },
+    xl: {
+      "@media": mediaQueries.xl(),
+    },
+  },
+  defaultCondition: "md",
+  dynamicProperties: {
+    width: true,
+  },
+});
+
+export const sprinkle = createRainbowSprinkles(defineProperties);

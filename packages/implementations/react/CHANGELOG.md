@@ -2,7 +2,14 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
-## 2024-07-25 `1.39.0`
+
+## 2024-07-24 `1.40.0`
+
+#### 🎉 New features
+
+- Added `width` property to `Toast` component. ([#82](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/60) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+## 2024-06-02 `1.39.0`
 
 #### 🎉 New features
 
