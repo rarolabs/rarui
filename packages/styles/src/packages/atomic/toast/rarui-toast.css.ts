@@ -16,7 +16,7 @@ const toast = recipe(
       gap: varsThemeBase.spacing["2xs"],
       maxWidth: "100%",
       width: "420px",
-      zIndex: varsThemeBase.zIndex[100],
+      zIndex: varsThemeBase.zIndex[900],
     },
     variants: {
       /**

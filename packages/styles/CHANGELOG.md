@@ -9,6 +9,10 @@ RarUI Styles deprive all styles needed to build components.
 
 - Added `width` property with responsivness to `Toast` component. ([#82](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/82) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 
+#### 🐛 Bug fixes
+
+- Fixed the z-index value of `Toast` component to be on top of everything. ([#82](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/82) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-04 `2.1.1`
 
 #### 💡 Others
