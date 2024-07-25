@@ -40,6 +40,8 @@ const config: Config.InitialOptions = {
       "<rootDir>/packages/implementations/react/src/atomic/Divider/src",
     "@rarui-react/title":
       "<rootDir>/packages/implementations/react/src/atomic/Title/src",
+    "@rarui-react/tooltip":
+      "<rootDir>/packages/implementations/react/src/atomic/Tooltip/src",
     // composites
     "@rarui-react/dropdown":
       "<rootDir>/packages/implementations/react/src/composite/Dropdown/src",

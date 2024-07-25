@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-06-02 `1.39.0`
+
+#### 🎉 New features
+
+- Added new composite `ColorPicker` component. ([#83](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/83) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-07-22 `1.38.0`
 
 #### 🎉 New features

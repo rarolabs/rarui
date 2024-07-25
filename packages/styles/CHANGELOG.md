@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-07-04 `2.1.1`
+
+#### 💡 Others
+
+- Removed arrows from `Input` Component with `type="number"` ([#83](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/83) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-07-04 `2.1.0`
 
 #### 🎉 New features

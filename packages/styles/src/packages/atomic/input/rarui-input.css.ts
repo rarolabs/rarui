@@ -92,6 +92,20 @@ const input = recipe(
       fontFamily: varsThemeBase.fontFamily.body,
       backgroundColor: varsThemeBase.colors.surface.primary,
       color: varsThemeBase.colors.content.primary,
+      selectors: {
+        "&[type='number']": {
+          MozAppearance: "textfield",
+        },
+      },
+
+      "::-webkit-inner-spin-button": {
+        WebkitAppearance: "none",
+        margin: 0,
+      },
+      "::-webkit-outer-spin-button": {
+        WebkitAppearance: "none",
+        margin: 0,
+      },
       ":focus-within": {
         outline: "none",
         boxShadow: "none",
