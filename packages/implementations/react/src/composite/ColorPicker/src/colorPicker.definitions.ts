@@ -11,13 +11,10 @@ export function rgbaToColorObject({
   b: number;
   a?: number;
 }): Color {
-  // Helper function to convert decimal to hex
   const toHex = (c: number) => c.toString(16).padStart(2, "0");
 
-  // Calculate hex value
   const hex = `#${toHex(r)}${toHex(g)}${toHex(b)}${toHex(Math.round(a! * 255))}`;
 
-  // Calculate HSL value
   const rgbFraction = [r / 255, g / 255, b / 255];
   const max = Math.max(...rgbFraction);
   const min = Math.min(...rgbFraction);
@@ -46,12 +43,10 @@ export function rgbaToColorObject({
 
   const hsl = { h, s, l, a };
 
-  // Calculate HSV value
   const v = max;
   const hsvS = max === 0 ? 0 : delta / max;
   const hsv = { h, s: hsvS, v, a };
 
-  // Construct and return the object
   return {
     hex,
     hsl,
@@ -63,7 +58,6 @@ export function rgbaToColorObject({
 }
 
 export function hexToColorObject(value: string): Color {
-  // Helper function to convert hex to decimal
   const hex = value.replace("#", "");
   const hexToDec = (h: string) => parseInt(h, 16);
 
@@ -71,9 +65,8 @@ export function hexToColorObject(value: string): Color {
   const r = hexToDec(hex.slice(0, 2));
   const g = hexToDec(hex.slice(2, 4));
   const b = hexToDec(hex.slice(4, 6));
-  const a = 1; // Assuming full opacity as hex does not contain alpha
+  const a = 1;
 
-  // Calculate HSL value
   const rgbFraction = [r / 255, g / 255, b / 255];
   const max = Math.max(...rgbFraction);
   const min = Math.min(...rgbFraction);
@@ -102,12 +95,10 @@ export function hexToColorObject(value: string): Color {
 
   const hsl = { h, s, l, a };
 
-  // Calculate HSV value
   const v = max;
   const hsvS = max === 0 ? 0 : delta / max;
   const hsv = { h, s: hsvS, v, a };
 
-  // Construct and return the object
   return {
     hex: `#${hex}`,
     hsl,
@@ -117,11 +108,3 @@ export function hexToColorObject(value: string): Color {
     oldHue: hsl.h,
   };
 }
-
-// Example usage:
-// const hexColor = { hex: "#ff0000" };
-// console.log(hexToColorObject(hexColor));
-
-// Example usage:
-// const rgba = [255, 0, 0, 1];
-// console.log(rgbaToColorObject(rgba));

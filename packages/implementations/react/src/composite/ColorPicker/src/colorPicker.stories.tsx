@@ -21,7 +21,7 @@ type Story = StoryObj<typeof ColorPicker>;
 
 export const basic: Story = {
   args: {
-    color: "#FF00ff",
+    color: "#FF00FF",
     onChange: (color: any) => console.log({ color }),
   },
 };

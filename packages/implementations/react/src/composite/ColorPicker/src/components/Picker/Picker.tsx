@@ -44,7 +44,8 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
       content={
         <Box
           position="relative"
-          width="320px"
+          maxWidth="320px"
+          width={{ md: "320px", xs: "100%" }}
           display="flex"
           flexDirection="column"
           alignItems="center"
@@ -53,7 +54,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
         >
           <Box
             position="relative"
-            width="320px"
+            width={{ md: "320px", xs: "100%" }}
             height="160px"
             borderRadius="$xs"
             overflow="hidden"
@@ -66,7 +67,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
           </Box>
           <Box
             position="relative"
-            width="320px"
+            width={{ md: "320px", xs: "100%" }}
             height="12px"
             borderRadius="$xs"
           >
@@ -78,7 +79,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
           </Box>
           <Box
             position="relative"
-            width="320px"
+            width={{ md: "320px", xs: "100%" }}
             height="12px"
             borderRadius="$xs"
           >
@@ -92,10 +93,16 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
             display="flex"
             position="relative"
             style={{ borderRadius: "12px" }}
-            width="320px"
+            width={{ md: "320px", xs: "100%" }}
+            gap="$xs"
             justifyContent="space-between"
           >
-            <Box width="87px" display="flex" flexDirection="column" gap="$3xs">
+            <Box
+              width={{ md: "87PX", xs: "28%" }}
+              display="flex"
+              flexDirection="column"
+              gap="$3xs"
+            >
               <Text color="$primary" fontSize="$s" fontWeight="$semiBold">
                 Hex
               </Text>
@@ -108,7 +115,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
                 }}
               />
             </Box>
-            <Box width="210px" display="flex" gap="$3xs">
+            <Box width={{ md: "210PX", xs: "70%" }} display="flex" gap="$3xs">
               <Box display="flex" flexDirection="column" gap="$3xs">
                 <Text color="$primary" fontSize="$s" fontWeight="$semiBold">
                   R
