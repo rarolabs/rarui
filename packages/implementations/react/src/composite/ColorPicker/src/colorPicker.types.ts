@@ -1,9 +1,29 @@
-import { ColorChangeHandler, ColorState } from "react-color";
-import { AlphaColorResult } from "react-color/lib/components/common/Alpha";
-import { HueColorResult } from "react-color/lib/components/common/Hue";
-import { SaturationColorResult } from "react-color/lib/components/common/Saturation";
+import { ColorChangeHandler } from "react-color";
 
-export type Color = ColorState;
+export type Color = {
+  rgb: {
+    r: number;
+    g: number;
+    b: number;
+    a: number | undefined;
+    source: string;
+  };
+  hex: string;
+  hsl: {
+    h: number;
+    s: number;
+    l: number;
+    a: number | undefined;
+  };
+  hsv: {
+    h: number;
+    s: number;
+    v: number;
+    a: number | undefined;
+  };
+  oldHue: number;
+  source: string;
+};
 export type ColorPickerProperties = {
   /**
    * Hexadecimal color to be displayed as initial color
@@ -19,9 +39,6 @@ export type ColorPickerProperties = {
 
 export type PickerProps = {
   color: Color;
-  onChange:
-    | ColorChangeHandler<SaturationColorResult>
-    | ColorChangeHandler<HueColorResult>
-    | ColorChangeHandler<AlphaColorResult>;
+  onChange: ColorChangeHandler;
 };
 export type ColorPickerProps = ColorPickerProperties;

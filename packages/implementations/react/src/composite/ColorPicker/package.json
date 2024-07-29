@@ -18,6 +18,7 @@
     "@rarui-react/input": "workspace:^",
     "@rarui-react/text": "workspace:^",
     "@rarui-react/tooltip": "workspace:^",
+    "@types/react-color": "^3.0.12",
     "react-color": "^2.19.3"
   },
   "peerDependencies": {
@@ -33,7 +34,9 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
   },
   "devDependencies": {
-    "@rarui/webpack": "workspace:^",
-    "@types/react-color": "^2"
+    "@rarui/webpack": "workspace:^"
+  },
+  "resolutions": {
+    "@types/react": "^18.2.69"
   }
 }
