@@ -1,8 +1,0 @@
-releases:
-  "@rarui-react/components": minor
-  "@rarui-react/toast": minor
-  "@rarui/styles": patch
-  "@rarui/tokens": patch
-
-declined:
-  - "@rarui/design-system"

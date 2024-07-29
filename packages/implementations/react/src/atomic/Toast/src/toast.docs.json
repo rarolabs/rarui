@@ -3,7 +3,7 @@
   "name": "Toast",
   "totalProps": 10,
   "packageName": "@rarui-react/toast",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "docLink": "https://rarui.com.br/documentation/src-components/toast",
   "props": [
     {
