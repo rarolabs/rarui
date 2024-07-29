@@ -13,4 +13,6 @@ const ColorPicker = ({ color: initialColor, onChange }: ColorPickerProps) => {
   return <Picker color={color} onChange={changeElement} />;
 };
 
+ColorPicker.displayName = "ColorPicker";
+
 export { ColorPicker };

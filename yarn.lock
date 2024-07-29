@@ -3609,7 +3609,7 @@ __metadata:
     "@rarui-react/text": "workspace:^"
     "@rarui-react/tooltip": "workspace:^"
     "@rarui/webpack": "workspace:^"
-    "@types/react-color": "npm:^2"
+    "@types/react-color": "npm:^3.0.12"
     react-color: "npm:^2.19.3"
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
@@ -6703,13 +6703,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-color@npm:^2":
-  version: 2.17.11
-  resolution: "@types/react-color@npm:2.17.11"
+"@types/react-color@npm:^3.0.12":
+  version: 3.0.12
+  resolution: "@types/react-color@npm:3.0.12"
   dependencies:
     "@types/react": "npm:*"
     "@types/reactcss": "npm:*"
-  checksum: 16df48738665e9e68330ea56748499f8a2558c6d9cceaeebd929f13601b2473260772c5d61871e356f7618349f5cad8513142f656a0fef65efe648cd516fc22f
+  checksum: 1ac1012466b27b8678a1129056427e7ebe2c7c301d241f3669c52ed5ac33f5fc8e4cbeeb566c2eaa674b2fc57c7a306528046e15e1117906e4ec137418c6be8f
   languageName: node
   linkType: hard
 
@@ -20739,7 +20739,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:>=5.0.2, typescript@npm:^5.4.2":
+"typescript@npm:>=5.0.2":
   version: 5.4.2
   resolution: "typescript@npm:5.4.2"
   bin:
@@ -20756,6 +20756,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 22443a8760c3668e256c0b34b6b45c359ef6cecc10c42558806177a7d500ab1a7d7aac1f976d712e26989ddf6731d2fbdd3212b7c73290a45127c1c43ba2005a
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^5.4.2":
+  version: 5.5.4
+  resolution: "typescript@npm:5.5.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 422be60f89e661eab29ac488c974b6cc0a660fb2228003b297c3d10c32c90f3bcffc1009b43876a082515a3c376b1eefcce823d6e78982e6878408b9a923199c
   languageName: node
   linkType: hard
 
@@ -20779,7 +20789,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A>=5.0.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.4.2#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A>=5.0.2#optional!builtin<compat/typescript>":
   version: 5.4.2
   resolution: "typescript@patch:typescript@npm%3A5.4.2#optional!builtin<compat/typescript>::version=5.4.2&hash=e012d7"
   bin:
@@ -20796,6 +20806,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 1b50712759f1e4bf4bf6fe7e662235358b716972dec8aa9ca117dee531dbd7b417f5fe28f74d347b4447eec09a200c0372fe9cf1aad2e15a2bcf4a1a99db0820
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A^5.4.2#optional!builtin<compat/typescript>":
+  version: 5.5.4
+  resolution: "typescript@patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=e012d7"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10dd9881baba22763de859e8050d6cb6e2db854197495c6f1929b08d1eb2b2b00d0b5d9b0bcee8472f1c3f4a7ef6a5d7ebe0cfd703f853aa5ae465b8404bc1ba
   languageName: node
   linkType: hard
 

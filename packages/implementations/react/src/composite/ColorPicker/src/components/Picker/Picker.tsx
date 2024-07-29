@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { ColorChangeHandler, CustomPicker } from "react-color";
-import Saturation, {
-  SaturationColorResult,
-} from "react-color/lib/components/common/Saturation";
-import Hue, { HueColorResult } from "react-color/lib/components/common/Hue";
-import Alpha, {
-  AlphaColorResult,
-} from "react-color/lib/components/common/Alpha";
+
+import CustomPicker from "react-color/lib/components/common/ColorWrap";
+import Saturation from "react-color/lib/components/common/Saturation";
+import Hue from "react-color/lib/components/common/Hue";
+import Alpha from "react-color/lib/components/common/Alpha";
 import { Tooltip } from "@rarui-react/tooltip";
 import { Box } from "@rarui-react/box";
 import { Input } from "@rarui-react/input";
 import { Text } from "@rarui-react/text";
+import { ColorChangeHandler } from "react-color";
 import {
   hexToColorObject,
   rgbaToColorObject,
@@ -18,23 +16,30 @@ import {
 import { PickerProps } from "../../colorPicker.types";
 import { Pointer } from "../Pointer/Pointer";
 
-const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
+const Picker: any = CustomPicker(({ color, onChange }: PickerProps) => {
   const [hex, setHex] = useState(color.hex);
 
   useEffect(() => {
     setHex(color.hex);
   }, [color]);
 
-  const handleChangeRgb = (key: "r" | "g" | "b" | "a", value: string) => {
+  const handleChangeRgb = (
+    key: "r" | "g" | "b" | "a",
+    value: string,
+    e: React.ChangeEvent<HTMLInputElement>,
+  ) => {
     const newrgba = color.rgb;
     newrgba[key] = Number(value);
-    onChange(rgbaToColorObject(newrgba) as any);
+    onChange(rgbaToColorObject(newrgba) as any, e);
   };
 
-  const handleChangeHex = (value: string) => {
+  const handleChangeHex = (
+    value: string,
+    e: React.ChangeEvent<HTMLInputElement>,
+  ) => {
     setHex(value);
     if (value.length === 7) {
-      onChange(hexToColorObject(value) as any);
+      onChange(hexToColorObject(value) as any, e);
     }
   };
   return (
@@ -61,7 +66,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
           >
             <Saturation
               {...color}
-              onChange={onChange as ColorChangeHandler<SaturationColorResult>}
+              onChange={onChange as ColorChangeHandler}
               pointer={Pointer}
             />
           </Box>
@@ -73,7 +78,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
           >
             <Hue
               {...color}
-              onChange={onChange as ColorChangeHandler<HueColorResult>}
+              onChange={onChange as ColorChangeHandler}
               pointer={Pointer}
             />
           </Box>
@@ -85,7 +90,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
           >
             <Alpha
               {...color}
-              onChange={onChange as ColorChangeHandler<AlphaColorResult>}
+              onChange={onChange as ColorChangeHandler}
               pointer={Pointer}
             />
           </Box>
@@ -111,7 +116,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
                 value={hex}
                 maxLength={7}
                 onChange={(e) => {
-                  handleChangeHex(e.target.value);
+                  handleChangeHex(e.target.value, e);
                 }}
               />
             </Box>
@@ -128,7 +133,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
                   size="small"
                   value={color.rgb.r}
                   onChange={(e) => {
-                    handleChangeRgb("r", e.target.value);
+                    handleChangeRgb("r", e.target.value, e);
                   }}
                 />
               </Box>
@@ -144,7 +149,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
                   size="small"
                   value={color.rgb.g}
                   onChange={(e) => {
-                    handleChangeRgb("g", e.target.value);
+                    handleChangeRgb("g", e.target.value, e);
                   }}
                 />
               </Box>
@@ -160,7 +165,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
                   size="small"
                   value={color.rgb.b}
                   onChange={(e) => {
-                    handleChangeRgb("b", e.target.value);
+                    handleChangeRgb("b", e.target.value, e);
                   }}
                 />
               </Box>
@@ -177,7 +182,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
                   min="0"
                   step="0.1"
                   onChange={(e) => {
-                    handleChangeRgb("a", e.target.value);
+                    handleChangeRgb("a", e.target.value, e);
                   }}
                 />
               </Box>
@@ -192,7 +197,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
         divider={false}
         maxLength={7}
         onChange={(e) => {
-          handleChangeHex(e.target.value);
+          handleChangeHex(e.target.value, e);
         }}
         leadingEnd={
           <Box width="24px" height="24px" borderRadius="$sm" overflow="hidden">
@@ -209,5 +214,7 @@ const Picker = CustomPicker(({ color, onChange }: PickerProps) => {
     </Tooltip>
   );
 });
+
+Picker.displayName = "Picker";
 
 export { Picker };
