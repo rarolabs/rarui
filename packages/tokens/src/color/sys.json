@@ -6,7 +6,7 @@
         "brand": { "value": "{color.brand.50}" },
         "brand-hover": { "value": "rgba({color.brand.50.rgb}, .10)" },
         "brand-press": { "value": "rgba({color.brand.50.rgb}, .20)" },
-        "brand-subdued": { "value": "rgba({color.brand.95}, .10)" },
+        "brand-subdued": { "value": "rgba({color.brand.50}, .10)" },
         "disabled": { "value": "{color.neutral.92}" },
         "error": { "value": "{color.error.50}" },
         "error-hover": { "value": "rgba({color.error.50.rgb}, .10)" },

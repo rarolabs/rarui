@@ -2,6 +2,12 @@
 
 The Toast component presents notifications that provide feedback on an operation through a message.
 
+## 2024-07-24 `1.2.0`
+
+#### 🎉 New features
+
+- Added `width` property to `Toast` component. ([#82](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/82) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-18 `1.1.0`
 
 #### 🐛 Bug fixes

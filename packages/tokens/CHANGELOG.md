@@ -2,6 +2,12 @@
 
 Our design tokens are the foundations of Design System.
 
+## 2024-07-24 `4.0.2`
+
+#### 🐛 Bug fixes
+
+- Adjusted the base color of the light theme `color-light-surface["brand-subdued"]` token. ([#82](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/82) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-18 `4.0.1`
 
 #### 🐛 Bug fixes

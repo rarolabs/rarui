@@ -124,4 +124,17 @@ describe("GIVEN <Toast />", () => {
       expect(mockedCloseToast).toHaveBeenCalledTimes(1);
     });
   });
+
+  it("THEN should call onClose function when toast is closed", () => {
+    const mockOnClose = jest.fn();
+    makeSut({
+      appearance: "neutral",
+      children: "Toast",
+      id: "c9e9656c-1209-4a02-96c7-c522ae49fd0f",
+      onClose: mockOnClose,
+    });
+    const closeButton = screen.getByTestId("dismiss-button");
+    fireEvent.click(closeButton);
+    expect(mockOnClose).toHaveBeenCalledTimes(1);
+  });
 });
