@@ -2,6 +2,13 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-07-30 `1.41.0`
+
+#### 🎉 New features
+
+- Added `selectedTab` property to `Tabs` component. ([#85](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/85) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
+- Added `limpar` button to `Datepicker` component. ([#85](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/85) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
 
 ## 2024-07-24 `1.40.0`
 

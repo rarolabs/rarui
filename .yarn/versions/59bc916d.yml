@@ -1,0 +1,7 @@
+releases:
+  "@rarui-react/components": minor
+  "@rarui-react/datepicker": minor
+  "@rarui-react/tabs": minor
+
+declined:
+  - "@rarui/design-system"

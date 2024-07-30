@@ -26,7 +26,9 @@ const Datepicker: React.FC<DatepickerProps> = ({
   ...props
 }) => {
   const [date, setDate] = useState(selected);
-  const datePickerRef = createRef<{ setSelected: (newDate: Date) => void }>();
+  const datePickerRef = createRef<{
+    setSelected: (newDate: Date | null) => void;
+  }>();
 
   return (
     <Picker
@@ -64,6 +66,11 @@ const Datepicker: React.FC<DatepickerProps> = ({
     >
       <DatepickerFooter
         setSelected={() => datePickerRef.current?.setSelected(new Date())}
+        clear={() => {
+          datePickerRef.current?.setSelected(null);
+          setDate(null);
+          onChange(null);
+        }}
       />
     </Picker>
   );
