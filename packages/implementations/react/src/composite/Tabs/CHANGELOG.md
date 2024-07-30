@@ -2,6 +2,12 @@
 
 Tabs are used to switch between different display modes or pages.
 
+## 2024-07-30 `1.2.0`
+
+#### 🎉 New features
+
+- Added `selectedTab` property to the Component. ([#85](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/85) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-07-19 `1.1.0`
 
 #### 🎉 New features
