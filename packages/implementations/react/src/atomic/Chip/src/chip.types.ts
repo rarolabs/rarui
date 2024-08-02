@@ -1,19 +1,12 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { ChipVariants, ChipSprinkle } from "@rarui/styles";
+import { ChipProperties } from "@rarui/typings";
 
-export interface ChipTyping extends ChipSprinkle {
+export interface ChipTyping extends ChipProperties {
   /**
    * The content of the button.
    * @TJS-type React.ReactNode
    */
   children: ReactNode;
-  /**
-   * Displays a delete icon and adds user interaction.
-   * @default false
-   */
-  closeable?: boolean;
 }
 
-export type ChipProperties = ChipTyping & ChipVariants;
-export type ChipProps = ChipProperties &
-  ButtonHTMLAttributes<HTMLButtonElement>;
+export type ChipProps = ChipTyping & ButtonHTMLAttributes<HTMLButtonElement>;

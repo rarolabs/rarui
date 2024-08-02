@@ -22,4 +22,4 @@ export type {
   OwnProps,
   IntrinsicElement,
   Merge,
-} from "./index.types";
+} from "./index.types.js";

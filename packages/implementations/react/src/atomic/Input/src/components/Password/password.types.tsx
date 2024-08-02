@@ -1,10 +1,5 @@
 import { InputHTMLAttributes } from "react";
-import { InputProperties } from "../../input.types";
+import { InputProperties } from "@rarui/typings";
 
-export interface InputPasswordTyping {}
-
-export type InputPasswordProperties = InputPasswordTyping &
-  Pick<InputProperties, "divider" | "appearance" | "size" | "border">;
-
-export type _InputPasswordProps = InputPasswordProperties &
+export type _InputPasswordProps = InputProperties &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

@@ -9,7 +9,7 @@ import React, {
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "@rarui/typings";
+} from "@rarui-react/components/src/types";
 import { sideNavigation } from "@rarui/styles";
 import { ArrowDownIcon, ArrowUpIcon } from "@rarui/icons";
 import { Box } from "@rarui-react/box";

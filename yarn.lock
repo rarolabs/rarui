@@ -5233,9 +5233,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui/typings@workspace:packages/core/typings":
+"@rarui/typings@workspace:packages/typings":
   version: 0.0.0-use.local
-  resolution: "@rarui/typings@workspace:packages/core/typings"
+  resolution: "@rarui/typings@workspace:packages/typings"
   dependencies:
     "@rarui/webpack": "workspace:^"
   languageName: unknown

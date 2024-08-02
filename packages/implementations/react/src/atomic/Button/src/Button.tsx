@@ -8,7 +8,7 @@ import React, {
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "@rarui/typings";
+} from "@rarui-react/components/src/types";
 import { button } from "@rarui/styles";
 
 import { _ButtonProps } from "./button.types";

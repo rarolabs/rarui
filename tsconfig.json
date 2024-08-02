@@ -39,7 +39,7 @@
       "@rarui/scripts": ["./packages/core/scripts/src"],
       "@rarui/stencil": ["./packages/core/stencil/src"],
       "@rarui/webpack": ["./packages/core/webpack/src"],
-      "@rarui/typings": ["./packages/core/typings/src"],
+      "@rarui/typings": ["packages/typings/src"],
       "@rarui/styles": ["./packages/styles/src"],
       "@rarui/tokens": ["./packages/tokens"],
       "@rarui/icons": ["./packages/icons"],
