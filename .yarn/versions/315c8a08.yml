@@ -1,0 +1,13 @@
+releases:
+  "@rarui/box": major
+  "@rarui/button": major
+  "@rarui/components": major
+  "@rarui/stencil": major
+  "@rarui/styles": minor
+  "@rarui/tabs": major
+  "@rarui/tabs-item": major
+  "@rarui/text": major
+  "@rarui/title": major
+
+declined:
+  - "@rarui/design-system"

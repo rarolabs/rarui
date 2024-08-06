@@ -1,6 +1,6 @@
 {
   "name": "@rarui/styles",
-  "version": "2.2.0-rc.3",
+  "version": "2.1.2",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
