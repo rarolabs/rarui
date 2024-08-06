@@ -43,6 +43,7 @@
       "@rarui/styles": ["./packages/styles/src"],
       "@rarui/tokens": ["./packages/tokens"],
       "@rarui/icons": ["./packages/icons"],
+      "@rarui/components": ["./packages/implementations/web-components/src/"],
       "@rarui-react/avatar": [
         "./packages/implementations/react/src/atomic/Avatar/src"
       ],

@@ -1,105 +1,135 @@
 import path from "path";
+import tsconfig from "../tsconfig.json";
 
 export const argTypesConvert = (properties: any = {}) => {
-  const argTypes = properties.props.reduce(
-    (
-      prev: {
-        [key: string]: {
-          control: string;
-          options: string[];
-          description: string;
-          defaultValue?: string;
-          type?: string;
-          table?: any;
-        };
-      },
-      curr: any,
-    ) => {
-      let options: string[] = [];
+  const argTypes = properties.props.reduce((prev: any, curr: any) => {
+    const enums =
+      curr?.enum ||
+      curr?.anyOf?.[4]?.enum ||
+      curr?.anyOf?.[3]?.enum ||
+      curr?.anyOf?.[2]?.enum ||
+      curr?.anyOf?.[1]?.enum ||
+      [];
 
-      const enums =
-        curr?.enum ??
-        curr?.anyOf?.[4]?.enum ??
-        curr?.anyOf?.[3]?.enum ??
-        curr?.anyOf?.[2]?.enum ??
-        curr?.anyOf?.[1]?.enum ??
-        [];
+    const anyOf = curr?.anyOf?.find((item: any) => item.type !== "object");
 
-      options = enums;
+    const typeMapping: { [key: string]: string } = {
+      string: "text",
+      number: "number",
+      boolean: "boolean",
+    };
 
-      const anyOf = curr?.anyOf?.find((anyOf: any) => anyOf.type !== "object");
+    const control = (() => {
+      if (anyOf?.type && enums.length === 0)
+        return typeMapping[anyOf.type] || anyOf.type;
+      if (curr.type in typeMapping && enums.length === 0)
+        return typeMapping[curr.type];
+      if (enums.length > 6) return "select";
+      if (enums.length <= 6) return "radio";
+      return { disable: true };
+    })();
 
-      let control = "";
-      switch (true) {
-        case !!anyOf?.type && options?.length === 0:
-          control = anyOf.type === "string" ? "text" : anyOf.type;
-          break;
-        case curr.type === "string" && options?.length === 0:
-          control = "text";
-          break;
-        case curr.type === "number" && options?.length === 0:
-          control = "number";
-          break;
-        case curr.type === "boolean":
-          control = "boolean";
-          break;
-        case options?.length > 6:
-          control = "select";
-          break;
-        case options?.length <= 6:
-          control = "radio";
-          break;
-        default:
-          control = { disable: true } as any;
-          break;
-      }
+    prev[curr.title] = {
+      defaultValue: curr.default,
+      description: curr.description ?? "",
+      control,
+      options: enums,
+      table: { type: { summary: curr.type } },
+    };
 
-      prev[curr.title] = {
-        defaultValue: curr.default,
-        description: curr.description ?? "",
-        control: control,
-        options,
-        table: { type: { summary: curr.type } },
-      };
-      return prev;
-    },
-    {},
-  );
+    return prev;
+  }, {});
 
   return argTypes;
 };
 
 export const convertTsConfigPathsToWebpackAliases = () => {
   const rootDir = path.resolve(__dirname, "../");
-  const tsconfig = require("../tsconfig.json");
   const tsconfigPaths = Object.entries(tsconfig.compilerOptions.paths);
 
-  const paths = tsconfigPaths.reduce(
-    (aliases: any, [realPath, mappedPath]: any) => {
-      const packageName = mappedPath[0].split("/")[6];
-
-      const alias = `${mappedPath[0]}/${packageName}.tsx`;
-      aliases[realPath] = path.join(rootDir, alias);
-      return aliases;
-    },
-    {},
+  const aliases = Object.fromEntries(
+    tsconfigPaths.map(([realPath, [mappedPath]]) => {
+      const packageName = mappedPath.split("/")[6];
+      const alias = `${mappedPath}/${packageName}.tsx`;
+      return [realPath, path.join(rootDir, alias)];
+    }),
   );
 
-  paths["@rarui/tokens"] = path.join(rootDir, "packages/tokens");
-  paths["@rarui/icons"] = path.join(rootDir, "packages/icons");
-  paths["@rarui/styles"] = path.join(rootDir, "packages/styles/src/index.ts");
-  paths["@rarui/scripts"] = path.join(
-    rootDir,
-    "packages/core/scripts/src/index.ts",
-  );
-  paths["@rarui/webpack"] = path.join(
-    rootDir,
-    "packages/core/webpack/src/index.ts",
-  );
-  paths["@rarui/typings"] = path.join(
-    rootDir,
-    "packages/core/typings/src/index.ts",
-  );
-  paths[".storybook"] = path.join(rootDir, ".storybook");
-  return paths;
+  const additionalPaths = {
+    "@rarui/tokens": "packages/tokens",
+    "@rarui/icons": "packages/icons",
+    "@rarui/styles": "packages/styles/src/index.ts",
+    "@rarui/scripts": "packages/core/scripts/src/index.ts",
+    "@rarui/webpack": "packages/core/webpack/src/index.ts",
+    "@rarui/typings": "packages/core/typings/src/index.ts",
+    ".storybook": ".storybook",
+  };
+
+  Object.entries(additionalPaths).forEach(([key, value]) => {
+    aliases[key] = path.join(rootDir, value);
+  });
+
+  return aliases;
 };
+
+interface formatterProps {
+  value: any;
+  description: string;
+  control?: any;
+  options?: string[];
+  type?: string;
+}
+
+export interface IformatterObj {
+  [key: string]: formatterProps;
+}
+
+const camelToKebabCase = (camelCaseString: string) => {
+  return camelCaseString.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
+};
+
+export const storyGenerator = (componentTag: string, params: IformatterObj) => {
+  const args = Object.fromEntries(
+    Object.entries(params).map(([prop, value]) => [prop, value.value]),
+  );
+
+  const argTypes = Object.fromEntries(
+    Object.entries(params).map(
+      ([prop, { description, control, options, type }]) => [
+        prop,
+        {
+          description,
+          type: { summary: type },
+          ...(control && { control: { type: control } }),
+          ...(options && { options }),
+        },
+      ],
+    ),
+  );
+
+  const Template = (args: any) => {
+    const props = Object.entries(params)
+      .filter(
+        ([prop]) =>
+          args[prop] !== undefined &&
+          args[prop] !== false &&
+          prop !== "children",
+      )
+
+      .map(([prop]) => {
+        const value = args[prop];
+        const formattedValue =
+          typeof value === "object" ? JSON.stringify(value) : value;
+        return `${camelToKebabCase(prop)}='${formattedValue}'`;
+      })
+      .join(" ");
+
+    const children = args.children || "";
+
+    return `<${componentTag} ${props}>${children}</${componentTag}>`;
+  };
+
+  return { args, argTypes, Template };
+};
+
+export default storyGenerator;
