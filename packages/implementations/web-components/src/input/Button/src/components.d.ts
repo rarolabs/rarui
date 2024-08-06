@@ -5,8 +5,20 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { ButtonVariants } from "@rarui/styles";
+export { ButtonVariants } from "@rarui/styles";
 export namespace Components {
-  interface RaruiButton {}
+  interface RaruiButton {
+    appearance: ButtonVariants["appearance"];
+    as: string;
+    disabled: HTMLButtonElement["disabled"];
+    full: ButtonVariants["full"];
+    href: HTMLAnchorElement["href"];
+    size: ButtonVariants["size"];
+    target: HTMLAnchorElement["target"];
+    type: HTMLButtonElement["type"];
+    variant: ButtonVariants["variant"];
+  }
 }
 declare global {
   interface HTMLRaruiButtonElement
@@ -21,7 +33,17 @@ declare global {
   }
 }
 declare namespace LocalJSX {
-  interface RaruiButton {}
+  interface RaruiButton {
+    appearance?: ButtonVariants["appearance"];
+    as?: string;
+    disabled?: HTMLButtonElement["disabled"];
+    full?: ButtonVariants["full"];
+    href?: HTMLAnchorElement["href"];
+    size?: ButtonVariants["size"];
+    target?: HTMLAnchorElement["target"];
+    type?: HTMLButtonElement["type"];
+    variant?: ButtonVariants["variant"];
+  }
   interface IntrinsicElements {
     "rarui-button": RaruiButton;
   }

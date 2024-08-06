@@ -1,6 +1,6 @@
 {
   "name": "@rarui/button",
-  "version": "0.0.0",
+  "version": "0.0.0-rc.1",
   "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -14,8 +14,10 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "yarn g:stencil build",
+    "build": "yarn prebuild && yarn g:stencil build && yarn afterbuild",
     "clean": "rm -rf dist",
+    "prebuild": "yarn g:update:tsconfig ./packages/implementations/web-components/src/input/Button/tsconfig.json update",
+    "afterbuild": "yarn g:update:tsconfig ./packages/implementations/web-components/src/input/Button/tsconfig.json restore",
     "version": "yarn version"
   },
   "homepage": "https://git.rarolabs.com.br/frontend/rarui",
@@ -25,6 +27,9 @@
   },
   "bugs": {
     "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
+  },
+  "peerDependencies": {
+    "@rarui/styles": "workspace:^"
   },
   "devDependencies": {
     "@rarui/stencil": "workspace:^"
