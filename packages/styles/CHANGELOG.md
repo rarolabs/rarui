@@ -2,6 +2,13 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-08-06 `2.2.0`
+
+#### 🎉 New features
+
+- Added new disturbance in the `Module` format to the styles package. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))
+- Added new `Capture CSSProperties` Utilitario to be used on web components in order to capture component props CSS. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-04 `2.1.0`
 
 #### 🎉 New features

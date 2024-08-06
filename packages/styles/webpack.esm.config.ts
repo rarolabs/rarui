@@ -5,9 +5,13 @@ const baseConfig = {
   entry: {
     "./themes/dark": "./src/themes/rarui-theme-dark.css.ts",
   },
+  experiments: {
+    outputModule: true,
+  },
   output: {
-    library: "@rarui/styles",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "dist/esm"),
+    libraryTarget: "module",
+    chunkFormat: "module",
   },
   module: { rules: [rules.cssLoaderExtractRule] },
 };

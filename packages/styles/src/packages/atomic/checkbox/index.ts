@@ -1,6 +1,6 @@
-import * as styles from "./rarui-checkbox.css";
+import { checkboxStyles } from "./rarui-checkbox.css";
 
 export const checkbox = {
-  classnames: { ...styles },
+  classnames: checkboxStyles,
 };
 export type { CheckboxVariants } from "./rarui-checkbox.types";

@@ -1,6 +1,6 @@
 {
   "name": "@rarui/styles",
-  "version": "2.1.0",
+  "version": "2.2.0-rc.3",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -10,7 +10,8 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "webpack",
+    "build": "ts-node --transpile-only ../../node_modules/.bin/webpack --config webpack.config.ts && yarn build:esm",
+    "build:esm": "ts-node --transpile-only ../../node_modules/.bin/webpack --config webpack.esm.config.ts",
     "clean": "rm -rf dist",
     "version": "yarn version"
   },
@@ -32,6 +33,7 @@
     "@rarui/webpack": "workspace:^",
     "@vanilla-extract/dynamic": "^2.1.1",
     "@vanilla-extract/sprinkles": "^1.6.2",
+    "ts-node": "^10.9.2",
     "webpack": "^5.90.3",
     "webpack-merge": "^5.10.0",
     "webpack-shell-plugin-next": "^2.3.1"
