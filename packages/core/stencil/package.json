@@ -23,6 +23,7 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
   },
   "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
     "@stencil/core": "^4.19.2"
   }
 }
