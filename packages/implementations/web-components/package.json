@@ -20,7 +20,7 @@
     "afterbuild": "yarn g:update:tsconfig ./packages/implementations/web-components/tsconfig.json restore",
     "version": "yarn version",
     "storybook:dev": "yarn g:storybook dev -p 6007 --config-dir ./packages/implementations/web-components/.storybook",
-    "storybook:build": "yarn g:storybook build --config-dir ./packages/implementations/web-components/.storybook -o ./packages/implementations/react/storybook-static",
+    "storybook:build": "yarn g:storybook build --config-dir ./packages/implementations/web-components/.storybook -o ./packages/implementations/web-components/storybook-static",
     "storybook:move": "mv storybook-static ../../../storybook-static/web-components"
   },
   "homepage": "https://git.rarolabs.com.br/frontend/rarui/",
