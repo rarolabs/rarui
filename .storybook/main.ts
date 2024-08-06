@@ -16,8 +16,8 @@ const config: StorybookConfig = {
       url: process.env.STORYBOOK_REACT_URL ?? "",
     },
     vuejs: {
-      title: "@rarui-vuejs",
-      url: process.env.STORYBOOK_VUEJS_URL ?? "",
+      title: "@rarui-web-components",
+      url: process.env.STORYBOOK_WEB_COMPONENTS_URL ?? "",
     },
   },
   addons: [
