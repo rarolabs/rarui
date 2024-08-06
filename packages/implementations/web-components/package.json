@@ -1,6 +1,6 @@
 {
   "name": "@rarui/components",
-  "version": "0.0.0",
+  "version": "0.0.0-rc.2",
   "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -14,8 +14,10 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "yarn g:stencil build",
+    "build": "yarn prebuild && yarn g:stencil build && yarn afterbuild",
     "clean": "rm -rf dist && rm -rf storybook-static",
+    "prebuild": "yarn g:update:tsconfig ./packages/implementations/web-components/tsconfig.json update",
+    "afterbuild": "yarn g:update:tsconfig ./packages/implementations/web-components/tsconfig.json restore",
     "version": "yarn version",
     "storybook:dev": "yarn g:storybook dev -p 6007 --config-dir ./packages/implementations/web-components/.storybook",
     "storybook:build": "yarn g:storybook build --config-dir ./packages/implementations/web-components/.storybook -o ./packages/implementations/react/storybook-static",

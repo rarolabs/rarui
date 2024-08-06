@@ -1,16 +1,41 @@
-import type { StorybookConfig } from "@storybook/html-vite";
+import main, { tsPaths } from "../../../../.storybook/main";
+import type { StorybookConfig } from "@storybook/web-components-vite";
 
 const config: StorybookConfig = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
-  addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@chromatic-com/storybook",
-    "@storybook/addon-interactions",
+  staticDirs: [
+    {
+      from: "../../../../.storybook/static",
+      to: "/static",
+    },
   ],
+  stories: ["../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+  addons: [
+    ...(main?.addons ?? []),
+    {
+      name: "storybook-addon-stencil",
+      options: {
+        stencilOptions: {},
+      },
+    },
+  ],
+  docs: main.docs,
   framework: {
-    name: "@storybook/html-vite",
+    name: "@storybook/web-components-vite",
     options: {},
+  },
+  async viteFinal(config) {
+    config.build = {
+      ...config.build,
+      chunkSizeWarningLimit: 1000,
+    };
+    config.resolve = {
+      ...config.resolve,
+      alias: {
+        ...config.resolve?.alias,
+        ...tsPaths,
+      },
+    };
+    return config;
   },
 };
 export default config;
