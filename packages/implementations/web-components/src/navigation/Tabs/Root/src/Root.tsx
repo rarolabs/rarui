@@ -24,13 +24,13 @@ export class RaruiTabs {
   @State() selected: number = this.defaultTab;
   @Event() selectedTab: EventEmitter<number>;
 
-  private _tabsChildrens: any[];
+  private tabsChildrens: any[];
 
   componentWillLoad() {
-    this._tabsChildrens = Array.from(
+    this.tabsChildrens = Array.from(
       this.el.querySelectorAll("rarui-tabs-item"),
     );
-    this._tabsChildrens.forEach((child) => child.remove());
+    this.tabsChildrens.forEach((child) => child.remove());
   }
 
   render() {
@@ -42,7 +42,7 @@ export class RaruiTabs {
             underlined: this.underlined,
           })}
         >
-          {this._tabsChildrens.map((tabChildren, index) => (
+          {this.tabsChildrens.map((tabChildren, index) => (
             <li class={tabs.classnames.li({ full: this.full })}>
               <button
                 type="button"
@@ -60,7 +60,7 @@ export class RaruiTabs {
             </li>
           ))}
         </ul>
-        <div innerHTML={this._tabsChildrens[this.selected].outerHTML} />
+        <div innerHTML={this.tabsChildrens[this.selected].outerHTML} />
       </Host>
     );
   }

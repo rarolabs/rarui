@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/html";
 import { argTypesConvert, storyGenerator } from ".storybook/utils";
-import docs from "../../Root/src/root.docs.json";
+import docs from "@rarui/tabs/src/root.docs.json";
+
+import "@rarui/box/src";
+import "./Item";
 
 const itemDocs = docs.subComponents.find(
   (subComponent) => subComponent.name === "Tabs.Item",
 );
-
-import "../../../../layout/Box/src/Box";
-import "./Item";
 
 const { argTypes, Template } = storyGenerator(
   "rarui-tabs-item",
@@ -23,7 +23,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<any>;
 
-export const basic: Story = Template.bind({});
-basic.args = {
+export const Basic: Story = Template.bind({});
+Basic.args = {
   label: "Label",
 };

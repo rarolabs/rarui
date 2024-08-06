@@ -26,6 +26,7 @@ export class ReleaseBuilder {
     if (packageName === "rarui-helper") {
       return "/helper";
     }
+
     if (packageName.indexOf("-") === -1) return packageName.split("/")[1];
     console.log({ packageName });
     const folders = packageName.split("@rarui-")[1].split("/");
@@ -39,6 +40,7 @@ export class ReleaseBuilder {
     const changeLogPath = glob.sync(
       path.join(`packages/**/${packageFolderName}/CHANGELOG.md`),
     );
+
     if (changeLogPath.length > 0) {
       return changeLogPath[0];
     }
@@ -96,6 +98,7 @@ export class ReleaseBuilder {
   private processPackages(packages: string[]): ProcessedPackage[] {
     return packages.map((packageName) => {
       const changelogPath = this.getChangeLogPath(packageName);
+
       const description = this.getDescription(changelogPath, packageName);
       const _packageName =
         packageName === "@rarui-react" || packageName === "@rarui-vuejs"
@@ -130,6 +133,7 @@ export class ReleaseBuilder {
 
       const packageBuilder = new PackageBuilder();
       const packages = packageBuilder.getPackagesToBuild(paths[0]);
+
       return this.processPackages(packages);
     } catch (err) {
       console.error(`\x1b[33m ${(err as Error).message} \x1b[0m`);
@@ -140,6 +144,7 @@ export class ReleaseBuilder {
   public run() {
     try {
       const packagesToRelease = this.getPackagesToRelease();
+
       const rootDir = path.resolve(__dirname, "../../../../../");
 
       console.log("Creating releases...");
@@ -150,6 +155,8 @@ export class ReleaseBuilder {
       });
       console.log("Releases file created successfully");
     } catch (err) {
+      console.log("err", err);
+
       console.error(`\x1b[33m ${(err as Error).message} \x1b[0m`);
       process.exit(1);
     }
