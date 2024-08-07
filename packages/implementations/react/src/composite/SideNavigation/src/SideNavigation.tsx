@@ -6,14 +6,14 @@ import React, {
   useState,
   ComponentPropsWithRef,
 } from "react";
-import {
-  PolymorphicForwardRefComponent,
-  useRefObjectAsForwardedRef,
-} from "../../../types";
 import { sideNavigation } from "@rarui/styles";
 import { ArrowDownIcon, ArrowUpIcon } from "@rarui/icons";
 import { Box } from "@rarui-react/box";
 import { Icon } from "@rarui-react/icon";
+import {
+  PolymorphicForwardRefComponent,
+  useRefObjectAsForwardedRef,
+} from "@rarui-react/components/src/types";
 
 import { SideNavigationItem } from "./components";
 import {

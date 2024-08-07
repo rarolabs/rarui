@@ -5,12 +5,12 @@ import React, {
   useRef,
 } from "react";
 import { breadcrumb } from "@rarui/styles";
+import { Icon } from "@rarui-react/icon";
+import { Box } from "@rarui-react/box";
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "../../../../../types";
-import { Icon } from "@rarui-react/icon";
-import { Box } from "@rarui-react/box";
+} from "@rarui-react/components/src/types";
 import { BreadcrumbItemProps } from "./item.types";
 
 const BreadcrumbItem = forwardRef(

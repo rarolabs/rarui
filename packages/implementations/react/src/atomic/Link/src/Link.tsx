@@ -5,11 +5,11 @@ import React, {
   useImperativeHandle,
   useRef,
 } from "react";
+import { link } from "@rarui/styles";
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "../../../types";
-import { link } from "@rarui/styles";
+} from "@rarui-react/components/src/types";
 
 import { _LinkProps } from "./link.types";
 

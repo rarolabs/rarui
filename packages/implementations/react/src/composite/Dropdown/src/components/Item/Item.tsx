@@ -5,12 +5,12 @@ import React, {
   useRef,
 } from "react";
 import { dropdown } from "@rarui/styles";
+import { Icon } from "@rarui-react/icon";
+import { Box } from "@rarui-react/box";
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "../../../../../types";
-import { Icon } from "@rarui-react/icon";
-import { Box } from "@rarui-react/box";
+} from "@rarui-react/components/src/types";
 import { DropdownItemProps } from "./item.types";
 
 const DropdownItem = forwardRef(
