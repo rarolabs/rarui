@@ -13,3 +13,8 @@ releases:
 declined:
   - "@rarui/design-system"
   - rarui-helper
+  - "@rarui-react/avatar"
+  - "@rarui-react/badge"
+  - "@rarui-react/checkbox"
+  - "@rarui-react/chip"
+  - "@rarui-react/divider"

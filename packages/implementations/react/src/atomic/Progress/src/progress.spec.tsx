@@ -13,20 +13,20 @@ describe("GIVEN <Progress />", () => {
     it("THEN should display the correct percentage", () => {
       makeSut({ percentage: 50 });
       expect(
-        screen.getByTestId("progress-element-bar").getAttribute("style")
+        screen.getByTestId("progress-element-bar").getAttribute("style"),
       ).toContain("50%");
     });
 
     it("THEN should display the correct style when not complete", () => {
       makeSut({ percentage: 50 });
       expect(
-        screen.getByTestId("progress-element-bar").getAttribute("class")
+        screen.getByTestId("progress-element-bar").getAttribute("class"),
       ).not.toContain("progress_backgroundColor-success");
     });
     it("THEN should display the correct style when complete", () => {
       makeSut({ percentage: 100 });
       expect(
-        screen.getByTestId("progress-element-bar").getAttribute("class")
+        screen.getByTestId("progress-element-bar").getAttribute("class"),
       ).toContain("progress_backgroundColor-success");
     });
   });
