@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable no-use-before-define */
 /**
  * This file is originally from `@radix-ui/react-polymorphic` before the package
  * was deprecated. The original source for this lived in the URL below.
@@ -10,13 +12,19 @@ import React from "react";
 /* -------------------------------------------------------------------------------------------------
  * Utility types
  * -----------------------------------------------------------------------------------------------*/
-type Merge<P1 = {}, P2 = {}> = Omit<P1, keyof P2> & P2;
+type Merge<P1 = Record<string, never>, P2 = Record<string, never>> = Omit<
+  P1,
+  keyof P2
+> &
+  P2;
 
 /**
  * Infers the OwnProps if E is a ForwardRefExoticComponentWithAs
  */
 type OwnProps<E> =
-  E extends PolymorphicForwardRefComponent<any, infer P> ? P : {};
+  E extends PolymorphicForwardRefComponent<any, infer P>
+    ? P
+    : Record<string, never>;
 
 /**
  * Infers the JSX.IntrinsicElement if E is a ForwardRefExoticComponentWithAs
@@ -37,7 +45,7 @@ type ForwardRefExoticComponent<E, OwnProps> = React.ForwardRefExoticComponent<
 
 interface PolymorphicForwardRefComponent<
   IntrinsicElementString,
-  OwnProps = {},
+  OwnProps = Record<string, never>,
   /**
    * Extends original type to ensure built in React types play nice
    * with polymorphic components still e.g. `React.ElementRef` etc.
@@ -53,11 +61,11 @@ interface PolymorphicForwardRefComponent<
    */
   <As = IntrinsicElementString>(
     props: As extends ""
-      ? { as: keyof JSX.IntrinsicElements }
+      ? { as: keyof React.JSX.IntrinsicElements }
       : As extends React.ComponentType<infer P>
         ? Merge<P, OwnProps & { as: As }>
-        : As extends keyof JSX.IntrinsicElements
-          ? Merge<JSX.IntrinsicElements[As], OwnProps & { as: As }>
+        : As extends keyof React.JSX.IntrinsicElements
+          ? Merge<React.JSX.IntrinsicElements[As], OwnProps & { as: As }>
           : never,
   ): React.ReactElement | null;
 }

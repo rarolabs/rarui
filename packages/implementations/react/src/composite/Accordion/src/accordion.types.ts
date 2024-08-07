@@ -1,6 +1,6 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { AccordionBody, AccordionItem, AccordionHeader } from "./components";
 import { AccordionProperties } from "@rarui/typings";
+import { AccordionBody, AccordionItem, AccordionHeader } from "./components";
 
 export interface AccordionComponents {
   Body: typeof AccordionBody;

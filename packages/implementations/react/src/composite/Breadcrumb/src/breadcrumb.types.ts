@@ -1,6 +1,6 @@
 import React, { OlHTMLAttributes } from "react";
-import { BreadcrumbItem } from "./components";
 import { BreadcrumbProperties } from "@rarui/typings";
+import { BreadcrumbItem } from "./components";
 
 export interface BreadcrumbComponents {
   Item: typeof BreadcrumbItem;
