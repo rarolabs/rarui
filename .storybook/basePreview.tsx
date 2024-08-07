@@ -25,13 +25,13 @@ const basePreview: Preview = {
       source: "code",
     },
   },
-  decorators: [
-    (Story) => (
-      <ThemeRaruiProvider>
-        <Story />
-      </ThemeRaruiProvider>
-    ),
-  ],
+  // decorators: [
+  //   (Story) => (
+  //     <ThemeRaruiProvider>
+  //       <Story />
+  //     </ThemeRaruiProvider>
+  //   ),
+  // ],
 };
 
 export default basePreview;

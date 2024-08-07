@@ -4,7 +4,7 @@ import { WithHTMLSource } from "./decorators";
 
 const preview: Preview = {
   ...basePreview,
-  decorators: [...(basePreview.decorators as any), WithHTMLSource],
+  decorators: [WithHTMLSource],
 };
 
 export default preview;
