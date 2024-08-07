@@ -11,7 +11,6 @@ export const config: Config = {
       type: "dist",
     },
   ],
-
   testing: {
     browserHeadless: "new",
   },
@@ -20,10 +19,9 @@ export const config: Config = {
   },
   rollupConfig: {
     inputOptions: {
-      external: (id) => {
+      external: (id) =>
         // Externalize @rarui/styles and other external libraries
-        return /^@rarui\/styles/.test(id);
-      },
+        /^@rarui\/styles/.test(id),
     },
   },
 };

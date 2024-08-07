@@ -2,9 +2,9 @@ import type { Meta, StoryObj } from "@storybook/html";
 import { argTypesConvert, storyGenerator } from ".storybook/utils";
 import docs from "./root.docs.json";
 
-import "../../../../exhibition/Text/src/Text";
-import "../../../../layout/Box/src/Box";
-import "../../Item/src/Item";
+import "@rarui/text/src/Text";
+import "@rarui/box/src/Box";
+import "@rarui/tabs-item/src/Item";
 import "./Root";
 
 const { argTypes, Template } = storyGenerator(

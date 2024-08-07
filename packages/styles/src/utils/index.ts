@@ -1,6 +1,5 @@
-const toCamelCase = (str: string) => {
-  return str.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
-};
+const toCamelCase = (str: string) =>
+  str.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
 
 const parseValue = (value: string) => {
   try {
@@ -17,6 +16,7 @@ export const CaptureCssProperties = (
 ) => {
   const originalMethod = descriptor.value;
 
+  // eslint-disable-next-line
   descriptor.value = function (...args: any[]) {
     const props = Array.from((this as any).el.attributes).reduce(
       (acc: any, { name, value }: any) => {
@@ -30,7 +30,6 @@ export const CaptureCssProperties = (
     );
 
     (this as any).props = props;
-    console.log("this.props", (this as any).props);
     return originalMethod.apply(this, args);
   };
 };

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/html";
 import { argTypesConvert, storyGenerator } from ".storybook/utils";
 import docs from "@rarui/tabs/src/root.docs.json";
 
-import "@rarui/box/src";
+import "@rarui/box/src/Box";
 import "./Item";
 
 const itemDocs = docs.subComponents.find(
