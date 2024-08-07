@@ -5126,7 +5126,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui/scripts@workspace:^, @rarui/scripts@workspace:packages/core/scripts":
+"@rarui/scripts@workspace:packages/core/scripts":
   version: 0.0.0-use.local
   resolution: "@rarui/scripts@workspace:packages/core/scripts"
   dependencies:
@@ -18471,7 +18471,6 @@ __metadata:
     "@babel/parser": "npm:^7.22.5"
     "@babel/traverse": "npm:^7.23.2"
     "@babel/types": "npm:^7.22.5"
-    "@rarui/scripts": "workspace:^"
     "@types/babel__core": "npm:^7"
     "@types/babel__traverse": "npm:^7"
     "@types/vscode": "npm:^1.79.0"

@@ -2,6 +2,7 @@ releases:
   "@rarui/box": major
   "@rarui/button": major
   "@rarui/components": major
+  "@rarui/scripts": patch
   "@rarui/stencil": major
   "@rarui/styles": minor
   "@rarui/tabs": major
@@ -11,3 +12,4 @@ releases:
 
 declined:
   - "@rarui/design-system"
+  - rarui-helper

@@ -2,7 +2,6 @@ import path from "path";
 import glob from "glob";
 import { PackageBuilder } from "@rarui/scripts/src";
 import { execSync } from "child_process";
-import { pascalCase } from "change-case";
 import * as fs from "fs";
 
 type Assets = {
@@ -21,62 +20,74 @@ type ProcessedPackage = {
   assets: Assets;
 };
 
-export class ReleaseBuilder {
-  private breakPackageName(packageName: string) {
-    if (packageName === "rarui-helper") {
-      return "/helper";
-    }
+type WorkspaceInfo = {
+  location: string;
+  name: string;
+};
 
-    if (packageName.indexOf("-") === -1) return packageName.split("/")[1];
-    console.log({ packageName });
-    const folders = packageName.split("@rarui-")[1].split("/");
-    folders[1] = pascalCase(folders[1]);
-    return folders.join("/**/").replace("/Components", "");
+class WorkspaceManager {
+  private workspaces: WorkspaceInfo[] = [];
+
+  constructor() {
+    this.loadWorkspaces();
   }
 
-  private getChangeLogPath(packageName: string): string {
-    const packageFolderName = this.breakPackageName(packageName);
-
-    const changeLogPath = glob.sync(
-      path.join(`packages/**/${packageFolderName}/CHANGELOG.md`),
-    );
-
-    if (changeLogPath.length > 0) {
-      return changeLogPath[0];
-    }
-    return "";
+  private loadWorkspaces() {
+    const workspacesJson = execSync("yarn workspaces list --json")
+      .toString()
+      .trim()
+      .split("\n");
+    this.workspaces = workspacesJson.map((line) => JSON.parse(line));
   }
 
-  private getVersion(description: string, packageName: string) {
-    const version = description.match(/\b\d+\.\d+\.\d+\b/);
-    if (!version) {
-      console.error(
-        `Invalid version format. Please check the ${packageName} changelog file and commit the changes`,
-      );
-      process.exit(1);
+  public getWorkspaceLocation(packageName: string): string {
+    const workspace = this.workspaces.find((w) => w.name === packageName);
+    if (!workspace) {
+      throw new Error(`Workspace not found for package ${packageName}`);
     }
+    return workspace.location;
+  }
+}
 
-    return version[0];
+class ChangeLogManager {
+  private workspaceManager: WorkspaceManager;
+
+  constructor(workspaceManager: WorkspaceManager) {
+    this.workspaceManager = workspaceManager;
   }
 
-  private getDifflog(changelogPath: string, packageName: string) {
+  public getChangeLogPath(packageName: string): string {
+    const workspaceLocation =
+      this.workspaceManager.getWorkspaceLocation(packageName);
+    const changeLogPath = path.join(workspaceLocation, "CHANGELOG.md");
+
+    if (fs.existsSync(changeLogPath)) {
+      return changeLogPath;
+    }
+
+    throw new Error(`CHANGELOG.md not found for package ${packageName}`);
+  }
+
+  public getDescription(changelogPath: string, packageName: string): string {
+    const diffLog = this.getDifflog(changelogPath, packageName);
+    return this.proccessDifflog(diffLog);
+  }
+
+  private getDifflog(changelogPath: string, packageName: string): string {
     try {
       const diffCommand = `git diff main..HEAD -- ${changelogPath}`;
+
       const diffLog = execSync(diffCommand).toString();
       if (!diffLog) {
-        console.error(
-          `Please make sure you added your changes to ${packageName} changelog file and committed the file`,
-        );
-        process.exit(1);
+        throw new Error(`No changes detected in ${packageName} changelog`);
       }
       return diffLog;
-    } catch (error) {
-      console.error(`Error executing git diff command: ${error}`);
-      return "";
+    } catch (error: any) {
+      throw new Error(`Error executing git diff command: ${error.message}`);
     }
   }
 
-  private proccessDifflog(diffLog: string) {
+  private proccessDifflog(diffLog: string): string {
     let shouldIncludeLine = false;
     let description = "";
     diffLog.split("\n").forEach((line) => {
@@ -90,31 +101,38 @@ export class ReleaseBuilder {
     });
     return description.trim();
   }
-  private getDescription(changelogPath: string, packageName: string) {
-    const diffLog = this.getDifflog(changelogPath, packageName);
-    return this.proccessDifflog(diffLog);
+}
+
+class PackageProcessor {
+  private changeLogManager: ChangeLogManager;
+
+  constructor(changeLogManager: ChangeLogManager) {
+    this.changeLogManager = changeLogManager;
   }
 
-  private processPackages(packages: string[]): ProcessedPackage[] {
+  public processPackages(packages: string[]): ProcessedPackage[] {
     return packages.map((packageName) => {
-      const changelogPath = this.getChangeLogPath(packageName);
-
-      const description = this.getDescription(changelogPath, packageName);
-      const _packageName =
-        packageName === "@rarui-react" || packageName === "@rarui-vuejs"
-          ? `${packageName}/components/`
-          : packageName;
+      const changelogPath = this.changeLogManager.getChangeLogPath(packageName);
+      const description = this.changeLogManager.getDescription(
+        changelogPath,
+        packageName,
+      );
       const version = this.getVersion(description, packageName);
+
+      const formattedPackageName = this.formatPackageName(packageName);
+
+      console.log(`Creating release archery for ${packageName}`);
+
       return {
-        package: `${_packageName} ${version}`,
+        package: `${formattedPackageName} ${version}`,
         description,
         version,
-        tagName: `${_packageName.startsWith("@") ? _packageName.slice(1) : _packageName}-${version}`,
+        tagName: `${formattedPackageName.startsWith("@") ? formattedPackageName.slice(1) : formattedPackageName}-${version}`,
         assets: {
           links: [
             {
               name: "npm",
-              url: `https://www.npmjs.com/package/${_packageName}`,
+              url: `https://www.npmjs.com/package/${formattedPackageName}`,
               link_type: "package",
             },
           ],
@@ -123,42 +141,59 @@ export class ReleaseBuilder {
     });
   }
 
-  private getPackagesToRelease() {
+  private getVersion(description: string, packageName: string): string {
+    const version = description.match(/\b\d+\.\d+\.\d+\b/);
+    if (!version) {
+      throw new Error(`Invalid version format in ${packageName} changelog`);
+    }
+    return version[0];
+  }
+
+  private formatPackageName(packageName: string): string {
+    if (packageName === "@rarui-react") {
+      return `${packageName}/components/`;
+    }
+    return packageName;
+  }
+}
+
+export class ReleaseBuilder {
+  private workspaceManager: WorkspaceManager;
+  private changeLogManager: ChangeLogManager;
+  private packageProcessor: PackageProcessor;
+
+  constructor() {
+    this.workspaceManager = new WorkspaceManager();
+    this.changeLogManager = new ChangeLogManager(this.workspaceManager);
+    this.packageProcessor = new PackageProcessor(this.changeLogManager);
+  }
+  public async run() {
     try {
-      const paths = glob.sync(path.join(".yarn/versions/*.yml"));
-      if (!paths.length) {
-        console.log("no versions to release");
-        process.exit(0);
-      }
+      const packagesToRelease = this.getPackagesToRelease();
+      const rootDir = path.resolve(__dirname, "../../../../../");
 
-      const packageBuilder = new PackageBuilder();
-      const packages = packageBuilder.getPackagesToBuild(paths[0]);
-
-      return this.processPackages(packages);
-    } catch (err) {
-      console.error(`\x1b[33m ${(err as Error).message} \x1b[0m`);
+      const outputFile = path.join(rootDir, "releases.json");
+      await fs.promises.writeFile(
+        outputFile,
+        JSON.stringify(packagesToRelease, null, 2),
+      );
+      console.log("Releases file created successfully");
+    } catch (err: any) {
+      console.error(`Error: ${err.message}`);
       process.exit(1);
     }
   }
 
-  public run() {
-    try {
-      const packagesToRelease = this.getPackagesToRelease();
-
-      const rootDir = path.resolve(__dirname, "../../../../../");
-
-      console.log("Creating releases...");
-
-      const outputFile = path.join(rootDir, "releases.json");
-      fs.writeFile(outputFile, JSON.stringify(packagesToRelease), (err) => {
-        if (err) console.error(err);
-      });
-      console.log("Releases file created successfully");
-    } catch (err) {
-      console.log("err", err);
-
-      console.error(`\x1b[33m ${(err as Error).message} \x1b[0m`);
-      process.exit(1);
+  private getPackagesToRelease(): ProcessedPackage[] {
+    const paths = glob.sync(path.join(".yarn/versions/*.yml"));
+    if (!paths.length) {
+      console.log("No versions to release");
+      process.exit(0);
     }
+
+    const packageBuilder = new PackageBuilder();
+    const packages = packageBuilder.getPackagesToBuild(paths[0]);
+
+    return this.packageProcessor.processPackages(packages);
   }
 }

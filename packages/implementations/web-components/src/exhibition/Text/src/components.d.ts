@@ -5,55 +5,39 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { ButtonVariants } from "@rarui/styles";
-export { ButtonVariants } from "@rarui/styles";
 export namespace Components {
-  interface RaruiButton {
-    appearance: ButtonVariants["appearance"];
-    as: string;
-    disabled: HTMLButtonElement["disabled"];
-    full: ButtonVariants["full"];
-    href: HTMLAnchorElement["href"];
-    size: ButtonVariants["size"];
-    target: HTMLAnchorElement["target"];
-    type: HTMLButtonElement["type"];
-    variant: ButtonVariants["variant"];
+  interface RaruiText {
+    as: "p" | "span";
+    lineClamp: string;
   }
 }
 declare global {
-  interface HTMLRaruiButtonElement
-    extends Components.RaruiButton,
+  interface HTMLRaruiTextElement
+    extends Components.RaruiText,
       HTMLStencilElement {}
-  var HTMLRaruiButtonElement: {
-    prototype: HTMLRaruiButtonElement;
-    new (): HTMLRaruiButtonElement;
+  var HTMLRaruiTextElement: {
+    prototype: HTMLRaruiTextElement;
+    new (): HTMLRaruiTextElement;
   };
   interface HTMLElementTagNameMap {
-    "rarui-button": HTMLRaruiButtonElement;
+    "rarui-text": HTMLRaruiTextElement;
   }
 }
 declare namespace LocalJSX {
-  interface RaruiButton {
-    appearance?: ButtonVariants["appearance"];
-    as?: string;
-    disabled?: HTMLButtonElement["disabled"];
-    full?: ButtonVariants["full"];
-    href?: HTMLAnchorElement["href"];
-    size?: ButtonVariants["size"];
-    target?: HTMLAnchorElement["target"];
-    type?: HTMLButtonElement["type"];
-    variant?: ButtonVariants["variant"];
+  interface RaruiText {
+    as?: "p" | "span";
+    lineClamp?: string;
   }
   interface IntrinsicElements {
-    "rarui-button": RaruiButton;
+    "rarui-text": RaruiText;
   }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
-      "rarui-button": LocalJSX.RaruiButton &
-        JSXBase.HTMLAttributes<HTMLRaruiButtonElement>;
+      "rarui-text": LocalJSX.RaruiText &
+        JSXBase.HTMLAttributes<HTMLRaruiTextElement>;
     }
   }
 }
