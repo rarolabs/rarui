@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating builds of each design system package. It contains all the necessary settings and dependencies to optimize the creation of our builds.
 
+## 2024-08-07 `1.3.3`
+
+#### 🐛 Bug fixes
+
+- Updated the alias path for `@rarui/typings`. ([#88](https://git.rarolabs.com.br/frontend/rarui/pull/88) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-08-19 `1.3.2`
 
 #### 🐛 Bug fixes

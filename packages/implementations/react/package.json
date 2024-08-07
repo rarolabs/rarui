@@ -34,6 +34,7 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui//issues"
   },
   "devDependencies": {
+    "@rarui/typings": "workspace:^",
     "@rarui/webpack": "workspace:^",
     "dotenv": "^16.4.5"
   }

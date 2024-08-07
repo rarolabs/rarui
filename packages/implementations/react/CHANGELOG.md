@@ -2,6 +2,14 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-08-07 `1.41.1`
+
+#### 💡 Others -->
+
+- Added `@rarui/typings` dependency to packages. ([#88](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/80) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Reallocated useRefObjectAsForwardedRef hook used to sync ref object with forwarded ref and allow local access to instance reference with `.current`. ([#88](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/80) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+- Reallocated types that support dynamic typing of polymorphic components. ([#88](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/80) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-07-30 `1.41.0`
 
 #### 🎉 New features
