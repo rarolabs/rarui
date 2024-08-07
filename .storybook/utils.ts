@@ -61,7 +61,7 @@ export const convertTsConfigPathsToWebpackAliases = () => {
     "@rarui/styles": "packages/styles/src/index.ts",
     "@rarui/scripts": "packages/core/scripts/src/index.ts",
     "@rarui/webpack": "packages/core/webpack/src/index.ts",
-    "@rarui/typings": "packages/core/typings/src/index.ts",
+    "@rarui/typings": "packages/typings/src/index.ts",
     ".storybook": ".storybook",
   };
 

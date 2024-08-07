@@ -113,9 +113,6 @@
       "@rarui-react/tooltip": [
         "./packages/implementations/react/src/atomic/Tooltip/src"
       ],
-      "@rarui-vuejs/button": [
-        "./packages/implementations/vuejs/src/atomic/Button/src"
-      ],
       "@rarui-react/divider": [
         "./packages/implementations/react/src/atomic/Divider/src"
       ],

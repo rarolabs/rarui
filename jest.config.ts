@@ -7,7 +7,7 @@ const config: Config.InitialOptions = {
   moduleNameMapper: {
     "react-datepicker.css": "<rootDir>/styleMock.ts",
     // core
-    "@rarui/typings": "<rootDir>/packages/core/typings/src",
+    "@rarui/typings": "<rootDir>/packages/typings/src",
     "@rarui/webpack": "<rootDir>/packages/core/webpack/src",
     // commons
     "@rarui/styles": "<rootDir>/packages/styles/src",
@@ -57,6 +57,6 @@ const config: Config.InitialOptions = {
       },
     ],
   },
-  coveragePathIgnorePatterns: ["dist", ".scripts", "packages/core/typings"],
+  coveragePathIgnorePatterns: ["dist", ".scripts", "packages/typings"],
 };
 export default config;
