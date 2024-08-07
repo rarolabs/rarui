@@ -1,6 +1,6 @@
 {
   "name": "@rarui/styles",
-  "version": "2.2.0-rc.1",
+  "version": "2.2.0",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -34,6 +34,5 @@
     "@vanilla-extract/dynamic": "^2.1.1",
     "@vanilla-extract/sprinkles": "^1.6.2",
     "ts-node": "^10.9.2"
-  },
-  "stableVersion": "2.1.2"
+  }
 }
