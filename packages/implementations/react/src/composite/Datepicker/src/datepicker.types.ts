@@ -76,7 +76,7 @@ export interface DatepickerTyping {
    * This function receives the selected date or an array of dates (in the case of range selection) as a parameter.
    * @TJS-type (date: Date | Date[]) => void
    */
-  onChange: (date: Date | Date[]) => void;
+  onChange: (date: Date | Date[] | null) => void;
   /**
    * Specifies the placement of the datepicker popper.
    * This can be useful for positioning the datepicker relative to its input field.

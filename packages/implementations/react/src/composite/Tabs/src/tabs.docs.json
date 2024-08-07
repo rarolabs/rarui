@@ -1,9 +1,9 @@
 {
   "id": "tabs",
   "name": "Tabs",
-  "totalProps": 5,
+  "totalProps": 6,
   "packageName": "@rarui-react/tabs",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "docLink": "https://rarui.com.br/documentation/src-components/tabs",
   "props": [
     {
@@ -16,6 +16,12 @@
       "description": "Sets the indicated tab as active by default.\nIf unset, defaults to the first tab. This prop should be a number representing the index of the tab.",
       "type": "number",
       "title": "preSelectedTab",
+      "required": false
+    },
+    {
+      "description": "Sets the indicated tab as current active tab.\nCan be used to change the active tab from outside of the component",
+      "type": "number",
+      "title": "selectedTab",
       "required": false
     },
     {

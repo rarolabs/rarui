@@ -11,9 +11,10 @@ const Tabs: React.FC<TabsProps> & TabsComponents = ({
   children,
   preSelectedTab,
   full,
+  selectedTab,
   ...props
 }: TabsProps) => {
-  const [selectedTab, setSelectedTab] = useState<number>(preSelectedTab || 0);
+  const [currentTab, setCurrentTab] = useState<number>(preSelectedTab || 0);
 
   const tabsChildren = React.Children.toArray(children).filter(
     (child): child is ReactElement<TabsItemProps> =>
@@ -36,10 +37,10 @@ const Tabs: React.FC<TabsProps> & TabsComponents = ({
             >
               <TabsButton
                 underlined={underlined}
-                selected={selectedTab === index}
+                selected={currentTab === index}
                 onClick={() => {
                   onSelectTab?.(index);
-                  setSelectedTab(index);
+                  setCurrentTab(index);
                 }}
                 {...rest}
               >
@@ -49,7 +50,7 @@ const Tabs: React.FC<TabsProps> & TabsComponents = ({
           );
         })}
       </ul>
-      {tabsChildren[selectedTab]}
+      {tabsChildren[selectedTab || currentTab]}
     </>
   );
 };

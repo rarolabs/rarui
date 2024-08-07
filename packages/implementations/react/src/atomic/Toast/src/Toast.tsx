@@ -28,13 +28,16 @@ const Toast: React.FC<ToastProps> & ToastComponents = ({
   appearance = "info",
   variant = "solid",
   size = "medium",
+  width = "420px",
   autoClose = true,
   onClose,
   duration = 4000,
   title,
   id,
-  ...props
+  ...rest
 }: ToastProps) => {
+  const { className, style, otherProps } = toast.sprinkle({ ...rest, width });
+
   const closeIntervalRef = useRef<any>();
   const animationIntervalRef = useRef<any>();
 
@@ -77,10 +80,14 @@ const Toast: React.FC<ToastProps> & ToastComponents = ({
 
   return (
     <div
-      {...props}
-      className={toast.classnames.toast({ appearance, variant, size })}
+      {...otherProps}
+      className={[
+        toast.classnames.toast({ appearance, variant, size }),
+        className,
+      ].join(" ")}
       data-testid="toast-element"
       style={{
+        ...style,
         display: isVisible ? "flex" : "none",
       }}
     >

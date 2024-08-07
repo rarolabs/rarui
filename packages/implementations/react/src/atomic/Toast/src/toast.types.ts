@@ -33,9 +33,14 @@ export interface ToastTyping {
   autoClose?: boolean;
   /**
    * Receives a function to be executed when the Toast is closed.
-   * @default true
+   *
    */
   onClose?: () => void;
+  /**
+   * Specifies the width of the toast.
+   * @default "420px"
+   */
+  width?: string;
 }
 
 export type ToastProperties = ToastTyping & ToastVariants;

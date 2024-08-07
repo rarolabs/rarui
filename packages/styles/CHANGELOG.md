@@ -9,6 +9,22 @@ RarUI Styles deprive all styles needed to build components.
 - Added new disturbance in the `Module` format to the styles package. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))
 - Added new `Capture CSSProperties` Utilitario to be used on web components in order to capture component props CSS. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))
 
+## 2024-07-24 `2.1.2`
+
+#### 🎉 New features
+
+- Added `width` property with responsivness to `Toast` component. ([#82](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/82) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+#### 🐛 Bug fixes
+
+- Fixed the z-index value of `Toast` component to be on top of everything. ([#82](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/82) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
+## 2024-07-04 `2.1.1`
+
+#### 💡 Others
+
+- Removed arrows from `Input` Component with `type="number"` ([#83](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/83) by [@jefferson.lima](https://git.rarolabs.com.br/jefferson.lima))
+
 ## 2024-07-04 `2.1.0`
 
 #### 🎉 New features

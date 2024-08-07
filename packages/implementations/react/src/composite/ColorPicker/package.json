@@ -1,6 +1,6 @@
 {
-  "name": "@rarui-react/tabs",
-  "version": "1.2.0",
+  "name": "@rarui-react/color-picker",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -15,7 +15,11 @@
   },
   "dependencies": {
     "@rarui-react/box": "workspace:^",
-    "@rarui/icons": "workspace:^"
+    "@rarui-react/input": "workspace:^",
+    "@rarui-react/text": "workspace:^",
+    "@rarui-react/tooltip": "workspace:^",
+    "@types/react-color": "^3.0.12",
+    "react-color": "^2.19.3"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17.0 || ^18.0",
@@ -30,9 +34,9 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
   },
   "devDependencies": {
-    "@rarui-react/icon": "workspace:^",
-    "@rarui-react/text": "workspace:^",
-    "@rarui/icons": "workspace:^",
     "@rarui/webpack": "workspace:^"
+  },
+  "resolutions": {
+    "@types/react": "^18.2.69"
   }
 }

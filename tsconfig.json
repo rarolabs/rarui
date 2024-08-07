@@ -125,6 +125,9 @@
       "@rarui-react/card": [
         "./packages/implementations/react/src/composite/Card/src"
       ],
+      "@rarui-react/color-picker": [
+        "./packages/implementations/react/src/composite/ColorPicker/src"
+      ],
       "@rarui-react/accordion": [
         "./packages/implementations/react/src/composite/Accordion/src"
       ],
