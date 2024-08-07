@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-import { Color, ColorPickerProps } from "./colorPicker.types";
+import { Color } from "@rarui/typings";
+import { ColorPickerProps } from "./colorPicker.types";
 import { hexToColorObject } from "./colorPicker.definitions";
 import { Picker } from "./components/Picker/Picker";
 

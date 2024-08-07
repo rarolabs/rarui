@@ -7,7 +7,7 @@ import React, {
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "@rarui-react/components/src/types";
+} from "../../../../../types";
 import { sideNavigation } from "@rarui/styles";
 import { SideNavigationItemProps } from "./item.types";
 

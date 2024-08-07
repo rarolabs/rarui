@@ -5,7 +5,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { useRefObjectAsForwardedRef } from "@rarui-react/components/src/types";
+import { useRefObjectAsForwardedRef } from "../../../../../types";
 import { input } from "@rarui/styles";
 import { EyeOffOutlinedIcon, EyeOutlinedIcon } from "@rarui/icons";
 import { Icon } from "@rarui-react/icon";

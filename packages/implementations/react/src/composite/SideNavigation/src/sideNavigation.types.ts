@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { SideNavigationVariants } from "@rarui/styles";
+import { SideNavigationProperties } from "@rarui/typings";
 
 import { SideNavigationItem } from "./components";
 
@@ -7,21 +7,12 @@ export interface SideNavigationComponents {
   Item: typeof SideNavigationItem;
 }
 
-export interface SideNavigationTyping {
+export interface SideNavigationTyping extends SideNavigationProperties {
   /**
    * The content of the sideNavigation.
    * @TJS-type React.ReactNode
    */
   children: ReactNode;
-
-  /**
-   * Title of the sideNavigation
-   */
-  name: string;
-  /**
-   * Description of the sideNavigation.
-   */
-  description?: string;
   /**
    * Componet to be displayed on start input.
    * @TJS-type React.ReactNode
@@ -34,6 +25,5 @@ export interface SideNavigationTyping {
   leadingEnd?: ReactNode;
 }
 
-type SideNavigationProperties = SideNavigationTyping & SideNavigationVariants;
-export type _SideNavigationProps = SideNavigationProperties &
+export type _SideNavigationProps = SideNavigationTyping &
   ButtonHTMLAttributes<HTMLButtonElement>;

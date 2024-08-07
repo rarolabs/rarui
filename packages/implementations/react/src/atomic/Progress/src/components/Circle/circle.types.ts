@@ -1,7 +1,6 @@
 import { HTMLAttributes } from "react";
-import { ProgressVariants } from "@rarui/styles";
-import { ProgressProperties } from "../../progress.types";
+import { ProgressCircleProperties, ProgressProperties } from "@rarui/typings";
 
-export type ProgressCircleProperties = ProgressProperties & ProgressVariants;
-export type ProgressCircleProps = ProgressCircleProperties &
+export type ProgressCircleProps = ProgressProperties &
+  ProgressCircleProperties &
   HTMLAttributes<HTMLDivElement>;

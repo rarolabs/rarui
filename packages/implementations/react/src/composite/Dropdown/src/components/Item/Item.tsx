@@ -8,7 +8,7 @@ import { dropdown } from "@rarui/styles";
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "@rarui-react/components/src/types";
+} from "../../../../../types";
 import { Icon } from "@rarui-react/icon";
 import { Box } from "@rarui-react/box";
 import { DropdownItemProps } from "./item.types";

@@ -1,10 +1,12 @@
 export type { ButtonProperties } from "./button.types.ts";
 export type { CheckboxProperties } from "./checkbox.types.ts";
 export type { ChipProperties } from "./chip.types.ts";
+export type { ColorPickerProperties, Color } from "./colorPicker.types.ts";
 export type { DatepickerProperties } from "./datepicker.types.ts";
 export type { DatepickerFooterProperties } from "./datepickerFooter.types.ts";
 export type { DropdownProperties } from "./dropdown.types.ts";
 export type { DropdownItemProperties } from "./dropdownItem.types.ts";
+export type { IconButtonProperties } from "./iconButton.types.ts";
 export type { InputProperties } from "./input.types.ts";
 export type { InputLeadingProperties } from "./inputLeading.types.ts";
 export type { InputPasswordProperties } from "./inputPassword.types.ts";

@@ -1,22 +1,13 @@
 import { HTMLAttributes, ReactNode } from "react";
+import { CardHeaderProperties } from "@rarui/typings";
 
-export interface CardHeaderTyping {
+export interface CardHeaderTyping extends CardHeaderProperties {
   /**
    * The content of the card header. This prop accepts any React node.
    * @TJS-type React.ReactNode
    */
   children?: ReactNode;
-  /**
-   * The title of the card. This is typically displayed prominently in the header section.
-   */
-  title?: string;
-  /**
-   * The description of the card. This is typically displayed below the title in the header section.
-   */
-  description?: string;
 }
 
-export type CardHeaderProperties = CardHeaderTyping;
-
-export type CardHeaderProps = CardHeaderProperties &
+export type CardHeaderProps = CardHeaderTyping &
   Omit<HTMLAttributes<HTMLElement>, "color">;

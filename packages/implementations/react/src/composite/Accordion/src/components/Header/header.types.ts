@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { AccordionVariants } from "@rarui/styles";
+import { AccordionHeaderProperties } from "@rarui/typings";
 
-export interface AccordionHeaderTypings {
+export interface AccordionHeaderTyping extends AccordionHeaderProperties {
   /**
    * The content of the accordion header.
    * @TJS-type React.ReactNode | ((data: { selected: string; index: string }) => React.ReactNode);
@@ -10,27 +10,11 @@ export interface AccordionHeaderTypings {
     | ReactNode
     | ((data: { selected: string; index: string }) => ReactNode);
   /**
-   * The title to display in the accordion header.
-   */
-  title?: string;
-  /**
-   * The subtitle to display in the accordion header.
-   */
-  subtitle?: string;
-  /**
    * The SVG contents to display in the accordion header.
    * @TJS-type React.ReactNode
    */
   icon?: ReactNode;
-  /**
-   * Removes the arrow icon that shows if the accordion item is open or not which makes it possible to create a custom indicator.
-   * @default false
-   */
-  noIconToggle?: boolean;
 }
 
-export type AccordionHeaderProperties = AccordionHeaderTypings &
-  Pick<AccordionVariants, "size">;
-
-export type AccordionHeaderProps = AccordionHeaderProperties &
+export type AccordionHeaderProps = AccordionHeaderTyping &
   Omit<ButtonHTMLAttributes<HTMLButtonElement>, "children">;

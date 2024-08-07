@@ -1,7 +1,7 @@
 import { HTMLAttributes } from "react";
-import { DividerSprinkle } from "@rarui/styles";
+import { DividerProperties } from "@rarui/typings";
 
-export interface DividerProperties extends DividerSprinkle {
+export interface DividerTyping extends DividerProperties {
   /**
    * The direction of the Divider.
    */

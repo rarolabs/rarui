@@ -1,31 +1,13 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { TooltipVariants } from "@rarui/styles";
+import { TooltipHeaderProperties } from "@rarui/typings";
 
-interface TooltipHeader {
+interface TooltipHeaderTyping extends TooltipHeaderProperties {
   /**
    * The content of the modal header.
    * @TJS-type React.ReactNode
    */
   children?: ReactNode;
-  /**
-   * Displays a delete icon and adds user interaction.
-   * @default false
-   */
-  closeable?: boolean;
-  /**
-   * Header title
-   */
-  title?: string;
-  /**
-   * Header subtitle
-   */
-  subtitle?: string;
-  /**
-   *
-   */
-  onClose?: () => void;
 }
 
-export type TooltipHeaderProperties = TooltipHeader & TooltipVariants;
-export type TooltipHeaderProps = TooltipHeaderProperties &
+export type TooltipHeaderProps = TooltipHeaderTyping &
   HTMLAttributes<HTMLElement>;

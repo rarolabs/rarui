@@ -1,4 +1,4 @@
-import { Color } from "./colorPicker.types";
+import { Color } from "@rarui/typings";
 
 export function rgbaToColorObject({
   r,

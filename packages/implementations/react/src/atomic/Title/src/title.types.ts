@@ -1,18 +1,13 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { TitleSprinkle } from "@rarui/styles";
+import { TitleProperties } from "@rarui/typings";
 
-export interface TitleProperties extends TitleSprinkle {
+export interface TitleTyping extends TitleProperties {
   /**
    * The content of the title.
    * @TJS-type React.ReactNode
    */
   children: ReactNode;
-  /**
-   * Type of html tag to create for the title.
-   * @default h1
-   */
-  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 }
 
-export type TitleProps = TitleProperties &
+export type TitleProps = TitleTyping &
   Omit<HTMLAttributes<HTMLHeadingElement>, "color">;

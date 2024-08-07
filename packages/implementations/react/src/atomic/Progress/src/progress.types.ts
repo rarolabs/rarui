@@ -1,12 +1,12 @@
 import { HTMLAttributes } from "react";
-import { ProgressSprinkle } from "@rarui/styles";
+import { ProgressProperties } from "@rarui/typings";
 import { ProgressCircle } from "./components";
 
 export interface ProgressComponents {
   Circle: typeof ProgressCircle;
 }
 
-export interface ProgressTyping {
+export interface ProgressTyping extends ProgressProperties {
   /**
    * The progress percentage, represented as a number between 0 and 100.
    * This indicates the completion level of the process.
@@ -14,5 +14,4 @@ export interface ProgressTyping {
   percentage: number;
 }
 
-export type ProgressProperties = ProgressTyping & ProgressSprinkle;
-export type ProgressProps = ProgressProperties & HTMLAttributes<HTMLDivElement>;
+export type ProgressProps = ProgressTyping & HTMLAttributes<HTMLDivElement>;

@@ -1,8 +1,8 @@
 import React from "react";
 import { divider } from "@rarui/styles";
-import { DividerProperties } from "./divider.types";
+import { DividerProps } from "./divider.types";
 
-const Divider: React.FC<DividerProperties> = ({
+const Divider: React.FC<DividerProps> = ({
   direction = "horizontal",
   type = "solid",
   thickness = "$1",
