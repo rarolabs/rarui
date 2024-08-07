@@ -6,6 +6,8 @@ import "dotenv/config";
 
 import { convertTsConfigPathsToWebpackAliases } from "./utils";
 
+export const tsPaths = convertTsConfigPathsToWebpackAliases();
+
 const config: StorybookConfig = {
   stories: ["./introduction.mdx"],
   refs: {
@@ -14,14 +16,15 @@ const config: StorybookConfig = {
       url: process.env.STORYBOOK_REACT_URL ?? "",
     },
     vuejs: {
-      title: "@rarui-vuejs",
-      url: process.env.STORYBOOK_VUEJS_URL ?? "",
+      title: "@rarui-web-components",
+      url: process.env.STORYBOOK_WEB_COMPONENTS_URL ?? "",
     },
   },
   addons: [
     getAbsolutePath("@storybook/addon-links"),
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-interactions"),
+    getAbsolutePath("@chromatic-com/storybook"),
     getAbsolutePath("storybook-dark-mode"),
     getAbsolutePath("@storybook/addon-webpack5-compiler-swc"),
   ],
@@ -38,7 +41,6 @@ const config: StorybookConfig = {
     },
   ],
   docs: {},
-
   webpackFinal(config) {
     config.plugins?.push(
       new VanillaExtractPlugin({
@@ -46,21 +48,11 @@ const config: StorybookConfig = {
       }),
       new MiniCssExtractPlugin(),
     );
-    config.module?.rules?.push({
-      test: /\.(stories|story)\.[tj]sx?$/,
-      use: [
-        {
-          loader: require.resolve("@storybook/source-loader"),
-          options: { injectStoryParameters: true },
-        },
-      ],
-      enforce: "pre",
-    });
     config.resolve = {
       ...config.resolve,
       alias: {
         ...config.resolve?.alias,
-        ...convertTsConfigPathsToWebpackAliases(),
+        ...tsPaths,
       },
     };
     return config;

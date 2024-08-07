@@ -1,5 +1,5 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { BadgeProps , BadgeProperties } from "@rarui-react/badge";
+import { BadgeProps, BadgeProperties } from "@rarui-react/badge";
 import { AvatarVariants } from "@rarui/styles";
 
 export interface AvatarTyping {

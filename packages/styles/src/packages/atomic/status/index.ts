@@ -1,7 +1,7 @@
-import { styles } from "./rarui-status.css";
+import { statusStyles } from "./rarui-status.css";
 
 export const status = {
-  classnames: { ...styles },
+  classnames: statusStyles,
 };
 
 export type { StatusVariants } from "./rarui-status.types";

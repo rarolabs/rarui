@@ -1,0 +1,24 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "lib": ["dom", "es2017"],
+    "module": "esnext",
+    "target": "es2017",
+    "jsx": "react",
+    "jsxFactory": "h",
+    "skipLibCheck": true,
+    "noEmitOnError": false,
+    "strict": false,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "stripInternal": false
+  },
+  "include": ["./src"]
+}

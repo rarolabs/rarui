@@ -14,6 +14,7 @@ test-output.*
 .env
 .eslintcache
 *.vsix
+.stencil
 
 # Yarn 3 build artifacts
 ### yarn ###

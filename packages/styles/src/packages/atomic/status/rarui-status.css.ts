@@ -235,7 +235,7 @@ const dot = recipe(
   "dot",
 );
 
-export const styles = {
+export const statusStyles = {
   status,
   dot,
 };

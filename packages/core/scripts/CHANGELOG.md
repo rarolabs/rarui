@@ -2,6 +2,12 @@
 
 This package is intended for internal use in generating custom script builds at design system build time.
 
+## 2024-08-06 `1.1.5`
+
+#### 🎉 Bug fixes
+
+- Corrected script of release generation because it was not correct when seeking the changelog path. ([#87](https://git.rarolabs.com.br/frontend/rarui/pull/87) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-15 `1.1.4`
 
 #### 🎉 Bug fixes

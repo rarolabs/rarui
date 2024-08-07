@@ -1,6 +1,6 @@
 {
   "name": "@rarui/styles",
-  "version": "2.1.2",
+  "version": "2.2.0-rc.1",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -10,12 +10,15 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "webpack",
+    "build": "ts-node --transpile-only ../../node_modules/.bin/webpack --config webpack.config.ts && yarn build:esm",
+    "build:esm": "ts-node --transpile-only ../../node_modules/.bin/webpack --config webpack.esm.config.ts",
     "clean": "rm -rf dist",
     "version": "yarn version"
   },
   "dependencies": {
-    "@vanilla-extract/recipes": "^0.5.3"
+    "@vanilla-extract/css": "^1.15.3",
+    "@vanilla-extract/recipes": "^0.5.3",
+    "rainbow-sprinkles": "^0.17.2"
   },
   "homepage": "https://git.rarolabs.com.br/frontend/rarui",
   "repository": {
@@ -28,12 +31,9 @@
   "devDependencies": {
     "@rarui/tokens": "workspace:^",
     "@rarui/webpack": "workspace:^",
-    "@vanilla-extract/css": "^1.15.3",
     "@vanilla-extract/dynamic": "^2.1.1",
     "@vanilla-extract/sprinkles": "^1.6.2",
-    "rainbow-sprinkles": "^0.17.2",
-    "webpack": "^5.90.3",
-    "webpack-merge": "^5.10.0",
-    "webpack-shell-plugin-next": "^2.3.1"
-  }
+    "ts-node": "^10.9.2"
+  },
+  "stableVersion": "2.1.2"
 }

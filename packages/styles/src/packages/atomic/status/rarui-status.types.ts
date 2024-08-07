@@ -1,4 +1,6 @@
 import { RecipeVariants } from "@vanilla-extract/recipes";
-import { styles } from "./rarui-status.css";
+import { statusStyles } from "./rarui-status.css";
 
-export type StatusVariants = RecipeVariants<typeof styles.status>;
+export type StatusVariants = NonNullable<
+  RecipeVariants<typeof statusStyles.status>
+>;

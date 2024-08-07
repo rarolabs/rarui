@@ -1,6 +1,7 @@
 // variables
 export { varsThemeBase as variables } from "./themes/globals.css";
 export { variables as variablesDark } from "./themes/rarui-theme-dark.css";
+export { CaptureCssProperties } from "./utils";
 
 // atomic
 export { avatar } from "./packages/atomic/avatar";

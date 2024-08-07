@@ -6,9 +6,9 @@ import { varsThemeBase } from "../../../themes";
  * Style
  * -----------------------------------------------------------------------------------------------*/
 
-export const overlayBackgroundColor = createVar();
+const overlayBackgroundColor = createVar();
 
-export const checkbox = recipe(
+const checkbox = recipe(
   {
     base: {
       appearance: "none",
@@ -98,7 +98,7 @@ export const checkbox = recipe(
   "",
 );
 
-export const label = recipe(
+const label = recipe(
   {
     base: {
       display: "flex",
@@ -127,7 +127,7 @@ export const label = recipe(
   "label",
 );
 
-export const container = style(
+const container = style(
   {
     position: "relative",
     display: "flex",
@@ -137,7 +137,7 @@ export const container = style(
   "container",
 );
 
-export const overlay = style(
+const overlay = style(
   {
     position: "absolute",
     inset: 0,
@@ -151,3 +151,10 @@ globalStyle(`${container}:hover:not(:has(${checkbox()}:disabled)) ${overlay}`, {
   backgroundColor: overlayBackgroundColor,
   borderRadius: "50%",
 });
+
+export const checkboxStyles = {
+  checkbox,
+  label,
+  container,
+  overlay,
+};

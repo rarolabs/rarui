@@ -1,0 +1,38 @@
+{
+  "name": "@rarui/text",
+  "version": "1.0.0-rc.1",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn prebuild && yarn g:stencil build && yarn afterbuild",
+    "clean": "rm -rf dist",
+    "prebuild": "yarn g:update:tsconfig ./packages/implementations/web-components/src/exhibition/Text/tsconfig.json update",
+    "afterbuild": "yarn g:update:tsconfig ./packages/implementations/web-components/src/exhibition/Text/tsconfig.json restore",
+    "version": "yarn version"
+  },
+  "homepage": "https://git.rarolabs.com.br/frontend/rarui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.rarolabs.com.br/frontend/rarui.git"
+  },
+  "bugs": {
+    "url": "https://git.rarolabs.com.br/frontend/rarui/issues"
+  },
+  "peerDependencies": {
+    "@rarui/styles": "workspace:^"
+  },
+  "devDependencies": {
+    "@rarui/stencil": "workspace:^"
+  },
+  "stableVersion": "0.0.0"
+}
