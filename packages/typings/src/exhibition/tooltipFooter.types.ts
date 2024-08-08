@@ -1,3 +1,3 @@
 import { TooltipVariants } from "@rarui/styles";
 
-export type TooltipFooterProperties = Exclude<TooltipVariants, "inverted">;
+export type TooltipFooterProperties = Pick<TooltipVariants, "padding">;

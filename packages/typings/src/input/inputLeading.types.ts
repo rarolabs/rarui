@@ -1,6 +1,6 @@
 import { InputProperties } from "./input.types";
 
-export interface InputLeadingTyping {
+interface InputLeadingTyping {
   /**
    * Sent Leading display position.
    */

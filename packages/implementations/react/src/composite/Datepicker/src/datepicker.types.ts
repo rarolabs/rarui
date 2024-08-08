@@ -1,15 +1,9 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { InputProps } from "@rarui-react/input";
-import { InputProperties, DatepickerProperties } from "@rarui/typings";
+import { DatepickerProperties } from "@rarui/typings";
 import { Middleware, Placement } from "@floating-ui/react";
 
 export interface DatepickerTyping extends DatepickerProperties {
-  /**
-   * Specifies the input properties for the datepicker component.
-   * This should be an object of type InputProperties, which defines various attributes and behaviors for the input field within the datepicker.
-   * @TJS-type Input
-   */
-  input?: InputProperties;
   /**
    * Represents all of the things React can render.
    * While ReactElement only represents JSX, ReactNode represents everything that can be rendered, allowing for a custom input component.

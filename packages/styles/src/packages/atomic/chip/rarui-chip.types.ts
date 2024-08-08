@@ -7,7 +7,7 @@ import {
   StandardLonghandProperties,
 } from "../../../index.types";
 
-export type ChipVariants = RecipeVariants<typeof chipStyles.chip>;
+export type ChipVariants = NonNullable<RecipeVariants<typeof chipStyles.chip>>;
 
 type ChipDynamicProperties = Pick<StandardLonghandProperties, "textTransform">;
 

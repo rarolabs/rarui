@@ -72,5 +72,4 @@ export interface DatepickerTyping {
   onChange: (date: Date | Date[] | null) => void;
 }
 
-export type DatepickerProperties = DatepickerTyping &
-  Omit<DatepickerTyping, "input">;
+export type DatepickerProperties = Omit<DatepickerTyping, "input">;

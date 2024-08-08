@@ -22,6 +22,7 @@ export type Color = {
   oldHue: number;
   source: string;
 };
+
 export type ColorPickerProperties = {
   /**
    * Hexadecimal color to be displayed as initial color

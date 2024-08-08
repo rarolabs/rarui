@@ -1,5 +1,5 @@
 import { ReactNode, ButtonHTMLAttributes } from "react";
-import { ButtonProperties } from "packages/typings/src";
+import { ButtonProperties } from "@rarui/typings";
 
 export interface ButtonTyping extends ButtonProperties {
   /**

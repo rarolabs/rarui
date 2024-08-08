@@ -8,11 +8,6 @@ export interface AvatarTyping {
    * @TJS-type React.ReactNode
    */
   children: ReactNode;
-  /**
-   * Renders a Badge component along with the Avatar. The badge prop accepts an object of type Badge, representing the Badge component.
-   * @TJS-type Badge
-   */
-  badge?: BadgeProps;
 }
 
 export type AvatarProps = AvatarProperties &
