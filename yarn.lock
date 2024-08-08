@@ -4672,6 +4672,7 @@ __metadata:
   resolution: "@rarui-react/components@workspace:packages/implementations/react"
   dependencies:
     "@floating-ui/react": "npm:^0.26.13"
+    "@rarui/typings": "workspace:^"
     "@rarui/webpack": "workspace:^"
     dotenv: "npm:^16.4.5"
     react-datepicker: "npm:^6.9.0"
@@ -5233,9 +5234,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui/typings@workspace:packages/core/typings":
+"@rarui/typings@workspace:^, @rarui/typings@workspace:packages/typings":
   version: 0.0.0-use.local
-  resolution: "@rarui/typings@workspace:packages/core/typings"
+  resolution: "@rarui/typings@workspace:packages/typings"
   dependencies:
     "@rarui/webpack": "workspace:^"
   languageName: unknown

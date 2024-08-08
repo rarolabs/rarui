@@ -3,6 +3,6 @@ tmp
 webpack.config.ts
 alias.ts
 index.d.ts
-packages/core/typings
+packages/typings
 packages/icons/templates
 packages/styles/src/types

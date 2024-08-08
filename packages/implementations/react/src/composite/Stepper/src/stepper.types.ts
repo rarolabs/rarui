@@ -1,5 +1,5 @@
 import { HTMLAttributes, ReactElement } from "react";
-import { StepperVariants } from "@rarui/styles";
+import { StepperProperties } from "@rarui/typings";
 import { StepperStep } from "./components/Step";
 
 export interface StepperComponents {
@@ -14,7 +14,6 @@ export interface StepperTyping {
   children: ReactElement | ReactElement[];
 }
 
-export type StepperProperties = StepperTyping & StepperVariants;
-
-export type StepperProps = StepperProperties &
+export type StepperProps = StepperTyping &
+  StepperProperties &
   Omit<HTMLAttributes<HTMLOListElement>, "children">;

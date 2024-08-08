@@ -1,21 +1,9 @@
 import { ReactNode } from "react";
+import { ToastProviderProperties } from "@rarui/typings";
 
-export interface ToastProviderProperties {
+export interface ToastProviderProps extends ToastProviderProperties {
   /**
    * @TJS-type React.ReactNode
    */
   children: ReactNode;
-  /**
-   * Position of the toast.
-   * @default bottomRight
-   */
-  placement?:
-    | "bottomRight"
-    | "bottomLeft"
-    | "bottomCenter"
-    | "topCenter"
-    | "topRight"
-    | "topLeft";
 }
-
-export type ToastProviderProps = ToastProviderProperties;

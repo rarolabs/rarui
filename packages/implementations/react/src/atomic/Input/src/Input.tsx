@@ -4,8 +4,8 @@ import React, {
   forwardRef,
   useRef,
 } from "react";
-import { useRefObjectAsForwardedRef } from "@rarui/typings";
 import { input } from "@rarui/styles";
+import { useRefObjectAsForwardedRef } from "@rarui-react/components/src/types";
 
 import { InputLeading, InputPassword, InputSearch } from "./components";
 import { _InputProps, InputComponents } from "./input.types";

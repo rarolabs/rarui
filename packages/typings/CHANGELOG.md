@@ -2,6 +2,12 @@
 
 This package is intended for internal use in creating components with polymorphic typing.
 
+## 2024-08-07 `2.0.0`
+
+#### 🎉 New features
+
+- Added all agnostic types of the components and removed useRefObjectAsForwardedRef hook and types that support dynamic typing of polymorphic components. ([#88](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/88) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
+
 ## 2024-03-22 `1.0.0`
 
 #### 🎉 New features

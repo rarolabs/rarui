@@ -5,11 +5,11 @@ import React, {
   useEffect,
   useImperativeHandle,
 } from "react";
+import { button } from "@rarui/styles";
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "@rarui/typings";
-import { button } from "@rarui/styles";
+} from "@rarui-react/components/src/types";
 
 import { _ButtonProps } from "./button.types";
 

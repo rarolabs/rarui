@@ -1,11 +1,7 @@
-import { DropdownVariants } from "@rarui/styles";
+import { DropdownItemProperties } from "@rarui/typings";
 import { HTMLAttributes, ReactNode } from "react";
 
-interface DropdownItemTyping {
-  /**
-   * The name of the dropdown item. This is typically the text that is displayed for the item.
-   */
-  name?: string;
+interface DropdownItemTyping extends DropdownItemProperties {
   /**
    * The content of the dropdown item. This can include text, icons, or other React elements.
    * @TJS-type React.ReactNode
@@ -18,8 +14,5 @@ interface DropdownItemTyping {
   icon?: ReactNode;
 }
 
-export type DropdownItemProperties = DropdownItemTyping &
-  Pick<DropdownVariants, "selected">;
-
-export type DropdownItemProps = DropdownItemProperties &
+export type DropdownItemProps = DropdownItemTyping &
   HTMLAttributes<HTMLElement>;

@@ -4,11 +4,11 @@ import React, {
   useEffect,
   useImperativeHandle,
 } from "react";
+import { sideNavigation } from "@rarui/styles";
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "@rarui/typings";
-import { sideNavigation } from "@rarui/styles";
+} from "@rarui-react/components/src/types";
 import { SideNavigationItemProps } from "./item.types";
 
 const SideNavigationItem = forwardRef(

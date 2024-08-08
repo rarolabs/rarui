@@ -1,7 +1,7 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { IconSprinkle } from "@rarui/styles";
+import { IconProperties } from "@rarui/typings";
 
-export interface IconProperties extends IconSprinkle {
+export interface IconTyping extends IconProperties {
   /**
    * The SVG contents to display in the Icon.
    * @TJS-type React.ReactNode
@@ -9,5 +9,5 @@ export interface IconProperties extends IconSprinkle {
   source: ReactNode;
 }
 
-export type IconProps = IconProperties &
+export type IconProps = IconTyping &
   Omit<HTMLAttributes<HTMLDivElement>, "color">;

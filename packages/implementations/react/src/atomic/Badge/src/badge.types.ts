@@ -1,5 +1,5 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { BadgeVariants } from "@rarui/styles";
+import { BadgeProperties } from "@rarui/typings";
 
 export interface BadgeTyping {
   /**
@@ -9,5 +9,4 @@ export interface BadgeTyping {
   children: ReactNode;
 }
 
-export type BadgeProperties = BadgeTyping & BadgeVariants;
 export type BadgeProps = BadgeProperties & HTMLAttributes<HTMLDivElement>;

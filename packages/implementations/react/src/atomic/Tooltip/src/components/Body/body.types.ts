@@ -1,5 +1,5 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { TooltipVariants } from "@rarui/styles";
+import { TooltipBodyProperties } from "@rarui/typings";
 
 interface TooltipBody {
   /**
@@ -9,7 +9,6 @@ interface TooltipBody {
   children?: ReactNode;
 }
 
-export type TooltipBodyProperties = TooltipBody &
-  Exclude<TooltipVariants, "inverted">;
 export type TooltipBodyProps = TooltipBodyProperties &
+  TooltipBody &
   HTMLAttributes<HTMLElement>;

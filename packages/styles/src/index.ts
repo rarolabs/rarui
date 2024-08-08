@@ -87,8 +87,5 @@ export type {
   SidebarSprinkle,
 } from "./packages/composite/sidebar";
 export type { SideNavigationVariants } from "./packages/composite/sideNavigation";
-export type {
-  StepperVariants,
-  StepperStepVariants,
-} from "./packages/composite/stepper";
+export type { StepperVariants } from "./packages/composite/stepper";
 export type { TabsVariants } from "./packages/composite/tabs";

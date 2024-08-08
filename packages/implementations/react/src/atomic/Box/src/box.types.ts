@@ -1,7 +1,7 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { BoxSprinkle } from "@rarui/styles";
+import { BoxProperties } from "@rarui/typings";
 
-export interface BoxProperties extends BoxSprinkle {
+export interface BoxTyping extends BoxProperties {
   /**
    * Element to be rendered inside the Box component.
    * @TJS-type React.ReactNode
@@ -9,5 +9,4 @@ export interface BoxProperties extends BoxSprinkle {
   children?: ReactNode;
 }
 
-export type _BoxProps = BoxProperties &
-  Omit<HTMLAttributes<HTMLElement>, "color">;
+export type _BoxProps = BoxTyping & Omit<HTMLAttributes<HTMLElement>, "color">;

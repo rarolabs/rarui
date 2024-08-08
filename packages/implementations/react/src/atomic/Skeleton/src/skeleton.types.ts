@@ -1,11 +1,4 @@
 import { HTMLAttributes } from "react";
-import { SkeletonSprinkle } from "@rarui/styles";
-
-export interface SkeletonProperties extends SkeletonSprinkle {
-  /**
-   * This is an attribute used to identify a DOM node for testing purposes.
-   */
-  "data-testid"?: string;
-}
+import { SkeletonProperties } from "@rarui/typings";
 
 export type SkeletonProps = SkeletonProperties & HTMLAttributes<HTMLDivElement>;

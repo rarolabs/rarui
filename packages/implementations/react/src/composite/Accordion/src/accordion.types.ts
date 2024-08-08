@@ -1,4 +1,5 @@
 import { HTMLAttributes, ReactNode } from "react";
+import { AccordionProperties } from "@rarui/typings";
 import { AccordionBody, AccordionItem, AccordionHeader } from "./components";
 
 export interface AccordionComponents {
@@ -7,24 +8,13 @@ export interface AccordionComponents {
   Header: typeof AccordionHeader;
 }
 
-export interface AccordionTyping {
+export interface AccordionTyping extends AccordionProperties {
   /**
    * The content of the accordion.
    * @TJS-type React.ReactNode
    */
   children?: ReactNode;
-  /**
-   * Informs which accordion item is open by default, this value must be the same as informed in the index of each item
-   */
-  selectedDefault?: string;
-  /**
-   * Disables the accordion, disallowing user interaction.
-   * @default false
-   */
-  disabled?: boolean;
 }
 
-export type AccordionProperties = AccordionTyping;
-
-export type AccordionProps = AccordionProperties &
+export type AccordionProps = AccordionTyping &
   Omit<HTMLAttributes<HTMLElement>, "color">;

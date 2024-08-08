@@ -1,9 +1,5 @@
 import { ButtonHTMLAttributes } from "react";
-
-export interface DatepickerFooterProperties {
-  setSelected?: () => void;
-  clear?: () => void;
-}
+import { DatepickerFooterProperties } from "@rarui/typings";
 
 export type DatepickerFooterProps = DatepickerFooterProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

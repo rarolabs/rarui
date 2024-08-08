@@ -1,5 +1,7 @@
 import { RecipeVariants } from "@vanilla-extract/recipes";
 import { stepperStyles } from "./rarui-stepper.css";
 
-export type StepperVariants = RecipeVariants<typeof stepperStyles.stepper>;
-export type StepperStepVariants = RecipeVariants<typeof stepperStyles.circle>;
+export type StepperVariants = NonNullable<
+  RecipeVariants<typeof stepperStyles.stepper> &
+    RecipeVariants<typeof stepperStyles.circle>
+>;

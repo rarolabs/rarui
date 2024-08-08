@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { AccordionVariants } from "@rarui/styles";
+import { AccordionBodyProperties } from "@rarui/typings";
 
-export interface AccordionBodyTyping {
+export interface AccordionBodyTyping extends AccordionBodyProperties {
   /**
    * The content of the accordion body.
    * @TJS-type React.ReactNode
@@ -9,8 +9,5 @@ export interface AccordionBodyTyping {
   children: ReactNode;
 }
 
-export type AccordionBodyProperties = AccordionBodyTyping &
-  Pick<AccordionVariants, "padding">;
-
-export type AccordionBodyProps = AccordionBodyProperties &
+export type AccordionBodyProps = AccordionBodyTyping &
   Omit<HTMLAttributes<HTMLElement>, "color">;

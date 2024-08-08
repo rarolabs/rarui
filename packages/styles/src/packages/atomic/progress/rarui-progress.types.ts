@@ -2,7 +2,9 @@ import { RecipeVariants } from "@vanilla-extract/recipes";
 import { AddDollar } from "../../../index.types";
 import { progressStyles, progressColorProperties } from "./rarui-progress.css";
 
-export type ProgressVariants = RecipeVariants<typeof progressStyles.circle>;
+export type ProgressVariants = NonNullable<
+  RecipeVariants<typeof progressStyles.circle>
+>;
 
 export interface ProgressSprinkle {
   /**

@@ -19,7 +19,7 @@ const packages = paths.reduce((prev: { [key: string]: string }, curr) => {
 export const aliasItems = {
   "@rarui/tokens": join(rootDir, "./packages/tokens"),
   "@rarui/styles": join(rootDir, "./packages/styles/src"),
-  "@rarui/typings": join(rootDir, "./packages/core/typings/src"),
+  "@rarui/typings": join(rootDir, "./packages/typings/src"),
   "@rarui/webpack": join(rootDir, "./packages/core/webpack/src"),
   "@rarui-react/theme-provider": packages["@rarui-react/provider"],
   ...packages,

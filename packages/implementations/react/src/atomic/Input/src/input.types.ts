@@ -1,5 +1,5 @@
 import { InputHTMLAttributes, ReactNode } from "react";
-import { InputVariants } from "@rarui/styles";
+import type { InputProperties } from "@rarui/typings";
 import { InputLeading, InputPassword, InputSearch } from "./components";
 
 export interface InputComponents {
@@ -8,7 +8,7 @@ export interface InputComponents {
   Search: typeof InputSearch;
 }
 
-export interface InputTyping {
+export interface InputTyping extends InputProperties {
   /**
    * Componet to be displayed on start input.
    * @TJS-type React.ReactNode
@@ -21,6 +21,5 @@ export interface InputTyping {
   leadingEnd?: ReactNode;
 }
 
-export type InputProperties = InputTyping & InputVariants;
-export type _InputProps = InputProperties &
+export type _InputProps = InputTyping &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

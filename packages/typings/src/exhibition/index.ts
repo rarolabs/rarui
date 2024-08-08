@@ -1,0 +1,13 @@
+export type { AvatarProperties } from "./avatar.types.ts";
+export type { BadgeProperties } from "./badge.types.ts";
+export type { DividerProperties } from "./divider.types.ts";
+export type { IconProperties } from "./icon.types.ts";
+export type { StepperProperties } from "./stepper.types.ts";
+export type { TitleProperties } from "./title.types.ts";
+export type { TextProperties } from "./text.types.ts";
+export type { LabelProperties } from "./label.types.ts";
+export type { TooltipProperties } from "./tooltip.types.ts";
+export type { TooltipBodyProperties } from "./tooltipBody.types.ts";
+export type { TooltipFooterProperties } from "./tooltipFooter.types.ts";
+export type { TooltipHeaderProperties } from "./tooltipHeader.types.ts";
+export type { StepperStepProperties } from "./stepperStep.types.ts";

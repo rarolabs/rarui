@@ -1,16 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { StepperStepVariants } from "@rarui/styles";
+import { StepperStepProperties } from "@rarui/typings";
 
-export interface StepperStepTyping {
-  /**
-   * The title of the step. This provides a brief summary of the step's purpose.
-   */
-
-  title?: string;
-  /**
-   * A more detailed description of the step. This can provide additional context or instructions.
-   */
-  description?: string;
+export interface StepperStepTyping extends StepperStepProperties {
   /**
    * The content of the step, which can include text, icon, or other React elements.
    * @TJS-type React.ReactNode
@@ -18,6 +9,5 @@ export interface StepperStepTyping {
   children: ReactNode;
 }
 
-export type StepperStepProperties = StepperStepTyping & StepperStepVariants;
-export type StepperStepProps = StepperStepProperties &
+export type StepperStepProps = StepperStepTyping &
   HTMLAttributes<HTMLLIElement>;
