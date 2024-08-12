@@ -4552,6 +4552,7 @@ __metadata:
   dependencies:
     "@rarui/webpack": "workspace:^"
   peerDependencies:
+    "@rarui/typings": "workspace:^"
     react: ^16.8 || ^17.0 || ^18.0
     react-dom: ^16.8 || ^17.0 || ^18.0
   languageName: unknown
@@ -4671,8 +4672,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@rarui-react/components@workspace:packages/implementations/react"
   dependencies:
-    "@floating-ui/react": "npm:^0.26.13"
-    "@rarui/typings": "workspace:^"
+    "@rarui/typings": "npm:^2.0.0-rc.1"
     "@rarui/webpack": "workspace:^"
     dotenv: "npm:^16.4.5"
     react-datepicker: "npm:^6.9.0"
@@ -5234,7 +5234,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rarui/typings@workspace:^, @rarui/typings@workspace:packages/typings":
+"@rarui/typings@npm:^2.0.0-rc.1":
+  version: 2.0.0-rc.1
+  resolution: "@rarui/typings@npm:2.0.0-rc.1"
+  checksum: 671fb9ab6eb96638ba428d731bf9c4313b872ca30dfe524db2376c911ff9e53b518834c15033c3085d273726771142e8302ad86a814868e7632ff06b0d7269d4
+  languageName: node
+  linkType: hard
+
+"@rarui/typings@workspace:packages/typings":
   version: 0.0.0-use.local
   resolution: "@rarui/typings@workspace:packages/typings"
   dependencies:

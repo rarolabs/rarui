@@ -10,7 +10,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "yarn g:dts --external-inlines @vanilla-extract/recipes @vanilla-extract/css csstype  -o dist/index.ts src/index.ts",
+    "build": "yarn g:dts --external-inlines=@vanilla-extract/recipes @vanilla-extract/css csstype -o dist/index.ts src/index.ts --export-referenced-types=false",
     "clean": "rm -rf dist",
     "version": "yarn version"
   },

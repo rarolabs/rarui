@@ -1,7 +1,6 @@
-import React from "react";
 import { Preview } from "@storybook/react";
 import { themes } from "@storybook/theming";
-import { ThemeDocsProvider, ThemeRaruiProvider, dark, light } from "./theme";
+import { ThemeDocsProvider, dark, light } from "./theme";
 
 const basePreview: Preview = {
   parameters: {
@@ -25,13 +24,6 @@ const basePreview: Preview = {
       source: "code",
     },
   },
-  // decorators: [
-  //   (Story) => (
-  //     <ThemeRaruiProvider>
-  //       <Story />
-  //     </ThemeRaruiProvider>
-  //   ),
-  // ],
 };
 
 export default basePreview;

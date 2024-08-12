@@ -8,7 +8,7 @@ export const externalLibs = {
   react: "react",
   "react-dom": "react-dom",
   "react-datepicker": "react-datepicker",
-  vue: "vue",
+  "react-color": "react-color",
 };
 
 export const externalPackages = {

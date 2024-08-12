@@ -36,13 +36,12 @@
     "typeRoots": ["./node_modules/@types", "./types"],
     "paths": {
       ".storybook": ["./.storybook"],
+      "@rarui/tokens": ["./packages/tokens"],
+      "@rarui/webpack": ["./packages/core/webpack"],
+      "@rarui/icons": ["./packages/icons"],
       "@rarui/scripts": ["./packages/core/scripts/src"],
       "@rarui/stencil": ["./packages/core/stencil/src"],
-      "@rarui/webpack": ["./packages/core/webpack/src"],
-      "@rarui/typings": ["packages/typings/src"],
       "@rarui/styles": ["./packages/styles/src"],
-      "@rarui/tokens": ["./packages/tokens"],
-      "@rarui/icons": ["./packages/icons"],
       "@rarui/components": ["./packages/implementations/web-components/src/"],
       "@rarui-react/avatar": [
         "./packages/implementations/react/src/atomic/Avatar/src"
