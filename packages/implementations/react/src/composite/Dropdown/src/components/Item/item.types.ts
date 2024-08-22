@@ -1,7 +1,7 @@
-import { DropdownItemProperties } from "@rarui/typings";
 import { HTMLAttributes, ReactNode } from "react";
+import { DropdownItemProps as DropdownItemTyping } from "@rarui/typings";
 
-interface DropdownItemTyping extends DropdownItemProperties {
+interface DropdownItemProperties extends DropdownItemTyping {
   /**
    * The content of the dropdown item. This can include text, icons, or other React elements.
    * @TJS-type React.ReactNode
@@ -14,5 +14,5 @@ interface DropdownItemTyping extends DropdownItemProperties {
   icon?: ReactNode;
 }
 
-export type DropdownItemProps = DropdownItemTyping &
+export type DropdownItemProps = DropdownItemProperties &
   HTMLAttributes<HTMLElement>;

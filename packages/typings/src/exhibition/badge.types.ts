@@ -1,3 +1,3 @@
 import { BadgeVariants } from "@rarui/styles";
 
-export type BadgeProperties = BadgeVariants;
+export type BadgeProps = BadgeVariants;

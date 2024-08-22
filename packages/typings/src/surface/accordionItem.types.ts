@@ -1,4 +1,4 @@
-export interface AccordionItemProperties {
+export interface AccordionItemProps {
   /**
    * Unique indicator to identify accordion items
    */

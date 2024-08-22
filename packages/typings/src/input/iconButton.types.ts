@@ -8,4 +8,4 @@ export interface IconButtonTyping {
   disabled?: boolean;
 }
 
-export type IconButtonProperties = IconButtonTyping & IconButtonVariants;
+export type IconButtonProps = IconButtonTyping & IconButtonVariants;

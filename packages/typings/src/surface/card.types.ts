@@ -1,3 +1,3 @@
 import { CardSprinkle, CardVariants } from "@rarui/styles";
 
-export type CardProperties = CardVariants & CardSprinkle;
+export type CardProps = CardVariants & CardSprinkle;

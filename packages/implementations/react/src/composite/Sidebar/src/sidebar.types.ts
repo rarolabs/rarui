@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { SidebarProperties } from "@rarui/typings";
+import { SidebarProps as SidebarTyping } from "@rarui/typings";
 
-export interface SidebarTyping extends SidebarProperties {
+export interface SidebarProperties extends SidebarTyping {
   /**
    * The content of the sidebar.
    * @TJS-type React.ReactNode
@@ -9,4 +9,4 @@ export interface SidebarTyping extends SidebarProperties {
   children: ReactNode;
 }
 
-export type SidebarProps = SidebarTyping & HTMLAttributes<HTMLDivElement>;
+export type SidebarProps = SidebarProperties & HTMLAttributes<HTMLDivElement>;

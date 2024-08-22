@@ -13,18 +13,6 @@
       "required": true
     },
     {
-      "description": "Title of the sideNavigation",
-      "type": "string",
-      "title": "name",
-      "required": true
-    },
-    {
-      "description": "Description of the sideNavigation.",
-      "type": "string",
-      "title": "description",
-      "required": false
-    },
-    {
       "description": "Componet to be displayed on start input.",
       "type": "React.ReactNode",
       "title": "leadingStart",
@@ -34,6 +22,18 @@
       "description": "Componet to be displayed on end input.",
       "type": "React.ReactNode",
       "title": "leadingEnd",
+      "required": false
+    },
+    {
+      "description": "Title of the sideNavigation",
+      "type": "string",
+      "title": "name",
+      "required": true
+    },
+    {
+      "description": "Description of the sideNavigation.",
+      "type": "string",
+      "title": "description",
       "required": false
     },
     {

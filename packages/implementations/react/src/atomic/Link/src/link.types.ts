@@ -1,7 +1,7 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { LinkProperties } from "@rarui/typings";
+import { LinkProps as LinkTyping } from "@rarui/typings";
 
-export interface LinkTyping {
+export interface LinkProperties extends LinkTyping {
   /**
    * The content of the link.
    * @TJS-type React.ReactNode
@@ -9,6 +9,4 @@ export interface LinkTyping {
   children: ReactNode;
 }
 
-export type _LinkProps = LinkTyping &
-  LinkProperties &
-  HTMLAttributes<HTMLElement>;
+export type _LinkProps = LinkProperties & HTMLAttributes<HTMLElement>;

@@ -1,3 +1,3 @@
 import { TooltipVariants } from "@rarui/styles";
 
-export type TooltipBodyProperties = Pick<TooltipVariants, "padding">;
+export type TooltipBodyProps = Pick<TooltipVariants, "padding">;

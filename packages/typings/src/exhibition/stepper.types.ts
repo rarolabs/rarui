@@ -1,3 +1,3 @@
 import { StepperVariants } from "@rarui/styles";
 
-export type StepperProperties = Pick<StepperVariants, "direction">;
+export type StepperProps = Pick<StepperVariants, "direction">;

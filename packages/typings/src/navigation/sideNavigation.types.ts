@@ -11,5 +11,4 @@ export interface SideNavigationTyping {
   description?: string;
 }
 
-export type SideNavigationProperties = SideNavigationTyping &
-  SideNavigationVariants;
+export type SideNavigationProps = SideNavigationTyping & SideNavigationVariants;

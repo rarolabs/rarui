@@ -15,4 +15,4 @@ export interface ToggleTyping {
   label?: string;
 }
 
-export type ToggleProperties = ToggleTyping & ToggleVariants;
+export type ToggleProps = ToggleTyping & ToggleVariants;

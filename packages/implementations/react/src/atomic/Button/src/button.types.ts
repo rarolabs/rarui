@@ -1,7 +1,7 @@
 import { ReactNode, ButtonHTMLAttributes } from "react";
-import { ButtonProperties } from "@rarui/typings";
+import { ButtonProps as ButtonTyping } from "@rarui/typings";
 
-export interface ButtonTyping extends ButtonProperties {
+export interface ButtonProperties extends ButtonTyping {
   /**
    * The content of the button.
    * @TJS-type React.ReactNode
@@ -9,5 +9,5 @@ export interface ButtonTyping extends ButtonProperties {
   children: ReactNode;
 }
 
-export type _ButtonProps = ButtonTyping &
+export type _ButtonProps = ButtonProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

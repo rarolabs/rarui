@@ -1,5 +1,6 @@
 import { InputHTMLAttributes } from "react";
-import { RadioButtonProperties } from "@rarui/typings";
+import { RadioButtonProps as RadioButtontyping } from "@rarui/typings";
 
+type RadioButtonProperties = RadioButtontyping;
 export type RadioButtonProps = RadioButtonProperties &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

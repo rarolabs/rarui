@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { TabsItemProperties } from "@rarui/typings";
+import { TabsItemProps as TabsItemTyping } from "@rarui/typings";
 
-export interface TabsItemTyping extends TabsItemProperties {
+export interface TabsItemProperties extends TabsItemTyping {
   /**
    * Label of the tabpanel. Used to pair with it's corresponding tab control.
    */
@@ -13,5 +13,5 @@ export interface TabsItemTyping extends TabsItemProperties {
   children?: ReactNode;
 }
 
-export type TabsItemProps = TabsItemTyping &
+export type TabsItemProps = TabsItemProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

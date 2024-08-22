@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { TooltipHeaderProperties } from "@rarui/typings";
+import { TooltipHeaderProps as TooltipHeaderTyping } from "@rarui/typings";
 
-interface TooltipHeaderTyping extends TooltipHeaderProperties {
+interface TooltipHeaderProperties extends TooltipHeaderTyping {
   /**
    * The content of the modal header.
    * @TJS-type React.ReactNode
@@ -9,5 +9,5 @@ interface TooltipHeaderTyping extends TooltipHeaderProperties {
   children?: ReactNode;
 }
 
-export type TooltipHeaderProps = TooltipHeaderTyping &
+export type TooltipHeaderProps = TooltipHeaderProperties &
   HTMLAttributes<HTMLElement>;

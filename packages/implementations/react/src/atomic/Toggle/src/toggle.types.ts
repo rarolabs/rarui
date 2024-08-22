@@ -1,7 +1,7 @@
 import { InputHTMLAttributes, ReactNode } from "react";
-import { ToggleProperties } from "@rarui/typings";
+import { ToggleProps as ToggleTyping } from "@rarui/typings";
 
-export interface ToggleTyping extends ToggleProperties {
+export interface ToggleProperties extends ToggleTyping {
   /**
    * The content of the icons. Receives an object with 2 optional props, "unchecked" and "checked" both as ReactNode.
    */
@@ -11,5 +11,5 @@ export interface ToggleTyping extends ToggleProperties {
   };
 }
 
-export type ToggleProps = ToggleTyping &
+export type ToggleProps = ToggleProperties &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

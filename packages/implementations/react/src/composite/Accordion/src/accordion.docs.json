@@ -82,6 +82,12 @@
           "required": false
         },
         {
+          "description": "The SVG contents to display in the accordion header.",
+          "type": "React.ReactNode",
+          "title": "icon",
+          "required": false
+        },
+        {
           "description": "The title to display in the accordion header.",
           "type": "string",
           "title": "title",
@@ -91,12 +97,6 @@
           "description": "The subtitle to display in the accordion header.",
           "type": "string",
           "title": "subtitle",
-          "required": false
-        },
-        {
-          "description": "The SVG contents to display in the accordion header.",
-          "type": "React.ReactNode",
-          "title": "icon",
           "required": false
         },
         {

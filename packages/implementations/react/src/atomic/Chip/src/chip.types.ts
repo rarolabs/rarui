@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { ChipProperties } from "@rarui/typings";
+import { ChipProps as ChipTyping } from "@rarui/typings";
 
-export interface ChipTyping extends ChipProperties {
+export interface ChipProperties extends ChipTyping {
   /**
    * The content of the button.
    * @TJS-type React.ReactNode
@@ -9,4 +9,5 @@ export interface ChipTyping extends ChipProperties {
   children: ReactNode;
 }
 
-export type ChipProps = ChipTyping & ButtonHTMLAttributes<HTMLButtonElement>;
+export type ChipProps = ChipProperties &
+  ButtonHTMLAttributes<HTMLButtonElement>;

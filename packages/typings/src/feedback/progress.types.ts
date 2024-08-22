@@ -8,4 +8,4 @@ export interface ProgressTyping {
   percentage: number;
 }
 
-export type ProgressProperties = ProgressTyping & ProgressSprinkle;
+export type ProgressProps = ProgressTyping & ProgressSprinkle;

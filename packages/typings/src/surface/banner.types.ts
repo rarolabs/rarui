@@ -8,22 +8,12 @@ export interface BannerTyping {
   onClose?: () => void;
   /**
    * The appearance of the banner. This can be used to set the color of the banner.
-   * @TJS-type "brand" | "error" | "info" | "warning" | "neutral" | "inverted";
    */
-  appearance?:
-    | "brand"
-    | "error"
-    | "info"
-    | "warning"
-    | "neutral"
-    | "inverted"
-    | undefined;
-
+  appearance?: "brand" | "error" | "info" | "warning" | "neutral" | "inverted";
   /**
    * Determines whether the banner message should float above the content. This can be useful for ensuring the message remains visible even as the user scrolls.
-   * @TJS-type boolean;
    */
   floating?: boolean;
 }
 
-export type BannerProperties = BannerTyping & BannerVariants;
+export type BannerProps = BannerTyping & BannerVariants;

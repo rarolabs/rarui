@@ -7,6 +7,26 @@
   "docLink": "https://rarui.com.br/documentation/src-components/toggle",
   "props": [
     {
+      "description": "The content of the icons. Receives an object with 2 optional props, \"unchecked\" and \"checked\" both as ReactNode.",
+      "type": "object",
+      "properties": {
+        "unchecked": {
+          "$ref": "#/definitions/React.ReactNode",
+          "description": "Represents all of the things React can render.\n\nWhere {@link ReactElement} only represents JSX, `ReactNode` represents everything that can be rendered.",
+          "title": "unchecked"
+        },
+        "checked": {
+          "$ref": "#/definitions/React.ReactNode",
+          "description": "Represents all of the things React can render.\n\nWhere {@link ReactElement} only represents JSX, `ReactNode` represents everything that can be rendered.",
+          "title": "checked"
+        }
+      },
+      "additionalProperties": false,
+      "propertyOrder": ["unchecked", "checked"],
+      "title": "icons",
+      "required": false
+    },
+    {
       "description": "The name of the input element.",
       "type": "string",
       "title": "name",
@@ -22,12 +42,6 @@
       "description": "Text to be rendered inside the component",
       "type": "string",
       "title": "label",
-      "required": false
-    },
-    {
-      "description": "The content of the icons. Receives an object with 2 optional props, \"unchecked\" and \"checked\" both as ReactNode.",
-      "type": "React.ReactNode",
-      "title": "icons",
       "required": false
     },
     {

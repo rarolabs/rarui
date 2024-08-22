@@ -1,3 +1,4 @@
 import { ProgressVariants } from "@rarui/styles";
+import { ProgressProps } from "./progress.types";
 
-export type ProgressCircleProperties = ProgressVariants;
+export type ProgressCircleProps = ProgressProps & ProgressVariants;

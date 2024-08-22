@@ -1,8 +1,8 @@
 import { ReactNode, HTMLAttributes } from "react";
 import { BadgeProps } from "@rarui-react/badge";
-import { AvatarProperties } from "@rarui/typings";
+import { AvatarProps as AvatarTypings } from "@rarui/typings";
 
-export interface AvatarTyping {
+export interface AvatarProperties extends AvatarTypings {
   /**
    * The content of the Avatar. This prop accepts a ReactNode, allowing you to pass any React element or content as the Avatar's children.
    * @TJS-type React.ReactNode
@@ -11,6 +11,6 @@ export interface AvatarTyping {
 }
 
 export type AvatarProps = AvatarProperties &
-  Omit<AvatarTyping, "badge"> & {
+  Omit<AvatarProperties, "badge"> & {
     badge?: BadgeProps;
   } & HTMLAttributes<HTMLDivElement>;

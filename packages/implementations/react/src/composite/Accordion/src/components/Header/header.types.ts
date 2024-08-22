@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { AccordionHeaderProperties } from "@rarui/typings";
+import { AccordionHeaderProps as AccordionHeaderTyping } from "@rarui/typings";
 
-export interface AccordionHeaderTyping extends AccordionHeaderProperties {
+export interface AccordionHeaderProperties extends AccordionHeaderTyping {
   /**
    * The content of the accordion header.
    * @TJS-type React.ReactNode | ((data: { selected: string; index: string }) => React.ReactNode);
@@ -16,5 +16,5 @@ export interface AccordionHeaderTyping extends AccordionHeaderProperties {
   icon?: ReactNode;
 }
 
-export type AccordionHeaderProps = AccordionHeaderTyping &
+export type AccordionHeaderProps = AccordionHeaderProperties &
   Omit<ButtonHTMLAttributes<HTMLButtonElement>, "children">;

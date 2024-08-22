@@ -1,6 +1,6 @@
 import { TitleSprinkle } from "@rarui/styles";
 
-export interface TitleProperties extends TitleSprinkle {
+export interface TitleProps extends TitleSprinkle {
   /**
    * Type of html tag to create for the title.
    * @default h1

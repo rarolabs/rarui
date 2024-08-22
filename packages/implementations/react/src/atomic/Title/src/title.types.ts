@@ -1,7 +1,7 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { TitleProperties } from "@rarui/typings";
+import { TitleProps as TitleTyping } from "@rarui/typings";
 
-export interface TitleTyping extends TitleProperties {
+export interface TitleProperties extends TitleTyping {
   /**
    * The content of the title.
    * @TJS-type React.ReactNode
@@ -9,5 +9,5 @@ export interface TitleTyping extends TitleProperties {
   children: ReactNode;
 }
 
-export type TitleProps = TitleTyping &
+export type TitleProps = TitleProperties &
   Omit<HTMLAttributes<HTMLHeadingElement>, "color">;

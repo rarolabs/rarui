@@ -26,4 +26,4 @@ export interface PaginationTyping {
   onPageChange: (page: number) => void;
 }
 
-export type PaginationProperties = PaginationTyping & PaginationVariants;
+export type PaginationProps = PaginationTyping & PaginationVariants;

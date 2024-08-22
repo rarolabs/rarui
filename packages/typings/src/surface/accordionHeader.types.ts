@@ -16,5 +16,5 @@ export interface AccordionHeaderTyping {
   noIconToggle?: boolean;
 }
 
-export type AccordionHeaderProperties = AccordionHeaderTyping &
+export type AccordionHeaderProps = AccordionHeaderTyping &
   Pick<AccordionVariants, "size">;

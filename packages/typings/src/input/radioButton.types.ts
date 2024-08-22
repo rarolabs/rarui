@@ -11,4 +11,4 @@ interface RadioButtonTyping {
   label?: string;
 }
 
-export type RadioButtonProperties = RadioButtonTyping & RadioButtonVariants;
+export type RadioButtonProps = RadioButtonTyping & RadioButtonVariants;

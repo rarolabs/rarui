@@ -1,8 +1,8 @@
 import { InputHTMLAttributes, ReactNode } from "react";
 import { Placement } from "@floating-ui/react";
-import { SelectProperties } from "@rarui/typings";
+import { SelectProps as SelectTyping } from "@rarui/typings";
 
-interface SelectTyping extends SelectProperties {
+interface SelectProperties extends SelectTyping {
   /**
    * Element to be rendered inside the Box of options component.
    * @TJS-type React.ReactNode
@@ -15,7 +15,7 @@ interface SelectTyping extends SelectProperties {
   position?: Placement;
 }
 
-export type SelectProps = SelectTyping &
+export type SelectProps = SelectProperties &
   Omit<
     InputHTMLAttributes<HTMLInputElement>,
     "value" | "size" | "options" | "onChange"

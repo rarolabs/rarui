@@ -11,4 +11,4 @@ export interface CheckboxTyping {
   id: string;
 }
 
-export type CheckboxProperties = CheckboxTyping & CheckboxVariants;
+export type CheckboxProps = CheckboxTyping & CheckboxVariants;

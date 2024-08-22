@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { InputLeadingProperties } from "@rarui/typings";
+import { InputLeadingProps as InputLeadingTyping } from "@rarui/typings";
 
-export interface InputLeadingTyping extends InputLeadingProperties {
+export interface InputLeadingProperties extends InputLeadingTyping {
   /**
    * The content of the Leading.
    * @TJS-type React.ReactNode
@@ -9,5 +9,5 @@ export interface InputLeadingTyping extends InputLeadingProperties {
   children: ReactNode;
 }
 
-export type InputLeadingProps = InputLeadingTyping &
+export type InputLeadingProps = InputLeadingProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

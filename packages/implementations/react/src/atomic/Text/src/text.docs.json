@@ -280,7 +280,7 @@
       "required": false
     },
     {
-      "description": "The **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area.\n\n\n**Initial value**: `auto`",
+      "description": "The **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area. It is also possible to pass a specific value.\n\n\n**Initial value**: `auto`",
       "anyOf": [
         {
           "additionalProperties": false,

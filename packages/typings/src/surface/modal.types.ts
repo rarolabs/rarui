@@ -17,4 +17,4 @@ export interface ModalTyping {
   onDismiss: (open: boolean) => void;
 }
 
-export type ModalProperties = ModalTyping & ModalSprinkle & ModalVariants;
+export type ModalProps = ModalTyping & ModalSprinkle & ModalVariants;

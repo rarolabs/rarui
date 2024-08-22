@@ -1,3 +1,3 @@
 import { IconSprinkle } from "@rarui/styles";
 
-export type IconProperties = IconSprinkle;
+export type IconProps = IconSprinkle;

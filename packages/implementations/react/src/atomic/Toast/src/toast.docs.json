@@ -7,7 +7,7 @@
   "docLink": "https://rarui.com.br/documentation/src-components/toast",
   "props": [
     {
-      "description": "The content of the button.",
+      "description": "The content of the Toast.",
       "type": "React.ReactNode",
       "title": "children",
       "required": false
@@ -47,9 +47,133 @@
       "required": false
     },
     {
-      "description": "Specifies the width of the toast.",
+      "description": "Specifies the width of the toast.\nThe **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area. It is also possible to pass a specific value.\n\n\n**Initial value**: `auto`",
       "default": "420px",
-      "type": "string",
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            }
+          }
+        },
+        {
+          "enum": [
+            "auto",
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "min-intrinsic",
+            "stretch"
+          ],
+          "type": "string"
+        }
+      ],
       "title": "width",
       "required": false
     },

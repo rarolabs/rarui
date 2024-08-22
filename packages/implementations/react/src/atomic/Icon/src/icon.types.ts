@@ -1,7 +1,7 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { IconProperties } from "@rarui/typings";
+import { IconProps as IconTyping } from "@rarui/typings";
 
-export interface IconTyping extends IconProperties {
+export interface IconProperties extends IconTyping {
   /**
    * The SVG contents to display in the Icon.
    * @TJS-type React.ReactNode
@@ -9,5 +9,5 @@ export interface IconTyping extends IconProperties {
   source: ReactNode;
 }
 
-export type IconProps = IconTyping &
+export type IconProps = IconProperties &
   Omit<HTMLAttributes<HTMLDivElement>, "color">;

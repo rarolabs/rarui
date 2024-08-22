@@ -1,7 +1,7 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { StatusProperties } from "@rarui/typings";
+import { StatusProps as StatusTyping } from "@rarui/typings";
 
-interface StatusTyping extends StatusProperties {
+interface StatusProperties extends StatusTyping {
   /**
    * The content of the status component. This prop accepts any React node.
    * @TJS-type React.ReactNode
@@ -9,4 +9,4 @@ interface StatusTyping extends StatusProperties {
   children: ReactNode;
 }
 
-export type StatusProps = StatusTyping & HTMLAttributes<HTMLElement>;
+export type StatusProps = StatusProperties & HTMLAttributes<HTMLElement>;

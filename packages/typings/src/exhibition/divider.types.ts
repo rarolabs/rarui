@@ -1,6 +1,6 @@
 import { DividerSprinkle } from "@rarui/styles";
 
-export interface DividerProperties extends DividerSprinkle {
+export interface DividerProps extends DividerSprinkle {
   /**
    * The direction of the Divider.
    */

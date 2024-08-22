@@ -47,4 +47,4 @@ interface TooltipTyping {
   onVisibility?: (visible: boolean) => void;
 }
 
-export type TooltipProperties = TooltipTyping & TooltipVariants;
+export type TooltipProps = TooltipTyping & TooltipVariants;

@@ -1,5 +1,5 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { CardProperties } from "@rarui/typings";
+import { CardProps as CardTyping } from "@rarui/typings";
 import { CardBody, CardHeader } from "./components";
 
 export interface CardComponents {
@@ -7,7 +7,7 @@ export interface CardComponents {
   Header: typeof CardHeader;
 }
 
-export interface CardTyping extends CardProperties {
+export interface CardProperties extends CardTyping {
   /**
    * The content of the card. This prop accepts any React node.
    * @TJS-type React.ReactNode

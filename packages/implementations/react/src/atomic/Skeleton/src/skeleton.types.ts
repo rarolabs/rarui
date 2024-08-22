@@ -1,4 +1,5 @@
 import { HTMLAttributes } from "react";
-import { SkeletonProperties } from "@rarui/typings";
+import { SkeletonProps as SkeletonTyping } from "@rarui/typings";
 
+type SkeletonProperties = SkeletonTyping;
 export type SkeletonProps = SkeletonProperties & HTMLAttributes<HTMLDivElement>;

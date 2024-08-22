@@ -3,4 +3,4 @@ export interface DatepickerFooterTyping {
   clear?: () => void;
 }
 
-export type DatepickerFooterProperties = DatepickerFooterTyping;
+export type DatepickerFooterProps = DatepickerFooterTyping;

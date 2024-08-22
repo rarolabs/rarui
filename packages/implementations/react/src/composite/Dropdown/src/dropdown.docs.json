@@ -19,13 +19,6 @@
       "required": true
     },
     {
-      "description": "A common feature of select dropdowns is that the dropdown matches the width of the reference regardless of its contents.",
-      "default": false,
-      "type": "boolean",
-      "title": "matchReferenceWidth",
-      "required": false
-    },
-    {
       "description": "Position of the dropdown.",
       "default": "bottom",
       "enum": [
@@ -44,6 +37,13 @@
       ],
       "type": "string",
       "title": "position",
+      "required": false
+    },
+    {
+      "description": "A common feature of select dropdowns is that the dropdown matches the width of the reference regardless of its contents.",
+      "default": false,
+      "type": "boolean",
+      "title": "matchReferenceWidth",
       "required": false
     },
     {
@@ -181,7 +181,7 @@
       "required": false
     },
     {
-      "description": "The **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area.\n\n\n**Initial value**: `auto`",
+      "description": "The **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area. It is also possible to pass a specific value.\n\n\n**Initial value**: `auto`",
       "anyOf": [
         {
           "additionalProperties": false,
@@ -315,7 +315,7 @@
       "required": false
     },
     {
-      "description": "The **`max-width`** CSS property sets the maximum width of an element. It prevents the used value of the `width` property from becoming larger than the value specified by `max-width`.\n\n\n**Initial value**: `none`",
+      "description": "The **`max-width`** CSS property sets the maximum width of an element. It prevents the used value of the `width` property from becoming larger than the value specified by `max-width`. It is also possible to pass a specific value.\n\n\n**Initial value**: `none`",
       "anyOf": [
         {
           "additionalProperties": false,
@@ -479,12 +479,6 @@
           "required": false
         },
         {
-          "description": "The name of the dropdown item. This is typically the text that is displayed for the item.",
-          "type": "string",
-          "title": "name",
-          "required": false
-        },
-        {
           "description": "The content of the dropdown item. This can include text, icons, or other React elements.",
           "type": "React.ReactNode",
           "title": "children",
@@ -494,6 +488,12 @@
           "description": "An icon to be displayed alongside the dropdown item. This can be used to provide a visual representation of the item.",
           "type": "React.ReactNode",
           "title": "icon",
+          "required": false
+        },
+        {
+          "description": "The name of the dropdown item. This is typically the text that is displayed for the item.",
+          "type": "string",
+          "title": "name",
           "required": false
         },
         {

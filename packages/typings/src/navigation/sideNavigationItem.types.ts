@@ -7,5 +7,5 @@ interface SideNavigationItemTypings {
   active?: boolean;
 }
 
-export type SideNavigationItemProperties = SideNavigationItemTypings &
+export type SideNavigationItemProps = SideNavigationItemTypings &
   Pick<SideNavigationVariants, "level">;

@@ -20,4 +20,4 @@ interface TooltipHeader {
   onClose?: () => void;
 }
 
-export type TooltipHeaderProperties = TooltipHeader & TooltipVariants;
+export type TooltipHeaderProps = TooltipHeader & TooltipVariants;

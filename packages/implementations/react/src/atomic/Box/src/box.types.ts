@@ -1,7 +1,7 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { BoxProperties } from "@rarui/typings";
+import { BoxProps as BoxTypings } from "@rarui/typings";
 
-export interface BoxTyping extends BoxProperties {
+export interface BoxProperties extends BoxTypings {
   /**
    * Element to be rendered inside the Box component.
    * @TJS-type React.ReactNode
@@ -9,4 +9,5 @@ export interface BoxTyping extends BoxProperties {
   children?: ReactNode;
 }
 
-export type _BoxProps = BoxTyping & Omit<HTMLAttributes<HTMLElement>, "color">;
+export type _BoxProps = BoxProperties &
+  Omit<HTMLAttributes<HTMLElement>, "color">;

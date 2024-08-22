@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { LabelProperties } from "@rarui/typings";
+import { LabelProps as LabelTyping } from "@rarui/typings";
 
-interface LabelTyping extends LabelProperties {
+interface LabelProperties extends LabelTyping {
   /**
    * The content of the button.
    * @TJS-type React.ReactNode
@@ -9,4 +9,4 @@ interface LabelTyping extends LabelProperties {
   children: ReactNode;
 }
 
-export type LabelProps = LabelTyping & HTMLAttributes<HTMLLabelElement>;
+export type LabelProps = LabelProperties & HTMLAttributes<HTMLLabelElement>;

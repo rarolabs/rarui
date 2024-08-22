@@ -1,5 +1,5 @@
 import { HtmlHTMLAttributes, ReactNode } from "react";
-import { ToastProperties } from "@rarui/typings";
+import { ToastProps as ToastTyping } from "@rarui/typings";
 
 import { ToastProvider } from "./components";
 
@@ -7,7 +7,7 @@ export interface ToastComponents {
   Provider: typeof ToastProvider;
 }
 
-export interface ToastTyping extends ToastProperties {
+export interface ToastProperties extends ToastTyping {
   /**
    * The content of the Toast.
    * @TJS-type React.ReactNode
@@ -15,5 +15,5 @@ export interface ToastTyping extends ToastProperties {
   children?: ReactNode;
 }
 
-export type ToastProps = ToastTyping &
+export type ToastProps = ToastProperties &
   Omit<HtmlHTMLAttributes<HTMLDivElement>, "id" | "size">;

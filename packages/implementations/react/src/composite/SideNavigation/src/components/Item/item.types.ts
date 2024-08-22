@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { SideNavigationItemProperties } from "@rarui/typings";
+import { SideNavigationItemProps as SideNavigationItemTypings } from "@rarui/typings";
 
-interface SideNavigationItemTypings extends SideNavigationItemProperties {
+interface SideNavigationItemProperties extends SideNavigationItemTypings {
   /**
    * The content of the modal header.
    * @TJS-type React.ReactNode
@@ -9,5 +9,5 @@ interface SideNavigationItemTypings extends SideNavigationItemProperties {
   children?: ReactNode;
 }
 
-export type SideNavigationItemProps = SideNavigationItemTypings &
+export type SideNavigationItemProps = SideNavigationItemProperties &
   ButtonHTMLAttributes<HTMLButtonElement>;

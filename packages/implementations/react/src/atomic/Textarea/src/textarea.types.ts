@@ -1,5 +1,6 @@
 import { TextareaHTMLAttributes } from "react";
-import { TextareaProperties } from "@rarui/typings";
+import { TextareaProps as TextareaTyping } from "@rarui/typings";
 
+type TextareaProperties = TextareaTyping;
 export type TextareaProps = TextareaProperties &
   TextareaHTMLAttributes<HTMLTextAreaElement>;

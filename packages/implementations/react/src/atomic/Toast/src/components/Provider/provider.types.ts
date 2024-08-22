@@ -1,9 +1,11 @@
 import { ReactNode } from "react";
-import { ToastProviderProperties } from "@rarui/typings";
+import { ToastProviderProps as ToastProviderTyping } from "@rarui/typings";
 
-export interface ToastProviderProps extends ToastProviderProperties {
+interface ToastProviderProperties extends ToastProviderTyping {
   /**
    * @TJS-type React.ReactNode
    */
   children: ReactNode;
 }
+
+export type ToastProviderProps = ToastProviderProperties;

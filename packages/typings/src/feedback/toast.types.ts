@@ -31,4 +31,4 @@ export interface ToastTyping {
   width?: string;
 }
 
-export type ToastProperties = ToastTyping & ToastVariants & ToastSprinkle;
+export type ToastProps = ToastTyping & ToastVariants & ToastSprinkle;

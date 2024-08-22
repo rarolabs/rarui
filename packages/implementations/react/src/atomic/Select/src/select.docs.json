@@ -13,6 +13,27 @@
       "required": false
     },
     {
+      "description": "Position of the select.",
+      "default": "bottom",
+      "enum": [
+        "bottom",
+        "bottom-end",
+        "bottom-start",
+        "left",
+        "left-end",
+        "left-start",
+        "right",
+        "right-end",
+        "right-start",
+        "top",
+        "top-end",
+        "top-start"
+      ],
+      "type": "string",
+      "title": "position",
+      "required": false
+    },
+    {
       "description": "Options for the Select component. This should be an array of SelectOption objects.",
       "type": "array",
       "items": {
@@ -89,27 +110,6 @@
       "required": false
     },
     {
-      "description": "Position of the select.",
-      "default": "bottom",
-      "enum": [
-        "bottom",
-        "bottom-end",
-        "bottom-start",
-        "left",
-        "left-end",
-        "left-start",
-        "right",
-        "right-end",
-        "right-start",
-        "top",
-        "top-end",
-        "top-start"
-      ],
-      "type": "string",
-      "title": "position",
-      "required": false
-    },
-    {
       "description": "Determines whether the select box should enable flipping the options' dropdown when there is not enough space to display it in its default direction.\nThis can help ensure the dropdown is always visible on the screen.",
       "default": true,
       "type": "boolean",
@@ -137,7 +137,7 @@
       "required": false
     },
     {
-      "description": "The **`max-height`** CSS property sets the maximum height of an element. It prevents the used value of the `height` property from becoming larger than the value specified for `max-height`.\n\n\n**Initial value**: `none`",
+      "description": "The **`max-height`** CSS property sets the maximum height of an element. It prevents the used value of the `height` property from becoming larger than the value specified for `max-height`. It is also possible to pass a specific value.\n\n\n**Initial value**: `none`",
       "anyOf": [
         {
           "additionalProperties": false,

@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { BannerProperties } from "@rarui/typings";
+import { BannerProps as BannerTyping } from "@rarui/typings";
 
-export interface BannerTyping extends BannerProperties {
+export interface BannerProperties extends BannerTyping {
   /**
    * The content to be displayed within the banner message. This can include text, icons, or any other ReactNode.
    * @TJS-type React.ReactNode
@@ -9,4 +9,4 @@ export interface BannerTyping extends BannerProperties {
   children: ReactNode;
 }
 
-export type BannerProps = BannerTyping & HTMLAttributes<HTMLDivElement>;
+export type BannerProps = BannerProperties & HTMLAttributes<HTMLDivElement>;

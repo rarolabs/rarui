@@ -1,12 +1,12 @@
 import { HTMLAttributes, ReactElement } from "react";
-import { StepperProperties } from "@rarui/typings";
+import { StepperProps as StepperTyping } from "@rarui/typings";
 import { StepperStep } from "./components/Step";
 
 export interface StepperComponents {
   Step: typeof StepperStep;
 }
 
-export interface StepperTyping {
+export interface StepperProperties extends StepperTyping {
   /**
    * The content of the stepper, which should be one or more Step components.
    * @TJS-type <Stepper.Step />
@@ -14,6 +14,5 @@ export interface StepperTyping {
   children: ReactElement | ReactElement[];
 }
 
-export type StepperProps = StepperTyping &
-  StepperProperties &
+export type StepperProps = StepperProperties &
   Omit<HTMLAttributes<HTMLOListElement>, "children">;

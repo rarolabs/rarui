@@ -19,20 +19,6 @@
       "required": true
     },
     {
-      "description": "Conditional for displaying the popover arrow.",
-      "default": true,
-      "type": "boolean",
-      "title": "arrow",
-      "required": false
-    },
-    {
-      "description": "A common feature of select dropdowns is that the dropdown matches the width of the reference regardless of its contents.",
-      "default": false,
-      "type": "boolean",
-      "title": "matchReferenceWidth",
-      "required": false
-    },
-    {
       "description": "Position of the popover.",
       "default": "bottom",
       "enum": [
@@ -51,6 +37,20 @@
       ],
       "type": "string",
       "title": "position",
+      "required": false
+    },
+    {
+      "description": "Conditional for displaying the popover arrow.",
+      "default": true,
+      "type": "boolean",
+      "title": "arrow",
+      "required": false
+    },
+    {
+      "description": "A common feature of select dropdowns is that the dropdown matches the width of the reference regardless of its contents.",
+      "default": false,
+      "type": "boolean",
+      "title": "matchReferenceWidth",
       "required": false
     },
     {
@@ -116,18 +116,12 @@
   "subComponents": [
     {
       "name": "Tooltip.Footer",
-      "totalProps": 3,
+      "totalProps": 2,
       "props": [
         {
           "description": "The content of the modal header.",
           "type": "React.ReactNode",
           "title": "children",
-          "required": false
-        },
-        {
-          "description": "Specifies whether the color scheme should be inverted",
-          "type": "boolean",
-          "title": "inverted",
           "required": false
         },
         {
@@ -141,18 +135,12 @@
     },
     {
       "name": "Tooltip.Body",
-      "totalProps": 3,
+      "totalProps": 2,
       "props": [
         {
           "description": "The content of the modal header.",
           "type": "React.ReactNode",
           "title": "children",
-          "required": false
-        },
-        {
-          "description": "Specifies whether the color scheme should be inverted",
-          "type": "boolean",
-          "title": "inverted",
           "required": false
         },
         {

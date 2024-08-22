@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
-import { AccordionItemProperties } from "@rarui/typings";
+import { AccordionItemProps as AccordionItemTyping } from "@rarui/typings";
 
-export interface AccordionItemTyping extends AccordionItemProperties {
+export interface AccordionItemProperties extends AccordionItemTyping {
   /**
    * The content of the accordion body.
    * @TJS-type React.ReactNode
@@ -9,4 +9,4 @@ export interface AccordionItemTyping extends AccordionItemProperties {
   children: ReactNode;
 }
 
-export type AccordionItemProps = AccordionItemTyping;
+export type AccordionItemProps = AccordionItemProperties;

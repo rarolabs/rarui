@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { ModalHeaderProperties } from "@rarui/typings";
+import { ModalHeaderProps as ModalHeaderTypings } from "@rarui/typings";
 
-export interface ModalHeaderTypings extends ModalHeaderProperties {
+export interface ModalHeaderProperties extends ModalHeaderTypings {
   /**
    * The content of the Modal header.
    * @TJS-type React.ReactNode;

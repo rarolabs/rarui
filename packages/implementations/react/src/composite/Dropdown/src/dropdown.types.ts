@@ -1,13 +1,13 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { Placement } from "@floating-ui/react";
-import { DropdownProperties } from "@rarui/typings";
+import { DropdownProps as DropdownTyping } from "@rarui/typings";
 import { DropdownItem } from "./components";
 
 export interface DropdownComponents {
   Item: typeof DropdownItem;
 }
 
-interface DropdownTyping extends DropdownProperties {
+interface DropdownProperties extends DropdownTyping {
   /**
    * An HTML element, or a function that returns one. It's used to set the position of the dropdown.
    * @TJS-type React.ReactNode | ((data: { open: boolean, setVisibility: (visibility: boolean) => void }) => React.ReactNode);
@@ -30,5 +30,5 @@ interface DropdownTyping extends DropdownProperties {
   position?: Placement;
 }
 
-export type DropdownProps = DropdownTyping &
+export type DropdownProps = DropdownProperties &
   Omit<HTMLAttributes<HTMLDivElement>, "content">;

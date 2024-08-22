@@ -1,4 +1,4 @@
-export interface ToastProviderProperties {
+export interface ToastProviderProps {
   /**
    * Position of the toast.
    * @default bottomRight

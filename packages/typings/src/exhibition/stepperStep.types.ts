@@ -11,5 +11,5 @@ export interface StepperStepTyping {
   description?: string;
 }
 
-export type StepperStepProperties = StepperStepTyping &
+export type StepperStepProps = StepperStepTyping &
   Pick<StepperVariants, "active" | "done">;

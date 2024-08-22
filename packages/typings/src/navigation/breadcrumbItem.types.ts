@@ -7,5 +7,4 @@ interface BreadcrumbItemTyping {
   name?: string;
 }
 
-export type BreadcrumbItemProperties = BreadcrumbItemTyping &
-  BreadcrumbVariants;
+export type BreadcrumbItemProps = BreadcrumbItemTyping & BreadcrumbVariants;

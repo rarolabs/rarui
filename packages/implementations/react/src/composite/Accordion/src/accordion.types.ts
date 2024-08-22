@@ -1,5 +1,5 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { AccordionProperties } from "@rarui/typings";
+import { AccordionProps as AccordionTyping } from "@rarui/typings";
 import { AccordionBody, AccordionItem, AccordionHeader } from "./components";
 
 export interface AccordionComponents {
@@ -8,7 +8,7 @@ export interface AccordionComponents {
   Header: typeof AccordionHeader;
 }
 
-export interface AccordionTyping extends AccordionProperties {
+export interface AccordionProperties extends AccordionTyping {
   /**
    * The content of the accordion.
    * @TJS-type React.ReactNode
@@ -16,5 +16,5 @@ export interface AccordionTyping extends AccordionProperties {
   children?: ReactNode;
 }
 
-export type AccordionProps = AccordionTyping &
+export type AccordionProps = AccordionProperties &
   Omit<HTMLAttributes<HTMLElement>, "color">;

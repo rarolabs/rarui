@@ -23,7 +23,7 @@ export type Color = {
   source: string;
 };
 
-export type ColorPickerProperties = {
+export type ColorPickerProps = {
   /**
    * Hexadecimal color to be displayed as initial color
    */

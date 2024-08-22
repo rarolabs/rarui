@@ -9,4 +9,4 @@ export interface ModalHeaderTypings {
   subtitle?: string;
 }
 
-export type ModalHeaderProperties = ModalHeaderTypings;
+export type ModalHeaderProps = ModalHeaderTypings;

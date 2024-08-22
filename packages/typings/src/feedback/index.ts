@@ -1,6 +1,6 @@
-export type { ProgressProperties } from "./progress.types";
-export type { ProgressCircleProperties } from "./progressCircle.types";
-export type { ToastProperties } from "./toast.types";
-export type { ToastProviderProperties } from "./toastProvider.types";
-export type { SkeletonProperties } from "./skeleton.types";
-export type { StatusProperties } from "./status.types";
+export type { ProgressProps } from "./progress.types";
+export type { ProgressCircleProps } from "./progressCircle.types";
+export type { ToastProps } from "./toast.types";
+export type { ToastProviderProps } from "./toastProvider.types";
+export type { SkeletonProps } from "./skeleton.types";
+export type { StatusProps } from "./status.types";

@@ -1,8 +1,9 @@
-export type { BreadcrumbProperties } from "./breadcrumb.types";
-export type { BreadcrumbItemProperties } from "./breadcrumbItem.types";
-export type { LinkProperties } from "./link.types";
-export type { PaginationProperties } from "./pagination.types";
-export type { SideNavigationProperties } from "./sideNavigation.types";
-export type { SideNavigationItemProperties } from "./sideNavigationItem.types";
-export type { TabsProperties } from "./tabs.types";
-export type { TabsItemProperties } from "./tabsItem.types";
+export type { BreadcrumbProps } from "./breadcrumb.types";
+export type { BreadcrumbItemProps } from "./breadcrumbItem.types";
+export type { LinkProps } from "./link.types";
+export type { PaginationProps } from "./pagination.types";
+export type { SideNavigationProps } from "./sideNavigation.types";
+export type { SideNavigationItemProps } from "./sideNavigationItem.types";
+export type { TabsProps } from "./tabs.types";
+export type { TabsButtonProps } from "./tabsButton.types";
+export type { TabsItemProps } from "./tabsItem.types";

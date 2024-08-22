@@ -1,7 +1,7 @@
 import { ReactNode, HTMLAttributes } from "react";
-import { TextProperties } from "@rarui/typings";
+import { TextProps as TextTyping } from "@rarui/typings";
 
-export interface TextTyping extends TextProperties {
+export interface TextProperties extends TextTyping {
   /**
    * The content of the link.
    * @TJS-type React.ReactNode
@@ -9,5 +9,5 @@ export interface TextTyping extends TextProperties {
   children: ReactNode;
 }
 
-export type TextProps = TextTyping &
+export type TextProps = TextProperties &
   Omit<HTMLAttributes<HTMLParagraphElement>, "color">;

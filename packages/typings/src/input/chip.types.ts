@@ -8,4 +8,4 @@ export interface ChipTyping extends ChipSprinkle {
   closeable?: boolean;
 }
 
-export type ChipProperties = ChipTyping & ChipVariants;
+export type ChipProps = ChipTyping & ChipVariants;

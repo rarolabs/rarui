@@ -1,4 +1,4 @@
-import { InputProperties } from "./input.types";
+import { InputProps } from "./input.types";
 
 interface InputLeadingTyping {
   /**
@@ -7,5 +7,5 @@ interface InputLeadingTyping {
   position: "start" | "end";
 }
 
-export type InputLeadingProperties = InputLeadingTyping &
-  Pick<InputProperties, "divider" | "appearance" | "size">;
+export type InputLeadingProps = InputLeadingTyping &
+  Pick<InputProps, "divider" | "appearance" | "size">;

@@ -1,6 +1,6 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { Placement } from "@floating-ui/react";
-import { TooltipProperties } from "@rarui/typings";
+import { TooltipProps as TooltipTyping } from "@rarui/typings";
 import { TooltipBody, TooltipHeader, TooltipFooter } from "./components";
 
 export interface TooltipComponents {
@@ -9,7 +9,7 @@ export interface TooltipComponents {
   Header: typeof TooltipHeader;
 }
 
-interface TooltipTyping extends TooltipProperties {
+interface TooltipProperties extends TooltipTyping {
   /**
    * An HTML element, or a function that returns one. It's used to set the position of the popover.
    * @TJS-type React.ReactNode | ((data: { open: boolean, setVisibility: (visibility: boolean) => void }) => React.ReactNode);
@@ -32,5 +32,5 @@ interface TooltipTyping extends TooltipProperties {
   position?: Placement;
 }
 
-export type TooltipProps = TooltipTyping &
+export type TooltipProps = TooltipProperties &
   Omit<HTMLAttributes<HTMLDivElement>, "content">;

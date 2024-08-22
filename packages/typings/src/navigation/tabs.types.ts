@@ -13,5 +13,5 @@ export interface TabsTyping {
   selectedTab?: number;
 }
 
-export type TabsProperties = TabsTyping &
+export type TabsProps = TabsTyping &
   Pick<TabsVariants, "underlined" | "full" | "position">;

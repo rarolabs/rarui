@@ -7,5 +7,5 @@ interface DropdownItemTyping {
   name?: string;
 }
 
-export type DropdownItemProperties = DropdownItemTyping &
+export type DropdownItemProps = DropdownItemTyping &
   Pick<DropdownVariants, "selected">;

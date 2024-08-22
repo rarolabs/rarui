@@ -8,4 +8,4 @@ export interface ButtonTyping {
   disabled?: boolean;
 }
 
-export type ButtonProperties = ButtonTyping & ButtonVariants;
+export type ButtonProps = ButtonTyping & ButtonVariants;

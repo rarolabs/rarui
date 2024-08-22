@@ -1,3 +1,3 @@
 import { LinkVariants } from "@rarui/styles";
 
-export type LinkProperties = LinkVariants;
+export type LinkProps = LinkVariants;

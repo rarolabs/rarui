@@ -19,7 +19,7 @@
       "required": false
     },
     {
-      "description": "Specifies the visual appearance of the banner message, influencing its color and style.",
+      "description": "The appearance of the banner. This can be used to set the color of the banner.\nSpecifies the visual appearance of the banner message, influencing its color and style.",
       "default": "brand",
       "enum": ["brand", "error", "info", "inverted", "neutral", "warning"],
       "type": "string",

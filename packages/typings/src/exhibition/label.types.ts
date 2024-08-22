@@ -7,4 +7,4 @@ interface LabelTyping {
   htmlFor?: string;
 }
 
-export type LabelProperties = LabelTyping & LabelVariants;
+export type LabelProps = LabelTyping & LabelVariants;

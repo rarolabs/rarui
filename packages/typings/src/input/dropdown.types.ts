@@ -43,6 +43,6 @@ interface DropdownTyping {
   onVisibility?: (visible: boolean) => void;
 }
 
-export type DropdownProperties = DropdownTyping &
+export type DropdownProps = DropdownTyping &
   DropdownSprinkle &
   Pick<DropdownVariants, "padding">;

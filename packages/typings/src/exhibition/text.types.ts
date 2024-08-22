@@ -1,6 +1,6 @@
 import { TextSprinkle } from "@rarui/styles";
 
-export interface TextProperties extends TextSprinkle {
+export interface TextProps extends TextSprinkle {
   /**
    * Type of html tag to create for the Text component.
    * @default p

@@ -8,4 +8,4 @@ interface StatusTyping {
   dot?: boolean;
 }
 
-export type StatusProperties = StatusTyping & StatusVariants;
+export type StatusProps = StatusTyping & StatusVariants;

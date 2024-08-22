@@ -1,12 +1,12 @@
 import React, { OlHTMLAttributes } from "react";
-import { BreadcrumbProperties } from "@rarui/typings";
+import { BreadcrumbProps as BreadcrumbTyping } from "@rarui/typings";
 import { BreadcrumbItem } from "./components";
 
 export interface BreadcrumbComponents {
   Item: typeof BreadcrumbItem;
 }
 
-export interface BreadcrumbTyping extends BreadcrumbProperties {
+export interface BreadcrumbProperties extends BreadcrumbTyping {
   /**
    * The content of the breadcrumbs, which should be one or more Breadcrumb.Item components or other React nodes.
    * @TJS-type React.ReactNode
@@ -14,5 +14,5 @@ export interface BreadcrumbTyping extends BreadcrumbProperties {
   children?: React.ReactNode | React.ReactNode[];
 }
 
-export type BreadcrumbProps = BreadcrumbTyping &
+export type BreadcrumbProps = BreadcrumbProperties &
   Omit<OlHTMLAttributes<HTMLOListElement>, "children">;

@@ -1,4 +1,4 @@
-export interface CardHeaderProperties {
+export interface CardHeaderProps {
   /**
    * The title of the card. This is typically displayed prominently in the header section.
    */

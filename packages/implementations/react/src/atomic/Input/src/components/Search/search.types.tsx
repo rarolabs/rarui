@@ -1,8 +1,10 @@
 import { InputHTMLAttributes } from "react";
-import { InputProperties } from "@rarui/typings";
+import { InputProps } from "@rarui/typings";
 
-export type _InputSearchProps = Pick<
-  InputProperties,
+type InputSearchProperties = Pick<
+  InputProps,
   "divider" | "appearance" | "size" | "border"
-> &
+>;
+
+export type _InputSearchProps = InputSearchProperties &
   Omit<InputHTMLAttributes<HTMLInputElement>, "size">;

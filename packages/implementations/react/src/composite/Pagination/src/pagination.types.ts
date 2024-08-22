@@ -1,5 +1,6 @@
 import { HTMLAttributes } from "react";
-import { PaginationProperties } from "@rarui/typings";
+import { PaginationProps as PaginationTypings } from "@rarui/typings";
 
+type PaginationProperties = PaginationTypings;
 export type PaginationProps = PaginationProperties &
   HTMLAttributes<HTMLUListElement>;

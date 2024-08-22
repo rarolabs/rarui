@@ -1,3 +1,3 @@
 import { AccordionVariants } from "@rarui/styles";
 
-export type AccordionBodyProperties = Pick<AccordionVariants, "padding">;
+export type AccordionBodyProps = Pick<AccordionVariants, "padding">;

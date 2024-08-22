@@ -17,6 +17,4 @@ export interface SidebarTyping {
   onRemove?: () => void;
 }
 
-export type SidebarProperties = SidebarTyping &
-  SidebarSprinkle &
-  SidebarVariants;
+export type SidebarProps = SidebarTyping & SidebarSprinkle & SidebarVariants;

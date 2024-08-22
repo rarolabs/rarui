@@ -1,4 +1,4 @@
-export interface AccordionProperties {
+export interface AccordionProps {
   /**
    * Informs which accordion item is open by default, this value must be the same as informed in the index of each item
    */

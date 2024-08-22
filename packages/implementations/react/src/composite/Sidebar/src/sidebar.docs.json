@@ -13,7 +13,7 @@
       "required": true
     },
     {
-      "description": "Determines if the sidebar is shown or not.",
+      "description": "Whether the sidebar is open or not.\nDetermines if the sidebar is shown or not.",
       "default": true,
       "type": "boolean",
       "title": "open",
@@ -159,7 +159,7 @@
       "required": false
     },
     {
-      "description": "The **`max-width`** CSS property sets the maximum width of an element. It prevents the used value of the `width` property from becoming larger than the value specified by `max-width`.\n\n\n**Initial value**: `none`",
+      "description": "The **`max-width`** CSS property sets the maximum width of an element. It prevents the used value of the `width` property from becoming larger than the value specified by `max-width`. It is also possible to pass a specific value.\n\n\n**Initial value**: `none`",
       "anyOf": [
         {
           "additionalProperties": false,

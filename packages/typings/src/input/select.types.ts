@@ -52,4 +52,4 @@ interface SelectTyping {
   portalId?: string;
 }
 
-export type SelectProperties = SelectTyping & SelectVariants & SelectSprinkle;
+export type SelectProps = SelectTyping & SelectVariants & SelectSprinkle;

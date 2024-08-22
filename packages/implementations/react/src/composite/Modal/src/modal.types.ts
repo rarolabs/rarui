@@ -1,5 +1,5 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { ModalProperties } from "@rarui/typings";
+import { ModalProps as ModalTyping } from "@rarui/typings";
 import { ModalBody, ModalFooter, ModalHeader } from "./components";
 
 export interface ModalComponents {
@@ -8,7 +8,7 @@ export interface ModalComponents {
   Header: typeof ModalHeader;
 }
 
-export interface ModalTyping extends ModalProperties {
+export interface ModalProperties extends ModalTyping {
   /**
    * The content of the accordion.
    * @TJS-type React.ReactNode
@@ -16,5 +16,5 @@ export interface ModalTyping extends ModalProperties {
   children?: ReactNode;
 }
 
-export type ModalProps = ModalTyping &
+export type ModalProps = ModalProperties &
   Omit<HTMLAttributes<HTMLElement>, "color">;
