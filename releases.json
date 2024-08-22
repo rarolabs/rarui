@@ -1,134 +1,44 @@
 [
   {
-    "package": "@rarui/box 1.0.0",
-    "description": "# Changelog\n\nA low-level utility component that accepts styled system props to enable custom theme-aware styling\n\n## 2024-08-06 `1.0.0`\n\n#### 🎉 New features\n\n- Added properties `css` to the Component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added stories on Component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n\n<!-- #### 🛠 Breaking changes -->\n\n<!-- #### 📚 3rd party library updates -->\n\n<!-- #### 🎉 New features -->\n\n<!-- #### 🐛 Bug fixes -->\n\n<!-- #### 💡 Others -->",
-    "version": "1.0.0",
-    "tagName": "rarui/box-1.0.0",
+    "package": "@rarui/typings 2.0.0",
+    "description": "",
+    "version": "2.0.0",
+    "tagName": "rarui/typings-2.0.0",
     "assets": {
       "links": [
         {
           "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/box",
+          "url": "https://www.npmjs.com/package/@rarui/typings",
           "link_type": "package"
         }
       ]
     }
   },
   {
-    "package": "@rarui/button 1.0.0",
-    "description": "# Changelog\n\nThe Button component allows us to initiate actions, make state or page changes.\n\n## 2024-08-06 `1.0.0`\n\n#### 🎉 New features\n\n- Added `appearance`, `as`, `full`, `size` and `variant` properties to the Component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added stories on Component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n\n<!-- #### 🛠 Breaking changes -->\n\n<!-- #### 📚 3rd party library updates -->\n\n<!-- #### 🎉 New features -->\n\n<!-- #### 🐛 Bug fixes -->\n\n<!-- #### 💡 Others -->",
-    "version": "1.0.0",
-    "tagName": "rarui/button-1.0.0",
+    "package": "@rarui-react/components 1.41.1",
+    "description": "",
+    "version": "1.41.1",
+    "tagName": "rarui-react/components-1.41.1",
     "assets": {
       "links": [
         {
           "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/button",
+          "url": "https://www.npmjs.com/package/@rarui-react/components",
           "link_type": "package"
         }
       ]
     }
   },
   {
-    "package": "@rarui/components 1.0.0",
-    "description": "# Changelog\n\n`@rarui/components` components is a component library built with [Stencil](https://stenciljs.com/docs/introduction).\n\n## 2024-08-06 `1.0.0`\n\n#### 🎉 New features\n\n- Added new exhibition `Text` component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new exhibition `Title` component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new input `Button` component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new layout `Box` component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new navigation `Tabs` component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new navigation `TabsItem` component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n\n<!-- #### 🛠 Breaking changes -->\n\n<!-- #### 📚 3rd party library updates -->\n\n<!-- #### 🎉 New features -->\n\n<!-- #### 🐛 Bug fixes -->\n\n<!-- #### 💡 Others -->\n\n<!-- #### ⚠️ Notices -->",
-    "version": "1.0.0",
-    "tagName": "rarui/components-1.0.0",
+    "package": "@rarui/webpack 1.3.3",
+    "description": "",
+    "version": "1.3.3",
+    "tagName": "rarui/webpack-1.3.3",
     "assets": {
       "links": [
         {
           "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/components",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui/stencil 1.0.0",
-    "description": "# Changelog\n\nThis package is intended for internal use in generating builds of each design system package. It contains all the necessary settings and dependencies to optimize the creation of our builds.\n\n## 2024-08-06 `1.0.0`\n\n#### 📚 3rd party library updates\n\n- Added `@rollup/plugin-alias@5.1.0`. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added `@stencil/core@4.19.2`. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n\n<!-- #### 🛠 Breaking changes -->\n\n<!-- #### 📚 3rd party library updates -->\n\n<!-- #### 🎉 New features -->\n\n<!-- #### 🐛 Bug fixes -->\n\n<!-- #### 💡 Others -->\n\n<!-- #### ⚠️ Notices -->",
-    "version": "1.0.0",
-    "tagName": "rarui/stencil-1.0.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/stencil",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui/styles 2.2.0",
-    "description": "## 2024-08-06 `2.2.0`\n\n#### 🎉 New features\n\n- Added new disturbance in the `Module` format to the styles package. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added new `Capture CSSProperties` Utilitario to be used on web components in order to capture component props CSS. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))",
-    "version": "2.2.0",
-    "tagName": "rarui/styles-2.2.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/styles",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui/tabs 1.0.0",
-    "description": "# Changelog\n\nTabs are used to switch between different display modes or pages.\n\n## 2024-08-06 `1.0.0`\n\n#### 🎉 New features\n\n- Added `preSelectedTab`, `position`, `full` and `underlined` properties to the Component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added stories on Component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n\n<!-- #### 🛠 Breaking changes -->\n\n<!-- #### 📚 3rd party library updates -->\n\n<!-- #### 🎉 New features -->\n\n<!-- #### 🐛 Bug fixes -->\n\n<!-- #### 💡 Others -->",
-    "version": "1.0.0",
-    "tagName": "rarui/tabs-1.0.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/tabs",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui/tabs-item 1.0.0",
-    "description": "# Changelog\n\nTabs Item are used to switch between different display modes or pages.\n\n## 2024-08-06 `1.0.0`\n\n#### 🎉 New features\n\n- Added `label` and `onSelectTab` properties to the Component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added stories on Component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n\n<!-- #### 🛠 Breaking changes -->\n\n<!-- #### 📚 3rd party library updates -->\n\n<!-- #### 🎉 New features -->\n\n<!-- #### 🐛 Bug fixes -->\n\n<!-- #### 💡 Others -->",
-    "version": "1.0.0",
-    "tagName": "rarui/tabs-item-1.0.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/tabs-item",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui/text 1.0.0",
-    "description": "# Changelog\n\nText is a basic component that allows us to write blocks of text and give it formatting to use within other components, sections and pages of our application or website.\n\n## 2024-08-06 `1.0.0`\n\n#### 🎉 New features\n\n- Added `color`, `as`, `lineClamp`, `fontWeight`, `fontSize`, `lineHeight`, `width`, `textAlign`, `textOverflow`, `textTransform`, `whiteSpace`, `wordBreak`, `overflow` and `textDecoration` properties to the Component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added stories on Component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n\n<!-- #### 🛠 Breaking changes -->\n\n<!-- #### 📚 3rd party library updates -->\n\n<!-- #### 🎉 New features -->\n\n<!-- #### 🐛 Bug fixes -->\n\n<!-- #### 💡 Others -->",
-    "version": "1.0.0",
-    "tagName": "rarui/text-1.0.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/text",
-          "link_type": "package"
-        }
-      ]
-    }
-  },
-  {
-    "package": "@rarui/title 1.0.0",
-    "description": "# Changelog\n\nTilte is a basic component that allows you to give titles and more hierarchy to blocks of text for sections or header components.\n\n## 2024-08-06 `1.0.0`\n\n#### 🎉 New features\n\n- Added `color`, `as`, `fontWeight`, `fontSize`, `lineHeight`, `textAlign`, `textTransform` and `textDecoration` properties to the Component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n- Added stories on Component. ([#87](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/87) by [@junior](https://git.rarolabs.com.br/junior))\n\n<!-- #### 🛠 Breaking changes -->\n\n<!-- #### 📚 3rd party library updates -->\n\n<!-- #### 🎉 New features -->\n\n<!-- #### 🐛 Bug fixes -->\n\n<!-- #### 💡 Others -->",
-    "version": "1.0.0",
-    "tagName": "rarui/title-1.0.0",
-    "assets": {
-      "links": [
-        {
-          "name": "npm",
-          "url": "https://www.npmjs.com/package/@rarui/title",
+          "url": "https://www.npmjs.com/package/@rarui/webpack",
           "link_type": "package"
         }
       ]
