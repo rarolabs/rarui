@@ -110,7 +110,7 @@ publish-release-job: # This job runs in the publish-release-job stage.
   environment: production
   script:
     - yarn install # Instala as dependências com o Yarn
-    - yarn setup:tokens
+    - yarn setup
     - yarn bump:check
     - yarn bump:stable
     - yarn build:docs
