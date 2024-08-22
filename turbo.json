@@ -27,6 +27,15 @@
     "build:typings": {
       "outputs": ["packages/typings/dist/**"],
       "dependsOn": ["build:tokens"]
+    },
+    "storybook:dev": {
+      "cache": false
+    },
+    "storybook:build": {
+      "outputs": ["storybook-static/**"]
+    },
+    "storybook:move": {
+      "cache": false
     }
   }
 }
