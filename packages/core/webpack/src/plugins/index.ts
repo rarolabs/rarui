@@ -4,4 +4,3 @@ export { cssHashRemoverPlugin } from "./cssHashRemoverPlugin";
 export { cssMinimizerPlugin } from "./cssMinimizerPlugin";
 export { terserJSPlugin } from "./terserJSPlugin";
 export { dtsBundleGeneratorPlugin } from "./dtsBundleGeneratorPlugin";
-export { vueLoaderPlugin } from "./vueLoaderPlugin";

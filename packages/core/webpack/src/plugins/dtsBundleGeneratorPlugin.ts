@@ -5,7 +5,7 @@
 import WebpackShellPluginNextPlugin from "webpack-shell-plugin-next";
 
 const entry = [
-  "yarn g:dts --external-imports=@rarui/typings react @floating-ui/react -o ./dist/index.d.ts ./src/index.ts",
+  "yarn g:dts --external-imports=@rarui/typings @rarui-react/components @floating-ui/react react --disable-symlinks-following --export-referenced-types=false -o ./dist/index.d.ts ./src/index.ts",
 ];
 
 export const dtsBundleGeneratorPlugin = (

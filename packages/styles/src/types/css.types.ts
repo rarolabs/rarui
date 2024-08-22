@@ -1342,7 +1342,7 @@ export interface StandardLonghandProperties {
     | Property.HangingPunctuation
     | Conditions<Property.HangingPunctuation>;
   /**
-   * The **`height`** CSS property specifies the height of an element. By default, the property defines the height of the content area. If `box-sizing` is set to `border-box`, however, it instead determines the height of the border area.
+   * The **`height`** CSS property specifies the height of an element. By default, the property defines the height of the content area. If `box-sizing` is set to `border-box`, however, it instead determines the height of the border area. It is also possible to pass a specific value.
    *
    *
    * **Initial value**: `auto`
@@ -1810,7 +1810,7 @@ export interface StandardLonghandProperties {
    */
   maxBlockSize?: Property.MaxBlockSize | Conditions<Property.MaxBlockSize>;
   /**
-   * The **`max-height`** CSS property sets the maximum height of an element. It prevents the used value of the `height` property from becoming larger than the value specified for `max-height`.
+   * The **`max-height`** CSS property sets the maximum height of an element. It prevents the used value of the `height` property from becoming larger than the value specified for `max-height`. It is also possible to pass a specific value.
    *
    *
    * **Initial value**: `none`
@@ -1831,7 +1831,7 @@ export interface StandardLonghandProperties {
    */
   maxLines?: Property.MaxLines | Conditions<Property.MaxLines>;
   /**
-   * The **`max-width`** CSS property sets the maximum width of an element. It prevents the used value of the `width` property from becoming larger than the value specified by `max-width`.
+   * The **`max-width`** CSS property sets the maximum width of an element. It prevents the used value of the `width` property from becoming larger than the value specified by `max-width`. It is also possible to pass a specific value.
    *
    *
    * **Initial value**: `none`
@@ -1847,7 +1847,7 @@ export interface StandardLonghandProperties {
    */
   minBlockSize?: Property.MinBlockSize | Conditions<Property.MinBlockSize>;
   /**
-   * The **`min-height`** CSS property sets the minimum height of an element. It prevents the used value of the `height` property from becoming smaller than the value specified for `min-height`.
+   * The **`min-height`** CSS property sets the minimum height of an element. It prevents the used value of the `height` property from becoming smaller than the value specified for `min-height`. It is also possible to pass a specific value.
    *
    *
    * **Initial value**: `auto`
@@ -1863,7 +1863,7 @@ export interface StandardLonghandProperties {
    */
   minInlineSize?: Property.MinInlineSize | Conditions<Property.MinInlineSize>;
   /**
-   * The **`min-width`** CSS property sets the minimum width of an element. It prevents the used value of the `width` property from becoming smaller than the value specified for `min-width`.
+   * The **`min-width`** CSS property sets the minimum width of an element. It prevents the used value of the `width` property from becoming smaller than the value specified for `min-width`. It is also possible to pass a specific value.
    *
    *
    * **Initial value**: `auto`
@@ -3097,7 +3097,7 @@ export interface StandardLonghandProperties {
    */
   widows?: Property.Widows | Conditions<Property.Widows>;
   /**
-   * The **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area.
+   * The **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area. It is also possible to pass a specific value.
    *
    *
    * **Initial value**: `auto`
@@ -4889,7 +4889,7 @@ export interface StandardLonghandPropertiesHyphen {
     | Property.HangingPunctuation
     | Conditions<Property.HangingPunctuation>;
   /**
-   * The **`height`** CSS property specifies the height of an element. By default, the property defines the height of the content area. If `box-sizing` is set to `border-box`, however, it instead determines the height of the border area.
+   * The **`height`** CSS property specifies the height of an element. By default, the property defines the height of the content area. If `box-sizing` is set to `border-box`, however, it instead determines the height of the border area. It is also possible to pass a specific value.
    *
    *
    * **Initial value**: `auto`
@@ -5369,7 +5369,7 @@ export interface StandardLonghandPropertiesHyphen {
    */
   "max-block-size"?: Property.MaxBlockSize | Conditions<Property.MaxBlockSize>;
   /**
-   * The **`max-height`** CSS property sets the maximum height of an element. It prevents the used value of the `height` property from becoming larger than the value specified for `max-height`.
+   * The **`max-height`** CSS property sets the maximum height of an element. It prevents the used value of the `height` property from becoming larger than the value specified for `max-height`. It is also possible to pass a specific value.
    *
    *
    * **Initial value**: `none`
@@ -6681,7 +6681,7 @@ export interface StandardLonghandPropertiesHyphen {
    */
   widows?: Property.Widows | Conditions<Property.Widows>;
   /**
-   * The **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area.
+   * The **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area. It is also possible to pass a specific value.
    *
    *
    * **Initial value**: `auto`

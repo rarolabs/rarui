@@ -9,7 +9,7 @@ export interface ToastComponents {
 
 export interface ToastTyping extends ToastProperties {
   /**
-   * The content of the button.
+   * The content of the Toast.
    * @TJS-type React.ReactNode
    */
   children?: ReactNode;

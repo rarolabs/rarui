@@ -18,11 +18,12 @@
     "storybook:move": "mv storybook-static ../../../storybook-static/react"
   },
   "dependencies": {
+    "@floating-ui/react": "^0.26.13",
+    "@rarui/typings": "workspace:^",
     "react-datepicker": "^6.9.0"
   },
   "peerDependencies": {
     "@rarui/styles": "workspace:^",
-    "@rarui/typings": "workspace:^",
     "react": "^16.8 || ^17.0 || ^18.0",
     "react-dom": "^16.8 || ^17.0 || ^18.0"
   },

@@ -9,7 +9,7 @@ import { link } from "@rarui/styles";
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "@rarui-react/components/src/types";
+} from "../../../types";
 
 import { _LinkProps } from "./link.types";
 

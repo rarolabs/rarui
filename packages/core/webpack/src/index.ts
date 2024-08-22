@@ -12,7 +12,6 @@ import {
   dtsBundleGeneratorPlugin,
   cssHashRemoverPlugin,
   cssMinimizerPlugin,
-  vueLoaderPlugin,
 } from "./plugins";
 import {
   cssLoaderExtractRule,
@@ -20,8 +19,6 @@ import {
   miniCssExtractRule,
   typescriptRule,
   svgRule,
-  VueRule,
-  typescriptVueRule,
 } from "./rules";
 import {
   rootDir,
@@ -35,9 +32,7 @@ export const rules = {
   styleLoaderCssRule,
   miniCssExtractRule,
   typescriptRule,
-  typescriptVueRule,
   svgRule,
-  VueRule,
 };
 export const plugins = {
   vanillaExtractPlugin,
@@ -45,7 +40,6 @@ export const plugins = {
   cssHashRemoverPlugin,
   cssMinimizerPlugin,
   dtsBundleGeneratorPlugin,
-  vueLoaderPlugin,
 };
 export const configuration = {
   aliasItems,

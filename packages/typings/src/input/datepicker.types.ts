@@ -1,4 +1,4 @@
-import { InputProperties } from "@rarui/typings";
+import { InputProperties } from "../input/input.types";
 
 export interface DatepickerTyping {
   /**

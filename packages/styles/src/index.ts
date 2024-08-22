@@ -68,7 +68,7 @@ export type { SelectVariants, SelectSprinkle } from "./packages/atomic/select";
 export type { StatusVariants } from "./packages/atomic/status";
 export type { BannerVariants } from "./packages/atomic/banner";
 export type { TextareaVariants } from "./packages/atomic/textarea";
-export type { ToastVariants } from "./packages/atomic/toast";
+export type { ToastVariants, ToastSprinkle } from "./packages/atomic/toast";
 export type { ToggleVariants } from "./packages/atomic/toggle";
 export type { TooltipVariants } from "./packages/atomic/tooltip";
 

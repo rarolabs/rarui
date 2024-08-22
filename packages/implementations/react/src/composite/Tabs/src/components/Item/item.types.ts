@@ -1,6 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
+import { TabsItemProperties } from "@rarui/typings";
 
-export interface TabsItemProperties {
+export interface TabsItemTyping extends TabsItemProperties {
   /**
    * Label of the tabpanel. Used to pair with it's corresponding tab control.
    */
@@ -10,13 +11,7 @@ export interface TabsItemProperties {
    * @TJS-type ReactNode
    */
   children?: ReactNode;
-  /**
-   * A callback function that is called when a tab is clicked.
-   * This function receives the index of the selected tab as a parameter.
-   * @TJS-type (tab: number) => void
-   */
-  onSelectTab?: (tab: number) => void;
 }
 
-export type TabsItemProps = TabsItemProperties &
+export type TabsItemProps = TabsItemTyping &
   ButtonHTMLAttributes<HTMLButtonElement>;

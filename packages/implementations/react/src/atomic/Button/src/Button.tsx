@@ -9,7 +9,7 @@ import { button } from "@rarui/styles";
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "@rarui-react/components/src/types";
+} from "../../../types";
 
 import { _ButtonProps } from "./button.types";
 

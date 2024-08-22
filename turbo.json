@@ -1,17 +1,32 @@
 {
   "$schema": "https://turborepo.org/schema.json",
-  "pipeline": {
+  "extends": ["//"],
+  "tasks": {
     "build": {
       "dependsOn": ["^build"]
     },
-    "storybook:dev": {
+    "setup": {
+      "outputs": []
+    },
+    "build:tokens": {
+      "outputs": ["packages/tokens/dist/**"],
       "cache": false
     },
-    "storybook:build": {
-      "outputs": ["storybook-static/**"]
-    },
-    "storybook:move": {
+    "build:webpack": {
+      "outputs": ["packages/core/webpack/dist/**"],
       "cache": false
+    },
+    "build:stencil": {
+      "outputs": ["packages/core/stencil/dist/**"],
+      "cache": false
+    },
+    "build:icons": {
+      "outputs": ["packages/icons/dist/**"],
+      "dependsOn": ["build:webpack"]
+    },
+    "build:typings": {
+      "outputs": ["packages/typings/dist/**"],
+      "dependsOn": ["build:tokens"]
     }
   }
 }

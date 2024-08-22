@@ -5,4 +5,4 @@ export const toast = {
   sprinkle,
 };
 
-export type { ToastVariants } from "./rarui-toast.types";
+export type { ToastVariants, ToastSprinkle } from "./rarui-toast.types";

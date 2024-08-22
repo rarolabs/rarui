@@ -1,4 +1,4 @@
-import { ToastVariants } from "@rarui/styles";
+import { ToastSprinkle, ToastVariants } from "@rarui/styles";
 
 export interface ToastTyping {
   /**
@@ -31,4 +31,4 @@ export interface ToastTyping {
   width?: string;
 }
 
-export type ToastProperties = ToastTyping & ToastVariants;
+export type ToastProperties = ToastTyping & ToastVariants & ToastSprinkle;

@@ -9,7 +9,7 @@ export * from "@rarui-react/chip";
 export * from "@rarui-react/divider";
 export * from "@rarui-react/icon";
 export * from "@rarui-react/icon-button";
-export * from "@rarui-react/input";
+// export * from "@rarui-react/input";
 export * from "@rarui-react/label";
 export * from "@rarui-react/link";
 export * from "@rarui-react/progress";

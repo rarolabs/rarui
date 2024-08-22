@@ -13,7 +13,7 @@ import { Icon } from "@rarui-react/icon";
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "@rarui-react/components/src/types";
+} from "../../../types";
 
 import { SideNavigationItem } from "./components";
 import {

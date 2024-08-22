@@ -8,7 +8,7 @@ import { sideNavigation } from "@rarui/styles";
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "@rarui-react/components/src/types";
+} from "../../../../../types";
 import { SideNavigationItemProps } from "./item.types";
 
 const SideNavigationItem = forwardRef(

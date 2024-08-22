@@ -1,7 +1,7 @@
 import React, { ComponentPropsWithRef, forwardRef } from "react";
 import { box } from "@rarui/styles";
-import { PolymorphicForwardRefComponent } from "@rarui-react/components/src/types";
 
+import { PolymorphicForwardRefComponent } from "../../../types";
 import { _BoxProps } from "./box.types";
 
 const Box = forwardRef(

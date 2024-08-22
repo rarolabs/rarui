@@ -10,7 +10,7 @@ import { Box } from "@rarui-react/box";
 import {
   PolymorphicForwardRefComponent,
   useRefObjectAsForwardedRef,
-} from "@rarui-react/components/src/types";
+} from "../../../../../types";
 import { BreadcrumbItemProps } from "./item.types";
 
 const BreadcrumbItem = forwardRef(
