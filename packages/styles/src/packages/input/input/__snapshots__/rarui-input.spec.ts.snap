@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Styles should apply appearance variants correctly: appearance-error 1`] = `"rarui-input_container__lq13ap0 rarui-input_container_appearance_error__lq13ap2"`;
+
+exports[`Input Styles should apply appearance variants correctly: appearance-success 1`] = `"rarui-input_container__lq13ap0 rarui-input_container_appearance_success__lq13ap1"`;
+
+exports[`Input Styles should apply border variants correctly: border-false 1`] = `"rarui-input_container__lq13ap0 rarui-input_container_border_false__lq13ap4"`;
+
+exports[`Input Styles should apply border variants correctly: border-true 1`] = `"rarui-input_container__lq13ap0 rarui-input_container_border_true__lq13ap3"`;
+
+exports[`Input Styles should apply input size variants correctly: input-size-large 1`] = `"rarui-input__lq13ap8 rarui-input_size_large__lq13apa"`;
+
+exports[`Input Styles should apply input size variants correctly: input-size-medium 1`] = `"rarui-input__lq13ap8 rarui-input_size_medium__lq13apb"`;
+
+exports[`Input Styles should apply input size variants correctly: input-size-small 1`] = `"rarui-input__lq13ap8 rarui-input_size_small__lq13apc"`;
+
+exports[`Input Styles should apply leading appearance variants correctly: leading-appearance-error 1`] = `"rarui-input_leading__lq13apd rarui-input_leading_appearance_error__lq13apj"`;
+
+exports[`Input Styles should apply leading appearance variants correctly: leading-appearance-success 1`] = `"rarui-input_leading__lq13apd rarui-input_leading_appearance_success__lq13api"`;
+
+exports[`Input Styles should apply leading position variants correctly: leading-position-end 1`] = `"rarui-input_leading__lq13apd rarui-input_leading_position_end__lq13apf"`;
+
+exports[`Input Styles should apply leading position variants correctly: leading-position-start 1`] = `"rarui-input_leading__lq13apd rarui-input_leading_position_start__lq13ape"`;
+
+exports[`Input Styles should apply size variants correctly: size-large 1`] = `"rarui-input_container__lq13ap0 rarui-input_container_size_large__lq13ap5"`;
+
+exports[`Input Styles should apply size variants correctly: size-medium 1`] = `"rarui-input_container__lq13ap0 rarui-input_container_size_medium__lq13ap6"`;
+
+exports[`Input Styles should apply size variants correctly: size-small 1`] = `"rarui-input_container__lq13ap0 rarui-input_container_size_small__lq13ap7"`;

@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton Styles should apply appearance variants correctly: appearance-brand 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_brand__k9hrpu1"`;
+
+exports[`IconButton Styles should apply appearance variants correctly: appearance-danger 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_danger__k9hrpu2"`;
+
+exports[`IconButton Styles should apply appearance variants correctly: appearance-inverted 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_inverted__k9hrpu6"`;
+
+exports[`IconButton Styles should apply appearance variants correctly: appearance-neutral 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_neutral__k9hrpu5"`;
+
+exports[`IconButton Styles should apply appearance variants correctly: appearance-success 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_success__k9hrpu3"`;
+
+exports[`IconButton Styles should apply appearance variants correctly: appearance-warning 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_warning__k9hrpu4"`;
+
+exports[`IconButton Styles should apply base styles correctly: base-styles 1`] = `"rarui-iconButton__k9hrpu0"`;
+
+exports[`IconButton Styles should apply rounded styles correctly: rounded 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_rounded_true__k9hrpue"`;
+
+exports[`IconButton Styles should apply size variants correctly: size-large 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_size_large__k9hrpu7"`;
+
+exports[`IconButton Styles should apply size variants correctly: size-medium 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_size_medium__k9hrpu8"`;
+
+exports[`IconButton Styles should apply size variants correctly: size-small 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_size_small__k9hrpu9"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-brand-ghost 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_brand__k9hrpu1 rarui-iconButton_variant_ghost__k9hrpuc rarui-iconButton__compound_6__k9hrpul"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-brand-outlined 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_brand__k9hrpu1 rarui-iconButton_variant_outlined__k9hrpub rarui-iconButton__compound_0__k9hrpuf"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-brand-solid 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_brand__k9hrpu1 rarui-iconButton_variant_solid__k9hrpua"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-brand-tonal 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_brand__k9hrpu1 rarui-iconButton_variant_tonal__k9hrpud rarui-iconButton__compound_12__k9hrpur"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-danger-ghost 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_danger__k9hrpu2 rarui-iconButton_variant_ghost__k9hrpuc rarui-iconButton__compound_7__k9hrpum"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-danger-outlined 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_danger__k9hrpu2 rarui-iconButton_variant_outlined__k9hrpub rarui-iconButton__compound_1__k9hrpug"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-danger-solid 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_danger__k9hrpu2 rarui-iconButton_variant_solid__k9hrpua"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-danger-tonal 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_danger__k9hrpu2 rarui-iconButton_variant_tonal__k9hrpud rarui-iconButton__compound_13__k9hrpus"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-inverted-ghost 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_inverted__k9hrpu6 rarui-iconButton_variant_ghost__k9hrpuc rarui-iconButton__compound_11__k9hrpuq"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-inverted-outlined 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_inverted__k9hrpu6 rarui-iconButton_variant_outlined__k9hrpub rarui-iconButton__compound_5__k9hrpuk"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-inverted-solid 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_inverted__k9hrpu6 rarui-iconButton_variant_solid__k9hrpua"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-inverted-tonal 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_inverted__k9hrpu6 rarui-iconButton_variant_tonal__k9hrpud rarui-iconButton__compound_17__k9hrpuw"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-neutral-ghost 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_neutral__k9hrpu5 rarui-iconButton_variant_ghost__k9hrpuc rarui-iconButton__compound_10__k9hrpup"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-neutral-outlined 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_neutral__k9hrpu5 rarui-iconButton_variant_outlined__k9hrpub rarui-iconButton__compound_4__k9hrpuj"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-neutral-solid 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_neutral__k9hrpu5 rarui-iconButton_variant_solid__k9hrpua"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-neutral-tonal 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_neutral__k9hrpu5 rarui-iconButton_variant_tonal__k9hrpud rarui-iconButton__compound_16__k9hrpuv"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-success-ghost 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_success__k9hrpu3 rarui-iconButton_variant_ghost__k9hrpuc rarui-iconButton__compound_8__k9hrpun"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-success-outlined 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_success__k9hrpu3 rarui-iconButton_variant_outlined__k9hrpub rarui-iconButton__compound_2__k9hrpuh"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-success-solid 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_success__k9hrpu3 rarui-iconButton_variant_solid__k9hrpua"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-success-tonal 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_success__k9hrpu3 rarui-iconButton_variant_tonal__k9hrpud rarui-iconButton__compound_14__k9hrput"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-warning-ghost 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_warning__k9hrpu4 rarui-iconButton_variant_ghost__k9hrpuc rarui-iconButton__compound_9__k9hrpuo"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-warning-outlined 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_warning__k9hrpu4 rarui-iconButton_variant_outlined__k9hrpub rarui-iconButton__compound_3__k9hrpui"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-warning-solid 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_warning__k9hrpu4 rarui-iconButton_variant_solid__k9hrpua"`;
+
+exports[`IconButton Styles should apply variant types correctly: variant-warning-tonal 1`] = `"rarui-iconButton__k9hrpu0 rarui-iconButton_appearance_warning__k9hrpu4 rarui-iconButton_variant_tonal__k9hrpud rarui-iconButton__compound_15__k9hrpuu"`;

@@ -1,6 +1,6 @@
 import { RecipeVariants } from "@vanilla-extract/recipes";
 import { selectStyles } from "./rarui-select.css";
-import { DropdownSprinkle } from "../../composite/dropdown/rarui-dropdown.types";
+import { DropdownSprinkle } from "../dropdown/rarui-dropdown.types";
 import { StandardLonghandProperties } from "../../../index.types";
 
 export type SelectVariants = NonNullable<
