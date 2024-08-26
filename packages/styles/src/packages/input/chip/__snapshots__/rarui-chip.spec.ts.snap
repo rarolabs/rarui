@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip Styles should apply close button styles correctly: close 1`] = `"rarui-chip_close__1rk47pp8"`;
+
+exports[`Chip Styles should apply content styles correctly: content 1`] = `"rarui-chip_content__1rk47pp6 rarui-chip_content_textOverflow_true__1rk47pp7"`;
+
+exports[`Chip Styles should apply overlay styles correctly: overlay 1`] = `"rarui-chip_overlay__1rk47pp9"`;
+
+exports[`Chip Styles should apply pill variant styles correctly: pill 1`] = `"rarui-chip__1rk47pp0 rarui-chip_pill_true__1rk47pp1"`;
+
+exports[`Chip Styles should apply selected variant styles correctly: selected 1`] = `"rarui-chip__1rk47pp0 rarui-chip_selected_true__1rk47pp2"`;
+
+exports[`Chip Styles should apply size variants correctly: size-medium 1`] = `"rarui-chip__1rk47pp0 rarui-chip_size_medium__1rk47pp3"`;
+
+exports[`Chip Styles should apply size variants correctly: size-small 1`] = `"rarui-chip__1rk47pp0 rarui-chip_size_small__1rk47pp4"`;
+
+exports[`Chip Styles should apply textOverflow variant styles correctly: textOverflow 1`] = `"rarui-chip__1rk47pp0 rarui-chip_textOverflow_true__1rk47pp5"`;

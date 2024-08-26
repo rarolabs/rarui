@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge Styles should generate correct compound variants: brand outlined compound 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_brand__diq1u81 rarui-badge_size_medium__diq1u89 rarui-badge_variant_outlined__diq1u8d rarui-badge__compound_0__diq1u8e"`;
+
+exports[`Badge Styles should generate correct compound variants: danger outlined compound 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_danger__diq1u82 rarui-badge_size_medium__diq1u89 rarui-badge_variant_outlined__diq1u8d rarui-badge__compound_1__diq1u8f"`;
+
+exports[`Badge Styles should generate correct compound variants: info outlined compound 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_info__diq1u85 rarui-badge_size_medium__diq1u89 rarui-badge_variant_outlined__diq1u8d rarui-badge__compound_4__diq1u8i"`;
+
+exports[`Badge Styles should generate correct compound variants: inverted outlined compound 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_inverted__diq1u87 rarui-badge_size_medium__diq1u89 rarui-badge_variant_outlined__diq1u8d rarui-badge__compound_6__diq1u8k"`;
+
+exports[`Badge Styles should generate correct compound variants: neutral outlined compound 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_neutral__diq1u86 rarui-badge_size_medium__diq1u89 rarui-badge_variant_outlined__diq1u8d rarui-badge__compound_5__diq1u8j"`;
+
+exports[`Badge Styles should generate correct compound variants: success outlined compound 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_success__diq1u83 rarui-badge_size_medium__diq1u89 rarui-badge_variant_outlined__diq1u8d rarui-badge__compound_2__diq1u8g"`;
+
+exports[`Badge Styles should generate correct compound variants: warning outlined compound 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_warning__diq1u84 rarui-badge_size_medium__diq1u89 rarui-badge_variant_outlined__diq1u8d rarui-badge__compound_3__diq1u8h"`;
+
+exports[`Badge Styles should generate correct default styles 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_brand__diq1u81 rarui-badge_size_medium__diq1u89 rarui-badge_variant_solid__diq1u8c"`;
+
+exports[`Badge Styles should generate correct styles for each appearance variant: brand appearance 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_brand__diq1u81 rarui-badge_size_medium__diq1u89 rarui-badge_variant_solid__diq1u8c"`;
+
+exports[`Badge Styles should generate correct styles for each appearance variant: danger appearance 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_danger__diq1u82 rarui-badge_size_medium__diq1u89 rarui-badge_variant_solid__diq1u8c"`;
+
+exports[`Badge Styles should generate correct styles for each appearance variant: info appearance 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_info__diq1u85 rarui-badge_size_medium__diq1u89 rarui-badge_variant_solid__diq1u8c"`;
+
+exports[`Badge Styles should generate correct styles for each appearance variant: inverted appearance 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_inverted__diq1u87 rarui-badge_size_medium__diq1u89 rarui-badge_variant_solid__diq1u8c"`;
+
+exports[`Badge Styles should generate correct styles for each appearance variant: neutral appearance 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_neutral__diq1u86 rarui-badge_size_medium__diq1u89 rarui-badge_variant_solid__diq1u8c"`;
+
+exports[`Badge Styles should generate correct styles for each appearance variant: success appearance 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_success__diq1u83 rarui-badge_size_medium__diq1u89 rarui-badge_variant_solid__diq1u8c"`;
+
+exports[`Badge Styles should generate correct styles for each appearance variant: warning appearance 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_warning__diq1u84 rarui-badge_size_medium__diq1u89 rarui-badge_variant_solid__diq1u8c"`;
+
+exports[`Badge Styles should generate correct styles for each size variant: dot size 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_brand__diq1u81 rarui-badge_size_dot__diq1u8b rarui-badge_variant_solid__diq1u8c"`;
+
+exports[`Badge Styles should generate correct styles for each size variant: large size 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_brand__diq1u81 rarui-badge_size_large__diq1u88 rarui-badge_variant_solid__diq1u8c"`;
+
+exports[`Badge Styles should generate correct styles for each size variant: medium size 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_brand__diq1u81 rarui-badge_size_medium__diq1u89 rarui-badge_variant_solid__diq1u8c"`;
+
+exports[`Badge Styles should generate correct styles for each size variant: small size 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_brand__diq1u81 rarui-badge_size_small__diq1u8a rarui-badge_variant_solid__diq1u8c"`;
+
+exports[`Badge Styles should generate correct styles for outlined variant: outlined variant 1`] = `"rarui-badge__diq1u80 rarui-badge_appearance_brand__diq1u81 rarui-badge_size_medium__diq1u89 rarui-badge_variant_outlined__diq1u8d rarui-badge__compound_0__diq1u8e"`;

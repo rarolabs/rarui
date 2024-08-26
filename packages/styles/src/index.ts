@@ -3,15 +3,17 @@ export { varsThemeBase as variables } from "./themes/globals.css";
 export { variables as variablesDark } from "./themes/rarui-theme-dark.css";
 export { CaptureCssProperties } from "./utils";
 
+// exhibition
+export { avatar } from "./packages/exhibition/avatar";
+
 // atomic
-export { avatar } from "./packages/atomic/avatar";
-export { badge } from "./packages/atomic/badge";
-export { box } from "./packages/atomic/box";
-export { button } from "./packages/atomic/button";
-export { checkbox } from "./packages/atomic/checkbox";
-export { chip } from "./packages/atomic/chip";
-export { divider } from "./packages/atomic/divider";
-export { icon } from "./packages/atomic/icon";
+export { badge } from "./packages/exhibition/badge";
+export { box } from "./packages/layout/box";
+export { button } from "./packages/input/button";
+export { checkbox } from "./packages/input/checkbox";
+export { chip } from "./packages/input/chip";
+export { divider } from "./packages/exhibition/divider";
+export { icon } from "./packages/exhibition/icon";
 export { iconButton } from "./packages/atomic/iconButton";
 export { input } from "./packages/atomic/input";
 export { label } from "./packages/atomic/label";
@@ -23,7 +25,7 @@ export { select } from "./packages/atomic/select";
 export { status } from "./packages/atomic/status";
 export { text } from "./packages/atomic/text";
 export { title } from "./packages/atomic/title";
-export { banner } from "./packages/atomic/banner";
+export { banner } from "./packages/surface/banner";
 export { textarea } from "./packages/atomic/textarea";
 export { toast } from "./packages/atomic/toast";
 export { toggle } from "./packages/atomic/toggle";
@@ -43,18 +45,18 @@ export { stepper } from "./packages/composite/stepper";
 export { tabs } from "./packages/composite/tabs";
 
 // types atomic
-export type { BoxSprinkle } from "./packages/atomic/box";
-export type { ChipSprinkle } from "./packages/atomic/chip";
-export type { DividerSprinkle } from "./packages/atomic/divider";
-export type { IconSprinkle } from "./packages/atomic/icon";
+export type { BoxSprinkle } from "./packages/layout/box";
+export type { ChipSprinkle } from "./packages/input/chip";
+export type { DividerSprinkle } from "./packages/exhibition/divider";
+export type { IconSprinkle } from "./packages/exhibition/icon";
 export type { TextSprinkle } from "./packages/atomic/text";
 export type { SkeletonSprinkle } from "./packages/atomic/skeleton";
 export type { TitleSprinkle } from "./packages/atomic/title";
-export type { AvatarVariants } from "./packages/atomic/avatar";
-export type { BadgeVariants } from "./packages/atomic/badge";
-export type { ButtonVariants } from "./packages/atomic/button";
-export type { CheckboxVariants } from "./packages/atomic/checkbox";
-export type { ChipVariants } from "./packages/atomic/chip";
+export type { AvatarVariants } from "./packages/exhibition/avatar";
+export type { BadgeVariants } from "./packages/exhibition/badge";
+export type { ButtonVariants } from "./packages/input/button";
+export type { CheckboxVariants } from "./packages/input/checkbox";
+export type { ChipVariants } from "./packages/input/chip";
 export type { IconButtonVariants } from "./packages/atomic/iconButton";
 export type { InputVariants } from "./packages/atomic/input";
 export type { LabelVariants } from "./packages/atomic/label";
@@ -66,7 +68,7 @@ export type {
 export type { RadioButtonVariants } from "./packages/atomic/radioButton";
 export type { SelectVariants, SelectSprinkle } from "./packages/atomic/select";
 export type { StatusVariants } from "./packages/atomic/status";
-export type { BannerVariants } from "./packages/atomic/banner";
+export type { BannerVariants } from "./packages/surface/banner";
 export type { TextareaVariants } from "./packages/atomic/textarea";
 export type { ToastVariants, ToastSprinkle } from "./packages/atomic/toast";
 export type { ToggleVariants } from "./packages/atomic/toggle";

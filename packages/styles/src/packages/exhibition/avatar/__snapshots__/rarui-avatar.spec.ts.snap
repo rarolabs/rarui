@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar Styles avatar recipe should apply base styles 1`] = `"rarui-avatar__1jwfew51"`;
+
+exports[`Avatar Styles avatar recipe should apply correct styles for large size 1`] = `"rarui-avatar__1jwfew51 rarui-avatar_size_large__1jwfew54"`;
+
+exports[`Avatar Styles avatar recipe should apply correct styles for medium size 1`] = `"rarui-avatar__1jwfew51 rarui-avatar_size_medium__1jwfew53"`;
+
+exports[`Avatar Styles avatar recipe should apply correct styles for small size 1`] = `"rarui-avatar__1jwfew51 rarui-avatar_size_small__1jwfew52"`;
+
+exports[`Avatar Styles avatar recipe should apply correct styles for xLarge size 1`] = `"rarui-avatar__1jwfew51 rarui-avatar_size_xLarge__1jwfew55"`;
+
+exports[`Avatar Styles badge recipe should apply correct styles for large size 1`] = `"rarui-avatar_badge__1jwfew56 rarui-avatar_badge_size_large__1jwfew59"`;
+
+exports[`Avatar Styles badge recipe should apply correct styles for medium size 1`] = `"rarui-avatar_badge__1jwfew56 rarui-avatar_badge_size_medium__1jwfew58"`;
+
+exports[`Avatar Styles badge recipe should apply correct styles for small size 1`] = `"rarui-avatar_badge__1jwfew56 rarui-avatar_badge_size_small__1jwfew57"`;
+
+exports[`Avatar Styles badge recipe should apply correct styles for xLarge size 1`] = `"rarui-avatar_badge__1jwfew56 rarui-avatar_badge_size_xLarge__1jwfew5a"`;
+
+exports[`Avatar Styles container class should have the correct styles 1`] = `"rarui-avatar_container__1jwfew50"`;

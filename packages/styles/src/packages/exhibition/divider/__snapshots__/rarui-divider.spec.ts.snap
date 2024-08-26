@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider Styles should apply border color correctly: borderColor-brand 1`] = `"rarui-divider_borderColor-brand-xs__hzl8zjl"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-brand-alt 1`] = `"rarui-divider_borderColor-brand-alt-xs__hzl8zjp"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-disabled 1`] = `"rarui-divider_borderColor-disabled-xs__hzl8zjt"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-divider 1`] = `"rarui-divider_borderColor-divider-xs__hzl8zjx"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-error 1`] = `"rarui-divider_borderColor-error-xs__hzl8zj11"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-info 1`] = `"rarui-divider_borderColor-info-xs__hzl8zj15"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-invert 1`] = `"rarui-divider_borderColor-invert-xs__hzl8zj19"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-invert-disabled 1`] = `"rarui-divider_borderColor-invert-disabled-xs__hzl8zj1d"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-primary 1`] = `"rarui-divider_borderColor-primary-xs__hzl8zj1h"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-secondary 1`] = `"rarui-divider_borderColor-secondary-xs__hzl8zj1l"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-subdued 1`] = `"rarui-divider_borderColor-subdued-xs__hzl8zj1p"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-success 1`] = `"rarui-divider_borderColor-success-xs__hzl8zj1t"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-transparent 1`] = `"rarui-divider_borderColor-transparent-xs__hzl8zjh"`;
+
+exports[`Divider Styles should apply border color correctly: borderColor-warning 1`] = `"rarui-divider_borderColor-warning-xs__hzl8zj1x"`;
+
+exports[`Divider Styles should apply border style variants correctly: borderStyle-dashed 1`] = `"rarui-divider_borderStyle-dashed-xs__hzl8zj25"`;
+
+exports[`Divider Styles should apply border style variants correctly: borderStyle-solid 1`] = `"rarui-divider_borderStyle-solid-xs__hzl8zj21"`;
+
+exports[`Divider Styles should apply border width variants correctly: borderWidth-1 1`] = `"rarui-divider_borderTopWidth-1-xs__hzl8zj29 rarui-divider_borderLeftWidth-1-xs__hzl8zj2h"`;
+
+exports[`Divider Styles should apply border width variants correctly: borderWidth-2 1`] = `"rarui-divider_borderTopWidth-2-xs__hzl8zj2d rarui-divider_borderLeftWidth-2-xs__hzl8zj2l"`;
+
+exports[`Divider Styles should apply dynamic width and height properties correctly: dimension-50%-2px 1`] = `"rarui-divider_width-xs__hzl8zj5 rarui-divider_height-xs__hzl8zjd"`;
+
+exports[`Divider Styles should apply dynamic width and height properties correctly: dimension-100px-1px 1`] = `"rarui-divider_width-xs__hzl8zj5 rarui-divider_height-xs__hzl8zjd"`;
+
+exports[`Divider Styles should apply responsive styles correctly: responsive-lg 1`] = `"rarui-divider_borderColor-primary-xs__hzl8zj1h"`;
+
+exports[`Divider Styles should apply responsive styles correctly: responsive-md 1`] = `"rarui-divider_borderColor-primary-xs__hzl8zj1h"`;
+
+exports[`Divider Styles should apply responsive styles correctly: responsive-xl 1`] = `"rarui-divider_borderColor-primary-xs__hzl8zj1h"`;
+
+exports[`Divider Styles should apply responsive styles correctly: responsive-xs 1`] = `"rarui-divider_borderColor-primary-xs__hzl8zj1h"`;

@@ -36,6 +36,18 @@
     },
     "storybook:move": {
       "cache": false
+    },
+    "test": {
+      "cache": false
+    },
+    "test:ci": {
+      "cache": false
+    },
+    "test:staged": {
+      "cache": false
+    },
+    "test:coverage": {
+      "cache": false
     }
   }
 }

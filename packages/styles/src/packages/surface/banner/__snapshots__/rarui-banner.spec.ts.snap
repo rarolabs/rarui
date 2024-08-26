@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner Styles should generate correct compound variants: inverted true compound 1`] = `"rarui-banner__1wgs6s20 rarui-banner_appearance_inverted__1wgs6s24 rarui-banner_floating_true__1wgs6s27 rarui-banner__compound_1__1wgs6s29"`;
+
+exports[`Banner Styles should generate correct compound variants: neutral true compound 1`] = `"rarui-banner__1wgs6s20 rarui-banner_appearance_neutral__1wgs6s23 rarui-banner_floating_true__1wgs6s27 rarui-banner__compound_0__1wgs6s28"`;
+
+exports[`Banner Styles should generate correct default styles 1`] = `"rarui-banner__1wgs6s20"`;
+
+exports[`Banner Styles should generate correct styles for each appearance variant: brand appearance 1`] = `"rarui-banner__1wgs6s20 rarui-banner_appearance_brand__1wgs6s21"`;
+
+exports[`Banner Styles should generate correct styles for each appearance variant: error appearance 1`] = `"rarui-banner__1wgs6s20 rarui-banner_appearance_error__1wgs6s26"`;
+
+exports[`Banner Styles should generate correct styles for each appearance variant: info appearance 1`] = `"rarui-banner__1wgs6s20 rarui-banner_appearance_info__1wgs6s22"`;
+
+exports[`Banner Styles should generate correct styles for each appearance variant: inverted appearance 1`] = `"rarui-banner__1wgs6s20 rarui-banner_appearance_inverted__1wgs6s24"`;
+
+exports[`Banner Styles should generate correct styles for each appearance variant: neutral appearance 1`] = `"rarui-banner__1wgs6s20 rarui-banner_appearance_neutral__1wgs6s23"`;
+
+exports[`Banner Styles should generate correct styles for each appearance variant: warning appearance 1`] = `"rarui-banner__1wgs6s20 rarui-banner_appearance_warning__1wgs6s25"`;
+
+exports[`Banner Styles should generate correct styles for floating variant: floating true 1`] = `"rarui-banner__1wgs6s20 rarui-banner_floating_true__1wgs6s27"`;

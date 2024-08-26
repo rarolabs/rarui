@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox Styles should apply container styles correctly: container 1`] = `"rarui-checkbox_container__1qvfiyr8"`;
+
+exports[`Checkbox Styles should apply error variant styles correctly: error 1`] = `"rarui-checkbox__1qvfiyr1 rarui-checkbox_error_true__1qvfiyr2"`;
+
+exports[`Checkbox Styles should apply indeterminate state styles correctly: indeterminate 1`] = `"rarui-checkbox__1qvfiyr1 rarui-checkbox_indeterminate_true__1qvfiyr5"`;
+
+exports[`Checkbox Styles should apply label styles correctly: label 1`] = `"rarui-checkbox_label__1qvfiyr6"`;
+
+exports[`Checkbox Styles should apply overlay styles correctly on hover: overlay 1`] = `"rarui-checkbox_overlay__1qvfiyr9"`;
+
+exports[`Checkbox Styles should apply pseudo-class styles correctly: pseudo-classes 1`] = `"rarui-checkbox__1qvfiyr1 rarui-checkbox_size_medium__1qvfiyr3"`;
+
+exports[`Checkbox Styles should apply size variants correctly: size-large 1`] = `"rarui-checkbox__1qvfiyr1 rarui-checkbox_size_large__1qvfiyr4"`;
+
+exports[`Checkbox Styles should apply size variants correctly: size-medium 1`] = `"rarui-checkbox__1qvfiyr1 rarui-checkbox_size_medium__1qvfiyr3"`;

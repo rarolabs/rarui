@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box Styles should apply default condition (xs) styles: default condition (xs) 1`] = `
+{
+  "className": "rarui-box_width-xs__745sff9",
+  "otherProps": {},
+  "style": {
+    "--width-xs__745sff0": "100%",
+  },
+}
+`;
+
+exports[`Box Styles should apply dynamic properties correctly: dynamic properties 1`] = `
+{
+  "className": "rarui-box_width-xs__745sff9 rarui-box_height-xs__745sffr rarui-box_flexGrow-xs__745sff89",
+  "otherProps": {},
+  "style": {
+    "--flexGrow-xs__745sff80": "1",
+    "--height-xs__745sffi": "auto",
+    "--width-xs__745sff0": "100%",
+  },
+}
+`;
+
+exports[`Box Styles should apply multiple properties and conditions together: multiple properties and conditions 1`] = `
+{
+  "className": "rarui-box_paddingTop-2xs-xs__745sff269 rarui-box_paddingTop-md-md__745sff271 rarui-box_paddingBottom-2xs-xs__745sff2a9 rarui-box_paddingBottom-md-md__745sff2b1 rarui-box_paddingLeft-2xs-xs__745sff2e9 rarui-box_paddingLeft-md-md__745sff2f1 rarui-box_paddingRight-2xs-xs__745sff2i9 rarui-box_paddingRight-md-md__745sff2j1 rarui-box_marginTop-2xl-xs__745sff2s9 rarui-box_marginBottom-2xl-xs__745sff2wi rarui-box_marginLeft-2xl-xs__745sff30r rarui-box_marginRight-2xl-xs__745sff350 rarui-box_backgroundColor-primary-xs__745sffu9 rarui-box_color-primary-hover__745sff1ce rarui-box_color-brand-focus__745sff196",
+  "otherProps": {},
+  "style": {},
+}
+`;
+
+exports[`Box Styles should apply pseudo-class selectors correctly: pseudo-classes 1`] = `
+{
+  "className": "rarui-box_color-success-xs__745sff1cr rarui-box_color-brand-hover__745sff195 rarui-box_color-info-focus__745sff1a6 rarui-box_color-primary-active__745sff1cd",
+  "otherProps": {},
+  "style": {},
+}
+`;
+
+exports[`Box Styles should apply shorthands correctly: shorthands 1`] = `
+{
+  "className": "rarui-box_paddingTop-xl-xs__745sff27i rarui-box_marginLeft-md-xs__745sff300 rarui-box_marginRight-md-xs__745sff349",
+  "otherProps": {},
+  "style": {},
+}
+`;
+
+exports[`Box Styles should apply static properties correctly: static properties 1`] = `
+{
+  "className": "rarui-box_paddingTop-xs-xs__745sff26i rarui-box_paddingBottom-xs-xs__745sff2ai rarui-box_paddingLeft-xs-xs__745sff2ei rarui-box_paddingRight-xs-xs__745sff2ii rarui-box_marginTop-md-xs__745sff2ri rarui-box_marginBottom-md-xs__745sff2vr rarui-box_marginLeft-md-xs__745sff300 rarui-box_marginRight-md-xs__745sff349 rarui-box_backgroundColor-primary-xs__745sffu9",
+  "otherProps": {},
+  "style": {},
+}
+`;
+
+exports[`Box Styles should apply styles for different media queries: media queries 1`] = `
+{
+  "className": "rarui-box_width-xs__745sff9 rarui-box_width-md__745sffa rarui-box_width-lg__745sffb rarui-box_width-xl__745sffc",
+  "otherProps": {},
+  "style": {
+    "--width-lg__745sff2": "25%",
+    "--width-md__745sff1": "50%",
+    "--width-xl__745sff3": "10%",
+    "--width-xs__745sff0": "100%",
+  },
+}
+`;

@@ -1,4 +1,4 @@
-import main, { tsPaths } from "../../../../.storybook/main";
+import main, { webpackAlias } from "../../../../.storybook/main";
 import type { StorybookConfig } from "@storybook/web-components-vite";
 
 const config: StorybookConfig = {
@@ -32,7 +32,7 @@ const config: StorybookConfig = {
       ...config.resolve,
       alias: {
         ...config.resolve?.alias,
-        ...tsPaths,
+        ...webpackAlias,
       },
     };
     return config;

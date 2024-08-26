@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon Styles should apply color properties correctly: color-brand 1`] = `"rarui-icon_color-brand-xs__edox5vd"`;
+
+exports[`Icon Styles should apply color properties correctly: color-brand-alt 1`] = `"rarui-icon_color-brand-alt-xs__edox5vh"`;
+
+exports[`Icon Styles should apply color properties correctly: color-currentColor 1`] = `"rarui-icon_color-currentColor-xs__edox5v9"`;
+
+exports[`Icon Styles should apply color properties correctly: color-disabled 1`] = `"rarui-icon_color-disabled-xs__edox5vl"`;
+
+exports[`Icon Styles should apply color properties correctly: color-error 1`] = `"rarui-icon_color-error-xs__edox5vp"`;
+
+exports[`Icon Styles should apply color properties correctly: color-info 1`] = `"rarui-icon_color-info-xs__edox5vt"`;
+
+exports[`Icon Styles should apply color properties correctly: color-invert 1`] = `"rarui-icon_color-invert-xs__edox5vx"`;
+
+exports[`Icon Styles should apply color properties correctly: color-invert-disabled 1`] = `"rarui-icon_color-invert-disabled-xs__edox5v11"`;
+
+exports[`Icon Styles should apply color properties correctly: color-invert-secondary 1`] = `"rarui-icon_color-invert-secondary-xs__edox5v15"`;
+
+exports[`Icon Styles should apply color properties correctly: color-on-brand 1`] = `"rarui-icon_color-on-brand-xs__edox5v19"`;
+
+exports[`Icon Styles should apply color properties correctly: color-on-error 1`] = `"rarui-icon_color-on-error-xs__edox5v1d"`;
+
+exports[`Icon Styles should apply color properties correctly: color-on-info 1`] = `"rarui-icon_color-on-info-xs__edox5v1h"`;
+
+exports[`Icon Styles should apply color properties correctly: color-on-success 1`] = `"rarui-icon_color-on-success-xs__edox5v1l"`;
+
+exports[`Icon Styles should apply color properties correctly: color-on-warning 1`] = `"rarui-icon_color-on-warning-xs__edox5v1p"`;
+
+exports[`Icon Styles should apply color properties correctly: color-primary 1`] = `"rarui-icon_color-primary-xs__edox5v1t"`;
+
+exports[`Icon Styles should apply color properties correctly: color-secondary 1`] = `"rarui-icon_color-secondary-xs__edox5v1x"`;
+
+exports[`Icon Styles should apply color properties correctly: color-success 1`] = `"rarui-icon_color-success-xs__edox5v21"`;
+
+exports[`Icon Styles should apply color properties correctly: color-warning 1`] = `"rarui-icon_color-warning-xs__edox5v25"`;
+
+exports[`Icon Styles should apply color properties correctly: color-warning-alt 1`] = `"rarui-icon_color-warning-alt-xs__edox5v29"`;
+
+exports[`Icon Styles should apply cursor property correctly: cursor-default 1`] = `"rarui-icon_cursor-xs__edox5v5"`;
+
+exports[`Icon Styles should apply cursor property correctly: cursor-pointer 1`] = `"rarui-icon_cursor-xs__edox5v5"`;
+
+exports[`Icon Styles should apply responsive styles correctly: responsive-lg 1`] = `"rarui-icon_color-primary-xs__edox5v1t"`;
+
+exports[`Icon Styles should apply responsive styles correctly: responsive-md 1`] = `"rarui-icon_color-primary-xs__edox5v1t"`;
+
+exports[`Icon Styles should apply responsive styles correctly: responsive-xl 1`] = `"rarui-icon_color-primary-xs__edox5v1t"`;
+
+exports[`Icon Styles should apply responsive styles correctly: responsive-xs 1`] = `"rarui-icon_color-primary-xs__edox5v1t"`;

@@ -37,124 +37,12 @@
     "paths": {
       ".storybook": ["./.storybook"],
       "@rarui/tokens": ["./packages/tokens"],
-      "@rarui/webpack": ["./packages/core/webpack"],
       "@rarui/icons": ["./packages/icons"],
-      "@rarui/scripts": ["./packages/core/scripts/src"],
-      "@rarui/stencil": ["./packages/core/stencil/src"],
       "@rarui/styles": ["./packages/styles/src"],
-      "@rarui/components": ["./packages/implementations/web-components/src/"],
-      "@rarui-react/avatar": [
-        "./packages/implementations/react/src/atomic/Avatar/src"
-      ],
-      "@rarui-react/badge": [
-        "./packages/implementations/react/src/atomic/Badge/src"
-      ],
-      "@rarui-react/banner": [
-        "./packages/implementations/react/src/atomic/Banner/src"
-      ],
-      "@rarui-react/box": [
-        "./packages/implementations/react/src/atomic/Box/src"
-      ],
-      "@rarui-react/button": [
-        "./packages/implementations/react/src/atomic/Button/src"
-      ],
-      "@rarui-react/checkbox": [
-        "./packages/implementations/react/src/atomic/Checkbox/src"
-      ],
-      "@rarui-react/chip": [
-        "./packages/implementations/react/src/atomic/Chip/src"
-      ],
-      "@rarui-react/icon": [
-        "./packages/implementations/react/src/atomic/Icon/src"
-      ],
-      "@rarui-react/icon-button": [
-        "./packages/implementations/react/src/atomic/IconButton/src"
-      ],
-      "@rarui-react/input": [
-        "./packages/implementations/react/src/atomic/Input/src"
-      ],
-      "@rarui-react/label": [
-        "./packages/implementations/react/src/atomic/Label/src"
-      ],
-      "@rarui-react/link": [
-        "./packages/implementations/react/src/atomic/Link/src"
-      ],
-      "@rarui-react/progress": [
-        "./packages/implementations/react/src/atomic/Progress/src"
-      ],
-      "@rarui-react/radio-button": [
-        "./packages/implementations/react/src/atomic/RadioButton/src"
-      ],
-      "@rarui-react/select": [
-        "./packages/implementations/react/src/atomic/Select/src"
-      ],
-      "@rarui-react/skeleton": [
-        "./packages/implementations/react/src/atomic/Skeleton/src"
-      ],
-      "@rarui-react/status": [
-        "./packages/implementations/react/src/atomic/Status/src"
-      ],
-      "@rarui-react/text": [
-        "./packages/implementations/react/src/atomic/Text/src"
-      ],
-      "@rarui-react/textarea": [
-        "./packages/implementations/react/src/atomic/Textarea/src"
-      ],
-      "@rarui-react/title": [
-        "./packages/implementations/react/src/atomic/Title/src"
-      ],
-      "@rarui-react/toggle": [
-        "./packages/implementations/react/src/atomic/Toggle/src"
-      ],
-      "@rarui-react/toast": [
-        "./packages/implementations/react/src/atomic/Toast/src"
-      ],
-      "@rarui-react/tooltip": [
-        "./packages/implementations/react/src/atomic/Tooltip/src"
-      ],
-      "@rarui-react/divider": [
-        "./packages/implementations/react/src/atomic/Divider/src"
-      ],
-      "@rarui-react/breadcrumb": [
-        "./packages/implementations/react/src/composite/Breadcrumb/src"
-      ],
-      "@rarui-react/card": [
-        "./packages/implementations/react/src/composite/Card/src"
-      ],
-      "@rarui-react/color-picker": [
-        "./packages/implementations/react/src/composite/ColorPicker/src"
-      ],
-      "@rarui-react/accordion": [
-        "./packages/implementations/react/src/composite/Accordion/src"
-      ],
-      "@rarui-react/datepicker": [
-        "./packages/implementations/react/src/composite/Datepicker/src"
-      ],
-      "@rarui-react/dropdown": [
-        "./packages/implementations/react/src/composite/Dropdown/src"
-      ],
-      "@rarui-react/modal": [
-        "./packages/implementations/react/src/composite/Modal/src"
-      ],
-      "@rarui-react/pagination": [
-        "./packages/implementations/react/src/composite/Pagination/src"
-      ],
-      "@rarui-react/sidebar": [
-        "./packages/implementations/react/src/composite/Sidebar/src"
-      ],
-      "@rarui-react/side-navigation": [
-        "./packages/implementations/react/src/composite/SideNavigation/src"
-      ],
-      "@rarui-react/stepper": [
-        "./packages/implementations/react/src/composite/Stepper/src"
-      ],
-      "@rarui-react/tabs": [
-        "./packages/implementations/react/src/composite/Tabs/src"
-      ],
-      "@rarui-react/theme-provider": [
-        "./packages/implementations/react/src/theme/Provider/src"
-      ]
+      "@rarui/webpack": ["./packages/core/webpack"],
+      "@rarui/scripts": ["./packages/core/scripts/src"],
+      "@rarui/stencil": ["./packages/core/stencil/src"]
     }
   },
-  "include": ["packages", "jest.setup.ts"]
+  "include": ["packages", "babel.config.js"]
 }

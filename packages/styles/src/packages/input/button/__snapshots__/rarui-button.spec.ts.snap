@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Styles should apply appearance variants correctly: appearance-brand 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_brand__15gxywr2 rarui-button_variant_solid__15gxywrb"`;
+
+exports[`Button Styles should apply appearance variants correctly: appearance-danger 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_danger__15gxywr3 rarui-button_variant_solid__15gxywrb"`;
+
+exports[`Button Styles should apply appearance variants correctly: appearance-inverted 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_inverted__15gxywr7 rarui-button_variant_solid__15gxywrb"`;
+
+exports[`Button Styles should apply appearance variants correctly: appearance-neutral 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_neutral__15gxywr6 rarui-button_variant_solid__15gxywrb"`;
+
+exports[`Button Styles should apply appearance variants correctly: appearance-success 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_success__15gxywr4 rarui-button_variant_solid__15gxywrb"`;
+
+exports[`Button Styles should apply appearance variants correctly: appearance-warning 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_warning__15gxywr5 rarui-button_variant_solid__15gxywrb"`;
+
+exports[`Button Styles should apply compound variants correctly: compound-variant-brand-outlined 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_brand__15gxywr2 rarui-button_variant_outlined__15gxywrc rarui-button__compound_0__15gxywrf"`;
+
+exports[`Button Styles should apply compound variants correctly: compound-variant-danger-tonal 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_danger__15gxywr3 rarui-button_variant_tonal__15gxywre rarui-button__compound_13__15gxywrs"`;
+
+exports[`Button Styles should apply full width variant styles: full-width 1`] = `"rarui-button__15gxywr0 rarui-button_full_true__15gxywr1"`;
+
+exports[`Button Styles should apply pseudo-class styles correctly: pseudo-classes 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_brand__15gxywr2 rarui-button_variant_solid__15gxywrb"`;
+
+exports[`Button Styles should apply size variants correctly: size-large 1`] = `"rarui-button__15gxywr0 rarui-button_size_large__15gxywr8 rarui-button_appearance_brand__15gxywr2 rarui-button_variant_solid__15gxywrb"`;
+
+exports[`Button Styles should apply size variants correctly: size-medium 1`] = `"rarui-button__15gxywr0 rarui-button_size_medium__15gxywr9 rarui-button_appearance_brand__15gxywr2 rarui-button_variant_solid__15gxywrb"`;
+
+exports[`Button Styles should apply size variants correctly: size-small 1`] = `"rarui-button__15gxywr0 rarui-button_size_small__15gxywra rarui-button_appearance_brand__15gxywr2 rarui-button_variant_solid__15gxywrb"`;
+
+exports[`Button Styles should apply variant styles correctly: variant-outlined 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_brand__15gxywr2 rarui-button_variant_outlined__15gxywrc rarui-button__compound_0__15gxywrf"`;
+
+exports[`Button Styles should apply variant styles correctly: variant-solid 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_brand__15gxywr2 rarui-button_variant_solid__15gxywrb"`;
+
+exports[`Button Styles should apply variant styles correctly: variant-text 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_brand__15gxywr2 rarui-button_variant_text__15gxywrd rarui-button__compound_6__15gxywrl"`;
+
+exports[`Button Styles should apply variant styles correctly: variant-tonal 1`] = `"rarui-button__15gxywr0 rarui-button_appearance_brand__15gxywr2 rarui-button_variant_tonal__15gxywre rarui-button__compound_12__15gxywrr"`;

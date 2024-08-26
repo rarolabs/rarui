@@ -43,10 +43,10 @@ export const argTypesConvert = (properties: any = {}) => {
   return argTypes;
 };
 
-export const convertTsConfigPathsToWebpackAliases = () => {
-  const rootDir = path.resolve(__dirname, "../");
-  const tsconfigPaths = Object.entries(tsconfig.compilerOptions.paths);
-
+export const convertTsConfigPathsToWebpackAliases = (
+  rootDir = path.resolve(__dirname, "../"),
+  tsconfigPaths = Object.entries(tsconfig.compilerOptions.paths),
+) => {
   const aliases = Object.fromEntries(
     tsconfigPaths.map(([realPath, [mappedPath]]) => {
       const packageName = mappedPath.split("/")[6];

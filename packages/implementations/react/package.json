@@ -11,11 +11,16 @@
   "sideEffects": false,
   "scripts": {
     "build": "yarn g:webpack",
-    "clean": "rm -rf dist && rm -rf storybook-static",
-    "version": "yarn version",
+    "test": "jest --passWithNoTests --no-cache --runInBand --no-watchAll",
+    "test:ci": "yarn test --ci --coverage",
+    "test:coverage": "yarn test --coverage",
+    "test:staged": "yarn test --findRelatedTests",
+    "test:watch": "yarn test --watch",
     "storybook:dev": "yarn g:storybook dev -p 6007 --config-dir ./packages/implementations/react/.storybook",
     "storybook:build": "yarn g:storybook build --config-dir ./packages/implementations/react/.storybook -o ./packages/implementations/react/storybook-static",
-    "storybook:move": "mv storybook-static ../../../storybook-static/react"
+    "storybook:move": "mv storybook-static ../../../storybook-static/react",
+    "clean": "rm -rf dist && rm -rf storybook-static",
+    "version": "yarn version"
   },
   "dependencies": {
     "@floating-ui/react": "^0.26.13",
@@ -36,6 +41,8 @@
     "url": "https://git.rarolabs.com.br/frontend/rarui//issues"
   },
   "devDependencies": {
-    "@rarui/webpack": "workspace:^"
+    "@rarui/webpack": "workspace:^",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   }
 }
