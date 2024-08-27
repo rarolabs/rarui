@@ -1,7 +1,7 @@
 /* eslint-disable no-shadow */
 /* eslint-disable no-use-before-define */
 
-import { ForwardedRef, RefObject, useImperativeHandle } from "react";
+import React, { ForwardedRef, RefObject, useImperativeHandle } from "react";
 
 /**
  * Use a ref object as the imperative handle for a forwarded ref. This can be used to
@@ -26,8 +26,6 @@ export function useRefObjectAsForwardedRef<T>(
  *
  * @see https://github.com/radix-ui/primitives/blob/17ffcb7aaa42cbd36b3c210ba86d7d73d218e5be/packages/react/polymorphic/src/polymorphic.ts
  */
-
-import React from "react";
 
 /* -------------------------------------------------------------------------------------------------
  * Utility types
