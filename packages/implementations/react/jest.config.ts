@@ -17,6 +17,7 @@ const config: Config.InitialOptions = {
     "@rarui/styles": "<rootDir>/../../styles/src",
     "@rarui/tokens/dist/js/tokens": "<rootDir>/../../tokens/dist/js/tokens.cjs",
     // exhibition
+    "@rarui-react/badge": "<rootDir>/src/exhibition/Badge/src",
     "@rarui-react/icon": "<rootDir>/src/exhibition/Icon/src",
     "@rarui-react/title": "<rootDir>/src/exhibition/Title/src",
     "@rarui-react/text": "<rootDir>/src/exhibition/Text/src",

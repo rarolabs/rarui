@@ -2,23 +2,29 @@
   "settings": {
     "import/resolver": {
       "typescript": {
-        "alwaysTryTypes": true
+        "alwaysTryTypes": true,
       },
       "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
       },
-      "babel-module": {}
+      "babel-module": {},
     },
     "react": {
       "pragma": "React",
-      "version": "detect"
-    }
+      "version": "detect",
+    },
   },
   "env": {
-    "browser": true
+    "browser": true,
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["react-hooks", "@typescript-eslint", "testing-library", "spellcheck", "jest"],
+  "plugins": [
+    "react-hooks",
+    "@typescript-eslint",
+    "testing-library",
+    "spellcheck",
+    "jest",
+  ],
   "extends": [
     "plugin:react/recommended",
     "plugin:mdx/recommended",
@@ -27,7 +33,7 @@
     "plugin:jest/recommended",
     "plugin:storybook/recommended",
     "airbnb",
-    "prettier"
+    "prettier",
   ],
   "overrides": [
     {
@@ -36,41 +42,43 @@
         "prettier/prettier": [
           2,
           {
-            "parser": "markdown"
-          }
-        ]
-      }
+            "parser": "markdown",
+          },
+        ],
+      },
     },
     {
       "files": ["*.mdx"],
-      "extends": ["plugin:mdx/overrides"]
+      "extends": ["plugin:mdx/overrides"],
     },
     {
       "files": ["*.stories.*"],
       "rules": {
-        "react-hooks/rules-of-hooks": "off"
-      }
+        "react-hooks/rules-of-hooks": "off",
+      },
     },
+
     {
       "files": ["rarui-*.css.ts"],
       "rules": {
         "camelcase": "off",
-        "babel/camelcase": "off"
-      }
-    }
+        "babel/camelcase": "off",
+      },
+    },
   ],
   "globals": {
     "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
+    "SharedArrayBuffer": "readonly",
   },
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
     },
     "ecmaVersion": 2018,
-    "sourceType": "module"
+    "sourceType": "module",
   },
   "rules": {
+    "import/no-relative-packages": "off",
     "class-methods-use-this": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
@@ -81,13 +89,13 @@
     "@typescript-eslint/triple-slash-reference": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
-      { "varsIgnorePattern": "^_" }
+      { "varsIgnorePattern": "^_" },
     ],
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".js", ".jsx", ".tsx"]
-      }
+        "extensions": [".js", ".jsx", ".tsx"],
+      },
     ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
@@ -96,17 +104,17 @@
       2,
       {
         "namedComponents": ["arrow-function", "function-declaration"],
-        "unnamedComponents": "arrow-function"
-      }
+        "unnamedComponents": "arrow-function",
+      },
     ],
     "prettier/prettier": [
       "warn",
       {
         "singleQuote": false,
         "semi": true,
-        "trailingComma": "none"
-      }
+        "trailingComma": "none",
+      },
     ],
-    "no-console": "warn"
-  }
+    "no-console": "warn",
+  },
 }

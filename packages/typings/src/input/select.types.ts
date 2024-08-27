@@ -1,6 +1,6 @@
 import { SelectSprinkle, SelectVariants } from "@rarui/styles";
 
-export interface SelectOption {
+export interface SelectOptionProps {
   /**
    * Label for the option. This is the text that will be displayed for the option.
    */
@@ -13,28 +13,28 @@ export interface SelectOption {
 
 interface SelectTyping {
   /**
-   * Options for the Select component. This should be an array of SelectOption objects.
+   * Options for the Select component. This should be an array of SelectOptionProps objects.
    */
-  options: SelectOption[];
+  options: SelectOptionProps[];
   /**
    * Default selected values for the Select component.
-   * This should be an array of SelectOption objects representing the selected options.
+   * This should be an array of SelectOptionProps objects representing the selected options.
    */
-  value?: string | string[];
+  value?: SelectOptionProps | SelectOptionProps[];
   /**
    * Callback function that is called when the selected values change.
-   * This function receives an array of SelectOption objects representing the selected options.
+   * This function receives an array of SelectOptionProps objects representing the selected options.
    */
-  onChange?: (selectedOptions: string | string[]) => void;
+  onChange?: (selectedOptions: SelectOptionProps | SelectOptionProps[]) => void;
   /**
    * Fazer
    */
   multiple?: boolean;
   /**
    * Specifies the default selected value(s) for the select box.
-   * This can be a string for single selection or an array of strings for multiple selections.
+   * This can be a selectOption for single selection or an array of selectOption for multiple selections.
    */
-  defaultValue?: string | string[];
+  defaultValue?: SelectOptionProps | SelectOptionProps[];
   /**
    * If true, the Select component is shown.
    */

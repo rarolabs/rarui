@@ -2,6 +2,12 @@
 
 RarUI Styles deprive all styles needed to build components.
 
+## 2024-08-26 `2.2.1`
+
+#### 🐛 Bug fixes
+
+- Added styles for days disabled to the Datepicker package. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-08-06 `2.2.0`
 
 #### 🎉 New features

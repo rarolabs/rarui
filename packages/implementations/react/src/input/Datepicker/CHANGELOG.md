@@ -2,6 +2,16 @@
 
 The Datepicker component lets you select a date value of a predetermined set.
 
+## 2024-08-26 `1.3.1`
+
+#### 🐛 Bug fixes
+
+- Fixed error when cleaning the date by the text field. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+
+#### 🎉 New features
+
+- Added new properties of `minDate` and` maxdate`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-30 `1.3.0`
 
 #### 🎉 New features

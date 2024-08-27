@@ -2,6 +2,12 @@
 
 Dropdown are informative, specific, and action -oriented text labels that provide contextual support.
 
+## 2024-08-26 `1.2.2`
+
+#### 🐛 Bug fixes
+
+- Fixed the text aligment of `Dropdown.item` component. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-04 `1.2.1`
 
 #### 🐛 Bug fixes

@@ -2,6 +2,13 @@
 
 Use a select box when a user needs to select one or more than one option from a list.
 
+## 2024-08-26 `2.1.1`
+
+#### 🐛 Bug fixes
+
+- Fixed clear button only showing on `multiple` select. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+- Fixed select not closing on selecting an option. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-07-02 `2.1.0`
 
 #### 🎉 New features

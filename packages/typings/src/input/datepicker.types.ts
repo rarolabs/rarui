@@ -44,6 +44,14 @@ export interface DatepickerProps {
    */
   endDate?: Date;
   /**
+   * The min date in a date selection.
+   */
+  minDate?: Date;
+  /**
+   * The max date in a date selection.
+   */
+  maxDate?: Date;
+  /**
    * Determines whether the datepicker allows selecting a date range.
    * When true, the datepicker enables range selection.
    */

@@ -240,8 +240,20 @@ globalStyle(
   },
 );
 
+globalStyle(`${datepicker} .react-datepicker__day--disabled`, {
+  color: varsThemeBase.colors.content.disabled,
+  opacity: 1,
+  fontWeight: varsThemeBase.fontWeight.regular,
+});
+
+globalStyle(`${datepicker} .react-datepicker__day--disabled:hover`, {
+  borderColor: "transparent",
+  backgroundColor: "transparent",
+});
+
 globalStyle(`${datepicker} .react-datepicker__day--outside-month`, {
   color: varsThemeBase.colors.content.disabled,
+  opacity: 0.6,
   fontWeight: varsThemeBase.fontWeight.regular,
 });
 

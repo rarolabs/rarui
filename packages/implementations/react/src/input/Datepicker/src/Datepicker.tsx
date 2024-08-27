@@ -1,5 +1,5 @@
 import React, { createRef, useState } from "react";
-// import "react-datepicker/dist/react-datepicker.css";
+import "react-datepicker/dist/react-datepicker.css";
 import { datepicker } from "@rarui/styles";
 import Picker from "react-datepicker";
 
@@ -55,10 +55,8 @@ const Datepicker: React.FC<DatepickerProps> = ({
       showMonthYearPicker={showMonthYearPicker}
       selected={selected !== undefined ? selected : date}
       onChange={(newDate: Date) => {
-        if (newDate) {
-          onChange(newDate);
-          setDate(newDate);
-        }
+        onChange(newDate);
+        setDate(newDate);
       }}
       popperPlacement={popperPlacement}
       popperModifiers={popperModifiers}

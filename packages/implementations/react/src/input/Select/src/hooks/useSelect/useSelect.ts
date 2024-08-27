@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { SelectOptionProps } from "@rarui/typings";
+
 import { SelectProps } from "../../select.types";
 
 export const useSelect = ({
@@ -18,7 +20,7 @@ export const useSelect = ({
   const [selectedOptions, setSelectedOptions] = useState(initialState);
 
   const handleSelect = (
-    selectedValue: string,
+    selectedValue: SelectOptionProps,
     event: React.MouseEvent<HTMLElement, MouseEvent>,
   ) => {
     event.stopPropagation();
@@ -48,7 +50,7 @@ export const useSelect = ({
   };
 
   const handleRemoveOption = (
-    selectedValue: string,
+    selectedValue: SelectOptionProps,
     event: React.MouseEvent<HTMLElement, MouseEvent>,
   ) => {
     event.stopPropagation();
