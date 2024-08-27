@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "include": ["decorators"],
+  "compilerOptions": {
+    "paths": {
+      "@rarui-react/icon-button": [
+        "./packages/implementations/react/src/input/IconButton/src"
+      ],
+      "@rarui-react/box": [
+        "./packages/implementations/react/src/layout/Box/src"
+      ],
+      "@rarui-react/tabs": [
+        "./packages/implementations/react/src/navigation/Tabs/src"
+      ]
+    }
+  }
+}

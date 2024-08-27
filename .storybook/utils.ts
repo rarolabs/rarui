@@ -1,5 +1,5 @@
 import path from "path";
-import tsconfig from "../tsconfig.json";
+import tsconfig from "./tsconfig.json";
 
 export const argTypesConvert = (properties: any = {}) => {
   const argTypes = properties.props.reduce((prev: any, curr: any) => {
