@@ -1,0 +1,92 @@
+[
+  {
+    "package": "@rarui-react/components 1.41.2",
+    "description": "## 2024-08-07 `1.41.2`\n\n#### 🐛 Bug fixes\n\n- Fixed error when cleaning the date by the text field in the component `DatePicker`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))\n- Fixed clear button only showing on `multiple` select in the component `Select`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))\n- Fixed select not closing on selecting an option in the component `Select`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))\n- Fixed the text aligment of `Dropdown.item` component. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))\n\n#### 🎉 New features\n\n- Added new properties of `minDate` and` maxdate` in the component `DatePicker`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))\n\n#### 💡 Others",
+    "version": "1.41.2",
+    "tagName": "rarui-react/components-1.41.2",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/components",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/datepicker 1.3.1",
+    "description": "## 2024-08-26 `1.3.1`\n\n#### 🐛 Bug fixes\n\n- Fixed error when cleaning the date by the text field. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))\n\n#### 🎉 New features\n\n- Added new properties of `minDate` and` maxdate`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "1.3.1",
+    "tagName": "rarui-react/datepicker-1.3.1",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/datepicker",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/dropdown 1.2.2",
+    "description": "## 2024-08-26 `1.2.2`\n\n#### 🐛 Bug fixes\n\n- Fixed the text aligment of `Dropdown.item` component. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "1.2.2",
+    "tagName": "rarui-react/dropdown-1.2.2",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/dropdown",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/select 2.1.1",
+    "description": "## 2024-08-26 `2.1.1`\n\n#### 🐛 Bug fixes\n\n- Fixed clear button only showing on `multiple` select. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))\n- Fixed select not closing on selecting an option. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "2.1.1",
+    "tagName": "rarui-react/select-2.1.1",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/select",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui/styles 2.2.1",
+    "description": "## 2024-08-26 `2.2.1`\n\n#### 🐛 Bug fixes\n\n- Added styles for days disabled to the Datepicker package. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "2.2.1",
+    "tagName": "rarui/styles-2.2.1",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui/styles",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui/typings 2.0.1",
+    "description": "## 2024-08-26 `2.0.1`\n\n#### 🐛 Bug fixes\n\n- Corrigido tipagens de `onChange`, `value` e `defaultValue`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))\n\n#### 🎉 New features\n\n- Adioconado nova tipagem de `minDate` e `maxDate` ao tipo do `DatePickerProps`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))",
+    "version": "2.0.1",
+    "tagName": "rarui/typings-2.0.1",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui/typings",
+          "link_type": "package"
+        }
+      ]
+    }
+  }
+]
