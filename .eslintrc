@@ -57,11 +57,7 @@
         "react-hooks/rules-of-hooks": "off",
       },
     },
-    {
-      "rules": {
-        "import/no-relative-packages": "off",
-      },
-    },
+
     {
       "files": ["rarui-*.css.ts"],
       "rules": {
@@ -82,6 +78,7 @@
     "sourceType": "module",
   },
   "rules": {
+    "import/no-relative-packages": "off",
     "class-methods-use-this": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
