@@ -1,0 +1,10 @@
+releases:
+  "@rarui-react/components": patch
+  "@rarui-react/datepicker": patch
+  "@rarui-react/dropdown": patch
+  "@rarui-react/select": patch
+  "@rarui/styles": patch
+  "@rarui/typings": patch
+
+declined:
+  - "@rarui-react/breadcrumb"

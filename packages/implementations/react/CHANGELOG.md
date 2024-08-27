@@ -2,9 +2,22 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-08-07 `1.41.2`
+
+#### 🐛 Bug fixes
+
+- Fixed error when cleaning the date by the text field in the component `DatePicker`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+- Fixed clear button only showing on `multiple` select in the component `Select`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+- Fixed select not closing on selecting an option in the component `Select`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+- Fixed the text aligment of `Dropdown.item` component. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+
+#### 🎉 New features
+
+- Added new properties of `minDate` and` maxdate` in the component `DatePicker`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-08-07 `1.41.1`
 
-#### 💡 Others -->
+#### 💡 Others
 
 - Added `@rarui/typings` dependency to packages. ([#88](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/80) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))
 - Reallocated useRefObjectAsForwardedRef hook used to sync ref object with forwarded ref and allow local access to instance reference with `.current`. ([#88](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/80) by [@vinicius.osmainchi](https://git.rarolabs.com.br/vinicius.osmainchi))

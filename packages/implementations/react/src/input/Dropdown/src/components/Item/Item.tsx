@@ -58,7 +58,7 @@ const DropdownItem = forwardRef(
         ref={innerRef}
       >
         {(name || icon) && (
-          <Box display="flex" gap="$3xs">
+          <Box display="flex" textAlign="center" gap="$3xs">
             <Icon source={icon} />
             {name}
           </Box>

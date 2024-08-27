@@ -10,6 +10,6 @@ export type { IconButtonProps } from "./iconButton.types";
 export type { InputProps } from "./input.types";
 export type { InputLeadingProps } from "./inputLeading.types";
 export type { RadioButtonProps } from "./radioButton.types";
-export type { SelectProps } from "./select.types";
+export type { SelectProps, SelectOptionProps } from "./select.types";
 export type { TextareaProps } from "./textarea.types";
 export type { ToggleProps } from "./toggle.types";

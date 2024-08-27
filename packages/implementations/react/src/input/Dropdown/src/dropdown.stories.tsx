@@ -46,6 +46,20 @@ export const basic: Story = {
     width: "200px",
     content: (
       <>
+        <Dropdown.Item name="Newsletter" />
+        <Dropdown.Item name="Purchase" />
+        <Dropdown.Item name="Downloads" />
+        <Dropdown.Item name="Team Account" />
+      </>
+    ),
+  },
+};
+
+export const WithIcons: Story = {
+  args: {
+    width: "200px",
+    content: (
+      <>
         <Dropdown.Item icon={<NotificationOutlinedIcon />} name="Newsletter">
           <Text fontSize="$xs" color="$disabled">
             ⌘+N

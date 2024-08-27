@@ -56,7 +56,8 @@ const Select: React.FC<SelectProps> = forwardRef(
       <Dropdown
         width="100%"
         matchReferenceWidth
-        visible={open}
+        visible={menuOpen}
+        onVisibility={(open) => setMenuOpen(open)}
         enabledClick={!disabled}
         portalId={portalId}
         enabledFlip={enabledFlip}
@@ -73,11 +74,14 @@ const Select: React.FC<SelectProps> = forwardRef(
                 {!multiple && (
                   <Dropdown.Item
                     key={option.value}
-                    selected={selectedOptions[0] === option.value}
-                    onClick={(event) => handleSelect(option.value, event)}
+                    selected={selectedOptions[0]?.value === option.value}
+                    onClick={(event) => {
+                      setMenuOpen(false);
+                      handleSelect(option, event);
+                    }}
                   >
                     {option.label}
-                    {selectedOptions[0] === option.value && (
+                    {selectedOptions[0]?.value === option.value && (
                       <Icon
                         color="$brand"
                         source={<CheckIcon size="small" />}
@@ -96,9 +100,10 @@ const Select: React.FC<SelectProps> = forwardRef(
                       id={option.value}
                       label={option.label}
                       readOnly
-                      onClick={(event) => handleSelect(option.value, event)}
+                      onClick={(event) => handleSelect(option, event)}
                       checked={selectedOptions.some(
-                        (selectedOption) => selectedOption === option.value,
+                        (selectedOption) =>
+                          selectedOption.value === option.value,
                       )}
                     />
                   </Dropdown.Item>
@@ -137,7 +142,7 @@ const Select: React.FC<SelectProps> = forwardRef(
             padding="$4xs"
           >
             {selectedOptions?.map((option) => (
-              <React.Fragment key={option}>
+              <React.Fragment key={option.value}>
                 {!multiple && (
                   <Text
                     textTransform="capitalize"
@@ -145,7 +150,7 @@ const Select: React.FC<SelectProps> = forwardRef(
                     whiteSpace="nowrap"
                     overflow="hidden"
                   >
-                    {options?.find((opt) => opt.value === option)?.label}
+                    {option?.label}
                   </Text>
                 )}
                 {multiple && (
@@ -154,7 +159,7 @@ const Select: React.FC<SelectProps> = forwardRef(
                     onClick={(event) => handleRemoveOption(option, event)}
                     pill
                     closeable
-                    data-testid={`option-selected-${option}`}
+                    data-testid={`option-selected-${option.value}`}
                     textTransform="capitalize"
                     disabled={disabled}
                   >
@@ -164,7 +169,7 @@ const Select: React.FC<SelectProps> = forwardRef(
                       whiteSpace="nowrap"
                       overflow="hidden"
                     >
-                      {options.find((opt) => opt.value === option)?.label}
+                      {option?.label}
                     </Text>
                   </Chip>
                 )}

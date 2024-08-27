@@ -2,6 +2,16 @@
 
 This package is intended for internal use in creating components with polymorphic typing.
 
+## 2024-08-26 `2.0.1`
+
+#### 🐛 Bug fixes
+
+- Corrigido tipagens de `onChange`, `value` e `defaultValue`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+
+#### 🎉 New features
+
+- Adioconado nova tipagem de `minDate` e `maxDate` ao tipo do `DatePickerProps`. ([#99](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/99) by [@junior](https://git.rarolabs.com.br/junior))
+
 ## 2024-08-07 `2.0.0`
 
 #### 🎉 New features
