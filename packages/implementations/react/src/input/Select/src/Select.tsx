@@ -57,7 +57,7 @@ const Select: React.FC<SelectProps> = forwardRef(
         width="100%"
         matchReferenceWidth
         visible={menuOpen}
-        onVisibility={(open) => setMenuOpen(open)}
+        onVisibility={(visibility) => setMenuOpen(visibility)}
         enabledClick={!disabled}
         portalId={portalId}
         enabledFlip={enabledFlip}
