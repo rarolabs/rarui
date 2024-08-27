@@ -41,7 +41,6 @@ const Datepicker: React.FC<DatepickerProps> = ({
       customInput={
         customInput ?? <DatepickerInput input={{ ...input, disabled }} />
       }
-      // isClearable
       renderCustomHeader={(headerProps) => (
         <DatepickerHeader
           showYearPicker={showYearPicker}

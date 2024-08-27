@@ -7,4 +7,5 @@ releases:
   "@rarui/typings": patch
 
 declined:
+  - "@rarui/design-system"
   - "@rarui-react/breadcrumb"
