@@ -1,7 +1,7 @@
 {
   "id": "button",
   "name": "Button",
-  "totalProps": 8,
+  "totalProps": 2,
   "packageName": "@rarui-react/button",
   "version": "1.1.2",
   "docLink": "https://rarui.com.br/documentation/src-components/button",
@@ -25,47 +25,6 @@
         }
       ],
       "title": "as",
-      "required": false
-    },
-    {
-      "description": "The content of the button.",
-      "type": "React.ReactNode",
-      "title": "children",
-      "required": true
-    },
-    {
-      "description": "Disables the button, disallowing user interaction.",
-      "default": false,
-      "type": "boolean",
-      "title": "disabled",
-      "required": false
-    },
-    {
-      "description": "Specifies whether the button should take up the full width of its container.\nThis variant is useful when you want to make a button span the entire width of its parent container.",
-      "type": "boolean",
-      "title": "full",
-      "required": false
-    },
-    {
-      "description": "Defines the appearance variants for the button component.\nEach appearance variant corresponds to a specific background color, border color, and text color.",
-      "enum": ["brand", "danger", "inverted", "neutral", "success", "warning"],
-      "type": "string",
-      "title": "appearance",
-      "required": false
-    },
-    {
-      "description": "Defines the size of the button component.",
-      "default": "large",
-      "enum": ["large", "medium", "small"],
-      "type": "string",
-      "title": "size",
-      "required": false
-    },
-    {
-      "description": "Defines the visual variant of the badge, affecting its background style, border and text.",
-      "enum": ["outlined", "solid", "text", "tonal"],
-      "type": "string",
-      "title": "variant",
       "required": false
     }
   ],

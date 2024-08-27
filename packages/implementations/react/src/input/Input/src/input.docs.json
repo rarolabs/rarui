@@ -1,153 +1,26 @@
 {
   "id": "input",
   "name": "Input",
-  "totalProps": 6,
+  "totalProps": 0,
   "packageName": "@rarui-react/input",
   "version": "1.1.3",
   "docLink": "https://rarui.com.br/documentation/src-components/input",
-  "props": [
-    {
-      "description": "Componet to be displayed on start input.",
-      "type": "React.ReactNode",
-      "title": "leadingStart",
-      "required": false
-    },
-    {
-      "description": "Componet to be displayed on end input.",
-      "type": "React.ReactNode",
-      "title": "leadingEnd",
-      "required": false
-    },
-    {
-      "description": "Determines the visual style of the input, affecting its border",
-      "enum": ["error", "success"],
-      "type": "string",
-      "title": "appearance",
-      "required": false
-    },
-    {
-      "description": "Determines if the input have borders or not.",
-      "type": "boolean",
-      "title": "border",
-      "required": false
-    },
-    {
-      "description": "Specifies the size of the input, controlling its dimensions.",
-      "enum": ["large", "medium", "small"],
-      "type": "string",
-      "title": "size",
-      "required": false
-    },
-    {
-      "description": "Places a divider between the input and the leading components",
-      "type": "boolean",
-      "title": "divider",
-      "required": false
-    }
-  ],
+  "props": [],
   "subComponents": [
     {
       "name": "Input.Leading",
-      "totalProps": 5,
-      "props": [
-        {
-          "description": "The content of the Leading.",
-          "type": "React.ReactNode",
-          "title": "children",
-          "required": true
-        },
-        {
-          "description": "Sent Leading display position.",
-          "enum": ["end", "start"],
-          "type": "string",
-          "title": "position",
-          "required": true
-        },
-        {
-          "description": "Places a divider between the input and the leading components",
-          "type": "boolean",
-          "title": "divider",
-          "required": false
-        },
-        {
-          "description": "Specifies the size of the input, controlling its dimensions.",
-          "enum": ["large", "medium", "small"],
-          "type": "string",
-          "title": "size",
-          "required": false
-        },
-        {
-          "description": "Determines the visual style of the input, affecting its border",
-          "enum": ["error", "success"],
-          "type": "string",
-          "title": "appearance",
-          "required": false
-        }
-      ]
+      "totalProps": 0,
+      "props": []
     },
     {
       "name": "Input.Password",
-      "totalProps": 4,
-      "props": [
-        {
-          "description": "Determines if the input have borders or not.",
-          "type": "boolean",
-          "title": "border",
-          "required": false
-        },
-        {
-          "description": "Places a divider between the input and the leading components",
-          "type": "boolean",
-          "title": "divider",
-          "required": false
-        },
-        {
-          "description": "Specifies the size of the input, controlling its dimensions.",
-          "enum": ["large", "medium", "small"],
-          "type": "string",
-          "title": "size",
-          "required": false
-        },
-        {
-          "description": "Determines the visual style of the input, affecting its border",
-          "enum": ["error", "success"],
-          "type": "string",
-          "title": "appearance",
-          "required": false
-        }
-      ]
+      "totalProps": 0,
+      "props": []
     },
     {
       "name": "Input.Search",
-      "totalProps": 4,
-      "props": [
-        {
-          "description": "Determines if the input have borders or not.",
-          "type": "boolean",
-          "title": "border",
-          "required": false
-        },
-        {
-          "description": "Places a divider between the input and the leading components",
-          "type": "boolean",
-          "title": "divider",
-          "required": false
-        },
-        {
-          "description": "Specifies the size of the input, controlling its dimensions.",
-          "enum": ["large", "medium", "small"],
-          "type": "string",
-          "title": "size",
-          "required": false
-        },
-        {
-          "description": "Determines the visual style of the input, affecting its border",
-          "enum": ["error", "success"],
-          "type": "string",
-          "title": "appearance",
-          "required": false
-        }
-      ]
+      "totalProps": 0,
+      "props": []
     }
   ]
 }

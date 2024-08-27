@@ -1,36 +1,10 @@
 {
   "id": "radioButton",
   "name": "RadioButton",
-  "totalProps": 4,
+  "totalProps": 0,
   "packageName": "@rarui-react/radio-button",
   "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/radio-button",
-  "props": [
-    {
-      "description": "Sets radio state to activated or deactivated.",
-      "type": "boolean",
-      "title": "selected",
-      "required": false
-    },
-    {
-      "description": "Text to be rendered inside the component.",
-      "type": "string",
-      "title": "label",
-      "required": false
-    },
-    {
-      "description": "Specifies the size of the radiobutton",
-      "enum": ["large", "small"],
-      "type": "string",
-      "title": "size",
-      "required": false
-    },
-    {
-      "description": "Specifies whether the radiobutton is in error state",
-      "type": "boolean",
-      "title": "error",
-      "required": false
-    }
-  ],
+  "props": [],
   "subComponents": []
 }

@@ -1,23 +1,10 @@
 {
   "id": "colorPicker",
   "name": "ColorPicker",
-  "totalProps": 2,
+  "totalProps": 0,
   "packageName": "@rarui-react/color-picker",
   "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/color-picker",
-  "props": [
-    {
-      "description": "Hexadecimal color to be displayed as initial color",
-      "type": "string",
-      "title": "color",
-      "required": true
-    },
-    {
-      "description": "Callback function to be called when color changes",
-      "type": "Color",
-      "title": "onChange",
-      "required": true
-    }
-  ],
+  "props": [],
   "subComponents": []
 }

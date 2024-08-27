@@ -1,29 +1,15 @@
 {
   "id": "breadcrumb",
   "name": "Breadcrumb",
-  "totalProps": 2,
+  "totalProps": 0,
   "packageName": "@rarui-react/breadcrumb",
   "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/breadcrumb",
-  "props": [
-    {
-      "description": "The content of the breadcrumbs, which should be one or more Breadcrumb.Item components or other React nodes.",
-      "type": "React.ReactNode",
-      "title": "children",
-      "required": false
-    },
-    {
-      "description": "Specifies the number of breadcrumb items to display after truncation.\nThis is useful for managing the display of long breadcrumb lists.",
-      "default": 10,
-      "type": "number",
-      "title": "itensAfterTruncate",
-      "required": false
-    }
-  ],
+  "props": [],
   "subComponents": [
     {
       "name": "Breadcrumb.Item",
-      "totalProps": 6,
+      "totalProps": 2,
       "props": [
         {
           "description": "A ref to the element rendered by this component. Because this component is polymorphic, the type will vary based on the value of the as prop.",
@@ -44,30 +30,6 @@
             }
           ],
           "title": "as",
-          "required": false
-        },
-        {
-          "description": "The content of the breadcrumb item. This can include text, icons, or other React elements.",
-          "type": "React.ReactNode",
-          "title": "children",
-          "required": false
-        },
-        {
-          "$ref": "#/definitions/React.ReactNode",
-          "description": "An icon to be displayed alongside the breadcrumb item.\nThis can be used to provide a visual representation of the item.",
-          "title": "icon",
-          "required": false
-        },
-        {
-          "description": "The name of the breadcrumb item. This is typically the text that is displayed for the item.",
-          "type": "string",
-          "title": "name",
-          "required": false
-        },
-        {
-          "description": "Indicates whether the breadcrumb item is currently active.\nAn active item is typically styled differently to show that it represents the current page.",
-          "type": "boolean",
-          "title": "active",
           "required": false
         }
       ]
