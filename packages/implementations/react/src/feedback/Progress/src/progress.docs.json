@@ -1,16 +1,56 @@
 {
   "id": "progress",
   "name": "Progress",
-  "totalProps": 0,
+  "totalProps": 2,
   "packageName": "@rarui-react/progress",
   "version": "1.1.1",
   "docLink": "https://rarui.com.br/documentation/src-components/progress",
-  "props": [],
+  "props": [
+    {
+      "description": "The progress percentage, represented as a number between 0 and 100.\nThis indicates the completion level of the process.",
+      "type": "number",
+      "title": "percentage",
+      "required": true
+    },
+    {
+      "description": "Specifies the color of the progress.\nThis prop accepts one of the following values: \"$info\", \"$success\" or \"$brand\"",
+      "default": "$info",
+      "examples": "[\"$brand\", { xs: \"$brand\", md: \"$info\" }]",
+      "enum": ["$brand", "$info", "$success"],
+      "type": "string",
+      "title": "color",
+      "required": false
+    }
+  ],
   "subComponents": [
     {
       "name": "Progress.Circle",
-      "totalProps": 0,
-      "props": []
+      "totalProps": 3,
+      "props": [
+        {
+          "description": "The progress percentage, represented as a number between 0 and 100.\nThis indicates the completion level of the process.",
+          "type": "number",
+          "title": "percentage",
+          "required": true
+        },
+        {
+          "description": "Specifies the color of the progress.\nThis prop accepts one of the following values: \"$info\", \"$success\" or \"$brand\"",
+          "default": "$info",
+          "examples": "[\"$brand\", { xs: \"$brand\", md: \"$info\" }]",
+          "enum": ["$brand", "$info", "$success"],
+          "type": "string",
+          "title": "color",
+          "required": false
+        },
+        {
+          "description": "Specifies the size of the progress indicator.\nThis prop accepts one of the following values: \"large\" or \"small\".",
+          "default": "large",
+          "enum": ["large", "small"],
+          "type": "string",
+          "title": "size",
+          "required": false
+        }
+      ]
     }
   ]
 }

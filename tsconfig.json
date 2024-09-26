@@ -41,7 +41,118 @@
       "@rarui/styles": ["./packages/styles/src"],
       "@rarui/webpack": ["./packages/core/webpack"],
       "@rarui/scripts": ["./packages/core/scripts/src"],
-      "@rarui/stencil": ["./packages/core/stencil/src"]
+      "@rarui/stencil": ["./packages/core/stencil/src"],
+      "@rarui-react/avatar": [
+        "./packages/implementations/react/src/exhibition/Avatar/src"
+      ],
+      "@rarui-react/badge": [
+        "./packages/implementations/react/src/exhibition/Badge/src"
+      ],
+      "@rarui-react/divider": [
+        "./packages/implementations/react/src/exhibition/Divider/src"
+      ],
+      "@rarui-react/icon": [
+        "./packages/implementations/react/src/exhibition/Icon/src"
+      ],
+      "@rarui-react/label": [
+        "./packages/implementations/react/src/exhibition/Label/src"
+      ],
+      "@rarui-react/stepper": [
+        "./packages/implementations/react/src/exhibition/Stepper/src"
+      ],
+      "@rarui-react/text": [
+        "./packages/implementations/react/src/exhibition/Text/src"
+      ],
+      "@rarui-react/title": [
+        "./packages/implementations/react/src/exhibition/Title/src"
+      ],
+      "@rarui-react/tooltip": [
+        "./packages/implementations/react/src/exhibition/Tooltip/src"
+      ],
+      "@rarui-react/progress": [
+        "./packages/implementations/react/src/feedback/Progress/src"
+      ],
+      "@rarui-react/skeleton": [
+        "./packages/implementations/react/src/feedback/Skeleton/src"
+      ],
+      "@rarui-react/status": [
+        "./packages/implementations/react/src/feedback/Status/src"
+      ],
+      "@rarui-react/toast": [
+        "./packages/implementations/react/src/feedback/Toast/src"
+      ],
+      "@rarui-react/button": [
+        "./packages/implementations/react/src/input/Button/src"
+      ],
+      "@rarui-react/checkbox": [
+        "./packages/implementations/react/src/input/Checkbox/src"
+      ],
+      "@rarui-react/chip": [
+        "./packages/implementations/react/src/input/Chip/src"
+      ],
+      "@rarui-react/color-picker": [
+        "./packages/implementations/react/src/input/ColorPicker/src"
+      ],
+      "@rarui-react/datepicker": [
+        "./packages/implementations/react/src/input/Datepicker/src"
+      ],
+      "@rarui-react/dropdown": [
+        "./packages/implementations/react/src/input/Dropdown/src"
+      ],
+      "@rarui-react/icon-button": [
+        "./packages/implementations/react/src/input/IconButton/src"
+      ],
+      "@rarui-react/input": [
+        "./packages/implementations/react/src/input/Input/src"
+      ],
+      "@rarui-react/radio-button": [
+        "./packages/implementations/react/src/input/RadioButton/src"
+      ],
+      "@rarui-react/select": [
+        "./packages/implementations/react/src/input/Select/src"
+      ],
+      "@rarui-react/textarea": [
+        "./packages/implementations/react/src/input/Textarea/src"
+      ],
+      "@rarui-react/toggle": [
+        "./packages/implementations/react/src/input/Toggle/src"
+      ],
+      "@rarui-react/box": [
+        "./packages/implementations/react/src/layout/Box/src"
+      ],
+      "@rarui-react/sidebar": [
+        "./packages/implementations/react/src/layout/Sidebar/src"
+      ],
+      "@rarui-react/breadcrumb": [
+        "./packages/implementations/react/src/navigation/Breadcrumb/src"
+      ],
+      "@rarui-react/link": [
+        "./packages/implementations/react/src/navigation/Link/src"
+      ],
+      "@rarui-react/pagination": [
+        "./packages/implementations/react/src/navigation/Pagination/src"
+      ],
+      "@rarui-react/side-navigation": [
+        "./packages/implementations/react/src/navigation/SideNavigation/src"
+      ],
+      "@rarui-react/tabs": [
+        "./packages/implementations/react/src/navigation/Tabs/src"
+      ],
+      "@rarui-react/accordion": [
+        "./packages/implementations/react/src/surface/Accordion/src"
+      ],
+      "@rarui-react/banner": [
+        "./packages/implementations/react/src/surface/Banner/src"
+      ],
+      "@rarui-react/card": [
+        "./packages/implementations/react/src/surface/Card/src"
+      ],
+      "@rarui-react/modal": [
+        "./packages/implementations/react/src/surface/Modal/src"
+      ],
+      "@rarui-react/theme-provider": [
+        "./packages/implementations/react/src/theme/Provider/src"
+      ]
     }
   },
   "include": ["packages", "babel.config.js"]

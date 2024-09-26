@@ -1,16 +1,230 @@
 {
   "id": "toast",
   "name": "Toast",
-  "totalProps": 0,
+  "totalProps": 10,
   "packageName": "@rarui-react/toast",
   "version": "2.2.0",
   "docLink": "https://rarui.com.br/documentation/src-components/toast",
-  "props": [],
+  "props": [
+    {
+      "description": "The content of the Toast.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": false
+    },
+    {
+      "description": "Auto generated id.",
+      "type": "string",
+      "title": "id",
+      "required": true
+    },
+    {
+      "description": "The title of the toast",
+      "type": "string",
+      "title": "title",
+      "required": false
+    },
+    {
+      "description": "Time in miliseconds to auto dismiss the component",
+      "enum": [16000, 4000, 8000],
+      "type": "number",
+      "title": "duration",
+      "required": false
+    },
+    {
+      "description": "Tells you whether or not Toast should close automatically.",
+      "default": true,
+      "type": "boolean",
+      "title": "autoClose",
+      "required": false
+    },
+    {
+      "description": "Receives a function to be executed when the Toast is closed.",
+      "type": "object",
+      "additionalProperties": false,
+      "propertyOrder": [],
+      "title": "onClose",
+      "required": false
+    },
+    {
+      "description": "Specifies the width of the toast.\nThe **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area. It is also possible to pass a specific value.\n\n\n**Initial value**: `auto`",
+      "default": "420px",
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            }
+          }
+        },
+        {
+          "enum": [
+            "auto",
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "min-intrinsic",
+            "stretch"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "width",
+      "required": false
+    },
+    {
+      "description": "Determines the visual style of the toast, influencing its color scheme and appearance.",
+      "enum": ["error", "info", "invert", "neutral", "success", "warning"],
+      "type": "string",
+      "title": "appearance",
+      "required": false
+    },
+    {
+      "description": "Specifies the size of the toast, controlling its dimensions.",
+      "enum": ["large", "medium", "small"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    },
+    {
+      "description": "Specifies the variant of the toast",
+      "enum": ["ghost", "solid", "tonal"],
+      "type": "string",
+      "title": "variant",
+      "required": false
+    }
+  ],
   "subComponents": [
     {
       "name": "Toast.Provider",
-      "totalProps": 0,
-      "props": []
+      "totalProps": 2,
+      "props": [
+        {
+          "type": "React.ReactNode",
+          "title": "children",
+          "required": true
+        },
+        {
+          "description": "Position of the toast.",
+          "default": "bottomRight",
+          "enum": [
+            "bottomCenter",
+            "bottomLeft",
+            "bottomRight",
+            "topCenter",
+            "topLeft",
+            "topRight"
+          ],
+          "type": "string",
+          "title": "placement",
+          "required": false
+        }
+      ]
     }
   ]
 }

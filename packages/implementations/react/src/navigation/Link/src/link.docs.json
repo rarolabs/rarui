@@ -1,7 +1,7 @@
 {
   "id": "link",
   "name": "Link",
-  "totalProps": 2,
+  "totalProps": 5,
   "packageName": "@rarui-react/link",
   "version": "2.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/link",
@@ -25,6 +25,26 @@
         }
       ],
       "title": "as",
+      "required": false
+    },
+    {
+      "description": "The content of the link.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": true
+    },
+    {
+      "description": "Determines the visual style of the link.",
+      "enum": ["brand", "inverted", "neutral"],
+      "type": "string",
+      "title": "appearance",
+      "required": false
+    },
+    {
+      "description": "Specifies the size of the link.",
+      "enum": ["large", "medium", "small"],
+      "type": "string",
+      "title": "size",
       "required": false
     }
   ],

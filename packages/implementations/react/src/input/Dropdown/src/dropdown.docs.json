@@ -1,15 +1,461 @@
 {
   "id": "dropdown",
   "name": "Dropdown",
-  "totalProps": 0,
+  "totalProps": 15,
   "packageName": "@rarui-react/dropdown",
   "version": "1.2.2",
   "docLink": "https://rarui.com.br/documentation/src-components/dropdown",
-  "props": [],
+  "props": [
+    {
+      "description": "An HTML element, or a function that returns one. It's used to set the position of the dropdown.",
+      "type": "React.ReactNode | ((data: { open: boolean, setVisibility: (visibility: boolean) => void }) => React.ReactNode);",
+      "title": "children",
+      "required": true
+    },
+    {
+      "description": "The content of the dropdown.",
+      "type": "React.ReactNode",
+      "title": "content",
+      "required": true
+    },
+    {
+      "description": "Position of the dropdown.",
+      "default": "bottom",
+      "enum": [
+        "bottom",
+        "bottom-end",
+        "bottom-start",
+        "left",
+        "left-end",
+        "left-start",
+        "right",
+        "right-end",
+        "right-start",
+        "top",
+        "top-end",
+        "top-start"
+      ],
+      "type": "string",
+      "title": "position",
+      "required": false
+    },
+    {
+      "description": "A common feature of select dropdowns is that the dropdown matches the width of the reference regardless of its contents.",
+      "default": false,
+      "type": "boolean",
+      "title": "matchReferenceWidth",
+      "required": false
+    },
+    {
+      "description": "Adds listeners that dismiss (close) the floating element.",
+      "default": true,
+      "type": "boolean",
+      "title": "enabledDismiss",
+      "required": false
+    },
+    {
+      "description": "Adds click event listeners that change the open state.",
+      "default": true,
+      "type": "boolean",
+      "title": "enabledClick",
+      "required": false
+    },
+    {
+      "description": "Determines whether the dropdown should enable flipping the options' dropdown when there is not enough space to display it in its default direction.\nThis can help ensure the dropdown is always visible on the screen.",
+      "default": true,
+      "type": "boolean",
+      "title": "enabledFlip",
+      "required": false
+    },
+    {
+      "description": "Offest displaces the floating element from its core placement along the specified axes.",
+      "default": 10,
+      "type": "number",
+      "title": "offset",
+      "required": false
+    },
+    {
+      "description": "Specifies the ID of the portal element where the dropdown should be rendered.\nThis can be useful for rendering the dropdown in a different part of the DOM, such as a modal or overlay.",
+      "type": "string",
+      "title": "portalId",
+      "required": false
+    },
+    {
+      "description": "If true, the component is shown.",
+      "type": "boolean",
+      "title": "visible",
+      "required": false
+    },
+    {
+      "description": "Function to control dropdown opening and closing.",
+      "type": "(visible: boolean) => void;",
+      "title": "onVisibility",
+      "required": false
+    },
+    {
+      "description": "The zIndex property specifies the stack order of the box.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600",
+                "$700",
+                "$800",
+                "$900"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "$100",
+            "$200",
+            "$300",
+            "$400",
+            "$500",
+            "$600",
+            "$700",
+            "$800",
+            "$900"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "zIndex",
+      "required": false
+    },
+    {
+      "description": "The **`width`** CSS property sets an element's width. By default, it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area. It is also possible to pass a specific value.\n\n\n**Initial value**: `auto`",
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "auto",
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "min-intrinsic",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "auto",
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "min-intrinsic",
+            "stretch"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "width",
+      "required": false
+    },
+    {
+      "description": "The **`max-width`** CSS property sets the maximum width of an element. It prevents the used value of the `width` property from becoming larger than the value specified by `max-width`. It is also possible to pass a specific value.\n\n\n**Initial value**: `none`",
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {}
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xs"
+            },
+            "md": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "md"
+            },
+            "lg": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "lg"
+            },
+            "xl": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "properties": {}
+                },
+                {
+                  "enum": [
+                    "fit-content",
+                    "intrinsic",
+                    "max-content",
+                    "min-content",
+                    "none",
+                    "stretch"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "fit-content",
+            "intrinsic",
+            "max-content",
+            "min-content",
+            "none",
+            "stretch"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "maxWidth",
+      "required": false
+    },
+    {
+      "description": "Specifies the padding inside the dropdown menu. This prop accepts one of the following values: \"base\" or \"none\".",
+      "default": "base",
+      "enum": ["base", "none"],
+      "type": "string",
+      "title": "padding",
+      "required": false
+    }
+  ],
   "subComponents": [
     {
       "name": "Dropdown.Item",
-      "totalProps": 2,
+      "totalProps": 6,
       "props": [
         {
           "description": "A ref to the element rendered by this component. Because this component is polymorphic, the type will vary based on the value of the as prop.",
@@ -30,6 +476,29 @@
             }
           ],
           "title": "as",
+          "required": false
+        },
+        {
+          "description": "The content of the dropdown item. This can include text, icons, or other React elements.",
+          "type": "React.ReactNode",
+          "title": "children",
+          "required": false
+        },
+        {
+          "description": "An icon to be displayed alongside the dropdown item. This can be used to provide a visual representation of the item.",
+          "type": "React.ReactNode",
+          "title": "icon",
+          "required": false
+        },
+        {
+          "description": "The name of the dropdown item. This is typically the text that is displayed for the item.",
+          "type": "string",
+          "title": "name",
+          "required": false
+        },
+        {
+          "type": "boolean",
+          "title": "selected",
           "required": false
         }
       ]

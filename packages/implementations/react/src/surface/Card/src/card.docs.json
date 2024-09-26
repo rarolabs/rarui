@@ -1,21 +1,102 @@
 {
   "id": "card",
   "name": "Card",
-  "totalProps": 0,
+  "totalProps": 3,
   "packageName": "@rarui-react/card",
   "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/card",
-  "props": [],
+  "props": [
+    {
+      "description": "The content of the card. This prop accepts any React node.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": false
+    },
+    {
+      "description": "Specifies the padding inside the card.\nThis prop accepts one of the following values: \"none\" or \"base\".",
+      "default": "base",
+      "enum": ["base", "none"],
+      "type": "string",
+      "title": "padding",
+      "required": false
+    },
+    {
+      "description": "Specifies the background color of the card.\nThis prop accepts one of the following values: \"$transparent\", \"$background\", \"$primary\", or \"$secondary\"",
+      "default": "$primary",
+      "examples": "[\"$brand\", { xs: \"$brand\", md: \"$secondary\" }]",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$background", "$primary", "$secondary", "$transparent"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["$background", "$primary", "$secondary", "$transparent"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$background", "$primary", "$secondary", "$transparent"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["$background", "$primary", "$secondary", "$transparent"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["$background", "$primary", "$secondary", "$transparent"],
+          "type": "string"
+        }
+      ],
+      "title": "backgroundColor",
+      "required": false
+    }
+  ],
   "subComponents": [
     {
       "name": "Card.Body",
-      "totalProps": 0,
-      "props": []
+      "totalProps": 1,
+      "props": [
+        {
+          "description": "The content of the card body. This prop accepts any React node.",
+          "type": "ReactNode",
+          "title": "children",
+          "required": false
+        }
+      ]
     },
     {
       "name": "Card.Header",
-      "totalProps": 0,
-      "props": []
+      "totalProps": 3,
+      "props": [
+        {
+          "description": "The content of the card header. This prop accepts any React node.",
+          "type": "React.ReactNode",
+          "title": "children",
+          "required": false
+        },
+        {
+          "description": "The title of the card. This is typically displayed prominently in the header section.",
+          "type": "string",
+          "title": "title",
+          "required": false
+        },
+        {
+          "description": "The description of the card. This is typically displayed below the title in the header section.",
+          "type": "string",
+          "title": "description",
+          "required": false
+        }
+      ]
     }
   ]
 }

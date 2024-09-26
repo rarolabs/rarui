@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from "react";
-import { InputProps } from "packages/implementations/react/src/input/Input/src";
 import { DatepickerProps as DatepickerTyping } from "@rarui/typings";
 import { Middleware, Placement } from "@floating-ui/react";
+import { InputProps } from "../../Input/src";
 
 export interface DatepickerProperties extends DatepickerTyping {
   /**

@@ -1,10 +1,17 @@
 {
   "id": "provider",
   "name": "Provider",
-  "totalProps": 0,
+  "totalProps": 1,
   "packageName": "@rarui-react/theme-provider",
   "version": "1.0.0",
   "docLink": "https://rarui.com.br/documentation/src-components/provider",
-  "props": [],
+  "props": [
+    {
+      "enum": ["base", "dark"],
+      "type": "string",
+      "title": "theme",
+      "required": false
+    }
+  ],
   "subComponents": []
 }

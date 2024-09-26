@@ -1,5 +1,5 @@
 import { InputHTMLAttributes } from "react";
-import { InputProps } from "packages/implementations/react/src/input/Input/src";
+import { InputProps } from "../../../../Input/src";
 
 export interface DatepickerInputProperties {
   input?: InputProps;

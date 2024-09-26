@@ -1,10 +1,241 @@
 {
   "id": "divider",
   "name": "Divider",
-  "totalProps": 0,
+  "totalProps": 5,
   "packageName": "@rarui-react/divider",
   "version": "1.1.0",
   "docLink": "https://rarui.com.br/documentation/src-components/divider",
-  "props": [],
+  "props": [
+    {
+      "description": "The direction of the Divider.",
+      "enum": ["horizontal", "vertical"],
+      "type": "string",
+      "title": "direction",
+      "required": false
+    },
+    {
+      "description": "The **`size`** CSS property sets an element's area.",
+      "default": "100%",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "title": "size",
+      "required": false
+    },
+    {
+      "description": "The **`type`** shorthand CSS property sets the line style for all four sides of an element's.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$dashed", "$solid"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["$dashed", "$solid"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$dashed", "$solid"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["$dashed", "$solid"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["$dashed", "$solid"],
+          "type": "string"
+        }
+      ],
+      "title": "type",
+      "required": false
+    },
+    {
+      "description": "The **`thickness`** shorthand CSS property sets the width of an element's.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": ["$1", "$2"],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": ["$1", "$2"],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": ["$1", "$2"],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": ["$1", "$2"],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": ["$1", "$2"],
+          "type": "string"
+        }
+      ],
+      "title": "thickness",
+      "required": false
+    },
+    {
+      "description": "The **`color`** CSS property sets an element's color.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "xs": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$disabled",
+                "$divider",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$primary",
+                "$secondary",
+                "$subdued",
+                "$success",
+                "$transparent",
+                "$warning"
+              ],
+              "type": "string",
+              "title": "xs"
+            },
+            "md": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$disabled",
+                "$divider",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$primary",
+                "$secondary",
+                "$subdued",
+                "$success",
+                "$transparent",
+                "$warning"
+              ],
+              "type": "string",
+              "title": "md"
+            },
+            "lg": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$disabled",
+                "$divider",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$primary",
+                "$secondary",
+                "$subdued",
+                "$success",
+                "$transparent",
+                "$warning"
+              ],
+              "type": "string",
+              "title": "lg"
+            },
+            "xl": {
+              "enum": [
+                "$brand",
+                "$brand-alt",
+                "$disabled",
+                "$divider",
+                "$error",
+                "$info",
+                "$invert",
+                "$invert-disabled",
+                "$primary",
+                "$secondary",
+                "$subdued",
+                "$success",
+                "$transparent",
+                "$warning"
+              ],
+              "type": "string",
+              "title": "xl"
+            }
+          },
+          "additionalProperties": false,
+          "propertyOrder": ["xs", "md", "lg", "xl"]
+        },
+        {
+          "enum": [
+            "$brand",
+            "$brand-alt",
+            "$disabled",
+            "$divider",
+            "$error",
+            "$info",
+            "$invert",
+            "$invert-disabled",
+            "$primary",
+            "$secondary",
+            "$subdued",
+            "$success",
+            "$transparent",
+            "$warning"
+          ],
+          "type": "string"
+        }
+      ],
+      "title": "color",
+      "required": false
+    }
+  ],
   "subComponents": []
 }

@@ -1,10 +1,31 @@
 {
   "id": "avatar",
   "name": "Avatar",
-  "totalProps": 0,
+  "totalProps": 3,
   "packageName": "@rarui-react/avatar",
   "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/avatar",
-  "props": [],
+  "props": [
+    {
+      "description": "The content of the Avatar. This prop accepts a ReactNode, allowing you to pass any React element or content as the Avatar's children.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": true
+    },
+    {
+      "description": "Renders a Badge component along with the Avatar. The badge prop accepts an object of type Badge, representing the Badge component.",
+      "type": "Badge",
+      "title": "badge",
+      "required": false
+    },
+    {
+      "description": "Specifies the size of the Avatar component.",
+      "default": "medium",
+      "enum": ["large", "medium", "small", "xLarge"],
+      "type": "string",
+      "title": "size",
+      "required": false
+    }
+  ],
   "subComponents": []
 }

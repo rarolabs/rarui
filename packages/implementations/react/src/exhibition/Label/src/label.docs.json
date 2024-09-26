@@ -1,10 +1,29 @@
 {
   "id": "label",
   "name": "Label",
-  "totalProps": 0,
+  "totalProps": 3,
   "packageName": "@rarui-react/label",
   "version": "1.0.1",
   "docLink": "https://rarui.com.br/documentation/src-components/label",
-  "props": [],
+  "props": [
+    {
+      "description": "The content of the button.",
+      "type": "React.ReactNode",
+      "title": "children",
+      "required": true
+    },
+    {
+      "description": "The for attribute specifies which form element a label is bound to.",
+      "type": "string",
+      "title": "htmlFor",
+      "required": false
+    },
+    {
+      "description": "Specifies whether the label is hidden or not",
+      "type": "boolean",
+      "title": "hidden",
+      "required": false
+    }
+  ],
   "subComponents": []
 }
