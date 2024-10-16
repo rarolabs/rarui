@@ -7,7 +7,7 @@ Package-specific changes not released in any package will be added here just bef
 
 #### 🎉 New features
 
-- Eslint configuration performed. ([#1](https://git.rarolabs.com.br/frontend/rarui/pull/1) by [@junior](https://git.rarolabs.com.br/junior))
+- Eslint configuration performed . ([#1](https://git.rarolabs.com.br/frontend/rarui/pull/1) by [@junior](https://git.rarolabs.com.br/junior))
 - Husky configuration performed. ([#1](https://git.rarolabs.com.br/frontend/rarui/pull/1) by [@junior](https://git.rarolabs.com.br/junior))
 - Lint Staged configuration performed. ([#1](https://git.rarolabs.com.br/frontend/rarui/pull/1) by [@junior](https://git.rarolabs.com.br/junior))
 - Commitlint configuration performed. ([#1](https://git.rarolabs.com.br/frontend/rarui/pull/1) by [@junior](https://git.rarolabs.com.br/junior))
