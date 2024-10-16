@@ -58,9 +58,24 @@ jobs:
       - name: Check version bump
         run: yarn bump:check
 
-  unit-test:
+  check-releases:
     runs-on: ubuntu-latest
     needs: check-version # Only runs after the 'check-version' job
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Check releases
+        run: |
+          if [ ! -f releases.json ]; then 
+            echo "Releases file not found. Run 'yarn build:releases' before merge";
+            exit 1;
+          fi
+
+  unit-test:
+    runs-on: ubuntu-latest
+    needs: [check-version, check-releases] # Only runs after the 'check-version, check-releases' job
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -81,7 +96,7 @@ jobs:
 
   lint:
     runs-on: ubuntu-latest
-    needs: check-version # Only runs after the 'check-version' job
+    needs: [check-version, check-releases] # Only runs after the 'check-version, check-releases' job
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
