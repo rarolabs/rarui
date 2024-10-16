@@ -19,10 +19,12 @@ jobs:
           node-version: "lts"
 
       - name: Install dependencies
-        run: yarn install
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+        run: yarn
 
       - name: Save node_modules
         uses: actions/cache@v3
+        id: cache-dependencies
         with:
           path: node_modules
           key: ${{ runner.os }}-node_modules-${{ hashFiles('yarn.lock') }}
@@ -33,12 +35,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: Fetch latest commits
-        run: git fetch
-
-      - name: Install dependencies
-        run: yarn install
 
       - name: Check version bump
         run: yarn bump:check
