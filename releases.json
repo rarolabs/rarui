@@ -1,0 +1,32 @@
+[
+  {
+    "package": "@rarui-react/components 1.41.3",
+    "description": "## 2024-10-15 `1.41.3`\n\n#### 🐛 Bug fixes\n\n- Fixed disabled state on the `Select` component. ([#100](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/100) by [@reubert.barbosa](https://git.rarolabs.com.br/reubert.barbosa))",
+    "version": "1.41.3",
+    "tagName": "rarui-react/components-1.41.3",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/components",
+          "link_type": "package"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@rarui-react/select 2.1.2",
+    "description": "## 2024-10-15 `2.1.2`\n\n#### 🐛 Bug fixes\n\n- Fixed disabled state on the `Select` component. ([#100](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/100) by [@reubert.barbosa](https://git.rarolabs.com.br/reubert.barbosa))",
+    "version": "2.1.2",
+    "tagName": "rarui-react/select-2.1.2",
+    "assets": {
+      "links": [
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/@rarui-react/select",
+          "link_type": "package"
+        }
+      ]
+    }
+  }
+]
