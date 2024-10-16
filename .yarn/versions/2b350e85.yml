@@ -1,2 +1,6 @@
+releases:
+  "@rarui-react/components": patch
+  "@rarui-react/select": patch
+
 declined:
   - "@rarui/design-system"
