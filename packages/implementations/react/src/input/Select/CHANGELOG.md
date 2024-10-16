@@ -2,6 +2,12 @@
 
 Use a select box when a user needs to select one or more than one option from a list.
 
+## 2024-10-15 `2.1.2`
+
+#### 🐛 Bug fixes
+
+- Fixed disabled state on the `Select` component. ([#100](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/100) by [@reubert.barbosa](https://git.rarolabs.com.br/reubert.barbosa))
+
 ## 2024-08-26 `2.1.1`
 
 #### 🐛 Bug fixes
