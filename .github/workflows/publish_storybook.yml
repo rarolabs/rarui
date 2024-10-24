@@ -9,7 +9,7 @@ on:
         default: "deploy-storybook"
 
 jobs:
-  build-storybook-job:
+  build:
     runs-on: ubuntu-latest
     if: github.event_name == 'workflow_dispatch' && github.event.inputs.TRIGGER_JOB == 'deploy-storybook'
     steps:
@@ -34,7 +34,8 @@ jobs:
           name: storybook-static-${{ matrix.runs-on }}
           path: storybook-static/
 
-  publish-storybook-job:
+  publish:
+    needs: build
     runs-on: ubuntu-latest
     if: github.event_name == 'workflow_dispatch' && github.event.inputs.TRIGGER_JOB == 'deploy-storybook'
     container:
