@@ -26,9 +26,9 @@ jobs:
         run: yarn move:storybook
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
-          name: storybook-static
+          name: storybook-static-${{ matrix.runs-on }}
           path: storybook-static/
 
   publish-storybook-job:
@@ -44,9 +44,11 @@ jobs:
         run: aws --version
 
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
-          name: storybook-static
+          path: storybook-static
+          pattern: storybook-static-*
+          merge-multiple: true
 
       - name: Sync Storybook with S3
         run: |
