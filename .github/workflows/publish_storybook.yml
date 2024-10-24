@@ -19,6 +19,9 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Setup project
+        run: yarn setup
+
       - name: Build Storybook
         run: yarn build:storybook
 
