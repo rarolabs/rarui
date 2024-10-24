@@ -1,0 +1,55 @@
+name: Build and Publish Storybook
+
+on:
+  workflow_dispatch: # Permite acionar manualmente o workflow
+    inputs:
+      TRIGGER_JOB:
+        description: "The job to trigger"
+        required: true
+        default: "deploy-storybook"
+
+jobs:
+  build-storybook-job:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.TRIGGER_JOB == 'deploy-storybook'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build Storybook
+        run: yarn build:storybook
+
+      - name: Move Storybook
+        run: yarn move:storybook
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: storybook-static
+          path: storybook-static/
+
+  publish-storybook-job:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.TRIGGER_JOB == 'deploy-storybook'
+    container:
+      image: rarolabs/aws-cli
+    steps:
+      - name: Install Docker on Amazon Linux
+        run: amazon-linux-extras install docker
+
+      - name: Install AWS CLI
+        run: aws --version
+
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: storybook-static
+
+      - name: Sync Storybook with S3
+        run: |
+          aws ecr get-login-password --region ${{ secrets.AWS_REGION }}
+          aws s3 sync storybook-static/ s3://${{ secrets.S3_BUCKET }}
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID }} --paths "/*"
