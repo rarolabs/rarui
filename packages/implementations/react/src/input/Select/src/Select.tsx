@@ -117,7 +117,7 @@ const Select: React.FC<SelectProps> = forwardRef(
           ref={ref as LegacyRef<HTMLDivElement>}
           className={select.classnames.select({ size, appearance })}
           aria-disabled={disabled}
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => !disabled && setMenuOpen(!menuOpen)}
           onKeyDown={() => {}}
           onFocus={() => {}}
           tabIndex={0}

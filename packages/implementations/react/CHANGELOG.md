@@ -2,6 +2,12 @@
 
 `@rarui-react/components` components is a component library built with [React](https://reactjs.org).
 
+## 2024-10-15 `1.41.3`
+
+#### 🐛 Bug fixes
+
+- Fixed disabled state on the `Select` component. ([#100](https://git.rarolabs.com.br/frontend/rarui/-/merge_requests/100) by [@reubert.barbosa](https://git.rarolabs.com.br/reubert.barbosa))
+
 ## 2024-08-07 `1.41.2`
 
 #### 🐛 Bug fixes
