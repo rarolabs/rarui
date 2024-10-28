@@ -41,11 +41,16 @@ jobs:
     container:
       image: rarolabs/aws-cli
     steps:
-      # - name: Install Docker on Amazon Linux
-      #   run: amazon-linux-extras install docker
+      - name: Install Node 18
+        run: |
+          curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+          apt-get install -y nodejs
 
-      # - name: Install AWS CLI
-      #   run: aws --version
+      - name: Install Docker on Amazon Linux
+        run: amazon-linux-extras install docker
+
+      - name: Install AWS CLI
+        run: aws --version
 
       - name: Download artifact
         uses: actions/download-artifact@v4
@@ -54,8 +59,8 @@ jobs:
           pattern: storybook-static/*
           merge-multiple: true
 
-      # - name: Sync Storybook with S3
-      #   run: |
-      #     aws ecr get-login-password --region ${{ secrets.AWS_REGION }}
-      #     aws s3 sync storybook-static/ s3://${{ secrets.S3_BUCKET }}
-      #     aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID }} --paths "/*"
+      - name: Sync Storybook with S3
+        run: |
+          aws ecr get-login-password --region ${{ secrets.AWS_REGION }}
+          aws s3 sync storybook-static/ s3://${{ secrets.S3_BUCKET }}
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID }} --paths "/*"
