@@ -41,11 +41,11 @@ jobs:
     # container:
     #   image: rarolabs/aws-cli
     steps:
-      - name: Install Docker on Amazon Linux
-        run: amazon-linux-extras install docker
+      # - name: Install Docker on Amazon Linux
+      #   run: amazon-linux-extras install docker
 
-      - name: Install AWS CLI
-        run: aws --version
+      # - name: Install AWS CLI
+      #   run: aws --version
 
       - name: Download artifact
         uses: actions/download-artifact@v4
