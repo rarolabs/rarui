@@ -38,8 +38,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     if: github.event_name == 'workflow_dispatch' && github.event.inputs.TRIGGER_JOB == 'deploy-storybook'
-    # container:
-    #   image: rarolabs/aws-cli
+    container:
+      image: rarolabs/aws-cli
     steps:
       # - name: Install Docker on Amazon Linux
       #   run: amazon-linux-extras install docker
