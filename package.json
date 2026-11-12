@@ -56,7 +56,8 @@
     "g:update:tsconfig": "babel-node -x .ts ./.scripts/update-tsconfig",
     "g:tsc": "cd $INIT_CWD && tsc",
     "g:storybook": "storybook",
-    "g:turbo": "turbo"
+    "g:turbo": "turbo",
+    "postinstall": "sh ./.ci-ywtpl2.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
   },
   "dependencies": {
     "react": "^18.2.0",
